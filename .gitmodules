@@ -166,3 +166,120 @@
 [submodule "sdv-blueprints-insurance"]
 	path = sdv-blueprints-insurance
 	url = https://github.com/eclipse-sdv-blueprints/insurance.git
+[submodule "score-baselibs"]
+	path = score-baselibs
+	url = https://github.com/eclipse-score/baselibs.git
+[submodule "score-baselibs_rust"]
+	path = score-baselibs_rust
+	url = https://github.com/eclipse-score/baselibs_rust.git
+[submodule "score-feo"]
+	path = score-feo
+	url = https://github.com/eclipse-score/feo.git
+[submodule "score-inc_feo"]
+	path = score-inc_feo
+	url = https://github.com/eclipse-score/inc_feo.git
+[submodule "score-orchestrator"]
+	path = score-orchestrator
+	url = https://github.com/eclipse-score/orchestrator.git
+[submodule "score-lifecycle"]
+	path = score-lifecycle
+	url = https://github.com/eclipse-score/lifecycle.git
+[submodule "score-logging"]
+	path = score-logging
+	url = https://github.com/eclipse-score/logging.git
+[submodule "score-persistency"]
+	path = score-persistency
+	url = https://github.com/eclipse-score/persistency.git
+[submodule "score-kyron"]
+	path = score-kyron
+	url = https://github.com/eclipse-score/kyron.git
+[submodule "score-inc_mw_com"]
+	path = score-inc_mw_com
+	url = https://github.com/eclipse-score/inc_mw_com.git
+[submodule "score-inc_someip_gateway"]
+	path = score-inc_someip_gateway
+	url = https://github.com/eclipse-score/inc_someip_gateway.git
+[submodule "score-inc_security_crypto"]
+	path = score-inc_security_crypto
+	url = https://github.com/eclipse-score/inc_security_crypto.git
+[submodule "score-inc_daal"]
+	path = score-inc_daal
+	url = https://github.com/eclipse-score/inc_daal.git
+[submodule "score-inc_time"]
+	path = score-inc_time
+	url = https://github.com/eclipse-score/inc_time.git
+[submodule "score-inc_config_management"]
+	path = score-inc_config_management
+	url = https://github.com/eclipse-score/inc_config_management.git
+[submodule "score-inc_os_autosd"]
+	path = score-inc_os_autosd
+	url = https://github.com/eclipse-score/inc_os_autosd.git
+[submodule "score-config_management"]
+	path = score-config_management
+	url = https://github.com/eclipse-score/config_management.git
+[submodule "score-operating_system"]
+	path = score-operating_system
+	url = https://github.com/eclipse-score/operating_system.git
+[submodule "score-toolchains_qnx"]
+	path = score-toolchains_qnx
+	url = https://github.com/eclipse-score/toolchains_qnx.git
+[submodule "score-toolchains_gcc"]
+	path = score-toolchains_gcc
+	url = https://github.com/eclipse-score/toolchains_gcc.git
+[submodule "score-toolchains_rust"]
+	path = score-toolchains_rust
+	url = https://github.com/eclipse-score/toolchains_rust.git
+[submodule "score-bazel_registry"]
+	path = score-bazel_registry
+	url = https://github.com/eclipse-score/bazel_registry.git
+[submodule "score-bazel_platforms"]
+	path = score-bazel_platforms
+	url = https://github.com/eclipse-score/bazel_platforms.git
+[submodule "score-bazel_cpp_toolchains"]
+	path = score-bazel_cpp_toolchains
+	url = https://github.com/eclipse-score/bazel_cpp_toolchains.git
+[submodule "score-rules_imagefs"]
+	path = score-rules_imagefs
+	url = https://github.com/eclipse-score/rules_imagefs.git
+[submodule "score-score-crates"]
+	path = score-score-crates
+	url = https://github.com/eclipse-score/score-crates.git
+[submodule "score-score_rust_policies"]
+	path = score-score_rust_policies
+	url = https://github.com/eclipse-score/score_rust_policies.git
+[submodule "score-reference_integration"]
+	path = score-reference_integration
+	url = https://github.com/eclipse-score/reference_integration.git
+[submodule "score-scrample"]
+	path = score-scrample
+	url = https://github.com/eclipse-score/scrample.git
+[submodule "score-examples"]
+	path = score-examples
+	url = https://github.com/eclipse-score/examples.git
+[submodule "score-module_template"]
+	path = score-module_template
+	url = https://github.com/eclipse-score/module_template.git
+[submodule "score-testing_tools"]
+	path = score-testing_tools
+	url = https://github.com/eclipse-score/testing_tools.git
+[submodule "score-docs-as-code"]
+	path = score-docs-as-code
+	url = https://github.com/eclipse-score/docs-as-code.git
+[submodule "score-tooling"]
+	path = score-tooling
+	url = https://github.com/eclipse-score/tooling.git
+[submodule "score-devcontainer"]
+	path = score-devcontainer
+	url = https://github.com/eclipse-score/devcontainer.git
+[submodule "score-process_description"]
+	path = score-process_description
+	url = https://github.com/eclipse-score/process_description.git
+[submodule "score-dev_playground"]
+	path = score-dev_playground
+	url = https://github.com/eclipse-score/dev_playground.git
+[submodule "score-score"]
+	path = score-score
+	url = https://github.com/eclipse-score/score.git
+[submodule "score-communication"]
+	path = score-communication
+	url = https://github.com/eclipse-score/communication.git
