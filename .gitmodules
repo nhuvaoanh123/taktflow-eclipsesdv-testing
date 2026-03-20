@@ -1,0 +1,12 @@
+[submodule "eclipse-kuksa-databroker"]
+	path = eclipse-kuksa-databroker
+	url = https://github.com/eclipse-kuksa/kuksa-databroker.git
+[submodule "eclipse-velocitas-sdk"]
+	path = eclipse-velocitas-sdk
+	url = https://github.com/eclipse-velocitas/vehicle-app-python-sdk.git
+[submodule "eclipse-leda-distro"]
+	path = eclipse-leda-distro
+	url = https://github.com/eclipse-leda/leda-distro.git
+[submodule "eclipse-kuksa-python-sdk"]
+	path = eclipse-kuksa-python-sdk
+	url = https://github.com/eclipse-kuksa/kuksa-python-sdk.git
