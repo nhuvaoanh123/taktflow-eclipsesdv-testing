@@ -20,3 +20,26 @@ vss:
     - Vehicle.Powertrain.Battery.StateOfCharge.Current
     - Vehicle.Powertrain.Battery.Temperature
     - Vehicle.Powertrain.Battery.CurrentVoltage
+
+# Eclipse S-CORE modules
+score:
+  communication:
+    source_dir: score-communication
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build //..."
+    test_cmd: "bazel test //... --build_tests_only"
+    integration_cmd: "bazel test //quality/integration_testing/..."
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //... --build_tests_only"
+    coverage_cmd: "bazel coverage //..."
+    benchmark_targets:
+      - "//score/mw/com/performance_benchmarks/api_microbenchmarks:all"
+    qnx_config: "qnx_arm64"
+    asil: B
+    test_count_expected: 220
+    integration_suites_expected: 25
+    platforms:
+      - linux_x86_64
+      - linux_aarch64
+      - qnx_x86_64
+      - qnx_aarch64
