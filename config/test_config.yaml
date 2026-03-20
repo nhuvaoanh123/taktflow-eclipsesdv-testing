@@ -1,0 +1,22 @@
+target:
+  platform: qnx
+  arch: aarch64
+  hostname: raspberrypi-qnx
+  ssh_port: 22
+
+kuksa:
+  databroker_host: localhost
+  databroker_port: 55555
+  protocol: grpc
+
+mqtt:
+  broker_host: localhost
+  broker_port: 1883
+
+vss:
+  version: "4.0"
+  signals:
+    - Vehicle.Speed
+    - Vehicle.Powertrain.Battery.StateOfCharge.Current
+    - Vehicle.Powertrain.Battery.Temperature
+    - Vehicle.Powertrain.Battery.CurrentVoltage
