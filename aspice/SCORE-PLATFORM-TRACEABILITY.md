@@ -123,3 +123,27 @@ SG-LC-003 ──► Watchdog not serviced → hardware reset (TPS3823)
 | Software Requirements (SWR) | 38 |
 | **Total** | **168** |
 | **Bidirectional Links** | **~320** |
+
+## Upstream Integration Maps
+
+| Module | Integration Map | Upstream Reqs | Upstream Safety Docs | Gaps Identified |
+|---|---|---|---|---|
+| score-communication | `traceability/upstream-integration-map.md` | 12 AssumedSysReq + 33 FeatReq + 200+ CompReq (TRLC) | 30+ FailureModes + 18+ AoUs | CompReq granularity >> our SWR |
+| score-communication | `traceability/aou-verification-checklist.md` | — | 12 AoUs to verify on bench | AoU #8 needs QNX user setup |
+| score-persistency | `traceability/upstream-integration-map.md` | 27 comp_req (RST, all ASIL-B) | Safety plan + FMEA + DFA + 4 FDR | Feature reqs not directly visible |
+| score-lifecycle | `traceability/upstream-integration-map.md` | Templates only (not populated) | 3+ FMEA failure modes (HM_FMEA_*) | Requirements gap — our SG/FSR fills it |
+| score-baselibs | `traceability/upstream-integration-map.md` | Implicit in design docs (no comp_req) | — | No formal reqs upstream |
+| score-baselibs_rust | `traceability/upstream-integration-map.md` | Templates (containers) | 6 safety docs + FMEA/DFA (log) | Container reqs not populated |
+| score-inc_someip_gateway | `traceability/upstream-integration-map.md` | stkh_req + feat_req + comp_req (RST) | — | FMEA/DFA not yet created |
+
+## Key Integration Findings
+
+1. **score-communication** is the most mature — full TRLC requirement chain with 200+ CompReqs, 30+ FailureModes, 18+ AoUs. Our Taktflow docs cover the ASIL-B safety chain; their TRLC covers full functional decomposition.
+
+2. **score-persistency** has the most complete upstream safety package — named safety roles, formal FDR records, 27 component requirements all ASIL-B. Best candidate for contribution back to upstream.
+
+3. **score-lifecycle** has rich architecture (21 PlantUML diagrams) but requirements are still templates. Our SG/FSR/TSR fill the safety requirement gap.
+
+4. **score-baselibs** has extensive design docs (40+ files) but no formal requirements. Design docs serve as implicit requirements. Our SG-BL + FSR-BL formalize the safety aspects.
+
+5. **AoU verification** is critical — 12 Assumptions of Use must be verified on our bench before ASIL-B qualification. Checklist created for score-communication, pattern replicable for other modules.
