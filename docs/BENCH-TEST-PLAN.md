@@ -2,7 +2,7 @@
 
 **Project:** taktflow-eclipsesdv-testing
 **Date:** 2026-03-20
-**Target:** Raspberry Pi 4 (QNX 8.0) + 4-ECU CAN Bus HIL Bench
+**Target:** Linux Laptop (SDV host) + Raspberry Pi 4 (QNX 8.0 RTOS) + 4-ECU CAN Bus HIL Bench
 
 ---
 
@@ -12,21 +12,24 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│  Linux Laptop (192.168.0.158)                                       │
-│  ├── Eclipse SDV stack (native builds)                              │
-│  ├── pytest test runner                                             │
+│  Linux Laptop (192.168.0.158) ◄── SDV HOST (all Eclipse SDV here)  │
+│  ├── Ankaios (ank-server + ank-agent)                               │
+│  ├── Kuksa Databroker (container or native)                         │
+│  ├── CAN Provider (reads CAN via USB adapter)                       │
 │  ├── Velocitas apps, Kuksa Python SDK                               │
-│  └── USB CAN adapter (monitoring)                                   │
-└───────┬──────────────────────────────────────┬──────────────────────┘
-        │ WiFi (192.168.0.x)                   │ USB CAN
-        ▼                                      ▼
+│  ├── Container runtime (Podman/Docker)                              │
+│  ├── pytest test runner                                             │
+│  └── USB CAN adapter ─────────────────────┐                        │
+└───────┬───────────────────────────────────┼────────────────────────┘
+        │ WiFi (192.168.0.x)                │ USB CAN
+        ▼                                   ▼
 ┌───────────────────────┐            ┌─────────────────────┐
 │  Raspberry Pi 4       │            │  CAN Bus (500 kbps) │
-│  QNX 8.0 (HPC)       │◄──────────►│  120Ω terminated    │
-│  ├── Ankaios          │  USB CAN   │                     │
-│  ├── Kuksa Databroker │            │  ┌─────┐ ┌─────┐   │
-│  ├── CAN Provider     │            │  │TMS570│ │G474 │   │
-│  └── Container Runtime│            │  │ CVC  │ │ FZC │   │
+│  QNX 8.0 (RTOS only) │◄──────────►│  120Ω terminated    │
+│  ├── Real-time tasks  │  USB CAN   │                     │
+│  ├── CAN gateway      │            │  ┌─────┐ ┌─────┐   │
+│  ├── BMS control      │            │  │TMS570│ │G474 │   │
+│  └── Safety monitor   │            │  │ CVC  │ │ FZC │   │
 │  192.168.0.xxx        │            │  └──┬───┘ └──┬──┘   │
 └───────────────────────┘            │  ┌──┴───┐ ┌──┴──┐   │
                                      │  │F413ZH│ │L552ZE│  │
@@ -37,6 +40,11 @@
 │  ├── Rigol DHO804 ────┼──── 192.168.1.100:5555 (SCPI)
 │  └── Flash tools      │
 └───────────────────────┘
+
+IMPORTANT: All Eclipse SDV software runs on the Linux Laptop.
+The Pi runs QNX only — no containers, no Linux, no SDV stack.
+The laptop reads CAN bus data via its own USB CAN adapter.
+The Pi participates as a QNX RTOS node on the CAN bus.
 ```
 
 ### 1.2 Test Categories
@@ -45,10 +53,10 @@
 |------|----------|---------------|-------------|
 | **B** | Build | Laptop | Clone, resolve deps, compile without errors |
 | **U** | Unit | Laptop | Run the module's upstream test suite |
-| **I** | Integration | Laptop + Pi | Cross-module communication |
-| **E** | End-to-End | Full Bench | Signal flow through physical CAN bus and ECUs |
-| **P** | Performance | Pi or Laptop | Latency, throughput, resource usage |
-| **S** | Security | Pi + HSM ECU | Authentication, TLS, certificate validation |
+| **I** | Integration | Laptop | Cross-module communication (SDV stack on laptop, CAN via USB adapter) |
+| **E** | End-to-End | Full Bench | Signal flow: ECUs → CAN bus → Laptop USB CAN → SDV stack → test assertions |
+| **P** | Performance | Laptop | Latency, throughput, resource usage of SDV stack |
+| **S** | Security | Laptop + HSM ECU | Authentication, TLS, certificate validation |
 
 ### 1.3 pytest Markers
 
@@ -116,11 +124,11 @@ bench:
 
 | Fixture | Scope | Description |
 |---------|-------|-------------|
-| `ankaios_client` | session | gRPC connection to Ankaios API on Pi |
-| `can_interface` | session | python-can interface for `can0` or `vcan0` |
+| `ankaios_client` | session | gRPC connection to Ankaios API (localhost) |
+| `can_interface` | session | python-can interface for `can0` (USB CAN) or `vcan0` |
 | `rigol_scope` | session | SCPI TCP connection to Rigol at 192.168.1.100:5555 |
-| `ssh_pi` | session | paramiko SSH session to Pi |
-| `databroker_client` | session | gRPC connection to Kuksa databroker |
+| `ssh_pi` | session | paramiko SSH session to Pi (for QNX RTOS monitoring/CAN gateway control) |
+| `databroker_client` | session | gRPC connection to Kuksa databroker (localhost) |
 
 ---
 
@@ -130,16 +138,16 @@ Modules must be tested layer-by-layer. Each layer's Build + Unit + Integration m
 
 ```
 Layer 0: Infrastructure
-  └── QNX boot on Pi, CAN bus wired, WiFi connectivity, SSH access
+  └── Linux laptop ready, USB CAN adapter connected, CAN bus wired, Pi QNX boot, WiFi up
 
 Layer 1: Orchestration
-  └── ankaios-ankaios (container orchestrator on Pi)
+  └── ankaios-ankaios (container orchestrator on Linux laptop)
 
 Layer 2: Data Plane
-  └── eclipse-kuksa-databroker (VSS data broker, deployed via Ankaios)
+  └── eclipse-kuksa-databroker (VSS data broker on laptop, deployed via Ankaios)
 
 Layer 3: Signal Ingestion
-  ├── kuksa-kuksa-can-provider (CAN frames → databroker)
+  ├── kuksa-kuksa-can-provider (reads CAN via laptop USB adapter → feeds databroker)
   ├── kuksa-kuksa.val.feeders (DBC replay → databroker)
   └── kuksa-kuksa-common (JWT, TLS utilities)
 
@@ -183,17 +191,16 @@ Layer 7: Platform & Blueprints
 | ID | Cat | Platform | Test Description | Pass Criteria |
 |----|-----|----------|------------------|---------------|
 | ANK-B-01 | B | Laptop | `cargo build --release` (ank-server + ank-agent) | Exit code 0 |
-| ANK-B-02 | B | Laptop | Cross-compile for aarch64 target | Binary produced |
 | ANK-U-01 | U | Laptop | `cargo test --workspace` | All upstream tests pass |
-| ANK-I-01 | I | Laptop | Start server + agent locally, deploy test workload manifest | Workload state = Running |
-| ANK-I-02 | I | Pi | SSH to Pi, start server + agent, `ank get workloads` returns list | Response received |
-| ANK-I-03 | I | Pi | Deploy kuksa-databroker container via Ankaios manifest | Container starts, gRPC port open |
-| ANK-E-01 | E | Full Bench | Ankaios deploys databroker + CAN provider on Pi, laptop queries signals | VSS signal value received |
-| ANK-P-01 | P | Pi | Container startup time | < 5 seconds |
-| ANK-P-02 | P | Pi | Memory footprint (ank-server + ank-agent) | < 50 MB combined |
-| ANK-S-01 | S | Pi | mTLS between server and agent | Connection verified with certs |
+| ANK-I-01 | I | Laptop | Start server + agent, deploy test workload manifest | Workload state = Running |
+| ANK-I-02 | I | Laptop | Deploy kuksa-databroker container via Ankaios manifest | Container starts, gRPC port open |
+| ANK-I-03 | I | Laptop | `ank get workloads` returns correct state for all workloads | All states reported |
+| ANK-E-01 | E | Full Bench | Ankaios deploys databroker + CAN provider, CAN data flows from ECUs via USB CAN | VSS signal value received |
+| ANK-P-01 | P | Laptop | Container startup time | < 5 seconds |
+| ANK-P-02 | P | Laptop | Memory footprint (ank-server + ank-agent) | < 50 MB combined |
+| ANK-S-01 | S | Laptop | mTLS between server and agent | Connection verified with certs |
 
-**Entry:** Layer 0 (QNX boot, network) confirmed.
+**Entry:** Layer 0 (laptop ready, USB CAN connected, CAN bus wired) confirmed.
 **Exit:** ANK-B-01, ANK-U-01, ANK-I-02 all PASS.
 
 ---
@@ -207,18 +214,17 @@ Layer 7: Platform & Blueprints
 | ID | Cat | Platform | Test Description | Pass Criteria |
 |----|-----|----------|------------------|---------------|
 | KDB-B-01 | B | Laptop | `cargo build --release` (databroker + CLI) | Exit code 0 |
-| KDB-B-02 | B | Laptop | Cross-compile for aarch64-unknown-linux-gnu | Binary produced |
 | KDB-U-01 | U | Laptop | `cargo test --workspace` | Upstream tests pass |
 | KDB-I-01 | I | Laptop | Run upstream `integration_test/test_databroker.py` against local instance | All tests pass |
-| KDB-I-02 | I | Pi | Deploy on Pi (via Ankaios), query from laptop over network | gRPC response received |
-| KDB-I-03 | I | Pi | Load VSS 4.0, verify 4 configured signals queryable | All 4 signals found |
-| KDB-E-01 | E | Full Bench | CAN provider feeds physical CAN → databroker on Pi → Python client reads | Values match |
-| KDB-P-01 | P | Pi | Subscribe to 100 VSS signals simultaneously | > 1000 updates/sec |
-| KDB-P-02 | P | Pi | Signal publish-to-subscribe latency | < 10ms local, < 50ms network |
-| KDB-S-01 | S | Pi | JWT token authentication | Unauthorized request rejected |
+| KDB-I-02 | I | Laptop | Deploy via Ankaios, query via gRPC | gRPC response received |
+| KDB-I-03 | I | Laptop | Load VSS 4.0, verify 4 configured signals queryable | All 4 signals found |
+| KDB-E-01 | E | Full Bench | CAN provider reads ECU frames via USB CAN → feeds databroker → Python client reads | Values match |
+| KDB-P-01 | P | Laptop | Subscribe to 100 VSS signals simultaneously | > 1000 updates/sec |
+| KDB-P-02 | P | Laptop | Signal publish-to-subscribe latency | < 10ms |
+| KDB-S-01 | S | Laptop | JWT token authentication | Unauthorized request rejected |
 
 **Entry:** ANK-I-02 PASS (Ankaios can deploy containers).
-**Exit:** KDB-I-03 PASS (databroker serves VSS signals on Pi).
+**Exit:** KDB-I-03 PASS (databroker serves VSS signals).
 
 ### 4.2 eclipse-velocitas-sdk — Vehicle App Python SDK [43.9]
 
@@ -229,8 +235,8 @@ Layer 7: Platform & Blueprints
 | VPY-B-01 | B | Laptop | `pip install -e .` in venv | Exit code 0 |
 | VPY-U-01 | U | Laptop | `pytest` (upstream, 10 test files) | All pass |
 | VPY-I-01 | I | Laptop | Minimal VehicleApp connects to local databroker, reads Vehicle.Speed | Value returned |
-| VPY-I-02 | I | Pi | VehicleApp on laptop connects to databroker on Pi over network | Value returned |
-| VPY-E-01 | E | Full Bench | VehicleApp receives battery temp from CAN bus via databroker, triggers alert | Alert fires |
+| VPY-I-02 | I | Laptop | VehicleApp connects to Ankaios-deployed databroker | Value returned |
+| VPY-E-01 | E | Full Bench | VehicleApp receives battery temp from ECUs via USB CAN → databroker, triggers alert | Alert fires |
 
 **Exit:** VPY-I-01 PASS.
 
@@ -268,9 +274,9 @@ Layer 7: Platform & Blueprints
 | KPY-B-01 | B | Laptop | `pip install -e .` | Exit code 0 |
 | KPY-U-01 | U | Laptop | `pytest` (3 test files) | All pass |
 | KPY-I-01 | I | Laptop | Connect to local databroker, subscribe + publish + readback | Values match |
-| KPY-I-02 | I | Pi | Connect from laptop to databroker on Pi, CRUD on VSS signals | All ops succeed |
-| KPY-E-01 | E | Full Bench | Read CAN-sourced signals from Pi, validate vs Rigol measurement | Within tolerance |
-| KPY-P-01 | P | Laptop→Pi | Round-trip latency for 1000 sequential get/set ops | < 5ms avg |
+| KPY-I-02 | I | Laptop | Connect to Ankaios-deployed databroker, full CRUD on VSS signals | All ops succeed |
+| KPY-E-01 | E | Full Bench | Read CAN-sourced signals from ECUs via USB CAN, validate vs Rigol measurement | Within tolerance |
+| KPY-P-01 | P | Laptop | Round-trip latency for 1000 sequential get/set ops | < 5ms avg |
 
 **Exit:** KPY-I-01 PASS.
 
@@ -283,7 +289,7 @@ Layer 7: Platform & Blueprints
 | VCS-B-01 | B | Laptop | `conan install . && cmake --build .` | Exit code 0 |
 | VCS-U-01 | U | Laptop | `ctest` (16 test files, gtest) | All pass |
 | VCS-I-01 | I | Laptop | Build sample C++ VehicleApp, connect to local databroker | Connection OK |
-| VCS-I-02 | I | Pi | Cross-compile for aarch64, deploy to Pi, verify connection | Connects |
+| VCS-I-02 | I | Laptop | Cross-compile for aarch64, deploy to Pi, verify connection | Connects |
 
 **Exit:** VCS-B-01, VCS-U-01 PASS.
 
@@ -298,7 +304,7 @@ Layer 7: Platform & Blueprints
 | ASP-B-01 | B | Laptop | `pip install -e .` + proto gen | Exit 0 |
 | ASP-U-01 | U | Laptop | `pytest` (25 test files) | All pass |
 | ASP-I-01 | I | Laptop | Python script creates/deletes workload via gRPC | State changes |
-| ASP-I-02 | I | Pi | Same targeting Ankaios on Pi | Workload created |
+| ASP-I-02 | I | Laptop | Same targeting Ankaios-deployed workloads | Workload created |
 
 ### 5.2 velocitas-vehicle-app-python-template [38.7]
 
@@ -307,7 +313,7 @@ Layer 7: Platform & Blueprints
 | VPT-B-01 | B | Laptop | Clone template, install deps | Exit 0 |
 | VPT-U-01 | U | Laptop | `pytest` (4 test files) | All pass |
 | VPT-I-01 | I | Laptop | Run template app against local databroker | Connects |
-| VPT-E-01 | E | Full Bench | Deploy on Pi via Ankaios, process CAN signals | Signals received |
+| VPT-E-01 | E | Full Bench | Deploy via Ankaios on laptop, process CAN signals from ECUs via USB CAN | Signals received |
 
 ### 5.3 uprotocol-up-cpp [38.1]
 
@@ -324,7 +330,7 @@ Layer 7: Platform & Blueprints
 | CHR-B-01 | B | Laptop | `cargo build --release` | Exit 0 |
 | CHR-U-01 | U | Laptop | `cargo test` | All pass |
 | CHR-I-01 | I | Laptop | Register + discover service via gRPC | Service found |
-| CHR-I-02 | I | Pi | Deploy on Pi, register databroker, discover from laptop | Found |
+| CHR-I-02 | I | Laptop | Deploy locally, register databroker as a service, discover via gRPC | Found |
 
 ### 5.5 kuksa-kuksa-incubation [34.9]
 
@@ -341,15 +347,15 @@ Layer 7: Platform & Blueprints
 | KVS-B-01 | B | Laptop | Python build + proto gen | Exit 0 |
 | KVS-U-01 | U | Laptop | `pytest` (6 test files) | All pass |
 | KVS-I-01 | I | Laptop | HVAC service connects to databroker, set/get temp | Values match |
-| KVS-I-02 | I | Pi | Deploy HVAC service on Pi alongside databroker | Both running |
+| KVS-I-02 | I | Laptop | Deploy HVAC service alongside databroker via Ankaios | Both running |
 
 ### 5.7 eclipse-leda-distro [32.9]
 
 | ID | Cat | Platform | Test | Pass Criteria |
 |----|-----|----------|------|---------------|
 | LDD-B-01 | B | Laptop | Verify Yocto config (or pull pre-built image) | Config valid |
-| LDD-I-01 | I | Pi | Validate Leda components can run on QNX | Services start |
-| LDD-I-02 | I | Pi | Verify Kanto container runtime | Containers manageable |
+| LDD-I-01 | I | Laptop | Validate Leda components can run on Linux laptop | Services start |
+| LDD-I-02 | I | Laptop | Verify Kanto container runtime on laptop | Containers manageable |
 
 ### 5.8 uprotocol-up-rust [32.3]
 
@@ -366,10 +372,10 @@ Layer 7: Platform & Blueprints
 | KCP-B-01 | B | Laptop | `pip install -e .` | Exit 0 |
 | KCP-U-01 | U | Laptop | `pytest` (6 test files) | All pass |
 | KCP-I-01 | I | Laptop | CAN provider reads from `vcan0`, feeds local databroker | Signals appear |
-| KCP-I-02 | I | Pi | CAN provider reads USB CAN, feeds real ECU frames to databroker | Signals appear |
-| KCP-E-01 | E | Full Bench | TMS570 sends pedal angle → Pi CAN provider → databroker → laptop reads | Value matches |
+| KCP-I-02 | I | Laptop | CAN provider reads laptop USB CAN adapter, feeds real ECU frames to databroker | Signals appear |
+| KCP-E-01 | E | Full Bench | TMS570 sends pedal angle on CAN → laptop USB CAN → CAN provider → databroker → test asserts | Value matches |
 | KCP-E-02 | E | Full Bench | Verify CAN timing with Rigol SCPI measurement | Within spec |
-| KCP-P-01 | P | Pi | CAN frame processing rate at 500 kbps bus load | > 1000 frames/sec |
+| KCP-P-01 | P | Laptop | CAN frame processing rate at 500 kbps bus load | > 1000 frames/sec |
 
 ### 5.10 kuksa-kuksa.val.feeders [30.8]
 
@@ -377,7 +383,7 @@ Layer 7: Platform & Blueprints
 |----|-----|----------|------|---------------|
 | KVF-B-01 | B | Laptop | `pip install -e .` | Exit 0 |
 | KVF-I-01 | I | Laptop | DBC feeder maps CAN frames to VSS, feeds databroker | Signals mapped |
-| KVF-E-01 | E | Full Bench | DBC feeder on Pi maps physical ECU CAN traffic | VSS values correct |
+| KVF-E-01 | E | Full Bench | DBC feeder on laptop maps physical ECU CAN traffic via USB CAN | VSS values correct |
 
 ### 5.11 kuksa-kuksa-common [30.0]
 
@@ -400,7 +406,7 @@ Layer 7: Platform & Blueprints
 | VCT-B-01 | B | Laptop | Conan + CMake build | Exit 0 |
 | VCT-U-01 | U | Laptop | `ctest` (2 test files) | All pass |
 | VCT-I-01 | I | Laptop | Template app connects to local databroker | Connects |
-| VCT-I-02 | I | Pi | Cross-compile aarch64, deploy and run on Pi | Runs |
+| VCT-I-02 | I | Laptop | Build and run against Ankaios-deployed databroker | Runs |
 
 ### 5.14 leda-meta-leda [29.1]
 
@@ -430,7 +436,7 @@ Layer 7: Platform & Blueprints
 | ID | Cat | Platform | Test | Pass Criteria |
 |----|-----|----------|------|---------------|
 | LSU-B-01 | B | Laptop | CMake build (C++14) | Exit 0 |
-| LSU-I-01 | I | Pi | Deploy agent, trigger OTA update simulation via MQTT | Update reported |
+| LSU-I-01 | I | Laptop | Deploy agent on laptop, trigger OTA update simulation via MQTT | Update reported |
 
 ### 5.18 ibeji-ibeji — Digital Twin [26.0]
 
@@ -439,7 +445,7 @@ Layer 7: Platform & Blueprints
 | IBJ-B-01 | B | Laptop | `cargo build --release` | Exit 0 |
 | IBJ-U-01 | U | Laptop | `cargo test` | All pass |
 | IBJ-I-01 | I | Laptop | Create twin entity mapped to VSS signal | Twin readable |
-| IBJ-I-02 | I | Pi | Deploy Ibeji on Pi, connect to databroker | Twin mirrors VSS |
+| IBJ-I-02 | I | Laptop | Deploy Ibeji locally, connect to databroker | Twin mirrors VSS |
 
 ### 5.19 uprotocol-up-transport-zenoh-cpp [26.0]
 
@@ -453,7 +459,7 @@ Layer 7: Platform & Blueprints
 
 ## 6. Phase 4 — Early-Stage (Score 15-24)
 
-Build + Unit only. No deployment to Pi unless directly bench-relevant.
+Build + Unit only. All on Linux laptop.
 
 | # | Module | Score | ID | Build Command | Unit Command | Notes |
 |---|--------|-------|----|---------------|--------------|-------|
@@ -462,13 +468,13 @@ Build + Unit only. No deployment to Pi unless directly bench-relevant.
 | 29 | leda-leda | 22.7 | LDA | Docs/spec build | N/A | Documentation project |
 | 30 | kuksa-kuksa-android-sdk | 22.3 | KAS | `./gradlew build` | `./gradlew test` | Requires Android SDK |
 | 31 | uprotocol-up-transport-zenoh-rust | 22.2 | UTZR | `cargo build` | `cargo test` | |
-| 32 | ankaios-ank-sdk-rust | 22.1 | ASR | `cargo build` | `cargo test` (1 file) | Also: I-01 Rust client → Pi |
+| 32 | ankaios-ank-sdk-rust | 22.1 | ASR | `cargo build` | `cargo test` (1 file) | Also: I-01 Rust client → local Ankaios |
 | 33 | chariott-Agemo | 22.1 | CAG | `cargo build` | `cargo test` | Pub/sub |
 | 34 | ibeji-freyja | 22.1 | IFR | `cargo build` | `cargo test` | Cloud sync |
-| 35 | leda-leda-utils | 22.1 | LLU | Build utils | N/A | Run sdv-health on Pi |
-| 36 | leda-leda-example-applications | 21.9 | LEA | Docker build | N/A | Deploy 1 example on Pi |
+| 35 | leda-leda-utils | 22.1 | LLU | Build utils | N/A | Run sdv-health locally |
+| 36 | leda-leda-example-applications | 21.9 | LEA | Docker build | N/A | Deploy 1 example via Ankaios |
 | 37 | ibeji-ibeji-example-applications | 21.5 | IEA | `cargo build` | N/A | Run example provider |
-| 38 | kuksa-kuksa-perf | 21.2 | KPF | `cargo build` | N/A | **Bench:** run vs Pi databroker |
+| 38 | kuksa-kuksa-perf | 21.2 | KPF | `cargo build` | N/A | **Bench:** run vs local databroker |
 | 39 | uprotocol-up-transport-mqtt5-rust | 20.2 | UTM | `cargo build` | `cargo test` | Needs MQTT broker |
 | 40 | kuksa-kuksa-dds-provider | 18.2 | KDD | `pip install -e .` | `pytest` (4 files) | Needs CycloneDDS |
 | 41 | kuksa-kuksa-someip-provider | 17.7 | KSP | CMake (vsomeip + Boost) | N/A | SOME/IP integration |
@@ -508,12 +514,13 @@ These scenarios exercise multiple modules simultaneously on the physical bench. 
 **Modules:** kuksa-can-provider + kuksa-databroker + kuksa-python-sdk + ankaios
 
 ```
-TMS570 (CVC) ──CAN──► Pi USB CAN ──► CAN Provider ──► Databroker ──► Python Client (Laptop)
+TMS570 (CVC) ──CAN bus──► Laptop USB CAN ──► CAN Provider ──► Databroker ──► Python Client
+                                     (all on Linux laptop)
 ```
 
 | Step | Action | Verify |
 |------|--------|--------|
-| 1 | Ankaios deploys databroker + CAN provider on Pi | `ank get workloads` = Running |
+| 1 | Ankaios deploys databroker + CAN provider on laptop | `ank get workloads` = Running |
 | 2 | TMS570 sends pedal angle (CAN ID 0x100) | CAN frame on bus |
 | 3 | CAN provider maps frame to `Vehicle.Chassis.Accelerator.PedalPosition` | Signal in databroker |
 | 4 | Python client on laptop reads signal | Value matches physical pedal |
@@ -526,7 +533,8 @@ TMS570 (CVC) ──CAN──► Pi USB CAN ──► CAN Provider ──► Data
 **Modules:** velocitas-sdk + kuksa-databroker + kuksa-can-provider
 
 ```
-F413ZH (RZC) encoder ──CAN──► Pi ──► Databroker ──► Velocitas App (Laptop) ──► Dashboard
+F413ZH (RZC) encoder ──CAN bus──► Laptop USB CAN ──► CAN Provider ──► Databroker ──► Velocitas App
+                                          (all on Linux laptop)
 ```
 
 | Step | Action | Verify |
@@ -544,7 +552,7 @@ F413ZH (RZC) encoder ──CAN──► Pi ──► Databroker ──► Veloci
 
 | Step | Action | Verify |
 |------|--------|--------|
-| 1 | Single Ankaios manifest deploys entire SDV stack on Pi | All containers start |
+| 1 | Single Ankaios manifest deploys entire SDV stack on laptop | All containers start |
 | 2 | `ank get workloads` | All states = Running |
 | 3 | Databroker gRPC health check from laptop | Healthy |
 | 4 | CAN provider processing frames | Signals flowing |
@@ -575,7 +583,7 @@ RZC NTC thermistor ──CAN──► Databroker ──► Ibeji Digital Twin �
 
 | Step | Action | Verify |
 |------|--------|--------|
-| 1 | CAN provider running on Pi, processing signals | VSS signals flowing |
+| 1 | CAN provider running on laptop, processing signals via USB CAN | VSS signals flowing |
 | 2 | `hop_test.py` sends TesterPresent (0x3E) on same CAN bus | Positive response |
 | 3 | `hop_test.py` sends ReadDID (0x22) | DID value returned |
 | 4 | Check VSS signal flow still active | No interruption |
@@ -588,9 +596,9 @@ RZC NTC thermistor ──CAN──► Databroker ──► Ibeji Digital Twin �
 
 | Week | Phase | Modules | Focus | Gate Criteria |
 |------|-------|---------|-------|---------------|
-| **1** | Infra | — | Pi QNX boot, CAN bus wiring, network verify, vcan0 setup | Pi SSH + CAN echo works |
-| **2** | Phase 1 | #1 Ankaios | Build + unit + deploy container on Pi | ANK-I-02 PASS |
-| **3** | Phase 2a | #2-3 Databroker, Velocitas SDK | Build + unit + databroker serving on Pi | KDB-I-03 PASS |
+| **1** | Infra | — | Laptop Linux setup, USB CAN adapter, CAN bus wiring, Pi QNX boot, vcan0 | CAN echo on `can0` works |
+| **2** | Phase 1 | #1 Ankaios | Build + unit + deploy container on laptop | ANK-I-02 PASS |
+| **3** | Phase 2a | #2-3 Databroker, Velocitas SDK | Build + unit + databroker serving on laptop | KDB-I-03 PASS |
 | **4** | Phase 2b | #4-7 CLI, uProto spec, Kuksa PY SDK, C++ SDK | Build + unit all | All B+U PASS |
 | **5** | Phase 3a | #8-16 SDKs, providers, CAN provider | Integration with CAN bus | KCP-E-01 PASS |
 | **6** | Phase 3b | #17-26 Feeders, Ibeji, transports | Build + unit + integration | All B PASS |
@@ -637,12 +645,12 @@ pytest tests/ -k "KCP" --target=qnx -v
 
 | # | Risk | Impact | Likelihood | Mitigation |
 |---|------|--------|------------|------------|
-| R1 | QNX on Pi not ready (SD card, BSP pending) | Blocks all Pi tests | Medium | Run databroker natively on laptop first; Pi tests fallback to Linux |
+| R1 | QNX on Pi not ready (SD card, BSP pending) | Pi cannot participate in CAN bus | Medium | ECUs still generate CAN traffic; laptop reads via USB CAN regardless |
 | R2 | CAN bus not wired yet (pending) | Blocks KCP, KVF, E2E tests | Medium | Use `vcan0` virtual CAN for integration; defer physical CAN to week 5 |
-| R3 | Cross-compilation failures for aarch64 | Blocks Pi deployment | Medium | Use Docker multi-arch builds; fallback to native Pi compilation |
+| R3 | USB CAN adapter not recognized on Linux | Blocks CAN-based tests | Low | Install `can-utils`, verify with `candump can0`; try alternative adapter |
 | R4 | Stale modules won't build (5 stale, 16 slowing) | Blocks Phase 4-5 | High | Document build failure as result; do not block other phases |
 | R5 | Module interdependency failures cascade | Multiple test failures | Low | Strict layer-by-layer execution; mock missing layers |
-| R6 | Network instability (WiFi subnet) | Intermittent test failures | Low | Retry logic in fixtures; consider wired Ethernet for Pi |
+| R6 | Laptop resource constraints (RAM/CPU) | Cannot run all containers simultaneously | Low | Limit concurrent containers; prioritize databroker + CAN provider |
 | R7 | Rigol not connected (Ethernet 192.168.1.100) | Cannot verify CAN timing | Low | Skip Rigol-dependent tests; defer to manual verification |
 | R8 | Android SDK not available on laptop | Cannot build Kuksa Android SDK | Medium | Mark KAS-B-01 as SKIP; no Android device on bench anyway |
 
