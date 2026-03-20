@@ -10,3 +10,159 @@
 [submodule "eclipse-kuksa-python-sdk"]
 	path = eclipse-kuksa-python-sdk
 	url = https://github.com/eclipse-kuksa/kuksa-python-sdk.git
+[submodule "kuksa-kuksa-can-provider"]
+	path = kuksa-kuksa-can-provider
+	url = https://github.com/eclipse-kuksa/kuksa-can-provider.git
+[submodule "kuksa-kuksa-someip-provider"]
+	path = kuksa-kuksa-someip-provider
+	url = https://github.com/eclipse-kuksa/kuksa-someip-provider.git
+[submodule "kuksa-kuksa.val.services"]
+	path = kuksa-kuksa.val.services
+	url = https://github.com/eclipse-kuksa/kuksa.val.services.git
+[submodule "kuksa-kuksa-perf"]
+	path = kuksa-kuksa-perf
+	url = https://github.com/eclipse-kuksa/kuksa-perf.git
+[submodule "kuksa-kuksa-gps-provider"]
+	path = kuksa-kuksa-gps-provider
+	url = https://github.com/eclipse-kuksa/kuksa-gps-provider.git
+[submodule "kuksa-kuksa-dds-provider"]
+	path = kuksa-kuksa-dds-provider
+	url = https://github.com/eclipse-kuksa/kuksa-dds-provider.git
+[submodule "kuksa-kuksa-android-sdk"]
+	path = kuksa-kuksa-android-sdk
+	url = https://github.com/eclipse-kuksa/kuksa-android-sdk.git
+[submodule "kuksa-kuksa-incubation"]
+	path = kuksa-kuksa-incubation
+	url = https://github.com/eclipse-kuksa/kuksa-incubation.git
+[submodule "kuksa-kuksa-common"]
+	path = kuksa-kuksa-common
+	url = https://github.com/eclipse-kuksa/kuksa-common.git
+[submodule "kuksa-kuksa.val.feeders"]
+	path = kuksa-kuksa.val.feeders
+	url = https://github.com/eclipse-kuksa/kuksa.val.feeders.git
+[submodule "kuksa-kuksa-hardware"]
+	path = kuksa-kuksa-hardware
+	url = https://github.com/eclipse-kuksa/kuksa-hardware.git
+[submodule "velocitas-vehicle-app-cpp-sdk"]
+	path = velocitas-vehicle-app-cpp-sdk
+	url = https://github.com/eclipse-velocitas/vehicle-app-cpp-sdk.git
+[submodule "velocitas-vehicle-app-python-template"]
+	path = velocitas-vehicle-app-python-template
+	url = https://github.com/eclipse-velocitas/vehicle-app-python-template.git
+[submodule "velocitas-vehicle-app-cpp-template"]
+	path = velocitas-vehicle-app-cpp-template
+	url = https://github.com/eclipse-velocitas/vehicle-app-cpp-template.git
+[submodule "velocitas-vehicle-model-python"]
+	path = velocitas-vehicle-model-python
+	url = https://github.com/eclipse-velocitas/vehicle-model-python.git
+[submodule "velocitas-vehicle-model-cpp"]
+	path = velocitas-vehicle-model-cpp
+	url = https://github.com/eclipse-velocitas/vehicle-model-cpp.git
+[submodule "velocitas-vehicle-model-generator"]
+	path = velocitas-vehicle-model-generator
+	url = https://github.com/eclipse-velocitas/vehicle-model-generator.git
+[submodule "velocitas-vehicle-app-rust-sdk"]
+	path = velocitas-vehicle-app-rust-sdk
+	url = https://github.com/eclipse-velocitas/vehicle-app-rust-sdk.git
+[submodule "velocitas-vehicle-app-kotlin-template"]
+	path = velocitas-vehicle-app-kotlin-template
+	url = https://github.com/eclipse-velocitas/vehicle-app-kotlin-template.git
+[submodule "velocitas-cli"]
+	path = velocitas-cli
+	url = https://github.com/eclipse-velocitas/cli.git
+[submodule "leda-leda"]
+	path = leda-leda
+	url = https://github.com/eclipse-leda/leda.git
+[submodule "leda-meta-leda"]
+	path = leda-meta-leda
+	url = https://github.com/eclipse-leda/meta-leda.git
+[submodule "leda-leda-example-applications"]
+	path = leda-leda-example-applications
+	url = https://github.com/eclipse-leda/leda-example-applications.git
+[submodule "leda-leda-utils"]
+	path = leda-leda-utils
+	url = https://github.com/eclipse-leda/leda-utils.git
+[submodule "leda-leda-contrib-self-update-agent"]
+	path = leda-leda-contrib-self-update-agent
+	url = https://github.com/eclipse-leda/leda-contrib-self-update-agent.git
+[submodule "leda-leda-contrib-container-update-agent"]
+	path = leda-leda-contrib-container-update-agent
+	url = https://github.com/eclipse-leda/leda-contrib-container-update-agent.git
+[submodule "leda-leda-contrib-otel"]
+	path = leda-leda-contrib-otel
+	url = https://github.com/eclipse-leda/leda-contrib-otel.git
+[submodule "leda-leda-contrib-cloud-connector"]
+	path = leda-leda-contrib-cloud-connector
+	url = https://github.com/eclipse-leda/leda-contrib-cloud-connector.git
+[submodule "leda-leda-contrib-vehicle-update-manager"]
+	path = leda-leda-contrib-vehicle-update-manager
+	url = https://github.com/eclipse-leda/leda-contrib-vehicle-update-manager.git
+[submodule "chariott-chariott"]
+	path = chariott-chariott
+	url = https://github.com/eclipse-chariott/chariott.git
+[submodule "chariott-Agemo"]
+	path = chariott-Agemo
+	url = https://github.com/eclipse-chariott/Agemo.git
+[submodule "ibeji-ibeji"]
+	path = ibeji-ibeji
+	url = https://github.com/eclipse-ibeji/ibeji.git
+[submodule "ibeji-freyja"]
+	path = ibeji-freyja
+	url = https://github.com/eclipse-ibeji/freyja.git
+[submodule "ibeji-ibeji-example-applications"]
+	path = ibeji-ibeji-example-applications
+	url = https://github.com/eclipse-ibeji/ibeji-example-applications.git
+[submodule "ankaios-ankaios"]
+	path = ankaios-ankaios
+	url = https://github.com/eclipse-ankaios/ankaios.git
+[submodule "ankaios-ank-sdk-python"]
+	path = ankaios-ank-sdk-python
+	url = https://github.com/eclipse-ankaios/ank-sdk-python.git
+[submodule "ankaios-ank-sdk-rust"]
+	path = ankaios-ank-sdk-rust
+	url = https://github.com/eclipse-ankaios/ank-sdk-rust.git
+[submodule "uprotocol-up-spec"]
+	path = uprotocol-up-spec
+	url = https://github.com/eclipse-uprotocol/up-spec.git
+[submodule "uprotocol-up-cpp"]
+	path = uprotocol-up-cpp
+	url = https://github.com/eclipse-uprotocol/up-cpp.git
+[submodule "uprotocol-up-rust"]
+	path = uprotocol-up-rust
+	url = https://github.com/eclipse-uprotocol/up-rust.git
+[submodule "uprotocol-up-java"]
+	path = uprotocol-up-java
+	url = https://github.com/eclipse-uprotocol/up-java.git
+[submodule "uprotocol-up-core-api"]
+	path = uprotocol-up-core-api
+	url = https://github.com/eclipse-uprotocol/up-core-api.git
+[submodule "uprotocol-up-transport-zenoh-rust"]
+	path = uprotocol-up-transport-zenoh-rust
+	url = https://github.com/eclipse-uprotocol/up-transport-zenoh-rust.git
+[submodule "uprotocol-up-transport-zenoh-cpp"]
+	path = uprotocol-up-transport-zenoh-cpp
+	url = https://github.com/eclipse-uprotocol/up-transport-zenoh-cpp.git
+[submodule "uprotocol-up-transport-mqtt5-rust"]
+	path = uprotocol-up-transport-mqtt5-rust
+	url = https://github.com/eclipse-uprotocol/up-transport-mqtt5-rust.git
+[submodule "uprotocol-up-transport-vsomeip-rust"]
+	path = uprotocol-up-transport-vsomeip-rust
+	url = https://github.com/eclipse-uprotocol/up-transport-vsomeip-rust.git
+[submodule "sdv-blueprints-fleet-management"]
+	path = sdv-blueprints-fleet-management
+	url = https://github.com/eclipse-sdv-blueprints/fleet-management.git
+[submodule "sdv-blueprints-companion-application"]
+	path = sdv-blueprints-companion-application
+	url = https://github.com/eclipse-sdv-blueprints/companion-application.git
+[submodule "sdv-blueprints-service-to-signal"]
+	path = sdv-blueprints-service-to-signal
+	url = https://github.com/eclipse-sdv-blueprints/service-to-signal.git
+[submodule "sdv-blueprints-software-orchestration"]
+	path = sdv-blueprints-software-orchestration
+	url = https://github.com/eclipse-sdv-blueprints/software-orchestration.git
+[submodule "sdv-blueprints-ros-racer"]
+	path = sdv-blueprints-ros-racer
+	url = https://github.com/eclipse-sdv-blueprints/ros-racer.git
+[submodule "sdv-blueprints-insurance"]
+	path = sdv-blueprints-insurance
+	url = https://github.com/eclipse-sdv-blueprints/insurance.git
