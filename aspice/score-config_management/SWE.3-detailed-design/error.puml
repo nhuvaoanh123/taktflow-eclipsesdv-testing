@@ -1,0 +1,23 @@
+@startuml
+
+!startsub ConfigProviderError
+namespace score::platform::config_provider {
+enum ConfigProviderError {
+    kParsingFailed
+    kObjectCastingError
+    kParameterNotFound
+    kValueCastingError
+    kValueNotFound
+    kProxyNotReady
+    kProxyAccessTimeout
+    kProxyReturnedNoResult
+    kEmptyCallbackProvided
+    kCallbackAlreadySet
+    kMethodNotSupported
+    kFailedToSubscribe
+    kParameterSetNotFound
+}
+}
+!endsub
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+namespace score::config_management::config_daemon {
+enum InitialQualifierState{
+    kUndefined
+    kInProgress
+    kDefault
+    kQualifying
+    kUnqualified
+    kQualified
+}
+}
+
+@enduml

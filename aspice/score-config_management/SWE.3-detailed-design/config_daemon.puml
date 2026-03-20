@@ -1,0 +1,29 @@
+@startuml
+
+!startsub IConfigDaemon
+namespace score::config_management::config_daemon {
+abstract class IConfigDaemon {
+}
+}
+!endsub
+
+!startsub ConfigDaemon
+namespace score::config_management::config_daemon {
+class ConfigDaemon {
+  + ConfigDaemon(factory : std::unique_ptr<IFactory>)
+  + Initialize(context : const ApplicationContext&) : std::int32_t
+  + Run(token : const score::cpp::stop_token&) : std::int32_t
+  --
+  - logger_ : mw::log::Logger&
+  - parameterset_collection_ : std::shared_ptr<data_model::IParameterSetCollection>
+  - provided_services_container_ : mw::service::ProvidedServiceContainer
+  - factory_ : std::unique_ptr<IFactory>
+  - plugins_ : std::vector<std::shared_ptr<IPlugin>>
+  - fault_event_reporter_ : std::shared_ptr<fault_event_reporter::IFaultEventReporter>
+  --
+  Responsibilities: This is the main class of ConfigDaemon application.
+}
+}
+!endsub
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+
+!startsub IPluginCollector
+namespace score::config_management::config_daemon {
+abstract class IPluginCollector{
+  + CreatePlugins(): std::vector<std::shared_ptr<IPlugin>>
+}
+}
+!endsub
+
+!startsub PluginCollector
+namespace score::config_management::config_daemon {
+class PluginCollector{
+  + CreatePlugins(): std::vector<std::shared_ptr<IPlugin>>
+  --
+  - plugin_creators_: std::vector<std::unique_ptr<IPluginCreator>>
+  - logger_: mw::log::Logger&
+  --
+  Note: Responsible for Plugins Creation
+}
+PluginCollector --|> IPluginCollector
+}
+!endsub
+
+@enduml

@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,62 +12,134 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _processes_introduction:
+.. _component_architecture_template:
 
-Introduction
-============
+Component Architecture
+======================
 
-.. doc_concept:: Process Meta Model
-   :id: doc_concept__process_meta_model
-   :status: valid
-   :tags: process_management
+.. document:: [Your Component Name] Architecture
+   :id: doc__component_name_architecture
+   :status: draft
+   :safety: ASIL_B
+   :security: NO
+   :realizes: wp__component_arch
+   :tags: template
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. attention::
+    The above directive must be updated according to your needs.
 
-Motivation
-----------
+    - Modify ``Your Component Name`` to be your Component Name
+    - Modify ``id`` to be your Component Name in upper snake case preceded by ``doc__`` and followed by ``_architecture``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``safety`` and ``tags`` according to your needs
 
-The process model aims to establish organization rules for developing
-open source software in the automotive industry, which can be used in safety and security context.
-
-Objectives
-----------
-
-The process model shall provide processes, which conform to state-of the art standards
-
-* :ref:`ASPICE<standard_aspice_pam4>`
-* :ref:`ISO 26262<standard_iso26262>`
-* :ref:`ISO 21434<standard_isosae21434>`
-* :ref:`ISO PAS 8926<standard_isopas8926>`
-
-Approach
+Overview
 --------
+<Brief summary>
 
-1. We aim for a process model as common basis for process documentation (compare figure below).
-2. We work code centric (trace text as code) and iteratively.
-3. We aim to develop the process in conformance to the targeted standards (compare figure below).
-4. We aim to establish traceability from the begin (compare :ref:`general_concepts_traceability`).
-5. We aim to verify conformity and traceability by tool automation as much as possible (compare figure below).
-6. We aim for an iterative collaboration model initiated by change requests (compare :need:`gd_guidl__change_change_request`).
+Requirements Linked to Component Architecture
+---------------------------------------------
+
+.. code-block:: none
+
+   .. needtable:: Overview of Component Requirements
+      :style: table
+      :columns: title;id
+      :filter: search("comp_arch_sta__archdes$", "fulfils_back")
+      :colwidths: 70,30
+
+Description
+-----------
+
+<General Description>
+
+<Design Decisions - For the documentation of the decision the :need:`gd_temp__change_decision_record` can be used.>
+
+<Design Constraints>
+
+Rationale Behind Architecture Decomposition
+*******************************************
+
+Mandatory: A motivation for the decomposition or reason for not further splitting it into internal components.
+
+.. note:: Common decisions across components / cross cutting concepts is at the higher level.
+
+Static Architecture
+-------------------
+
+The components are designed to cover the expectations from the feature architecture
+(i.e. if already exists a definition it should be taken over and enriched).
+
+A component can optional also consist of subcomponents to further structure the architecture. The component and its static views can also optionally use interfaces provided by other components.
+
+.. comp:: Component Name
+   :id: comp__component_name_template
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :implements: logic_arc_int__feature_name__interface_name1
+   :consists_of: comp__archex_sub_component_1, comp__archex_sub_component_2, comp__archex_sub_component_3
+   :belongs_to: feat__feature_name
+
+.. comp_arc_sta:: Component Name (Static View)
+   :id: comp_arc_sta__component_name__static_view
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :belongs_to: comp__component_name_template
+   :uses: logic_arc_int__feature_name__interface_name1
+   :fulfils: comp_req__component_name__some_title
+
+   .. needarch::
+      :scale: 50
+      :align: center
+
+      {{ draw_component(need(), needs) }}
+
+Dynamic Architecture
+--------------------
+
+.. comp_arc_dyn:: Dynamic View
+   :id: comp_arc_dyn__component_name__dynamic_view
+   :security: YES
+   :safety: ASIL_B
+   :status: invalid
+   :belongs_to: comp__component_name_template
+   :fulfils: comp_req__component_name__some_title
+
+   Put here a sequence diagram
 
 
-.. figure:: _assets/score_process_model.drawio.svg
-  :width: 100%
-  :align: center
-  :alt: Overview process model
+Interfaces
+----------
 
-  Overview process model
+.. code-block:: rst
 
-The process model is structured around the concept of :ref:`workflows<workflows>`, which form the core of each :ref:`process<process_areas>`. Each workflow defines the sequence of activities required to achieve specific objectives within the project. The activities linked from these workflows are directly linked to roles, ensuring that responsibilities and accountabilities are clearly assigned throughout the process.
+   .. real_arc_int:: <Title>
+      :id: real_arc_int__<component>__<Title>
+      :security: <YES|NO>
+      :safety: <QM|ASIL_B>
+      :fulfils: <link to component requirement id>
+      :language: cpp
 
-Workflows also establish connections to :ref:`work products<work_products>`, which are often inputs and the tangible outputs or artifacts generated during process execution. Each work product is associated with or requested by relevant :ref:`standards<external_standards>` and :ref:`requirements<process_req>` of these standards, ensuring compliance and traceability.
+Internal Components
+-------------------
 
-To facilitate onboarding and understanding, the process model provides dedicated sections for a "Getting Started" and a detailed "Concept Description" for each process. These resources help Contributors, Committers and other Users quickly familiarize themselves with the process, understand key concepts, and apply best practices throughout process execution and should be read in this order. See :need:`Requirements process getting started<doc_getstrt__req_process>`, :need:`Requirement concept description<doc_concept__req_process>` as examples.
+.. comp_arc_sta:: Component Name Static View
+   :id: comp_arc_sta__component_name__2
+   :status: invalid
+   :safety: ASIL_B
+   :security: YES
+   :fulfils: comp_req__component_name__some_title
+   :belongs_to: comp__component_example_2
 
-The model further integrates an comprehensive guideline (within the "Guidance" section), :ref:`templates<folder_templates>`, checklists and methods for each workflow to support the consistent and efficient execution of processes. See the :need:`Requirement process guideline<gd_guidl__req_engineering>`, the :need:`requirement inspection checklist<doc__feature_name_req_inspection>` and :need:`verification methods<gd_meth__verification_methods>` as examples.
+   No architecture but detailed design
 
-Additionally, the process model incorporates traceability mechanisms, allowing for the verification of conformity to standards such as ASPICE, ISO 26262, and others. The relationships between workflows, roles, work products, and supporting materials are visualized in the process model diagram above, providing a clear overview of how all elements interact to support process development and continuous improvement within the organization.
+.. note::
+   Architecture can be split into multiple files. At component level the public interfaces to be used by the user and tester to be shown.
 
-The process model follows a code-centric, iterative approach that establishes :ref:`traceability<general_concepts_traceability>` according to the :ref:`meta model of the building blocks<general_concepts_building_blocks>` from the beginning and leverages tool automation to verify conformity and traceability as much as possible. Tools are evaluated and :ref:`qualified<tools_template>` by Committers, used by Contributors to execute workflows, and must fulfill defined process requirements to support efficient and compliant process execution.
+.. attention::
+    The above directives must be updated according to your component architecture.
+
+    - Replace the example content by the real content (according to :need:`gd_guidl__arch_design`)
+    - Set the status to valid and start the review/merge process
