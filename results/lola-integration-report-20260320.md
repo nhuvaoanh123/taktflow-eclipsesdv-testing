@@ -178,7 +178,9 @@ Evidence: `bazel-out/k8-fastbuild/bin/` contains all compiled binaries.
 | `proxy_event_base.cpp` | 140 | 162 | **86.4%** |
 | `handle_type.h` | 34 | 36 | **94.4%** |
 
-**Note:** Coverage from `impl:unit_test` only (1 of 252 targets). Full coverage across all tests would be significantly higher.
+**Update:** Full coverage measured across all 251 test targets:
+**638 source files, 17,101 lines, 16,023 lines hit = 93.7% line coverage.**
+The per-file numbers above are from `impl:unit_test` only.
 
 ---
 
@@ -204,7 +206,12 @@ Evidence: `bazel-out/k8-fastbuild/bin/` contains all compiled binaries.
 | Cycle time | 200ms (configured) |
 | **Status** | **PASS — live zero-copy IPC verified** |
 
-### 8.2 CAN → Shared Memory Bridge
+### 8.2 CAN → Shared Memory Bridge (Python Proof-of-Concept — NOT LoLa)
+
+**NOTE:** This section uses a Python script with direct POSIX `/dev/shm` access.
+It does NOT use the LoLa API. It proves the CAN→shared-memory pattern but is
+NOT evidence of LoLa integration. See Section 8.1 and the CAN bridge test report
+(TR-LOLA-CAN-001) for actual LoLa C++ integration evidence.
 
 | Metric | Result |
 |---|---|
@@ -244,7 +251,7 @@ Console output with ~10ms age
 | SAF | Memory Safety | No ASan/LSan violations | **PASS** (0 errors) |
 | SAF | Concurrency Safety | No TSan violations | **PASS** (0 races) |
 | SAF | Behavioral Safety | No UBSan violations | **PASS** (0 UB) |
-| NFR | Performance | IPC latency < 100 µs | **PASS** (622 ns) |
+| NFR | Performance | IPC latency < 100 µs | **PASS** (8-29 µs actual IPC, not 622 ns specifier creation) |
 
 ---
 
