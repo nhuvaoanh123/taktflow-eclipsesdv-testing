@@ -1,0 +1,73 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+Reference Integration Documentation
+===================================
+
+Newest Release Notes
+--------------------
+
+.. needlist::
+   import re
+
+   all_release_notes = []
+
+   for need in needs:
+      if "wp__platform_sw_release_note" in need["realizes"]:
+         all_release_notes.append(need)
+
+   newest_release_note = max(all_release_notes, key=lambda s: int(re.search(r'v(\d+)', s["id"]).group(1)))
+   results = [newest_release_note]
+
+Current Integration Status Overview
+-----------------------------------
+
+`View dashboard (points always to main for now) <https://eclipse-score.github.io/reference_integration/main/status_dashboard.html>`_
+
+Explore the documentation
+-------------------------
+.. toctree::
+   :caption: Software Components
+   :titlesonly:
+   :maxdepth: 1
+
+
+   _collections/score_persistency/docs/index
+   _collections/score_orchestrator/docs/index
+   _collections/score_kyron/docs/index
+   _collections/score_baselibs/docs/index
+   _collections/score_baselibs_rust/docs/index
+   _collections/score_logging/docs/index
+
+.. toctree::
+   :caption: Process, Methods, and Tools
+   :titlesonly:
+   :maxdepth: 1
+
+   _collections/score_platform/docs/index
+   _collections/score_process/process/index
+   _collections/score_docs_as_code/docs/index
+
+.. toctree::
+   :caption: Code Quality
+   :titlesonly:
+   :glob:
+
+   verification/verification
+
+.. toctree::
+   :hidden:
+   :glob:
+
+   verification/*
