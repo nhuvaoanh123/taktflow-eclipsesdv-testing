@@ -1,0 +1,53 @@
+{
+  "serviceTypes": [
+    {
+      "serviceTypeName": "/taktflow/VehicleSignals",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "bindings": [
+        {
+          "binding": "SHM",
+          "serviceId": 7001,
+          "events": [
+            {
+              "eventName": "vehicle_signals",
+              "eventId": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "serviceInstances": [
+    {
+      "instanceSpecifier": "taktflow/vehicle_signals",
+      "serviceTypeName": "/taktflow/VehicleSignals",
+      "version": {
+        "major": 1,
+        "minor": 0
+      },
+      "instances": [
+        {
+          "instanceId": 1,
+          "allowedConsumer": {
+            "QM": [0]
+          },
+          "allowedProvider": {
+            "QM": [0]
+          },
+          "asil-level": "QM",
+          "binding": "SHM",
+          "events": [
+            {
+              "eventName": "vehicle_signals",
+              "numberOfSampleSlots": 10,
+              "maxSubscribers": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
