@@ -1,0 +1,73 @@
+{
+  "module": "score-communication (LoLa)",
+  "version": "0.1.4",
+  "date": "2026-03-21",
+  "tests": {
+    "upstream_unit": {
+      "total": 252,
+      "pass": 252,
+      "fail": 0,
+      "skip": 1
+    },
+    "asan_ubsan_lsan": {
+      "total": 252,
+      "pass": 252,
+      "fail": 0
+    },
+    "tsan": {
+      "total": 224,
+      "pass": 224,
+      "fail": 0,
+      "skip": 29
+    },
+    "clang_tidy": {
+      "files": 841,
+      "warnings": 0
+    },
+    "coverage": {
+      "files": 638,
+      "lines_total": 17101,
+      "lines_hit": 16023,
+      "pct": 93.7
+    }
+  },
+  "latency_us": {
+    "samples": 500,
+    "min": 10,
+    "p50": 28,
+    "p90": 39,
+    "p95": 43,
+    "p99": 54,
+    "max": 64,
+    "mean": 29.8
+  },
+  "can_bridge": {
+    "sil_vcan0": {
+      "samples": 20,
+      "lidar_match": true,
+      "rpm_match": true
+    },
+    "real_can0": {
+      "samples": 15,
+      "alive_counter_wrap": true,
+      "signals_correct": true
+    }
+  },
+  "findings": [
+    {
+      "id": "FINDING-001",
+      "severity": "high",
+      "issue": "communication#220"
+    },
+    {
+      "id": "FINDING-002",
+      "severity": "medium",
+      "issue": "toolchains_qnx#46"
+    },
+    {
+      "id": "FINDING-003",
+      "severity": "info",
+      "desc": "ASIL-B is QNX-only by design"
+    }
+  ]
+}
