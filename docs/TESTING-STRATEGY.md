@@ -1,10 +1,11 @@
 ---
 document_id: TS-001
 title: "Eclipse SDV + S-CORE Testing Strategy"
-version: "1.0"
+version: "2.0"
 status: active
 date: 2026-03-21
 lessons_from: "LoLa pilot (score-communication) — 66 gaps found, 22 closed"
+aligned_with: "Eclipse S-CORE upstream testing practices (researched 2026-03-21)"
 ---
 
 # Testing Strategy
@@ -334,3 +335,317 @@ All findings (bugs, issues, unexpected behavior) tracked here and filed upstream
 
 **This strategy was written after making every mistake listed in Section 4.
 Follow it to avoid making them again.**
+
+---
+
+## 11. CI/CD Pipeline (Aligned with S-CORE Upstream)
+
+S-CORE runs 6 CI workflows per module. We adopt the same pattern.
+
+### 11.1 Required Workflows Per Module
+
+```yaml
+# .github/workflows/{module}-build.yml
+on: [push, pull_request]
+jobs:
+  build_and_test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        config: ["", "--config=linux_x86_64_score_gcc_12_2_0_posix"]
+    steps:
+      - uses: actions/checkout@v4
+        with: {submodules: recursive}
+      - uses: bazel-contrib/setup-bazel@0.18.0
+      - run: bazel build ${{ matrix.config }} //...
+      - run: bazel test ${{ matrix.config }} //... --build_tests_only
+
+  sanitizers:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {submodules: recursive}
+      - uses: bazel-contrib/setup-bazel@0.18.0
+      - run: bazel test --config=asan_ubsan_lsan //... --build_tests_only
+      - run: bazel test --config=tsan //... --build_tests_only
+
+  coverage:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {submodules: recursive}
+      - uses: bazel-contrib/setup-bazel@0.18.0
+      - run: bazel coverage //... --combined_report=lcov
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: bazel-out/_coverage/_coverage_report.dat
+
+  regression:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with: {submodules: recursive}
+      - run: |
+          sudo modprobe vcan
+          sudo ip link add vcan0 type vcan
+          sudo ip link set up vcan0
+      - run: bash scripts/regression-test-lola.sh
+```
+
+### 11.2 Quality Gates (Blocking PR Merge)
+
+| Gate | Threshold | Upstream Practice |
+|---|---|---|
+| Build | Exit 0, zero warnings | Same |
+| Unit tests | 100% pass | Same |
+| ASan/UBSan/LSan | Zero violations | Same |
+| TSan | Zero data races | Same (excluded from integration tests) |
+| Coverage | >80% line for ASIL-B components | Same |
+| Regression | All known-input tests pass | Our addition |
+| Format | clang-format clean | Same |
+| Copyright | Headers present | Same |
+
+---
+
+## 12. Integration Test Environments (Aligned with S-CORE)
+
+### 12.1 Docker (Linux Testing)
+
+S-CORE uses OCI images built by Bazel with `rules_oci`. We adopt their pattern:
+
+```
+Environment: Ubuntu 24.04 Docker container
+Shared memory: 1 GB (required for LoLa)
+Init process: enabled (signal handling)
+Auto-cleanup: container removed after test
+Packages: bash, binutils, coreutils, libatomic1, libstdc++6
+```
+
+**Usage:** `bazel test //quality/integration_testing/...`
+
+Already works — we just haven't used it. S-CORE's Docker integration
+test infrastructure is in `score-communication/quality/integration_testing/`.
+
+### 12.2 QNX QEMU (Target Testing)
+
+S-CORE runs QNX in QEMU for CI target testing:
+
+```
+Runner: QEMU aarch64 or x86_64 user-mode
+Serial: Multi-serial-port harness (16 channels)
+Process isolation: Each process gets dedicated serial device
+Exit code: Sentinel line in serial output ("EXIT_CODE=N")
+```
+
+**Status:** Blocked by toolchains_qnx#46 (checksum stale).
+When unblocked, `score-communication/quality/integration_testing/environments/qnx8_qemu/`
+has the full QEMU runner ready.
+
+### 12.3 Physical Bench (Our Addition)
+
+Not in S-CORE upstream — this is our contribution:
+
+```
+CAN interface: can0 (USB CAN adapter to physical ECUs)
+ECUs: STM32 (G474RE, F413ZH, L552ZE) + TMS570
+Bus: 500 kbps, 120Ω terminated
+Signals: Decoded per taktflow_vehicle.dbc + taktflow_sil.dbc
+```
+
+---
+
+## 13. Traceability Automation (Aligned with S-CORE TRLC/Lobster)
+
+### 13.1 Upstream Approach
+
+S-CORE uses TRLC (requirement language) + Lobster (traceability engine):
+
+```
+Requirements (.trlc)  →  Lobster config  →  Traceability report
+     ↑                       ↑                     ↑
+  AssumedSystemReq       lobster_*.yaml       auto-generated
+  FeatReq                maps types to         shows gaps,
+  CompReq                Lobster needs          orphans,
+  FailureMode                                   coverage
+  AoU (control measures)
+```
+
+The `safety_software_unit` Bazel rule links everything:
+```python
+safety_software_unit(
+    reqs = [":requirements.trlc"],    # What to build
+    impl = [":source_files"],          # Code that implements it
+    design = [":plantuml_diagrams"],   # How it's designed
+    tests = [":unit_tests"],           # How it's verified
+)
+```
+
+### 13.2 Our Adoption Path
+
+**Phase 1 (now):** Continue with markdown requirements + `@verifies` tags.
+Use `trace-gen.py` pattern from taktflow-embedded for automated validation.
+
+**Phase 2 (Sprint 2):** Convert 65 requirements to TRLC format.
+Install TRLC + Lobster. Generate automated traceability reports.
+
+**Phase 3 (Sprint 4):** Adopt `safety_software_unit` Bazel rule for
+our bridge code. Full automated req→design→impl→test linkage.
+
+### 13.3 Tag Convention (Immediate)
+
+In C++ source code:
+```cpp
+/// @safety_req SSR-COM-SHM-001
+void SharedMemoryLayout::writeSlot() { ... }
+```
+
+In C++ test code:
+```cpp
+/// @verifies SWR-COM-SHM-001
+TEST(SharedMemTest, WriteSlot_CRC) { ... }
+```
+
+In Python test code:
+```python
+@pytest.mark.verifies("SWR-COM-SHM-001")
+def test_write_slot_crc():
+```
+
+---
+
+## 14. Verification Methods Catalog (Aligned with S-CORE Process)
+
+S-CORE defines 8 verification methods. We track which ones we apply per module.
+
+| # | Method | Description | Applied to LoLa? |
+|---|---|---|---|
+| 1 | **Structural coverage** | Statement + branch coverage (white-box) | YES — 93.7% line |
+| 2 | **Interface testing** | Parameter passing, data format, protocol, error, stress | YES — CAN decoder, LoLa API |
+| 3 | **Fault injection** | Error code injection, data corruption, process crash | PARTIAL — crash + malformed tested |
+| 4 | **Boundary value analysis** | Min, max, just-above, just-below, nominal | YES — DLC 0-8, max values |
+| 5 | **Equivalence classes** | Valid, invalid, special input partitions | PARTIAL — valid + invalid DLC |
+| 6 | **Fuzz testing** | Semi-random malformed input | YES — edge-case CAN frames |
+| 7 | **Inspection** | Manual code walkthrough | NO — not done |
+| 8 | **Analysis** | Control/data flow analysis | NO — not done |
+
+**Rule:** For ASIL-B components, methods 1-6 are mandatory.
+Methods 7-8 are recommended.
+
+Each test file should declare which method it implements:
+```python
+class TestDecoder:
+    """Verification method: boundary value analysis (#4) + equivalence classes (#5)."""
+```
+
+---
+
+## 15. Static Analysis (Aligned with S-CORE CodeQL)
+
+### 15.1 Upstream Practice
+
+S-CORE uses CodeQL with MISRA-C++ coding standards:
+```bash
+bazel test --config=codeql //...
+# → SARIF output + CSV report
+```
+
+Plus clang-tidy with project-specific `.clang-tidy` config.
+
+### 15.2 Our Practice
+
+| Tool | Status | Target |
+|---|---|---|
+| clang-tidy | Running (0 warnings on LoLa) | Continue — gate in CI |
+| CodeQL/MISRA | Not yet | Add for our bridge code |
+| cppcheck | Not yet | Consider for bridge code |
+| Clippy (Rust) | N/A | When Rust modules tested |
+
+**Rule:** Static analysis must run before claiming code quality.
+"Compiles without error" is not "code quality verified."
+
+---
+
+## 16. Multi-Config Matrix Testing (Aligned with S-CORE)
+
+S-CORE tests with 3+ compiler configs per PR:
+
+| Config | Compiler | Purpose |
+|---|---|---|
+| Default | GCC 15.2.0 | Primary development |
+| LLVM | Clang 19.1.7 | Cross-compiler validation |
+| GCC 12 | GCC 12.2.0 | S-CORE standard toolchain |
+| QNX | QCC 12.2.0 | Target platform |
+| Release | `-c opt` | Performance measurement |
+
+**Our practice:** Test with at least default + release configs.
+Add LLVM when CI pipeline is set up.
+
+---
+
+## 17. Test Metadata and Derivation (Aligned with S-CORE)
+
+S-CORE annotates each test with:
+- **TestType:** What method was used (boundary, fuzz, interface, etc.)
+- **DerivationTechnique:** How the test was derived (requirement, risk, experience)
+- **RequirementLink:** Which requirement this test verifies
+
+**Our adoption:** Add to every test function:
+```python
+@pytest.mark.metadata(
+    method="boundary_value_analysis",
+    derived_from="SWR-COM-SHM-001",
+    platform="x86_64-linux",
+)
+def test_decode_lidar_max_distance():
+    """Boundary: max distance_cm = 1200 (DBC range [0|1200])."""
+```
+
+---
+
+## 18. Cross-Module Integration (Aligned with S-CORE Reference Integration)
+
+S-CORE's `score-reference_integration` repo builds all modules together
+and runs feature integration tests across module boundaries.
+
+**Our equivalent:** Build and test S-CORE modules together:
+
+```
+Phase 1 (done): LoLa alone — 252 tests pass
+Phase 2 (next): LoLa + baselibs — verify shared memory foundation
+Phase 3: LoLa + lifecycle — health monitoring of LoLa processes
+Phase 4: LoLa + persistency — store vehicle signals
+Phase 5: Full stack — all S-CORE modules + CAN bridge
+```
+
+Each phase requires:
+1. All previous phase modules still build together
+2. New module's upstream tests pass
+3. Cross-module integration test passes
+4. No regression in previous module tests
+
+---
+
+## 19. Summary: Our Strategy vs Upstream
+
+| Practice | S-CORE Upstream | Our Strategy v2 | Status |
+|---|---|---|---|
+| CI per PR | 6 workflows | Defined in §11 | To implement |
+| Multi-config matrix | 3+ configs | 2 configs (default + release) | To implement |
+| Docker integration | OCI + custom runner | Use their infra directly | Ready |
+| QNX QEMU | Multi-serial harness | Use their infra when unblocked | Blocked |
+| TRLC requirements | Full TRLC pipeline | Phase 1: markdown, Phase 2: TRLC | Phase 1 |
+| Lobster traceability | Automated | Phase 1: manual, Phase 2: Lobster | Phase 1 |
+| CodeQL/MISRA | SARIF output | To add | To implement |
+| 8 verification methods | All defined | 6/8 applied to LoLa | Ongoing |
+| Test metadata | Per-test annotation | Defined in §17 | To implement |
+| Reference integration | Cross-module build | Defined in §18 | Phase 1 done |
+| Sanitizers | ASan+UBSan+LSan+TSan | Same | Done |
+| Coverage | >80% line ASIL-B | 93.7% achieved for LoLa | Done |
+| Real hardware testing | Not in upstream | Our bench (CAN + ECUs) | Done |
+| Multi-perspective review | Not in upstream | 10 perspectives, 66 gaps | Done |
+| Ground truth verification | Not in upstream | DBC decode comparison | Done |
+
+**Key insight:** S-CORE has better automation and process rigor.
+We have better real-world validation and gap discovery methodology.
+The combined strategy is stronger than either alone.
