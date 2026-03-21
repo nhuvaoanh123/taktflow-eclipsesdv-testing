@@ -28,12 +28,12 @@ asil: QM (first integration, safety qualification pending)
 
 | Component | Specification | Role |
 |---|---|---|
-| Laptop | ASUS TUF Gaming A17 FA707NV | Test host (SUT + test runner) |
+| Laptop | Linux Laptop | Test host (SUT + test runner) |
 | CPU | AMD Ryzen 7, 16 cores @ 4830 MHz | Builds and runs all processes |
 | RAM | 14 GB DDR5 | Shared memory allocation |
 | Disk | 480 GB NVMe, 415 GB free | Bazel cache + build artifacts |
 | USB CAN Adapter | OpenMoko Geschwister Schneider (1d50:606f) | Connected to can0 (not used in this test) |
-| Network | WiFi 192.168.0.158 (via Linksys RE3000X extender) | SSH access from desktop |
+| Network | WiFi <laptop-ip> | SSH access from desktop |
 
 ### 2.2 Software
 
@@ -67,7 +67,7 @@ asil: QM (first integration, safety qualification pending)
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  Laptop (192.168.0.158) — Ubuntu 24.04                       │
+│  Laptop (<laptop-ip>) — Ubuntu 24.04                       │
 │                                                              │
 │  ┌─────────────────┐    ┌──────────────────────────────────┐ │
 │  │ can_gateway.main │    │ CAN→LoLa Bridge (can_bridge)    │ │

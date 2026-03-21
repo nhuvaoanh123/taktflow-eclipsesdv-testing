@@ -1,7 +1,7 @@
 # LoLa (score-communication) Integration Report
 
 **Date:** 2026-03-20
-**Host:** an-dao-ASUS-TUF-Gaming-A17 (Ubuntu 24.04.4, 16 cores, 14GB RAM)
+**Host:** Linux Laptop (Ubuntu 24.04.4, 16 cores, 14GB RAM)
 **Project:** taktflow-eclipsesdv-testing
 **Module:** Eclipse S-CORE Communication (LoLa) v0.1.4
 

@@ -1,7 +1,7 @@
 # LoLa (score-communication) Assessment Report
 
 **Date:** 2026-03-20
-**Host:** an-dao-ASUS-TUF-Gaming-A17-FA707NV (SSH from Windows desktop)
+**Host:** <linux-laptop> (SSH from Windows desktop)
 **OS:** Ubuntu 24.04.4 LTS, Kernel 6.17.0-19-generic
 **CPU:** 16 cores @ 4830 MHz (AMD Ryzen 7)
 **RAM:** 14 GB

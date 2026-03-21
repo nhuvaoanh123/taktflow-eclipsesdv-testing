@@ -75,7 +75,7 @@ def can_interface(request):
 
 @pytest.fixture(scope="session")
 def pi_host():
-    return "192.168.137.184"
+    return "<pi-ip>"
 
 
 # ── Helpers ──────────────────────────────────────────────────────────

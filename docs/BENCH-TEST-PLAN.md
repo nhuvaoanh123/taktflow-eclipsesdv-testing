@@ -12,7 +12,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│  Linux Laptop (192.168.0.158) ◄── SDV HOST (all Eclipse SDV here)  │
+│  Linux Laptop (<laptop-ip>) ◄── SDV HOST (all Eclipse SDV here)  │
 │  ├── Ankaios (ank-server + ank-agent)                               │
 │  ├── Kuksa Databroker (container or native)                         │
 │  ├── CAN Provider (reads CAN via USB adapter)                       │
@@ -35,9 +35,9 @@
                                      │  │F413ZH│ │L552ZE│  │
 ┌───────────────────────┐            │  │ RZC  │ │ HSM  │  │
 │  Desktop PC           │            │  └──────┘ └──────┘  │
-│  192.168.0.105        │            └─────────────────────┘
+│  <pc-ip>        │            └─────────────────────┘
 │  ├── Build server     │
-│  ├── Rigol DHO804 ────┼──── 192.168.1.100:5555 (SCPI)
+│  ├── Rigol DHO804 ────┼──── <rigol-ip>:5555 (SCPI)
 │  └── Flash tools      │
 └───────────────────────┘
 
@@ -109,15 +109,15 @@ can:
   provider_dbc: config/vehicle.dbc
 
 rigol:
-  host: 192.168.1.100
+  host: <rigol-ip>
   scpi_port: 5555
 
 bench:
   ecus:
-    cvc: { can_id_base: 0x100, uart_port: COM9,  baud: 115200 }
-    rzc: { can_id_base: 0x200, uart_port: COM15, baud: 115200 }
-    fzc: { can_id_base: 0x300, uart_port: COM3,  baud: 115200 }
-    hsm: { can_id_base: 0x400, uart_port: COM7,  baud: 115200 }
+    cvc: { can_id_base: 0x100, uart_port: <uart-cvc>,  baud: 115200 }
+    rzc: { can_id_base: 0x200, uart_port: <uart-rzc>, baud: 115200 }
+    fzc: { can_id_base: 0x300, uart_port: <uart-fzc>,  baud: 115200 }
+    hsm: { can_id_base: 0x400, uart_port: <uart-hsm>,  baud: 115200 }
 ```
 
 ### 1.6 New Fixtures (conftest.py extensions)
@@ -126,7 +126,7 @@ bench:
 |---------|-------|-------------|
 | `ankaios_client` | session | gRPC connection to Ankaios API (localhost) |
 | `can_interface` | session | python-can interface for `can0` (USB CAN) or `vcan0` |
-| `rigol_scope` | session | SCPI TCP connection to Rigol at 192.168.1.100:5555 |
+| `rigol_scope` | session | SCPI TCP connection to Rigol at <rigol-ip>:5555 |
 | `ssh_pi` | session | paramiko SSH session to Pi (for QNX RTOS monitoring/CAN gateway control) |
 | `databroker_client` | session | gRPC connection to Kuksa databroker (localhost) |
 
@@ -651,7 +651,7 @@ pytest tests/ -k "KCP" --target=qnx -v
 | R4 | Stale modules won't build (5 stale, 16 slowing) | Blocks Phase 4-5 | High | Document build failure as result; do not block other phases |
 | R5 | Module interdependency failures cascade | Multiple test failures | Low | Strict layer-by-layer execution; mock missing layers |
 | R6 | Laptop resource constraints (RAM/CPU) | Cannot run all containers simultaneously | Low | Limit concurrent containers; prioritize databroker + CAN provider |
-| R7 | Rigol not connected (Ethernet 192.168.1.100) | Cannot verify CAN timing | Low | Skip Rigol-dependent tests; defer to manual verification |
+| R7 | Rigol not connected (Ethernet <rigol-ip>) | Cannot verify CAN timing | Low | Skip Rigol-dependent tests; defer to manual verification |
 | R8 | Android SDK not available on laptop | Cannot build Kuksa Android SDK | Medium | Mark KAS-B-01 as SKIP; no Android device on bench anyway |
 
 ---

@@ -15,7 +15,7 @@ date: 2026-03-21
 | Proxy | Standard proxy with age measurement |
 | Samples | 500 |
 | Build | Debug (fastbuild) |
-| Host | ASUS TUF A17, AMD Ryzen 7, 16 cores, 14GB RAM |
+| Host | Linux Laptop (AMD Ryzen 7, 16 cores, 14GB RAM) |
 
 ## Results
 

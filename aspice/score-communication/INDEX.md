@@ -93,7 +93,7 @@ verifies:
 
 ```markdown
 <!-- HITL-LOCK START:COMMENT-BLOCK-FSR-COM-001 -->
-**HITL Review (An Dao) — Reviewed: YYYY-MM-DD:** [Review comment]
+**HITL Review (<reviewer>) — Reviewed: YYYY-MM-DD:** [Review comment]
 <!-- HITL-LOCK END:COMMENT-BLOCK-FSR-COM-001 -->
 ```
 

@@ -360,5 +360,5 @@ pip install conan
 pip install pytest pytest-asyncio grpcio grpcio-tools kuksa-client paho-mqtt pyyaml
 
 # Clone with all submodules
-git clone --recursive https://github.com/nhuvaoanh123/taktflow-eclipsesdv-testing.git
+git clone --recursive https://github.com/<your-org>/taktflow-eclipsesdv-testing.git
 ```

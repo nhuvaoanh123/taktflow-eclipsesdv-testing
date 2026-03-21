@@ -34,7 +34,7 @@ Qualification Environment
      - Raspberry Pi 4 (QNX 8.0)
      - Part of 3-chip SoC: Pi + TMS570 + L552ZE
    * - Linux Laptop
-     - ASUS TUF A17 (Linux)
+     - Linux Laptop
      - SDV stack host, test runner, USB CAN
    * - HIL Bench
      - Full bench

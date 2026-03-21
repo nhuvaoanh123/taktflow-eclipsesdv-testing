@@ -108,7 +108,7 @@ Same work, 10 different eyes. Each stakeholder asks different questions.
 |---|---|---|
 | No single README for the bridge | High | To understand what we built, you'd have to read 8 result files + 3 scripts + the patches directory. No single "start here" document. |
 | Build instructions scattered | Medium | Some steps in `assess-lola.sh`, some in test reports, some in gap analysis. No single build-and-run guide. |
-| Depends on laptop SSH access | Medium | Can't reproduce without SSH to `192.168.0.158`. If laptop is off or IP changes, everything breaks. |
+| Depends on laptop SSH access | Medium | Can't reproduce without SSH to `<laptop-ip>`. If laptop is off or IP changes, everything breaks. |
 | No development environment setup | Medium | We used the laptop's existing environment. No Dockerfile, no devcontainer, no `nix-shell` for reproducible setup. |
 | Gap analysis requires reading 5 versions | Low | v1→v2→v3→v4→v5 — new person has to read all 5 to understand current state. Should be one document. |
 | No architecture decision records | Low | Why LoLa? Why not Kuksa? Why C++ bridge not Python? Decisions are in chat history, not documented. |
