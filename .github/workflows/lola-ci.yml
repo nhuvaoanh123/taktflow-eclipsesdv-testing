@@ -1,0 +1,134 @@
+name: LoLa (score-communication) CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'score-communication/**'
+      - 'score-communication-patches/**'
+      - 'scripts/regression-test-lola.sh'
+      - 'tests/score-communication/**'
+  pull_request:
+    paths:
+      - 'score-communication/**'
+      - 'score-communication-patches/**'
+      - 'tests/score-communication/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build + Unit Tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: bazel-contrib/setup-bazel@0.18.0
+        with:
+          bazelisk-cache: true
+          disk-cache: lola-build
+          repository-cache: true
+
+      - name: Allow linux-sandbox (Ubuntu 24.04 AppArmor workaround)
+        run: bash score-communication/actions/unblock_user_namespace_for_linux_sandbox/action_callable.sh
+
+      - name: Build all targets
+        working-directory: score-communication
+        run: bazel build //...
+
+      - name: Run unit + integration tests
+        working-directory: score-communication
+        run: bazel test //... --build_tests_only --test_output=summary
+
+  sanitizers:
+    name: Sanitizers (ASan+UBSan+LSan)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    needs: build-and-test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: bazel-contrib/setup-bazel@0.18.0
+        with:
+          bazelisk-cache: true
+          disk-cache: lola-sanitizer
+          repository-cache: true
+
+      - name: Allow linux-sandbox
+        run: bash score-communication/actions/unblock_user_namespace_for_linux_sandbox/action_callable.sh
+
+      - name: ASan + UBSan + LSan
+        working-directory: score-communication
+        run: bazel test --config=asan_ubsan_lsan //... --build_tests_only --test_output=errors
+
+  coverage:
+    name: Code Coverage
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    needs: build-and-test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: bazel-contrib/setup-bazel@0.18.0
+        with:
+          bazelisk-cache: true
+          disk-cache: lola-coverage
+          repository-cache: true
+
+      - name: Allow linux-sandbox
+        run: bash score-communication/actions/unblock_user_namespace_for_linux_sandbox/action_callable.sh
+
+      - name: Generate coverage
+        working-directory: score-communication
+        run: bazel coverage //... --combined_report=lcov
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: score-communication/bazel-out/_coverage/_coverage_report.dat
+          retention-days: 30
+
+  regression:
+    name: Regression Tests (vcan0)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    needs: build-and-test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: bazel-contrib/setup-bazel@0.18.0
+        with:
+          bazelisk-cache: true
+          disk-cache: lola-regression
+          repository-cache: true
+
+      - name: Allow linux-sandbox
+        run: bash score-communication/actions/unblock_user_namespace_for_linux_sandbox/action_callable.sh
+
+      - name: Build CAN bridge
+        working-directory: score-communication
+        run: bazel build //score/mw/com/example/can_bridge:can_bridge
+
+      - name: Setup vcan0
+        run: |
+          sudo modprobe vcan
+          sudo ip link add dev vcan0 type vcan
+          sudo ip link set up vcan0
+
+      - name: Install python-can
+        run: pip install python-can
+
+      - name: Run regression test
+        run: bash scripts/regression-test-lola.sh
