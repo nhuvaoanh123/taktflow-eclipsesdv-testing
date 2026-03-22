@@ -1,0 +1,92 @@
+{
+  "document_id": "ASSESS-LC-001-RESULTS",
+  "date": "2026-03-22",
+  "module": {
+    "name": "score_lifecycle_health",
+    "version": "0.0.0",
+    "languages": ["C++", "Rust"],
+    "platforms": ["Linux", "QNX7", "QNX8"],
+    "asil": "QM",
+    "safety_aspects": ["health_monitor"]
+  },
+  "components": [
+    {
+      "name": "control_client_lib",
+      "language": "C++",
+      "type": "library"
+    },
+    {
+      "name": "health_monitoring_lib",
+      "language": "Rust",
+      "type": "library",
+      "safety_relevant": true
+    },
+    {
+      "name": "launch_manager_daemon",
+      "language": "C++",
+      "type": "daemon"
+    },
+    {
+      "name": "lifecycle_client_lib",
+      "language": "C++",
+      "type": "library"
+    },
+    {
+      "name": "process_state_client_lib",
+      "language": "C++",
+      "type": "library"
+    }
+  ],
+  "tests": {
+    "upstream_unit": {
+      "total_targets": 5,
+      "rust_targets": 2,
+      "cpp_gtest_targets": 1,
+      "cc_test_targets": 2,
+      "status": "not_executed"
+    },
+    "clippy": {
+      "config": "cargo clippy -- -D warnings",
+      "status": "not_executed"
+    },
+    "miri": {
+      "config": "cargo +nightly miri test",
+      "status": "not_executed"
+    },
+    "sanitizers": {
+      "asan": {
+        "config": "--define sanitize=address",
+        "status": "not_executed"
+      },
+      "tsan": {
+        "config": "--define sanitize=thread",
+        "status": "not_executed"
+      },
+      "ubsan": {
+        "config": "--define sanitize=undefined",
+        "status": "not_executed"
+      }
+    },
+    "coverage": {
+      "cpp": {
+        "target_percent": 76,
+        "actual_percent": null,
+        "config": "bazel coverage //src/...",
+        "status": "not_executed"
+      },
+      "rust": {
+        "target_percent": 93,
+        "actual_percent": null,
+        "config": "ferrocene-coverage",
+        "status": "not_executed"
+      }
+    }
+  },
+  "gaps": {
+    "total": 12,
+    "open": 12,
+    "closed": 0,
+    "blocked": 0
+  },
+  "findings": []
+}

@@ -1,0 +1,140 @@
+{
+  "module": "score-baselibs",
+  "version": "0.2.4",
+  "date": "2026-03-22",
+  "status": "partial",
+  "taktflow_tests": {
+    "api_contract": {
+      "total": 102,
+      "pass": 102,
+      "fail": 0,
+      "skip": 0,
+      "note": "API surface stability verified — all headers, mocks, BUILD files confirmed"
+    },
+    "dependency_chain": {
+      "total": 36,
+      "pass": 36,
+      "fail": 0,
+      "skip": 0,
+      "note": "LoLa transitive proof, downstream deps, registry, cross-component headers"
+    },
+    "safety_contracts": {
+      "total": 42,
+      "pass": 42,
+      "fail": 0,
+      "skip": 0,
+      "note": "ASIL-B component structure, abort handler, safe math, no-exceptions, mock coverage"
+    },
+    "benchmarks": {
+      "total": 8,
+      "pass": 2,
+      "fail": 0,
+      "skip": 6,
+      "note": "Module config verified; benchmark sources need Bazel to discover"
+    },
+    "total": {
+      "pass": 186,
+      "fail": 0,
+      "skip": 6,
+      "total": 192
+    }
+  },
+  "upstream_tests": {
+    "unit": {
+      "test_files": 363,
+      "bazel_targets": 296,
+      "pass": null,
+      "fail": null,
+      "skip": null,
+      "note": "Requires Bazel on Linux — 296 cc_test targets identified"
+    },
+    "asan_ubsan_lsan": {
+      "total": 296,
+      "pass": null,
+      "fail": null,
+      "note": "Requires Bazel on Linux"
+    },
+    "tsan": {
+      "total": null,
+      "pass": null,
+      "fail": null,
+      "note": "Requires Bazel on Linux"
+    },
+    "clang_tidy": {
+      "files": 1487,
+      "warnings": null,
+      "note": "Requires Bazel on Linux"
+    },
+    "coverage": {
+      "files": null,
+      "lines_total": null,
+      "lines_hit": null,
+      "pct": null,
+      "target_pct": 80.0,
+      "note": "Requires Bazel on Linux — upstream CI runs lcov"
+    }
+  },
+  "components": {
+    "os": {"asil": "B", "test_files": 96, "bazel_targets": 44, "mock_coverage_pct": 80.9, "status": "api_verified"},
+    "memory_shared": {"asil": "B", "test_files": 39, "bazel_targets": 23, "mock_coverage_pct": 13.6, "status": "api_verified"},
+    "concurrency": {"asil": "B", "test_files": 29, "bazel_targets": 15, "mock_coverage_pct": 10.0, "status": "api_verified"},
+    "language": {"asil": "B/QM", "test_files": 99, "bazel_targets": 11, "status": "api_verified"},
+    "mw_log": {"asil": "QM", "test_files": 33, "bazel_targets": 26, "mock_coverage_pct": 7.7, "status": "api_verified"},
+    "json": {"asil": "QM", "test_files": 13, "bazel_targets": 4, "status": "api_verified"},
+    "result": {"asil": "B", "test_files": 11, "bazel_targets": 4, "status": "api_verified"},
+    "filesystem": {"asil": "QM", "test_files": 19, "bazel_targets": 2, "mock_coverage_pct": 50.0, "status": "api_verified"},
+    "network": {"asil": "QM", "test_files": 11, "bazel_targets": 5, "status": "api_verified"},
+    "containers": {"asil": "QM", "test_files": 5, "bazel_targets": 6, "status": "api_verified"},
+    "bitmanipulation": {"asil": "QM", "test_files": 2, "bazel_targets": 3, "status": "api_verified"},
+    "datetime_converter": {"asil": "QM", "test_files": 2, "bazel_targets": 2, "status": "api_verified"},
+    "analysis_tracing": {"asil": "QM", "test_files": 2, "status": "api_verified"},
+    "utils": {"asil": "QM", "test_files": 2, "bazel_targets": 3, "status": "api_verified"}
+  },
+  "mock_completeness": {
+    "os": {"api_headers": 47, "mocks": 54, "coverage_pct": 80.9, "status": "GOOD"},
+    "memory_shared": {"api_headers": 22, "mocks": 3, "coverage_pct": 13.6, "status": "CRITICAL"},
+    "concurrency": {"api_headers": 20, "mocks": 2, "coverage_pct": 10.0, "status": "CRITICAL"},
+    "filesystem": {"api_headers": 6, "mocks": 3, "coverage_pct": 50.0, "status": "MODERATE"},
+    "mw_log": {"api_headers": 13, "mocks": 1, "coverage_pct": 7.7, "status": "CRITICAL"}
+  },
+  "gaps": {
+    "total": 12,
+    "closed": 4,
+    "blocked": 2,
+    "open": 6,
+    "details": {
+      "GAP-010": "CLOSED — LoLa 252/252 transitively proves baselibs",
+      "GAP-011": "CLOSED — Mock analysis complete: OS 80.9%, memory 13.6%, concurrency 10.0%",
+      "GAP-005": "BLOCKED — QNX toolchain checksum stale (same as LoLa)",
+      "GAP-006": "BLOCKED — No QNX target",
+      "GAP-001": "OPEN — Build verification needs Linux bench",
+      "GAP-002": "OPEN — Unit test execution needs Linux bench",
+      "GAP-003": "OPEN — Sanitizer run needs Linux bench",
+      "GAP-004": "OPEN — TSan run needs Linux bench",
+      "GAP-008": "OPEN — Coverage needs Linux bench",
+      "GAP-012": "OPEN — Security fuzzing not started"
+    }
+  },
+  "findings": [
+    {
+      "id": "FINDING-BL-001",
+      "severity": "medium",
+      "desc": "Mock coverage critically low for concurrency (10%), memory/shared (13.6%), mw/log (7.7%). Only OS has good coverage (80.9%)."
+    },
+    {
+      "id": "FINDING-BL-002",
+      "severity": "info",
+      "desc": "No dedicated benchmark targets found in upstream repo despite google_benchmark dependency."
+    },
+    {
+      "id": "FINDING-BL-003",
+      "severity": "info",
+      "desc": "296 Bazel test targets identified (not 363 — 363 is test *files*, some files grouped into same target)."
+    }
+  ],
+  "ci_infrastructure": {
+    "workflows": 9,
+    "platforms": ["x86_64-linux", "aarch64-linux (QEMU)", "x86_64-qnx (build-only)", "aarch64-qnx (build-only)"],
+    "configs": ["bl-x86_64-linux", "bl-aarch64-linux", "bl-x86_64-qnx", "bl-aarch64-qnx", "asan_ubsan_lsan", "clang_format", "clang_tidy", "coverage"]
+  }
+}
