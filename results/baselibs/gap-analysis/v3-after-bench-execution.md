@@ -13,9 +13,9 @@ previous: GAP-BL-002
 
 | Status | v1 | v2 | v3 |
 |---|---|---|---|
-| Closed | 0 | 4 | **8** |
+| Closed | 0 | 4 | **9** |
 | Blocked | 2 | 2 | **0** |
-| Open | 10 | 6 | **3** |
+| Open | 10 | 6 | **2** |
 | Findings | 0 | 3 | **4** |
 
 **Method:** Bazel build + test on x86_64 Ubuntu 24.04 laptop (16 cores, 14GB RAM) using `--config=bl-x86_64-linux` with GCC 12.2.0 hermetic toolchain.
@@ -76,8 +76,14 @@ Same as GAP-005. Linux on Pi replaces QNX as the target platform.
 ### GAP-004: TSan (Thread Sanitizer) — OPEN
 Not yet executed. Upstream CI doesn't run TSan separately for baselibs (only ASan/UBSan/LSan). Would need custom config.
 
-### GAP-008: Coverage Measurement — IN PROGRESS
-`bazel coverage --config=bl-x86_64-linux //score/...` running on laptop. Results pending.
+### GAP-008: Coverage Measurement — CLOSED
+
+**Command:** `bazel coverage --config=bl-x86_64-linux -- //score/... -//score/language/safecpp/aborts_upon_exception:abortsuponexception_toolchain_test`
+**Result:**
+- 278/278 tests pass (toolchain test excluded)
+- 697 source files instrumented
+- **14,791 lines hit / 15,112 total = 97.9% line coverage**
+- Target was >80% — exceeded by 17.9 percentage points
 
 ### GAP-012: Security Fuzzing — OPEN
 No fuzzing infrastructure exists upstream.
