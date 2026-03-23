@@ -1,0 +1,22 @@
+{
+  "module": "score-persistency",
+  "version": "0.0.0",
+  "date": "2026-03-23",
+  "status": "in_progress",
+  "asil": "ASIL-D",
+  "languages": ["C++", "Rust"],
+  "components": {
+    "kvs_cpp": {"test_files": 6, "benchmark_files": 1, "status": "pending"},
+    "kvs_rust": {"modules": 9, "examples": 5, "status": "pending"},
+    "kvs_tool": {"files": 1, "status": "pending"}
+  },
+  "upstream_tests": {
+    "cpp_unit": {"target": "//:test_kvs_cpp", "status": "pending"},
+    "rust_unit": {"target": "//src/rust/rust_kvs:tests", "status": "pending"},
+    "cit_cpp": {"target": "//tests/test_cases:cit_cpp", "status": "pending"},
+    "cit_rust": {"target": "//tests/test_cases:cit_rust", "status": "pending"},
+    "benchmarks": {"target": "//:bm_kvs_cpp", "status": "pending"}
+  },
+  "ci_workflows": 14,
+  "gaps": {"total": 12, "closed": 0, "open": 12}
+}
