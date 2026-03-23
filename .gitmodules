@@ -167,13 +167,13 @@
 	path = sdv-blueprints-insurance
 	url = https://github.com/eclipse-sdv-blueprints/insurance.git
 [submodule "score-baselibs"]
-	path = score-baselibs
+	path = modules/score-baselibs/upstream
 	url = https://github.com/eclipse-score/baselibs.git
 [submodule "score-baselibs_rust"]
 	path = score-baselibs_rust
 	url = https://github.com/eclipse-score/baselibs_rust.git
 [submodule "score-feo"]
-	path = score-feo
+	path = modules/score-feo/upstream
 	url = https://github.com/eclipse-score/feo.git
 [submodule "score-inc_feo"]
 	path = score-inc_feo
@@ -182,13 +182,13 @@
 	path = score-orchestrator
 	url = https://github.com/eclipse-score/orchestrator.git
 [submodule "score-lifecycle"]
-	path = score-lifecycle
+	path = modules/score-lifecycle/upstream
 	url = https://github.com/eclipse-score/lifecycle.git
 [submodule "score-logging"]
 	path = score-logging
 	url = https://github.com/eclipse-score/logging.git
 [submodule "score-persistency"]
-	path = score-persistency
+	path = modules/score-persistency/upstream
 	url = https://github.com/eclipse-score/persistency.git
 [submodule "score-kyron"]
 	path = score-kyron
@@ -281,5 +281,5 @@
 	path = score-score
 	url = https://github.com/eclipse-score/score.git
 [submodule "score-communication"]
-	path = score-communication
+	path = modules/score-communication/upstream
 	url = https://github.com/eclipse-score/communication.git
