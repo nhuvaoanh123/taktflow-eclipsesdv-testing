@@ -6,7 +6,7 @@ date: 2026-03-23
 
 # Future Plan
 
-## What We Accomplished (2026-03-21 to 2026-03-23)
+## What We Accomplished (2026-03-21 to 2026-03-25)
 
 ### Day 1 (Mar 21) — LoLa Pilot
 - Assessed score-communication (LoLa): 252/252 tests, sanitizers clean, 93.7% coverage
@@ -25,16 +25,25 @@ date: 2026-03-23
 - **ASPICE SWE.4 verification reports** for all 4 modules
 - **Documentation**: deployment guide, security analysis, tool qualification
 
+### Day 4 (Mar 25) — Extend to 8 Modules (SDV stack)
+- **3 new modules** structurally assessed: score-logging, score-orchestrator, kuksa-databroker
+- **score-logging**: C++ DLT + Rust bindings, Object Seam mocks verified, deps confirmed
+- **score-orchestrator**: Rust orchestration, kyron hash-pinned, proc-macro safety verified
+- **kuksa-databroker**: KUKSA.val v1/v2, VSS 4.0, JWT auth, TLS, OpenTelemetry — all structural
+- **Test suites created**: build, regression, integration, security for all 3 modules
+- **Regression scripts**: bash + pytest for each new module
+- **Gap analyses**: v1-initial.md per module — honest about what needs build execution
+
 ### Deliverables Created
 | Category | Count |
 |---|---|
-| Test files (pytest) | 20 |
-| Result files | 36 |
-| Regression scripts | 4 |
-| ASPICE verification reports | 4 |
+| Test files (pytest) | 29 |
+| Result files | 42 |
+| Regression scripts | 7 |
+| ASPICE verification reports | 7 |
 | Documentation files | 7 |
-| Gap analyses | 17 |
-| **Total artifacts** | **88** |
+| Gap analyses | 23 |
+| **Total artifacts** | **115** |
 
 ---
 
@@ -63,13 +72,26 @@ date: 2026-03-23
 
 Following the same assess→build→test→audit pattern:
 
-| Priority | Module | Reason |
-|---|---|---|
-| 1 | **score-logging** | Foundation — used by lifecycle, persistency, feo |
-| 2 | **score-orchestrator** | Deployment management — integrates with lifecycle |
-| 3 | **kuksa-databroker** | Vehicle data broker — central to SDV data flow |
-| 4 | **ankaios** | Workload orchestrator — alternative to score-orchestrator |
-| 5 | **velocitas-sdk** | Vehicle app framework — end-user facing |
+| Priority | Module | Reason | Status |
+|---|---|---|---|
+| ~~1~~ | ~~**score-logging**~~ | ~~Foundation — used by lifecycle, persistency, feo~~ | **DONE** (structural) |
+| ~~2~~ | ~~**score-orchestrator**~~ | ~~Deployment management — integrates with lifecycle~~ | **DONE** (structural) |
+| ~~3~~ | ~~**kuksa-databroker**~~ | ~~Vehicle data broker — central to SDV data flow~~ | **DONE** (structural) |
+| 4 | **ankaios** | Alternative workload orchestrator — Rust, simpler than orchestrator | Pending |
+| 5 | **velocitas-sdk** | Vehicle app framework — end-user SDK for SDV apps | Pending |
+| 6 | **kuksa-can-provider** | CAN→VSS bridge — connects taktflow ECUs to databroker | Pending |
+
+## Immediate Priority: Build Execution for Modules 6-8
+
+These modules are structurally verified but need build + test execution on the Ubuntu laptop:
+
+| Task | Module | Command | Priority |
+|---|---|---|---|
+| Cargo build | score-logging | `bazel build --config=x86_64-linux //score/...` | High |
+| Cargo build | score-orchestrator | `cargo build && bazel build //...` | High |
+| Cargo build | kuksa-databroker | `cargo build --workspace` | High |
+| Live integration | kuksa-databroker | Run broker + `python3 integration_test/test_databroker.py` | High |
+| TSan | score-logging | `bazel test --config=tsan //score/...` | Medium |
 
 ---
 
@@ -104,15 +126,17 @@ Following the same assess→build→test→audit pattern:
 
 | Metric | Value |
 |---|---|
-| S-CORE modules assessed | 5 / ~20 |
-| Upstream tests passing | 548 / 549 (99.8%) |
-| Local pytest tests | 738 pass, 6 skip |
-| Aggregate C++ coverage | 95.5% (31,846 / 33,349 lines) |
+| S-CORE + SDV modules assessed (structural) | **8 / ~20** |
+| Modules bench-verified (built + tested) | **5** |
+| Upstream tests passing (verified modules) | 548 / 549 (99.8%) |
+| Local pytest tests (verified modules) | 738 pass, 6 skip |
+| Structural tests (new modules) | ~120 (file inspection) |
+| Aggregate C++ coverage (verified) | 95.5% (31,846 / 33,349 lines) |
 | 10-perspective gaps audited | 351 |
 | Gaps closed | ~290 (83%) |
-| Gaps remaining (closable) | ~15 |
+| Gaps remaining (closable) | ~25 |
 | Gaps skipped (not our deliverable) | ~45 |
 
 ---
 
-**Next session:** Run remaining sanitizers, deploy to Pi, then start score-logging assessment.
+**Next session:** Execute builds for modules 6-8 on Ubuntu laptop. Run kuksa-databroker live integration. Then start ankaios and velocitas-sdk assessment.

@@ -1,0 +1,71 @@
+{
+  "module": "score-logging (DLT-compatible structured logging)",
+  "module_name": "score_logging",
+  "version": "0.0.0",
+  "date": "2026-03-25",
+  "status": "in_progress",
+  "classification": "QM",
+  "language": "C++17 + Rust",
+  "build_system": "Bazel 8.3.0",
+  "components": {
+    "mw_log": {
+      "path": "score/mw/log",
+      "type": "library",
+      "language": "C++ + Rust",
+      "description": "Logging frontend: shared-memory circular-buffer writer, fake/console recorders",
+      "test_environments": [
+        "fake_recorder",
+        "fake_recorder_environment",
+        "console_logging_environment"
+      ],
+      "status": "pending_build"
+    },
+    "datarouter": {
+      "path": "score/datarouter",
+      "type": "daemon",
+      "language": "C++",
+      "description": "DLT daemon bridge: routes log records from shared memory to DLT Viewer / syslog",
+      "status": "pending_build"
+    }
+  },
+  "test_targets": {
+    "build_all": {
+      "command": "bazel build --config=x86_64-linux //score/...",
+      "status": "not_run"
+    },
+    "test_all": {
+      "command": "bazel test --config=x86_64-linux //score/... --build_tests_only",
+      "status": "not_run"
+    },
+    "sanitizers": {
+      "command": "bazel test --config=asan_ubsan_lsan --config=x86_64-linux //score/... --build_tests_only",
+      "status": "not_run"
+    },
+    "tsan": {
+      "command": "bazel test --config=tsan --config=x86_64-linux //score/... --build_tests_only",
+      "status": "not_run"
+    },
+    "lint_rust": {
+      "command": "bazel build --config=lint-rust //score/...",
+      "status": "not_run"
+    },
+    "coverage": {
+      "command": "bazel coverage --config=x86_64-linux //score/... --combined_report=lcov",
+      "status": "not_run"
+    }
+  },
+  "dependencies": {
+    "score_baselibs": "0.2.4",
+    "score_communication": "0.1.2",
+    "score_baselibs_rust": "0.1.0"
+  },
+  "findings": [],
+  "notes": [
+    "QM rated — used by ASIL-B modules (score-communication, score-feo)",
+    "Provides Object Seam mocks: fake_recorder + console_logging_environment",
+    "Rust bindings in score/mw/log/rust/ — requires rules_rust in toolchain",
+    "Legacy non-verbose API maintained for backward compatibility",
+    "TRLC configured in MODULE.bazel — traceability enforced via Bazel",
+    "Assessment pending laptop build execution (SSH to an-dao@192.168.0.158)"
+  ]
+}

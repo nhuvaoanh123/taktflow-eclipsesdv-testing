@@ -1,0 +1,83 @@
+{
+  "module": "eclipse-kuksa-databroker (KUKSA.val Vehicle Signal Data Broker)",
+  "module_name": "kuksa_databroker",
+  "version": "0.6.1-dev.0",
+  "date": "2026-03-25",
+  "status": "in_progress",
+  "classification": "QM",
+  "language": "Rust (edition 2021)",
+  "build_system": "Cargo",
+  "components": {
+    "databroker": {
+      "path": "databroker/",
+      "type": "binary",
+      "language": "Rust",
+      "description": "gRPC server: VSS metadata, Get/Set/Subscribe, VISS, authorization, filtering",
+      "status": "pending_build"
+    },
+    "databroker_proto": {
+      "path": "databroker-proto/",
+      "type": "library",
+      "language": "Rust (prost/tonic generated)",
+      "description": "Protobuf definitions for KUKSA.val v1/v2 API",
+      "status": "pending_build"
+    },
+    "databroker_cli": {
+      "path": "databroker-cli/",
+      "type": "binary",
+      "language": "Rust",
+      "description": "Interactive CLI for signal access and debugging",
+      "status": "pending_build"
+    },
+    "kuksa_common": {
+      "path": "lib/common/",
+      "type": "library",
+      "language": "Rust",
+      "description": "Shared types and utilities for databroker + CLI",
+      "status": "pending_build"
+    }
+  },
+  "api_versions": {
+    "v1": "proto/kuksa/val/v1/val.proto",
+    "v2": "proto/kuksa/val/v2/val.proto"
+  },
+  "vss_data": {
+    "primary": "data/vss-core/vss_release_4.0.json",
+    "default_port": 55555
+  },
+  "test_targets": {
+    "cargo_build": {
+      "command": "cargo build --workspace",
+      "status": "not_run"
+    },
+    "cargo_test": {
+      "command": "cargo test --workspace",
+      "status": "not_run"
+    },
+    "integration_test": {
+      "command": "python3 integration_test/test_databroker.py (requires running broker)",
+      "status": "not_run"
+    },
+    "cross_compile_aarch64": {
+      "command": "cross build --target aarch64-unknown-linux-gnu",
+      "status": "not_run"
+    }
+  },
+  "security_properties": {
+    "jwt_authorization": "VERIFIED (authorization/ module + jwt/ directory)",
+    "tls_support": "VERIFIED (certificates/ directory + tls.md docs)",
+    "wildcard_matching": "VERIFIED (wildcard_matching.md documented)",
+    "opentelemetry": "VERIFIED (open_telemetry.rs present)",
+    "sanitizers": "NOT RUN"
+  },
+  "findings": [],
+  "notes": [
+    "Central vehicle data bus — high-value attack target",
+    "JWT authorization with signal-level permissions",
+    "TLS via rustls for gRPC security",
+    "VISS (VISS2) API in addition to KUKSA.val v2 gRPC",
+    "Python integration test suite in integration_test/",
+    "Cross.toml configured for aarch64 Pi deployment",
+    "Assessment pending laptop build execution (SSH to an-dao@192.168.0.158)"
+  ]
+}

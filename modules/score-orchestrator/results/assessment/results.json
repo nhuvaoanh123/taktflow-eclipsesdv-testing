@@ -1,0 +1,84 @@
+{
+  "module": "score-orchestrator (Rust workload orchestration framework)",
+  "module_name": "score_orchestrator",
+  "version": "0.0.0",
+  "cargo_workspace_version": "0.0.3",
+  "date": "2026-03-25",
+  "status": "in_progress",
+  "classification": "QM",
+  "language": "Rust (edition 2021)",
+  "build_system": "Bazel 8.3.0 + Cargo (dual)",
+  "rust_toolchain": "1.85.0",
+  "components": {
+    "orchestration": {
+      "path": "src/orchestration",
+      "type": "library",
+      "language": "Rust",
+      "description": "Core orchestration: programs, actions, events, api/, core/, testing/",
+      "status": "pending_build"
+    },
+    "orchestration_macros": {
+      "path": "src/orchestration_macros",
+      "type": "proc_macro",
+      "language": "Rust",
+      "description": "Procedural macros for ergonomic program definition",
+      "status": "pending_build"
+    },
+    "xtask": {
+      "path": "src/xtask",
+      "type": "binary",
+      "language": "Rust",
+      "description": "Cargo task runner: code generation, benchmarks",
+      "status": "pending_build"
+    },
+    "test_scenarios": {
+      "path": "tests/test_scenarios/rust",
+      "type": "integration_tests",
+      "language": "Rust",
+      "description": "Component integration test scenarios (CIT)",
+      "status": "pending_build"
+    }
+  },
+  "test_targets": {
+    "cargo_build": {
+      "command": "cargo build",
+      "status": "not_run"
+    },
+    "cargo_test": {
+      "command": "cargo test",
+      "status": "not_run"
+    },
+    "bazel_build_all": {
+      "command": "bazel build --config=x86_64-linux //...",
+      "status": "not_run"
+    },
+    "bazel_test_all": {
+      "command": "bazel test --config=x86_64-linux //... --build_tests_only",
+      "status": "not_run"
+    },
+    "cargo_clippy": {
+      "command": "cargo clippy -- -D warnings",
+      "status": "not_run"
+    },
+    "nightly_repeat": {
+      "command": "cargo test -- --nocapture (20x upstream nightly)",
+      "status": "not_run"
+    }
+  },
+  "dependencies": {
+    "kyron": "git (hash pinned)",
+    "kyron_foundation": "git (hash pinned)",
+    "iceoryx2": "workspace",
+    "orchestration_macros": "workspace path"
+  },
+  "findings": [],
+  "notes": [
+    "QM rated — manages program lifecycle including ASIL components",
+    "Dual build: Bazel 8.3.0 + Cargo (both supported)",
+    "Rust toolchain 1.85.0 pinned via rust-toolchain.toml",
+    "kyron IPC runtime sourced from GitHub — pinned by rev hash",
+    "iceoryx2-ipc is a feature flag — can be disabled for non-SHM deployments",
+    "orchestration_macros uses proc-macro — safe by design (no unsafe, no fs access)",
+    "Assessment pending laptop build execution (SSH to an-dao@192.168.0.158)"
+  ]
+}
