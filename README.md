@@ -440,6 +440,12 @@ QNX 8.0 is the target RTOS on Pi, but the QNX cross-compile toolchain is blocked
 
 ---
 
+## Related Projects
+
+| Project | What |
+|---------|------|
+| [scorehsm](../scorehsm/) | S-CORE Hardware Security Module — Rust HSM crypto and key management |
+| [openbsw-rust](../openbsw-rust/) | Rust port of Eclipse OpenBSW (Basic Software) for STM32 targets |
 
 ## License
 
