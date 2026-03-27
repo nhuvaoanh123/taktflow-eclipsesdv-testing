@@ -19,36 +19,74 @@ Independent verification of the [Eclipse SDV](https://sdv.eclipse.org/) software
 
 ---
 
-## Architecture
+## Test Station
 
 ```
-  Laptop (Ubuntu 24.04, x86_64)          Pi 4 (QNX 8.0, aarch64)
- ┌─────────────────────────────┐        ┌─────────────────────────┐
- │ Bazel build + test (S-CORE) │        │ KUKSA.val broker        │
- │ pytest (738 tests)          │──SSH──>│ Docker vECUs (BCM/ICU)  │
- │ Sanitizers, coverage        │        │ S-CORE runtime (LoLa)   │
- └─────────────────────────────┘        └────────┬────────────────┘
-                                                  │ USB-CAN
- ════════════════════════════════════════════════╤═╧═══════════════
-           CAN Bus (500 kbps, 120 ohm, E2E)     │
- ════╤═══════════╤═══════════╤═══════════╤═══════╧════════════════
-     │           │           │           │
- ┌───▼───┐  ┌───▼───┐  ┌───▼───┐  ┌───▼───┐
- │  CVC  │  │  FZC  │  │  RZC  │  │  SC   │
- │TMS570 │  │G474RE │  │G474RE │  │TMS570 │
- │Arbiter│  │Steer  │  │Motor  │  │WDT    │
- │Pedals │  │Brake  │  │ADC    │  │Relay  │
- │OLED   │  │LiDAR  │  │Encoder│  │E-stop │
- └───────┘  └───────┘  └───────┘  └───┬───┘
-                                       │
-                                 Kill Relay → 12V actuators
+ PC (Windows, x86_64)                    Laptop (Ubuntu, x86_64)
+ ┌──────────────────────┐               ┌─────────────────────────┐
+ │ Flash + debug (SWD)  │               │ Bazel build (S-CORE)    │
+ │ CAN monitor          │               │ pytest, sanitizers, cov │
+ │ Oscilloscope control │               │ Docker vECU build       │
+ └───┬──────┬───────┬───┘               └────┬──────────────┬─────┘
+     │USB   │ETH    │WiFi                    │WiFi          │SSH
+     │CAN   │scope  │                        │              │
+     │      │       │    ┌───────────────┐   │    ┌─────────▼──────┐
+     │      │       └────┤  WiFi Router  ├───┘    │ Pi 4 (QNX 8.0) │
+     │      │            └───────────────┘   ETH  │                │
+     │      │                                ┌────┤ KUKSA broker   │
+     │      ▼                                │    │ Docker vECUs   │
+     │  ┌────────┐                           │    │ BCM / ICU / TCU│
+     │  │ Scope  │                           │    └────────┬───────┘
+     │  │ (4ch)  │                           │             │USB-CAN
+     │  └────────┘                           │             │
+     │                                       │             │
+ ════╪═══════════════════════════════════════╪═════════════╪══════
+     │      CAN Bus (500 kbps, 120 ohm, E2E, 34 msgs)    │
+ ════╪═══╤═══════════╤═══════════╤═══════════╤════════════╪══════
+     │   │           │           │           │            │
+     │ ┌─▼──┐    ┌───▼───┐  ┌───▼───┐  ┌───▼───┐        │
+     │ │CVC │    │  FZC  │  │  RZC  │  │  SC   │        │
+     │ │TMS │    │G474RE │  │G474RE │  │ TMS  │        │
+     │ │570 │    │       │  │       │  │ 570  │        │
+     └►│    │    │Steer  │  │Motor  │  │WDT   │◄───────┘
+  USB  │Arb │    │Brake  │  │ADC    │  │Relay │
+  CAN  │Ped │    │LiDAR  │  │Enc   │  │Estop │
+       └────┘    └───────┘  └───────┘  └──┬───┘
+         ▲           ▲           ▲        │
+         │SWD        │SWD        │SWD     │
+         └───────────┴───────────┘    Kill Relay
+              PC flashes via              │
+              ST-Link / XDS110      12V actuators
 ```
 
-**7 ECUs**: 4 physical (CVC, FZC, RZC, SC) + 3 Docker on Pi (BCM, ICU, TCU).
-**34 CAN messages**, 19 with E2E protection (CRC-8 + alive counter).
-Safety chain: external watchdog per ECU → SC monitors → kill relay → actuator power.
-HIL status: **65/69 hops pass** (94.2%), UDS working on 3 ECUs.
-Total hardware: ~$580.
+### Interfaces
+
+| Link | From | To | Protocol | Purpose |
+|------|------|----|----------|---------|
+| CAN | All ECUs + Pi + PC | Shared bus | 500 kbps, 120 ohm | Vehicle communication, UDS diagnostics |
+| WiFi | PC, Laptop | Router | 802.11n | Build dispatch, file transfer, SSH |
+| Ethernet | Laptop | Pi | TCP/IP | SSH deploy, KUKSA gRPC, Docker control |
+| Ethernet | PC | Oscilloscope | SCPI/TCP | Waveform capture, CAN timing |
+| USB-CAN | PC | CAN bus | SocketCAN | CAN monitor, frame injection |
+| USB-CAN | Pi | CAN bus | SocketCAN | vECU ↔ physical ECU bridge |
+| SWD/JTAG | PC | CVC, FZC, RZC, SC | ST-Link, XDS110 | Flash firmware, debug |
+| UART | PC | Each ECU | 115200 8N1 | Serial console, log capture |
+
+### Nodes
+
+| Node | OS | Role | Interfaces |
+|------|----|----|------------|
+| **PC** | Windows | Flash, debug, CAN monitor, scope | USB-CAN, SWD, ETH (scope), WiFi |
+| **Laptop** | Ubuntu 24.04 | Build, test, deploy | WiFi, SSH to Pi |
+| **Pi 4** | QNX 8.0 | Edge gateway, KUKSA broker, 3 Docker vECUs | ETH, USB-CAN |
+| **CVC** | Bare-metal (RTOS) | Central arbiter, pedals, OLED | CAN, SWD, UART |
+| **FZC** | Bare-metal (RTOS) | Steering, braking, LiDAR | CAN, SWD, UART |
+| **RZC** | Bare-metal (RTOS) | Motor, current/temp, encoder | CAN, SWD, UART |
+| **SC** | Bare-metal | Watchdog, kill relay, E-stop | CAN, SWD, UART |
+
+**7 ECUs**: 4 physical + 3 Docker. 34 CAN messages, 19 E2E protected.
+Safety chain: watchdog per ECU → SC → kill relay → 12V actuator power.
+HIL: **65/69 hops pass** (94%). Hardware: ~$580.
 
 ---
 
