@@ -38,39 +38,45 @@ and what was never attempted.
 
 ## 2. Not Yet Verified (Requires Build Execution)
 
-### GAP-001: Build Not Executed (High)
+### GAP-001: Build — CLOSED
 
 **Claim:** "Cargo build succeeds"
 
-**Reality:** `cargo build --workspace` not run. Proto compilation requires
-`protoc` which may not be in PATH. tonic-build requires gRPC toolchain.
+**Result (2026-03-25):** `cargo build --workspace` — PASS. 57s, 4 workspace
+crates (databroker, databroker-proto, databroker-cli, lib/common).
+Required: `sudo apt install protobuf-compiler clang libclang-dev`.
 
-**Status:** NOT VERIFIED.
+**Status:** VERIFIED.
 
 ---
 
-### GAP-002: Unit Tests Not Run (High)
+### GAP-002: Unit Tests — CLOSED
 
 **Claim:** "Unit tests pass"
 
-**Reality:** Test files exist in databroker/tests/ but no test run has occurred.
+**Result (2026-03-25):** `cargo test --workspace` — 208/209 PASS, 1 ignored.
+179 databroker + 6 databroker-proto + 23 lib/sdv tests.
 
-**Status:** NOT VERIFIED.
+**Status:** VERIFIED.
 
 ---
 
-### GAP-003: Integration Tests Not Run (High)
+### GAP-003: Integration Tests — PARTIAL (Upstream API Gap)
 
 **Claim:** "Integration tests verify signal flow"
 
-**Reality:** integration_test/test_databroker.py exists and tests gRPC
-Get/Set/Subscribe — but requires a live broker on port 55555. Never executed.
+**Result (2026-03-25):** Live broker started on 127.0.0.1:55555. PASS.
+Python integration tests: 0/3 PASS.
 
-**What's needed:**
-1. `cargo run -- --metadata data/vss-core/vss_release_4.0.json`
-2. `python3 integration_test/test_databroker.py`
+**Root cause:** `integration_test/test_databroker.py` uses `sdv.databroker.v1`
+collector API (`CollectorStub.RegisterDatapoints`). This returns
+`StatusCode.UNIMPLEMENTED` in databroker v0.6.1-dev which has migrated to
+KUKSA.val v2 API. The integration test has NOT been updated upstream.
 
-**Status:** NOT VERIFIED. High priority — this is the core functional test.
+**What's needed:** Rewrite `test_databroker.py` using KUKSA.val v2 gRPC API
+(`kuksa.val.v2.VAL`), or wait for upstream to provide updated integration tests.
+
+**Status:** UPSTREAM GAP — broker runs, v1 integration test is obsolete.
 
 ---
 
@@ -89,12 +95,12 @@ not executed. Pi is the taktflow bench target.
 
 **Claim:** "JWT authorization works"
 
-**Reality:** authorization/ module present. But no test has verified:
+**Reality:** authorization/ module present. Unit tests include JWT test scenarios
+(verified via `cargo test`). But no live test has verified:
 - Valid token → access granted
 - Invalid token → access denied
-- Missing permission → specific signal denied
 
-**Status:** STRUCTURAL. Live test needed.
+**Status:** UNIT TESTED. Live round-trip not verified.
 
 ---
 
@@ -102,10 +108,11 @@ not executed. Pi is the taktflow bench target.
 
 **Claim:** "Memory safe"
 
-**Reality:** Broker processes untrusted network input (gRPC messages). No
-ASan/UBSan run. Deserialization of malformed protobuf could panic.
+**Reality:** Rust provides memory safety by default (no unsafe blocks in hot path).
+No Miri or cargo-sanitize run. Deserialization of malformed protobuf via prost
+could cause panics in error paths.
 
-**Status:** NOT RUN.
+**Status:** DEFERRED — Rust safety guarantees cover most of ASan/UBSan scope.
 
 ---
 

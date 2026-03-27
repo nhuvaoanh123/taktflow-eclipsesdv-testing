@@ -37,12 +37,12 @@ target in the SDV architecture.
 
 | Property | Status |
 |---|---|
-| JWT authorization (signal-level) | STRUCTURAL (module present, not live-tested) |
-| TLS gRPC support | STRUCTURAL (certificates present) |
+| JWT authorization (signal-level) | UNIT TESTED (cargo test — 403/404/400 scenarios verified) |
+| TLS gRPC support | STRUCTURAL (certificates present, not live-tested) |
 | Wildcard subscription documented | VERIFIED |
 | OpenTelemetry observability | STRUCTURAL |
 | Input validation (malformed proto) | NOT TESTED |
-| Sanitizers (ASan/UBSan) | NOT RUN |
+| Sanitizers (ASan/UBSan) | N/A — Rust; Miri not yet run |
 
 ## Integration in Taktflow SDV Stack
 

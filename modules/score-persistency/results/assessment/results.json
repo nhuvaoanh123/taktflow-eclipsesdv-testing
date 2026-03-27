@@ -1,22 +1,138 @@
 {
-  "module": "score-persistency",
+  "component": "score-persistency",
   "version": "0.0.0",
-  "date": "2026-03-23",
+  "assessment_date": "2026-03-23",
   "status": "in_progress",
-  "asil": "ASIL-D",
-  "languages": ["C++", "Rust"],
+  "safety_classification": "ASIL-D",
+  "description": "Key-Value Store (KVS) library with dual C++/Rust implementation for automotive persistency",
   "components": {
-    "kvs_cpp": {"test_files": 6, "benchmark_files": 1, "status": "pending"},
-    "kvs_rust": {"modules": 9, "examples": 5, "status": "pending"},
-    "kvs_tool": {"files": 1, "status": "pending"}
+    "kvs_cpp": {
+      "status": "in_progress",
+      "description": "C++ KVS implementation",
+      "source_path": "src/cpp/src/",
+      "public_api": [
+        "kvs.hpp",
+        "kvsbuilder.hpp",
+        "kvsvalue.hpp"
+      ],
+      "internal_headers": [
+        "internal/error.hpp",
+        "internal/kvs_helper.hpp"
+      ],
+      "test_files": 6,
+      "benchmark_files": 1
+    },
+    "kvs_rust": {
+      "status": "in_progress",
+      "description": "Rust KVS implementation",
+      "source_path": "src/rust/rust_kvs/",
+      "modules": [
+        "kvs.rs",
+        "kvs_api.rs",
+        "kvs_builder.rs",
+        "kvs_value.rs",
+        "kvs_backend.rs",
+        "kvs_mock.rs",
+        "json_backend.rs",
+        "kvs_serialize.rs",
+        "error_code.rs"
+      ],
+      "backend": "JSON (tinyjson)",
+      "crc": "Adler-32",
+      "features": [
+        "snapshots",
+        "defaults_with_crc",
+        "flush"
+      ]
+    },
+    "kvs_tool": {
+      "status": "in_progress",
+      "description": "Rust CLI tool for KVS operations",
+      "source_path": "src/rust/rust_kvs_tool/",
+      "entry_point": "kvs_tool.rs"
+    }
   },
-  "upstream_tests": {
-    "cpp_unit": {"target": "//:test_kvs_cpp", "status": "pending"},
-    "rust_unit": {"target": "//src/rust/rust_kvs:tests", "status": "pending"},
-    "cit_cpp": {"target": "//tests/test_cases:cit_cpp", "status": "pending"},
-    "cit_rust": {"target": "//tests/test_cases:cit_rust", "status": "pending"},
-    "benchmarks": {"target": "//:bm_kvs_cpp", "status": "pending"}
+  "test_targets": {
+    "unit_tests": {
+      "target": "//:unit_tests",
+      "description": "Aggregate unit test target (C++ + Rust)",
+      "status": "not_verified"
+    },
+    "cpp_unit_tests": {
+      "target": "//:test_kvs_cpp",
+      "description": "C++ specific unit tests",
+      "status": "not_verified"
+    },
+    "rust_unit_tests": {
+      "target": "//src/rust/rust_kvs:tests",
+      "description": "Rust specific unit tests",
+      "status": "not_verified"
+    },
+    "cit_tests": {
+      "target": "//:cit_tests",
+      "description": "Python component integration tests",
+      "status": "not_verified"
+    },
+    "benchmarks": {
+      "target": "//:bm_kvs_cpp",
+      "description": "C++ Google Benchmark performance tests",
+      "status": "not_verified"
+    },
+    "format_check": {
+      "target": "//:format.check",
+      "description": "Code formatting verification (clang-format + rustfmt)",
+      "status": "not_verified"
+    }
+  },
+  "build_config": {
+    "bazel_config": "--config=per-x86_64-linux",
+    "build_targets": [
+      "//src/...",
+      "//tests/..."
+    ]
+  },
+  "dependencies": {
+    "score_baselibs": {
+      "version": "0.2.4",
+      "type": "bazel_module"
+    },
+    "score_logging": {
+      "version": "0.1.0",
+      "type": "bazel_module"
+    },
+    "score_baselibs_rust": {
+      "version": "0.1.0",
+      "type": "bazel_module"
+    },
+    "tinyjson": {
+      "type": "cargo_crate",
+      "purpose": "JSON backend"
+    },
+    "adler32": {
+      "type": "cargo_crate",
+      "purpose": "CRC-Adler32 for defaults validation"
+    },
+    "serde": {
+      "type": "cargo_crate",
+      "purpose": "Serialization framework"
+    }
   },
   "ci_workflows": 14,
-  "gaps": {"total": 12, "closed": 0, "open": 12}
+  "cargo_workspace_members": [
+    "rust_kvs",
+    "rust_kvs_tool",
+    "test_scenarios"
+  ],
+  "examples": [
+    "basic.rs",
+    "snapshots.rs",
+    "defaults.rs",
+    "custom_types.rs",
+    "migration.rs"
+  ],
+  "gaps": {
+    "reference": "results/persistency/gap-analysis/v1-initial.md",
+    "count": 12,
+    "critical_count": 4
+  }
 }
