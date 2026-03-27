@@ -440,14 +440,6 @@ QNX 8.0 is the target RTOS on Pi, but the QNX cross-compile toolchain is blocked
 
 ---
 
-## Related Projects
-
-| Project | What | Key Metrics |
-|---------|------|-------------|
-| [foxbms-posix](../foxbms-posix/) | BMS SIL + ML inference sidecar | 3 ONNX models live, 2,005 ASIL-D tests, 98% complete |
-| [taktflow-embedded](../taktflow-embedded/) | ISO 26262 ASIL-D zonal platform | 1,075 unit tests, 65/69 HIL hops, 7 ECUs |
-| [mebms-classic](../mebms-classic/) | AUTOSAR BMS toolkit | 96 cells, PyBaMM plant, 36 tools |
-| [taktflow-bms-ml](../taktflow-bms-ml/) | 5 ONNX models for BMS | SOC 1.83% RMSE, Thermal F1=1.0 |
 
 ## License
 
