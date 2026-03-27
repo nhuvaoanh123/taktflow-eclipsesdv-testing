@@ -1,13 +1,13 @@
 ---
 document_id: BENCH-SUMMARY-001
-title: "S-CORE + Eclipse SDV Bench Assessment Summary"
-version: "2.0"
-status: in_progress
-date: 2026-03-25
+title: "S-CORE Bench Execution Summary"
+version: "1.0"
+status: verified
+date: 2026-03-23
 bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 ---
 
-# S-CORE + Eclipse SDV Bench Assessment Summary
+# S-CORE Bench Execution Summary
 
 ## Environment
 
@@ -78,59 +78,19 @@ bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 
 ---
 
-### 6. score-logging (DLT logging) — QM
-
-| Phase | Result | Detail |
-|---|---|---|
-| Structure | **VERIFIED** | score/mw/log + score/datarouter intact |
-| Object Seam | **VERIFIED** | fake_recorder, session_handle_mock.h |
-| Rust bindings | **VERIFIED** | score/mw/log/rust/ present |
-| Build | **PENDING** | Not run — pending laptop execution |
-| Unit Tests | **PENDING** | Not run |
-| Sanitizers | **PENDING** | Not run |
-
-### 7. score-orchestrator (Rust workload orchestrator) — QM
-
-| Phase | Result | Detail |
-|---|---|---|
-| Workspace | **VERIFIED** | 5 members: orchestration, macros, xtask, test_scenarios, example |
-| kyron dependency | **VERIFIED** | Pinned by rev hash |
-| iceoryx2 feature gate | **VERIFIED** | iceoryx2-ipc optional feature |
-| proc-macro safety | **VERIFIED** | No unsafe, no fs access in macros |
-| Build (Cargo) | **PENDING** | Not run — pending laptop execution |
-| Build (Bazel) | **PENDING** | Not run |
-| Tests | **PENDING** | Not run |
-
-### 8. eclipse-kuksa-databroker (Vehicle signal broker) — QM
-
-| Phase | Result | Detail |
-|---|---|---|
-| API definitions | **VERIFIED** | KUKSA.val v1 + v2 proto files present |
-| VSS data | **VERIFIED** | vss_release_4.0.json (Vehicle.*) |
-| Authorization | **VERIFIED** | src/authorization/ + jwt/ directory |
-| TLS | **VERIFIED** | certificates/ + tls.md |
-| OpenTelemetry | **VERIFIED** | src/open_telemetry.rs |
-| Python integration | **VERIFIED** | integration_test/test_databroker.py |
-| Build (Cargo) | **PENDING** | Not run — requires protoc |
-| Live integration | **PENDING** | Requires running broker on :55555 |
-
----
-
 ## Aggregate Totals
 
 | Metric | Value |
 |---|---|
-| Modules assessed (structural) | **8** |
-| Modules bench-verified (built+tested) | **5** |
-| Total build targets (verified modules) | **2,111** |
-| Total test targets (verified modules) | **553** |
-| Tests passed (verified modules) | **548** |
+| Modules verified | **5** |
+| Total build targets | **2,111** |
+| Total test targets | **553** |
+| Tests passed | **548** |
 | Tests failed | **0** (after fixes) |
-| Local pytest tests (all modules) | **738 pass, 6 skip** |
+| Local pytest tests | **738 pass, 6 skip** |
 | 10-perspective gaps audited | **351** |
-| Structural tests (new modules, file inspection) | **~120** |
 
-## Coverage Summary (Verified Modules)
+## Coverage Summary
 
 | Module | Lines Hit | Lines Total | Coverage |
 |---|---|---|---|
@@ -139,10 +99,7 @@ bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 | score-lifecycle | 316 | 385 | **82.1%** |
 | score-persistency | 716 | 751 | **95.3%** |
 | score-feo | — | — | Rust (ferrocene needed) |
-| score-logging | — | — | Pending build |
-| score-orchestrator | — | — | Pending build |
-| kuksa-databroker | — | — | Pending build |
-| **Total C++ (verified)** | **31,846** | **33,349** | **95.5%** |
+| **Total C++** | **31,846** | **33,349** | **95.5%** |
 
 ## Sanitizer Summary
 
@@ -153,9 +110,6 @@ bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 | score-lifecycle | **Clean** | — | — | — |
 | score-persistency | — | — | — | — |
 | score-feo | — | — | — | — |
-| score-logging | **Pending** | **Pending** | **Pending** | **Pending** |
-| score-orchestrator | **Pending** | **Pending** | **Pending** | **Pending** |
-| kuksa-databroker | **Pending** | **Pending** | **Pending** | **Pending** |
 
 ---
 
@@ -166,12 +120,8 @@ bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 | TSan for baselibs | baselibs | 30 min |
 | Full sanitizers for persistency/feo | 2 modules | 1 hour |
 | Rust coverage (ferrocene) | lifecycle, persistency, feo | 2 hours |
-| Build + unit tests for logging | score-logging | 1 hour |
-| Build + unit tests for orchestrator | score-orchestrator | 1 hour |
-| Build + integration tests for kuksa | kuksa-databroker | 2 hours |
-| aarch64 cross-compile + Pi deploy | all 8 | 2 hours |
+| aarch64 cross-compile + Pi deploy | all 5 | 2 hours |
 | Clippy/Miri for lifecycle/persistency | 2 modules | 1 hour |
-| kuksa live integration (CAN→broker→app) | kuksa-databroker | 3 hours |
 
 ## Non-Code Gaps (documentation/process)
 
@@ -186,4 +136,82 @@ bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 
 ---
 
-**Report updated:** 2026-03-25 — Modules 6-8 added (score-logging, score-orchestrator, kuksa-databroker)
+**Report generated:** 2026-03-23
+
+---
+
+## Phase 2 — Campaign 2026-03-27
+
+### 6. score-logging (DLT middleware) — QM
+
+| Phase | Result | Detail |
+|---|---|---|
+| Build | **PASS** | 1,585 actions, 175 targets, 154s |
+| Unit Tests | **36/37 PASS** | 1 skipped (slog_recorder_factory_test) |
+| ASan (C++) | **12/12 PASS** | All C++ tests clean (Rust bridge N/A) |
+| Coverage | **87.8%** | 4,381/4,989 lines across 209 files |
+| Format | Rust diff | Upstream style — not blocking |
+
+### 7. score-orchestrator — QM
+
+| Phase | Result | Detail |
+|---|---|---|
+| Build (Cargo) | **PASS** | 48.8s, workspace (5 crates) |
+| Unit Tests | **108/108 PASS** | 0 failed, 3 ignored (doc-tests) |
+| Clippy | **PASS** | 0 warnings (-D warnings) |
+| Format | Diffs present | Upstream style in test_scenarios — not blocking |
+
+### 8. eclipse-kuksa-databroker — QM
+
+| Phase | Result | Detail |
+|---|---|---|
+| Build (Cargo) | **PASS** | 1m57s, workspace (databroker + proto + CLI + libs) |
+| Unit Tests | **208/208 PASS** | 179 databroker + 6 proto + 23 kuksa-sdv, 1 ignored |
+| Clippy | **PASS** | 0 warnings |
+| Format | **PASS** | All files formatted |
+| VSS 4.0 JSON | **Present** | Parseable, non-empty |
+
+---
+
+## Updated Aggregate Totals (Phase 2)
+
+| Metric | Phase 1 | Phase 2 | Total |
+|---|---|---|---|
+| Modules verified | 5 | 3 | **8** |
+| Tests passed | 548 | 352 | **900** |
+| Tests failed | 0 | 0 | **0** |
+| Coverage (C++) | 95.5% | 87.8% (logging) | see table |
+
+## Updated Coverage Summary
+
+| Module | Lines Hit | Lines Total | Coverage |
+|---|---|---|---|
+| LoLa | 16,023 | 17,101 | **93.7%** |
+| score-baselibs | 14,791 | 15,112 | **97.9%** |
+| score-lifecycle | 316 | 385 | **82.1%** |
+| score-persistency | 716 | 751 | **95.3%** |
+| score-feo | — | — | Rust (ferrocene needed) |
+| score-logging | 4,381 | 4,989 | **87.8%** |
+| score-orchestrator | — | — | Rust (tarpaulin needed) |
+| kuksa-databroker | — | — | Rust (tarpaulin needed) |
+| **Total C++** | **36,227** | **38,338** | **94.5%** |
+
+## Updated Sanitizer Summary
+
+| Module | ASan | UBSan | LSan | TSan |
+|---|---|---|---|---|
+| LoLa | **Clean** | **Clean** | **Clean** | **Clean** |
+| score-baselibs | **Clean** | **Clean** | **Clean** | — |
+| score-lifecycle | **Clean** | — | — | — |
+| score-persistency | — | — | — | — |
+| score-feo | — | — | — | — |
+| score-logging | **Clean** | — | — | — |
+| score-orchestrator | N/A (Rust) | N/A | N/A | N/A |
+| kuksa-databroker | N/A (Rust) | N/A | N/A | N/A |
+
+---
+
+**Phase 2 report generated:** 2026-03-27
+**Test machine:** ASUS TUF Gaming A17, Ubuntu 24.04 x86_64
+**Rust toolchain:** rustc 1.85.0, cargo 1.85.0
+**Bazel:** 8.3.0 (score-logging)

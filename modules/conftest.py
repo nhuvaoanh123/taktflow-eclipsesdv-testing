@@ -131,5 +131,7 @@ def pytest_configure(config):
         ("kuksa", "Eclipse Kuksa modules"),
         ("velocitas", "Eclipse Velocitas modules"),
         ("ankaios", "Eclipse Ankaios orchestrator"),
+        ("score_logging", "S-CORE DLT logging middleware"),
+        ("score_orchestrator", "S-CORE fixed execution orchestrator"),
     ]:
         config.addinivalue_line("markers", f"{marker}: {desc}")
