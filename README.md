@@ -440,12 +440,69 @@ QNX 8.0 is the target RTOS on Pi, but the QNX cross-compile toolchain is blocked
 
 ---
 
+## Deployment Architecture
+
+### VPS — SIL Demo & Documentation
+
+Cloud-hosted SIL environment running the 7-ECU vehicle simulation with live fault injection and ASPICE documentation.
+
+```
+Caddy (reverse proxy) ──┬── Docker Compose (SIL)
+  |                      |     7 ECU containers
+  |                      |     CAN gateway + plant simulator
+  +── Static docs        |     Mosquitto MQTT broker
+  +── API proxy          |     Fault injection runner
+```
+
+### AWS — IoT Telemetry Pipeline
+
+Cloud telemetry pipeline for vehicle monitoring and analytics.
+
+```
+Physical CAN Bus (4 ECUs)
+    |
+CAN Gateway (Docker)
+    |
+Local MQTT (Mosquitto)
+    |
+Cloud Connector (Docker, paho-mqtt)
+    | X.509 mutual TLS
+AWS IoT Core
+    |
+AWS IoT Rules Engine
+    |
+AWS Timestream (time-series DB)
+    |
+Grafana (dashboards + alerts)
+```
+
+| AWS Service | Purpose |
+|-------------|---------|
+| IoT Core | MQTT broker with X.509 mutual TLS device authentication |
+| IoT Rules | Topic-based message routing to time-series storage |
+| Timestream | Time-series telemetry storage |
+| Grafana | Dashboards and alerting |
+
+Cloud connector: Python container bridging local MQTT to AWS IoT Core with offline buffering and exponential backoff. X.509 certificate auth only — no cloud access keys in code.
+
+### Vercel — Web Application
+
+Next.js web app deployed via Vercel.
+
+### Edge Gateway (Raspberry Pi 4)
+
+QNX 8.0 aarch64 RTOS running KUKSA databroker, Docker vECUs, and CAN-to-IP bridge.
+
+---
+
 ## Related Projects
 
 | Project | What |
 |---------|------|
 | [scorehsm](../scorehsm/) | S-CORE Hardware Security Module — Rust HSM crypto and key management |
 | [openbsw-rust](../openbsw-rust/) | Rust port of Eclipse OpenBSW (Basic Software) for STM32 targets |
+| [taktflow-embedded-production](../taktflow-embedded-production/) | AUTOSAR-like zonal vehicle platform (ECU firmware on the bench) |
+| [foxbms-posix](../foxbms-posix/) | foxBMS POSIX vECU for battery management HIL testing |
 
 ## License
 
