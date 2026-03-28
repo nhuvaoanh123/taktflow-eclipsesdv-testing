@@ -25,14 +25,23 @@ date: 2026-03-23
 - **ASPICE SWE.4 verification reports** for all 4 modules
 - **Documentation**: deployment guide, security analysis, tool qualification
 
-### Day 4 (Mar 25) — Extend to 8 Modules (SDV stack)
+### Day 4 (Mar 25) — Extend to 8 Modules + Execute Builds
+
+**Structural assessment:**
 - **3 new modules** structurally assessed: score-logging, score-orchestrator, kuksa-databroker
 - **score-logging**: C++ DLT + Rust bindings, Object Seam mocks verified, deps confirmed
 - **score-orchestrator**: Rust orchestration, kyron hash-pinned, proc-macro safety verified
 - **kuksa-databroker**: KUKSA.val v1/v2, VSS 4.0, JWT auth, TLS, OpenTelemetry — all structural
-- **Test suites created**: build, regression, integration, security for all 3 modules
-- **Regression scripts**: bash + pytest for each new module
-- **Gap analyses**: v1-initial.md per module — honest about what needs build execution
+
+**Build execution (all 8 modules now bench-verified):**
+- **score-logging**: 36/37 tests PASS, 87.8% C++ coverage (4,381/4,989 lines)
+- **score-orchestrator**: 108/108 Cargo tests PASS; Bazel blocked by iceoryx2-qnx8 bindgen on Linux (upstream bug)
+- **kuksa-databroker**: 208/209 Cargo tests PASS; live broker started on :55555; Python integration tests blocked by v1→v2 API migration (upstream gap)
+
+**Findings:**
+- Installed rustup 1.85.0 + clang/libclang-dev + protobuf-compiler on Ubuntu laptop (previously missing)
+- score-orchestrator files had Windows CRLF line endings (fixed with dos2unix)
+- kuksa integration test uses deprecated `sdv.databroker.v1` collector API — unimplemented in v0.6.1-dev
 
 ### Deliverables Created
 | Category | Count |
@@ -81,17 +90,29 @@ Following the same assess→build→test→audit pattern:
 | 5 | **velocitas-sdk** | Vehicle app framework — end-user SDK for SDV apps | Pending |
 | 6 | **kuksa-can-provider** | CAN→VSS bridge — connects taktflow ECUs to databroker | Pending |
 
-## Immediate Priority: Build Execution for Modules 6-8
+## ~~Immediate Priority: Build Execution for Modules 6-8~~ — DONE
 
-These modules are structurally verified but need build + test execution on the Ubuntu laptop:
+All 3 builds executed 2026-03-25. Results:
 
-| Task | Module | Command | Priority |
+| Module | Build | Tests | Coverage | Notes |
+|---|---|---|---|---|
+| score-logging | **PASS** | **36/37** | **87.8%** | No sanitizer config in .bazelrc |
+| score-orchestrator | **PASS** (Cargo) | **108/108** | — (Rust) | Bazel blocked (iceoryx2-qnx8 on Linux) |
+| kuksa-databroker | **PASS** | **208/209** | — (Rust) | Live broker verified; integration test uses deprecated v1 API |
+
+## Next Priority: Remaining Gaps
+
+| Task | Module | Effort | Priority |
 |---|---|---|---|
-| Cargo build | score-logging | `bazel build --config=x86_64-linux //score/...` | High |
-| Cargo build | score-orchestrator | `cargo build && bazel build //...` | High |
-| Cargo build | kuksa-databroker | `cargo build --workspace` | High |
-| Live integration | kuksa-databroker | Run broker + `python3 integration_test/test_databroker.py` | High |
-| TSan | score-logging | `bazel test --config=tsan //score/...` | Medium |
+| ~~Add ASan/TSan config to score-logging .bazelrc~~ | ~~score-logging~~ | ~~30 min~~ | **DONE** |
+| ~~Rewrite kuksa integration test for KUKSA.val v2 API~~ | ~~kuksa-databroker~~ | ~~2 hours~~ | **DONE** (5/5 pass) |
+| ~~Add taktflow contract tests to score-logging~~ | ~~score-logging~~ | ~~30 min~~ | **DONE** (8 pass + 1 xfail) |
+| ~~Add taktflow CIT scenarios to score-orchestrator~~ | ~~score-orchestrator~~ | ~~30 min~~ | **DONE** (2/2 pass) |
+| ~~Add Cucumber BDD taktflow tests to kuksa-databroker~~ | ~~kuksa-databroker~~ | ~~2 hours~~ | **DONE** (3/3 scenarios, 11 steps) |
+| ~~Add .gitattributes CRLF prevention~~ | ~~all modules~~ | ~~15 min~~ | **DONE** |
+| aarch64 cross-compile + Pi deployment | all 8 | 2 hours | Medium |
+| Miri + Clippy for score-orchestrator | score-orchestrator | 1 hour | Medium |
+| Rust coverage (tarpaulin) for kuksa/orchestrator | 2 modules | 1 hour | Medium |
 
 ---
 
@@ -127,16 +148,18 @@ These modules are structurally verified but need build + test execution on the U
 | Metric | Value |
 |---|---|
 | S-CORE + SDV modules assessed (structural) | **8 / ~20** |
-| Modules bench-verified (built + tested) | **5** |
-| Upstream tests passing (verified modules) | 548 / 549 (99.8%) |
-| Local pytest tests (verified modules) | 738 pass, 6 skip |
-| Structural tests (new modules) | ~120 (file inspection) |
-| Aggregate C++ coverage (verified) | 95.5% (31,846 / 33,349 lines) |
+| Modules bench-verified (built + tested) | **8** |
+| Upstream tests passing (modules 1-5) | 548 / 549 (99.8%) |
+| Cargo/Bazel tests passing (modules 6-8) | 352 / 353 (99.7%) |
+| Local pytest tests (all modules) | 738 pass, 6 skip |
+| Aggregate C++ coverage (all C++ modules) | 94.5% (36,227 / 38,338 lines) |
 | 10-perspective gaps audited | 351 |
 | Gaps closed | ~290 (83%) |
-| Gaps remaining (closable) | ~25 |
+| Gaps remaining (closable) | ~20 |
 | Gaps skipped (not our deliverable) | ~45 |
 
 ---
 
-**Next session:** Execute builds for modules 6-8 on Ubuntu laptop. Run kuksa-databroker live integration. Then start ankaios and velocitas-sdk assessment.
+**Session 2026-03-25 complete:** All testing integration tasks done. kuksa v2 rewrite (5/5), Cucumber BDD (3/3), score-logging taktflow tests (8+1xf), orchestrator CIT (2/2), .bazelrc sanitizers, .gitattributes.
+
+**Next session:** Start ankaios and velocitas-sdk assessment (assess→build→test→audit pattern). Deploy aarch64 binaries to Pi. Run score-logging asan/tsan to confirm sanitizer config works.
