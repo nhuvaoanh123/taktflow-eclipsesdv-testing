@@ -1,0 +1,30 @@
+{
+  "function": "cmp_equal_impl",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:cmp_equal_impl",
+      "line": 68
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 74
+    },
+    {
+      "id": 2,
+      "label": "exit:cmp_equal_impl",
+      "line": 75
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

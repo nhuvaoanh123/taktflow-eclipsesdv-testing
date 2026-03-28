@@ -1,0 +1,21 @@
+{
+  "function": "operator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:operator",
+      "line": 124
+    },
+    {
+      "id": 1,
+      "label": "exit:operator",
+      "line": 130
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

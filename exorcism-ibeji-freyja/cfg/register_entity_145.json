@@ -1,0 +1,21 @@
+{
+  "function": "register_entity",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:register_entity",
+      "line": 145
+    },
+    {
+      "id": 1,
+      "label": "exit:register_entity",
+      "line": 191
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

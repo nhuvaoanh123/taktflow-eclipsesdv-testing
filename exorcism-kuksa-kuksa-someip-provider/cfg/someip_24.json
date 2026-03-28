@@ -1,0 +1,21 @@
+{
+  "function": "someip",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:someip",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:someip",
+      "line": 66
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

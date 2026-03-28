@@ -1,0 +1,16 @@
+{
+  "project": "uprotocol-up-rust",
+  "files_by_language": {
+    "Rust": {
+      "files": 37,
+      "loc": 13566
+    }
+  },
+  "total_files": 37,
+  "total_loc": 13566,
+  "total_functions": 515,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

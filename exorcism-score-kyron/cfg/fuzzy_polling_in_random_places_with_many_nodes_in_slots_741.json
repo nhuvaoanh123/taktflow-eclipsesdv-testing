@@ -1,0 +1,21 @@
+{
+  "function": "fuzzy_polling_in_random_places_with_many_nodes_in_slots",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fuzzy_polling_in_random_places_with_many_nodes_in_slots",
+      "line": 741
+    },
+    {
+      "id": 1,
+      "label": "exit:fuzzy_polling_in_random_places_with_many_nodes_in_slots",
+      "line": 813
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

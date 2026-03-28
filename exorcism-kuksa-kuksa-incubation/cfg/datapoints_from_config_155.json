@@ -1,0 +1,21 @@
+{
+  "function": "datapoints_from_config",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:datapoints_from_config",
+      "line": 155
+    },
+    {
+      "id": 1,
+      "label": "exit:datapoints_from_config",
+      "line": 183
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

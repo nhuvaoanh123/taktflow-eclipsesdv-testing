@@ -1,0 +1,30 @@
+{
+  "function": "std",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:std",
+      "line": 55
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 79
+    },
+    {
+      "id": 2,
+      "label": "exit:std",
+      "line": 81
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

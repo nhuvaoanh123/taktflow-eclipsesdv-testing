@@ -1,0 +1,21 @@
+{
+  "function": "demonstrate_defaults",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:demonstrate_defaults",
+      "line": 273
+    },
+    {
+      "id": 1,
+      "label": "exit:demonstrate_defaults",
+      "line": 330
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

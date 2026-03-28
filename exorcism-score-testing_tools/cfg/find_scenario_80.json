@@ -1,0 +1,21 @@
+{
+  "function": "find_scenario",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:find_scenario",
+      "line": 80
+    },
+    {
+      "id": 1,
+      "label": "exit:find_scenario",
+      "line": 97
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

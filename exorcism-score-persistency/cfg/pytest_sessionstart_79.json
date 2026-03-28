@@ -1,0 +1,21 @@
+{
+  "function": "pytest_sessionstart",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:pytest_sessionstart",
+      "line": 79
+    },
+    {
+      "id": 1,
+      "label": "exit:pytest_sessionstart",
+      "line": 98
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

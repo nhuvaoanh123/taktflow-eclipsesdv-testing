@@ -1,0 +1,21 @@
+{
+  "function": "UnblockSignal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:UnblockSignal",
+      "line": 68
+    },
+    {
+      "id": 1,
+      "label": "exit:UnblockSignal",
+      "line": 77
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "tokenize_display_hint",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:tokenize_display_hint",
+      "line": 220
+    },
+    {
+      "id": 1,
+      "label": "exit:tokenize_display_hint",
+      "line": 232
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

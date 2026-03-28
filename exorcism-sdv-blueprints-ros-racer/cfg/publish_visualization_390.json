@@ -1,0 +1,188 @@
+{
+  "function": "publish_visualization",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:publish_visualization",
+      "line": 390
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 409
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 426
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 409
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 412
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 426
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 412
+    },
+    {
+      "id": 7,
+      "label": "loop (for_statement)",
+      "line": 449
+    },
+    {
+      "id": 8,
+      "label": "loop_exit",
+      "line": 457
+    },
+    {
+      "id": 9,
+      "label": "body",
+      "line": 449
+    },
+    {
+      "id": 10,
+      "label": "if (...)",
+      "line": 452
+    },
+    {
+      "id": 11,
+      "label": "merge",
+      "line": 457
+    },
+    {
+      "id": 12,
+      "label": "then",
+      "line": 452
+    },
+    {
+      "id": 13,
+      "label": "if (...)",
+      "line": 484
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 506
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 484
+    },
+    {
+      "id": 16,
+      "label": "exit:publish_visualization",
+      "line": 508
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "done"
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "continue"
+    },
+    {
+      "from": 9,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "true"
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 7,
+      "label": "back"
+    },
+    {
+      "from": 8,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 16
+    }
+  ]
+}

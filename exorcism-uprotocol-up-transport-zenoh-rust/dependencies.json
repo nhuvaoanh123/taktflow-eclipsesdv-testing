@@ -1,0 +1,61 @@
+{
+  "external": [
+    {
+      "name": "anyhow",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "async-trait",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "bytes",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "protobuf",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tokio",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tracing",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "up-rust",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "zenoh",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "chrono",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "clap",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "serde_json",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "serial_test",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "test-case",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tracing-subscriber",
+      "source": "Cargo.toml"
+    }
+  ],
+  "internal": []
+}

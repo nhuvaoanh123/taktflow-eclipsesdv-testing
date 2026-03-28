@@ -1,0 +1,21 @@
+{
+  "function": "intersection",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:intersection",
+      "line": 414
+    },
+    {
+      "id": 1,
+      "label": "exit:intersection",
+      "line": 421
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

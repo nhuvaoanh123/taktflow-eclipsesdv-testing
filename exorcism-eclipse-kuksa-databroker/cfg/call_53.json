@@ -1,0 +1,21 @@
+{
+  "function": "call",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:call",
+      "line": 53
+    },
+    {
+      "id": 1,
+      "label": "exit:call",
+      "line": 93
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

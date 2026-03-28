@@ -1,0 +1,21 @@
+{
+  "function": "FileFactoryMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FileFactoryMock",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:FileFactoryMock",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

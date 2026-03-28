@@ -1,0 +1,30 @@
+{
+  "function": "fake_check_logger",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fake_check_logger",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 107
+    },
+    {
+      "id": 2,
+      "label": "exit:fake_check_logger",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

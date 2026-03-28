@@ -1,0 +1,21 @@
+{
+  "function": "DatarouterMessageClientFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DatarouterMessageClientFactory",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:DatarouterMessageClientFactory",
+      "line": 48
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

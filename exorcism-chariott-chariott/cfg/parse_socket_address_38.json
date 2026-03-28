@@ -1,0 +1,21 @@
+{
+  "function": "parse_socket_address",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parse_socket_address",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "exit:parse_socket_address",
+      "line": 55
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

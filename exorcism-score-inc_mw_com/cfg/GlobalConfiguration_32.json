@@ -1,0 +1,21 @@
+{
+  "function": "GlobalConfiguration",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GlobalConfiguration",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:GlobalConfiguration",
+      "line": 79
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

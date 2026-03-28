@@ -1,0 +1,21 @@
+{
+  "function": "FileStream",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FileStream",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:FileStream",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

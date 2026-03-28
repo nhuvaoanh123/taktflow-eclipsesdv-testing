@@ -1,0 +1,21 @@
+{
+  "function": "TestGet",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestGet",
+      "line": 245
+    },
+    {
+      "id": 1,
+      "label": "exit:TestGet",
+      "line": 271
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "receive_async_stuff",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:receive_async_stuff",
+      "line": 528
+    },
+    {
+      "id": 1,
+      "label": "exit:receive_async_stuff",
+      "line": 545
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

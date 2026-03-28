@@ -1,0 +1,213 @@
+{
+  "function": "amp",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:amp",
+      "line": 81
+    },
+    {
+      "id": 1,
+      "label": "if ((!was_event_referenced))",
+      "line": 92
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 95
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 92
+    },
+    {
+      "id": 4,
+      "label": "if ((skeleton_event_tracing_data.enable_send))",
+      "line": 142
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 176
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 142
+    },
+    {
+      "id": 7,
+      "label": "if ((service_element_type == tracing::ServiceElementType::EVENT))",
+      "line": 149
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 160
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 149
+    },
+    {
+      "id": 10,
+      "label": "else",
+      "line": 149
+    },
+    {
+      "id": 11,
+      "label": "if ((service_element_type == tracing::ServiceElementType::EVENT))",
+      "line": 191
+    },
+    {
+      "id": 12,
+      "label": "merge",
+      "line": 202
+    },
+    {
+      "id": 13,
+      "label": "then",
+      "line": 191
+    },
+    {
+      "id": 14,
+      "label": "else",
+      "line": 191
+    },
+    {
+      "id": 15,
+      "label": "if ((!type_erased_sample_ptr_result.has_value()))",
+      "line": 207
+    },
+    {
+      "id": 16,
+      "label": "merge",
+      "line": 210
+    },
+    {
+      "id": 17,
+      "label": "then",
+      "line": 207
+    },
+    {
+      "id": 18,
+      "label": "return_statement",
+      "line": 209
+    },
+    {
+      "id": 19,
+      "label": "exit:amp",
+      "line": 224
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 11
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "true"
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 12
+    },
+    {
+      "from": 12,
+      "to": 15
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "label": "true"
+    },
+    {
+      "from": 17,
+      "to": 18
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "label": "false"
+    },
+    {
+      "from": 16,
+      "to": 19
+    }
+  ]
+}

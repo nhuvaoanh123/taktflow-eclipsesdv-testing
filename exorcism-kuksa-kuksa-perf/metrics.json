@@ -1,0 +1,608 @@
+[
+  {
+    "function": "setup_logging",
+    "file": "src/main.rs",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "check_if_duplicate_paths",
+    "file": "src/main.rs",
+    "start_line": 98,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 13,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "src/main.rs",
+    "start_line": 113,
+    "cyclomatic_complexity": 29,
+    "nesting_depth": 8,
+    "loc": 82,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/measure.rs",
+    "start_line": 104,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "create_receiving_end",
+    "file": "src/measure.rs",
+    "start_line": 113,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 4,
+    "loc": 38,
+    "param_count": 6,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "create_unix_socket_channel",
+    "file": "src/measure.rs",
+    "start_line": 152,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "create_tcp_channel",
+    "file": "src/measure.rs",
+    "start_line": 164,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 24,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "create_triggering_end",
+    "file": "src/measure.rs",
+    "start_line": 189,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 4,
+    "loc": 25,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "perform_measurement",
+    "file": "src/measure.rs",
+    "start_line": 215,
+    "cyclomatic_complexity": 38,
+    "nesting_depth": 6,
+    "loc": 189,
+    "param_count": 3,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "measurement_loop",
+    "file": "src/measure.rs",
+    "start_line": 405,
+    "cyclomatic_complexity": 16,
+    "nesting_depth": 8,
+    "loc": 105,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "shutdown_handler",
+    "file": "src/shutdown.rs",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setup_shutdown_handler",
+    "file": "src/shutdown.rs",
+    "start_line": 47,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 26,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "read_config",
+    "file": "src/utils.rs",
+    "start_line": 34,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 53,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "print_latency_histogram",
+    "file": "src/utils.rs",
+    "start_line": 88,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 2,
+    "loc": 32,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "print_latency_distribution",
+    "file": "src/utils.rs",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "write_global_output",
+    "file": "src/utils.rs",
+    "start_line": 132,
+    "cyclomatic_complexity": 16,
+    "nesting_depth": 3,
+    "loc": 87,
+    "param_count": 2,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "write_output",
+    "file": "src/utils.rs",
+    "start_line": 220,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 3,
+    "loc": 95,
+    "param_count": 1,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "output_latency_to_file",
+    "file": "src/utils.rs",
+    "start_line": 316,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 25,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/triggering_ends/kuksa_val_v2/conversions.rs",
+    "start_line": 18,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 4,
+    "loc": 42,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "build_registration_signal_request",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "start_line": 66,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "open_provider_stream",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "start_line": 85,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 11,
+    "loc": 44,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "trigger",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "start_line": 133,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 10,
+    "loc": 93,
+    "param_count": 3,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "validate_signals_metadata",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "start_line": 227,
+    "cyclomatic_complexity": 16,
+    "nesting_depth": 7,
+    "loc": 76,
+    "param_count": 3,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "set_initial_signals_values",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "start_line": 304,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "n_to_value",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "start_line": 313,
+    "cyclomatic_complexity": 239,
+    "nesting_depth": 9,
+    "loc": 602,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "run",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "start_line": 57,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 7,
+    "loc": 35,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "trigger",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 25,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "validate_signals_metadata",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "start_line": 122,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "set_initial_signals_values",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "start_line": 173,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "n_to_value",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "start_line": 182,
+    "cyclomatic_complexity": 175,
+    "nesting_depth": 9,
+    "loc": 484,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/triggering_ends/kuksa_val_v1/conversions.rs",
+    "start_line": 18,
+    "cyclomatic_complexity": 21,
+    "nesting_depth": 4,
+    "loc": 39,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "run",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "start_line": 55,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 7,
+    "loc": 33,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "trigger",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "start_line": 92,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 8,
+    "loc": 54,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "validate_signals_metadata",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "start_line": 147,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 4,
+    "loc": 57,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "set_initial_signals_values",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "start_line": 205,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "n_to_value",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "start_line": 214,
+    "cyclomatic_complexity": 428,
+    "nesting_depth": 11,
+    "loc": 646,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 26,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "handle_kuksa_val_v2",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "start_line": 90,
+    "cyclomatic_complexity": 28,
+    "nesting_depth": 17,
+    "loc": 148,
+    "param_count": 6,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "get_receiver",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "start_line": 242,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "query_from_signals",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "handle_sdv_databroker_v1",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "start_line": 65,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 9,
+    "loc": 52,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_receiver",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "start_line": 121,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_query_from_signal",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "start_line": 134,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_query_from_signals",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "handle_kuksa_val_v1",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "start_line": 61,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 9,
+    "loc": 79,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_receiver",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "start_line": 144,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "function": "ISharedMemoryResource",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ISharedMemoryResource",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:ISharedMemoryResource",
+      "line": 85
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

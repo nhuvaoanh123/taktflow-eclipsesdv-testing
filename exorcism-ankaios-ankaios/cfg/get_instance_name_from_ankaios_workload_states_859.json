@@ -1,0 +1,197 @@
+{
+  "function": "get_instance_name_from_ankaios_workload_states",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_instance_name_from_ankaios_workload_states",
+      "line": 859
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 863
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 865
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 863
+    },
+    {
+      "id": 4,
+      "label": "loop (for_statement)",
+      "line": 867
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 878
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 867
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 868
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 870
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 868
+    },
+    {
+      "id": 10,
+      "label": "loop (for_statement)",
+      "line": 872
+    },
+    {
+      "id": 11,
+      "label": "loop_exit",
+      "line": 878
+    },
+    {
+      "id": 12,
+      "label": "body",
+      "line": 872
+    },
+    {
+      "id": 13,
+      "label": "if (...)",
+      "line": 873
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 878
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 873
+    },
+    {
+      "id": 16,
+      "label": "return_statement",
+      "line": 881
+    },
+    {
+      "id": 17,
+      "label": "exit:get_instance_name_from_ankaios_workload_states",
+      "line": 881
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "done"
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "continue"
+    },
+    {
+      "from": 12,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 10,
+      "label": "back"
+    },
+    {
+      "from": 11,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 16
+    },
+    {
+      "from": 5,
+      "to": 17
+    }
+  ]
+}

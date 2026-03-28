@@ -1,0 +1,21 @@
+{
+  "function": "Marshal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Marshal",
+      "line": 50
+    },
+    {
+      "id": 1,
+      "label": "exit:Marshal",
+      "line": 73
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

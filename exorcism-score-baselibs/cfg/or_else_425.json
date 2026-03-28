@@ -1,0 +1,30 @@
+{
+  "function": "or_else",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:or_else",
+      "line": 425
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 430
+    },
+    {
+      "id": 2,
+      "label": "exit:or_else",
+      "line": 431
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

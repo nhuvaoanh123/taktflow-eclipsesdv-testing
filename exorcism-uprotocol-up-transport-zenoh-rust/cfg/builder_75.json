@@ -1,0 +1,21 @@
+{
+  "function": "builder",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:builder",
+      "line": 75
+    },
+    {
+      "id": 1,
+      "label": "exit:builder",
+      "line": 100
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

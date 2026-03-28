@@ -1,0 +1,21 @@
+{
+  "function": "maybe_run_driver",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:maybe_run_driver",
+      "line": 363
+    },
+    {
+      "id": 1,
+      "label": "exit:maybe_run_driver",
+      "line": 383
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

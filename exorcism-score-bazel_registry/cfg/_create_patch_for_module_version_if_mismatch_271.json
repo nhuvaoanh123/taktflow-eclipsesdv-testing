@@ -1,0 +1,138 @@
+{
+  "function": "_create_patch_for_module_version_if_mismatch",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_create_patch_for_module_version_if_mismatch",
+      "line": 271
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 284
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 285
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 284
+    },
+    {
+      "id": 4,
+      "label": "if ((\r\n            self.info.mod_file.version == self.info.relea)",
+      "line": 288
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 293
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 288
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 293
+    },
+    {
+      "id": 8,
+      "label": "if (...)",
+      "line": 310
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 319
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 310
+    },
+    {
+      "id": 11,
+      "label": "return_statement",
+      "line": 335
+    },
+    {
+      "id": 12,
+      "label": "exit:_create_patch_for_module_version_if_mismatch",
+      "line": 335
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "false"
+    },
+    {
+      "from": 9,
+      "to": 11
+    },
+    {
+      "from": 9,
+      "to": 12
+    }
+  ]
+}

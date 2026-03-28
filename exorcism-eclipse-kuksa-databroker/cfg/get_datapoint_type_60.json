@@ -1,0 +1,21 @@
+{
+  "function": "get_datapoint_type",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_datapoint_type",
+      "line": 60
+    },
+    {
+      "id": 1,
+      "label": "exit:get_datapoint_type",
+      "line": 65
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

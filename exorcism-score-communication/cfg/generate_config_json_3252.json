@@ -1,0 +1,30 @@
+{
+  "function": "generate_config_json",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:generate_config_json",
+      "line": 3252
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 3317
+    },
+    {
+      "id": 2,
+      "label": "exit:generate_config_json",
+      "line": 3318
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "make_bounds",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:make_bounds",
+      "line": 824
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 836
+    },
+    {
+      "id": 2,
+      "label": "exit:make_bounds",
+      "line": 837
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

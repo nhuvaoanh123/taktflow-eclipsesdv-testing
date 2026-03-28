@@ -1,0 +1,21 @@
+{
+  "function": "try_from_json_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:try_from_json_value",
+      "line": 263
+    },
+    {
+      "id": 1,
+      "label": "exit:try_from_json_value",
+      "line": 360
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

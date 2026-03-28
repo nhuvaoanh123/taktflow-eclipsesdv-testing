@@ -1,0 +1,21 @@
+{
+  "function": "run_start_action",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:run_start_action",
+      "line": 243
+    },
+    {
+      "id": 1,
+      "label": "exit:run_start_action",
+      "line": 255
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "subscribe_current_values",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:subscribe_current_values",
+      "line": 293
+    },
+    {
+      "id": 1,
+      "label": "exit:subscribe_current_values",
+      "line": 325
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

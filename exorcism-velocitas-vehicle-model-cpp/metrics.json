@@ -1,0 +1,1386 @@
+[
+  {
+    "function": "Vehicle",
+    "file": "include/vehicle_model/Vehicle.hpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "VersionVSS",
+    "file": "include/vehicle_model/VersionVSS/VersionVSS.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RowType",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DoorCollection",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RowType",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 91,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SeatCollection",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 116,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Cabin",
+    "file": "include/vehicle_model/Cabin/Cabin.hpp",
+    "start_line": 130,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SpotlightCollection",
+    "file": "include/vehicle_model/Cabin/Lights/Lights.hpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/Cabin/Lights/Lights.hpp",
+    "start_line": 45,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Lights",
+    "file": "include/vehicle_model/Cabin/Lights/Lights.hpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Spotlight",
+    "file": "include/vehicle_model/Cabin/Lights/Spotlight/Spotlight.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Convertible",
+    "file": "include/vehicle_model/Cabin/Convertible/Convertible.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Door",
+    "file": "include/vehicle_model/Cabin/Door/Door.hpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Window",
+    "file": "include/vehicle_model/Cabin/Door/Window/Window.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Shade",
+    "file": "include/vehicle_model/Cabin/Door/Shade/Shade.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RearShade",
+    "file": "include/vehicle_model/Cabin/RearShade/RearShade.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RowType",
+    "file": "include/vehicle_model/Cabin/HVAC/HVAC.hpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "StationCollection",
+    "file": "include/vehicle_model/Cabin/HVAC/HVAC.hpp",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/Cabin/HVAC/HVAC.hpp",
+    "start_line": 57,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "HVAC",
+    "file": "include/vehicle_model/Cabin/HVAC/HVAC.hpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Station",
+    "file": "include/vehicle_model/Cabin/HVAC/Station/Station.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Seat",
+    "file": "include/vehicle_model/Cabin/Seat/Seat.hpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Occupant",
+    "file": "include/vehicle_model/Cabin/Seat/Occupant/Occupant.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Identifier",
+    "file": "include/vehicle_model/Cabin/Seat/Occupant/Identifier/Identifier.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Backrest",
+    "file": "include/vehicle_model/Cabin/Seat/Backrest/Backrest.hpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Lumbar",
+    "file": "include/vehicle_model/Cabin/Seat/Backrest/Lumbar/Lumbar.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SideBolster",
+    "file": "include/vehicle_model/Cabin/Seat/Backrest/SideBolster/SideBolster.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Seating",
+    "file": "include/vehicle_model/Cabin/Seat/Seating/Seating.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Airbag",
+    "file": "include/vehicle_model/Cabin/Seat/Airbag/Airbag.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Switch",
+    "file": "include/vehicle_model/Cabin/Seat/Switch/Switch.hpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Backrest",
+    "file": "include/vehicle_model/Cabin/Seat/Switch/Backrest/Backrest.hpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Lumbar",
+    "file": "include/vehicle_model/Cabin/Seat/Switch/Backrest/Lumbar/Lumbar.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SideBolster",
+    "file": "include/vehicle_model/Cabin/Seat/Switch/Backrest/SideBolster/SideBolster.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Seating",
+    "file": "include/vehicle_model/Cabin/Seat/Switch/Seating/Seating.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Massage",
+    "file": "include/vehicle_model/Cabin/Seat/Switch/Massage/Massage.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Headrest",
+    "file": "include/vehicle_model/Cabin/Seat/Switch/Headrest/Headrest.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Headrest",
+    "file": "include/vehicle_model/Cabin/Seat/Headrest/Headrest.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Infotainment",
+    "file": "include/vehicle_model/Cabin/Infotainment/Infotainment.hpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Media",
+    "file": "include/vehicle_model/Cabin/Infotainment/Media/Media.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Played",
+    "file": "include/vehicle_model/Cabin/Infotainment/Media/Played/Played.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "HMI",
+    "file": "include/vehicle_model/Cabin/Infotainment/HMI/HMI.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Navigation",
+    "file": "include/vehicle_model/Cabin/Infotainment/Navigation/Navigation.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DestinationSet",
+    "file": "include/vehicle_model/Cabin/Infotainment/Navigation/DestinationSet/DestinationSet.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RearviewMirror",
+    "file": "include/vehicle_model/Cabin/RearviewMirror/RearviewMirror.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Sunroof",
+    "file": "include/vehicle_model/Cabin/Sunroof/Sunroof.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Shade",
+    "file": "include/vehicle_model/Cabin/Sunroof/Shade/Shade.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CurrentLocation",
+    "file": "include/vehicle_model/CurrentLocation/CurrentLocation.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GNSSReceiver",
+    "file": "include/vehicle_model/CurrentLocation/GNSSReceiver/GNSSReceiver.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MountingPosition",
+    "file": "include/vehicle_model/CurrentLocation/GNSSReceiver/MountingPosition/MountingPosition.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "O2Collection",
+    "file": "include/vehicle_model/OBD/OBD.hpp",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/OBD/OBD.hpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "O2WRCollection",
+    "file": "include/vehicle_model/OBD/OBD.hpp",
+    "start_line": 95,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/OBD/OBD.hpp",
+    "start_line": 108,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "OBD",
+    "file": "include/vehicle_model/OBD/OBD.hpp",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 77,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DriveCycleStatus",
+    "file": "include/vehicle_model/OBD/DriveCycleStatus/DriveCycleStatus.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Catalyst",
+    "file": "include/vehicle_model/OBD/Catalyst/Catalyst.hpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Bank2",
+    "file": "include/vehicle_model/OBD/Catalyst/Bank2/Bank2.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Bank1",
+    "file": "include/vehicle_model/OBD/Catalyst/Bank1/Bank1.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "O2WR",
+    "file": "include/vehicle_model/OBD/O2WR/O2WR.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Status",
+    "file": "include/vehicle_model/OBD/Status/Status.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "O2",
+    "file": "include/vehicle_model/OBD/O2/O2.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Service",
+    "file": "include/vehicle_model/Service/Service.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Exterior",
+    "file": "include/vehicle_model/Exterior/Exterior.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Powertrain",
+    "file": "include/vehicle_model/Powertrain/Powertrain.hpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ElectricMotor",
+    "file": "include/vehicle_model/Powertrain/ElectricMotor/ElectricMotor.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TractionBattery",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/TractionBattery.hpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DCDC",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/DCDC/DCDC.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Temperature",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/Temperature/Temperature.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Charging",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/Charging/Charging.hpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MaximumChargingCurrent",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/Charging/MaximumChargingCurrent/MaximumChargingCurrent.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Timer",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/Charging/Timer/Timer.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ChargeCurrent",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/Charging/ChargeCurrent/ChargeCurrent.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ChargeVoltage",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/Charging/ChargeVoltage/ChargeVoltage.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "StateOfCharge",
+    "file": "include/vehicle_model/Powertrain/TractionBattery/StateOfCharge/StateOfCharge.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CombustionEngine",
+    "file": "include/vehicle_model/Powertrain/CombustionEngine/CombustionEngine.hpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DieselParticulateFilter",
+    "file": "include/vehicle_model/Powertrain/CombustionEngine/DieselParticulateFilter/DieselParticulateFilter.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DieselExhaustFluid",
+    "file": "include/vehicle_model/Powertrain/CombustionEngine/DieselExhaustFluid/DieselExhaustFluid.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "FuelSystem",
+    "file": "include/vehicle_model/Powertrain/FuelSystem/FuelSystem.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Transmission",
+    "file": "include/vehicle_model/Powertrain/Transmission/Transmission.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ADAS",
+    "file": "include/vehicle_model/ADAS/ADAS.hpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TCS",
+    "file": "include/vehicle_model/ADAS/TCS/TCS.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "LaneDepartureDetection",
+    "file": "include/vehicle_model/ADAS/LaneDepartureDetection/LaneDepartureDetection.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ABS",
+    "file": "include/vehicle_model/ADAS/ABS/ABS.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ESC",
+    "file": "include/vehicle_model/ADAS/ESC/ESC.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RoadFriction",
+    "file": "include/vehicle_model/ADAS/ESC/RoadFriction/RoadFriction.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "EBD",
+    "file": "include/vehicle_model/ADAS/EBD/EBD.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CruiseControl",
+    "file": "include/vehicle_model/ADAS/CruiseControl/CruiseControl.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ObstacleDetection",
+    "file": "include/vehicle_model/ADAS/ObstacleDetection/ObstacleDetection.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "EBA",
+    "file": "include/vehicle_model/ADAS/EBA/EBA.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "AxleCollection",
+    "file": "include/vehicle_model/Chassis/Chassis.hpp",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "include/vehicle_model/Chassis/Chassis.hpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Chassis",
+    "file": "include/vehicle_model/Chassis/Chassis.hpp",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SteeringWheel",
+    "file": "include/vehicle_model/Chassis/SteeringWheel/SteeringWheel.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Accelerator",
+    "file": "include/vehicle_model/Chassis/Accelerator/Accelerator.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Brake",
+    "file": "include/vehicle_model/Chassis/Brake/Brake.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "WheelCollection",
+    "file": "include/vehicle_model/Chassis/Axle/Axle.hpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Axle",
+    "file": "include/vehicle_model/Chassis/Axle/Axle.hpp",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Wheel",
+    "file": "include/vehicle_model/Chassis/Axle/Wheel/Wheel.hpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Tire",
+    "file": "include/vehicle_model/Chassis/Axle/Wheel/Tire/Tire.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Brake",
+    "file": "include/vehicle_model/Chassis/Axle/Wheel/Brake/Brake.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParkingBrake",
+    "file": "include/vehicle_model/Chassis/ParkingBrake/ParkingBrake.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Connectivity",
+    "file": "include/vehicle_model/Connectivity/Connectivity.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Acceleration",
+    "file": "include/vehicle_model/Acceleration/Acceleration.hpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "VehicleIdentification",
+    "file": "include/vehicle_model/VehicleIdentification/VehicleIdentification.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "AngularVelocity",
+    "file": "include/vehicle_model/AngularVelocity/AngularVelocity.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TrunkCollection",
+    "file": "include/vehicle_model/Body/Body.hpp",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "WindshieldCollection",
+    "file": "include/vehicle_model/Body/Body.hpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MirrorsCollection",
+    "file": "include/vehicle_model/Body/Body.hpp",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Body",
+    "file": "include/vehicle_model/Body/Body.hpp",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Lights",
+    "file": "include/vehicle_model/Body/Lights/Lights.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Raindetection",
+    "file": "include/vehicle_model/Body/Raindetection/Raindetection.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Horn",
+    "file": "include/vehicle_model/Body/Horn/Horn.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Windshield",
+    "file": "include/vehicle_model/Body/Windshield/Windshield.hpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "WasherFluid",
+    "file": "include/vehicle_model/Body/Windshield/WasherFluid/WasherFluid.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Wiping",
+    "file": "include/vehicle_model/Body/Windshield/Wiping/Wiping.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "System",
+    "file": "include/vehicle_model/Body/Windshield/Wiping/System/System.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Mirrors",
+    "file": "include/vehicle_model/Body/Mirrors/Mirrors.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Hood",
+    "file": "include/vehicle_model/Body/Hood/Hood.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Trunk",
+    "file": "include/vehicle_model/Body/Trunk/Trunk.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Driver",
+    "file": "include/vehicle_model/Driver/Driver.hpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Identifier",
+    "file": "include/vehicle_model/Driver/Identifier/Identifier.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Trailer",
+    "file": "include/vehicle_model/Trailer/Trailer.hpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatServiceAsyncGrpcFacade.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatServiceAsyncGrpcFacade.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatServiceAsyncGrpcFacade.cpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatServiceAsyncGrpcFacade.cpp",
+    "start_line": 85,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toGrpcComponent",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toGrpcSeatLocation",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toGrpcSeatPosition",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toGrpcSeat",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toInternalStatus",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 76,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 103,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/vehicle_model/Cabin/SeatService/SeatService.cpp",
+    "start_line": 116,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  }
+]

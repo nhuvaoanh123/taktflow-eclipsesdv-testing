@@ -1,0 +1,21 @@
+{
+  "function": "FileRecorderFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FileRecorderFactory",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:FileRecorderFactory",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

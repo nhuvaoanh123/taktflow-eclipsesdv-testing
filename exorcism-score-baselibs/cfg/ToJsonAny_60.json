@@ -1,0 +1,30 @@
+{
+  "function": "ToJsonAny",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ToJsonAny",
+      "line": 60
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 62
+    },
+    {
+      "id": 2,
+      "label": "exit:ToJsonAny",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

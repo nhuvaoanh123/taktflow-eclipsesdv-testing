@@ -1,0 +1,21 @@
+{
+  "function": "health_monitor_builder_add_deadline_monitor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:health_monitor_builder_add_deadline_monitor",
+      "line": 143
+    },
+    {
+      "id": 1,
+      "label": "exit:health_monitor_builder_add_deadline_monitor",
+      "line": 174
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "SlotCollector",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SlotCollector",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:SlotCollector",
+      "line": 91
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

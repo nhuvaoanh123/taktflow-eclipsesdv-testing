@@ -1,0 +1,21 @@
+{
+  "function": "is_filetype",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_filetype",
+      "line": 83
+    },
+    {
+      "id": 1,
+      "label": "exit:is_filetype",
+      "line": 93
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

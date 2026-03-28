@@ -1,0 +1,21 @@
+{
+  "function": "ServiceIdentifierType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ServiceIdentifierType",
+      "line": 53
+    },
+    {
+      "id": 1,
+      "label": "exit:ServiceIdentifierType",
+      "line": 144
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

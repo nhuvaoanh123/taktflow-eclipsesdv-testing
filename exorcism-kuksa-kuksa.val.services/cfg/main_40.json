@@ -1,0 +1,272 @@
+{
+  "function": "main",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:main",
+      "line": 40
+    },
+    {
+      "id": 1,
+      "label": "if ((s < 0))",
+      "line": 93
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 96
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 93
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 95
+    },
+    {
+      "id": 5,
+      "label": "if ((rc == -1))",
+      "line": 100
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 103
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 100
+    },
+    {
+      "id": 8,
+      "label": "if ((bind(s, (struct sockaddr *)&addr, sizeof(addr)) < 0))",
+      "line": 109
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 111
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 109
+    },
+    {
+      "id": 11,
+      "label": "loop (for_statement)",
+      "line": 113
+    },
+    {
+      "id": 12,
+      "label": "loop_exit",
+      "line": 117
+    },
+    {
+      "id": 13,
+      "label": "body",
+      "line": 113
+    },
+    {
+      "id": 14,
+      "label": "if ((rc == -1))",
+      "line": 123
+    },
+    {
+      "id": 15,
+      "label": "merge",
+      "line": 125
+    },
+    {
+      "id": 16,
+      "label": "then",
+      "line": 123
+    },
+    {
+      "id": 17,
+      "label": "loop (for_statement)",
+      "line": 127
+    },
+    {
+      "id": 18,
+      "label": "loop_exit",
+      "line": 133
+    },
+    {
+      "id": 19,
+      "label": "body",
+      "line": 127
+    },
+    {
+      "id": 20,
+      "label": "if ((!rc))",
+      "line": 135
+    },
+    {
+      "id": 21,
+      "label": "merge",
+      "line": 135
+    },
+    {
+      "id": 22,
+      "label": "then",
+      "line": 135
+    },
+    {
+      "id": 23,
+      "label": "return_statement",
+      "line": 138
+    },
+    {
+      "id": 24,
+      "label": "exit:main",
+      "line": 140
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "false"
+    },
+    {
+      "from": 9,
+      "to": 11
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "done"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "continue"
+    },
+    {
+      "from": 13,
+      "to": 11,
+      "label": "back"
+    },
+    {
+      "from": 12,
+      "to": 14
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "label": "true"
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "label": "false"
+    },
+    {
+      "from": 15,
+      "to": 17
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "label": "done"
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "label": "continue"
+    },
+    {
+      "from": 19,
+      "to": 17,
+      "label": "back"
+    },
+    {
+      "from": 18,
+      "to": 20
+    },
+    {
+      "from": 20,
+      "to": 22,
+      "label": "true"
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "label": "false"
+    },
+    {
+      "from": 21,
+      "to": 23
+    },
+    {
+      "from": 21,
+      "to": 24
+    }
+  ]
+}

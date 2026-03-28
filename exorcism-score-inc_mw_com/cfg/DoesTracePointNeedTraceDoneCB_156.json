@@ -1,0 +1,30 @@
+{
+  "function": "DoesTracePointNeedTraceDoneCB",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DoesTracePointNeedTraceDoneCB",
+      "line": 156
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 158
+    },
+    {
+      "id": 2,
+      "label": "exit:DoesTracePointNeedTraceDoneCB",
+      "line": 160
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

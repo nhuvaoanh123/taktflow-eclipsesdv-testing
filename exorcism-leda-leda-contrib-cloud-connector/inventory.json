@@ -1,0 +1,16 @@
+{
+  "project": "leda-leda-contrib-cloud-connector",
+  "files_by_language": {
+    "Go": {
+      "files": 14,
+      "loc": 3175
+    }
+  },
+  "total_files": 14,
+  "total_loc": 3175,
+  "total_functions": 133,
+  "build_system": "Go modules",
+  "languages": [
+    "Go"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "function": "communication",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:communication",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 102
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 106
+    },
+    {
+      "id": 3,
+      "label": "exit:communication",
+      "line": 109
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    }
+  ]
+}

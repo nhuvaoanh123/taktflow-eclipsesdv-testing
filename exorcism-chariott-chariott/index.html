@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chariott Chariott — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Chariott Chariott</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Chariott Chariott</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">CHARIOTT</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">59</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">7,988</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">419</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">5</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">2.0</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>Eclipse Chariott is a service discovery and application programming model for Software Defined Vehicles. It provides a uniform API layer so vehicle apps can discover and call services without knowing their exact location or protocol. Agemo is a publish/subscribe messaging component within Chariott.</p>
+    <p><strong>Project:</strong> <code>chariott-chariott</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>Cargo</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">Rust</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>In a complex vehicle with many services, apps need to find each other dynamically. Chariott acts as a service registry and middleware layer.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by vehicle apps needing to call remote services, and by service providers that want to be discoverable.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>Rust</td><td>59</td><td>7,988</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: chariott-chariott</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>Rust</td></tr>
+<tr><td>Build System</td><td>Cargo</td></tr>
+<tr><td>Total Files</td><td>59</td></tr>
+<tr><td>Total LOC</td><td>7,988</td></tr>
+<tr><td>Total Functions</td><td>419</td></tr>
+<tr><td>State Machines</td><td>5</td></tr>
+<tr><td>Communication Patterns</td><td>0</td></tr>
+<tr><td>External Dependencies</td><td>0</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>Rust</strong>: 59 files, 7,988 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>Cargo</strong></p>
+<p></p>
+<h3>State Machines Detected</h3>
+<ul>
+<li><code>intent<em>brokering/examples/applications/kv-app/src/intent</em>provider.rs:50</code> — match on `request</li>
+</ul>
+<p>            .into_inner()</p>
+<p>            .intent</p>
+<p>            .and_then(|i| i.intent)</p>
+<p>            .ok<em>or</em>else(|| Status::invalid_argument(&quot;Intent must be specified.&quot;))?` (5 states)</p>
+<ul>
+<li><code>intent<em>brokering/examples/applications/simple-provider/src/intent</em>provider.rs:36</code> — match on `request</li>
+</ul>
+<p>            .into_inner()</p>
+<p>            .intent</p>
+<p>            .and_then(|i| i.intent)</p>
+<p>            .ok<em>or</em>else(|| Status::invalid_argument(&quot;Intent must be specified.&quot;))?` (2 states)</p>
+<ul>
+<li><code>intent_brokering/examples/applications/lt-provider/src/main.rs:98</code> — match on `request</li>
+</ul>
+<p>            .into_inner()</p>
+<p>            .intent</p>
+<p>            .and_then(|i| i.intent)</p>
+<p>            .ok<em>or</em>else(|| Status::invalid_argument(&quot;Intent must be specified&quot;))?` (2 states)</p>
+<ul>
+<li><code>intent<em>brokering/examples/applications/invoke-command/src/intent</em>provider.rs:69</code> — match on `request</li>
+</ul>
+<p>            .into_inner()</p>
+<p>            .intent</p>
+<p>            .and_then(|i| i.intent)</p>
+<p>            .ok<em>or</em>else(|| Status::invalid_argument(&quot;Intent must be specified.&quot;))?` (3 states)</p>
+<ul>
+<li><code>intent_brokering/tests/provider.rs:57</code> — match on `request</li>
+</ul>
+<p>            .into_inner()</p>
+<p>            .intent</p>
+<p>            .and_then(|i| i.intent)</p>
+<p>            .ok<em>or</em>else(|| Status::invalid_argument(&quot;Intent must be specified&quot;))?` (2 states)</p>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>refresh (intent<em>brokering/src/intent</em>broker.rs:81) cc=19</li>
+<li>execute (intent_brokering/src/execution.rs:60) cc=15</li>
+<li>system<em>inspect</em>binding<em>succeeds (intent</em>brokering/src/execution.rs:272) cc=14</li>
+<li>test (intent_brokering/src/execution.rs:282) cc=14</li>
+<li>upsert (intent_brokering/src/registry.rs:176) cc=11</li>
+<li>wain (intent_brokering/examples/applications/lt-consumer/src/main.rs:55) cc=18</li>
+<li>evaluate<em>docker</em>stats (intent_brokering/examples/applications/lt-consumer/src/main.rs:189) cc=11</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li>register (service<em>discovery/core/src/service</em>registry_impl.rs:44) depth=4</li>
+<li>main (service_discovery/samples/simple-discovery/consumer/src/main.rs:31) depth=5</li>
+<li>ctrl<em>c</em>cancellation (intent_brokering/common/src/shutdown.rs:13) depth=4</li>
+<li>main (intent_brokering/src/main.rs:30) depth=4</li>
+<li>registry<em>prune</em>loop (intent_brokering/src/main.rs:110) depth=4</li>
+<li>refresh (intent<em>brokering/src/intent</em>broker.rs:81) depth=7</li>
+<li>assert<em>remote</em>fallback<em>binding (intent</em>brokering/src/intent_broker.rs:380) depth=5</li>
+<li>execute (intent_brokering/src/execution.rs:60) depth=5</li>
+<li>system<em>inspect</em>binding<em>succeeds (intent</em>brokering/src/execution.rs:272) depth=4</li>
+<li>prune<em>by (intent</em>brokering/src/registry.rs:128) depth=5</li>
+<li>filter<em>map</em>change (intent_brokering/src/registry.rs:990) depth=4</li>
+<li>register<em>subscriptions (intent</em>brokering/ess/src/ess.rs:169) depth=4</li>
+<li>deregister<em>subscriptions (intent</em>brokering/ess/src/ess.rs:243) depth=6</li>
+<li>event<em>sub</em>system<em>bench (intent</em>brokering/ess/benches/load_bench.rs:38) depth=9</li>
+<li>trace<em>result (intent</em>brokering/examples/common/src/intent_brokering/provider.rs:88) depth=4</li>
+<li>inspect (intent<em>brokering/examples/common/src/intent</em>brokering/api.rs:229) depth=4</li>
+<li>listen (intent<em>brokering/examples/common/src/intent</em>brokering/api.rs:316) depth=4</li>
+<li>set<em>intent</em>broker<em>url (intent</em>brokering/examples/common/src/intent_brokering/registration.rs:90) depth=5</li>
+<li>register (intent<em>brokering/examples/common/src/intent</em>brokering/registration.rs:122) depth=5</li>
+<li>register<em>once (intent</em>brokering/examples/common/src/intent_brokering/registration.rs:144) depth=5</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<ul>
+<li>wain (intent_brokering/examples/applications/lt-consumer/src/main.rs:55) loc=133</li>
+</ul>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 419 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 62 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 5 state machine patterns</li>
+<li><code>metrics.json</code> — 419 function metrics</li>
+<li><code>communication.json</code> — 0 protocol patterns</li>
+<li><code>dependencies.json</code> — 0 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>refresh</code></td>
+              <td><span class="badge badge-red">19 (High)</span></td>
+              <td>7</td>
+              <td>54</td>
+              <td>2</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>intent_brokering/src/intent_broker.rs</small></td>
+            </tr><tr>
+              <td><code>wain</code></td>
+              <td><span class="badge badge-red">18 (High)</span></td>
+              <td>6</td>
+              <td>133</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>intent_brokering/examples/applications/lt-consumer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>execute</code></td>
+              <td><span class="badge badge-red">15 (High)</span></td>
+              <td>5</td>
+              <td>84</td>
+              <td>2</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>intent_brokering/src/execution.rs</small></td>
+            </tr><tr>
+              <td><code>system_inspect_binding_succeeds</code></td>
+              <td><span class="badge badge-red">14 (High)</span></td>
+              <td>4</td>
+              <td>75</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>intent_brokering/src/execution.rs</small></td>
+            </tr><tr>
+              <td><code>test</code></td>
+              <td><span class="badge badge-red">14 (High)</span></td>
+              <td>3</td>
+              <td>64</td>
+              <td>2</td>
+              <td>high_complexity</td>
+              <td><small>intent_brokering/src/execution.rs</small></td>
+            </tr><tr>
+              <td><code>upsert</code></td>
+              <td><span class="badge badge-red">11 (High)</span></td>
+              <td>3</td>
+              <td>54</td>
+              <td>4</td>
+              <td>high_complexity</td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>evaluate_docker_stats</code></td>
+              <td><span class="badge badge-red">11 (High)</span></td>
+              <td>7</td>
+              <td>58</td>
+              <td>2</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>intent_brokering/examples/applications/lt-consumer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>parse_socket_address</code></td>
+              <td><span class="badge badge-yellow">10 (Medium)</span></td>
+              <td>3</td>
+              <td>18</td>
+              <td>1</td>
+              <td></td>
+              <td><small>intent_brokering/examples/common/src/url.rs</small></td>
+            </tr><tr>
+              <td><code>execute</code></td>
+              <td><span class="badge badge-yellow">10 (Medium)</span></td>
+              <td>6</td>
+              <td>49</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/applications/lt-consumer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>5</td>
+              <td>42</td>
+              <td>0</td>
+              <td>high_nesting</td>
+              <td><small>service_discovery/samples/simple-discovery/consumer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>map_intent_value</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>2</td>
+              <td>11</td>
+              <td>1</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_brokering_grpc.rs</small></td>
+            </tr><tr>
+              <td><code>try_from</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>4</td>
+              <td>22</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/common/src/examples/detection.rs</small></td>
+            </tr><tr>
+              <td><code>map_intent_variant</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>2</td>
+              <td>10</td>
+              <td>1</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_brokering_grpc.rs</small></td>
+            </tr><tr>
+              <td><code>test_intent_mappings</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>29</td>
+              <td>0</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_brokering_grpc.rs</small></td>
+            </tr><tr>
+              <td><code>test_intent_proto_mappings</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>23</td>
+              <td>0</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_brokering_grpc.rs</small></td>
+            </tr><tr>
+              <td><code>test_map_intent_variant</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>39</td>
+              <td>0</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_brokering_grpc.rs</small></td>
+            </tr><tr>
+              <td><code>prune_by</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>5</td>
+              <td>33</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>fmt</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>2</td>
+              <td>10</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>prune_removes_expired_services</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>60</td>
+              <td>5</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>intent_kind_display_succeeds</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>25</td>
+              <td>0</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>resolve</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>3</td>
+              <td>23</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_broker.rs</small></td>
+            </tr><tr>
+              <td><code>binding_into_runtime_binding</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>17</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_broker.rs</small></td>
+            </tr><tr>
+              <td><code>change</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>3</td>
+              <td>17</td>
+              <td>3</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>observe</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>3</td>
+              <td>13</td>
+              <td>3</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>filter_map_change</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>4</td>
+              <td>19</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>register_once</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>5</td>
+              <td>56</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/common/src/intent_brokering/registration.rs</small></td>
+            </tr><tr>
+              <td><code>fulfill</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>30</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/examples/applications/kv-app/src/intent_provider.rs</small></td>
+            </tr><tr>
+              <td><code>invoke</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>4</td>
+              <td>21</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/applications/invoke-command/src/intent_provider.rs</small></td>
+            </tr><tr>
+              <td><code>assert_remote_fallback_binding</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>5</td>
+              <td>24</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/src/intent_broker.rs</small></td>
+            </tr><tr>
+              <td><code>fulfill</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>5</td>
+              <td>27</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/tests/provider.rs</small></td>
+            </tr><tr>
+              <td><code>var_os</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>intent_brokering/common/src/config.rs</small></td>
+            </tr><tr>
+              <td><code>parse_result</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>12</td>
+              <td>1</td>
+              <td></td>
+              <td><small>intent_brokering/src/execution.rs</small></td>
+            </tr><tr>
+              <td><code>map_locality_value</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_brokering_grpc.rs</small></td>
+            </tr><tr>
+              <td><code>on_change</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>13</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>on_change</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>3</td>
+              <td>16</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr><tr>
+              <td><code>deregister_subscriptions</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>6</td>
+              <td>27</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/ess/src/ess.rs</small></td>
+            </tr><tr>
+              <td><code>fmt</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>8</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/examples/common/src/url.rs</small></td>
+            </tr><tr>
+              <td><code>listen</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>4</td>
+              <td>60</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/common/src/intent_brokering/api.rs</small></td>
+            </tr><tr>
+              <td><code>set_intent_broker_url</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>5</td>
+              <td>12</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/common/src/intent_brokering/registration.rs</small></td>
+            </tr><tr>
+              <td><code>register</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>5</td>
+              <td>21</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/common/src/intent_brokering/registration.rs</small></td>
+            </tr><tr>
+              <td><code>register_and_announce_provider</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>6</td>
+              <td>24</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/applications/simple-provider/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>fulfill</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>5</td>
+              <td>25</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/examples/applications/lt-provider/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>fulfill</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>28</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/examples/applications/invoke-command/src/intent_provider.rs</small></td>
+            </tr><tr>
+              <td><code>register</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>4</td>
+              <td>33</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>service_discovery/core/src/service_registry_impl.rs</small></td>
+            </tr><tr>
+              <td><code>unregister</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>28</td>
+              <td>2</td>
+              <td></td>
+              <td><small>service_discovery/core/src/service_registry_impl.rs</small></td>
+            </tr><tr>
+              <td><code>discover</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>36</td>
+              <td>2</td>
+              <td></td>
+              <td><small>service_discovery/core/src/service_registry_impl.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>4</td>
+              <td>79</td>
+              <td>0</td>
+              <td>high_nesting</td>
+              <td><small>intent_brokering/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>execute_system_inspect</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>12</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/execution.rs</small></td>
+            </tr><tr>
+              <td><code>fulfill</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>30</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/intent_brokering_grpc.rs</small></td>
+            </tr><tr>
+              <td><code>prune</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>1</td>
+              <td>13</td>
+              <td>2</td>
+              <td></td>
+              <td><small>intent_brokering/src/registry.rs</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>main</code></td>
+              <td>42</td>
+              <td><small>Server::builder, parse, init, tracing::info, tonic_reflection::server::Builder::configure, tracing::debug, Ok, Arc::new …</small></td>
+              <td><small>intent_brokering/src/main.rs:30</small></td>
+            </tr><tr>
+              <td><code>wain</code></td>
+              <td>38</td>
+              <td><small>fetch_add, assert, File::create, load, sleep_until, Ok, Arc::new, tokio::task::spawn …</small></td>
+              <td><small>intent_brokering/examples/applications/lt-consumer/src/main.rs:55</small></td>
+            </tr><tr>
+              <td><code>execute</code></td>
+              <td>31</td>
+              <td><small>Ok, FulfillmentEnum::Inspect, connect, clone, to_string, HashMap::from, serve_subscriptions, FulfillmentEnum::Subscribe …</small></td>
+              <td><small>intent_brokering/src/execution.rs:60</small></td>
+            </tr><tr>
+              <td><code>event_sub_system_bench</code></td>
+              <td>31</td>
+              <td><small>ClientId, Arc::new, ess::Config::default, Ess::new_with_config, register_subscriptions, set_publish_buffer_size, clone, to_async …</small></td>
+              <td><small>intent_brokering/ess/benches/load_bench.rs:38</small></td>
+            </tr><tr>
+              <td><code>on_change_notifies_when_namespace_change_detected</code></td>
+              <td>27</td>
+              <td><small>intent, Change::Remove, changes.into_iter, HashSet::new, Value::Null, IntentConfigurationBuilder::with_nonce, test, serve_subscriptions …</small></td>
+              <td><small>intent_brokering/src/registry.rs:840</small></td>
+            </tr><tr>
+              <td><code>listen</code></td>
+              <td>27</td>
+              <td><small>into_string, Ok, and_then, get, try_into, find, clone, Request::new …</small></td>
+              <td><small>intent_brokering/examples/common/src/intent_brokering/api.rs:316</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>26</td>
+              <td><small>Server::builder, parse, init, Ok, add_service, Url::parse, HelloWorldImpl::default, to_string …</small></td>
+              <td><small>service_discovery/samples/simple-discovery/provider/src/main.rs:39</small></td>
+            </tr><tr>
+              <td><code>serve_subscriptions_should_serve_subscription_for_event</code></td>
+              <td>22</td>
+              <td><small>timeout, get, setup, Request::new, into_inner, serve_subscriptions, Duration::from_millis, open …</small></td>
+              <td><small>intent_brokering/common/src/streaming_ess.rs:124</small></td>
+            </tr><tr>
+              <td><code>test</code></td>
+              <td>21</td>
+              <td><small>changes.into_iter, Value::Null, IntentConfigurationBuilder::with_nonce, serve_subscriptions, StreamingEss::new, read_events, build, namespace_event …</small></td>
+              <td><small>intent_brokering/src/registry.rs:877</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>20</td>
+              <td><small>Server::builder, parse, init, Ok, Arc::new, add_service, with_default_directive, ServiceRegistryServer::new …</small></td>
+              <td><small>service_discovery/core/src/main.rs:30</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (5 detected)</h3>
+  
+<details>
+  <summary>MATCH on <code>request
+            .into_inner()
+            .intent
+            .and_then(|i| i.intent)
+            .ok_or_else(|| Status::invalid_argument(&quot;Intent must be specified.&quot;))?</code>
+    — <small>intent_brokering/examples/applications/kv-app/src/intent_provider.rs:50</small></summary>
+  <div class="inner">
+    <table class="sm-table">
+      <thead><tr><th>State / Case</th></tr></thead>
+      <tbody><tr><td><code>IntentEnum::Read(intent)</code></td></tr><tr><td><code>IntentEnum::Write(intent)</code></td></tr><tr><td><code>IntentEnum::Subscribe(intent)</code></td></tr><tr><td><code>IntentEnum::Discover(_intent)</code></td></tr><tr><td><code>_</code></td></tr></tbody>
+    </table>
+  </div>
+</details>
+<details>
+  <summary>MATCH on <code>request
+            .into_inner()
+            .intent
+            .and_then(|i| i.intent)
+            .ok_or_else(|| Status::invalid_argument(&quot;Intent must be specified.&quot;))?</code>
+    — <small>intent_brokering/examples/applications/simple-provider/src/intent_provider.rs:36</small></summary>
+  <div class="inner">
+    <table class="sm-table">
+      <thead><tr><th>State / Case</th></tr></thead>
+      <tbody><tr><td><code>IntentEnum::Discover(_intent)</code></td></tr><tr><td><code>_</code></td></tr></tbody>
+    </table>
+  </div>
+</details>
+<details>
+  <summary>MATCH on <code>request
+            .into_inner()
+            .intent
+            .and_then(|i| i.intent)
+            .ok_or_else(|| Status::invalid_argument(&quot;Intent must be specified&quot;))?</code>
+    — <small>intent_brokering/examples/applications/lt-provider/src/main.rs:98</small></summary>
+  <div class="inner">
+    <table class="sm-table">
+      <thead><tr><th>State / Case</th></tr></thead>
+      <tbody><tr><td><code>IntentEnum::Invoke(_)</code></td></tr><tr><td><code>_</code></td></tr></tbody>
+    </table>
+  </div>
+</details>
+<details>
+  <summary>MATCH on <code>request
+            .into_inner()
+            .intent
+            .and_then(|i| i.intent)
+            .ok_or_else(|| Status::invalid_argument(&quot;Intent must be specified.&quot;))?</code>
+    — <small>intent_brokering/examples/applications/invoke-command/src/intent_provider.rs:69</small></summary>
+  <div class="inner">
+    <table class="sm-table">
+      <thead><tr><th>State / Case</th></tr></thead>
+      <tbody><tr><td><code>IntentEnum::Discover(_intent)</code></td></tr><tr><td><code>IntentEnum::Invoke(intent)</code></td></tr><tr><td><code>_</code></td></tr></tbody>
+    </table>
+  </div>
+</details>
+<details>
+  <summary>MATCH on <code>request
+            .into_inner()
+            .intent
+            .and_then(|i| i.intent)
+            .ok_or_else(|| Status::invalid_argument(&quot;Intent must be specified&quot;))?</code>
+    — <small>intent_brokering/tests/provider.rs:57</small></summary>
+  <div class="inner">
+    <table class="sm-table">
+      <thead><tr><th>State / Case</th></tr></thead>
+      <tbody><tr><td><code>IntentEnum::Invoke(intent)</code></td></tr><tr><td><code>_</code></td></tr></tbody>
+    </table>
+  </div>
+</details>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>LOC</th><th>File</th></tr></thead><tbody><tr><td><code>wain</code></td><td>133</td><td><small>intent_brokering/examples/applications/lt-consumer/src/main.rs</small></td></tr></tbody></table>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    chariott-chariott[&#x27;Chariott Chariott&#x27;]
+    note[&#x27;No external interfaces detected&#x27;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  <p><em>No communication patterns detected.</em></p>
+
+  <h3>Dependencies</h3>
+  <p><em>No explicit dependencies recorded.</em></p>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: Cargo</h3>
+    <pre><code># Install Rust: https://rustup.rs
+curl --proto &#x27;=https&#x27; --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Build
+cargo build --release
+
+# Run tests
+cargo test
+
+# Run
+cargo run</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">Rust</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">2.0</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">7</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">1</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">2</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>refresh</code></td><td><span class="badge badge-red">19 (High)</span></td><td>54</td><td><small>intent_brokering/src/intent_broker.rs:81</small></td></tr><tr><td><code>wain</code></td><td><span class="badge badge-red">18 (High)</span></td><td>133</td><td><small>intent_brokering/examples/applications/lt-consumer/src/main.rs:55</small></td></tr><tr><td><code>execute</code></td><td><span class="badge badge-red">15 (High)</span></td><td>84</td><td><small>intent_brokering/src/execution.rs:60</small></td></tr><tr><td><code>system_inspect_binding_succeeds</code></td><td><span class="badge badge-red">14 (High)</span></td><td>75</td><td><small>intent_brokering/src/execution.rs:272</small></td></tr><tr><td><code>test</code></td><td><span class="badge badge-red">14 (High)</span></td><td>64</td><td><small>intent_brokering/src/execution.rs:282</small></td></tr><tr><td><code>upsert</code></td><td><span class="badge badge-red">11 (High)</span></td><td>54</td><td><small>intent_brokering/src/registry.rs:176</small></td></tr><tr><td><code>evaluate_docker_stats</code></td><td><span class="badge badge-red">11 (High)</span></td><td>58</td><td><small>intent_brokering/examples/applications/lt-consumer/src/main.rs:189</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>refresh</code> — CC 19, nesting 7 in intent_brokering/src/intent_broker.rs</li><li><span class="badge badge-red">Risk</span> <code>wain</code> — CC 18, nesting 6 in intent_brokering/examples/applications/lt-consumer/src/main.rs</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

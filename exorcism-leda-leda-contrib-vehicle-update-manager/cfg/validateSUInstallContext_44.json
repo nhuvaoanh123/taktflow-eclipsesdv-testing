@@ -1,0 +1,21 @@
+{
+  "function": "validateSUInstallContext",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validateSUInstallContext",
+      "line": 44
+    },
+    {
+      "id": 1,
+      "label": "exit:validateSUInstallContext",
+      "line": 54
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

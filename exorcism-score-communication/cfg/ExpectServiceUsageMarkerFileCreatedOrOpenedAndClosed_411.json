@@ -1,0 +1,30 @@
+{
+  "function": "ExpectServiceUsageMarkerFileCreatedOrOpenedAndClosed",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ExpectServiceUsageMarkerFileCreatedOrOpenedAndClosed",
+      "line": 411
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 437
+    },
+    {
+      "id": 2,
+      "label": "exit:ExpectServiceUsageMarkerFileCreatedOrOpenedAndClosed",
+      "line": 438
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

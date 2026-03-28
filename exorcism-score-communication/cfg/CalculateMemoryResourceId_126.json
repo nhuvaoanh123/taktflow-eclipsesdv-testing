@@ -1,0 +1,30 @@
+{
+  "function": "CalculateMemoryResourceId",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CalculateMemoryResourceId",
+      "line": 126
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 130
+    },
+    {
+      "id": 2,
+      "label": "exit:CalculateMemoryResourceId",
+      "line": 132
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

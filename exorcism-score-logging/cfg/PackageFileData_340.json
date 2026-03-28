@@ -1,0 +1,105 @@
+{
+  "function": "PackageFileData",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:PackageFileData",
+      "line": 340
+    },
+    {
+      "id": 1,
+      "label": "if ((0 != fseek(file, (pkgno - 1) * kBufferSize, SEEK_SET)))",
+      "line": 355
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 359
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 355
+    },
+    {
+      "id": 4,
+      "label": "if ((const auto buffersize_max =\r\n            static_cast<uint32)",
+      "line": 361
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 367
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 361
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 370
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 421
+    },
+    {
+      "id": 9,
+      "label": "exit:PackageFileData",
+      "line": 422
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 5,
+      "to": 8
+    },
+    {
+      "from": 5,
+      "to": 9
+    }
+  ]
+}

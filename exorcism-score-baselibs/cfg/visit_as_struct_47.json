@@ -1,0 +1,21 @@
+{
+  "function": "visit_as_struct",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:visit_as_struct",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:visit_as_struct",
+      "line": 147
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

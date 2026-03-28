@@ -1,0 +1,21 @@
+{
+  "function": "try_decode",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:try_decode",
+      "line": 233
+    },
+    {
+      "id": 1,
+      "label": "exit:try_decode",
+      "line": 316
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

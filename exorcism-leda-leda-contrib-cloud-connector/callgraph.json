@@ -1,0 +1,1500 @@
+[
+  {
+    "function": "CreateThingsCommandHandler",
+    "file": "routing/message/handlers/command/things_handler.go",
+    "line": 53,
+    "calls": []
+  },
+  {
+    "function": "Init",
+    "file": "routing/message/handlers/command/things_handler.go",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "HandleMessage",
+    "file": "routing/message/handlers/command/things_handler.go",
+    "line": 65,
+    "calls": [
+      "wrapDittoPayload",
+      "json.Unmarshal",
+      "h.mapperConfig.GetCommandMessageMapping",
+      "message.NewMessage",
+      "errors.Wrap",
+      "parseCommandMessage",
+      "outgoingMessage.SetContext",
+      "createMessageTopic",
+      "outgoingMessage.Context",
+      "protocol.NewHeaders",
+      "json.Marshal",
+      "protocol.WithCorrelationID",
+      "protocol.WithContentType",
+      "fmt.Sprintf",
+      "topic.UnmarshalJSON",
+      "connector.SetTopicToCtx",
+      "watermill.NewUUID",
+      "h.marshaller.Unmarshal"
+    ]
+  },
+  {
+    "function": "createMessageTopic",
+    "file": "routing/message/handlers/command/things_handler.go",
+    "line": 128,
+    "calls": [
+      "fmt.Sprintf"
+    ]
+  },
+  {
+    "function": "wrapDittoPayload",
+    "file": "routing/message/handlers/command/things_handler.go",
+    "line": 135,
+    "calls": [
+      "make",
+      "fmt.Sprint",
+      "json.Unmarshal"
+    ]
+  },
+  {
+    "function": "Name",
+    "file": "routing/message/handlers/command/things_handler.go",
+    "line": 151,
+    "calls": []
+  },
+  {
+    "function": "TesCreatetPassthroughMessageHandler",
+    "file": "routing/message/handlers/command/passthrough_handler_test.go",
+    "line": 31,
+    "calls": [
+      "messageHandler.Init",
+      "messageHandler.Name",
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "TestValidC2DMessageWithSupportedCommandName",
+    "file": "routing/message/handlers/command/passthrough_handler_test.go",
+    "line": 38,
+    "calls": [
+      "json.Unmarshal",
+      "createCommandHandler",
+      "len",
+      "connector.TopicFromCtx",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "azureMsg.Context",
+      "require.NoError",
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "TestValidC2DMessageWithNotSupportedCommandName",
+    "file": "routing/message/handlers/command/passthrough_handler_test.go",
+    "line": 67,
+    "calls": [
+      "createCommandHandler",
+      "require.Error",
+      "assert.Nil",
+      "createWatermillMessageForC2D",
+      "handler.HandleMessage"
+    ]
+  },
+  {
+    "function": "TestInvalidC2DMessagePayload",
+    "file": "routing/message/handlers/command/passthrough_handler_test.go",
+    "line": 83,
+    "calls": [
+      "createCommandHandler",
+      "createWatermillMessageForC2D",
+      "require.Error",
+      "handler.HandleMessage"
+    ]
+  },
+  {
+    "function": "createCommandHandler",
+    "file": "routing/message/handlers/command/passthrough_handler_test.go",
+    "line": 90,
+    "calls": [
+      "messageHandler.Init"
+    ]
+  },
+  {
+    "function": "createWatermillMessageForC2D",
+    "file": "routing/message/handlers/command/passthrough_handler_test.go",
+    "line": 98,
+    "calls": [
+      "json.Unmarshal",
+      "watermill.NewUUID",
+      "message.NewMessage"
+    ]
+  },
+  {
+    "function": "CreatePassthroughCommandHandler",
+    "file": "routing/message/handlers/command/passthrough_handler.go",
+    "line": 35,
+    "calls": [
+      "strings.Split"
+    ]
+  },
+  {
+    "function": "Init",
+    "file": "routing/message/handlers/command/passthrough_handler.go",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "HandleMessage",
+    "file": "routing/message/handlers/command/passthrough_handler.go",
+    "line": 45,
+    "calls": [
+      "msg.SetContext",
+      "msg.Context",
+      "fmt.Errorf",
+      "errors.Wrap",
+      "parseCommandMessage",
+      "util.ContainsString",
+      "connector.SetTopicToCtx"
+    ]
+  },
+  {
+    "function": "Name",
+    "file": "routing/message/handlers/command/passthrough_handler.go",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "TestThingsMessageHandler",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 32,
+    "calls": [
+      "messageHandler.Init",
+      "messageHandler.Name",
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "TestHandleC2DMessageCorrectly",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 39,
+    "calls": [
+      "json.Unmarshal",
+      "c2dMessage.Headers.CorrelationID",
+      "len",
+      "c2dMessage.Headers.ContentType",
+      "connector.TopicFromCtx",
+      "assert.True",
+      "c2dMessage.Topic.String",
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "azureMsg.Context",
+      "require.NoError",
+      "assert.Equal",
+      "createThingsCommandHandler",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 78,
+    "calls": [
+      "json.Unmarshal",
+      "c2dMessage.Headers.CorrelationID",
+      "len",
+      "c2dMessage.Headers.ContentType",
+      "connector.TopicFromCtx",
+      "assert.True",
+      "c2dMessage.Topic.String",
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "azureMsg.Context",
+      "require.NoError",
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "TestValidC2DMessageWithTypeSimpleMessage",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 99,
+    "calls": [
+      "json.Unmarshal",
+      "c2dMessage.Headers.CorrelationID",
+      "len",
+      "c2dMessage.Headers.ContentType",
+      "connector.TopicFromCtx",
+      "assert.True",
+      "c2dMessage.Topic.String",
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "azureMsg.Context",
+      "require.NoError",
+      "assert.Equal",
+      "createThingsCommandHandler",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 144,
+    "calls": [
+      "json.Unmarshal",
+      "c2dMessage.Headers.CorrelationID",
+      "len",
+      "c2dMessage.Headers.ContentType",
+      "connector.TopicFromCtx",
+      "assert.True",
+      "c2dMessage.Topic.String",
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "azureMsg.Context",
+      "require.NoError",
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "TestValidC2DMessageWithTypeUnsupportedProtobufFieldInJSON",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 165,
+    "calls": [
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "require.Error",
+      "createThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "TestUnsupportedC2DVSSMessageType",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 179,
+    "calls": [
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "require.Error",
+      "createThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "TestUnsupportedC2DMessageType",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 193,
+    "calls": [
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "require.Error",
+      "createThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "TestInvalidPayloadC2DMessageType",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 207,
+    "calls": [
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "require.Error",
+      "createThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "TestNoPayloadC2DMessageType",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 221,
+    "calls": [
+      "json.Unmarshal",
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "assert.Equal",
+      "require.NoError",
+      "createThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "TestNoProtoFileC2DMessageType",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 238,
+    "calls": [
+      "assertNoProtoFilePayload"
+    ]
+  },
+  {
+    "function": "TestNoProtoFileManifest",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 250,
+    "calls": [
+      "assertNoProtoFilePayload"
+    ]
+  },
+  {
+    "function": "TestNoProtoFileRetainCorrelationIdC2DMessageType",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 302,
+    "calls": [
+      "assertNoProtoFilePayload"
+    ]
+  },
+  {
+    "function": "assertNoProtoFilePayload",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 354,
+    "calls": [
+      "json.Unmarshal",
+      "string",
+      "json.Marshal",
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "assert.Equal",
+      "require.NoError",
+      "createThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "TestInvalidJSONC2DMessageType",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 371,
+    "calls": [
+      "handler.HandleMessage",
+      "createWatermillMessageForC2D",
+      "require.Error",
+      "createThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "createThingsCommandHandler",
+    "file": "routing/message/handlers/command/things_handler_test.go",
+    "line": 384,
+    "calls": [
+      "messageHandler.Init",
+      "mapperconfig.LoadMessageMapperConfig",
+      "protobuf.NewProtobufJSONMarshaller",
+      "CreateThingsCommandHandler"
+    ]
+  },
+  {
+    "function": "parseCommandMessage",
+    "file": "routing/message/handlers/command/command_common.go",
+    "line": 29,
+    "calls": [
+      "json.Unmarshal",
+      "context.WithValue",
+      "msg.Context",
+      "msg.SetContext"
+    ]
+  },
+  {
+    "function": "CreateThingsTelemetryHandler",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 58,
+    "calls": []
+  },
+  {
+    "function": "Init",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "HandleMessage",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 71,
+    "calls": [
+      "json.Unmarshal",
+      "getUnixTimestampMs",
+      "len",
+      "message.NewMessage",
+      "routing.CreateTelemetryTopic",
+      "string",
+      "errors.Wrap",
+      "outgoingMessage.SetContext",
+      "outgoingMessage.Context",
+      "json.Marshal",
+      "h.convertDittoValue",
+      "h.getTelemetryMapping",
+      "h.marshaller.Marshal",
+      "dittoMessage.Headers.CorrelationID",
+      "fmt.Sprintf",
+      "connector.SetTopicToCtx",
+      "watermill.NewUUID"
+    ]
+  },
+  {
+    "function": "getTelemetryMapping",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 146,
+    "calls": [
+      "fmt.Errorf",
+      "mapperConfig.GetTelemetryMessageMappings",
+      "errors.Wrap",
+      "dittoMessage.Topic.String",
+      "strings.Contains",
+      "fmt.Sprintf",
+      "errors.New"
+    ]
+  },
+  {
+    "function": "convertDittoValue",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 181,
+    "calls": [
+      "json.Unmarshal",
+      "h.convertDittoValueInternal",
+      "errors.Wrap",
+      "json.Marshal",
+      "deepCopyMap",
+      "fmt.Sprintf"
+    ]
+  },
+  {
+    "function": "convertDittoValueInternal",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 199,
+    "calls": [
+      "getUnixTimestampMs",
+      "h.convertDittoValueInternal",
+      "strings.HasPrefix",
+      "h.getRefValue",
+      "strings.Split",
+      "h.getFieldMappingValue",
+      "delete"
+    ]
+  },
+  {
+    "function": "getFieldMappingValue",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 234,
+    "calls": []
+  },
+  {
+    "function": "getRefValue",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 250,
+    "calls": [
+      "h.getRefValueInternal"
+    ]
+  },
+  {
+    "function": "getRefValueInternal",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 254,
+    "calls": [
+      "len",
+      "h.getRefValueInternal"
+    ]
+  },
+  {
+    "function": "deepCopyMap",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 266,
+    "calls": [
+      "make",
+      "deepCopyMap"
+    ]
+  },
+  {
+    "function": "getUnixTimestampMs",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 279,
+    "calls": [
+      "time.Now",
+      "int64"
+    ]
+  },
+  {
+    "function": "Name",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 283,
+    "calls": []
+  },
+  {
+    "function": "Topics",
+    "file": "routing/message/handlers/telemetry/things_handler.go",
+    "line": 287,
+    "calls": []
+  },
+  {
+    "function": "TestThingsMessageHandler",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 35,
+    "calls": [
+      "messageHandler.Init",
+      "messageHandler.Name",
+      "assert.Equal",
+      "messageHandler.Topics"
+    ]
+  },
+  {
+    "function": "TestHandleContainerMessageTypes",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 43,
+    "calls": [
+      "json.Unmarshal",
+      "createTelemetryMessageHandler",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 194,
+    "calls": [
+      "json.Unmarshal",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestOptimizeDittoPayload",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 216,
+    "calls": [
+      "json.Unmarshal",
+      "createTelemetryMessageHandler",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 299,
+    "calls": [
+      "json.Unmarshal",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestConvertDittoValue",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 321,
+    "calls": [
+      "json.Unmarshal",
+      "string",
+      "createTelemetryMessageHandler",
+      "assert.True",
+      "json.Marshal",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 585,
+    "calls": [
+      "json.Unmarshal",
+      "string",
+      "assert.True",
+      "json.Marshal",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestIgnoreConvertDittoValue",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 606,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Nil",
+      "require.NoError",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 640,
+    "calls": [
+      "assert.Nil",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestErrorConvertDittoValue",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 648,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestSerializeJSON",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 662,
+    "calls": [
+      "json.Unmarshal",
+      "createTelemetryMessageHandler",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestSerializeToJsonString",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 691,
+    "calls": [
+      "json.Unmarshal",
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestConvertDittoValueAndSerializeToBfb",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 719,
+    "calls": [
+      "json.Unmarshal",
+      "createTelemetryMessageHandler",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestSerializeConvertedValueToJsonString",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 750,
+    "calls": [
+      "json.Unmarshal",
+      "createTelemetryMessageHandler",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestUnsupportedMessageType",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 781,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMessageTypeMappingWithoutSpecificDescriptorMappingFields",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 797,
+    "calls": [
+      "json.Unmarshal",
+      "createTelemetryMessageHandler",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 841,
+    "calls": [
+      "json.Unmarshal",
+      "assert.True",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestNonExistingMessageTypeDescriptor",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 861,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestNonExistingDittoMessageTopic",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 879,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestNonExistingDittoMessagePath",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 897,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestNonExistingMessageTopicKey",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 915,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestNonExistingMessagePath",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 932,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnsupportedMessagePayload",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 949,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMissingDittoTopic",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 956,
+    "calls": [
+      "createTelemetryMessageHandler",
+      "handler.HandleMessage",
+      "createWatermillMessageForD2C",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "createTelemetryMessageHandler",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 973,
+    "calls": [
+      "CreateThingsTelemetryHandler",
+      "messageHandler.Init",
+      "mapperconfig.LoadMessageMapperConfig",
+      "protobuf.NewProtobufJSONMarshaller"
+    ]
+  },
+  {
+    "function": "createWatermillMessageForD2C",
+    "file": "routing/message/handlers/telemetry/things_handler_test.go",
+    "line": 980,
+    "calls": []
+  },
+  {
+    "function": "TestEmptyMessageMapperConfigFile",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 22,
+    "calls": [
+      "config.LoadMessageMapperConfig",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestInvalidMessageMapperConfigFile",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 27,
+    "calls": [
+      "config.LoadMessageMapperConfig",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestEmptyMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 32,
+    "calls": [
+      "config.LoadMessageMapperConfig",
+      "require.NoError",
+      "assertConfigGettersError"
+    ]
+  },
+  {
+    "function": "TestInvalidJSONMappingsFile",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 38,
+    "calls": [
+      "config.LoadMessageMapperConfig",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMissingMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 43,
+    "calls": [
+      "config.LoadMessageMapperConfig",
+      "require.NoError",
+      "assertConfigGettersError"
+    ]
+  },
+  {
+    "function": "assertConfigGettersError",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 49,
+    "calls": [
+      "mapperConfig.GetCommandMessageMapping",
+      "require.Error",
+      "mapperConfig.GetTelemetryMessageMapping",
+      "mapperConfig.GetTelemetryMessageMappings",
+      "mapperConfig.GetCommandMessageMappings"
+    ]
+  },
+  {
+    "function": "TestMissingCommandMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 60,
+    "calls": [
+      "mapperConfig.GetCommandMessageMapping",
+      "require.Error",
+      "config.LoadMessageMapperConfig",
+      "require.NoError",
+      "mapperConfig.GetCommandMessageMappings"
+    ]
+  },
+  {
+    "function": "TestMissingTelemetryMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 69,
+    "calls": [
+      "require.Error",
+      "mapperConfig.GetTelemetryMessageMapping",
+      "mapperConfig.GetTelemetryMessageMappings",
+      "config.LoadMessageMapperConfig",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestEmptyTelemetryMessageTypeMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 78,
+    "calls": [
+      "require.Error",
+      "mapperConfig.GetTelemetryMessageMapping",
+      "mapperConfig.GetTelemetryMessageMappings",
+      "config.LoadMessageMapperConfig",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestEmptyTelemetryMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 87,
+    "calls": [
+      "require.Error",
+      "mapperConfig.GetTelemetryMessageMapping",
+      "mapperConfig.GetTelemetryMessageMappings",
+      "config.LoadMessageMapperConfig",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestTelemetryMessageMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 96,
+    "calls": [
+      "make",
+      "require.Error",
+      "mapperConfig.GetTelemetryMessageMappings",
+      "mapperConfig.GetTelemetryMessageMapping",
+      "config.LoadMessageMapperConfig",
+      "assertTelemetryMappingProperties",
+      "assertTelemetryMappings",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "assertTelemetryMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 142,
+    "calls": [
+      "assert.NotEqual",
+      "assert.Equal",
+      "len",
+      "assertTelemetryMappingProperties"
+    ]
+  },
+  {
+    "function": "assertTelemetryMappingProperties",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 153,
+    "calls": [
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "TestCommandMessageMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 158,
+    "calls": [
+      "make",
+      "mapperConfig.GetCommandMessageMapping",
+      "require.Error",
+      "config.LoadMessageMapperConfig",
+      "assertCommandMappings",
+      "assertCommandMappingProperties",
+      "assert.Equal",
+      "require.NoError",
+      "mapperConfig.GetCommandMessageMappings"
+    ]
+  },
+  {
+    "function": "assertCommandMappings",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 231,
+    "calls": [
+      "assert.NotEqual",
+      "assert.Equal",
+      "len",
+      "assertCommandMappingProperties"
+    ]
+  },
+  {
+    "function": "assertCommandMappingProperties",
+    "file": "routing/message/config/mapper_config_test.go",
+    "line": 242,
+    "calls": [
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "GetCommandMessageMapping",
+    "file": "routing/message/config/mapper_config.go",
+    "line": 66,
+    "calls": [
+      "errors.New",
+      "fmt.Sprintf",
+      "config.GetCommandMessageMappings"
+    ]
+  },
+  {
+    "function": "GetCommandMessageMappings",
+    "file": "routing/message/config/mapper_config.go",
+    "line": 79,
+    "calls": [
+      "errors.New"
+    ]
+  },
+  {
+    "function": "GetTelemetryMessageMapping",
+    "file": "routing/message/config/mapper_config.go",
+    "line": 92,
+    "calls": [
+      "fmt.Sprintf",
+      "errors.New",
+      "config.GetTelemetryMessageMappings"
+    ]
+  },
+  {
+    "function": "GetTelemetryMessageMappings",
+    "file": "routing/message/config/mapper_config.go",
+    "line": 109,
+    "calls": [
+      "errors.New"
+    ]
+  },
+  {
+    "function": "LoadMessageMapperConfig",
+    "file": "routing/message/config/mapper_config.go",
+    "line": 122,
+    "calls": [
+      "errors.Wrap",
+      "fmt.Sprintf",
+      "json.Unmarshal",
+      "ioutil.ReadFile"
+    ]
+  },
+  {
+    "function": "NewProtobufJSONMarshaller",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 42,
+    "calls": [
+      "make"
+    ]
+  },
+  {
+    "function": "Marshal",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 50,
+    "calls": [
+      "m.getD2CProtoMessage",
+      "len",
+      "bytes.TrimLeft",
+      "dynamicMessage.GetKnownFields",
+      "string",
+      "errors.Wrap",
+      "dynamicMessage.UnmarshalJSON",
+      "fmt.Sprintf",
+      "dynamicMessage.Marshal"
+    ]
+  },
+  {
+    "function": "Unmarshal",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 75,
+    "calls": [
+      "errors.Wrap",
+      "m.getC2DProtoMessage",
+      "fmt.Sprintf",
+      "base64.StdEncoding.DecodeString",
+      "dynamicMessage.MarshalJSON",
+      "dynamicMessage.Unmarshal"
+    ]
+  },
+  {
+    "function": "getD2CProtoMessage",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 96,
+    "calls": [
+      "dynamic.NewMessage",
+      "m.getTelemetryMessageDescriptor"
+    ]
+  },
+  {
+    "function": "getC2DProtoMessage",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 104,
+    "calls": [
+      "dynamic.NewMessage",
+      "m.getCommandMessageDescriptor"
+    ]
+  },
+  {
+    "function": "getTelemetryMessageDescriptor",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 112,
+    "calls": [
+      "make",
+      "m.mapperConfig.GetTelemetryMessageMapping",
+      "m.loadMessageDescriptor"
+    ]
+  },
+  {
+    "function": "getCommandMessageDescriptor",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 143,
+    "calls": [
+      "m.loadMessageDescriptor",
+      "m.mapperConfig.GetCommandMessageMapping"
+    ]
+  },
+  {
+    "function": "loadMessageDescriptor",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 159,
+    "calls": [
+      "len",
+      "strings.HasPrefix",
+      "strings.LastIndex",
+      "os.Open",
+      "fileDescriptors[0].GetMessageTypes",
+      "messageDescriptor.GetName",
+      "fmt.Sprintf",
+      "errors.New",
+      "parser.ParseFiles",
+      "messageDescriptors[0].GetName"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/protobuf/marshaller.go",
+    "line": 167,
+    "calls": [
+      "strings.HasPrefix",
+      "os.Open"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadEmptyProtoMessage",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 164,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadInvalidProtoMessage",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 174,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadForUnsupportedMessage",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 184,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadForUnsupportedMessageFromMultiMessageProtoFile",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 193,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadForMissingMessageFromMultiMessageProtoFile",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 203,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadForMessageSubTypeFromMissingProtoFile",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 213,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadForUnsupportedMessageType",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 223,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadForUnsupportedMessageSubType",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 233,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalMalformedPayload",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 243,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalInvalidPayload",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 253,
+    "calls": [
+      "marshaller.Marshal",
+      "createProtobufMarshaller",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestMarshalPayloadForCachedMessageSubType",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 265,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Marshal",
+      "base64.StdEncoding.EncodeToString",
+      "assert.Equal",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "TestMarshalValidPayloadAndMessageSubType",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 281,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Marshal",
+      "base64.StdEncoding.EncodeToString",
+      "assert.Equal",
+      "require.NoError",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 284,
+    "calls": [
+      "marshaller.Marshal",
+      "base64.StdEncoding.EncodeToString",
+      "require.NoError",
+      "assert.Equal"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadEmptyProtoMessage",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 293,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadInvalidProtoMessage",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 299,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadForUnsupportedMessage",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 305,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadForUnsupportedMessageFromMultiMessageProtoFile",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 311,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadForMissingMessageFromMultiMessageProtoFile",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 317,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadForMessageSubTypeFromMissingProtoFile",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 323,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadForUnsupportedMessageSubType",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 329,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalInvalidPayload",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 335,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalMalformedEncodedPayload",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 341,
+    "calls": [
+      "createProtobufMarshaller",
+      "marshaller.Unmarshal",
+      "require.Error"
+    ]
+  },
+  {
+    "function": "TestUnmarshalPayloadForCachedMessageSubType",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 347,
+    "calls": [
+      "createProtobufMarshaller",
+      "string",
+      "assert.Equal",
+      "require.NoError",
+      "marshaller.Unmarshal"
+    ]
+  },
+  {
+    "function": "TestUnmarshalValidPayloadAndMessageSubType",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 359,
+    "calls": [
+      "createProtobufMarshaller",
+      "string",
+      "assert.Equal",
+      "require.NoError",
+      "marshaller.Unmarshal",
+      "t.Run"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 362,
+    "calls": [
+      "assert.Equal",
+      "marshaller.Unmarshal",
+      "require.NoError",
+      "string"
+    ]
+  },
+  {
+    "function": "createProtobufMarshaller",
+    "file": "routing/message/protobuf/marshaller_test.go",
+    "line": 370,
+    "calls": [
+      "config.LoadMessageMapperConfig",
+      "protobuf.NewProtobufJSONMarshaller",
+      "require.NoError"
+    ]
+  },
+  {
+    "function": "defaultSettings",
+    "file": "cmd/config.go",
+    "line": 36,
+    "calls": [
+      "config.DefaultSettings"
+    ]
+  },
+  {
+    "function": "addMessageHandlers",
+    "file": "cmd/config.go",
+    "line": 43,
+    "calls": [
+      "f.StringVar",
+      "defaultSettings"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "cmd/main.go",
+    "line": 42,
+    "calls": [
+      "protobuf.NewProtobufJSONMarshaller",
+      "createCommandHandlers",
+      "app.MainLoop",
+      "logger.Infof",
+      "loggerOut.Close",
+      "flag.NewFlagSet",
+      "errors.Wrap",
+      "defaultSettings",
+      "azureflags.Copy",
+      "logger.Error",
+      "azureflags.Add",
+      "createTelemetryHandlers",
+      "settings.Validate",
+      "mergo.Map",
+      "os.Exit",
+      "errors.Is",
+      "mapperconfig.LoadMessageMapperConfig",
+      "kantocfg.ReadConfig",
+      "addMessageHandlers",
+      "azureflags.Parse",
+      "azureflags.ConfigCheck",
+      "azureflags.AddGlobal",
+      "log.Fatal",
+      "logger.Setup"
+    ]
+  },
+  {
+    "function": "createTelemetryHandlers",
+    "file": "cmd/main.go",
+    "line": 97,
+    "calls": [
+      "append",
+      "telemetry.CreateThingsTelemetryHandler",
+      "passthrough.CreateTelemetryHandler"
+    ]
+  },
+  {
+    "function": "createCommandHandlers",
+    "file": "cmd/main.go",
+    "line": 108,
+    "calls": [
+      "command.CreateThingsCommandHandler",
+      "append",
+      "command.CreatePassthroughCommandHandler"
+    ]
+  }
+]

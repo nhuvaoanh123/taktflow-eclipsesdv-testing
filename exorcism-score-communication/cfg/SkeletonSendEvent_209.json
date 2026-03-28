@@ -1,0 +1,114 @@
+{
+  "function": "SkeletonSendEvent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonSendEvent",
+      "line": 209
+    },
+    {
+      "id": 1,
+      "label": "if ((skeleton_event == nullptr))",
+      "line": 213
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 216
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 213
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 215
+    },
+    {
+      "id": 5,
+      "label": "if ((typed_data == nullptr))",
+      "line": 219
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 222
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 219
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 221
+    },
+    {
+      "id": 9,
+      "label": "return_statement",
+      "line": 223
+    },
+    {
+      "id": 10,
+      "label": "exit:SkeletonSendEvent",
+      "line": 224
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 6,
+      "to": 10
+    }
+  ]
+}

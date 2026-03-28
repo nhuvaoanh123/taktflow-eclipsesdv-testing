@@ -1,0 +1,21 @@
+{
+  "function": "from_kvs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:from_kvs",
+      "line": 79
+    },
+    {
+      "id": 1,
+      "label": "exit:from_kvs",
+      "line": 93
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

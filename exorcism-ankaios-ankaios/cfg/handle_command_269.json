@@ -1,0 +1,21 @@
+{
+  "function": "handle_command",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_command",
+      "line": 269
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_command",
+      "line": 310
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

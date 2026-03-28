@@ -1,0 +1,21 @@
+{
+  "function": "MsgClientUtils",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MsgClientUtils",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:MsgClientUtils",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

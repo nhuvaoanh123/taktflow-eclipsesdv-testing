@@ -1,0 +1,21 @@
+{
+  "function": "ForwardingSenderChannelTraits",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ForwardingSenderChannelTraits",
+      "line": 69
+    },
+    {
+      "id": 1,
+      "label": "exit:ForwardingSenderChannelTraits",
+      "line": 127
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

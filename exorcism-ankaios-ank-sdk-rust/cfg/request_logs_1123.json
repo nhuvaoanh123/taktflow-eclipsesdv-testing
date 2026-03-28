@@ -1,0 +1,21 @@
+{
+  "function": "request_logs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:request_logs",
+      "line": 1123
+    },
+    {
+      "id": 1,
+      "label": "exit:request_logs",
+      "line": 1158
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

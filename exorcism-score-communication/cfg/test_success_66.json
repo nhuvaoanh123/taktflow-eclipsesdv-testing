@@ -1,0 +1,54 @@
+{
+  "function": "test_success",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_success",
+      "line": 66
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 68
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 71
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 68
+    },
+    {
+      "id": 4,
+      "label": "exit:test_success",
+      "line": 75
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

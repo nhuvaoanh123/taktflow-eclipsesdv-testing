@@ -1,0 +1,21 @@
+{
+  "function": "derive_reloc",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:derive_reloc",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:derive_reloc",
+      "line": 74
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

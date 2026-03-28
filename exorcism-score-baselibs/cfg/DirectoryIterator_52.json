@@ -1,0 +1,21 @@
+{
+  "function": "DirectoryIterator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DirectoryIterator",
+      "line": 52
+    },
+    {
+      "id": 1,
+      "label": "exit:DirectoryIterator",
+      "line": 131
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "external": [
+    {
+      "name": "-v",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "tests",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "root_required",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "do_not_repeat",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "only_nightly",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "1",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "__pypackages__",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "_build",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "buck-out",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "build",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "dist",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "node_modules",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "venv",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "FBT",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "B",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "A",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "C4",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "FIX",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "ISC",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "PIE",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "T20",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "PT",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RSE",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RET501",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RET502",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RET503",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RET504",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "SLF",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "SIM",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "TC",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "ARG",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "PTH",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "I",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "E",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "F",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "UP",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "F401",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "PTH123",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "ARG002",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "ALL",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "double",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "space",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "auto",
+      "source": "pyproject.toml"
+    }
+  ],
+  "internal": []
+}

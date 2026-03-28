@@ -1,0 +1,63 @@
+{
+  "function": "registerRequestHandler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:registerRequestHandler",
+      "line": 96
+    },
+    {
+      "id": 1,
+      "label": "if ((!UriValidator.isRpcMethod(method)))",
+      "line": 105
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 108
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 105
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 106
+    },
+    {
+      "id": 5,
+      "label": "exit:registerRequestHandler",
+      "line": 124
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

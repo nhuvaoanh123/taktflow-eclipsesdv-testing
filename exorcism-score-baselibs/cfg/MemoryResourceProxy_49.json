@@ -1,0 +1,21 @@
+{
+  "function": "MemoryResourceProxy",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MemoryResourceProxy",
+      "line": 49
+    },
+    {
+      "id": 1,
+      "label": "exit:MemoryResourceProxy",
+      "line": 85
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

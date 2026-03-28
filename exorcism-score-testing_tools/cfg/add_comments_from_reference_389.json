@@ -1,0 +1,55 @@
+{
+  "function": "add_comments_from_reference",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:add_comments_from_reference",
+      "line": 389
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 394
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 404
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 394
+    },
+    {
+      "id": 4,
+      "label": "exit:add_comments_from_reference",
+      "line": 404
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

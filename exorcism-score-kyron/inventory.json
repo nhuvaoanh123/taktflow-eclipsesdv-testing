@@ -1,0 +1,21 @@
+{
+  "project": "score-kyron",
+  "files_by_language": {
+    "Rust": {
+      "files": 138,
+      "loc": 28845
+    },
+    "Python": {
+      "files": 28,
+      "loc": 5434
+    }
+  },
+  "total_files": 166,
+  "total_loc": 34279,
+  "total_functions": 2058,
+  "build_system": "Cargo, Bazel, Python/pyproject",
+  "languages": [
+    "Rust",
+    "Python"
+  ]
+}

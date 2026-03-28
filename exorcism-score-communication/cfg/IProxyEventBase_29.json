@@ -1,0 +1,21 @@
+{
+  "function": "IProxyEventBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IProxyEventBase",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:IProxyEventBase",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

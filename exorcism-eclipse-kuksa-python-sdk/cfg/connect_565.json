@@ -1,0 +1,336 @@
+{
+  "function": "connect",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect",
+      "line": 565
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 567
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 570
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 567
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 576
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 583
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 576
+    },
+    {
+      "id": 7,
+      "label": "else",
+      "line": 576
+    },
+    {
+      "id": 8,
+      "label": "if (...)",
+      "line": 585
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 586
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 585
+    },
+    {
+      "id": 11,
+      "label": "if (...)",
+      "line": 588
+    },
+    {
+      "id": 12,
+      "label": "merge",
+      "line": 592
+    },
+    {
+      "id": 13,
+      "label": "then",
+      "line": 588
+    },
+    {
+      "id": 14,
+      "label": "if (...)",
+      "line": 594
+    },
+    {
+      "id": 15,
+      "label": "merge",
+      "line": 596
+    },
+    {
+      "id": 16,
+      "label": "then",
+      "line": 594
+    },
+    {
+      "id": 17,
+      "label": "if (...)",
+      "line": 608
+    },
+    {
+      "id": 18,
+      "label": "merge",
+      "line": 609
+    },
+    {
+      "id": 19,
+      "label": "then",
+      "line": 608
+    },
+    {
+      "id": 20,
+      "label": "if (...)",
+      "line": 610
+    },
+    {
+      "id": 21,
+      "label": "merge",
+      "line": 611
+    },
+    {
+      "id": 22,
+      "label": "then",
+      "line": 610
+    },
+    {
+      "id": 23,
+      "label": "if (...)",
+      "line": 612
+    },
+    {
+      "id": 24,
+      "label": "merge",
+      "line": 613
+    },
+    {
+      "id": 25,
+      "label": "then",
+      "line": 612
+    },
+    {
+      "id": 26,
+      "label": "if (...)",
+      "line": 623
+    },
+    {
+      "id": 27,
+      "label": "merge",
+      "line": 630
+    },
+    {
+      "id": 28,
+      "label": "then",
+      "line": 623
+    },
+    {
+      "id": 29,
+      "label": "else",
+      "line": 623
+    },
+    {
+      "id": 30,
+      "label": "exit:connect",
+      "line": 630
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "false"
+    },
+    {
+      "from": 9,
+      "to": 11
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "true"
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "false"
+    },
+    {
+      "from": 12,
+      "to": 14
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "label": "true"
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "label": "false"
+    },
+    {
+      "from": 15,
+      "to": 17
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "label": "true"
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "label": "false"
+    },
+    {
+      "from": 18,
+      "to": 20
+    },
+    {
+      "from": 20,
+      "to": 22,
+      "label": "true"
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "label": "false"
+    },
+    {
+      "from": 21,
+      "to": 23
+    },
+    {
+      "from": 23,
+      "to": 25,
+      "label": "true"
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "label": "false"
+    },
+    {
+      "from": 24,
+      "to": 26
+    },
+    {
+      "from": 26,
+      "to": 28,
+      "label": "true"
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 26,
+      "to": 29,
+      "label": "false"
+    },
+    {
+      "from": 29,
+      "to": 27
+    },
+    {
+      "from": 27,
+      "to": 30
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "SockType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SockType",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:SockType",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

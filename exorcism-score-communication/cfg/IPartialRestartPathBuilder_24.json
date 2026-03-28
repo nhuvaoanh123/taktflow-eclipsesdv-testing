@@ -1,0 +1,21 @@
+{
+  "function": "IPartialRestartPathBuilder",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IPartialRestartPathBuilder",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:IPartialRestartPathBuilder",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

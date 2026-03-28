@@ -1,0 +1,21 @@
+{
+  "function": "ReceiverFactoryImpl",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ReceiverFactoryImpl",
+      "line": 39
+    },
+    {
+      "id": 1,
+      "label": "exit:ReceiverFactoryImpl",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

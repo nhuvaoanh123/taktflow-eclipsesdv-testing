@@ -1,0 +1,21 @@
+{
+  "function": "find_common_root",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:find_common_root",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:find_common_root",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,6599 @@
+[
+  {
+    "function": "main",
+    "file": "build.rs",
+    "line": 18,
+    "calls": [
+      "unwrap",
+      "customize",
+      "cargo_out_dir",
+      "include",
+      "Customize::default",
+      "Ok",
+      "protobuf_codegen::Codegen::new",
+      "vec",
+      "protoc_bin_vendored::protoc_bin_path",
+      "tokio_bytes",
+      "as_slice",
+      "protoc",
+      "run_from_script",
+      "protoc_path",
+      "inputs"
+    ]
+  },
+  {
+    "function": "validation_error",
+    "file": "src/uattributes.rs",
+    "line": 35,
+    "calls": [
+      "into",
+      "Self::ValidationError"
+    ]
+  },
+  {
+    "function": "parsing_error",
+    "file": "src/uattributes.rs",
+    "line": 42,
+    "calls": [
+      "into",
+      "Self::ParsingError"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/uattributes.rs",
+    "line": 51,
+    "calls": [
+      "write_fmt",
+      "format_args"
+    ]
+  },
+  {
+    "function": "type_",
+    "file": "src/uattributes.rs",
+    "line": 75,
+    "calls": [
+      "enum_value",
+      "ok"
+    ]
+  },
+  {
+    "function": "type_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 96,
+    "calls": [
+      "expect",
+      "type_"
+    ]
+  },
+  {
+    "function": "id",
+    "file": "src/uattributes.rs",
+    "line": 114,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "id_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 136,
+    "calls": [
+      "expect",
+      "id"
+    ]
+  },
+  {
+    "function": "source",
+    "file": "src/uattributes.rs",
+    "line": 154,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "source_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 176,
+    "calls": [
+      "source",
+      "expect"
+    ]
+  },
+  {
+    "function": "sink",
+    "file": "src/uattributes.rs",
+    "line": 194,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "sink_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 216,
+    "calls": [
+      "expect",
+      "sink"
+    ]
+  },
+  {
+    "function": "priority",
+    "file": "src/uattributes.rs",
+    "line": 233,
+    "calls": [
+      "map",
+      "enum_value",
+      "ok"
+    ]
+  },
+  {
+    "function": "priority_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 260,
+    "calls": [
+      "expect",
+      "priority"
+    ]
+  },
+  {
+    "function": "commstatus",
+    "file": "src/uattributes.rs",
+    "line": 277,
+    "calls": [
+      "enum_value",
+      "and_then",
+      "ok"
+    ]
+  },
+  {
+    "function": "commstatus_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 298,
+    "calls": [
+      "expect",
+      "commstatus"
+    ]
+  },
+  {
+    "function": "ttl",
+    "file": "src/uattributes.rs",
+    "line": 319,
+    "calls": []
+  },
+  {
+    "function": "ttl_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 344,
+    "calls": [
+      "ttl",
+      "expect"
+    ]
+  },
+  {
+    "function": "permission_level",
+    "file": "src/uattributes.rs",
+    "line": 361,
+    "calls": []
+  },
+  {
+    "function": "token",
+    "file": "src/uattributes.rs",
+    "line": 379,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "traceparent",
+    "file": "src/uattributes.rs",
+    "line": 397,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "request_id",
+    "file": "src/uattributes.rs",
+    "line": 415,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "request_id_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 437,
+    "calls": [
+      "expect",
+      "request_id"
+    ]
+  },
+  {
+    "function": "payload_format",
+    "file": "src/uattributes.rs",
+    "line": 454,
+    "calls": [
+      "enum_value",
+      "ok"
+    ]
+  },
+  {
+    "function": "payload_format_unchecked",
+    "file": "src/uattributes.rs",
+    "line": 475,
+    "calls": [
+      "expect",
+      "payload_format"
+    ]
+  },
+  {
+    "function": "is_default_priority",
+    "file": "src/uattributes.rs",
+    "line": 484,
+    "calls": []
+  },
+  {
+    "function": "is_publish",
+    "file": "src/uattributes.rs",
+    "line": 501,
+    "calls": [
+      "enum_value",
+      "Ok"
+    ]
+  },
+  {
+    "function": "is_request",
+    "file": "src/uattributes.rs",
+    "line": 518,
+    "calls": [
+      "enum_value",
+      "Ok"
+    ]
+  },
+  {
+    "function": "is_response",
+    "file": "src/uattributes.rs",
+    "line": 535,
+    "calls": [
+      "enum_value",
+      "Ok"
+    ]
+  },
+  {
+    "function": "is_notification",
+    "file": "src/uattributes.rs",
+    "line": 552,
+    "calls": [
+      "enum_value",
+      "Ok"
+    ]
+  },
+  {
+    "function": "check_expired",
+    "file": "src/uattributes.rs",
+    "line": 563,
+    "calls": [
+      "check_expired_for_reference",
+      "UAttributesError::validation_error",
+      "duration_since",
+      "Ok",
+      "as_millis",
+      "and_then",
+      "map_err",
+      "SystemTime::now"
+    ]
+  },
+  {
+    "function": "check_expired_for_reference",
+    "file": "src/uattributes.rs",
+    "line": 589,
+    "calls": [
+      "Err",
+      "UAttributesError::validation_error",
+      "Ok",
+      "and_then",
+      "as_ref",
+      "saturating_add",
+      "u128::from"
+    ]
+  },
+  {
+    "function": "build_for_time_offset",
+    "file": "src/uattributes.rs",
+    "line": 619,
+    "calls": [
+      "unwrap",
+      "duration_since",
+      "as_millis",
+      "u64::try_from",
+      "checked_add_signed",
+      "expect",
+      "UUID::build_for_timestamp_millis",
+      "SystemTime::now"
+    ]
+  },
+  {
+    "function": "test_is_expired",
+    "file": "src/uattributes.rs",
+    "line": 640,
+    "calls": [
+      "Default::default",
+      "into",
+      "assert"
+    ]
+  },
+  {
+    "function": "verify_filter_criteria",
+    "file": "src/utransport.rs",
+    "line": 35,
+    "calls": [
+      "is_notification_destination",
+      "Err",
+      "map_err",
+      "UUri::check_validity",
+      "UStatus::fail_with_code",
+      "Ok",
+      "is_rpc_method",
+      "format",
+      "is_event",
+      "has_wildcard_resource_id"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/utransport.rs",
+    "line": 116,
+    "calls": [
+      "Default::default",
+      "into"
+    ]
+  },
+  {
+    "function": "get_authority",
+    "file": "src/utransport.rs",
+    "line": 129,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_resource_uri",
+    "file": "src/utransport.rs",
+    "line": 133,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_source_uri",
+    "file": "src/utransport.rs",
+    "line": 139,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/utransport.rs",
+    "line": 146,
+    "calls": [
+      "Self::try_from"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/utransport.rs",
+    "line": 187,
+    "calls": [
+      "StaticUriProvider::new",
+      "u8::try_from",
+      "Ok"
+    ]
+  },
+  {
+    "function": "receive",
+    "file": "src/utransport.rs",
+    "line": 258,
+    "calls": [
+      "Err",
+      "UStatus::fail_with_code"
+    ]
+  },
+  {
+    "function": "register_listener",
+    "file": "src/utransport.rs",
+    "line": 287,
+    "calls": [
+      "Err",
+      "UStatus::fail_with_code"
+    ]
+  },
+  {
+    "function": "unregister_listener",
+    "file": "src/utransport.rs",
+    "line": 315,
+    "calls": [
+      "Err",
+      "UStatus::fail_with_code"
+    ]
+  },
+  {
+    "function": "send",
+    "file": "src/utransport.rs",
+    "line": 346,
+    "calls": [
+      "do_send"
+    ]
+  },
+  {
+    "function": "register_listener",
+    "file": "src/utransport.rs",
+    "line": 349,
+    "calls": [
+      "do_register_listener"
+    ]
+  },
+  {
+    "function": "unregister_listener",
+    "file": "src/utransport.rs",
+    "line": 358,
+    "calls": [
+      "do_unregister_listener"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/utransport.rs",
+    "line": 389,
+    "calls": []
+  },
+  {
+    "function": "into_inner",
+    "file": "src/utransport.rs",
+    "line": 393,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "pointer_address",
+    "file": "src/utransport.rs",
+    "line": 398,
+    "calls": [
+      "Arc::as_ptr"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/utransport.rs",
+    "line": 411,
+    "calls": []
+  },
+  {
+    "function": "hash",
+    "file": "src/utransport.rs",
+    "line": 420,
+    "calls": [
+      "Arc::as_ptr",
+      "hash"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/utransport.rs",
+    "line": 432,
+    "calls": [
+      "Arc::ptr_eq"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/utransport.rs",
+    "line": 440,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "test_static_uri_provider_get_source",
+    "file": "src/utransport.rs",
+    "line": 458,
+    "calls": [
+      "get_source_uri",
+      "StaticUriProvider::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_static_uri_provider_get_resource",
+    "file": "src/utransport.rs",
+    "line": 468,
+    "calls": [
+      "get_resource_uri",
+      "StaticUriProvider::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_deref_returns_wrapped_listener",
+    "file": "src/utransport.rs",
+    "line": 478,
+    "calls": [
+      "expect_on_receive",
+      "return_const",
+      "once",
+      "ComparableListener::new",
+      "on_receive",
+      "Arc::new",
+      "MockUListener::new",
+      "UMessage::default",
+      "deref"
+    ]
+  },
+  {
+    "function": "test_to_inner_returns_reference_to_wrapped_listener",
+    "file": "src/utransport.rs",
+    "line": 490,
+    "calls": [
+      "expect_on_receive",
+      "into_inner",
+      "return_const",
+      "once",
+      "ComparableListener::new",
+      "on_receive",
+      "Arc::new",
+      "MockUListener::new",
+      "UMessage::default"
+    ]
+  },
+  {
+    "function": "test_eq_and_hash_are_consistent_for_comparable_listeners_wrapping_same_listener",
+    "file": "src/utransport.rs",
+    "line": 502,
+    "calls": [
+      "expect_on_receive",
+      "clone",
+      "assert",
+      "finish",
+      "return_const",
+      "DefaultHasher::new",
+      "on_receive",
+      "ComparableListener::new",
+      "Arc::new",
+      "MockUListener::new",
+      "hash",
+      "assert_eq",
+      "times",
+      "UMessage::default"
+    ]
+  },
+  {
+    "function": "test_eq_and_hash_are_consistent_for_comparable_listeners_wrapping_different_listeners",
+    "file": "src/utransport.rs",
+    "line": 523,
+    "calls": [
+      "expect_on_receive",
+      "assert",
+      "finish",
+      "return_const",
+      "once",
+      "DefaultHasher::new",
+      "on_receive",
+      "ComparableListener::new",
+      "Arc::new",
+      "MockUListener::new",
+      "hash",
+      "UMessage::default",
+      "assert_ne"
+    ]
+  },
+  {
+    "function": "test_utransport_default_implementations",
+    "file": "src/utransport.rs",
+    "line": 553,
+    "calls": [
+      "assert",
+      "Arc::new",
+      "MockUListener::new",
+      "todo"
+    ]
+  },
+  {
+    "function": "send",
+    "file": "src/utransport.rs",
+    "line": 557,
+    "calls": [
+      "todo"
+    ]
+  },
+  {
+    "function": "test_comparable_listener_pointer_address",
+    "file": "src/utransport.rs",
+    "line": 580,
+    "calls": [
+      "clone",
+      "unwrap",
+      "pointer_address",
+      "ComparableListener::new",
+      "Arc::new",
+      "MockUListener::new",
+      "join",
+      "assert_eq",
+      "std::thread::spawn"
+    ]
+  },
+  {
+    "function": "test_comparable_listener_debug_outputs",
+    "file": "src/utransport.rs",
+    "line": 597,
+    "calls": [
+      "assert",
+      "ComparableListener::new",
+      "Arc::new",
+      "MockUListener::new",
+      "format"
+    ]
+  },
+  {
+    "function": "test_verify_filter_criteria_succeeds_for",
+    "file": "src/utransport.rs",
+    "line": 632,
+    "calls": [
+      "map",
+      "expect",
+      "UUri::from_str",
+      "assert"
+    ]
+  },
+  {
+    "function": "test_verify_filter_criteria_fails_for",
+    "file": "src/utransport.rs",
+    "line": 670,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/umessage.rs",
+    "line": 36,
+    "calls": [
+      "write_fmt",
+      "format_args"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/umessage.rs",
+    "line": 52,
+    "calls": [
+      "Self::AttributesValidationError"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/umessage.rs",
+    "line": 58,
+    "calls": [
+      "Self::DataSerializationError"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/umessage.rs",
+    "line": 64,
+    "calls": [
+      "Self::PayloadError"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/umessage.rs",
+    "line": 70,
+    "calls": [
+      "to_string",
+      "Self::from"
+    ]
+  },
+  {
+    "function": "attributes",
+    "file": "src/umessage.rs",
+    "line": 77,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "attributes_unchecked",
+    "file": "src/umessage.rs",
+    "line": 81,
+    "calls": [
+      "expect",
+      "attributes"
+    ]
+  },
+  {
+    "function": "type_",
+    "file": "src/umessage.rs",
+    "line": 86,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "type_unchecked",
+    "file": "src/umessage.rs",
+    "line": 95,
+    "calls": [
+      "type_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "id",
+    "file": "src/umessage.rs",
+    "line": 100,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "id_unchecked",
+    "file": "src/umessage.rs",
+    "line": 109,
+    "calls": [
+      "id_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "source",
+    "file": "src/umessage.rs",
+    "line": 114,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "source_unchecked",
+    "file": "src/umessage.rs",
+    "line": 123,
+    "calls": [
+      "source_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "sink",
+    "file": "src/umessage.rs",
+    "line": 128,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "sink_unchecked",
+    "file": "src/umessage.rs",
+    "line": 137,
+    "calls": [
+      "sink_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "priority",
+    "file": "src/umessage.rs",
+    "line": 142,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "priority_unchecked",
+    "file": "src/umessage.rs",
+    "line": 151,
+    "calls": [
+      "priority_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "commstatus",
+    "file": "src/umessage.rs",
+    "line": 156,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "commstatus_unchecked",
+    "file": "src/umessage.rs",
+    "line": 165,
+    "calls": [
+      "commstatus_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "ttl",
+    "file": "src/umessage.rs",
+    "line": 174,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "ttl_unchecked",
+    "file": "src/umessage.rs",
+    "line": 187,
+    "calls": [
+      "ttl_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "permission_level",
+    "file": "src/umessage.rs",
+    "line": 192,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "token",
+    "file": "src/umessage.rs",
+    "line": 197,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "traceparent",
+    "file": "src/umessage.rs",
+    "line": 202,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "request_id",
+    "file": "src/umessage.rs",
+    "line": 207,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "request_id_unchecked",
+    "file": "src/umessage.rs",
+    "line": 216,
+    "calls": [
+      "attributes_unchecked",
+      "request_id_unchecked"
+    ]
+  },
+  {
+    "function": "payload_format",
+    "file": "src/umessage.rs",
+    "line": 221,
+    "calls": [
+      "attributes",
+      "and_then"
+    ]
+  },
+  {
+    "function": "payload_format_unchecked",
+    "file": "src/umessage.rs",
+    "line": 230,
+    "calls": [
+      "payload_format_unchecked",
+      "attributes_unchecked"
+    ]
+  },
+  {
+    "function": "is_publish",
+    "file": "src/umessage.rs",
+    "line": 251,
+    "calls": [
+      "is_some_and",
+      "attributes"
+    ]
+  },
+  {
+    "function": "is_request",
+    "file": "src/umessage.rs",
+    "line": 272,
+    "calls": [
+      "is_some_and",
+      "attributes"
+    ]
+  },
+  {
+    "function": "is_response",
+    "file": "src/umessage.rs",
+    "line": 293,
+    "calls": [
+      "is_some_and",
+      "attributes"
+    ]
+  },
+  {
+    "function": "is_notification",
+    "file": "src/umessage.rs",
+    "line": 314,
+    "calls": [
+      "is_some_and",
+      "attributes"
+    ]
+  },
+  {
+    "function": "extract_protobuf",
+    "file": "src/umessage.rs",
+    "line": 329,
+    "calls": [
+      "Err",
+      "to_string",
+      "unwrap_or_default",
+      "payload_format",
+      "UMessageError::PayloadError",
+      "deserialize_protobuf_bytes",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "deserialize_protobuf_bytes",
+    "file": "src/umessage.rs",
+    "line": 358,
+    "calls": [
+      "Err",
+      "to_string",
+      "map_or_else",
+      "UMessageError::PayloadError",
+      "format",
+      "map_err",
+      "UMessageError::DataSerializationError",
+      "UMessageError::from",
+      "Ok",
+      "T::parse_from_tokio_bytes",
+      "and_then",
+      "to_media_type",
+      "unpack",
+      "Any::parse_from_tokio_bytes"
+    ]
+  },
+  {
+    "function": "test_deserialize_protobuf_bytes_succeeds",
+    "file": "src/umessage.rs",
+    "line": 405,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "StringValue::new",
+      "clone",
+      "Any::pack",
+      "assert",
+      "into",
+      "deserialize_protobuf_bytes::<StringValue>",
+      "write_to_bytes"
+    ]
+  },
+  {
+    "function": "test_deserialize_protobuf_bytes_fails_for_payload_type_mismatch",
+    "file": "src/umessage.rs",
+    "line": 425,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "StringValue::new",
+      "assert",
+      "Any::pack",
+      "deserialize_protobuf_bytes::<UStatus>",
+      "into",
+      "write_to_bytes"
+    ]
+  },
+  {
+    "function": "test_deserialize_protobuf_bytes_fails_for_",
+    "file": "src/umessage.rs",
+    "line": 444,
+    "calls": [
+      "into",
+      "assert",
+      "deserialize_protobuf_bytes::<UStatus>"
+    ]
+  },
+  {
+    "function": "test_deserialize_protobuf_bytes_fails_for_invalid_encoding",
+    "file": "src/umessage.rs",
+    "line": 450,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "assert",
+      "deserialize_protobuf_bytes::<Duration>",
+      "Default::default",
+      "into",
+      "write_to_bytes",
+      "vec"
+    ]
+  },
+  {
+    "function": "extract_payload_succeeds",
+    "file": "src/umessage.rs",
+    "line": 465,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "assert",
+      "Any::pack",
+      "Default::default",
+      "into",
+      "and_then",
+      "write_to_bytes",
+      "Some"
+    ]
+  },
+  {
+    "function": "extract_payload_fails_for_no_payload",
+    "file": "src/umessage.rs",
+    "line": 488,
+    "calls": [
+      "Some",
+      "into",
+      "assert",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "test_from_attributes_error",
+    "file": "src/umessage.rs",
+    "line": 503,
+    "calls": [
+      "UAttributesError::validation_error",
+      "assert",
+      "UMessageError::from"
+    ]
+  },
+  {
+    "function": "test_from_protobuf_error",
+    "file": "src/umessage.rs",
+    "line": 513,
+    "calls": [
+      "assert",
+      "UMessageError::from",
+      "protobuf::Error::from",
+      "io::Error::last_os_error"
+    ]
+  },
+  {
+    "function": "test_from_error_msg",
+    "file": "src/umessage.rs",
+    "line": 523,
+    "calls": [
+      "assert",
+      "UMessageError::from"
+    ]
+  },
+  {
+    "function": "matches",
+    "file": "src/local_transport.rs",
+    "line": 33,
+    "calls": [
+      "matches",
+      "is_none",
+      "is_some_and"
+    ]
+  },
+  {
+    "function": "matches_msg",
+    "file": "src/local_transport.rs",
+    "line": 44,
+    "calls": [
+      "matches",
+      "as_ref",
+      "and_then"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "src/local_transport.rs",
+    "line": 60,
+    "calls": [
+      "on_receive"
+    ]
+  },
+  {
+    "function": "dispatch",
+    "file": "src/local_transport.rs",
+    "line": 75,
+    "calls": [
+      "clone",
+      "iter",
+      "read",
+      "on_receive",
+      "matches_msg"
+    ]
+  },
+  {
+    "function": "send",
+    "file": "src/local_transport.rs",
+    "line": 87,
+    "calls": [
+      "dispatch",
+      "Ok"
+    ]
+  },
+  {
+    "function": "register_listener",
+    "file": "src/local_transport.rs",
+    "line": 92,
+    "calls": [
+      "Err",
+      "UStatus::fail_with_code",
+      "write",
+      "contains",
+      "insert",
+      "ComparableListener::new",
+      "Ok",
+      "map",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "unregister_listener",
+    "file": "src/local_transport.rs",
+    "line": 115,
+    "calls": [
+      "Err",
+      "UStatus::fail_with_code",
+      "write",
+      "ComparableListener::new",
+      "Ok",
+      "map",
+      "remove",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_send_dispatches_to_matching_listener",
+    "file": "src/local_transport.rs",
+    "line": 144,
+    "calls": [
+      "expect_on_receive",
+      "unwrap",
+      "LocalTransport::default",
+      "get_resource_uri",
+      "clone",
+      "return_const",
+      "register_listener",
+      "once",
+      "StaticUriProvider::new",
+      "build",
+      "UMessageBuilder::publish",
+      "Arc::new",
+      "MockUListener::new",
+      "unregister_listener",
+      "send"
+    ]
+  },
+  {
+    "function": "test_send_does_not_dispatch_to_non_matching_listener",
+    "file": "src/local_transport.rs",
+    "line": 186,
+    "calls": [
+      "expect_on_receive",
+      "unwrap",
+      "LocalTransport::default",
+      "get_resource_uri",
+      "clone",
+      "return_const",
+      "register_listener",
+      "StaticUriProvider::new",
+      "build",
+      "UMessageBuilder::publish",
+      "never",
+      "Arc::new",
+      "MockUListener::new",
+      "unregister_listener",
+      "send"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "src/cloudevents.rs",
+    "line": 50,
+    "calls": [
+      "to_string",
+      "self.id\r\n            .parse::<UUID>",
+      "UAttributesError::parsing_error",
+      "map_err"
+    ]
+  },
+  {
+    "function": "set_id",
+    "file": "src/cloudevents.rs",
+    "line": 56,
+    "calls": [
+      "to_hyphenated_string"
+    ]
+  },
+  {
+    "function": "get_type",
+    "file": "src/cloudevents.rs",
+    "line": 60,
+    "calls": [
+      "UMessageType::try_from_cloudevent_type",
+      "clone"
+    ]
+  },
+  {
+    "function": "set_type",
+    "file": "src/cloudevents.rs",
+    "line": 64,
+    "calls": [
+      "to_cloudevent_type"
+    ]
+  },
+  {
+    "function": "get_source",
+    "file": "src/cloudevents.rs",
+    "line": 68,
+    "calls": [
+      "to_string",
+      "self.source\r\n            .parse::<UUri>",
+      "UAttributesError::parsing_error",
+      "map_err"
+    ]
+  },
+  {
+    "function": "set_source",
+    "file": "src/cloudevents.rs",
+    "line": 74,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "get_sink",
+    "file": "src/cloudevents.rs",
+    "line": 78,
+    "calls": [
+      "to_string",
+      "map_or",
+      "map_err",
+      "uri.parse::<UUri>",
+      "Ok",
+      "map",
+      "UAttributesError::parsing_error",
+      "get",
+      "ce_uri_ref"
+    ]
+  },
+  {
+    "function": "set_sink",
+    "file": "src/cloudevents.rs",
+    "line": 89,
+    "calls": [
+      "to_string",
+      "set_ce_uri_ref",
+      "into",
+      "insert",
+      "CloudEventAttributeValue::new"
+    ]
+  },
+  {
+    "function": "get_priority",
+    "file": "src/cloudevents.rs",
+    "line": 95,
+    "calls": [
+      "UPriority::default",
+      "map_or",
+      "ce_string",
+      "Ok",
+      "map",
+      "UPriority::try_from_priority_code",
+      "get"
+    ]
+  },
+  {
+    "function": "set_priority",
+    "file": "src/cloudevents.rs",
+    "line": 104,
+    "calls": [
+      "to_string",
+      "to_priority_code",
+      "insert",
+      "CloudEventAttributeValue::new",
+      "set_ce_string"
+    ]
+  },
+  {
+    "function": "get_ttl",
+    "file": "src/cloudevents.rs",
+    "line": 111,
+    "calls": [
+      "map",
+      "ce_integer",
+      "get"
+    ]
+  },
+  {
+    "function": "set_ttl",
+    "file": "src/cloudevents.rs",
+    "line": 117,
+    "calls": [
+      "to_string",
+      "i32::try_from",
+      "insert",
+      "set_ce_integer",
+      "Ok",
+      "CloudEventAttributeValue::new",
+      "UAttributesError::parsing_error",
+      "map_err"
+    ]
+  },
+  {
+    "function": "get_token",
+    "file": "src/cloudevents.rs",
+    "line": 125,
+    "calls": [
+      "map",
+      "ce_string",
+      "to_string",
+      "get"
+    ]
+  },
+  {
+    "function": "set_token",
+    "file": "src/cloudevents.rs",
+    "line": 131,
+    "calls": [
+      "to_string",
+      "into",
+      "insert",
+      "CloudEventAttributeValue::new",
+      "set_ce_string"
+    ]
+  },
+  {
+    "function": "get_permission_level",
+    "file": "src/cloudevents.rs",
+    "line": 138,
+    "calls": [
+      "map",
+      "ce_integer",
+      "get"
+    ]
+  },
+  {
+    "function": "set_permission_level",
+    "file": "src/cloudevents.rs",
+    "line": 144,
+    "calls": [
+      "to_string",
+      "i32::try_from",
+      "insert",
+      "set_ce_integer",
+      "Ok",
+      "CloudEventAttributeValue::new",
+      "UAttributesError::parsing_error",
+      "map_err"
+    ]
+  },
+  {
+    "function": "get_request_id",
+    "file": "src/cloudevents.rs",
+    "line": 153,
+    "calls": [
+      "to_string",
+      "v.parse::<UUID>",
+      "map_or",
+      "map_err",
+      "ce_string",
+      "Ok",
+      "map",
+      "UAttributesError::parsing_error",
+      "get",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "set_request_id",
+    "file": "src/cloudevents.rs",
+    "line": 164,
+    "calls": [
+      "to_string",
+      "to_hyphenated_string",
+      "insert",
+      "CloudEventAttributeValue::new",
+      "set_ce_string"
+    ]
+  },
+  {
+    "function": "get_commstatus",
+    "file": "src/cloudevents.rs",
+    "line": 171,
+    "calls": [
+      "map",
+      "and_then",
+      "ce_integer",
+      "get"
+    ]
+  },
+  {
+    "function": "set_commstatus",
+    "file": "src/cloudevents.rs",
+    "line": 178,
+    "calls": [
+      "to_string",
+      "insert",
+      "set_ce_integer",
+      "CloudEventAttributeValue::new",
+      "value"
+    ]
+  },
+  {
+    "function": "get_traceparent",
+    "file": "src/cloudevents.rs",
+    "line": 187,
+    "calls": [
+      "map",
+      "ce_string",
+      "to_string",
+      "get"
+    ]
+  },
+  {
+    "function": "set_traceparent",
+    "file": "src/cloudevents.rs",
+    "line": 193,
+    "calls": [
+      "to_string",
+      "into",
+      "insert",
+      "CloudEventAttributeValue::new",
+      "set_ce_string"
+    ]
+  },
+  {
+    "function": "get_payload_format",
+    "file": "src/cloudevents.rs",
+    "line": 200,
+    "calls": [
+      "to_string",
+      "map_or",
+      "Ok",
+      "map",
+      "ce_integer",
+      "get",
+      "UPayloadFormat::from_i32",
+      "ok_or",
+      "UAttributesError::ParsingError"
+    ]
+  },
+  {
+    "function": "set_payload_format",
+    "file": "src/cloudevents.rs",
+    "line": 211,
+    "calls": [
+      "to_string",
+      "insert",
+      "set_ce_integer",
+      "CloudEventAttributeValue::new",
+      "value"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/cloudevents.rs",
+    "line": 240,
+    "calls": [
+      "token",
+      "payload_format",
+      "id",
+      "set_ttl",
+      "set_payload_format",
+      "Ok",
+      "set_commstatus",
+      "set_binary_data",
+      "sink",
+      "set_token",
+      "set_traceparent",
+      "is_none",
+      "Err",
+      "to_string",
+      "set_source",
+      "permission_level",
+      "CloudEvent::new",
+      "String::from_utf8",
+      "Default::default",
+      "UMessageError::AttributesValidationError",
+      "set_text_data",
+      "commstatus",
+      "set_type",
+      "UAttributesError::ValidationError",
+      "traceparent",
+      "unwrap_or_default",
+      "UMessageError::PayloadError",
+      "type_",
+      "set_request_id",
+      "request_id",
+      "ttl",
+      "to_vec",
+      "set_priority",
+      "priority",
+      "set_id",
+      "source",
+      "into",
+      "map",
+      "map_err",
+      "set_permission_level",
+      "as_ref",
+      "set_sink",
+      "set_proto_data"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/cloudevents.rs",
+    "line": 347,
+    "calls": [
+      "eq",
+      "get_type",
+      "has_proto_data",
+      "get_permission_level",
+      "Ok",
+      "has_binary_data",
+      "get_token",
+      "get_sink",
+      "get_priority",
+      "Err",
+      "get_request_id",
+      "Default::default",
+      "UMessageError::AttributesValidationError",
+      "binary_data",
+      "text_data",
+      "MessageField::from_option",
+      "UAttributesError::ValidationError",
+      "UAttributesValidators::get_validator_for_attributes",
+      "get_id",
+      "to_owned",
+      "get_payload_format",
+      "Some",
+      "get_traceparent",
+      "to_vec",
+      "get_ttl",
+      "has_text_data",
+      "get_commstatus",
+      "EnumOrUnknown::from",
+      "into",
+      "map",
+      "proto_data",
+      "format",
+      "validate",
+      "get_source",
+      "Bytes::copy_from_slice"
+    ]
+  },
+  {
+    "function": "assert_standard_cloudevent_attributes",
+    "file": "src/cloudevents.rs",
+    "line": 417,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_try_from_publish_message_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 459,
+    "calls": [
+      "with_traceparent",
+      "with_priority",
+      "UUri::from_str",
+      "assert_standard_cloudevent_attributes",
+      "build_with_payload",
+      "UMessageBuilder::publish",
+      "CloudEvent::try_from",
+      "MESSAGE_ID\r\n            .parse::<UUID>",
+      "as_bytes",
+      "assert_eq",
+      "with_ttl",
+      "expect",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_try_from_notification_message_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 486,
+    "calls": [
+      "with_traceparent",
+      "to_string",
+      "with_priority",
+      "UUri::from_str",
+      "assert_standard_cloudevent_attributes",
+      "build_with_payload",
+      "CloudEvent::try_from",
+      "MESSAGE_ID\r\n            .parse::<UUID>",
+      "as_bytes",
+      "assert_eq",
+      "with_ttl",
+      "Some",
+      "expect",
+      "UMessageBuilder::notification",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_try_from_request_message_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 523,
+    "calls": [
+      "StringValue::new",
+      "assert",
+      "with_permission_level",
+      "UUri::from_str",
+      "expect",
+      "with_message_id",
+      "to_string",
+      "with_priority",
+      "Any::pack",
+      "with_token",
+      "CloudEvent::try_from",
+      "assert_eq",
+      "Some",
+      "with_traceparent",
+      "UMessageBuilder::request",
+      "into",
+      "assert_standard_cloudevent_attributes",
+      "MESSAGE_ID\r\n            .parse::<UUID>",
+      "build_with_wrapped_protobuf_payload"
+    ]
+  },
+  {
+    "function": "test_try_from_response_message_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 584,
+    "calls": [
+      "StringValue::new",
+      "assert",
+      "UMessageBuilder::response",
+      "UUri::from_str",
+      "expect",
+      "with_message_id",
+      "build_with_protobuf_payload",
+      "to_string",
+      "clone",
+      "with_priority",
+      "CloudEvent::try_from",
+      "with_comm_status",
+      "assert_eq",
+      "with_ttl",
+      "Some",
+      "with_traceparent",
+      "into",
+      "assert_standard_cloudevent_attributes",
+      "MESSAGE_ID\r\n            .parse::<UUID>",
+      "UUID::build"
+    ]
+  },
+  {
+    "function": "assert_standard_umessage_attributes",
+    "file": "src/cloudevents.rs",
+    "line": 643,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_try_from_cloudevent_without_sink_fails",
+    "file": "src/cloudevents.rs",
+    "line": 665,
+    "calls": [
+      "into",
+      "assert",
+      "to_cloudevent_type",
+      "CloudEvent::new"
+    ]
+  },
+  {
+    "function": "test_try_from_publish_cloudevent_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 676,
+    "calls": [
+      "to_string",
+      "assert_standard_umessage_attributes",
+      "get_or_default",
+      "CloudEvent::new",
+      "set_ttl",
+      "into",
+      "set_payload_format",
+      "assert_eq",
+      "set_text_data",
+      "UMessage::try_from",
+      "set_traceparent",
+      "expect",
+      "set_priority",
+      "set_type"
+    ]
+  },
+  {
+    "function": "test_try_from_notification_cloudevent_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 705,
+    "calls": [
+      "to_string",
+      "assert_standard_umessage_attributes",
+      "get_or_default",
+      "CloudEvent::new",
+      "set_ttl",
+      "into",
+      "set_payload_format",
+      "Some",
+      "assert_eq",
+      "set_sink",
+      "set_text_data",
+      "set_traceparent",
+      "expect",
+      "set_priority",
+      "UMessage::try_from",
+      "set_type"
+    ]
+  },
+  {
+    "function": "test_try_from_request_cloudevent_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 738,
+    "calls": [
+      "StringValue::new",
+      "set_ttl",
+      "set_token",
+      "set_traceparent",
+      "expect",
+      "assert_standard_umessage_attributes",
+      "clone",
+      "to_string",
+      "get_or_default",
+      "Any::pack",
+      "CloudEvent::new",
+      "Default::default",
+      "set_type",
+      "UMessage::try_from",
+      "Some",
+      "assert_eq",
+      "set_priority",
+      "into",
+      "write_to_bytes",
+      "set_permission_level",
+      "set_sink",
+      "set_proto_data"
+    ]
+  },
+  {
+    "function": "test_try_from_response_cloudevent_succeeds",
+    "file": "src/cloudevents.rs",
+    "line": 783,
+    "calls": [
+      "set_ttl",
+      "set_payload_format",
+      "set_commstatus",
+      "set_traceparent",
+      "expect",
+      "assert_standard_umessage_attributes",
+      "to_string",
+      "get_or_default",
+      "CloudEvent::new",
+      "Default::default",
+      "set_type",
+      "set_request_id",
+      "UMessage::try_from",
+      "Some",
+      "to_vec",
+      "set_priority",
+      "assert_eq",
+      "into",
+      "UUID::build",
+      "set_sink",
+      "set_proto_data"
+    ]
+  },
+  {
+    "function": "ok",
+    "file": "src/ustatus.rs",
+    "line": 30,
+    "calls": [
+      "Default::default",
+      "into"
+    ]
+  },
+  {
+    "function": "fail",
+    "file": "src/ustatus.rs",
+    "line": 47,
+    "calls": [
+      "Some",
+      "into",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "fail_with_code",
+    "file": "src/ustatus.rs",
+    "line": 66,
+    "calls": [
+      "Some",
+      "into",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "is_failed",
+    "file": "src/ustatus.rs",
+    "line": 87,
+    "calls": [
+      "get_code"
+    ]
+  },
+  {
+    "function": "is_success",
+    "file": "src/ustatus.rs",
+    "line": 104,
+    "calls": [
+      "get_code"
+    ]
+  },
+  {
+    "function": "get_message",
+    "file": "src/ustatus.rs",
+    "line": 126,
+    "calls": [
+      "as_ref",
+      "String::default",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "get_code",
+    "file": "src/ustatus.rs",
+    "line": 150,
+    "calls": [
+      "enum_value_or_default"
+    ]
+  },
+  {
+    "function": "test_ustatus_fail_with_code",
+    "file": "src/ustatus.rs",
+    "line": 165,
+    "calls": [
+      "clone",
+      "assert",
+      "iter",
+      "UStatus::fail_with_code",
+      "for_each",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_proto_serialization",
+    "file": "src/ustatus.rs",
+    "line": 183,
+    "calls": [
+      "to_string",
+      "Default::default",
+      "into",
+      "as_slice",
+      "assert_eq",
+      "write_to_bytes",
+      "UStatus::parse_from_bytes",
+      "Some",
+      "expect",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_is_failed",
+    "file": "src/ustatus.rs",
+    "line": 202,
+    "calls": [
+      "assert",
+      "iter",
+      "Default::default",
+      "for_each",
+      "assert_eq",
+      "EnumOrUnknown::from"
+    ]
+  },
+  {
+    "function": "test_is_success",
+    "file": "src/ustatus.rs",
+    "line": 217,
+    "calls": [
+      "assert",
+      "iter",
+      "Default::default",
+      "for_each",
+      "assert_eq",
+      "EnumOrUnknown::from"
+    ]
+  },
+  {
+    "function": "serialization_error",
+    "file": "src/uri.rs",
+    "line": 44,
+    "calls": [
+      "into",
+      "Self::SerializationError"
+    ]
+  },
+  {
+    "function": "validation_error",
+    "file": "src/uri.rs",
+    "line": 51,
+    "calls": [
+      "into",
+      "Self::ValidationError"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/uri.rs",
+    "line": 60,
+    "calls": [
+      "write_fmt",
+      "format_args"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/uri.rs",
+    "line": 99,
+    "calls": [
+      "UUri::to_uri"
+    ]
+  },
+  {
+    "function": "from_str",
+    "file": "src/uri.rs",
+    "line": 144,
+    "calls": [
+      "has_query",
+      "Ok",
+      "u32::from_str_radix",
+      "Err",
+      "to_string",
+      "ne",
+      "path",
+      "map_or",
+      "segments",
+      "scheme",
+      "Default::default",
+      "authority",
+      "u16::from_str_radix",
+      "URIReference::try_from",
+      "String::default",
+      "has_fragment",
+      "UUriError::serialization_error",
+      "map_err",
+      "is_empty",
+      "format",
+      "u8::from_str_radix"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/uri.rs",
+    "line": 245,
+    "calls": [
+      "UUri::from_str",
+      "as_str"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/uri.rs",
+    "line": 280,
+    "calls": [
+      "UUri::from_str"
+    ]
+  },
+  {
+    "function": "hash",
+    "file": "src/uri.rs",
+    "line": 286,
+    "calls": [
+      "hash"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/uri.rs",
+    "line": 297,
+    "calls": [
+      "UUri::from_str",
+      "eq"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/uri.rs",
+    "line": 306,
+    "calls": [
+      "eq"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/uri.rs",
+    "line": 312,
+    "calls": [
+      "as_str",
+      "eq"
+    ]
+  },
+  {
+    "function": "to_uri",
+    "file": "src/uri.rs",
+    "line": 347,
+    "calls": [
+      "push_str",
+      "String::default",
+      "format",
+      "is_empty"
+    ]
+  },
+  {
+    "function": "try_from_parts",
+    "file": "src/uri.rs",
+    "line": 379,
+    "calls": [
+      "Default::default",
+      "Ok",
+      "Self::verify_authority"
+    ]
+  },
+  {
+    "function": "any",
+    "file": "src/uri.rs",
+    "line": 396,
+    "calls": [
+      "Self::any_with_resource_id"
+    ]
+  },
+  {
+    "function": "any_with_resource_id",
+    "file": "src/uri.rs",
+    "line": 401,
+    "calls": [
+      "to_string",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "authority_name",
+    "file": "src/uri.rs",
+    "line": 421,
+    "calls": [
+      "to_owned"
+    ]
+  },
+  {
+    "function": "uentity_type_id",
+    "file": "src/uri.rs",
+    "line": 435,
+    "calls": []
+  },
+  {
+    "function": "uentity_instance_id",
+    "file": "src/uri.rs",
+    "line": 449,
+    "calls": []
+  },
+  {
+    "function": "uentity_major_version",
+    "file": "src/uri.rs",
+    "line": 463,
+    "calls": []
+  },
+  {
+    "function": "resource_id",
+    "file": "src/uri.rs",
+    "line": 477,
+    "calls": []
+  },
+  {
+    "function": "verify_authority",
+    "file": "src/uri.rs",
+    "line": 500,
+    "calls": [
+      "Authority::try_from",
+      "map_err",
+      "UUriError::validation_error",
+      "and_then",
+      "format",
+      "Self::verify_parsed_authority"
+    ]
+  },
+  {
+    "function": "verify_parsed_authority",
+    "file": "src/uri.rs",
+    "line": 508,
+    "calls": [
+      "Err",
+      "has_username",
+      "to_string",
+      "eq",
+      "as_str",
+      "UUriError::validation_error",
+      "Ok",
+      "has_password",
+      "is_match",
+      "host",
+      "has_port"
+    ]
+  },
+  {
+    "function": "verify_major_version",
+    "file": "src/uri.rs",
+    "line": 536,
+    "calls": [
+      "to_string",
+      "UUriError::ValidationError",
+      "u8::try_from",
+      "map_err"
+    ]
+  },
+  {
+    "function": "verify_resource_id",
+    "file": "src/uri.rs",
+    "line": 544,
+    "calls": [
+      "to_string",
+      "UUriError::ValidationError",
+      "u16::try_from",
+      "map_err"
+    ]
+  },
+  {
+    "function": "check_validity",
+    "file": "src/uri.rs",
+    "line": 578,
+    "calls": [
+      "Self::verify_resource_id",
+      "as_str",
+      "Self::verify_authority",
+      "Ok",
+      "Self::verify_major_version"
+    ]
+  },
+  {
+    "function": "is_empty",
+    "file": "src/uri.rs",
+    "line": 600,
+    "calls": [
+      "UUri::default",
+      "eq"
+    ]
+  },
+  {
+    "function": "is_remote",
+    "file": "src/uri.rs",
+    "line": 629,
+    "calls": [
+      "is_remote_authority"
+    ]
+  },
+  {
+    "function": "is_remote_authority",
+    "file": "src/uri.rs",
+    "line": 656,
+    "calls": [
+      "has_wildcard_authority",
+      "is_empty"
+    ]
+  },
+  {
+    "function": "has_empty_authority",
+    "file": "src/uri.rs",
+    "line": 674,
+    "calls": [
+      "is_empty"
+    ]
+  },
+  {
+    "function": "has_wildcard_authority",
+    "file": "src/uri.rs",
+    "line": 688,
+    "calls": []
+  },
+  {
+    "function": "has_wildcard_entity_instance",
+    "file": "src/uri.rs",
+    "line": 702,
+    "calls": []
+  },
+  {
+    "function": "has_wildcard_entity_type",
+    "file": "src/uri.rs",
+    "line": 716,
+    "calls": []
+  },
+  {
+    "function": "has_wildcard_version",
+    "file": "src/uri.rs",
+    "line": 730,
+    "calls": []
+  },
+  {
+    "function": "has_wildcard_resource_id",
+    "file": "src/uri.rs",
+    "line": 744,
+    "calls": []
+  },
+  {
+    "function": "verify_no_wildcards",
+    "file": "src/uri.rs",
+    "line": 768,
+    "calls": [
+      "Err",
+      "has_wildcard_authority",
+      "has_wildcard_entity_type",
+      "UUriError::validation_error",
+      "has_wildcard_entity_instance",
+      "Ok",
+      "has_wildcard_version",
+      "format",
+      "has_wildcard_resource_id"
+    ]
+  },
+  {
+    "function": "is_rpc_method",
+    "file": "src/uri.rs",
+    "line": 808,
+    "calls": []
+  },
+  {
+    "function": "verify_rpc_method",
+    "file": "src/uri.rs",
+    "line": 836,
+    "calls": [
+      "Err",
+      "verify_no_wildcards",
+      "UUriError::validation_error",
+      "is_rpc_method",
+      "format"
+    ]
+  },
+  {
+    "function": "is_notification_destination",
+    "file": "src/uri.rs",
+    "line": 860,
+    "calls": []
+  },
+  {
+    "function": "is_rpc_response",
+    "file": "src/uri.rs",
+    "line": 879,
+    "calls": []
+  },
+  {
+    "function": "verify_rpc_response",
+    "file": "src/uri.rs",
+    "line": 901,
+    "calls": [
+      "Err",
+      "verify_no_wildcards",
+      "UUriError::validation_error",
+      "format",
+      "is_rpc_response"
+    ]
+  },
+  {
+    "function": "is_event",
+    "file": "src/uri.rs",
+    "line": 926,
+    "calls": []
+  },
+  {
+    "function": "verify_event",
+    "file": "src/uri.rs",
+    "line": 948,
+    "calls": [
+      "Err",
+      "verify_no_wildcards",
+      "UUriError::validation_error",
+      "format",
+      "is_event"
+    ]
+  },
+  {
+    "function": "matches_authority",
+    "file": "src/uri.rs",
+    "line": 958,
+    "calls": [
+      "has_wildcard_authority"
+    ]
+  },
+  {
+    "function": "matches_entity_type",
+    "file": "src/uri.rs",
+    "line": 962,
+    "calls": [
+      "has_wildcard_entity_type",
+      "uentity_type_id"
+    ]
+  },
+  {
+    "function": "matches_entity_instance",
+    "file": "src/uri.rs",
+    "line": 966,
+    "calls": [
+      "has_wildcard_entity_instance",
+      "uentity_instance_id"
+    ]
+  },
+  {
+    "function": "matches_entity_version",
+    "file": "src/uri.rs",
+    "line": 971,
+    "calls": [
+      "uentity_major_version",
+      "has_wildcard_version"
+    ]
+  },
+  {
+    "function": "matches_entity",
+    "file": "src/uri.rs",
+    "line": 976,
+    "calls": [
+      "matches_entity_type",
+      "matches_entity_instance",
+      "matches_entity_version"
+    ]
+  },
+  {
+    "function": "matches_resource",
+    "file": "src/uri.rs",
+    "line": 982,
+    "calls": [
+      "has_wildcard_resource_id"
+    ]
+  },
+  {
+    "function": "matches",
+    "file": "src/uri.rs",
+    "line": 1002,
+    "calls": [
+      "matches_entity",
+      "matches_authority",
+      "matches_resource"
+    ]
+  },
+  {
+    "function": "test_eq_with_str",
+    "file": "src/uri.rs",
+    "line": 1069,
+    "calls": [
+      "String::from"
+    ]
+  },
+  {
+    "function": "test_check_validity_fails",
+    "file": "src/uri.rs",
+    "line": 1109,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "test_verify_no_wildcards_fails",
+    "file": "src/uri.rs",
+    "line": 1118,
+    "calls": [
+      "expect",
+      "assert",
+      "UUri::try_from"
+    ]
+  },
+  {
+    "function": "test_from_str_fails_for_authority_exceeding_max_length",
+    "file": "src/uri.rs",
+    "line": 1125,
+    "calls": [
+      "assert",
+      "repeat",
+      "format"
+    ]
+  },
+  {
+    "function": "test_from_str_accepts_lowercase_hex_encoding",
+    "file": "src/uri.rs",
+    "line": 1133,
+    "calls": [
+      "assert",
+      "UUri::try_from"
+    ]
+  },
+  {
+    "function": "register_target_provider_endpoints",
+    "file": "src/symphony.rs",
+    "line": 49,
+    "calls": [
+      "clone",
+      "register_endpoint",
+      "inspect_err",
+      "Ok",
+      "Arc::new",
+      "error"
+    ]
+  },
+  {
+    "function": "extract_request_data",
+    "file": "src/symphony.rs",
+    "line": 133,
+    "calls": [
+      "Err",
+      "to_string",
+      "payload_format",
+      "serde_json::from_slice",
+      "ServiceInvocationError::InvalidArgument",
+      "filter",
+      "as_slice",
+      "debug",
+      "map_err",
+      "to_vec",
+      "payload"
+    ]
+  },
+  {
+    "function": "handle_request",
+    "file": "src/symphony.rs",
+    "line": 159,
+    "calls": [
+      "extract_request_data",
+      "to_uri",
+      "Ok",
+      "serde_json::to_vec",
+      "and_then",
+      "get",
+      "to_string",
+      "tracing::enabled",
+      "clone",
+      "ok_or_else",
+      "ServiceInvocationError::Internal",
+      "source_unchecked",
+      "trace",
+      "serde_json::from_value",
+      "Some",
+      "ServiceInvocationError::InvalidArgument",
+      "UPayload::new",
+      "debug",
+      "warn",
+      "map_err"
+    ]
+  },
+  {
+    "function": "handle_request",
+    "file": "src/symphony.rs",
+    "line": 258,
+    "calls": [
+      "extract_request_data",
+      "ServiceInvocationError::Unimplemented",
+      "sink_unchecked",
+      "to_uri",
+      "serde_json::to_string_pretty",
+      "update",
+      "Ok",
+      "serde_json::to_vec",
+      "and_then",
+      "get",
+      "expect",
+      "to_string",
+      "tracing::enabled",
+      "clone",
+      "Err",
+      "ok_or_else",
+      "ServiceInvocationError::Internal",
+      "source_unchecked",
+      "trace",
+      "serde_json::from_value",
+      "delete",
+      "Some",
+      "ServiceInvocationError::InvalidArgument",
+      "UPayload::new",
+      "debug",
+      "warn",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_register_target_provider_endpoints_fails",
+    "file": "src/symphony.rs",
+    "line": 384,
+    "calls": [
+      "Err",
+      "assert",
+      "expect_do_register_endpoint",
+      "returning",
+      "MockDeploymentTarget::new",
+      "MockRpcServerImpl::new"
+    ]
+  },
+  {
+    "function": "test_register_target_provider_endpoints_succeeds",
+    "file": "src/symphony.rs",
+    "line": 404,
+    "calls": [
+      "assert",
+      "expect_do_register_endpoint",
+      "Ok",
+      "returning",
+      "MockDeploymentTarget::new",
+      "MockRpcServerImpl::new"
+    ]
+  },
+  {
+    "function": "create_method_uri",
+    "file": "src/symphony.rs",
+    "line": 418,
+    "calls": [
+      "expect",
+      "UUri::try_from_parts"
+    ]
+  },
+  {
+    "function": "create_request_attributes",
+    "file": "src/symphony.rs",
+    "line": 423,
+    "calls": [
+      "UAttributes::default",
+      "into",
+      "create_method_uri",
+      "UUri::try_from_parts",
+      "Some",
+      "expect"
+    ]
+  },
+  {
+    "function": "test_endpoints_delegate_to_deployment_target",
+    "file": "src/symphony.rs",
+    "line": 436,
+    "calls": [
+      "clone",
+      "assert",
+      "expect_update",
+      "json",
+      "expect_delete",
+      "expect_get",
+      "HashMap::new",
+      "once",
+      "MockDeploymentTarget::default",
+      "Ok",
+      "UPayload::new",
+      "serde_json::to_vec",
+      "Arc::new",
+      "returning",
+      "expect",
+      "vec"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/communication.rs",
+    "line": 76,
+    "calls": [
+      "write_fmt",
+      "format_args",
+      "write_str"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/communication.rs",
+    "line": 104,
+    "calls": [
+      "get_message",
+      "RegistrationError::InvalidFilter",
+      "enum_value",
+      "RegistrationError::Unknown"
+    ]
+  },
+  {
+    "function": "for_rpc_request",
+    "file": "src/communication.rs",
+    "line": 151,
+    "calls": []
+  },
+  {
+    "function": "for_notification",
+    "file": "src/communication.rs",
+    "line": 188,
+    "calls": [
+      "unwrap_or"
+    ]
+  },
+  {
+    "function": "for_publish",
+    "file": "src/communication.rs",
+    "line": 224,
+    "calls": [
+      "unwrap_or"
+    ]
+  },
+  {
+    "function": "ttl",
+    "file": "src/communication.rs",
+    "line": 238,
+    "calls": []
+  },
+  {
+    "function": "message_id",
+    "file": "src/communication.rs",
+    "line": 243,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "token",
+    "file": "src/communication.rs",
+    "line": 248,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "priority",
+    "file": "src/communication.rs",
+    "line": 253,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "src/communication.rs",
+    "line": 279,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "try_from_protobuf",
+    "file": "src/communication.rs",
+    "line": 306,
+    "calls": [
+      "Any::pack",
+      "UPayload::new",
+      "map",
+      "and_then",
+      "write_to_bytes",
+      "map_err"
+    ]
+  },
+  {
+    "function": "payload_format",
+    "file": "src/communication.rs",
+    "line": 321,
+    "calls": []
+  },
+  {
+    "function": "payload",
+    "file": "src/communication.rs",
+    "line": 328,
+    "calls": []
+  },
+  {
+    "function": "extract_protobuf",
+    "file": "src/communication.rs",
+    "line": 365,
+    "calls": [
+      "umessage::deserialize_protobuf_bytes"
+    ]
+  },
+  {
+    "function": "apply_common_options",
+    "file": "src/communication.rs",
+    "line": 376,
+    "calls": [
+      "with_priority",
+      "with_message_id",
+      "with_ttl"
+    ]
+  },
+  {
+    "function": "build_message",
+    "file": "src/communication.rs",
+    "line": 390,
+    "calls": [
+      "payload_format",
+      "build_with_payload",
+      "build"
+    ]
+  },
+  {
+    "function": "is_correct_version",
+    "file": "src/uuid.rs",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "is_correct_variant",
+    "file": "src/uuid.rs",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "src/uuid.rs",
+    "line": 42,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/uuid.rs",
+    "line": 50,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "from_bytes",
+    "file": "src/uuid.rs",
+    "line": 71,
+    "calls": [
+      "u64::from_be_bytes",
+      "copy_from_slice",
+      "Self::from_u64_pair"
+    ]
+  },
+  {
+    "function": "from_bytes_unchecked",
+    "file": "src/uuid.rs",
+    "line": 92,
+    "calls": [
+      "Default::default",
+      "u64::from_be_bytes"
+    ]
+  },
+  {
+    "function": "from_u64_pair",
+    "file": "src/uuid.rs",
+    "line": 115,
+    "calls": [
+      "Err",
+      "Default::default",
+      "Ok",
+      "is_correct_variant",
+      "UuidConversionError::new",
+      "is_correct_version"
+    ]
+  },
+  {
+    "function": "build_for_timestamp",
+    "file": "src/uuid.rs",
+    "line": 130,
+    "calls": [
+      "u64::try_from",
+      "expect",
+      "Self::build_for_timestamp_millis",
+      "as_millis"
+    ]
+  },
+  {
+    "function": "build_for_timestamp_millis",
+    "file": "src/uuid.rs",
+    "line": 137,
+    "calls": [
+      "rand::rng",
+      "fill_bytes",
+      "to_be_bytes",
+      "Self::from_bytes_unchecked"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "src/uuid.rs",
+    "line": 169,
+    "calls": [
+      "expect",
+      "elapsed",
+      "Self::build_for_timestamp"
+    ]
+  },
+  {
+    "function": "to_hyphenated_string",
+    "file": "src/uuid.rs",
+    "line": 193,
+    "calls": [
+      "unwrap",
+      "to_be_bytes",
+      "clone_from_slice",
+      "String::from_utf8",
+      "Out::from_mut",
+      "uuid_simd::format_hyphenated",
+      "as_slice",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "get_time",
+    "file": "src/uuid.rs",
+    "line": 232,
+    "calls": [
+      "Some",
+      "is_uprotocol_uuid"
+    ]
+  },
+  {
+    "function": "is_uprotocol_uuid",
+    "file": "src/uuid.rs",
+    "line": 273,
+    "calls": [
+      "is_correct_variant",
+      "is_correct_version"
+    ]
+  },
+  {
+    "function": "hash",
+    "file": "src/uuid.rs",
+    "line": 281,
+    "calls": [
+      "hash"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/uuid.rs",
+    "line": 322,
+    "calls": [
+      "Err",
+      "len",
+      "UUID::from_u64_pair",
+      "into",
+      "UuidConversionError::new",
+      "get_u64"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/uuid.rs",
+    "line": 334,
+    "calls": [
+      "Self::from"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/uuid.rs",
+    "line": 362,
+    "calls": [
+      "Vec::with_capacity",
+      "to_be_bytes",
+      "extend_from_slice"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/uuid.rs",
+    "line": 371,
+    "calls": [
+      "Self::from"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/uuid.rs",
+    "line": 377,
+    "calls": [
+      "to_hyphenated_string"
+    ]
+  },
+  {
+    "function": "from_str",
+    "file": "src/uuid.rs",
+    "line": 422,
+    "calls": [
+      "to_string",
+      "Out::from_mut",
+      "UUID::from_bytes",
+      "uuid_simd::parse_hyphenated",
+      "and_then",
+      "as_bytes",
+      "UuidConversionError::new",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_from_u64_pair",
+    "file": "src/uuid.rs",
+    "line": 438,
+    "calls": [
+      "assert",
+      "UUID::from_u64_pair"
+    ]
+  },
+  {
+    "function": "test_from_bytes",
+    "file": "src/uuid.rs",
+    "line": 466,
+    "calls": [
+      "unwrap",
+      "assert",
+      "UUID::from_bytes",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_try_from_vec_fails",
+    "file": "src/uuid.rs",
+    "line": 480,
+    "calls": [
+      "assert",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_into_string",
+    "file": "src/uuid.rs",
+    "line": 488,
+    "calls": [
+      "Default::default",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 44,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 54,
+    "calls": []
+  },
+  {
+    "function": "eq",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 66,
+    "calls": [
+      "Arc::ptr_eq"
+    ]
+  },
+  {
+    "function": "add_handler",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 85,
+    "calls": [
+      "Err",
+      "RegistrationError::Unknown",
+      "UStatus::fail_with_code",
+      "entry",
+      "write",
+      "insert",
+      "Ok",
+      "get",
+      "ComparableSubscriptionChangeHandler::new"
+    ]
+  },
+  {
+    "function": "remove_handler",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 119,
+    "calls": [
+      "RegistrationError::Unknown",
+      "UStatus::fail_with_code",
+      "write",
+      "map",
+      "map_err",
+      "remove"
+    ]
+  },
+  {
+    "function": "clear",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 138,
+    "calls": [
+      "clear",
+      "RegistrationError::Unknown",
+      "UStatus::fail_with_code",
+      "write",
+      "map",
+      "map_err"
+    ]
+  },
+  {
+    "function": "has_handler",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 153,
+    "calls": [
+      "is_ok_and",
+      "contains_key",
+      "read"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 162,
+    "calls": [
+      "read",
+      "msg.extract_protobuf::<Update>",
+      "debug",
+      "is_notification",
+      "get",
+      "as_ref",
+      "on_subscription_change",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 199,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 209,
+    "calls": [
+      "Err",
+      "build_message",
+      "get_resource_uri",
+      "format",
+      "UMessageBuilder::publish",
+      "apply_common_options",
+      "map_err",
+      "PubSubError::InvalidArgument",
+      "send"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 263,
+    "calls": [
+      "clone",
+      "map",
+      "Arc::new",
+      "Self::for_clients",
+      "SimpleNotifier::new",
+      "RpcClientUSubscription::new",
+      "InMemoryRpcClient::new"
+    ]
+  },
+  {
+    "function": "for_clients",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 287,
+    "calls": [
+      "clone",
+      "start_listening",
+      "HashMap::new",
+      "Ok",
+      "Arc::new",
+      "RwLock::new",
+      "usubscription::usubscription_uri"
+    ]
+  },
+  {
+    "function": "stop",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 321,
+    "calls": [
+      "clone",
+      "clear",
+      "stop_listening",
+      "and_then",
+      "usubscription::usubscription_uri"
+    ]
+  },
+  {
+    "function": "invoke_subscribe",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 331,
+    "calls": [
+      "Err",
+      "clone",
+      "RegistrationError::Unknown",
+      "add_handler",
+      "Default::default",
+      "UStatus::fail_with_code",
+      "into",
+      "Ok",
+      "subscribe",
+      "debug",
+      "enum_value",
+      "info",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "invoke_unsubscribe",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 367,
+    "calls": [
+      "remove_handler",
+      "RegistrationError::Unknown",
+      "Default::default",
+      "UStatus::fail_with_code",
+      "unsubscribe",
+      "map",
+      "map_err",
+      "info"
+    ]
+  },
+  {
+    "function": "add_subscription_change_handler",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 387,
+    "calls": [
+      "to_owned",
+      "add_handler"
+    ]
+  },
+  {
+    "function": "has_subscription_change_handler",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 397,
+    "calls": [
+      "has_handler"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 404,
+    "calls": [
+      "invoke_subscribe",
+      "register_listener",
+      "clone",
+      "map_err"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 425,
+    "calls": [
+      "unregister_listener",
+      "invoke_unsubscribe",
+      "map_err"
+    ]
+  },
+  {
+    "function": "new_uri_provider",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 462,
+    "calls": [
+      "Arc::new",
+      "StaticUriProvider::new"
+    ]
+  },
+  {
+    "function": "succeeding_notifier",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 466,
+    "calls": [
+      "MockNotifier::new",
+      "return_const",
+      "once",
+      "Ok",
+      "Arc::new",
+      "expect_start_listening"
+    ]
+  },
+  {
+    "function": "test_publish_fails_for_invalid_topic",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 476,
+    "calls": [
+      "publish",
+      "new_uri_provider",
+      "expect_do_send",
+      "assert",
+      "never",
+      "Arc::new",
+      "MockTransport::new",
+      "SimplePublisher::new",
+      "CallOptions::for_publish"
+    ]
+  },
+  {
+    "function": "test_publish_fails_with_transport_error",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 496,
+    "calls": [
+      "Err",
+      "clone",
+      "publish",
+      "new_uri_provider",
+      "expect_do_send",
+      "id_unchecked",
+      "assert",
+      "UStatus::fail_with_code",
+      "withf",
+      "once",
+      "Arc::new",
+      "returning",
+      "Some",
+      "UUID::build",
+      "MockTransport::new",
+      "SimplePublisher::new",
+      "CallOptions::for_publish"
+    ]
+  },
+  {
+    "function": "test_publish_succeeds",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 524,
+    "calls": [
+      "assert",
+      "Ok",
+      "Arc::new",
+      "expect",
+      "MockTransport::new",
+      "UPayload::try_from_protobuf",
+      "CallOptions::for_publish",
+      "to_string",
+      "clone",
+      "Default::default",
+      "withf",
+      "once",
+      "priority_unchecked",
+      "is_publish",
+      "ttl_unchecked",
+      "id_unchecked",
+      "message.extract_protobuf::<StringValue>",
+      "Some",
+      "publish",
+      "SimplePublisher::new",
+      "new_uri_provider",
+      "expect_do_send",
+      "returning",
+      "UUID::build"
+    ]
+  },
+  {
+    "function": "test_subscriber_creation_fails_when_notifier_fails_to_register_listener",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 574,
+    "calls": [
+      "Err",
+      "MockNotifier::new",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "RegistrationError::Unknown",
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "Arc::new",
+      "expect_start_listening",
+      "MockTransport::new"
+    ]
+  },
+  {
+    "function": "test_subscriber_stop_succeeds",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 599,
+    "calls": [
+      "unwrap",
+      "clone",
+      "MockNotifier::new",
+      "MockTransport::new",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "add_handler",
+      "return_const",
+      "stop",
+      "assert",
+      "once",
+      "expect_stop_listening",
+      "Ok",
+      "UUri::try_from_parts",
+      "Arc::new",
+      "expect",
+      "MockSubscriptionChangeHandler::new",
+      "SubscriptionChangeListener::default"
+    ]
+  },
+  {
+    "function": "test_subscribe_fails_when_usubscription_invocation_fails",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 632,
+    "calls": [
+      "expect_on_receive",
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "succeeding_notifier",
+      "Ok",
+      "Arc::new",
+      "MockTransport::new",
+      "Err",
+      "to_string",
+      "clone",
+      "Default::default",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "subscribe",
+      "expect_do_register_listener",
+      "MockUListener::new",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "expect_subscribe",
+      "into",
+      "UUri::try_from_parts",
+      "never",
+      "in_sequence"
+    ]
+  },
+  {
+    "function": "test_repeated_subscribe_fails_for_different_subscription_change_handlers",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 721,
+    "calls": [
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "succeeding_notifier",
+      "Ok",
+      "Arc::new",
+      "MockTransport::new",
+      "Err",
+      "clone",
+      "Default::default",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "subscribe",
+      "MockSubscriptionChangeHandler::new",
+      "expect_do_register_listener",
+      "MockUListener::new",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "expect_subscribe",
+      "into",
+      "UUri::try_from_parts",
+      "returning",
+      "times"
+    ]
+  },
+  {
+    "function": "test_subscribe_succeeds_on_second_attempt",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 789,
+    "calls": [
+      "expect_on_receive",
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "succeeding_notifier",
+      "UMessageBuilder::publish",
+      "Ok",
+      "Arc::new",
+      "MockTransport::new",
+      "UStatus::fail",
+      "Err",
+      "clone",
+      "Default::default",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "subscribe",
+      "MockSubscriptionChangeHandler::new",
+      "send",
+      "expect_do_register_listener",
+      "to_owned",
+      "build",
+      "MockUListener::new",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "expect_subscribe",
+      "into",
+      "std::sync::mpsc::channel",
+      "UUri::try_from_parts",
+      "on_receive",
+      "returning",
+      "in_sequence",
+      "recv",
+      "map_err",
+      "times"
+    ]
+  },
+  {
+    "function": "test_unsubscribe_fails_for_unknown_listener",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 871,
+    "calls": [
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "succeeding_notifier",
+      "Ok",
+      "Arc::new",
+      "expect_unsubscribe",
+      "MockTransport::new",
+      "Err",
+      "clone",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "expect_do_unregister_listener",
+      "MockUListener::new",
+      "unwrap",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "unsubscribe",
+      "UUri::try_from_parts"
+    ]
+  },
+  {
+    "function": "test_unsubscribe_fails_if_usubscription_invocation_fails",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 911,
+    "calls": [
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "succeeding_notifier",
+      "Ok",
+      "Arc::new",
+      "expect_unsubscribe",
+      "expect",
+      "MockTransport::new",
+      "Err",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "MockSubscriptionChangeHandler::new",
+      "expect_do_unregister_listener",
+      "MockUListener::new",
+      "add_subscription_change_handler",
+      "unwrap",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "unsubscribe",
+      "UUri::try_from_parts",
+      "never"
+    ]
+  },
+  {
+    "function": "test_unsubscribe_succeeds",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 958,
+    "calls": [
+      "assert",
+      "return_const",
+      "succeeding_notifier",
+      "Ok",
+      "Arc::new",
+      "expect_unsubscribe",
+      "expect",
+      "MockTransport::new",
+      "clone",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "MockSubscriptionChangeHandler::new",
+      "expect_do_unregister_listener",
+      "MockUListener::new",
+      "add_subscription_change_handler",
+      "unwrap",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "unsubscribe",
+      "UUri::try_from_parts"
+    ]
+  },
+  {
+    "function": "test_unsubscribe_succeeds_on_second_attempt",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 1003,
+    "calls": [
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "succeeding_notifier",
+      "Ok",
+      "Arc::new",
+      "expect_unsubscribe",
+      "expect",
+      "MockTransport::new",
+      "Err",
+      "clone",
+      "InMemorySubscriber::for_clients",
+      "once",
+      "MockSubscriptionChangeHandler::new",
+      "expect_do_unregister_listener",
+      "MockUListener::new",
+      "add_subscription_change_handler",
+      "Sequence::new",
+      "unwrap",
+      "new_uri_provider",
+      "MockUSubscription::new",
+      "unsubscribe",
+      "UUri::try_from_parts",
+      "in_sequence",
+      "times"
+    ]
+  },
+  {
+    "function": "message_with_wrong_type",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 1064,
+    "calls": [
+      "Default::default",
+      "into",
+      "Some"
+    ]
+  },
+  {
+    "function": "notification_with_wrong_payload",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 1075,
+    "calls": [
+      "StringValue::new",
+      "payload_format",
+      "Default::default",
+      "into",
+      "Some",
+      "expect",
+      "UPayload::try_from_protobuf",
+      "payload"
+    ]
+  },
+  {
+    "function": "status_update_without_topic",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 1090,
+    "calls": [
+      "payload_format",
+      "Default::default",
+      "into",
+      "Some",
+      "expect",
+      "UPayload::try_from_protobuf",
+      "payload"
+    ]
+  },
+  {
+    "function": "status_update_without_status",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 1114,
+    "calls": [
+      "unwrap",
+      "payload_format",
+      "Default::default",
+      "into",
+      "UUri::try_from_parts",
+      "Some",
+      "expect",
+      "UPayload::try_from_protobuf",
+      "payload"
+    ]
+  },
+  {
+    "function": "test_subscription_change_listener_ignores",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 1141,
+    "calls": [
+      "unwrap",
+      "clone",
+      "add_handler",
+      "expect_on_subscription_change",
+      "on_receive",
+      "UUri::try_from_parts",
+      "never",
+      "Arc::new",
+      "expect",
+      "MockSubscriptionChangeHandler::new",
+      "SubscriptionChangeListener::default"
+    ]
+  },
+  {
+    "function": "test_subscription_change_listener_invokes_handler_for_subscribed_topic",
+    "file": "src/communication/default_pubsub.rs",
+    "line": 1155,
+    "calls": [
+      "payload_format",
+      "return_const",
+      "expect_on_subscription_change",
+      "Arc::new",
+      "expect",
+      "UPayload::try_from_protobuf",
+      "SubscriptionChangeListener::default",
+      "clone",
+      "add_handler",
+      "Default::default",
+      "withf",
+      "once",
+      "MockSubscriptionChangeHandler::new",
+      "Some",
+      "unwrap",
+      "into",
+      "on_receive",
+      "UUri::try_from_parts",
+      "payload"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/default_notifier.rs",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "notify",
+    "file": "src/communication/default_notifier.rs",
+    "line": 51,
+    "calls": [
+      "to_string",
+      "build_message",
+      "get_resource_uri",
+      "apply_common_options",
+      "map_err",
+      "NotificationError::InvalidArgument",
+      "UMessageBuilder::notification",
+      "send",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "start_listening",
+    "file": "src/communication/default_notifier.rs",
+    "line": 71,
+    "calls": [
+      "to_string",
+      "verify_no_wildcards",
+      "RegistrationError::InvalidFilter",
+      "register_listener",
+      "get_source_uri",
+      "map_err",
+      "Some"
+    ]
+  },
+  {
+    "function": "stop_listening",
+    "file": "src/communication/default_notifier.rs",
+    "line": 85,
+    "calls": [
+      "to_string",
+      "verify_no_wildcards",
+      "RegistrationError::InvalidFilter",
+      "map_err",
+      "get_source_uri",
+      "unregister_listener",
+      "Some"
+    ]
+  },
+  {
+    "function": "new_uri_provider",
+    "file": "src/communication/default_notifier.rs",
+    "line": 114,
+    "calls": [
+      "Arc::new",
+      "StaticUriProvider::new"
+    ]
+  },
+  {
+    "function": "test_start_stop_listening_rejects_wildcard_topic",
+    "file": "src/communication/default_notifier.rs",
+    "line": 119,
+    "calls": [
+      "unwrap",
+      "expect_on_receive",
+      "new_uri_provider",
+      "clone",
+      "assert",
+      "start_listening",
+      "stop_listening",
+      "never",
+      "Arc::new",
+      "MockUListener::new",
+      "SimpleNotifier::new",
+      "UUri::try_from",
+      "MockTransport::new",
+      "expect_do_register_listener"
+    ]
+  },
+  {
+    "function": "test_start_listening_succeeds",
+    "file": "src/communication/default_notifier.rs",
+    "line": 142,
+    "calls": [
+      "expect_on_receive",
+      "assert",
+      "return_const",
+      "Ok",
+      "Arc::new",
+      "get_source_uri",
+      "MockTransport::new",
+      "clone",
+      "start_listening",
+      "withf",
+      "once",
+      "UUri::try_from",
+      "SimpleNotifier::new",
+      "expect_do_register_listener",
+      "MockUListener::new",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "never"
+    ]
+  },
+  {
+    "function": "test_stop_listening_succeeds",
+    "file": "src/communication/default_notifier.rs",
+    "line": 165,
+    "calls": [
+      "expect_on_receive",
+      "assert",
+      "return_const",
+      "Ok",
+      "Arc::new",
+      "get_source_uri",
+      "MockTransport::new",
+      "clone",
+      "withf",
+      "once",
+      "UUri::try_from",
+      "SimpleNotifier::new",
+      "expect_do_unregister_listener",
+      "MockUListener::new",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "stop_listening",
+      "never"
+    ]
+  },
+  {
+    "function": "test_publish_succeeds",
+    "file": "src/communication/default_notifier.rs",
+    "line": 188,
+    "calls": [
+      "StringValue::new",
+      "sink_unchecked",
+      "assert",
+      "return_const",
+      "Ok",
+      "Arc::new",
+      "MockTransport::new",
+      "UPayload::try_from_protobuf",
+      "to_string",
+      "clone",
+      "notify",
+      "withf",
+      "once",
+      "priority_unchecked",
+      "is_notification",
+      "UUri::try_from",
+      "ttl_unchecked",
+      "SimpleNotifier::new",
+      "source_unchecked",
+      "id_unchecked",
+      "CallOptions::for_notification",
+      "message.extract_protobuf::<StringValue>",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "get_resource_uri",
+      "expect_do_send",
+      "UUID::build"
+    ]
+  },
+  {
+    "function": "test_publish_fails_for_transport_error",
+    "file": "src/communication/default_notifier.rs",
+    "line": 229,
+    "calls": [
+      "Err",
+      "unwrap",
+      "notify",
+      "new_uri_provider",
+      "expect_do_send",
+      "assert",
+      "return_const",
+      "UStatus::fail_with_code",
+      "CallOptions::for_notification",
+      "once",
+      "Arc::new",
+      "UUri::try_from",
+      "SimpleNotifier::new",
+      "MockTransport::new"
+    ]
+  },
+  {
+    "function": "test_publish_fails_for_invalid_destination",
+    "file": "src/communication/default_notifier.rs",
+    "line": 251,
+    "calls": [
+      "unwrap",
+      "notify",
+      "new_uri_provider",
+      "expect_do_send",
+      "assert",
+      "CallOptions::for_notification",
+      "never",
+      "Arc::new",
+      "UUri::try_from",
+      "SimpleNotifier::new",
+      "MockTransport::new"
+    ]
+  },
+  {
+    "function": "test_publish_fails_for_invalid_resource_id",
+    "file": "src/communication/default_notifier.rs",
+    "line": 265,
+    "calls": [
+      "unwrap",
+      "notify",
+      "new_uri_provider",
+      "expect_do_send",
+      "assert",
+      "CallOptions::for_notification",
+      "never",
+      "Arc::new",
+      "UUri::try_from",
+      "SimpleNotifier::new",
+      "MockTransport::new"
+    ]
+  },
+  {
+    "function": "process_valid_request",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 37,
+    "calls": [
+      "payload_format",
+      "attributes_unchecked",
+      "tokio::time::timeout",
+      "UStatus::from",
+      "and_then",
+      "handle_request",
+      "build_with_protobuf_payload",
+      "clone",
+      "build_message",
+      "ttl_unchecked",
+      "info",
+      "Duration::from_millis",
+      "send",
+      "unwrap_or_default",
+      "id_unchecked",
+      "with_comm_status",
+      "UMessageBuilder::response_for_request",
+      "to_hyphenated_string",
+      "UPayload::new",
+      "map",
+      "debug",
+      "get_code",
+      "map_err"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 97,
+    "calls": [
+      "sink_unchecked",
+      "is_request",
+      "debug",
+      "resource_id",
+      "process_valid_request"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 128,
+    "calls": [
+      "tokio::sync::Mutex::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "validate_sink_filter",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 136,
+    "calls": [
+      "Err",
+      "to_string",
+      "RegistrationError::InvalidFilter",
+      "Ok",
+      "is_rpc_method"
+    ]
+  },
+  {
+    "function": "validate_origin_filter",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 145,
+    "calls": [
+      "Err",
+      "to_string",
+      "RegistrationError::InvalidFilter",
+      "Ok",
+      "is_rpc_response"
+    ]
+  },
+  {
+    "function": "contains_endpoint",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 157,
+    "calls": [
+      "contains_key",
+      "lock"
+    ]
+  },
+  {
+    "function": "register_endpoint",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 165,
+    "calls": [
+      "unwrap_or",
+      "clone",
+      "Err",
+      "get_resource_uri",
+      "Self::validate_origin_filter",
+      "entry",
+      "register_listener",
+      "insert",
+      "map",
+      "Arc::new",
+      "lock",
+      "map_err",
+      "Some",
+      "UUri::any_with_resource_id",
+      "Self::validate_sink_filter"
+    ]
+  },
+  {
+    "function": "unregister_endpoint",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 199,
+    "calls": [
+      "unwrap_or",
+      "Err",
+      "get_resource_uri",
+      "map_err",
+      "Self::validate_origin_filter",
+      "entry",
+      "unregister_listener",
+      "map",
+      "lock",
+      "get",
+      "Some",
+      "remove",
+      "UUri::any_with_resource_id",
+      "Self::validate_sink_filter",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new_uri_provider",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 247,
+    "calls": [
+      "Arc::new",
+      "StaticUriProvider::new"
+    ]
+  },
+  {
+    "function": "test_register_endpoint_succeeds",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 255,
+    "calls": [
+      "assert",
+      "register_endpoint",
+      "Ok",
+      "Arc::new",
+      "MockRequestHandler::new",
+      "MockTransport::new",
+      "InMemoryRpcServer::new",
+      "unwrap_or",
+      "clone",
+      "withf",
+      "once",
+      "unregister_endpoint",
+      "expect_do_register_listener",
+      "expect_do_unregister_listener",
+      "is_some_and",
+      "UUri::any_with_resource_id",
+      "new_uri_provider",
+      "returning",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "test_register_endpoint_fails",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 302,
+    "calls": [
+      "expect_do_unregister_listener",
+      "clone",
+      "new_uri_provider",
+      "assert",
+      "register_endpoint",
+      "as_ref",
+      "InMemoryRpcServer::new",
+      "unregister_endpoint",
+      "never",
+      "Arc::new",
+      "MockRequestHandler::new",
+      "MockTransport::new",
+      "expect_do_register_listener"
+    ]
+  },
+  {
+    "function": "test_register_endpoint_fails_for_duplicate_endpoint",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 328,
+    "calls": [
+      "new_uri_provider",
+      "assert",
+      "register_endpoint",
+      "return_const",
+      "InMemoryRpcServer::new",
+      "once",
+      "Ok",
+      "Arc::new",
+      "MockRequestHandler::new",
+      "MockTransport::new",
+      "expect_do_register_listener"
+    ]
+  },
+  {
+    "function": "test_unregister_endpoint_fails_for_non_existing_endpoint",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 356,
+    "calls": [
+      "expect_do_unregister_listener",
+      "new_uri_provider",
+      "assert",
+      "unregister_endpoint",
+      "never",
+      "Arc::new",
+      "MockRequestHandler::new",
+      "MockTransport::new",
+      "InMemoryRpcServer::new"
+    ]
+  },
+  {
+    "function": "test_request_listener_invokes_operation_successfully",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 376,
+    "calls": [
+      "assert",
+      "tokio::time::timeout",
+      "Ok",
+      "Arc::new",
+      "MockRequestHandler::new",
+      "MockTransport::new",
+      "UPayload::try_from_protobuf",
+      "with_message_id",
+      "build_with_protobuf_payload",
+      "to_string",
+      "clone",
+      "Default::default",
+      "extract_protobuf",
+      "notified",
+      "withf",
+      "once",
+      "UUID::build",
+      "UUri::try_from",
+      "request_id_unchecked",
+      "commstatus",
+      "is_none_or",
+      "Notify::new",
+      "Some",
+      "Duration::from_secs",
+      "unwrap",
+      "expect_handle_request",
+      "expect_do_send",
+      "UMessageBuilder::request",
+      "on_receive",
+      "returning",
+      "notify_one",
+      "as_ref",
+      "is_response"
+    ]
+  },
+  {
+    "function": "test_request_listener_invokes_operation_erroneously",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 447,
+    "calls": [
+      "assert",
+      "tokio::time::timeout",
+      "Ok",
+      "Arc::new",
+      "MockRequestHandler::new",
+      "MockTransport::new",
+      "with_message_id",
+      "Err",
+      "clone",
+      "ServiceInvocationError::NotFound",
+      "to_string",
+      "extract_protobuf",
+      "notified",
+      "withf",
+      "once",
+      "UUri::try_from",
+      "request_id_unchecked",
+      "commstatus_unchecked",
+      "build",
+      "Notify::new",
+      "Duration::from_secs",
+      "expect_handle_request",
+      "unwrap",
+      "expect_do_send",
+      "UMessageBuilder::request",
+      "on_receive",
+      "returning",
+      "get_code",
+      "notify_one",
+      "UUID::build",
+      "is_response"
+    ]
+  },
+  {
+    "function": "test_request_listener_times_out",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 497,
+    "calls": [
+      "assert",
+      "tokio::time::timeout",
+      "Ok",
+      "Arc::new",
+      "expect",
+      "MockTransport::new",
+      "with_message_id",
+      "clone",
+      "extract_protobuf",
+      "notified",
+      "withf",
+      "once",
+      "UUri::try_from",
+      "request_id_unchecked",
+      "Duration::from_millis",
+      "commstatus_unchecked",
+      "build",
+      "Notify::new",
+      "assert_eq",
+      "tokio::time::sleep",
+      "Duration::from_secs",
+      "unwrap",
+      "expect_do_send",
+      "UMessageBuilder::request",
+      "on_receive",
+      "returning",
+      "get_code",
+      "notify_one",
+      "UUID::build",
+      "is_response"
+    ]
+  },
+  {
+    "function": "handle_request",
+    "file": "src/communication/in_memory_rpc_server.rs",
+    "line": 505,
+    "calls": [
+      "tokio::time::sleep",
+      "Duration::from_millis",
+      "Ok",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "default_call_options",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 50,
+    "calls": [
+      "CallOptions::for_rpc_request"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 57,
+    "calls": [
+      "Self::default_call_options",
+      "self.rpc_client\r\n            .invoke_proto_method::<_, SubscriptionResponse>",
+      "usubscription_uri",
+      "map_err"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 71,
+    "calls": [
+      "self.rpc_client\r\n            .invoke_proto_method::<_, UnsubscribeResponse>",
+      "map",
+      "Self::default_call_options",
+      "map_err",
+      "usubscription_uri"
+    ]
+  },
+  {
+    "function": "fetch_subscriptions",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 83,
+    "calls": [
+      "Self::default_call_options",
+      "usubscription_uri",
+      "self.rpc_client\r\n            .invoke_proto_method::<_, FetchSubscriptionsResponse>",
+      "map_err"
+    ]
+  },
+  {
+    "function": "register_for_notifications",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 97,
+    "calls": [
+      "self.rpc_client\r\n            .invoke_proto_method::<_, NotificationsResponse>",
+      "map",
+      "Self::default_call_options",
+      "map_err",
+      "usubscription_uri"
+    ]
+  },
+  {
+    "function": "unregister_for_notifications",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 112,
+    "calls": [
+      "self.rpc_client\r\n            .invoke_proto_method::<_, NotificationsResponse>",
+      "map",
+      "Self::default_call_options",
+      "map_err",
+      "usubscription_uri"
+    ]
+  },
+  {
+    "function": "fetch_subscribers",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 127,
+    "calls": [
+      "Self::default_call_options",
+      "self.rpc_client\r\n            .invoke_proto_method::<_, FetchSubscribersResponse>",
+      "usubscription_uri",
+      "map_err"
+    ]
+  },
+  {
+    "function": "reset",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 141,
+    "calls": [
+      "self.rpc_client\r\n            .invoke_proto_method::<_, ResetResponse>",
+      "Self::default_call_options",
+      "usubscription_uri",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_subscribe_invokes_rpc_client",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 166,
+    "calls": [
+      "RpcClientUSubscription::new",
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "UPayload::try_from_protobuf",
+      "usubscription_uri",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "into",
+      "UUri::try_from_parts",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "test_unsubscribe_invokes_rpc_client",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 214,
+    "calls": [
+      "RpcClientUSubscription::new",
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "UPayload::try_from_protobuf",
+      "usubscription_uri",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "into",
+      "UUri::try_from_parts",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "test_fetch_subscriptions_invokes_rpc_client",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 262,
+    "calls": [
+      "RpcClientUSubscription::new",
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "UPayload::try_from_protobuf",
+      "usubscription_uri",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "to_owned",
+      "Request::Topic",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "UUri::try_from_parts",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "test_fetch_subscribers_invokes_rpc_client",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 315,
+    "calls": [
+      "RpcClientUSubscription::new",
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "UPayload::try_from_protobuf",
+      "usubscription_uri",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "into",
+      "UUri::try_from_parts",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "test_register_for_notifications_invokes_rpc_client",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 368,
+    "calls": [
+      "RpcClientUSubscription::new",
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "UPayload::try_from_protobuf",
+      "usubscription_uri",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "into",
+      "UUri::try_from_parts",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "test_unregister_for_notifications_invokes_rpc_client",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 422,
+    "calls": [
+      "RpcClientUSubscription::new",
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "UPayload::try_from_protobuf",
+      "usubscription_uri",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "into",
+      "UUri::try_from_parts",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "test_reset_invokes_rpc_client",
+    "file": "src/communication/usubscription_client.rs",
+    "line": 476,
+    "calls": [
+      "RpcClientUSubscription::new",
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "ResetRequest::default",
+      "UPayload::try_from_protobuf",
+      "usubscription_uri",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "unwrap",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/udiscovery_client.rs",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "default_call_options",
+    "file": "src/communication/udiscovery_client.rs",
+    "line": 45,
+    "calls": [
+      "CallOptions::for_rpc_request"
+    ]
+  },
+  {
+    "function": "find_services",
+    "file": "src/communication/udiscovery_client.rs",
+    "line": 52,
+    "calls": [
+      "map_or",
+      "Default::default",
+      "into",
+      "map",
+      "udiscovery_uri",
+      "Self::default_call_options",
+      "map_err",
+      "Some",
+      "as_ref",
+      "self.rpc_client\r\n            .invoke_proto_method::<_, FindServicesResponse>",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_service_topics",
+    "file": "src/communication/udiscovery_client.rs",
+    "line": 78,
+    "calls": [
+      "Default::default",
+      "self.rpc_client\r\n            .invoke_proto_method::<_, GetServiceTopicsResponse>",
+      "into",
+      "map",
+      "udiscovery_uri",
+      "Self::default_call_options",
+      "map_err",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_find_services_invokes_rpc_client",
+    "file": "src/communication/udiscovery_client.rs",
+    "line": 113,
+    "calls": [
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "UPayload::try_from_protobuf",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "RpcClientUDiscovery::new",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "vec",
+      "unwrap",
+      "into",
+      "UUri::try_from_parts",
+      "udiscovery_uri",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "test_get_service_topics_invokes_rpc_client",
+    "file": "src/communication/udiscovery_client.rs",
+    "line": 172,
+    "calls": [
+      "assert",
+      "return_const",
+      "expect_invoke_method",
+      "Ok",
+      "Arc::new",
+      "payload\r\n                    .to_owned",
+      "expect",
+      "UPayload::try_from_protobuf",
+      "Err",
+      "clone",
+      "to_string",
+      "Default::default",
+      "crate::communication::ServiceInvocationError::Internal",
+      "MockRpcClient::new",
+      "withf",
+      "once",
+      "RpcClientUDiscovery::new",
+      "to_owned",
+      "Some",
+      "Sequence::new",
+      "vec",
+      "unwrap",
+      "into",
+      "UUri::try_from_parts",
+      "udiscovery_uri",
+      "returning",
+      "in_sequence",
+      "is_some"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/communication/notification.rs",
+    "line": 35,
+    "calls": [
+      "write_fmt",
+      "format_args",
+      "as_str",
+      "write_str"
+    ]
+  },
+  {
+    "function": "handle_response_message",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 35,
+    "calls": [
+      "Err",
+      "unwrap_or_default",
+      "payload_format",
+      "UStatus::fail_with_code",
+      "extract_protobuf",
+      "UPayload::new",
+      "Ok",
+      "ServiceInvocationError::from",
+      "map",
+      "unwrap_or_else",
+      "commstatus"
+    ]
+  },
+  {
+    "function": "try_add_pending_request",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 60,
+    "calls": [
+      "Err",
+      "to_string",
+      "ServiceInvocationError::AlreadyExists",
+      "entry",
+      "insert",
+      "Ok",
+      "ServiceInvocationError::Internal",
+      "lock",
+      "tokio::sync::oneshot::channel"
+    ]
+  },
+  {
+    "function": "handle_response",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 81,
+    "calls": [
+      "clone",
+      "debug",
+      "lock",
+      "request_id_unchecked",
+      "info",
+      "remove",
+      "send"
+    ]
+  },
+  {
+    "function": "remove_pending_request",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 116,
+    "calls": [
+      "remove",
+      "lock",
+      "map_or"
+    ]
+  },
+  {
+    "function": "contains",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 123,
+    "calls": [
+      "is_ok_and",
+      "contains_key",
+      "lock"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 132,
+    "calls": [
+      "debug",
+      "is_response",
+      "handle_response"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 177,
+    "calls": [
+      "clone",
+      "UUri::any",
+      "register_listener",
+      "Ok",
+      "Arc::new",
+      "get_source_uri",
+      "map_err",
+      "Some",
+      "Mutex::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "contains_pending_request",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 201,
+    "calls": [
+      "contains"
+    ]
+  },
+  {
+    "function": "invoke_method",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 208,
+    "calls": [
+      "token",
+      "timeout",
+      "unwrap_or_else",
+      "get_source_uri",
+      "with_message_id",
+      "message_id",
+      "clone",
+      "to_string",
+      "with_priority",
+      "build_message",
+      "Err",
+      "with_token",
+      "ServiceInvocationError::Internal",
+      "send",
+      "to_owned",
+      "Duration::from_millis",
+      "inspect_err",
+      "remove_pending_request",
+      "ttl",
+      "handle_response_message",
+      "try_add_pending_request",
+      "priority",
+      "UMessageBuilder::request",
+      "ServiceInvocationError::InvalidArgument",
+      "debug",
+      "map_err"
+    ]
+  },
+  {
+    "function": "new_uri_provider",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 285,
+    "calls": [
+      "Arc::new",
+      "StaticUriProvider::new"
+    ]
+  },
+  {
+    "function": "service_method_uri",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 289,
+    "calls": [
+      "Default::default"
+    ]
+  },
+  {
+    "function": "test_registration_of_response_listener_fails",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 299,
+    "calls": [
+      "Err",
+      "new_uri_provider",
+      "assert",
+      "UStatus::fail_with_code",
+      "once",
+      "Arc::new",
+      "returning",
+      "MockTransport::default",
+      "InMemoryRpcClient::new",
+      "expect_do_register_listener"
+    ]
+  },
+  {
+    "function": "test_invoke_method_fails_with_transport_error",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 324,
+    "calls": [
+      "MockTransport::default",
+      "assert",
+      "UStatus::fail_with_code",
+      "Ok",
+      "Arc::new",
+      "InMemoryRpcClient::new",
+      "Err",
+      "clone",
+      "once",
+      "service_method_uri",
+      "expect_do_register_listener",
+      "CallOptions::for_rpc_request",
+      "invoke_method",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "expect_do_send",
+      "returning",
+      "UUID::build"
+    ]
+  },
+  {
+    "function": "test_invoke_method_succeeds",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 358,
+    "calls": [
+      "token",
+      "assert",
+      "UMessageBuilder::response",
+      "tokio::spawn",
+      "Ok",
+      "Arc::new",
+      "get_source_uri",
+      "join",
+      "InMemoryRpcClient::new",
+      "tokio::sync::oneshot::channel",
+      "UStatus::fail",
+      "to_string",
+      "clone",
+      "build_with_protobuf_payload",
+      "Default::default",
+      "withf",
+      "once",
+      "UUID::build",
+      "priority_unchecked",
+      "ttl_unchecked",
+      "service_method_uri",
+      "String::from",
+      "return_once",
+      "send",
+      "expect_do_register_listener",
+      "id_unchecked",
+      "CallOptions::for_rpc_request",
+      "Notify::new",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "expect_do_send",
+      "on_receive",
+      "returning",
+      "notify_one",
+      "map_err",
+      "client\r\n                .invoke_proto_method::<_, StringValue>",
+      "MockTransport::default"
+    ]
+  },
+  {
+    "function": "test_invoke_method_fails_on_repeated_invocation",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 457,
+    "calls": [
+      "assert",
+      "return_const",
+      "tokio::spawn",
+      "Ok",
+      "Arc::new",
+      "InMemoryRpcClient::new",
+      "to_string",
+      "clone",
+      "Default::default",
+      "notified",
+      "withf",
+      "once",
+      "UUID::build",
+      "service_method_uri",
+      "expect_do_register_listener",
+      "id_unchecked",
+      "CallOptions::for_rpc_request",
+      "cloned_rpc_client\r\n                .invoke_proto_method::<_, StringValue>",
+      "Notify::new",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "expect_do_send",
+      "returning",
+      "rpc_client\r\n                .invoke_proto_method::<_, StringValue>",
+      "notify_one",
+      "MockTransport::default"
+    ]
+  },
+  {
+    "function": "test_invoke_method_fails_with_remote_error",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 533,
+    "calls": [
+      "MockTransport::default",
+      "assert",
+      "UStatus::fail_with_code",
+      "tokio::spawn",
+      "Ok",
+      "Arc::new",
+      "InMemoryRpcClient::new",
+      "build_with_protobuf_payload",
+      "UStatus::fail",
+      "clone",
+      "UUID::build",
+      "service_method_uri",
+      "send",
+      "to_owned",
+      "expect_do_register_listener",
+      "CallOptions::for_rpc_request",
+      "invoke_method",
+      "with_comm_status",
+      "Some",
+      "unwrap",
+      "new_uri_provider",
+      "expect_do_send",
+      "UMessageBuilder::response_for_request",
+      "std::sync::mpsc::channel",
+      "on_receive",
+      "returning",
+      "recv",
+      "map_err",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "test_invoke_method_times_out",
+    "file": "src/communication/in_memory_rpc_client.rs",
+    "line": 579,
+    "calls": [
+      "unwrap",
+      "clone",
+      "new_uri_provider",
+      "expect_do_send",
+      "assert",
+      "CallOptions::for_rpc_request",
+      "UUID::build",
+      "Ok",
+      "Arc::new",
+      "returning",
+      "invoke_method",
+      "service_method_uri",
+      "Some",
+      "MockTransport::default",
+      "InMemoryRpcClient::new",
+      "expect_do_register_listener"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/communication/pubsub.rs",
+    "line": 36,
+    "calls": [
+      "write_fmt",
+      "format_args",
+      "as_str",
+      "write_str"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/communication/rpc.rs",
+    "line": 71,
+    "calls": [
+      "ServiceInvocationError::AlreadyExists",
+      "ServiceInvocationError::PermissionDenied",
+      "ServiceInvocationError::NotFound",
+      "ServiceInvocationError::ResourceExhausted",
+      "ServiceInvocationError::Unimplemented",
+      "ServiceInvocationError::RpcError",
+      "get_message",
+      "ServiceInvocationError::FailedPrecondition",
+      "ServiceInvocationError::InvalidArgument",
+      "ServiceInvocationError::Unavailable",
+      "ServiceInvocationError::Internal",
+      "enum_value"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/communication/rpc.rs",
+    "line": 98,
+    "calls": [
+      "UStatus::fail_with_code"
+    ]
+  },
+  {
+    "function": "invoke_proto_method",
+    "file": "src/communication/rpc.rs",
+    "line": 183,
+    "calls": [
+      "to_string",
+      "UPayload::extract_protobuf::<R>",
+      "Err",
+      "ServiceInvocationError::InvalidArgument",
+      "invoke_method",
+      "map_err",
+      "Some",
+      "UPayload::try_from_protobuf"
+    ]
+  },
+  {
+    "function": "register_endpoint",
+    "file": "src/communication/rpc.rs",
+    "line": 311,
+    "calls": [
+      "do_register_endpoint"
+    ]
+  },
+  {
+    "function": "unregister_endpoint",
+    "file": "src/communication/rpc.rs",
+    "line": 320,
+    "calls": [
+      "do_unregister_endpoint"
+    ]
+  },
+  {
+    "function": "test_invoke_proto_method_fails_for_unexpected_return_type",
+    "file": "src/communication/rpc.rs",
+    "line": 342,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "StringValue::new",
+      "assert",
+      "UStatus::fail_with_code",
+      "MockRpcClient::new",
+      "once",
+      "expect_invoke_method",
+      "Ok",
+      "UUri::try_from_parts",
+      "CallOptions::for_rpc_request",
+      "Arc::new",
+      "returning",
+      "Some",
+      "client\r\n            .invoke_proto_method::<StringValue, StringValue>",
+      "UPayload::try_from_protobuf"
+    ]
+  },
+  {
+    "function": "test_invoke_proto_method_fails_for_missing_response_payload",
+    "file": "src/communication/rpc.rs",
+    "line": 366,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "StringValue::new",
+      "assert",
+      "return_const",
+      "MockRpcClient::new",
+      "once",
+      "expect_invoke_method",
+      "Ok",
+      "UUri::try_from_parts",
+      "CallOptions::for_rpc_request",
+      "Arc::new",
+      "client\r\n            .invoke_proto_method::<StringValue, StringValue>"
+    ]
+  },
+  {
+    "function": "udiscovery_uri",
+    "file": "src/core/udiscovery.rs",
+    "line": 43,
+    "calls": [
+      "unwrap",
+      "UUri::try_from_parts"
+    ]
+  },
+  {
+    "function": "hash",
+    "file": "src/core/usubscription.rs",
+    "line": 59,
+    "calls": [
+      "hash"
+    ]
+  },
+  {
+    "function": "is_empty",
+    "file": "src/core/usubscription.rs",
+    "line": 85,
+    "calls": [
+      "SubscriberInfo::default",
+      "eq"
+    ]
+  },
+  {
+    "function": "is_state",
+    "file": "src/core/usubscription.rs",
+    "line": 110,
+    "calls": [
+      "eq",
+      "is_some_and",
+      "enum_value",
+      "is_ok_and",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "usubscription_uri",
+    "file": "src/core/usubscription.rs",
+    "line": 149,
+    "calls": [
+      "unwrap",
+      "UUri::try_from_parts"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 45,
+    "calls": [
+      "Box::new"
+    ]
+  },
+  {
+    "function": "publish",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 90,
+    "calls": [
+      "Some",
+      "Box::new",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "notification",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 126,
+    "calls": [
+      "Some",
+      "Box::new",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "request",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 169,
+    "calls": [
+      "Some",
+      "Box::new",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "response",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 217,
+    "calls": [
+      "Some",
+      "Box::new",
+      "Default::default"
+    ]
+  },
+  {
+    "function": "response_for_request",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 271,
+    "calls": [
+      "Default::default",
+      "Box::new",
+      "enum_value_or",
+      "as_ref",
+      "cloned"
+    ]
+  },
+  {
+    "function": "with_message_id",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 330,
+    "calls": [
+      "Some",
+      "assert"
+    ]
+  },
+  {
+    "function": "with_priority",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 371,
+    "calls": [
+      "UAttributes::is_default_priority",
+      "assert"
+    ]
+  },
+  {
+    "function": "with_ttl",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 417,
+    "calls": [
+      "Some"
+    ]
+  },
+  {
+    "function": "with_token",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 452,
+    "calls": [
+      "Some",
+      "into",
+      "assert"
+    ]
+  },
+  {
+    "function": "with_permission_level",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 489,
+    "calls": [
+      "Some",
+      "assert"
+    ]
+  },
+  {
+    "function": "with_comm_status",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 528,
+    "calls": [
+      "Some",
+      "into",
+      "assert"
+    ]
+  },
+  {
+    "function": "with_traceparent",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 558,
+    "calls": [
+      "Some",
+      "into"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 617,
+    "calls": [
+      "map_or_else",
+      "clone",
+      "validate",
+      "Default::default",
+      "into",
+      "map",
+      "map_err",
+      "Some",
+      "UUID::build",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "build_with_payload",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 677,
+    "calls": [
+      "Some",
+      "into",
+      "build"
+    ]
+  },
+  {
+    "function": "build_with_protobuf_payload",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 725,
+    "calls": [
+      "and_then",
+      "build_with_payload",
+      "write_to_bytes",
+      "map_err"
+    ]
+  },
+  {
+    "function": "build_with_wrapped_protobuf_payload",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 776,
+    "calls": [
+      "Any::pack",
+      "build_with_payload",
+      "and_then",
+      "write_to_bytes",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_with_message_id_panics_for_invalid_uuid",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 807,
+    "calls": [
+      "Default::default",
+      "UMessageBuilder::publish",
+      "UUri::try_from",
+      "expect",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_publish_message_builder_panics",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 823,
+    "calls": [
+      "with_permission_level",
+      "with_token",
+      "UMessageBuilder::publish",
+      "UUri::try_from",
+      "with_comm_status",
+      "expect"
+    ]
+  },
+  {
+    "function": "test_notification_message_builder_panics",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 845,
+    "calls": [
+      "with_permission_level",
+      "with_token",
+      "UUri::try_from",
+      "with_comm_status",
+      "expect",
+      "UMessageBuilder::notification"
+    ]
+  },
+  {
+    "function": "test_response_message_builder_panics",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 878,
+    "calls": [
+      "with_priority",
+      "UMessageBuilder::response",
+      "with_permission_level",
+      "with_token",
+      "UUri::try_from",
+      "UUID::build",
+      "expect"
+    ]
+  },
+  {
+    "function": "test_request_message_builder_panics",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 911,
+    "calls": [
+      "with_priority",
+      "UMessageBuilder::request",
+      "UUri::try_from",
+      "with_comm_status",
+      "expect"
+    ]
+  },
+  {
+    "function": "test_build_supports_repeated_invocation",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 929,
+    "calls": [
+      "UMessageBuilder::publish",
+      "build_with_payload",
+      "UUID::build",
+      "UUri::try_from",
+      "assert_eq",
+      "expect",
+      "with_message_id",
+      "assert_ne"
+    ]
+  },
+  {
+    "function": "test_build_retains_all_publish_attributes",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 949,
+    "calls": [
+      "with_traceparent",
+      "clone",
+      "assert",
+      "UMessage::parse_from_bytes",
+      "build_with_payload",
+      "UMessageBuilder::publish",
+      "assert_eq",
+      "as_slice",
+      "UUri::try_from",
+      "with_ttl",
+      "String::from",
+      "write_to_bytes",
+      "UUID::build",
+      "expect",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_build_retains_all_notification_attributes",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 995,
+    "calls": [
+      "with_traceparent",
+      "clone",
+      "with_priority",
+      "UMessage::parse_from_bytes",
+      "build_with_payload",
+      "assert_eq",
+      "as_slice",
+      "UUri::try_from",
+      "with_ttl",
+      "String::from",
+      "write_to_bytes",
+      "UUID::build",
+      "expect",
+      "UMessageBuilder::notification",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_build_retains_all_request_attributes",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 1041,
+    "calls": [
+      "with_traceparent",
+      "clone",
+      "with_priority",
+      "with_permission_level",
+      "UMessageBuilder::request",
+      "UMessage::parse_from_bytes",
+      "with_token",
+      "build_with_payload",
+      "assert_eq",
+      "as_slice",
+      "UUri::try_from",
+      "write_to_bytes",
+      "String::from",
+      "UUID::build",
+      "expect",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_builder_copies_request_attributes",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 1093,
+    "calls": [
+      "clone",
+      "with_priority",
+      "assert",
+      "UMessageBuilder::request",
+      "UMessageBuilder::response_for_request",
+      "build",
+      "UUri::try_from",
+      "with_comm_status",
+      "assert_eq",
+      "UUID::build",
+      "expect",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_build_retains_all_response_attributes",
+    "file": "src/umessage/umessagebuilder.rs",
+    "line": 1134,
+    "calls": [
+      "with_traceparent",
+      "clone",
+      "with_priority",
+      "UMessageBuilder::response",
+      "assert",
+      "UMessage::parse_from_bytes",
+      "build",
+      "assert_eq",
+      "as_slice",
+      "UUri::try_from",
+      "with_ttl",
+      "String::from",
+      "with_comm_status",
+      "UUID::build",
+      "expect",
+      "write_to_bytes",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "to_cloudevent_type",
+    "file": "src/umessage/umessagetype.rs",
+    "line": 26,
+    "calls": [
+      "descriptor",
+      "unwrap_or_default",
+      "get_or_default",
+      "proto",
+      "get"
+    ]
+  },
+  {
+    "function": "try_from_cloudevent_type",
+    "file": "src/umessage/umessagetype.rs",
+    "line": 40,
+    "calls": [
+      "find_map",
+      "Self::enum_descriptor",
+      "proto",
+      "get_or_default",
+      "eq",
+      "as_str",
+      "format",
+      "into",
+      "ok_or_else",
+      "and_then",
+      "values",
+      "get",
+      "UAttributesError::parsing_error",
+      "desc.cast::<Self>"
+    ]
+  },
+  {
+    "function": "test_to_cloudevent_type",
+    "file": "src/umessage/umessagetype.rs",
+    "line": 79,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_try_from_cloudevent_type",
+    "file": "src/umessage/umessagetype.rs",
+    "line": 88,
+    "calls": [
+      "UMessageType::try_from_cloudevent_type",
+      "assert",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "serialization_error",
+    "file": "src/uattributes/upayloadformat.rs",
+    "line": 25,
+    "calls": [
+      "into",
+      "Self::SerializationError"
+    ]
+  },
+  {
+    "function": "mediatype_error",
+    "file": "src/uattributes/upayloadformat.rs",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/uattributes/upayloadformat.rs",
+    "line": 38,
+    "calls": [
+      "write_fmt",
+      "format_args"
+    ]
+  },
+  {
+    "function": "from_media_type",
+    "file": "src/uattributes/upayloadformat.rs",
+    "line": 69,
+    "calls": [
+      "Err",
+      "MediaType::parse",
+      "find_map",
+      "get_or_default",
+      "proto",
+      "UPayloadFormat::enum_descriptor",
+      "UPayloadError::mediatype_error",
+      "and_then",
+      "values",
+      "get",
+      "desc.cast::<Self>",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "to_media_type",
+    "file": "src/uattributes/upayloadformat.rs",
+    "line": 109,
+    "calls": [
+      "descriptor",
+      "get_or_default",
+      "proto",
+      "get"
+    ]
+  },
+  {
+    "function": "test_from_media_type",
+    "file": "src/uattributes/upayloadformat.rs",
+    "line": 141,
+    "calls": [
+      "assert",
+      "UPayloadFormat::from_media_type",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_to_media_type",
+    "file": "src/uattributes/upayloadformat.rs",
+    "line": 160,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "to_priority_code",
+    "file": "src/uattributes/upriority.rs",
+    "line": 33,
+    "calls": [
+      "descriptor",
+      "unwrap_or_default",
+      "get_or_default",
+      "proto",
+      "get"
+    ]
+  },
+  {
+    "function": "try_from_priority_code",
+    "file": "src/uattributes/upriority.rs",
+    "line": 60,
+    "calls": [
+      "find_map",
+      "Self::enum_descriptor",
+      "proto",
+      "get_or_default",
+      "eq",
+      "as_str",
+      "format",
+      "into",
+      "ok_or_else",
+      "and_then",
+      "values",
+      "get",
+      "UAttributesError::parsing_error",
+      "desc.cast::<Self>"
+    ]
+  },
+  {
+    "function": "validate_type",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 41,
+    "calls": [
+      "Err",
+      "message_type",
+      "UAttributesError::validation_error",
+      "Ok",
+      "enum_value",
+      "format"
+    ]
+  },
+  {
+    "function": "validate_id",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 60,
+    "calls": [
+      "Err",
+      "is_uprotocol_uuid",
+      "UAttributesError::validation_error",
+      "Ok",
+      "is_some_and",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "validate_rpc_priority",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 94,
+    "calls": [
+      "Err",
+      "to_string",
+      "map_err",
+      "Ok",
+      "and_then",
+      "value",
+      "enum_value",
+      "format",
+      "UAttributesError::ValidationError"
+    ]
+  },
+  {
+    "function": "validator",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 143,
+    "calls": [
+      "Box::new"
+    ]
+  },
+  {
+    "function": "get_validator_for_attributes",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 172,
+    "calls": [
+      "enum_value_or_default",
+      "Self::get_validator"
+    ]
+  },
+  {
+    "function": "get_validator",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 196,
+    "calls": [
+      "Box::new"
+    ]
+  },
+  {
+    "function": "message_type",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 212,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 227,
+    "calls": [
+      "to_string",
+      "Err",
+      "UAttributesError::validation_error",
+      "vec![\r\n            self.validate_type",
+      "into_iter",
+      "filter_map",
+      "is_empty",
+      "map",
+      "Ok",
+      "join",
+      "vec"
+    ]
+  },
+  {
+    "function": "validate_source",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 256,
+    "calls": [
+      "Err",
+      "map_err",
+      "UAttributesError::validation_error",
+      "format",
+      "as_ref",
+      "verify_event"
+    ]
+  },
+  {
+    "function": "validate_sink",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 274,
+    "calls": [
+      "Err",
+      "UAttributesError::validation_error",
+      "Ok",
+      "as_ref",
+      "is_some"
+    ]
+  },
+  {
+    "function": "message_type",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 290,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 305,
+    "calls": [
+      "to_string",
+      "Err",
+      "UAttributesError::validation_error",
+      "vec![\r\n            self.validate_type",
+      "into_iter",
+      "filter_map",
+      "is_empty",
+      "map",
+      "Ok",
+      "join",
+      "vec"
+    ]
+  },
+  {
+    "function": "validate_source",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 334,
+    "calls": [
+      "Err",
+      "verify_no_wildcards",
+      "format",
+      "UAttributesError::validation_error",
+      "map_err",
+      "as_ref",
+      "is_rpc_response"
+    ]
+  },
+  {
+    "function": "validate_sink",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 362,
+    "calls": [
+      "is_notification_destination",
+      "Err",
+      "verify_no_wildcards",
+      "format",
+      "UAttributesError::validation_error",
+      "map_err",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "validate_ttl",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 391,
+    "calls": [
+      "Err",
+      "UAttributesError::validation_error",
+      "Ok",
+      "format"
+    ]
+  },
+  {
+    "function": "message_type",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 406,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 423,
+    "calls": [
+      "to_string",
+      "Err",
+      "UAttributesError::validation_error",
+      "vec![\r\n            self.validate_type",
+      "into_iter",
+      "filter_map",
+      "is_empty",
+      "map",
+      "Ok",
+      "join",
+      "vec"
+    ]
+  },
+  {
+    "function": "validate_source",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 451,
+    "calls": [
+      "Err",
+      "UUri::verify_rpc_response",
+      "map_err",
+      "UAttributesError::validation_error",
+      "format",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "validate_sink",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 467,
+    "calls": [
+      "Err",
+      "UUri::verify_rpc_method",
+      "map_err",
+      "UAttributesError::validation_error",
+      "format",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "validate_reqid",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 488,
+    "calls": [
+      "Err",
+      "is_uprotocol_uuid",
+      "UAttributesError::validation_error",
+      "Ok",
+      "is_some_and",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "validate_commstatus",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 507,
+    "calls": [
+      "Err",
+      "UAttributesError::validation_error",
+      "Ok",
+      "enum_value",
+      "format"
+    ]
+  },
+  {
+    "function": "message_type",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 525,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 543,
+    "calls": [
+      "to_string",
+      "Err",
+      "UAttributesError::validation_error",
+      "vec![\r\n            self.validate_type",
+      "into_iter",
+      "filter_map",
+      "is_empty",
+      "map",
+      "Ok",
+      "join",
+      "vec"
+    ]
+  },
+  {
+    "function": "validate_source",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 573,
+    "calls": [
+      "Err",
+      "UUri::verify_rpc_method",
+      "map_err",
+      "UAttributesError::validation_error",
+      "format",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "validate_sink",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 590,
+    "calls": [
+      "Err",
+      "UUri::verify_rpc_response",
+      "map_err",
+      "UAttributesError::validation_error",
+      "format",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "test_validate_type_fails_for_unknown_type_code",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 610,
+    "calls": [
+      "Default::default",
+      "assert",
+      "EnumOrUnknown::from_i32"
+    ]
+  },
+  {
+    "function": "test_get_validator_returns_matching_validator",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 638,
+    "calls": [
+      "UAttributesValidators::get_validator",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_validate_attributes_for_publish_message",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 670,
+    "calls": [
+      "assert",
+      "Default::default",
+      "into",
+      "validator",
+      "is_ok",
+      "validate"
+    ]
+  },
+  {
+    "function": "test_validate_attributes_for_notification_message",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 731,
+    "calls": [
+      "assert",
+      "Default::default",
+      "into",
+      "validator",
+      "is_ok",
+      "validate"
+    ]
+  },
+  {
+    "function": "test_validate_attributes_for_rpc_request_message",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 802,
+    "calls": [
+      "unwrap_or",
+      "assert",
+      "Default::default",
+      "into",
+      "validator",
+      "is_ok",
+      "validate"
+    ]
+  },
+  {
+    "function": "test_validate_attributes_for_rpc_response_message",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 894,
+    "calls": [
+      "unwrap_or",
+      "assert",
+      "Default::default",
+      "into",
+      "validator",
+      "is_ok",
+      "validate"
+    ]
+  },
+  {
+    "function": "publish_topic",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 935,
+    "calls": [
+      "Default::default",
+      "String::from"
+    ]
+  },
+  {
+    "function": "origin",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 945,
+    "calls": [
+      "Default::default",
+      "String::from"
+    ]
+  },
+  {
+    "function": "destination",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 955,
+    "calls": [
+      "Default::default",
+      "String::from"
+    ]
+  },
+  {
+    "function": "reply_to_address",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 965,
+    "calls": [
+      "Default::default",
+      "String::from"
+    ]
+  },
+  {
+    "function": "method_to_invoke",
+    "file": "src/uattributes/uattributesvalidator.rs",
+    "line": 975,
+    "calls": [
+      "Default::default",
+      "String::from"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "examples/simple_notify.rs",
+    "line": 27,
+    "calls": [
+      "println",
+      "msg.extract_protobuf::<StringValue>"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/simple_notify.rs",
+    "line": 35,
+    "calls": [
+      "to_string",
+      "clone",
+      "notify",
+      "LocalTransport::default",
+      "get_resource_uri",
+      "start_listening",
+      "Default::default",
+      "stop_listening",
+      "CallOptions::for_notification",
+      "StaticUriProvider::new",
+      "Ok",
+      "Arc::new",
+      "get_source_uri",
+      "SimpleNotifier::new",
+      "Some",
+      "UPayload::try_from_protobuf"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "examples/symphony_target.rs",
+    "line": 35,
+    "calls": [
+      "vec",
+      "notify_one",
+      "Ok"
+    ]
+  },
+  {
+    "function": "update",
+    "file": "examples/symphony_target.rs",
+    "line": 44,
+    "calls": [
+      "HashMap::new",
+      "notify_one",
+      "Ok"
+    ]
+  },
+  {
+    "function": "delete",
+    "file": "examples/symphony_target.rs",
+    "line": 53,
+    "calls": [
+      "HashMap::new",
+      "notify_one",
+      "Ok"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/symphony_target.rs",
+    "line": 64,
+    "calls": [
+      "LocalTransport::default",
+      "Ok",
+      "serde_json::to_vec",
+      "Arc::new",
+      "ExampleDeploymentTarget",
+      "expect",
+      "InMemoryRpcClient::new",
+      "InMemoryRpcServer::new",
+      "StaticUriProvider::try_from",
+      "clone",
+      "json",
+      "StaticUriProvider::new",
+      "CallOptions::for_rpc_request",
+      "Notify::new",
+      "invoke_method",
+      "Some",
+      "tokio::try_join",
+      "UPayload::new",
+      "UUri::try_from_parts",
+      "up_rust::symphony::register_target_provider_endpoints"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "examples/simple_publish.rs",
+    "line": 27,
+    "calls": [
+      "println",
+      "msg.extract_protobuf::<StringValue>"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/simple_publish.rs",
+    "line": 35,
+    "calls": [
+      "to_string",
+      "clone",
+      "publish",
+      "LocalTransport::default",
+      "get_resource_uri",
+      "Default::default",
+      "register_listener",
+      "StaticUriProvider::new",
+      "Ok",
+      "Arc::new",
+      "unregister_listener",
+      "Some",
+      "UPayload::try_from_protobuf",
+      "SimplePublisher::new",
+      "CallOptions::for_publish"
+    ]
+  },
+  {
+    "function": "handle_request",
+    "file": "examples/simple_rpc.rs",
+    "line": 34,
+    "calls": [
+      "to_string",
+      "Err",
+      "ServiceInvocationError::InvalidArgument",
+      "Ok",
+      "Some"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/simple_rpc.rs",
+    "line": 51,
+    "calls": [
+      "LocalTransport::default",
+      "register_endpoint",
+      "println",
+      "Ok",
+      "Arc::new",
+      "UPayload::try_from_protobuf",
+      "InMemoryRpcClient::new",
+      "InMemoryRpcServer::new",
+      "to_string",
+      "clone",
+      "Default::default",
+      "unregister_endpoint",
+      "StaticUriProvider::new",
+      "payload.extract_protobuf::<StringValue>",
+      "CallOptions::for_rpc_request",
+      "panic",
+      "invoke_method",
+      "Some",
+      "get_resource_uri"
+    ]
+  },
+  {
+    "function": "with_hyphenated_string",
+    "file": "tests/tck_uuid.rs",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "with_msb_lsb",
+    "file": "tests/tck_uuid.rs",
+    "line": 38,
+    "calls": [
+      "common::value_as_u64"
+    ]
+  },
+  {
+    "function": "serialize_to_hyphenated_string",
+    "file": "tests/tck_uuid.rs",
+    "line": 44,
+    "calls": [
+      "to_hyphenated_string"
+    ]
+  },
+  {
+    "function": "serialize_to_protobuf",
+    "file": "tests/tck_uuid.rs",
+    "line": 49,
+    "calls": [
+      "expect",
+      "write_to_bytes"
+    ]
+  },
+  {
+    "function": "deserialize_from_hyphenated_string",
+    "file": "tests/tck_uuid.rs",
+    "line": 57,
+    "calls": [
+      "UUID::from_str",
+      "Box::from",
+      "Some"
+    ]
+  },
+  {
+    "function": "assert_failure",
+    "file": "tests/tck_uuid.rs",
+    "line": 69,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "assert_hyphenated_string",
+    "file": "tests/tck_uuid.rs",
+    "line": 74,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "assert_original_uuid_can_be_recreated_from_hyphenated_string",
+    "file": "tests/tck_uuid.rs",
+    "line": 79,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "assert_original_uuid_can_be_recreated_from_protobuf",
+    "file": "tests/tck_uuid.rs",
+    "line": 87,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "assert_deserialize_uuid_from_protobuf",
+    "file": "tests/tck_uuid.rs",
+    "line": 92,
+    "calls": [
+      "assert",
+      "expect",
+      "hex::decode",
+      "common::trimhex"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/tck_uuid.rs",
+    "line": 100,
+    "calls": [
+      "common::run::<UUIDWorld>"
+    ]
+  },
+  {
+    "function": "with_uri_string",
+    "file": "tests/tck_uuri.rs",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "with_authority",
+    "file": "tests/tck_uuri.rs",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "with_entity_id",
+    "file": "tests/tck_uuri.rs",
+    "line": 43,
+    "calls": [
+      "common::value_as_u32"
+    ]
+  },
+  {
+    "function": "with_major_version",
+    "file": "tests/tck_uuri.rs",
+    "line": 48,
+    "calls": [
+      "common::value_as_u32"
+    ]
+  },
+  {
+    "function": "with_resource_id",
+    "file": "tests/tck_uuri.rs",
+    "line": 53,
+    "calls": [
+      "common::value_as_u32"
+    ]
+  },
+  {
+    "function": "serialize_to_uri",
+    "file": "tests/tck_uuri.rs",
+    "line": 58,
+    "calls": [
+      "to_uri"
+    ]
+  },
+  {
+    "function": "serialize_to_protobuf",
+    "file": "tests/tck_uuri.rs",
+    "line": 63,
+    "calls": [
+      "expect",
+      "write_to_bytes"
+    ]
+  },
+  {
+    "function": "deserialize_from_uri",
+    "file": "tests/tck_uuri.rs",
+    "line": 71,
+    "calls": [
+      "Some",
+      "UUri::from_str",
+      "Box::from",
+      "as_str"
+    ]
+  },
+  {
+    "function": "assert_uri_string",
+    "file": "tests/tck_uuri.rs",
+    "line": 83,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "assert_authority",
+    "file": "tests/tck_uuri.rs",
+    "line": 88,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "assert_entity_id",
+    "file": "tests/tck_uuri.rs",
+    "line": 93,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "assert_major_version",
+    "file": "tests/tck_uuri.rs",
+    "line": 98,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "assert_resource_id",
+    "file": "tests/tck_uuri.rs",
+    "line": 106,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "assert_failure",
+    "file": "tests/tck_uuri.rs",
+    "line": 111,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "assert_original_uuri_can_be_recreated_from_protobuf",
+    "file": "tests/tck_uuri.rs",
+    "line": 116,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "assert_uuri_can_be_deserialized_from_bytes",
+    "file": "tests/tck_uuri.rs",
+    "line": 121,
+    "calls": [
+      "assert",
+      "expect",
+      "hex::decode",
+      "common::trimhex"
+    ]
+  },
+  {
+    "function": "assert_original_uuri_can_be_recreated_from_uri_string",
+    "file": "tests/tck_uuri.rs",
+    "line": 127,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "assert_uuri_matches_pattern",
+    "file": "tests/tck_uuri.rs",
+    "line": 132,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "assert_uuri_does_not_match_pattern",
+    "file": "tests/tck_uuri.rs",
+    "line": 137,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/tck_uuri.rs",
+    "line": 149,
+    "calls": [
+      "common::run::<UUriWorld>"
+    ]
+  },
+  {
+    "function": "get_junit_out_file",
+    "file": "tests/common/mod.rs",
+    "line": 34,
+    "calls": [
+      "map",
+      "fs::File::create",
+      "format",
+      "as_ref",
+      "expect"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "tests/common/mod.rs",
+    "line": 50,
+    "calls": [
+      "cucumber::writer::JUnit::new",
+      "cli::Opts::<\r\n            cucumber::parser::basic::Cli,\r\n            cucumber::runner::basic::Cli,\r\n            cucumber::writer::junit::Cli,\r\n            CustomTckOpts,\r\n        >::parsed",
+      "T::cucumber",
+      "with_writer",
+      "cli::Opts::<cucumber::parser::basic::Cli, _, _, CustomTckOpts>::parsed",
+      "Ok",
+      "Walker::from_str",
+      "with_cli",
+      "get_junit_out_file",
+      "Some",
+      "cli::Opts::<\r\n        cucumber::parser::basic::Cli,\r\n        cucumber::runner::basic::Cli,\r\n        cucumber::writer::basic::Cli,\r\n        CustomTckOpts,\r\n    >::parsed",
+      "fail_on_skipped",
+      "run"
+    ]
+  },
+  {
+    "function": "trimhex",
+    "file": "tests/common/mod.rs",
+    "line": 91,
+    "calls": [
+      "unwrap_or",
+      "strip_prefix"
+    ]
+  },
+  {
+    "function": "value_as_u8",
+    "file": "tests/common/mod.rs",
+    "line": 103,
+    "calls": [
+      "parse",
+      "starts_with",
+      "expect",
+      "trimhex",
+      "u8::from_str_radix"
+    ]
+  },
+  {
+    "function": "value_as_u16",
+    "file": "tests/common/mod.rs",
+    "line": 118,
+    "calls": [
+      "parse",
+      "starts_with",
+      "u16::from_str_radix",
+      "expect",
+      "trimhex"
+    ]
+  },
+  {
+    "function": "value_as_u32",
+    "file": "tests/common/mod.rs",
+    "line": 133,
+    "calls": [
+      "parse",
+      "starts_with",
+      "u32::from_str_radix",
+      "expect",
+      "trimhex"
+    ]
+  },
+  {
+    "function": "value_as_u64",
+    "file": "tests/common/mod.rs",
+    "line": 148,
+    "calls": [
+      "parse",
+      "starts_with",
+      "expect",
+      "u64::from_str_radix",
+      "trimhex"
+    ]
+  }
+]

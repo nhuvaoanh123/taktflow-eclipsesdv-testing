@@ -1,0 +1,465 @@
+[
+  {
+    "function": "main",
+    "file": "components/horn-proto/build.rs",
+    "start_line": 17,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "attachment_handler",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 49,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 2,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "is_valid_tcp_url",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 73,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "gpio_init",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "turn_led",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 94,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "pub_status",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 119,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sample_handler",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 138,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 5,
+    "loc": 54,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "event_handler",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 193,
+    "cyclomatic_complexity": 20,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "wifi_init_sta",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 216,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "app_main",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 260,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 2,
+    "loc": 90,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "app_main",
+    "file": "components/actuator-provider/src/main.c",
+    "start_line": 351,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "example_horn_loop",
+    "file": "components/horn-client/src/horn_loop.rs",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "components/horn-client/src/main.rs",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get_prebuilt_activation_request",
+    "file": "components/horn-client/src/horn_requests.rs",
+    "start_line": 24,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "create_sequenced_horn_request",
+    "file": "components/horn-client/src/horn_requests.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create_continuous_horn_request",
+    "file": "components/horn-client/src/horn_requests.rs",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create_deactivate_horn_request",
+    "file": "components/horn-client/src/horn_requests.rs",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sleep",
+    "file": "components/horn-client/src/lib.rs",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "create_rpc_client",
+    "file": "components/horn-client/src/rpc_client.rs",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "components/horn-client/src/horn_client.rs",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "activate_horn_with_prebuilt_request",
+    "file": "components/horn-client/src/horn_client.rs",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "activate_horn",
+    "file": "components/horn-client/src/horn_client.rs",
+    "start_line": 55,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "deactivate_horn",
+    "file": "components/horn-client/src/horn_client.rs",
+    "start_line": 90,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_zenoh_config",
+    "file": "components/horn-client/src/config.rs",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_zenoh_config",
+    "file": "components/software-horn/src/main.rs",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "components/software-horn/src/main.rs",
+    "start_line": 38,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 6,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "publish_current_status",
+    "file": "components/software-horn/src/main.rs",
+    "start_line": 75,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "contains_target_value",
+    "file": "components/software-horn/src/main.rs",
+    "start_line": 85,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "payload_as_bool",
+    "file": "components/software-horn/src/main.rs",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "send_to_databroker",
+    "file": "components/horn-service-kuksa/src/connections.rs",
+    "start_line": 23,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 18,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "send_to_terminal",
+    "file": "components/horn-service-kuksa/src/connections.rs",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "print_is_active",
+    "file": "components/horn-service-kuksa/src/connections.rs",
+    "start_line": 52,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "components/horn-service-kuksa/src/main.rs",
+    "start_line": 33,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 45,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "receive_requests",
+    "file": "components/horn-service-kuksa/src/request_processor.rs",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "request_apply",
+    "file": "components/horn-service-kuksa/src/request_processor.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "horn_request_apply",
+    "file": "components/horn-service-kuksa/src/request_processor.rs",
+    "start_line": 56,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 5,
+    "loc": 19,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "horn_continous_apply",
+    "file": "components/horn-service-kuksa/src/request_processor.rs",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "horn_sequence_apply",
+    "file": "components/horn-service-kuksa/src/request_processor.rs",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "components/horn-service-kuksa/src/request_handler.rs",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "handle_request",
+    "file": "components/horn-service-kuksa/src/request_handler.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "components/horn-service-kuksa/src/request_handler.rs",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "handle_request",
+    "file": "components/horn-service-kuksa/src/request_handler.rs",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "valid_uri",
+    "file": "components/horn-service-kuksa/src/config.rs",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_zenoh_config",
+    "file": "components/horn-service-kuksa/src/config.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  }
+]

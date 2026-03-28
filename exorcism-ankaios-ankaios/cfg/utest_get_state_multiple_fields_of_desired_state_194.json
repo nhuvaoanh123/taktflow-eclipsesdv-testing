@@ -1,0 +1,21 @@
+{
+  "function": "utest_get_state_multiple_fields_of_desired_state",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_get_state_multiple_fields_of_desired_state",
+      "line": 194
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_get_state_multiple_fields_of_desired_state",
+      "line": 240
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

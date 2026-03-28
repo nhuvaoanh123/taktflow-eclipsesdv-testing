@@ -1,0 +1,21 @@
+{
+  "function": "Dirent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Dirent",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:Dirent",
+      "line": 59
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

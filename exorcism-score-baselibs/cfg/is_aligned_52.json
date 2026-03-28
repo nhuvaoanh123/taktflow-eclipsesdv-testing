@@ -1,0 +1,30 @@
+{
+  "function": "is_aligned",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_aligned",
+      "line": 52
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 52
+    },
+    {
+      "id": 2,
+      "label": "exit:is_aligned",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

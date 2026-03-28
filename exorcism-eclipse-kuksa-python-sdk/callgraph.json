@@ -1,0 +1,3439 @@
+[
+  {
+    "function": "main",
+    "file": "kuksa-client/protobuild.py",
+    "line": 19,
+    "calls": [
+      "command.build_package_protos",
+      "print"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "kuksa-client/setup.py",
+    "line": 25,
+    "calls": [
+      "super",
+      "self.run_command"
+    ]
+  },
+  {
+    "function": "initialize_options",
+    "file": "kuksa-client/setup.py",
+    "line": 34,
+    "calls": []
+  },
+  {
+    "function": "finalize_options",
+    "file": "kuksa-client/setup.py",
+    "line": 37,
+    "calls": []
+  },
+  {
+    "function": "run",
+    "file": "kuksa-client/setup.py",
+    "line": 40,
+    "calls": [
+      "Path",
+      "print",
+      "subprocess.call",
+      "any",
+      "os.getcwd"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "kuksa-client/setup.py",
+    "line": 71,
+    "calls": [
+      "super",
+      "self.run_command"
+    ]
+  },
+  {
+    "function": "initialize_options",
+    "file": "kuksa-client/setup.py",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "finalize_options",
+    "file": "kuksa-client/setup.py",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "run",
+    "file": "kuksa-client/setup.py",
+    "line": 85,
+    "calls": [
+      "Path",
+      "list",
+      "len",
+      "command.build_package_protos",
+      "subprocess.check_call",
+      "any",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "finalize_options",
+    "file": "kuksa-client/setup.py",
+    "line": 129,
+    "calls": [
+      "self.ensure_proto_packages",
+      "super"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "kuksa-client/setup.py",
+    "line": 136,
+    "calls": [
+      "build_py.build_py.run"
+    ]
+  },
+  {
+    "function": "ensure_proto_packages",
+    "file": "kuksa-client/setup.py",
+    "line": 140,
+    "calls": [
+      "root.replace",
+      "list",
+      "proto_packages.append",
+      "hasattr",
+      "os.walk",
+      "any",
+      "package.startswith",
+      "print"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "kuksa-client/setup.py",
+    "line": 177,
+    "calls": [
+      "print",
+      "super",
+      "self.run_command"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "kuksa-client/prototagandcopy.py",
+    "line": 21,
+    "calls": [
+      "shutil.copytree",
+      "open",
+      "os.walk",
+      "file.write",
+      "os.path.join",
+      "os.getcwd"
+    ]
+  },
+  {
+    "function": "resources_path_fixture",
+    "file": "kuksa-client/tests/conftest.py",
+    "line": 32,
+    "calls": [
+      "pathlib.Path"
+    ]
+  },
+  {
+    "function": "val_servicer_v1_fixture",
+    "file": "kuksa-client/tests/conftest.py",
+    "line": 37,
+    "calls": [
+      "val_v1.VALServicer",
+      "mocker.patch.object"
+    ]
+  },
+  {
+    "function": "val_servicer_v2_fixture",
+    "file": "kuksa-client/tests/conftest.py",
+    "line": 48,
+    "calls": [
+      "mocker.patch.object",
+      "val_v2.VALServicer"
+    ]
+  },
+  {
+    "function": "val_server_fixture",
+    "file": "kuksa-client/tests/conftest.py",
+    "line": 59,
+    "calls": [
+      "server.start",
+      "server.stop",
+      "val_v2.add_VALServicer_to_server",
+      "grpc.aio.server",
+      "server.add_insecure_port",
+      "val_v1.add_VALServicer_to_server"
+    ]
+  },
+  {
+    "function": "secure_val_server_fixture",
+    "file": "kuksa-client/tests/conftest.py",
+    "line": 72,
+    "calls": [
+      "server.start",
+      "grpc.ssl_server_credentials",
+      "server.stop",
+      "val_v2.add_VALServicer_to_server",
+      "grpc.aio.server",
+      "val_v1.add_VALServicer_to_server",
+      "server.add_secure_port"
+    ]
+  },
+  {
+    "function": "test_response_no_error",
+    "file": "kuksa-client/tests/test_basevssclient.py",
+    "line": 22,
+    "calls": [
+      "types_pb2.Error",
+      "types_pb2.DataEntryError",
+      "BaseVSSClient",
+      "val_pb2.GetResponse",
+      "base_vss_client._raise_if_invalid"
+    ]
+  },
+  {
+    "function": "test_response_error_404",
+    "file": "kuksa-client/tests/test_basevssclient.py",
+    "line": 39,
+    "calls": [
+      "pytest.raises",
+      "types_pb2.Error",
+      "types_pb2.DataEntryError",
+      "BaseVSSClient",
+      "val_pb2.GetResponse",
+      "base_vss_client._raise_if_invalid"
+    ]
+  },
+  {
+    "function": "test_response_no_code",
+    "file": "kuksa-client/tests/test_basevssclient.py",
+    "line": 56,
+    "calls": [
+      "pytest.raises",
+      "types_pb2.Error",
+      "types_pb2.DataEntryError",
+      "BaseVSSClient",
+      "val_pb2.GetResponse",
+      "base_vss_client._raise_if_invalid"
+    ]
+  },
+  {
+    "function": "test_response_error_in_errors",
+    "file": "kuksa-client/tests/test_basevssclient.py",
+    "line": 73,
+    "calls": [
+      "pytest.raises",
+      "types_pb2.Error",
+      "types_pb2.DataEntryError",
+      "BaseVSSClient",
+      "val_pb2.GetResponse",
+      "base_vss_client._raise_if_invalid"
+    ]
+  },
+  {
+    "function": "test_response_no_code_in_error_in_errors",
+    "file": "kuksa-client/tests/test_basevssclient.py",
+    "line": 94,
+    "calls": [
+      "pytest.raises",
+      "types_pb2.Error",
+      "types_pb2.DataEntryError",
+      "BaseVSSClient",
+      "val_pb2.GetResponse",
+      "base_vss_client._raise_if_invalid"
+    ]
+  },
+  {
+    "function": "test_response_no_error_in_errors",
+    "file": "kuksa-client/tests/test_basevssclient.py",
+    "line": 114,
+    "calls": [
+      "pytest.raises",
+      "types_pb2.Error",
+      "types_pb2.DataEntryError",
+      "BaseVSSClient",
+      "val_pb2.GetResponse",
+      "base_vss_client._raise_if_invalid"
+    ]
+  },
+  {
+    "function": "test_array_parse_no_quote",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 29,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_parse_no_inside_quote",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 40,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_parse_no_inside_quote_single",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 49,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_parse_double_quote",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 58,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_parse_single_quote",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 66,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_parse_comma",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 74,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_square",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 82,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_empty_string_quoted",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 91,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_array_empty_string_not_quoted",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 99,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_double_comma",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 107,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_quotes_in_string_values",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 116,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_quotes_in_string_values_2",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 127,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_int_no_quote",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 137,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_int_quote",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 145,
+    "calls": [
+      "Datapoint.cast_array_values",
+      "list",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_float_no_quote",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 152,
+    "calls": [
+      "list",
+      "Datapoint.cast_array_values",
+      "len"
+    ]
+  },
+  {
+    "function": "test_cast_str",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 160,
+    "calls": [
+      "Datapoint.cast_str"
+    ]
+  },
+  {
+    "function": "test_cast_bool",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 170,
+    "calls": [
+      "Datapoint.cast_bool"
+    ]
+  },
+  {
+    "function": "test_from_message_none",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 186,
+    "calls": [
+      "types_pb2.Datapoint",
+      "Datapoint.from_message"
+    ]
+  },
+  {
+    "function": "test_from_message_uint32",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 195,
+    "calls": [
+      "types_pb2.Datapoint",
+      "Datapoint.from_message"
+    ]
+  },
+  {
+    "function": "test_from_message_time",
+    "file": "kuksa-client/tests/test_datapoint.py",
+    "line": 201,
+    "calls": [
+      "types_pb2.Datapoint",
+      "timestamp_pb2.Timestamp",
+      "Datapoint.from_message"
+    ]
+  },
+  {
+    "function": "generate_error",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 60,
+    "calls": [
+      "context.set_code",
+      "context.set_details"
+    ]
+  },
+  {
+    "function": "set_error_context",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 61,
+    "calls": [
+      "context.set_code",
+      "context.set_details"
+    ]
+  },
+  {
+    "function": "test_from_grpc_error",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 68,
+    "calls": [
+      "grpc.aio.AioRpcError",
+      "VSSClientError",
+      "grpc.aio.Metadata",
+      "VSSClientError.from_grpc_error"
+    ]
+  },
+  {
+    "function": "test_to_dict",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 82,
+    "calls": [
+      "types_v1.Error",
+      "VSSClientError",
+      "types_v1.DataEntryError",
+      "json_format.MessageToDict"
+    ]
+  },
+  {
+    "function": "test_to_message_empty",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 101,
+    "calls": [
+      "types_v1.Metadata",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_to_message_value_restriction_without_value_type",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 104,
+    "calls": [
+      "types_v1.Metadata",
+      "ValueRestriction",
+      "Metadata",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_to_from_message_signed_value_restriction",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 133,
+    "calls": [
+      "Metadata.from_message",
+      "types_v1.ValueRestriction",
+      "types_v1.ValueRestrictionInt",
+      "types_v1.Metadata",
+      "ValueRestriction",
+      "input_metadata.to_message",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_to_from_message_unsigned_value_restriction",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 179,
+    "calls": [
+      "types_v1.ValueRestrictionUint",
+      "Metadata.from_message",
+      "types_v1.ValueRestriction",
+      "types_v1.Metadata",
+      "ValueRestriction",
+      "input_metadata.to_message",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_to_from_message_float_value_restriction",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 223,
+    "calls": [
+      "types_v1.ValueRestrictionFloat",
+      "Metadata.from_message",
+      "types_v1.ValueRestriction",
+      "types_v1.Metadata",
+      "ValueRestriction",
+      "input_metadata.to_message",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_to_from_message_string_value_restriction",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 253,
+    "calls": [
+      "types_v1.ValueRestrictionString",
+      "Metadata.from_message",
+      "types_v1.ValueRestriction",
+      "types_v1.Metadata",
+      "ValueRestriction",
+      "input_metadata.to_message",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_metadata_from_message_value_restriction_no_type",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 281,
+    "calls": [
+      "types_v1.Metadata",
+      "Metadata.from_message",
+      "Metadata",
+      "types_v1.ValueRestriction"
+    ]
+  },
+  {
+    "function": "test_from_dict",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 317,
+    "calls": [
+      "Metadata.from_dict",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_to_dict",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 357,
+    "calls": [
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_to_message",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 415,
+    "calls": [
+      "Datapoint"
+    ]
+  },
+  {
+    "function": "test_v1_to_message_unsupported_value_type",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 420,
+    "calls": [
+      "exc_info.value.args[0].startswith",
+      "Datapoint",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_v2_to_message_unsupported_value_type",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 431,
+    "calls": [
+      "exc_info.value.args[0].startswith",
+      "Datapoint",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_to_dict",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 447,
+    "calls": [
+      "Datapoint"
+    ]
+  },
+  {
+    "function": "test_to_dict",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 459,
+    "calls": [
+      "entry_dict.update",
+      "DataEntry"
+    ]
+  },
+  {
+    "function": "test_to_dict",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 473,
+    "calls": [
+      "EntryUpdate"
+    ]
+  },
+  {
+    "function": "test_secure_connection",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 481,
+    "calls": [
+      "VSSClient",
+      "val_v1.GetServerInfoResponse"
+    ]
+  },
+  {
+    "function": "test_get_current_values",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 493,
+    "calls": [
+      "EntryRequest",
+      "client.get_current_values",
+      "list",
+      "VSSClient",
+      "DataEntry",
+      "Datapoint",
+      "mocker.patch.object",
+      "datetime.datetime"
+    ]
+  },
+  {
+    "function": "test_get_target_values",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 523,
+    "calls": [
+      "EntryRequest",
+      "list",
+      "VSSClient",
+      "DataEntry",
+      "Datapoint",
+      "mocker.patch.object",
+      "datetime.datetime",
+      "client.get_target_values"
+    ]
+  },
+  {
+    "function": "test_get_metadata",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 547,
+    "calls": [
+      "EntryRequest",
+      "list",
+      "VSSClient",
+      "DataEntry",
+      "client.get_metadata",
+      "mocker.patch.object",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_set_current_values",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 576,
+    "calls": [
+      "EntryUpdate",
+      "list",
+      "VSSClient",
+      "DataEntry",
+      "Datapoint",
+      "mocker.patch.object",
+      "client.set_current_values",
+      "datetime.datetime"
+    ]
+  },
+  {
+    "function": "test_set_target_values",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 598,
+    "calls": [
+      "EntryUpdate",
+      "list",
+      "VSSClient",
+      "client.set_target_values",
+      "DataEntry",
+      "Datapoint",
+      "mocker.patch.object",
+      "datetime.datetime"
+    ]
+  },
+  {
+    "function": "test_set_metadata",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 615,
+    "calls": [
+      "client.set_metadata",
+      "list",
+      "EntryUpdate",
+      "VSSClient",
+      "DataEntry",
+      "mocker.patch.object",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_subscribe_current_values",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 636,
+    "calls": [
+      "client.subscribe_current_values",
+      "mocker.patch.object",
+      "list",
+      "VSSClient",
+      "DataEntry",
+      "Datapoint",
+      "received_updates.update",
+      "EntryUpdate",
+      "datetime.datetime"
+    ]
+  },
+  {
+    "function": "subscribe_response_stream",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 640,
+    "calls": [
+      "EntryUpdate",
+      "Datapoint",
+      "DataEntry",
+      "datetime.datetime"
+    ]
+  },
+  {
+    "function": "test_subscribe_target_values",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 673,
+    "calls": [
+      "mocker.patch.object",
+      "list",
+      "VSSClient",
+      "DataEntry",
+      "Datapoint",
+      "received_updates.update",
+      "EntryUpdate",
+      "datetime.datetime",
+      "client.subscribe_target_values"
+    ]
+  },
+  {
+    "function": "subscribe_response_stream",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 677,
+    "calls": [
+      "EntryUpdate",
+      "Datapoint",
+      "DataEntry",
+      "datetime.datetime"
+    ]
+  },
+  {
+    "function": "test_subscribe_metadata",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 704,
+    "calls": [
+      "mocker.patch.object",
+      "list",
+      "VSSClient",
+      "DataEntry",
+      "client.subscribe_metadata",
+      "SubscribeEntry",
+      "received_updates.update",
+      "EntryUpdate",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "subscribe_response_stream",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 708,
+    "calls": [
+      "EntryUpdate",
+      "DataEntry",
+      "Metadata"
+    ]
+  },
+  {
+    "function": "test_get_some_entries",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 744,
+    "calls": [
+      "EntryRequest",
+      "client.get",
+      "val_v1.GetResponse",
+      "timestamp_pb2.Timestamp",
+      "types_v1.ValueRestrictionFloat",
+      "VSSClient",
+      "DataEntry",
+      "types_v1.ValueRestriction",
+      "types_v1.ValueRestrictionInt",
+      "ValueRestriction",
+      "types_v1.Datapoint",
+      "Datapoint",
+      "val_v1.EntryRequest",
+      "types_v1.Metadata",
+      "val_v1.GetRequest",
+      "datetime.datetime",
+      "Metadata",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_get_no_entries_requested",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 947,
+    "calls": [
+      "kuksa_client.grpc.VSSClientError",
+      "client.get",
+      "pytest.raises",
+      "generate_error",
+      "VSSClient",
+      "val_v1.GetRequest"
+    ]
+  },
+  {
+    "function": "test_get_unset_entries",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 963,
+    "calls": [
+      "EntryRequest",
+      "client.get",
+      "val_v1.GetResponse",
+      "VSSClient",
+      "DataEntry",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_get_nonexistent_entries",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 981,
+    "calls": [
+      "types_v1.Error",
+      "EntryRequest",
+      "types_v1.DataEntryError",
+      "client.get",
+      "pytest.raises",
+      "VSSClient",
+      "val_v1.GetResponse"
+    ]
+  },
+  {
+    "function": "test_set_some_updates_v1",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 997,
+    "calls": [
+      "val_v1.SetResponse",
+      "EntryUpdate",
+      "types_v1.ValueRestrictionUint",
+      "val_v1.GetResponse",
+      "VSSClient",
+      "val_v1.EntryUpdate",
+      "val_v1.SetRequest",
+      "DataEntry",
+      "types_v1.ValueRestriction",
+      "Metadata",
+      "Datapoint",
+      "types_v1.Datapoint",
+      "val_v1.EntryRequest",
+      "types_v1.Metadata",
+      "val_v1.GetRequest",
+      "ValueRestriction",
+      "client.set",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_set_some_updates_v2",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1233,
+    "calls": [
+      "val_v2.PublishValueRequest",
+      "client.set",
+      "len",
+      "types_v2.Value",
+      "val_v1.GetResponse",
+      "VSSClient",
+      "DataEntry",
+      "types_v2.SignalID",
+      "types_v2.Datapoint",
+      "val_v2.PublishValueResponse",
+      "zip",
+      "Datapoint",
+      "val_v1.EntryRequest",
+      "EntryUpdate",
+      "val_v1.GetRequest",
+      "types_v1.Metadata",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_set_some_updates_v2_target",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1312,
+    "calls": [
+      "client.set",
+      "pytest.raises",
+      "val_v1.GetResponse",
+      "VSSClient",
+      "DataEntry",
+      "Datapoint",
+      "EntryUpdate",
+      "types_v1.Metadata",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_set_no_updates_provided",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1357,
+    "calls": [
+      "kuksa_client.grpc.VSSClientError",
+      "pytest.raises",
+      "generate_error",
+      "VSSClient",
+      "val_v1.SetRequest",
+      "client.set"
+    ]
+  },
+  {
+    "function": "test_set_nonexistent_entries_v1",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1398,
+    "calls": [
+      "types_v1.Error",
+      "val_v1.SetResponse",
+      "types_v1.DataEntryError",
+      "pytest.raises",
+      "VSSClient",
+      "val_v1.GetResponse",
+      "DataEntry",
+      "Metadata",
+      "Datapoint",
+      "EntryUpdate",
+      "client.set"
+    ]
+  },
+  {
+    "function": "test_set_nonexistent_entries_v2",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1444,
+    "calls": [
+      "types_v1.Error",
+      "types_v1.DataEntryError",
+      "pytest.raises",
+      "generate_error",
+      "VSSClient",
+      "val_v1.GetResponse",
+      "DataEntry",
+      "Metadata",
+      "Datapoint",
+      "EntryUpdate",
+      "client.set"
+    ]
+  },
+  {
+    "function": "test_authorize_successful",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1495,
+    "calls": [
+      "VSSClient",
+      "val_v1.GetServerInfoResponse",
+      "client.authorize"
+    ]
+  },
+  {
+    "function": "test_authorize_unsuccessful",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1530,
+    "calls": [
+      "generate_error",
+      "VSSClient",
+      "client.authorize",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_subscribe_some_entries_v1",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1541,
+    "calls": [
+      "EntryRequest",
+      "client.subscribe",
+      "EntryUpdate",
+      "VSSClient",
+      "timestamp_pb2.Timestamp",
+      "val_v1.EntryUpdate",
+      "DataEntry",
+      "actual_responses.append",
+      "types_v1.Datapoint",
+      "Datapoint",
+      "types_v1.Metadata",
+      "val_v1.SubscribeResponse",
+      "datetime.datetime",
+      "Metadata",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_subscribe_some_entries_v2",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1733,
+    "calls": [
+      "EntryUpdate",
+      "types_v2.Value",
+      "VSSClient",
+      "timestamp_pb2.Timestamp",
+      "DataEntry",
+      "types_v2.Datapoint",
+      "actual_responses.append",
+      "Datapoint",
+      "val_v2.SubscribeResponse",
+      "client.v2_subscribe",
+      "datetime.datetime"
+    ]
+  },
+  {
+    "function": "test_subscribe_some_entries_v2_target",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1837,
+    "calls": [
+      "VSSClient",
+      "client.v2_subscribe_actuation_requests",
+      "pytest.raises",
+      "actual_responses.append"
+    ]
+  },
+  {
+    "function": "test_subscribe_no_entries_requested",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1863,
+    "calls": [
+      "client.subscribe",
+      "pytest.raises",
+      "generate_error",
+      "VSSClient",
+      "client.v2_subscribe"
+    ]
+  },
+  {
+    "function": "test_subscribe_nonexistent_entries",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1887,
+    "calls": [
+      "EntryRequest",
+      "client.subscribe",
+      "pytest.raises",
+      "generate_error",
+      "VSSClient",
+      "client.v2_subscribe"
+    ]
+  },
+  {
+    "function": "test_get_server_info",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1913,
+    "calls": [
+      "VSSClient",
+      "ServerInfo",
+      "val_v1.GetServerInfoResponse",
+      "client.get_server_info"
+    ]
+  },
+  {
+    "function": "test_get_server_info_unavailable",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1923,
+    "calls": [
+      "generate_error",
+      "VSSClient",
+      "client.get_server_info",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_add_subscriber_v1",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 1936,
+    "calls": [
+      "EntryRequest",
+      "SubscriberManager",
+      "client.subscribe",
+      "list",
+      "isinstance",
+      "VSSClient",
+      "timestamp_pb2.Timestamp",
+      "val_v1.EntryUpdate",
+      "DataEntry",
+      "types_v1.Datapoint",
+      "subscriber_manager.add_subscriber",
+      "Datapoint",
+      "mocker.Mock",
+      "EntryUpdate",
+      "val_v1.SubscribeResponse",
+      "datetime.datetime",
+      "asyncio.sleep",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_remove_subscriber_v1",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 2021,
+    "calls": [
+      "EntryRequest",
+      "SubscriberManager",
+      "client.subscribe",
+      "pytest.raises",
+      "VSSClient",
+      "timestamp_pb2.Timestamp",
+      "val_v1.EntryUpdate",
+      "subscriber_manager.remove_subscriber",
+      "subscriber.done",
+      "subscriber_manager.subscribers.get",
+      "types_v1.Datapoint",
+      "subscriber_manager.add_subscriber",
+      "mocker.Mock",
+      "val_v1.SubscribeResponse",
+      "str",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "test_add_subscriber_v2",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 2069,
+    "calls": [
+      "SubscriberManager",
+      "EntryUpdate",
+      "list",
+      "isinstance",
+      "types_v2.Value",
+      "mocker.Mock",
+      "VSSClient",
+      "timestamp_pb2.Timestamp",
+      "DataEntry",
+      "types_v2.Datapoint",
+      "Datapoint",
+      "val_v2.SubscribeResponse",
+      "client.v2_subscribe",
+      "datetime.datetime",
+      "asyncio.sleep",
+      "subscriber_manager.add_subscriber"
+    ]
+  },
+  {
+    "function": "test_remove_subscriber_v2",
+    "file": "kuksa-client/tests/test_grpc.py",
+    "line": 2136,
+    "calls": [
+      "SubscriberManager",
+      "types_v2.Value",
+      "mocker.Mock",
+      "pytest.raises",
+      "VSSClient",
+      "timestamp_pb2.Timestamp",
+      "subscriber.done",
+      "subscriber_manager.subscribers.get",
+      "types_v2.Datapoint",
+      "val_v2.SubscribeResponse",
+      "client.v2_subscribe",
+      "subscriber_manager.remove_subscriber",
+      "str",
+      "subscriber_manager.add_subscriber"
+    ]
+  },
+  {
+    "function": "assignment_statement",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 57,
+    "calls": [
+      "arg.split"
+    ]
+  },
+  {
+    "function": "display_completions",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 62,
+    "calls": [
+      "matches.append",
+      "path.find",
+      "os.path.commonprefix"
+    ]
+  },
+  {
+    "function": "metadata_tree_to_dict",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 77,
+    "calls": [
+      "tree.items",
+      "add_children",
+      "value[\"children\"].items"
+    ]
+  },
+  {
+    "function": "add_children",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 78,
+    "calls": [
+      "add_children",
+      "value[\"children\"].items"
+    ]
+  },
+  {
+    "function": "refresh_metadata",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 96,
+    "calls": [
+      "Exception",
+      "json.loads",
+      "self.getMetaData",
+      "self.server.startswith",
+      "metadata_tree_to_dict"
+    ]
+  },
+  {
+    "function": "path_completer",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 109,
+    "calls": [
+      "len",
+      "text.replace",
+      "self.connection_established",
+      "path.replace",
+      "self.pathCompletionItems.append",
+      "display_completions",
+      "self.refresh_metadata",
+      "path.lower",
+      "text.lower",
+      "self.metadata.keys"
+    ]
+  },
+  {
+    "function": "subscribeCallback",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 137,
+    "calls": [
+      "self.async_alert",
+      "json.loads",
+      "json.dumps",
+      "logPath.open",
+      "logFile.write",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "lexers.JsonLexer"
+    ]
+  },
+  {
+    "function": "subscriptionIdCompleter",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 151,
+    "calls": [
+      "self.pathCompletionItems.append",
+      "CompletionItem",
+      "basic_complete"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 315,
+    "calls": [
+      "self.connect",
+      "super",
+      "logo.replace",
+      "pathlib.Path",
+      "f.read",
+      "shortcuts.update",
+      "set",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "do_authorize",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 352,
+    "calls": [
+      "print",
+      "self.connection_established",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "lexers.JsonLexer",
+      "self.commThread.authorize"
+    ]
+  },
+  {
+    "function": "do_setValue",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 362,
+    "calls": [
+      "\" \".join",
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.commThread.setValue",
+      "highlight",
+      "formatters.TerminalFormatter",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "do_setValues",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 386,
+    "calls": [
+      "getattr",
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.commThread.setValues",
+      "formatters.TerminalFormatter",
+      "dict",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_setTargetValue",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 397,
+    "calls": [
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.commThread.setValue",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_setTargetValues",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 406,
+    "calls": [
+      "getattr",
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.commThread.setValues",
+      "formatters.TerminalFormatter",
+      "dict",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_getValue",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 417,
+    "calls": [
+      "print",
+      "self.connection_established",
+      "formatters.TerminalFormatter",
+      "self.commThread.getValue",
+      "highlight",
+      "lexers.JsonLexer"
+    ]
+  },
+  {
+    "function": "do_getValues",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 426,
+    "calls": [
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.commThread.getValues",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_getTargetValue",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 435,
+    "calls": [
+      "print",
+      "self.connection_established",
+      "formatters.TerminalFormatter",
+      "self.commThread.getValue",
+      "highlight",
+      "lexers.JsonLexer"
+    ]
+  },
+  {
+    "function": "do_getTargetValues",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 444,
+    "calls": [
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.commThread.getValues",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_subscribe",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 453,
+    "calls": [
+      "args.Path.replace",
+      "json.loads",
+      "self.connection_established",
+      "self.subscribeIds.add",
+      "time.time",
+      "pathlib.Path.cwd",
+      "lexers.JsonLexer",
+      "logPath.touch",
+      "highlight",
+      "functools.partial",
+      "self.commThread.subscribe",
+      "formatters.TerminalFormatter",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "do_subscribeMultiple",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 477,
+    "calls": [
+      "json.loads",
+      "self.connection_established",
+      "self.subscribeIds.add",
+      "time.time",
+      "pathlib.Path.cwd",
+      "lexers.JsonLexer",
+      "logPath.touch",
+      "highlight",
+      "functools.partial",
+      "formatters.TerminalFormatter",
+      "self.commThread.subscribeMultiple",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "do_unsubscribe",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 502,
+    "calls": [
+      "self.commThread.unsubscribe",
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.subscribeIds.discard",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "stop",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 510,
+    "calls": [
+      "self.commThread.join",
+      "self.commThread.stop"
+    ]
+  },
+  {
+    "function": "getMetaData",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 515,
+    "calls": [
+      "self.commThread.getMetaData",
+      "self.connection_established"
+    ]
+  },
+  {
+    "function": "do_updateVSSTree",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 523,
+    "calls": [
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "self.commThread.updateVSSTree",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_updateMetaData",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 532,
+    "calls": [
+      "self.commThread.updateMetaData",
+      "self.connection_established",
+      "lexers.JsonLexer",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_getMetaData",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 540,
+    "calls": [
+      "lexers.JsonLexer",
+      "self.getMetaData",
+      "formatters.TerminalFormatter",
+      "highlight",
+      "print"
+    ]
+  },
+  {
+    "function": "do_disconnect",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 548,
+    "calls": [
+      "hasattr",
+      "self.commThread.stop"
+    ]
+  },
+  {
+    "function": "connection_established",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 555,
+    "calls": [
+      "self.connect",
+      "self.commThread.connection_established"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 565,
+    "calls": [
+      "hasattr",
+      "waitForConnection.acquire",
+      "waitForConnection.wait_for",
+      "self.commThread.stop",
+      "self.commThread.connection_established",
+      "waitForConnection.release",
+      "threading.Condition",
+      "KuksaClientThread",
+      "self.commThread.start",
+      "urlparse",
+      "print"
+    ]
+  },
+  {
+    "function": "do_connect",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 634,
+    "calls": [
+      "self.connect"
+    ]
+  },
+  {
+    "function": "do_info",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 640,
+    "calls": [
+      "print"
+    ]
+  },
+  {
+    "function": "do_version",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 648,
+    "calls": [
+      "print"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "kuksa-client/kuksa_client/__main__.py",
+    "line": 658,
+    "calls": [
+      "argparse.ArgumentParser",
+      "kuksa_logger.init_logging",
+      "clientApp.cmdloop",
+      "parser.add_argument",
+      "clientApp.stop",
+      "KuksaLogger",
+      "parser.parse_args",
+      "TestClient"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 34,
+    "calls": [
+      "super",
+      "cli_backend.Backend.from_config"
+    ]
+  },
+  {
+    "function": "checkConnection",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 41,
+    "calls": [
+      "self.connection_established"
+    ]
+  },
+  {
+    "function": "connection_established",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 50,
+    "calls": [
+      "self.backend.connection_established"
+    ]
+  },
+  {
+    "function": "stop",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 58,
+    "calls": [
+      "self.backend.stop"
+    ]
+  },
+  {
+    "function": "authorize",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 62,
+    "calls": [
+      "self.backend.authorize"
+    ]
+  },
+  {
+    "function": "updateVSSTree",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 66,
+    "calls": [
+      "self.backend.updateVSSTree"
+    ]
+  },
+  {
+    "function": "updateMetaData",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 70,
+    "calls": [
+      "self.backend.updateMetaData"
+    ]
+  },
+  {
+    "function": "getMetaData",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 74,
+    "calls": [
+      "self.backend.getMetaData"
+    ]
+  },
+  {
+    "function": "setValue",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 78,
+    "calls": [
+      "self.backend.setValue"
+    ]
+  },
+  {
+    "function": "setValues",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 82,
+    "calls": [
+      "self.backend.setValues"
+    ]
+  },
+  {
+    "function": "getValue",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 86,
+    "calls": [
+      "self.backend.getValue"
+    ]
+  },
+  {
+    "function": "getValues",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 90,
+    "calls": [
+      "self.backend.getValues"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 97,
+    "calls": [
+      "self.backend.subscribe"
+    ]
+  },
+  {
+    "function": "subscribeMultiple",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 100,
+    "calls": [
+      "self.backend.subscribeMultiple"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 105,
+    "calls": [
+      "self.backend.unsubscribe"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 108,
+    "calls": [
+      "self.backend.disconnect"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 111,
+    "calls": [
+      "self.backend.connect"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "kuksa-client/kuksa_client/__init__.py",
+    "line": 115,
+    "calls": [
+      "self.backend.mainLoop",
+      "asyncio.new_event_loop",
+      "asyncio.set_event_loop",
+      "self.loop.run_until_complete"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 39,
+    "calls": [
+      "super",
+      "queue.Queue"
+    ]
+  },
+  {
+    "function": "_receiver_handler",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 49,
+    "calls": [
+      "json.loads",
+      "self.subscriptionCallbacks[resJson[\"subscriptionId\"]]",
+      "webSocket.recv",
+      "self.recvMsgQueues[resJson[\"requestId\"]].put",
+      "logger.warning"
+    ]
+  },
+  {
+    "function": "_sender_handler",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 66,
+    "calls": [
+      "asyncio.sleep",
+      "self.sendMsgQueue.get_nowait",
+      "webSocket.send",
+      "logger.warning"
+    ]
+  },
+  {
+    "function": "_msgHandler",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 77,
+    "calls": [
+      "self._sender_handler",
+      "webSocket.close",
+      "send.cancel",
+      "recv.cancel",
+      "self._receiver_handler",
+      "asyncio.wait",
+      "asyncio.Task"
+    ]
+  },
+  {
+    "function": "_sendReceiveMsg",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 90,
+    "calls": [
+      "time.sleep",
+      "json.loads",
+      "queue.Queue",
+      "uuid.uuid4",
+      "json.dumps",
+      "recvQueue.get",
+      "str",
+      "self.sendMsgQueue.put_nowait"
+    ]
+  },
+  {
+    "function": "stop",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 116,
+    "calls": [
+      "logger.info"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 121,
+    "calls": [
+      "self.stop"
+    ]
+  },
+  {
+    "function": "authorize",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 125,
+    "calls": [
+      "token_or_tokenfile.expanduser",
+      "self._sendReceiveMsg",
+      "os.path.isfile",
+      "pathlib.Path"
+    ]
+  },
+  {
+    "function": "updateVSSTree",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 144,
+    "calls": [
+      "Exception",
+      "json.loads",
+      "open",
+      "os.path.isfile",
+      "json.load",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "updateMetaData",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 158,
+    "calls": [
+      "Exception",
+      "json.loads",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "getMetaData",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 169,
+    "calls": [
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "setValue",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 185,
+    "calls": [
+      "Exception",
+      "json.loads",
+      "isinstance",
+      "value.append",
+      "json.dumps",
+      "str",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "getValue",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 219,
+    "calls": [
+      "Exception",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 240,
+    "calls": [
+      "Exception",
+      "json.loads",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "subscribeMultiple",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 262,
+    "calls": [
+      "Exception"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 269,
+    "calls": [
+      "json.dumps",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "connection_established",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 290,
+    "calls": []
+  },
+  {
+    "function": "connect",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 296,
+    "calls": [
+      "context.load_verify_locations",
+      "ssl.create_default_context",
+      "self._msgHandler",
+      "websockets.connect",
+      "logger.info",
+      "logger.warning",
+      "str"
+    ]
+  },
+  {
+    "function": "mainLoop",
+    "file": "kuksa-client/kuksa_client/cli_backend/ws.py",
+    "line": 338,
+    "calls": [
+      "self.connect"
+    ]
+  },
+  {
+    "function": "callback_wrapper",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 43,
+    "calls": [
+      "json.dumps",
+      "update.to_dict",
+      "logger.error",
+      "callback"
+    ]
+  },
+  {
+    "function": "wrapper",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 44,
+    "calls": [
+      "json.dumps",
+      "update.to_dict",
+      "logger.error",
+      "callback"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 53,
+    "calls": [
+      "string_values.append",
+      "super",
+      "isinstance",
+      "str"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 65,
+    "calls": [
+      "super",
+      "self.token_or_tokenfile.expanduser",
+      "os.path.isfile",
+      "queue.Queue",
+      "pathlib.Path",
+      "str"
+    ]
+  },
+  {
+    "function": "connection_established",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 98,
+    "calls": []
+  },
+  {
+    "function": "stop",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 105,
+    "calls": [
+      "self.disconnect",
+      "logger.info"
+    ]
+  },
+  {
+    "function": "getMetaData",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 111,
+    "calls": [
+      "self.getValue"
+    ]
+  },
+  {
+    "function": "updateMetaData",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 114,
+    "calls": [
+      "self.setValue"
+    ]
+  },
+  {
+    "function": "getValue",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 118,
+    "calls": [
+      "self.getValues"
+    ]
+  },
+  {
+    "function": "getValues",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 121,
+    "calls": [
+      "json.dumps",
+      "self._sendReceiveMsg",
+      "kuksa_client.grpc.EntryRequest"
+    ]
+  },
+  {
+    "function": "setValue",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 134,
+    "calls": [
+      "self.setValues"
+    ]
+  },
+  {
+    "function": "setValues",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 137,
+    "calls": [
+      "json.loads",
+      "entry_updates.append",
+      "kuksa_client.grpc.EntryUpdate",
+      "json.dumps",
+      "kuksa_client.grpc.Datapoint",
+      "kuksa_client.grpc.DataEntry",
+      "updates.items",
+      "kuksa_client.grpc.Metadata.from_dict",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "authorize",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 172,
+    "calls": [
+      "self._sendReceiveMsg",
+      "os.path.isfile",
+      "token_or_tokenfile_path.expanduser",
+      "pathlib.Path"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 188,
+    "calls": [
+      "self.subscribeMultiple"
+    ]
+  },
+  {
+    "function": "subscribeMultiple",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 191,
+    "calls": [
+      "callback_wrapper",
+      "json.dumps",
+      "kuksa_client.grpc.SubscribeEntry",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 209,
+    "calls": [
+      "json.dumps",
+      "str",
+      "uuid.UUID",
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 217,
+    "calls": [
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 221,
+    "calls": [
+      "self._sendReceiveMsg"
+    ]
+  },
+  {
+    "function": "_sendReceiveMsg",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 225,
+    "calls": [
+      "json.dumps",
+      "queue.Queue",
+      "self.sendMsgQueue.put",
+      "recvQueue.get"
+    ]
+  },
+  {
+    "function": "_grpcHandler",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 242,
+    "calls": [
+      "Exception",
+      "responseQueue.put",
+      "vss_client.get",
+      "len",
+      "self.sendMsgQueue.get_nowait",
+      "vss_client.subscribe",
+      "exc.to_dict",
+      "requestArgs.pop",
+      "vss_client.disconnect",
+      "str",
+      "kuksa_client.grpc.aio.SubscriberManager",
+      "vss_client.authorize",
+      "vss_client.set",
+      "subscriber_manager.remove_subscriber",
+      "vss_client.connect",
+      "asyncio.sleep",
+      "subscriber_manager.add_subscriber",
+      "entry.to_dict"
+    ]
+  },
+  {
+    "function": "updateVSSTree",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 287,
+    "calls": [
+      "logger.warning"
+    ]
+  },
+  {
+    "function": "mainLoop",
+    "file": "kuksa-client/kuksa_client/cli_backend/grpc.py",
+    "line": 291,
+    "calls": [
+      "kuksa_client.grpc.aio.VSSClient",
+      "logger.info",
+      "self._grpcHandler"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/cli_backend/__init__.py",
+    "line": 21,
+    "calls": [
+      "config.get",
+      "config.getboolean"
+    ]
+  },
+  {
+    "function": "from_config",
+    "file": "kuksa-client/kuksa_client/cli_backend/__init__.py",
+    "line": 36,
+    "calls": [
+      "backend_module.Backend",
+      "config.get",
+      "ValueError"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 57,
+    "calls": [
+      "super",
+      "dict",
+      "contextlib.AsyncExitStack"
+    ]
+  },
+  {
+    "function": "__aenter__",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 64,
+    "calls": [
+      "self.connect"
+    ]
+  },
+  {
+    "function": "__aexit__",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 68,
+    "calls": [
+      "self.disconnect"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 71,
+    "calls": [
+      "grpc.aio.insecure_channel",
+      "grpc.aio.secure_channel",
+      "logger.info",
+      "self._load_creds",
+      "self.path_to_id_mapping.clear",
+      "logger.debug",
+      "val_grpc_v2.VALStub",
+      "self.id_to_path_mapping.clear",
+      "self.get_server_info",
+      "self.exit_stack.enter_async_context",
+      "val_grpc_v1.VALStub"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 99,
+    "calls": [
+      "self.exit_stack.aclose"
+    ]
+  },
+  {
+    "function": "check_connected_async",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 106,
+    "calls": [
+      "func",
+      "Exception"
+    ]
+  },
+  {
+    "function": "wrapper",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 112,
+    "calls": [
+      "func",
+      "Exception"
+    ]
+  },
+  {
+    "function": "check_connected_async_iter",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 124,
+    "calls": [
+      "func",
+      "Exception"
+    ]
+  },
+  {
+    "function": "wrapper",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 129,
+    "calls": [
+      "func",
+      "Exception"
+    ]
+  },
+  {
+    "function": "get_current_values",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 143,
+    "calls": [
+      "EntryRequest",
+      "self.get"
+    ]
+  },
+  {
+    "function": "get_target_values",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 166,
+    "calls": [
+      "EntryRequest",
+      "self.get"
+    ]
+  },
+  {
+    "function": "get_metadata",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 193,
+    "calls": [
+      "EntryRequest",
+      "self.get",
+      "Field"
+    ]
+  },
+  {
+    "function": "set_current_values",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 220,
+    "calls": [
+      "updates.items",
+      "logger.info",
+      "DataEntry",
+      "self.set",
+      "EntryUpdate"
+    ]
+  },
+  {
+    "function": "set_target_values",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 244,
+    "calls": [
+      "EntryUpdate",
+      "self.set",
+      "updates.items",
+      "DataEntry"
+    ]
+  },
+  {
+    "function": "set_metadata",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 266,
+    "calls": [
+      "updates.items",
+      "DataEntry",
+      "self.set",
+      "Field",
+      "EntryUpdate"
+    ]
+  },
+  {
+    "function": "subscribe_current_values",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 293,
+    "calls": [
+      "self.v2_subscribe",
+      "self.subscribe",
+      "logger.debug",
+      "SubscribeEntry"
+    ]
+  },
+  {
+    "function": "subscribe_target_values",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 328,
+    "calls": [
+      "self.subscribe",
+      "logger.debug",
+      "SubscribeEntry",
+      "self.v2_subscribe_actuation_requests"
+    ]
+  },
+  {
+    "function": "subscribe_metadata",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 365,
+    "calls": [
+      "self.subscribe",
+      "SubscribeEntry",
+      "Field"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 393,
+    "calls": [
+      "self._prepare_get_request",
+      "self.client_stub_v1.Get",
+      "self.generate_metadata_header",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self._process_get_response"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 412,
+    "calls": [
+      "self._get_paths_with_required_type",
+      "VSSClientError",
+      "len",
+      "paths_with_required_type.update",
+      "self._prepare_set_request",
+      "exc.code",
+      "self.generate_metadata_header",
+      "self._prepare_publish_value_request",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self.set",
+      "logger.debug",
+      "self.client_stub_v2.PublishValue",
+      "self.client_stub_v1.Set",
+      "self._process_set_response",
+      "self.get_value_types",
+      "paths_with_required_type.items"
+    ]
+  },
+  {
+    "function": "get_path",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 464,
+    "calls": [
+      "signal_id.HasField"
+    ]
+  },
+  {
+    "function": "ensure_id_mapping",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 471,
+    "calls": [
+      "self.client_stub_v2.ListMetadata",
+      "type",
+      "len",
+      "VSSClientError",
+      "exc.code",
+      "VSSClientError.from_grpc_error",
+      "logger.debug",
+      "self._prepare_v2_list_metadata_request"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 500,
+    "calls": [
+      "VSSClientError",
+      "type",
+      "self._prepare_subscribe_request",
+      "self.generate_metadata_header",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "logger.debug",
+      "self.client_stub_v1.Subscribe",
+      "EntryUpdate.from_message"
+    ]
+  },
+  {
+    "function": "v2_subscribe",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 537,
+    "calls": [
+      "resp.entries.items",
+      "type",
+      "self.client_stub_v2.Subscribe",
+      "self.generate_metadata_header",
+      "EntryUpdate.from_tuple",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self._prepare_v2_subscribe_request",
+      "logger.debug"
+    ]
+  },
+  {
+    "function": "v2_subscribe_actuation_requests",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 563,
+    "calls": [
+      "type",
+      "self.get_path",
+      "iter",
+      "self.generate_metadata_header",
+      "self.ensure_id_mapping",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self._prepare_v2_provide_actuation_request",
+      "logger.debug",
+      "resp.HasField",
+      "self.client_stub_v2.OpenProviderStream",
+      "EntryUpdate.from_actuate_value"
+    ]
+  },
+  {
+    "function": "authorize",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 591,
+    "calls": [
+      "type",
+      "self.generate_metadata_header",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self.client_stub_v1.GetServerInfo",
+      "logger.debug",
+      "val_v1.GetServerInfoRequest",
+      "self.get_authorization_header"
+    ]
+  },
+  {
+    "function": "get_server_info",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 613,
+    "calls": [
+      "type",
+      "exc.code",
+      "ServerInfo.from_message",
+      "self.generate_metadata_header",
+      "logger.info",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self.client_stub_v1.GetServerInfo",
+      "logger.debug",
+      "val_v1.GetServerInfoRequest"
+    ]
+  },
+  {
+    "function": "get_value_types",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 636,
+    "calls": [
+      "EntryRequest",
+      "self.get",
+      "DataType"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 659,
+    "calls": []
+  },
+  {
+    "function": "add_subscriber",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 663,
+    "calls": [
+      "uuid.uuid4",
+      "asyncio.create_task",
+      "subscribe_response_stream.__aiter__",
+      "self._subscriber_loop"
+    ]
+  },
+  {
+    "function": "remove_subscriber",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 678,
+    "calls": [
+      "subscriber_task.cancel",
+      "self.subscribers.pop",
+      "ValueError",
+      "str"
+    ]
+  },
+  {
+    "function": "_subscriber_loop",
+    "file": "kuksa-client/kuksa_client/grpc/aio.py",
+    "line": 691,
+    "calls": [
+      "callback"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 128,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "from_grpc_error",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 134,
+    "calls": [
+      "error.details",
+      "error.code",
+      "cls"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 147,
+    "calls": []
+  },
+  {
+    "function": "from_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 170,
+    "calls": [
+      "getattr",
+      "list",
+      "cls",
+      "EntryType",
+      "DataType",
+      "message.value_restriction.WhichOneof",
+      "value_restriction.HasField",
+      "message.HasField",
+      "setattr",
+      "ValueRestriction"
+    ]
+  },
+  {
+    "function": "to_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 200,
+    "calls": [
+      "getattr",
+      "message.value_restriction.unsigned.allowed_values.extend",
+      "message.value_restriction.signed.allowed_values.extend",
+      "message.value_restriction.string.allowed_values.extend",
+      "float",
+      "ValueError",
+      "setattr",
+      "types_v1.Metadata",
+      "int",
+      "message.value_restriction.floating_point.allowed_values.extend",
+      "str"
+    ]
+  },
+  {
+    "function": "from_dict",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 297,
+    "calls": [
+      "getattr",
+      "isinstance",
+      "cls",
+      "EntryType",
+      "value_restriction.get",
+      "DataType",
+      "metadata_dict.get",
+      "setattr",
+      "ValueRestriction",
+      "str"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 322,
+    "calls": [
+      "getattr"
+    ]
+  },
+  {
+    "function": "from_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 346,
+    "calls": [
+      "getattr",
+      "cls",
+      "message.WhichOneof",
+      "logger.error",
+      "message.timestamp.ToDatetime",
+      "message.HasField",
+      "logger.warning"
+    ]
+  },
+  {
+    "function": "cast_array_values",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 377,
+    "calls": [
+      "cast",
+      "array.strip",
+      "re.findall",
+      "item.strip"
+    ]
+  },
+  {
+    "function": "cast_bool",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 405,
+    "calls": [
+      "bool"
+    ]
+  },
+  {
+    "function": "cast_str",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 410,
+    "calls": [
+      "value.strip",
+      "new_val.startswith",
+      "new_val.replace",
+      "new_val.endswith"
+    ]
+  },
+  {
+    "function": "v1_to_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 427,
+    "calls": [
+      "all",
+      "getattr",
+      "array.values.extend",
+      "{\r\n            DataType.INT8:",
+      "cast_field",
+      "types_v1.Datapoint",
+      "ValueError",
+      "Datapoint.cast_array_values",
+      "set_field",
+      "array.Clear",
+      "message.timestamp.FromDatetime"
+    ]
+  },
+  {
+    "function": "set_array_attr",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 430,
+    "calls": [
+      "array.Clear",
+      "getattr",
+      "array.values.extend"
+    ]
+  },
+  {
+    "function": "v2_to_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 521,
+    "calls": [
+      "all",
+      "getattr",
+      "array.values.extend",
+      "types_v2.Value",
+      "{\r\n            DataType.INT8:",
+      "cast_field",
+      "types_v2.Datapoint",
+      "ValueError",
+      "Datapoint.cast_array_values",
+      "set_field",
+      "array.Clear",
+      "message.value.CopyFrom",
+      "message.timestamp.FromDatetime"
+    ]
+  },
+  {
+    "function": "set_array_attr",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 525,
+    "calls": [
+      "array.Clear",
+      "getattr",
+      "array.values.extend"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 617,
+    "calls": [
+      "self.timestamp.isoformat"
+    ]
+  },
+  {
+    "function": "from_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 637,
+    "calls": [
+      "message.HasField",
+      "Metadata.from_message",
+      "Datapoint.from_message",
+      "cls"
+    ]
+  },
+  {
+    "function": "to_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 649,
+    "calls": [
+      "self.value.v1_to_message",
+      "self.metadata.to_message",
+      "message.actuator_target.MergeFrom",
+      "message.metadata.MergeFrom",
+      "self.actuator_target.v1_to_message",
+      "message.value.MergeFrom",
+      "types_v1.DataEntry"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 661,
+    "calls": [
+      "self.value.to_dict",
+      "self.actuator_target.to_dict",
+      "self.metadata.to_dict"
+    ]
+  },
+  {
+    "function": "from_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 685,
+    "calls": [
+      "Field",
+      "cls",
+      "DataEntry.from_message"
+    ]
+  },
+  {
+    "function": "from_tuple",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 692,
+    "calls": [
+      "getattr",
+      "dp.timestamp.ToDatetime",
+      "cls",
+      "DataEntry",
+      "Datapoint",
+      "Field",
+      "dp.value.ListFields"
+    ]
+  },
+  {
+    "function": "from_actuate_value",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 716,
+    "calls": [
+      "getattr",
+      "cls",
+      "DataEntry",
+      "Datapoint",
+      "Field",
+      "value.ListFields"
+    ]
+  },
+  {
+    "function": "to_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 730,
+    "calls": [
+      "val_v1.EntryUpdate",
+      "message.fields.extend",
+      "self.entry.to_message"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 735,
+    "calls": [
+      "self.entry.to_dict"
+    ]
+  },
+  {
+    "function": "from_message",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 755,
+    "calls": [
+      "cls"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 761,
+    "calls": [
+      "self.get_authorization_header"
+    ]
+  },
+  {
+    "function": "_load_creds",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 780,
+    "calls": [
+      "logger.info",
+      "self.root_certificates.read_bytes",
+      "grpc.ssl_channel_credentials"
+    ]
+  },
+  {
+    "function": "_prepare_get_request",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 790,
+    "calls": [
+      "type",
+      "entry_request.fields.append",
+      "logger.debug",
+      "val_v1.EntryRequest",
+      "val_v1.GetRequest",
+      "req.entries.append"
+    ]
+  },
+  {
+    "function": "_process_get_response",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 804,
+    "calls": [
+      "logger.debug",
+      "self._raise_if_invalid",
+      "type",
+      "DataEntry.from_message"
+    ]
+  },
+  {
+    "function": "_get_paths_with_required_type",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 809,
+    "calls": []
+  },
+  {
+    "function": "_prepare_set_request",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 828,
+    "calls": [
+      "type",
+      "update.to_message",
+      "val_v1.SetRequest",
+      "logger.debug",
+      "paths_with_required_type.get",
+      "req.updates.append"
+    ]
+  },
+  {
+    "function": "_prepare_publish_value_request",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 842,
+    "calls": [
+      "val_v2.PublishValueRequest",
+      "VSSClientError",
+      "type",
+      "update.entry.value.v2_to_message",
+      "types_v2.SignalID",
+      "logger.debug",
+      "paths_with_required_type.get"
+    ]
+  },
+  {
+    "function": "_process_set_response",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 869,
+    "calls": [
+      "logger.debug",
+      "self._raise_if_invalid",
+      "type"
+    ]
+  },
+  {
+    "function": "_prepare_subscribe_request",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 873,
+    "calls": [
+      "type",
+      "entry_request.fields.append",
+      "logger.debug",
+      "val_v1.SubscribeRequest",
+      "val_v1.SubscribeEntry",
+      "req.entries.append"
+    ]
+  },
+  {
+    "function": "_prepare_v2_subscribe_request",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 888,
+    "calls": [
+      "val_v2.SubscribeRequest",
+      "logger.debug",
+      "type"
+    ]
+  },
+  {
+    "function": "_prepare_v2_provide_actuation_request",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 895,
+    "calls": [
+      "type",
+      "val_v2.ProvideActuationRequest",
+      "signals.append",
+      "types_v2.SignalID",
+      "logger.debug",
+      "val_v2.OpenProviderStreamRequest"
+    ]
+  },
+  {
+    "function": "_prepare_v2_list_metadata_request",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 907,
+    "calls": [
+      "logger.debug",
+      "val_v2.ListMetadataRequest",
+      "type"
+    ]
+  },
+  {
+    "function": "_raise_if_invalid",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 914,
+    "calls": [
+      "error.get",
+      "VSSClientError",
+      "response.HasField",
+      "sub_error[\"error\"].get",
+      "logger.error",
+      "logger.debug",
+      "json_format.MessageToDict"
+    ]
+  },
+  {
+    "function": "get_authorization_header",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 948,
+    "calls": []
+  },
+  {
+    "function": "generate_metadata_header",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 953,
+    "calls": [
+      "list",
+      "dict",
+      "metadata.items"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 966,
+    "calls": [
+      "super",
+      "dict",
+      "contextlib.ExitStack"
+    ]
+  },
+  {
+    "function": "__enter__",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 973,
+    "calls": [
+      "self.connect"
+    ]
+  },
+  {
+    "function": "__exit__",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 977,
+    "calls": [
+      "self.disconnect"
+    ]
+  },
+  {
+    "function": "check_connected",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 980,
+    "calls": [
+      "func",
+      "Exception"
+    ]
+  },
+  {
+    "function": "wrapper",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 981,
+    "calls": [
+      "func",
+      "Exception"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 993,
+    "calls": [
+      "logger.info",
+      "self._load_creds",
+      "self.path_to_id_mapping.clear",
+      "grpc.secure_channel",
+      "grpc.insecure_channel",
+      "logger.debug",
+      "val_grpc_v2.VALStub",
+      "self.id_to_path_mapping.clear",
+      "self.exit_stack.enter_context",
+      "self.get_server_info",
+      "val_grpc_v1.VALStub"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1024,
+    "calls": [
+      "self.exit_stack.close"
+    ]
+  },
+  {
+    "function": "get_current_values",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1032,
+    "calls": [
+      "EntryRequest",
+      "self.get"
+    ]
+  },
+  {
+    "function": "get_target_values",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1055,
+    "calls": [
+      "EntryRequest",
+      "self.get"
+    ]
+  },
+  {
+    "function": "get_metadata",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1082,
+    "calls": [
+      "EntryRequest",
+      "self.get",
+      "Field"
+    ]
+  },
+  {
+    "function": "set_current_values",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1109,
+    "calls": [
+      "EntryUpdate",
+      "self.set",
+      "updates.items",
+      "DataEntry"
+    ]
+  },
+  {
+    "function": "set_target_values",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1130,
+    "calls": [
+      "EntryUpdate",
+      "self.set",
+      "updates.items",
+      "DataEntry"
+    ]
+  },
+  {
+    "function": "set_metadata",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1151,
+    "calls": [
+      "updates.items",
+      "DataEntry",
+      "self.set",
+      "Field",
+      "EntryUpdate"
+    ]
+  },
+  {
+    "function": "subscribe_current_values",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1178,
+    "calls": [
+      "self.v2_subscribe",
+      "self.subscribe",
+      "logger.debug",
+      "SubscribeEntry"
+    ]
+  },
+  {
+    "function": "subscribe_target_values",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1213,
+    "calls": [
+      "self.subscribe",
+      "logger.debug",
+      "SubscribeEntry",
+      "self.v2_subscribe_actuation_requests"
+    ]
+  },
+  {
+    "function": "subscribe_metadata",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1250,
+    "calls": [
+      "self.subscribe",
+      "SubscribeEntry",
+      "Field"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1278,
+    "calls": [
+      "self._prepare_get_request",
+      "self.client_stub_v1.Get",
+      "self.generate_metadata_header",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self._process_get_response"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1295,
+    "calls": [
+      "self._get_paths_with_required_type",
+      "VSSClientError",
+      "len",
+      "paths_with_required_type.update",
+      "self._prepare_set_request",
+      "exc.code",
+      "self.generate_metadata_header",
+      "self._prepare_publish_value_request",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self.set",
+      "logger.debug",
+      "self.client_stub_v2.PublishValue",
+      "self.client_stub_v1.Set",
+      "self._process_set_response",
+      "self.get_value_types",
+      "paths_with_required_type.items"
+    ]
+  },
+  {
+    "function": "get_path",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1347,
+    "calls": [
+      "signal_id.HasField"
+    ]
+  },
+  {
+    "function": "ensure_id_mapping",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1354,
+    "calls": [
+      "self.client_stub_v2.ListMetadata",
+      "type",
+      "len",
+      "VSSClientError",
+      "exc.code",
+      "VSSClientError.from_grpc_error",
+      "logger.debug",
+      "self._prepare_v2_list_metadata_request"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1383,
+    "calls": [
+      "VSSClientError",
+      "type",
+      "self._prepare_subscribe_request",
+      "self.generate_metadata_header",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "logger.debug",
+      "self.client_stub_v1.Subscribe",
+      "EntryUpdate.from_message"
+    ]
+  },
+  {
+    "function": "v2_subscribe",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1417,
+    "calls": [
+      "resp.entries.items",
+      "type",
+      "self.client_stub_v2.Subscribe",
+      "self.generate_metadata_header",
+      "EntryUpdate.from_tuple",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self._prepare_v2_subscribe_request",
+      "logger.debug"
+    ]
+  },
+  {
+    "function": "v2_subscribe_actuation_requests",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1443,
+    "calls": [
+      "type",
+      "self.get_path",
+      "iter",
+      "self.generate_metadata_header",
+      "self.ensure_id_mapping",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self._prepare_v2_provide_actuation_request",
+      "logger.debug",
+      "resp.HasField",
+      "self.client_stub_v2.OpenProviderStream",
+      "EntryUpdate.from_actuate_value"
+    ]
+  },
+  {
+    "function": "authorize",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1471,
+    "calls": [
+      "type",
+      "self.generate_metadata_header",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self.client_stub_v1.GetServerInfo",
+      "logger.debug",
+      "val_v1.GetServerInfoRequest",
+      "self.get_authorization_header"
+    ]
+  },
+  {
+    "function": "get_server_info",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1493,
+    "calls": [
+      "type",
+      "exc.code",
+      "ServerInfo.from_message",
+      "self.generate_metadata_header",
+      "logger.info",
+      "VSSClientError.from_grpc_error",
+      "rpc_kwargs.get",
+      "self.client_stub_v1.GetServerInfo",
+      "logger.debug",
+      "val_v1.GetServerInfoRequest"
+    ]
+  },
+  {
+    "function": "get_value_types",
+    "file": "kuksa-client/kuksa_client/grpc/__init__.py",
+    "line": 1516,
+    "calls": [
+      "EntryRequest",
+      "self.get",
+      "DataType"
+    ]
+  },
+  {
+    "function": "init_logging",
+    "file": "kuksa-client/kuksa_client/kuksa_logger/__init__.py",
+    "line": 22,
+    "calls": [
+      "logging.getLogger",
+      "self.init_root_logging",
+      "self.parse_env_log",
+      "os.environ.get",
+      "loglevels.items"
+    ]
+  },
+  {
+    "function": "init_root_logging",
+    "file": "kuksa-client/kuksa_client/kuksa_logger/__init__.py",
+    "line": 43,
+    "calls": [
+      "root_logger.setLevel",
+      "logging.getLogger",
+      "console_logger.setLevel",
+      "logging.StreamHandler",
+      "sys.stdout.isatty",
+      "logging.Formatter",
+      "console_logger.setFormatter",
+      "root_logger.addHandler",
+      "ColorFormatter"
+    ]
+  },
+  {
+    "function": "parse_env_log",
+    "file": "kuksa-client/kuksa_client/kuksa_logger/__init__.py",
+    "line": 66,
+    "calls": [
+      "len",
+      "isinstance",
+      "specified_level.upper",
+      "env_log.split",
+      "log_spec.split",
+      "specified_level.lower",
+      "ValueError",
+      "parse_level"
+    ]
+  },
+  {
+    "function": "parse_level",
+    "file": "kuksa-client/kuksa_client/kuksa_logger/__init__.py",
+    "line": 67,
+    "calls": [
+      "specified_level.lower",
+      "ValueError",
+      "isinstance",
+      "specified_level.upper"
+    ]
+  },
+  {
+    "function": "format",
+    "file": "kuksa-client/kuksa_client/kuksa_logger/__init__.py",
+    "line": 118,
+    "calls": [
+      "formatter.format",
+      "logging.Formatter",
+      "self.FORMATS.get"
+    ]
+  }
+]

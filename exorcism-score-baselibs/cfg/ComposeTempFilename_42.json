@@ -1,0 +1,30 @@
+{
+  "function": "ComposeTempFilename",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ComposeTempFilename",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 50
+    },
+    {
+      "id": 2,
+      "label": "exit:ComposeTempFilename",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

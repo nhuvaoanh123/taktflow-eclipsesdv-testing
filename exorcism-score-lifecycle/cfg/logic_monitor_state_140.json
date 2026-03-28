@@ -1,0 +1,21 @@
+{
+  "function": "logic_monitor_state",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:logic_monitor_state",
+      "line": 140
+    },
+    {
+      "id": 1,
+      "label": "exit:logic_monitor_state",
+      "line": 160
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

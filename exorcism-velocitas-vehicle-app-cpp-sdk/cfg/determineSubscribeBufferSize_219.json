@@ -1,0 +1,30 @@
+{
+  "function": "determineSubscribeBufferSize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:determineSubscribeBufferSize",
+      "line": 219
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 230
+    },
+    {
+      "id": 2,
+      "label": "exit:determineSubscribeBufferSize",
+      "line": 231
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

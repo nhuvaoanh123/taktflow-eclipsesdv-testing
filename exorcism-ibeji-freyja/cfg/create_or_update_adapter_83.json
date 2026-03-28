@@ -1,0 +1,21 @@
+{
+  "function": "create_or_update_adapter",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_or_update_adapter",
+      "line": 83
+    },
+    {
+      "id": 1,
+      "label": "exit:create_or_update_adapter",
+      "line": 191
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

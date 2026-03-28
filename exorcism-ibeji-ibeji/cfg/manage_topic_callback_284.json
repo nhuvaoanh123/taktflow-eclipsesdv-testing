@@ -1,0 +1,21 @@
+{
+  "function": "manage_topic_callback",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:manage_topic_callback",
+      "line": 284
+    },
+    {
+      "id": 1,
+      "label": "exit:manage_topic_callback",
+      "line": 382
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

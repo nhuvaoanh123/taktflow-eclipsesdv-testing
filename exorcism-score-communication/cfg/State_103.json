@@ -1,0 +1,21 @@
+{
+  "function": "State",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:State",
+      "line": 103
+    },
+    {
+      "id": 1,
+      "label": "exit:State",
+      "line": 166
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Baselibs — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Score Baselibs</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Score Baselibs</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">SCORE</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">1668</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">240,133</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">12783</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">3.5</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>SCORE (Safety-Critical Open-source Reference Environment) is an Eclipse project providing safety-certified base libraries and middleware for safety-critical automotive ECUs. It targets ASIL-B/D requirements with components for communication (SOME/IP), logging, lifecycle management, and more.</p>
+    <p><strong>Project:</strong> <code>score-baselibs</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>Bazel</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Python</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>Safety-critical vehicle systems (braking, steering, ADAS) need software components that meet ISO 26262 functional safety requirements. SCORE provides pre-certified building blocks.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by Tier-1 automotive suppliers and OEMs building safety-critical ECU software.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>C</td><td>580</td><td>60,355</td></tr><tr><td>C++</td><td>1083</td><td>179,536</td></tr><tr><td>Python</td><td>5</td><td>242</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: score-baselibs</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>C, C++, Python</td></tr>
+<tr><td>Build System</td><td>Bazel</td></tr>
+<tr><td>Total Files</td><td>1668</td></tr>
+<tr><td>Total LOC</td><td>240,133</td></tr>
+<tr><td>Total Functions</td><td>12783</td></tr>
+<tr><td>State Machines</td><td>0</td></tr>
+<tr><td>Communication Patterns</td><td>0</td></tr>
+<tr><td>External Dependencies</td><td>0</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>C</strong>: 580 files, 60,355 LOC</li>
+<li><strong>C++</strong>: 1083 files, 179,536 LOC</li>
+<li><strong>Python</strong>: 5 files, 242 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>Bazel</strong></p>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>score (score/bitmanipulation/bit_manipulation.h:20) cc=51</li>
+<li>platform (score/bitmanipulation/bit_manipulation.h:22) cc=38</li>
+<li>Byte (score/bitmanipulation/bit_manipulation.h:53) cc=22</li>
+<li>GetByte (score/bitmanipulation/bit_manipulation.h:232) cc=12</li>
+<li>logging<em>serializer (score/static</em>reflection<em>with</em>serialization/serialization/include/serialization/for_logging.h:42) cc=86</li>
+<li>serialize (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/for</em>logging.h:58) cc=15</li>
+<li>deserialize (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/for</em>logging.h:72) cc=60</li>
+<li>deserialize (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/for</em>logging.h:82) cc=12</li>
+<li>Typeinfo (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/for</em>logging.h:146) cc=28</li>
+<li>copy (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/for</em>logging.h:157) cc=21</li>
+<li>score (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>type_traits.h:20) cc=55</li>
+<li>common (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>type_traits.h:22) cc=21</li>
+<li>visitor (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>type_traits.h:24) cc=12</li>
+<li>score (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:36) cc=499</li>
+<li>common (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:39) cc=473</li>
+<li>visitor (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:42) cc=26</li>
+<li>details (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:88) cc=12</li>
+<li>advance (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:152) cc=19</li>
+<li>deserialize (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:464) cc=21</li>
+<li>detail (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:512) cc=17</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li>score (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:23) depth=4</li>
+<li>common (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:26) depth=4</li>
+<li>visitor (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:29) depth=4</li>
+<li>detail (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:32) depth=4</li>
+<li>&lt;anonymous&gt; (score/os/capability.cpp:156) depth=5</li>
+<li>NextServiceRequest (score/os/test/qnx/channel_test.cpp:283) depth=5</li>
+<li>parse<em>safe</em>headers (score/os/interface/qnx/gen<em>unsafe</em>headers.py:25) depth=7</li>
+<li>find<em>unsafe</em>headers (score/os/interface/qnx/gen<em>unsafe</em>headers.py:35) depth=7</li>
+<li>&lt;anonymous&gt; (score/network/sock_async/socket.cpp:38) depth=4</li>
+<li>&lt;anonymous&gt; (score/network/sock<em>async/sock</em>ctrl.cpp:123) depth=4</li>
+<li>&lt;anonymous&gt; (score/memory/shared/memory<em>region</em>map.cpp:338) depth=4</li>
+<li>isValidDateTimeFormat (score/datetime<em>converter/datetime</em>converter.cpp:46) depth=6</li>
+<li>TEST (score/mw/log/detail/wait<em>free</em>stack/wait<em>free</em>stack_test.cpp:72) depth=4</li>
+<li>&lt;anonymous&gt; (score/analysis/tracing/common/flexible<em>circular</em>allocator/lockless<em>flexible</em>circular_allocator.cpp:424) depth=4</li>
+<li>&lt;anonymous&gt; (score/json/internal/parser/nlohmann/json_builder.cpp:87) depth=7</li>
+<li>&lt;anonymous&gt; (score/filesystem/standard<em>filesystem</em>fake.cpp:633) depth=6</li>
+<li>&lt;anonymous&gt; (score/filesystem/file<em>utils/file</em>test_utils.cpp:20) depth=5</li>
+<li>StatusInternal (score/filesystem/details/standard_filesystem.cpp:88) depth=7</li>
+<li>&lt;anonymous&gt; (score/filesystem/details/standard_filesystem.cpp:211) depth=4</li>
+<li>&lt;anonymous&gt; (score/filesystem/details/standard_filesystem.cpp:520) depth=5</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<ul>
+<li>score (score/bitmanipulation/bit_manipulation.h:20) loc=179</li>
+<li>platform (score/bitmanipulation/bit_manipulation.h:22) loc=149</li>
+<li>logging<em>serializer (score/static</em>reflection<em>with</em>serialization/serialization/include/serialization/for_logging.h:42) loc=157</li>
+<li>deserialize (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/for</em>logging.h:72) loc=126</li>
+<li>score (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:36) loc=995</li>
+<li>common (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:39) loc=948</li>
+<li>serialize (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:610) loc=279</li>
+<li>deserialize (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>serialize.h:712) loc=160</li>
+<li>common (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>size.h:30) loc=265</li>
+<li>visitor (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>size.h:32) loc=262</li>
+<li>out (score/static<em>reflection</em>with<em>serialization/serialization/include/serialization/visit</em>size.h:50) loc=192</li>
+<li>TEST (score/static<em>reflection</em>with<em>serialization/serialization/test/ut/test</em>serializer_visitor.cpp:260) loc=247</li>
+<li>score (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:23) loc=192</li>
+<li>common (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:26) loc=161</li>
+<li>visitor (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:29) loc=156</li>
+<li>detail (score/static<em>reflection</em>with<em>serialization/visitor/include/visitor/visit</em>as_struct.h:32) loc=151</li>
+<li>score (score/static<em>reflection</em>with<em>serialization/visitor/examples/ostream/include/visitor/visit</em>ostream.h:24) loc=128</li>
+<li>common (score/static<em>reflection</em>with<em>serialization/visitor/examples/ostream/include/visitor/visit</em>ostream.h:27) loc=123</li>
+<li>visit<em>as</em>struct (score/static<em>reflection</em>with<em>serialization/visitor/examples/ostream/include/visitor/visit</em>ostream.h:47) loc=101</li>
+<li>score (score/os/pthread.h:27) loc=126</li>
+</ul>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 12783 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 1628 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 0 state machine patterns</li>
+<li><code>metrics.json</code> — 12783 function metrics</li>
+<li><code>communication.json</code> — 0 protocol patterns</li>
+<li><code>dependencies.json</code> — 0 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">499 (High)</span></td>
+              <td>2</td>
+              <td>995</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h</small></td>
+            </tr><tr>
+              <td><code>common</code></td>
+              <td><span class="badge badge-red">473 (High)</span></td>
+              <td>2</td>
+              <td>948</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h</small></td>
+            </tr><tr>
+              <td><code>containers</code></td>
+              <td><span class="badge badge-red">235 (High)</span></td>
+              <td>2</td>
+              <td>658</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/containers/intrusive_list.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">224 (High)</span></td>
+              <td>2</td>
+              <td>583</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/containers/intrusive_list.h</small></td>
+            </tr><tr>
+              <td><code>common</code></td>
+              <td><span class="badge badge-red">175 (High)</span></td>
+              <td>1</td>
+              <td>265</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_size.h</small></td>
+            </tr><tr>
+              <td><code>visitor</code></td>
+              <td><span class="badge badge-red">175 (High)</span></td>
+              <td>1</td>
+              <td>262</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_size.h</small></td>
+            </tr><tr>
+              <td><code>safe_math</code></td>
+              <td><span class="badge badge-red">174 (High)</span></td>
+              <td>2</td>
+              <td>205</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/language/safecpp/safe_math/details/addition_subtraction/addition_subtraction.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">169 (High)</span></td>
+              <td>1</td>
+              <td>401</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/log_stream.h</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">169 (High)</span></td>
+              <td>1</td>
+              <td>398</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/log_stream.h</small></td>
+            </tr><tr>
+              <td><code>serialize</code></td>
+              <td><span class="badge badge-red">168 (High)</span></td>
+              <td>2</td>
+              <td>279</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">168 (High)</span></td>
+              <td>0</td>
+              <td>227</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/os/spawn_impl.h</small></td>
+            </tr><tr>
+              <td><code>os</code></td>
+              <td><span class="badge badge-red">168 (High)</span></td>
+              <td>0</td>
+              <td>224</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/os/spawn_impl.h</small></td>
+            </tr><tr>
+              <td><code>log</code></td>
+              <td><span class="badge badge-red">157 (High)</span></td>
+              <td>1</td>
+              <td>369</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/log_stream.h</small></td>
+            </tr><tr>
+              <td><code>out</code></td>
+              <td><span class="badge badge-red">148 (High)</span></td>
+              <td>1</td>
+              <td>192</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_size.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">148 (High)</span></td>
+              <td>1</td>
+              <td>146</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/json/internal/model/any.h</small></td>
+            </tr><tr>
+              <td><code>concurrency</code></td>
+              <td><span class="badge badge-red">139 (High)</span></td>
+              <td>2</td>
+              <td>273</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/concurrency/future/base_interruptible_future.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">133 (High)</span></td>
+              <td>2</td>
+              <td>464</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/analysis/tracing/common/shared_list/shared_list.h</small></td>
+            </tr><tr>
+              <td><code>json</code></td>
+              <td><span class="badge badge-red">124 (High)</span></td>
+              <td>0</td>
+              <td>125</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/json/internal/model/any.h</small></td>
+            </tr><tr>
+              <td><code>shared</code></td>
+              <td><span class="badge badge-red">121 (High)</span></td>
+              <td>0</td>
+              <td>325</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/memory/shared/offset_ptr.h</small></td>
+            </tr><tr>
+              <td><code>analysis</code></td>
+              <td><span class="badge badge-red">115 (High)</span></td>
+              <td>2</td>
+              <td>395</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/analysis/tracing/common/shared_list/shared_list.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">115 (High)</span></td>
+              <td>0</td>
+              <td>344</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/json/internal/parser/number_parser_test_suite.h</small></td>
+            </tr><tr>
+              <td><code>upper_bound</code></td>
+              <td><span class="badge badge-red">113 (High)</span></td>
+              <td>1</td>
+              <td>85</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/language/safecpp/safe_math/details/comparison/comparison.h</small></td>
+            </tr><tr>
+              <td><code>concurrency</code></td>
+              <td><span class="badge badge-red">112 (High)</span></td>
+              <td>2</td>
+              <td>323</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/concurrency/condition_variable.h</small></td>
+            </tr><tr>
+              <td><code>safecpp</code></td>
+              <td><span class="badge badge-red">108 (High)</span></td>
+              <td>0</td>
+              <td>169</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/language/safecpp/scoped_function/copyable_scoped_function.h</small></td>
+            </tr><tr>
+              <td><code>epochToDateTime</code></td>
+              <td><span class="badge badge-red">106 (High)</span></td>
+              <td>3</td>
+              <td>143</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datetime_converter/datetime_converter.cpp</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">106 (High)</span></td>
+              <td>1</td>
+              <td>305</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/concurrency/timed_executor/periodic_task.h</small></td>
+            </tr><tr>
+              <td><code>concurrency</code></td>
+              <td><span class="badge badge-red">106 (High)</span></td>
+              <td>1</td>
+              <td>302</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/concurrency/timed_executor/periodic_task.h</small></td>
+            </tr><tr>
+              <td><code>detail</code></td>
+              <td><span class="badge badge-red">106 (High)</span></td>
+              <td>1</td>
+              <td>298</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/concurrency/timed_executor/periodic_task.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">101 (High)</span></td>
+              <td>0</td>
+              <td>309</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/log_types.h</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">101 (High)</span></td>
+              <td>0</td>
+              <td>306</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/log_types.h</small></td>
+            </tr><tr>
+              <td><code>TestIsInputTypeContainedInOutputType</code></td>
+              <td><span class="badge badge-red">101 (High)</span></td>
+              <td>0</td>
+              <td>112</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/json/internal/model/lossless_cast.cpp</small></td>
+            </tr><tr>
+              <td><code>deserialize</code></td>
+              <td><span class="badge badge-red">98 (High)</span></td>
+              <td>1</td>
+              <td>160</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h</small></td>
+            </tr><tr>
+              <td><code>TEST</code></td>
+              <td><span class="badge badge-red">97 (High)</span></td>
+              <td>0</td>
+              <td>57</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/language/futurecpp/tests/bit_test.cpp</small></td>
+            </tr><tr>
+              <td><code>TEST</code></td>
+              <td><span class="badge badge-red">96 (High)</span></td>
+              <td>0</td>
+              <td>62</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/language/futurecpp/tests/bit_test.cpp</small></td>
+            </tr><tr>
+              <td><code>TEST</code></td>
+              <td><span class="badge badge-red">92 (High)</span></td>
+              <td>0</td>
+              <td>186</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/containers/intrusive_list_test.cpp</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">89 (High)</span></td>
+              <td>2</td>
+              <td>301</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/detail/text_recorder/text_format.h</small></td>
+            </tr><tr>
+              <td><code>logging_serializer</code></td>
+              <td><span class="badge badge-red">86 (High)</span></td>
+              <td>2</td>
+              <td>157</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/for_logging.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">86 (High)</span></td>
+              <td>0</td>
+              <td>80</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/json/internal/model/lossless_cast.h</small></td>
+            </tr><tr>
+              <td><code>json</code></td>
+              <td><span class="badge badge-red">86 (High)</span></td>
+              <td>0</td>
+              <td>77</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/json/internal/model/lossless_cast.h</small></td>
+            </tr><tr>
+              <td><code>PeriodicTaskFactory</code></td>
+              <td><span class="badge badge-red">85 (High)</span></td>
+              <td>0</td>
+              <td>156</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/concurrency/periodic_task.h</small></td>
+            </tr><tr>
+              <td><code>safe_math</code></td>
+              <td><span class="badge badge-red">84 (High)</span></td>
+              <td>2</td>
+              <td>115</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/language/safecpp/safe_math/details/negate/negate.h</small></td>
+            </tr><tr>
+              <td><code>log</code></td>
+              <td><span class="badge badge-red">84 (High)</span></td>
+              <td>2</td>
+              <td>274</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/detail/text_recorder/text_format.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">82 (High)</span></td>
+              <td>4</td>
+              <td>192</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/visitor/include/visitor/visit_as_struct.h</small></td>
+            </tr><tr>
+              <td><code>common</code></td>
+              <td><span class="badge badge-red">80 (High)</span></td>
+              <td>4</td>
+              <td>161</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/visitor/include/visitor/visit_as_struct.h</small></td>
+            </tr><tr>
+              <td><code>visitor</code></td>
+              <td><span class="badge badge-red">80 (High)</span></td>
+              <td>4</td>
+              <td>156</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/visitor/include/visitor/visit_as_struct.h</small></td>
+            </tr><tr>
+              <td><code>detail</code></td>
+              <td><span class="badge badge-red">80 (High)</span></td>
+              <td>4</td>
+              <td>151</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/static_reflection_with_serialization/visitor/include/visitor/visit_as_struct.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">77 (High)</span></td>
+              <td>0</td>
+              <td>109</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/os/qnx/dispatch_impl.h</small></td>
+            </tr><tr>
+              <td><code>os</code></td>
+              <td><span class="badge badge-red">77 (High)</span></td>
+              <td>0</td>
+              <td>106</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/os/qnx/dispatch_impl.h</small></td>
+            </tr><tr>
+              <td><code>shared</code></td>
+              <td><span class="badge badge-red">77 (High)</span></td>
+              <td>0</td>
+              <td>158</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/memory/shared/atomic_indirector.h</small></td>
+            </tr><tr>
+              <td><code>safecpp</code></td>
+              <td><span class="badge badge-red">74 (High)</span></td>
+              <td>1</td>
+              <td>125</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/language/safecpp/string_view/null_termination_check.h</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>TestIsInputTypeContainedInOutputType</code></td>
+              <td>100</td>
+              <td><small>IsInputTypeContainedInOutputType&lt;uint64_t, float&gt;, IsInputTypeContainedInOutputType&lt;double, uint8_t&gt;, IsInputTypeContainedInOutputType&lt;int32_t, int16_t&gt;, IsInputTypeContainedInOutputType&lt;int32_t, uint8_t&gt;, IsInputTypeContainedInOutputType&lt;uint64_t, uint8_t&gt;, IsInputTypeContainedInOutputType&lt;int32_t, int8_t&gt;, IsInputTypeContainedInOutputType&lt;uint32_t, uint32_t&gt;, IsInputTypeContainedInOutputType&lt;float, uint32_t&gt; …</small></td>
+              <td><small>score/json/internal/model/lossless_cast.cpp:547</small></td>
+            </tr><tr>
+              <td><code>containers</code></td>
+              <td>45</td>
+              <td><small>is_valid, remove_and_dispose, clear, remove_and_dispose_if, make_empty_root, pop_front_and_dispose, merge, advance …</small></td>
+              <td><small>score/containers/intrusive_list.h:44</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td>43</td>
+              <td><small>posix_spawnattr_init, pthread_spawnattr_getrunmask_np, posix_spawnattr_getflags, posix_spawnattr_getschedparam, posix_spawnattr_setnode, posix_spawnattr_setschedpolicy, posix_spawnattr_setschedparam, posix_spawnattr_getxflags …</small></td>
+              <td><small>score/os/spawn_impl.h:20</small></td>
+            </tr><tr>
+              <td><code>os</code></td>
+              <td>43</td>
+              <td><small>posix_spawnattr_init, pthread_spawnattr_getrunmask_np, posix_spawnattr_getflags, posix_spawnattr_getschedparam, posix_spawnattr_setnode, posix_spawnattr_setschedpolicy, posix_spawnattr_setschedparam, posix_spawnattr_getxflags …</small></td>
+              <td><small>score/os/spawn_impl.h:22</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>43</td>
+              <td><small>is_valid, remove_and_dispose, clear, remove_and_dispose_if, make_empty_root, pop_front_and_dispose, merge, advance …</small></td>
+              <td><small>score/containers/intrusive_list.h:116</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td>36</td>
+              <td><small>deserialize_tuple_start, subspan, visit, base_, clear, size, setInvalidFormat, max …</small></td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h:36</small></td>
+            </tr><tr>
+              <td><code>common</code></td>
+              <td>36</td>
+              <td><small>deserialize_tuple_start, subspan, visit, base_, clear, size, setInvalidFormat, max …</small></td>
+              <td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h:39</small></td>
+            </tr><tr>
+              <td><code>TEST</code></td>
+              <td>34</td>
+              <td><small>EXPECT_DOUBLE_EQ, score::cpp::math::constants::root_two_pi&lt;double&gt;, score::cpp::math::constants::half&lt;double&gt;, score::cpp::math::constants::e&lt;float&gt;, score::cpp::math::constants::third&lt;float&gt;, score::cpp::math::constants::one_div_root_two_pi&lt;float&gt;, score::cpp::math::constants::two_pi&lt;float&gt;, score::cpp::math::constants::root_half_pi&lt;float&gt; …</small></td>
+              <td><small>score/language/futurecpp/tests/math_test.cpp:284</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>33</td>
+              <td><small>TempDirectoryPath, Invoke, WillByDefault, Status, LastWriteTime, ReadSymlink, Absolute, Permissions …</small></td>
+              <td><small>score/filesystem/standard_filesystem_fake.cpp:24</small></td>
+            </tr><tr>
+              <td><code>TYPED_TEST</code></td>
+              <td>32</td>
+              <td><small>REGISTER_TYPED_TEST_SUITE_P, INSTANTIATE_TYPED_TEST_SUITE_P, has_value, Helper::ExpectErrorFromOperation, ASSERT_FALSE, Add&lt;std::int32_t&gt;, static_cast&lt;Type&gt;, Subtract&lt;kMode&gt; …</small></td>
+              <td><small>score/language/safecpp/safe_math/details/addition_subtraction/addition_subtraction_test.cpp:172</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (0 detected)</h3>
+  <p><em>No state machines detected.</em></p>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>LOC</th><th>File</th></tr></thead><tbody><tr><td><code>score</code></td><td>995</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h</small></td></tr><tr><td><code>common</code></td><td>948</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h</small></td></tr><tr><td><code>containers</code></td><td>658</td><td><small>score/containers/intrusive_list.h</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>583</td><td><small>score/containers/intrusive_list.h</small></td></tr><tr><td><code>score</code></td><td>464</td><td><small>score/analysis/tracing/common/shared_list/shared_list.h</small></td></tr><tr><td><code>shared</code></td><td>416</td><td><small>score/memory/shared/shared_memory_resource.h</small></td></tr><tr><td><code>score</code></td><td>401</td><td><small>score/mw/log/log_stream.h</small></td></tr><tr><td><code>mw</code></td><td>398</td><td><small>score/mw/log/log_stream.h</small></td></tr><tr><td><code>analysis</code></td><td>395</td><td><small>score/analysis/tracing/common/shared_list/shared_list.h</small></td></tr><tr><td><code>TYPED_TEST</code></td><td>386</td><td><small>score/language/safecpp/safe_math/details/addition_subtraction/addition_subtraction_test.cpp</small></td></tr><tr><td><code>log</code></td><td>369</td><td><small>score/mw/log/log_stream.h</small></td></tr><tr><td><code>Format</code></td><td>352</td><td><small>score/filesystem/path.h</small></td></tr><tr><td><code>score</code></td><td>344</td><td><small>score/json/internal/parser/number_parser_test_suite.h</small></td></tr><tr><td><code>shared</code></td><td>325</td><td><small>score/memory/shared/offset_ptr.h</small></td></tr><tr><td><code>concurrency</code></td><td>323</td><td><small>score/concurrency/condition_variable.h</small></td></tr><tr><td><code>score</code></td><td>309</td><td><small>score/mw/log/log_types.h</small></td></tr><tr><td><code>mw</code></td><td>306</td><td><small>score/mw/log/log_types.h</small></td></tr><tr><td><code>score</code></td><td>305</td><td><small>score/concurrency/timed_executor/periodic_task.h</small></td></tr><tr><td><code>concurrency</code></td><td>302</td><td><small>score/concurrency/timed_executor/periodic_task.h</small></td></tr><tr><td><code>mw</code></td><td>301</td><td><small>score/mw/log/detail/text_recorder/text_format.h</small></td></tr></tbody></table>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    score-baselibs[&#x27;Score Baselibs&#x27;]
+    note[&#x27;No external interfaces detected&#x27;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  <p><em>No communication patterns detected.</em></p>
+
+  <h3>Dependencies</h3>
+  <p><em>No explicit dependencies recorded.</em></p>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: Bazel</h3>
+    <pre><code># Install Bazel (via Bazelisk recommended)
+npm install -g @bazel/bazelisk
+# or: curl -Lo bazel https://github.com/bazelbuild/bazelisk/releases/latest/download/bazelisk-linux-amd64
+
+# Build all targets
+bazel build //...
+
+# Run tests
+bazel test //...
+
+# Build specific target
+bazel build //&lt;package&gt;:&lt;target&gt;</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">C</span> toolchain required</li><li><span class="tag">C++</span> toolchain required</li><li><span class="tag">Python</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">3.5</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">20</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">20</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">396</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>score</code></td><td><span class="badge badge-red">499 (High)</span></td><td>995</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h:36</small></td></tr><tr><td><code>common</code></td><td><span class="badge badge-red">473 (High)</span></td><td>948</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h:39</small></td></tr><tr><td><code>containers</code></td><td><span class="badge badge-red">235 (High)</span></td><td>658</td><td><small>score/containers/intrusive_list.h:44</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">224 (High)</span></td><td>583</td><td><small>score/containers/intrusive_list.h:116</small></td></tr><tr><td><code>common</code></td><td><span class="badge badge-red">175 (High)</span></td><td>265</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_size.h:30</small></td></tr><tr><td><code>visitor</code></td><td><span class="badge badge-red">175 (High)</span></td><td>262</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_size.h:32</small></td></tr><tr><td><code>safe_math</code></td><td><span class="badge badge-red">174 (High)</span></td><td>205</td><td><small>score/language/safecpp/safe_math/details/addition_subtraction/addition_subtraction.h:32</small></td></tr><tr><td><code>score</code></td><td><span class="badge badge-red">169 (High)</span></td><td>401</td><td><small>score/mw/log/log_stream.h:31</small></td></tr><tr><td><code>mw</code></td><td><span class="badge badge-red">169 (High)</span></td><td>398</td><td><small>score/mw/log/log_stream.h:33</small></td></tr><tr><td><code>serialize</code></td><td><span class="badge badge-red">168 (High)</span></td><td>279</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h:610</small></td></tr><tr><td><code>score</code></td><td><span class="badge badge-red">168 (High)</span></td><td>227</td><td><small>score/os/spawn_impl.h:20</small></td></tr><tr><td><code>os</code></td><td><span class="badge badge-red">168 (High)</span></td><td>224</td><td><small>score/os/spawn_impl.h:22</small></td></tr><tr><td><code>log</code></td><td><span class="badge badge-red">157 (High)</span></td><td>369</td><td><small>score/mw/log/log_stream.h:35</small></td></tr><tr><td><code>out</code></td><td><span class="badge badge-red">148 (High)</span></td><td>192</td><td><small>score/static_reflection_with_serialization/serialization/include/serialization/visit_size.h:50</small></td></tr><tr><td><code>score</code></td><td><span class="badge badge-red">148 (High)</span></td><td>146</td><td><small>score/json/internal/model/any.h:30</small></td></tr><tr><td><code>concurrency</code></td><td><span class="badge badge-red">139 (High)</span></td><td>273</td><td><small>score/concurrency/future/base_interruptible_future.h:25</small></td></tr><tr><td><code>score</code></td><td><span class="badge badge-red">133 (High)</span></td><td>464</td><td><small>score/analysis/tracing/common/shared_list/shared_list.h:23</small></td></tr><tr><td><code>json</code></td><td><span class="badge badge-red">124 (High)</span></td><td>125</td><td><small>score/json/internal/model/any.h:32</small></td></tr><tr><td><code>shared</code></td><td><span class="badge badge-red">121 (High)</span></td><td>325</td><td><small>score/memory/shared/offset_ptr.h:57</small></td></tr><tr><td><code>analysis</code></td><td><span class="badge badge-red">115 (High)</span></td><td>395</td><td><small>score/analysis/tracing/common/shared_list/shared_list.h:25</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>score</code> — CC 51, nesting 1 in score/bitmanipulation/bit_manipulation.h</li><li><span class="badge badge-red">Risk</span> <code>platform</code> — CC 38, nesting 1 in score/bitmanipulation/bit_manipulation.h</li><li><span class="badge badge-red">Risk</span> <code>Byte</code> — CC 22, nesting 1 in score/bitmanipulation/bit_manipulation.h</li><li><span class="badge badge-red">Risk</span> <code>logging_serializer</code> — CC 86, nesting 2 in score/static_reflection_with_serialization/serialization/include/serialization/for_logging.h</li><li><span class="badge badge-red">Risk</span> <code>deserialize</code> — CC 60, nesting 2 in score/static_reflection_with_serialization/serialization/include/serialization/for_logging.h</li><li><span class="badge badge-red">Risk</span> <code>Typeinfo</code> — CC 28, nesting 2 in score/static_reflection_with_serialization/serialization/include/serialization/for_logging.h</li><li><span class="badge badge-red">Risk</span> <code>copy</code> — CC 21, nesting 2 in score/static_reflection_with_serialization/serialization/include/serialization/for_logging.h</li><li><span class="badge badge-red">Risk</span> <code>score</code> — CC 55, nesting 0 in score/static_reflection_with_serialization/serialization/include/serialization/visit_type_traits.h</li><li><span class="badge badge-red">Risk</span> <code>common</code> — CC 21, nesting 0 in score/static_reflection_with_serialization/serialization/include/serialization/visit_type_traits.h</li><li><span class="badge badge-red">Risk</span> <code>score</code> — CC 499, nesting 2 in score/static_reflection_with_serialization/serialization/include/serialization/visit_serialize.h</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

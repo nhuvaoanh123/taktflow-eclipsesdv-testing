@@ -1,0 +1,21 @@
+{
+  "function": "execute_unary_operation",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:execute_unary_operation",
+      "line": 307
+    },
+    {
+      "id": 1,
+      "label": "exit:execute_unary_operation",
+      "line": 321
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+      "line": 1120
+    },
+    {
+      "id": 1,
+      "label": "exit:FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+      "line": 1159
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

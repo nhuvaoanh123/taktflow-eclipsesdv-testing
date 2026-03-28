@@ -1,0 +1,21 @@
+{
+  "function": "await_engine",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:await_engine",
+      "line": 256
+    },
+    {
+      "id": 1,
+      "label": "exit:await_engine",
+      "line": 277
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

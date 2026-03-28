@@ -1,0 +1,114 @@
+{
+  "function": "recv_fd",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:recv_fd",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "if ((recvmsg(socket, &msg, 0) < 0))",
+      "line": 59
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 61
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 59
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 60
+    },
+    {
+      "id": 5,
+      "label": "if ((cmsg && cmsg->cmsg_level == SOL_SOCKET && cmsg->cmsg_type =)",
+      "line": 64
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 66
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 64
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 65
+    },
+    {
+      "id": 9,
+      "label": "return_statement",
+      "line": 68
+    },
+    {
+      "id": 10,
+      "label": "exit:recv_fd",
+      "line": 69
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 6,
+      "to": 10
+    }
+  ]
+}

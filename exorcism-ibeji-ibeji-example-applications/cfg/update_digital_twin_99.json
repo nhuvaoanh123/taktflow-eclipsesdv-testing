@@ -1,0 +1,21 @@
+{
+  "function": "update_digital_twin",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:update_digital_twin",
+      "line": 99
+    },
+    {
+      "id": 1,
+      "label": "exit:update_digital_twin",
+      "line": 178
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

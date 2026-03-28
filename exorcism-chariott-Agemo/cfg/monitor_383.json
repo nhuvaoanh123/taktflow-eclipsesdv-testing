@@ -1,0 +1,21 @@
+{
+  "function": "monitor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:monitor",
+      "line": 383
+    },
+    {
+      "id": 1,
+      "label": "exit:monitor",
+      "line": 464
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

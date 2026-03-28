@@ -1,0 +1,21 @@
+{
+  "function": "actuate_stream",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:actuate_stream",
+      "line": 480
+    },
+    {
+      "id": 1,
+      "label": "exit:actuate_stream",
+      "line": 566
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "from_file",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:from_file",
+      "line": 78
+    },
+    {
+      "id": 1,
+      "label": "exit:from_file",
+      "line": 114
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

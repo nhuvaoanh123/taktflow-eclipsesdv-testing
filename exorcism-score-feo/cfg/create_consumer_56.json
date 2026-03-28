@@ -1,0 +1,21 @@
+{
+  "function": "create_consumer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_consumer",
+      "line": 56
+    },
+    {
+      "id": 1,
+      "label": "exit:create_consumer",
+      "line": 84
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

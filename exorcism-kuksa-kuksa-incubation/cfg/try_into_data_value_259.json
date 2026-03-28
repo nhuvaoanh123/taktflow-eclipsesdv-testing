@@ -1,0 +1,21 @@
+{
+  "function": "try_into_data_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:try_into_data_value",
+      "line": 259
+    },
+    {
+      "id": 1,
+      "label": "exit:try_into_data_value",
+      "line": 387
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

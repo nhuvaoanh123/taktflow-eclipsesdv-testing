@@ -1,0 +1,11 @@
+{
+  "function": "resolveVersionIdentifier",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:resolveVersionIdentifier",
+      "line": 44
+    }
+  ],
+  "edges": []
+}

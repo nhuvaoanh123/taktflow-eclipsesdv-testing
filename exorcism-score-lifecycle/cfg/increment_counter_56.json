@@ -1,0 +1,21 @@
+{
+  "function": "increment_counter",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:increment_counter",
+      "line": 56
+    },
+    {
+      "id": 1,
+      "label": "exit:increment_counter",
+      "line": 59
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

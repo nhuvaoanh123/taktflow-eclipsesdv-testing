@@ -1,0 +1,72 @@
+{
+  "function": "FlagOwner",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FlagOwner",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "if ((this != &other))",
+      "line": 43
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 47
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 43
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 48
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 54
+    },
+    {
+      "id": 6,
+      "label": "exit:FlagOwner",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 2,
+      "to": 6
+    }
+  ]
+}

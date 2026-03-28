@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonBinding",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonBinding",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonBinding",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

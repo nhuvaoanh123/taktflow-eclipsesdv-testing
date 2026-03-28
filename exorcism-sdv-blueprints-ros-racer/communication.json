@@ -1,0 +1,20 @@
+{
+  "communication": [
+    {
+      "type": "MQTT_topic",
+      "topic": "/",
+      "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "/",
+      "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "/",
+      "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py"
+    }
+  ],
+  "count": 3
+}

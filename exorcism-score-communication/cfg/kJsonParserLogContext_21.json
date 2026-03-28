@@ -1,0 +1,21 @@
+{
+  "function": "kJsonParserLogContext",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kJsonParserLogContext",
+      "line": 21
+    },
+    {
+      "id": 1,
+      "label": "exit:kJsonParserLogContext",
+      "line": 54
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Testing_Tools — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Score Testing_Tools</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Score Testing_Tools</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">SCORE</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">36</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">5,732</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">345</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">1.9</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>SCORE (Safety-Critical Open-source Reference Environment) is an Eclipse project providing safety-certified base libraries and middleware for safety-critical automotive ECUs. It targets ASIL-B/D requirements with components for communication (SOME/IP), logging, lifecycle management, and more.</p>
+    <p><strong>Project:</strong> <code>score-testing_tools</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>Bazel, Python/pyproject</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">Python</span>, <span class="tag">Rust</span>, <span class="tag">C++</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>Safety-critical vehicle systems (braking, steering, ADAS) need software components that meet ISO 26262 functional safety requirements. SCORE provides pre-certified building blocks.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by Tier-1 automotive suppliers and OEMs building safety-critical ECU software.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>Python</td><td>15</td><td>3,669</td></tr><tr><td>Rust</td><td>5</td><td>853</td></tr><tr><td>C++</td><td>16</td><td>1,210</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: score-testing_tools</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>Python, Rust, C++</td></tr>
+<tr><td>Build System</td><td>Bazel, Python/pyproject</td></tr>
+<tr><td>Total Files</td><td>36</td></tr>
+<tr><td>Total LOC</td><td>5,732</td></tr>
+<tr><td>Total Functions</td><td>345</td></tr>
+<tr><td>State Machines</td><td>0</td></tr>
+<tr><td>Communication Patterns</td><td>0</td></tr>
+<tr><td>External Dependencies</td><td>53</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>Python</strong>: 15 files, 3,669 LOC</li>
+<li><strong>Rust</strong>: 5 files, 853 LOC</li>
+<li><strong>C++</strong>: 16 files, 1,210 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>Bazel, Python/pyproject</strong></p>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>parse<em>cli</em>arguments (test<em>scenarios</em>rust/src/cli.rs:58) cc=11</li>
+<li>run<em>cli</em>app (test<em>scenarios</em>rust/src/cli.rs:113) cc=11</li>
+<li>minify<em>json (test</em>scenarios_cpp/src/tracing.cpp:25) cc=26</li>
+<li>&lt;anonymous&gt; (test<em>scenarios</em>cpp/src/tracing.cpp:67) cc=13</li>
+<li>&lt;anonymous&gt; (test<em>scenarios</em>cpp/src/scenario.cpp:34) cc=11</li>
+<li>parse<em>cli</em>arguments (test<em>scenarios</em>cpp/src/cli.cpp:21) cc=33</li>
+<li>run<em>cli</em>app (test<em>scenarios</em>cpp/src/cli.cpp:53) cc=22</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li><strong>init</strong> (testing<em>utils/result</em>entry.py:34) depth=7</li>
+<li>select<em>target</em>path (testing<em>utils/build</em>tools.py:112) depth=5</li>
+<li>metadata (testing<em>utils/build</em>tools.py:193) depth=5</li>
+<li>build (testing<em>utils/build</em>tools.py:236) depth=5</li>
+<li>query (testing<em>utils/build</em>tools.py:312) depth=5</li>
+<li>find<em>target</em>path (testing<em>utils/build</em>tools.py:333) depth=5</li>
+<li>build (testing<em>utils/build</em>tools.py:379) depth=5</li>
+<li><strong>repr</strong> (testing_utils/scenario.py:48) depth=5</li>
+<li><em>run</em>command (testing_utils/scenario.py:135) depth=5</li>
+<li>get<em>caps (testing</em>utils/cap_utils.py:16) depth=5</li>
+<li>set<em>caps (testing</em>utils/cap_utils.py:53) depth=5</li>
+<li><em>logs</em>by<em>field</em>field<em>only (testing</em>utils/log_container.py:83) depth=7</li>
+<li><em>logs</em>by<em>field</em>regex<em>match (testing</em>utils/log_container.py:107) depth=7</li>
+<li><em>logs</em>by<em>field</em>exact<em>match (testing</em>utils/log_container.py:141) depth=7</li>
+<li>get<em>logs (testing</em>utils/log_container.py:220) depth=5</li>
+<li><em>find</em>visibility (scripts/coverage<em>checker/coverage</em>checker.py:130) depth=5</li>
+<li><em>find</em>name (scripts/coverage<em>checker/coverage</em>checker.py:153) depth=5</li>
+<li><strong>init</strong> (scripts/coverage<em>checker/coverage</em>checker.py:239) depth=7</li>
+<li>filter<em>visibility (scripts/coverage</em>checker/coverage_checker.py:325) depth=7</li>
+<li>filter<em>item</em>type (scripts/coverage<em>checker/coverage</em>checker.py:343) depth=9</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<p><em>None</em></p>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 345 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 38 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 0 state machine patterns</li>
+<li><code>metrics.json</code> — 345 function metrics</li>
+<li><code>communication.json</code> — 0 protocol patterns</li>
+<li><code>dependencies.json</code> — 53 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>parse_cli_arguments</code></td>
+              <td><span class="badge badge-red">33 (High)</span></td>
+              <td>5</td>
+              <td>31</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>test_scenarios_cpp/src/cli.cpp</small></td>
+            </tr><tr>
+              <td><code>minify_json</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>4</td>
+              <td>19</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>test_scenarios_cpp/src/tracing.cpp</small></td>
+            </tr><tr>
+              <td><code>run_cli_app</code></td>
+              <td><span class="badge badge-red">22 (High)</span></td>
+              <td>2</td>
+              <td>38</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>test_scenarios_cpp/src/cli.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">13 (High)</span></td>
+              <td>1</td>
+              <td>43</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>test_scenarios_cpp/src/tracing.cpp</small></td>
+            </tr><tr>
+              <td><code>parse_cli_arguments</code></td>
+              <td><span class="badge badge-red">11 (High)</span></td>
+              <td>6</td>
+              <td>36</td>
+              <td>1</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>test_scenarios_rust/src/cli.rs</small></td>
+            </tr><tr>
+              <td><code>run_cli_app</code></td>
+              <td><span class="badge badge-red">11 (High)</span></td>
+              <td>5</td>
+              <td>44</td>
+              <td>2</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>test_scenarios_rust/src/cli.rs</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">11 (High)</span></td>
+              <td>2</td>
+              <td>19</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>test_scenarios_cpp/src/scenario.cpp</small></td>
+            </tr><tr>
+              <td><code>select_target_path</code></td>
+              <td><span class="badge badge-yellow">10 (Medium)</span></td>
+              <td>5</td>
+              <td>38</td>
+              <td>4</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/build_tools.py</small></td>
+            </tr><tr>
+              <td><code>filter_item_type</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>9</td>
+              <td>30</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>_logs_by_field</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>31</td>
+              <td>6</td>
+              <td></td>
+              <td><small>testing_utils/log_container.py</small></td>
+            </tr><tr>
+              <td><code>find_scenario</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>6</td>
+              <td>18</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>test_scenarios_rust/src/scenario.rs</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>2</td>
+              <td>11</td>
+              <td>0</td>
+              <td></td>
+              <td><small>test_scenarios_cpp/src/string_utils.cpp</small></td>
+            </tr><tr>
+              <td><code>_logs_by_field_regex_match</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>7</td>
+              <td>33</td>
+              <td>5</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/log_container.py</small></td>
+            </tr><tr>
+              <td><code>_logs_by_field_exact_match</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>7</td>
+              <td>28</td>
+              <td>5</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/log_container.py</small></td>
+            </tr><tr>
+              <td><code>__init__</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>7</td>
+              <td>37</td>
+              <td>4</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>run</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>9</td>
+              <td>0</td>
+              <td></td>
+              <td><small>test_scenarios_cpp/tests/common.hpp</small></td>
+            </tr><tr>
+              <td><code>_logs_by_field_field_only</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>7</td>
+              <td>23</td>
+              <td>4</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/log_container.py</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>25</td>
+              <td>0</td>
+              <td></td>
+              <td><small>test_scenarios_cpp/src/string_utils.cpp</small></td>
+            </tr><tr>
+              <td><code>join_name</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>1</td>
+              <td>9</td>
+              <td>0</td>
+              <td></td>
+              <td><small>test_scenarios_cpp/src/test_context.cpp</small></td>
+            </tr><tr>
+              <td><code>__init__</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>7</td>
+              <td>15</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/result_entry.py</small></td>
+            </tr><tr>
+              <td><code>find_target_path</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>5</td>
+              <td>45</td>
+              <td>4</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/build_tools.py</small></td>
+            </tr><tr>
+              <td><code>add_log</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>3</td>
+              <td>15</td>
+              <td>2</td>
+              <td></td>
+              <td><small>testing_utils/log_container.py</small></td>
+            </tr><tr>
+              <td><code>filter_visibility</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>7</td>
+              <td>17</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>add_comments_from_reference</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>7</td>
+              <td>16</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>count_leaf_nodes_with_comment</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>5</td>
+              <td>14</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>run</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>7</td>
+              <td>2</td>
+              <td></td>
+              <td><small>test_scenarios_rust/src/cli.rs</small></td>
+            </tr><tr>
+              <td><code>run</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>7</td>
+              <td>2</td>
+              <td></td>
+              <td><small>test_scenarios_rust/src/test_context.rs</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>1</td>
+              <td>9</td>
+              <td>0</td>
+              <td></td>
+              <td><small>test_scenarios_cpp/src/test_context.cpp</small></td>
+            </tr><tr>
+              <td><code>build</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>35</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/build_tools.py</small></td>
+            </tr><tr>
+              <td><code>_run_command</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>25</td>
+              <td>5</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/scenario.py</small></td>
+            </tr><tr>
+              <td><code>get_caps</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>35</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/cap_utils.py</small></td>
+            </tr><tr>
+              <td><code>get_logs</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>29</td>
+              <td>5</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/log_container.py</small></td>
+            </tr><tr>
+              <td><code>family</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>10</td>
+              <td>1</td>
+              <td></td>
+              <td><small>testing_utils/net/address.py</small></td>
+            </tr><tr>
+              <td><code>__str__</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>testing_utils/net/address.py</small></td>
+            </tr><tr>
+              <td><code>_find_visibility</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>22</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>_find_name</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>16</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>process_line</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>18</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>run</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>7</td>
+              <td>3</td>
+              <td></td>
+              <td><small>test_scenarios_rust/src/test_context.rs</small></td>
+            </tr><tr>
+              <td><code>__init__</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>28</td>
+              <td>4</td>
+              <td></td>
+              <td><small>testing_utils/build_tools.py</small></td>
+            </tr><tr>
+              <td><code>find_target_path</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>26</td>
+              <td>4</td>
+              <td></td>
+              <td><small>testing_utils/build_tools.py</small></td>
+            </tr><tr>
+              <td><code>__repr__</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>5</td>
+              <td>8</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/scenario.py</small></td>
+            </tr><tr>
+              <td><code>logs</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>27</td>
+              <td>4</td>
+              <td></td>
+              <td><small>testing_utils/scenario.py</small></td>
+            </tr><tr>
+              <td><code>set_caps</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>5</td>
+              <td>30</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>testing_utils/cap_utils.py</small></td>
+            </tr><tr>
+              <td><code>find_log</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>27</td>
+              <td>5</td>
+              <td></td>
+              <td><small>testing_utils/log_container.py</small></td>
+            </tr><tr>
+              <td><code>__init__</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>1</td>
+              <td>14</td>
+              <td>2</td>
+              <td></td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>next</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>13</td>
+              <td>1</td>
+              <td></td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>_find_node_by_unique_name</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>5</td>
+              <td>14</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>count_leaf_nodes</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>5</td>
+              <td>10</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>process_input</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>5</td>
+              <td>21</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>scripts/coverage_checker/coverage_checker.py</small></td>
+            </tr><tr>
+              <td><code>join_name</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>7</td>
+              <td>2</td>
+              <td></td>
+              <td><small>test_scenarios_rust/src/test_context.rs</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>logs</code></td>
+              <td>13</td>
+              <td><small>list, len, LogContainer, messages.sort, m.startswith, map, filter, ResultEntry …</small></td>
+              <td><small>testing_utils/scenario.py:182</small></td>
+            </tr><tr>
+              <td><code>build</code></td>
+              <td>11</td>
+              <td><small>Path, list, len, self.find_target_path, p.communicate, self._command_str, self.metadata, filter …</small></td>
+              <td><small>testing_utils/build_tools.py:236</small></td>
+            </tr><tr>
+              <td><code>parse_cli_arguments</code></td>
+              <td>11</td>
+              <td><small>Err, clone, to_string, iter, as_str, skip, CliArguments::default, Ok …</small></td>
+              <td><small>test_scenarios_rust/src/cli.rs:58</small></td>
+            </tr><tr>
+              <td><code>find_target_path</code></td>
+              <td>9</td>
+              <td><small>Path, target_str.strip, ws_str.strip, p.communicate, self._command_str, target_path.exists, logger.debug, RuntimeError …</small></td>
+              <td><small>testing_utils/build_tools.py:333</small></td>
+            </tr><tr>
+              <td><code>_run_command</code></td>
+              <td>9</td>
+              <td><small>logger.info, p.communicate, p.kill, &#x27; &#x27;.join, self.capture_stderr, logger.debug, logger.warning, Popen …</small></td>
+              <td><small>testing_utils/scenario.py:135</small></td>
+            </tr><tr>
+              <td><code>get_caps</code></td>
+              <td>9</td>
+              <td><small>len, names.split, re.split, p.communicate, logger.debug, lines[0].split, RuntimeError, Popen …</small></td>
+              <td><small>testing_utils/cap_utils.py:16</small></td>
+            </tr><tr>
+              <td><code>set_caps</code></td>
+              <td>9</td>
+              <td><small>&quot; &quot;.join, caps_list.append, p.communicate, &#x27; &#x27;.join, logger.debug, RuntimeError, Popen, caps.items …</small></td>
+              <td><small>testing_utils/cap_utils.py:53</small></td>
+            </tr><tr>
+              <td><code>_logs_by_field_regex_match</code></td>
+              <td>9</td>
+              <td><small>getattr, len, isinstance, logs.append, TypeError, logger.debug, re.compile, regex.search …</small></td>
+              <td><small>testing_utils/log_container.py:107</small></td>
+            </tr><tr>
+              <td><code>run_cli_app</code></td>
+              <td>9</td>
+              <td><small>Err, to_string, println, list_scenarios, Ok, is_empty, parse_cli_arguments, eprintln …</small></td>
+              <td><small>test_scenarios_rust/src/cli.rs:113</small></td>
+            </tr><tr>
+              <td><code>list_scenarios_recursive</code></td>
+              <td>9</td>
+              <td><small>list_scenarios_recursive, extend, Vec::new, name, groups, join_name, scenarios, as_ref …</small></td>
+              <td><small>test_scenarios_rust/src/test_context.rs:23</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (0 detected)</h3>
+  <p><em>No state machines detected.</em></p>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <p><em>No functions exceed 100 lines.</em></p>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    score-testing_tools[&#x27;Score Testing_Tools&#x27;]
+    note[&#x27;No external interfaces detected&#x27;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  <p><em>No communication patterns detected.</em></p>
+
+  <h3>Dependencies</h3>
+  <h3>External Dependencies</h3><ul><li><code>{&#x27;name&#x27;: &#x27;testing-utils&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;0&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;pytest&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;pytest-html&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;pytest-repeat&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;Igor&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;igor&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;Piotr&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;piotr&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;Arkadiusz&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;arkadiusz&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;Test&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;README&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;setuptools&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;testing_utils&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;ruff&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;__pypackages__&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;_build&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;buck-out&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;build&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;dist&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;node_modules&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;venv&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;FBT&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;B&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;A&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;C4&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;FIX&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;ISC&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;PIE&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;T20&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;PT&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;RSE&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;RET501&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;RET502&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;RET503&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;RET504&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;SLF&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;SIM&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;TC&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li></ul>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: Bazel, Python/pyproject</h3>
+    <pre><code># Check the project README for build instructions.
+# Common patterns:
+#   Rust: cargo build --release
+#   Python: pip install -r requirements.txt &amp;&amp; python3 main.py
+#   C/C++: mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make
+#   Java/Maven: mvn clean install
+#   Bazel: bazel build //...</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">Python</span> toolchain required</li><li><span class="tag">Rust</span> toolchain required</li><li><span class="tag">C++</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">1.9</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">7</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">0</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">3</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>parse_cli_arguments</code></td><td><span class="badge badge-red">33 (High)</span></td><td>31</td><td><small>test_scenarios_cpp/src/cli.cpp:21</small></td></tr><tr><td><code>minify_json</code></td><td><span class="badge badge-red">26 (High)</span></td><td>19</td><td><small>test_scenarios_cpp/src/tracing.cpp:25</small></td></tr><tr><td><code>run_cli_app</code></td><td><span class="badge badge-red">22 (High)</span></td><td>38</td><td><small>test_scenarios_cpp/src/cli.cpp:53</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">13 (High)</span></td><td>43</td><td><small>test_scenarios_cpp/src/tracing.cpp:67</small></td></tr><tr><td><code>parse_cli_arguments</code></td><td><span class="badge badge-red">11 (High)</span></td><td>36</td><td><small>test_scenarios_rust/src/cli.rs:58</small></td></tr><tr><td><code>run_cli_app</code></td><td><span class="badge badge-red">11 (High)</span></td><td>44</td><td><small>test_scenarios_rust/src/cli.rs:113</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">11 (High)</span></td><td>19</td><td><small>test_scenarios_cpp/src/scenario.cpp:34</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>minify_json</code> — CC 26, nesting 4 in test_scenarios_cpp/src/tracing.cpp</li><li><span class="badge badge-red">Risk</span> <code>parse_cli_arguments</code> — CC 33, nesting 5 in test_scenarios_cpp/src/cli.cpp</li><li><span class="badge badge-red">Risk</span> <code>run_cli_app</code> — CC 22, nesting 2 in test_scenarios_cpp/src/cli.cpp</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

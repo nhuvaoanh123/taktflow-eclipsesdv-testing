@@ -1,0 +1,21 @@
+{
+  "function": "notifyInitiator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:notifyInitiator",
+      "line": 203
+    },
+    {
+      "id": 1,
+      "label": "exit:notifyInitiator",
+      "line": 211
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

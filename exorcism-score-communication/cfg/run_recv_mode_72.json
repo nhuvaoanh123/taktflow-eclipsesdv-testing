@@ -1,0 +1,21 @@
+{
+  "function": "run_recv_mode",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:run_recv_mode",
+      "line": 72
+    },
+    {
+      "id": 1,
+      "label": "exit:run_recv_mode",
+      "line": 98
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

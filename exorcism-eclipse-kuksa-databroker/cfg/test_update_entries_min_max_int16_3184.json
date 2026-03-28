@@ -1,0 +1,21 @@
+{
+  "function": "test_update_entries_min_max_int16",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_update_entries_min_max_int16",
+      "line": 3184
+    },
+    {
+      "id": 1,
+      "label": "exit:test_update_entries_min_max_int16",
+      "line": 3218
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

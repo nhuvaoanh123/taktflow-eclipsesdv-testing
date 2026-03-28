@@ -1,0 +1,30 @@
+{
+  "function": "get_hash_bytes_adler32",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_hash_bytes_adler32",
+      "line": 56
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 62
+    },
+    {
+      "id": 2,
+      "label": "exit:get_hash_bytes_adler32",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

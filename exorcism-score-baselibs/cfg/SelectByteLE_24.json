@@ -1,0 +1,30 @@
+{
+  "function": "SelectByteLE",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SelectByteLE",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 26
+    },
+    {
+      "id": 2,
+      "label": "exit:SelectByteLE",
+      "line": 27
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

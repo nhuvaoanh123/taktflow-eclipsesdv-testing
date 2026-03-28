@@ -1,0 +1,63 @@
+{
+  "function": "_add_logs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_add_logs",
+      "line": 272
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 282
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 288
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 282
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 282
+    },
+    {
+      "id": 5,
+      "label": "exit:_add_logs",
+      "line": 288
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

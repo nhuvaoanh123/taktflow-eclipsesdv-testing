@@ -1,0 +1,21 @@
+{
+  "function": "expect_startup",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:expect_startup",
+      "line": 152
+    },
+    {
+      "id": 1,
+      "label": "exit:expect_startup",
+      "line": 165
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

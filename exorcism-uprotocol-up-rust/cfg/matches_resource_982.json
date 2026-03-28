@@ -1,0 +1,21 @@
+{
+  "function": "matches_resource",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:matches_resource",
+      "line": 982
+    },
+    {
+      "id": 1,
+      "label": "exit:matches_resource",
+      "line": 984
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

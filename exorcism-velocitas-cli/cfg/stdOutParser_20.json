@@ -1,0 +1,11 @@
+{
+  "function": "stdOutParser",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stdOutParser",
+      "line": 20
+    }
+  ],
+  "edges": []
+}

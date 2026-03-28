@@ -1,0 +1,21 @@
+{
+  "function": "NameFlag",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:NameFlag",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:NameFlag",
+      "line": 61
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

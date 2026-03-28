@@ -1,0 +1,21 @@
+{
+  "function": "create_polling_thread",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_polling_thread",
+      "line": 187
+    },
+    {
+      "id": 1,
+      "label": "exit:create_polling_thread",
+      "line": 289
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "matches_entity_type",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:matches_entity_type",
+      "line": 962
+    },
+    {
+      "id": 1,
+      "label": "exit:matches_entity_type",
+      "line": 964
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

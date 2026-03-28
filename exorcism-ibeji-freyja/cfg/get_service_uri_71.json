@@ -1,0 +1,21 @@
+{
+  "function": "get_service_uri",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_service_uri",
+      "line": 71
+    },
+    {
+      "id": 1,
+      "label": "exit:get_service_uri",
+      "line": 127
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

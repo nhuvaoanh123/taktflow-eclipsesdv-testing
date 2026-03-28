@@ -1,0 +1,21 @@
+{
+  "function": "detail_event_data_control_composite",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:detail_event_data_control_composite",
+      "line": 49
+    },
+    {
+      "id": 1,
+      "label": "exit:detail_event_data_control_composite",
+      "line": 53
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

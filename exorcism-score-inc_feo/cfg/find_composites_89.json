@@ -1,0 +1,21 @@
+{
+  "function": "find_composites",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:find_composites",
+      "line": 89
+    },
+    {
+      "id": 1,
+      "label": "exit:find_composites",
+      "line": 175
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

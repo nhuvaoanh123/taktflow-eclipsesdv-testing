@@ -1,0 +1,21 @@
+{
+  "function": "TestSetSUInstallContext",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestSetSUInstallContext",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:TestSetSUInstallContext",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

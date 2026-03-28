@@ -1,0 +1,88 @@
+{
+  "function": "export_node",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:export_node",
+      "line": 102
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 113
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 114
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 113
+    },
+    {
+      "id": 4,
+      "label": "loop (for_statement)",
+      "line": 121
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 122
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 121
+    },
+    {
+      "id": 7,
+      "label": "exit:export_node",
+      "line": 122
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 7
+    }
+  ]
+}

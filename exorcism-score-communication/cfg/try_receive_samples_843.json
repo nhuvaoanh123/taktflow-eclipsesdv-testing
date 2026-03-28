@@ -1,0 +1,21 @@
+{
+  "function": "try_receive_samples",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:try_receive_samples",
+      "line": 843
+    },
+    {
+      "id": 1,
+      "label": "exit:try_receive_samples",
+      "line": 873
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

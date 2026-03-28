@@ -1,0 +1,1051 @@
+[
+  {
+    "function": "setup_logging",
+    "file": "src/main.rs",
+    "line": 90,
+    "calls": [
+      "init",
+      "module",
+      "stderrlog::new",
+      "Ok",
+      "module_path",
+      "verbosity"
+    ]
+  },
+  {
+    "function": "check_if_duplicate_paths",
+    "file": "src/main.rs",
+    "line": 98,
+    "calls": [
+      "clone",
+      "println",
+      "insert",
+      "HashSet::new"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "src/main.rs",
+    "line": 113,
+    "calls": [
+      "cfg",
+      "Args::parse",
+      "setup_logging",
+      "setup_shutdown_handler",
+      "println",
+      "contains",
+      "Ok",
+      "read_config",
+      "perform_measurement",
+      "matches",
+      "as_ref",
+      "is_some",
+      "std::process::exit",
+      "check_if_duplicate_paths",
+      "eprintln"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/measure.rs",
+    "line": 104,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "create_receiving_end",
+    "file": "src/measure.rs",
+    "line": 113,
+    "calls": [
+      "unwrap_or",
+      "unwrap",
+      "s_kuksa_val_v1::ReceivingEnd::new",
+      "Ok",
+      "Box::new",
+      "s_sdv_databroker_v1::ReceivingEnd::new",
+      "s_kuksa_val_v2::ReceivingEnd::new"
+    ]
+  },
+  {
+    "function": "create_unix_socket_channel",
+    "file": "src/measure.rs",
+    "line": 152,
+    "calls": [
+      "clone",
+      "with_context",
+      "connect_with_connector",
+      "tonic::transport::Endpoint::try_from",
+      "service_fn",
+      "UnixStream::connect",
+      "format",
+      "as_ref",
+      "PathBuf::from"
+    ]
+  },
+  {
+    "function": "create_tcp_channel",
+    "file": "src/measure.rs",
+    "line": 164,
+    "calls": [
+      "connect",
+      "clone",
+      "tonic::transport::Channel::from_shared",
+      "unwrap_or",
+      "to_string",
+      "uri",
+      "map_or",
+      "initial_stream_window_size",
+      "timeout",
+      "with_context",
+      "keep_alive_timeout",
+      "Ok",
+      "initial_connection_window_size",
+      "format",
+      "host",
+      "port",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "create_triggering_end",
+    "file": "src/measure.rs",
+    "line": 189,
+    "calls": [
+      "p_kuksa_val_v1::TriggeringEnd::new",
+      "p_kuksa_val_v2::TriggeringEnd::new",
+      "with_context",
+      "Ok",
+      "Box::new",
+      "p_sdv_databroker_v1::TriggeringEnd::new"
+    ]
+  },
+  {
+    "function": "perform_measurement",
+    "file": "src/measure.rs",
+    "line": 215,
+    "calls": [
+      "assert",
+      "JoinSet::new",
+      "load",
+      "write_global_output",
+      "Vec::<MeasurementResult>::new",
+      "println",
+      "set_initial_signals_values",
+      "create_tcp_channel",
+      "tokio::sync::mpsc::channel::<HashMap<Signal, DataValue>>",
+      "Ok",
+      "Instant::now",
+      "task::spawn",
+      "create_unix_socket_channel",
+      "is_none",
+      "clone",
+      "join_next",
+      "find",
+      "iter",
+      "spawn",
+      "with_style",
+      "as_millis",
+      "push",
+      "as_slice",
+      "ProgressBar::new_spinner",
+      "write_output",
+      "as_mut",
+      "ProgressStyle::with_template",
+      "Histogram::<u64>::new_with_bounds",
+      "Duration::from_millis",
+      "send",
+      "set_position",
+      "tick",
+      "finish",
+      "Vec::new",
+      "store",
+      "panic",
+      "Duration::default",
+      "error",
+      "tick_chars",
+      "elapsed",
+      "measurement_loop",
+      "SystemTime::now",
+      "validate_signals_metadata",
+      "unwrap",
+      "as_secs",
+      "ProgressBar::new",
+      "is_err",
+      "recv",
+      "progress_chars",
+      "create_triggering_end",
+      "create_receiving_end"
+    ]
+  },
+  {
+    "function": "measurement_loop",
+    "file": "src/measure.rs",
+    "line": 405,
+    "calls": [
+      "trigger",
+      "JoinSet::new",
+      "load",
+      "tokio::time::interval",
+      "Ok",
+      "unwrap_or_else",
+      "Instant::now",
+      "try_into",
+      "join_next",
+      "spawn",
+      "as_millis",
+      "subscribe",
+      "as_mut",
+      "Duration::from_millis",
+      "as_micros",
+      "error",
+      "select",
+      "Some",
+      "elapsed",
+      "unwrap",
+      "into",
+      "get_receiver",
+      "duration_since",
+      "map",
+      "record",
+      "as_ref",
+      "push",
+      "tokio::select"
+    ]
+  },
+  {
+    "function": "shutdown_handler",
+    "file": "src/shutdown.rs",
+    "line": 35,
+    "calls": [
+      "SignalKind::terminate",
+      "signal",
+      "SignalKind::interrupt",
+      "select",
+      "expect"
+    ]
+  },
+  {
+    "function": "setup_shutdown_handler",
+    "file": "src/shutdown.rs",
+    "line": 47,
+    "calls": [
+      "clone",
+      "shutdown_handler",
+      "AtomicBool::new",
+      "tokio::spawn",
+      "broadcast::channel::<",
+      "Arc::new",
+      "store",
+      "is_err",
+      "info",
+      "send"
+    ]
+  },
+  {
+    "function": "read_config",
+    "file": "src/utils.rs",
+    "line": 34,
+    "calls": [
+      "open",
+      "read",
+      "with_context",
+      "Ok",
+      "from_reader",
+      "OpenOptions::new",
+      "format",
+      "vec"
+    ]
+  },
+  {
+    "function": "print_latency_histogram",
+    "file": "src/utils.rs",
+    "line": 88,
+    "calls": [
+      "Vec::with_capacity",
+      "value_iterated_to",
+      "len",
+      "size",
+      "max",
+      "repeat",
+      "iter_linear",
+      "Ok",
+      "debug",
+      "count_since_last_iteration",
+      "writeln",
+      "min",
+      "skip_while",
+      "push"
+    ]
+  },
+  {
+    "function": "print_latency_distribution",
+    "file": "src/utils.rs",
+    "line": 121,
+    "calls": [
+      "writeln",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_global_output",
+    "file": "src/utils.rs",
+    "line": 132,
+    "calls": [
+      "clone",
+      "unwrap",
+      "len",
+      "duration_since",
+      "Term::stdout",
+      "as_secs",
+      "by_ref",
+      "Ok",
+      "print_latency_distribution",
+      "print_latency_histogram",
+      "Duration::default",
+      "writeln",
+      "Histogram::<u64>::new_with_bounds",
+      "SystemTime::now"
+    ]
+  },
+  {
+    "function": "write_output",
+    "file": "src/utils.rs",
+    "line": 220,
+    "calls": [
+      "unwrap",
+      "output_latency_to_file",
+      "len",
+      "into",
+      "duration_since",
+      "Term::stdout",
+      "as_secs",
+      "by_ref",
+      "Ok",
+      "print_latency_histogram",
+      "writeln",
+      "format",
+      "print_latency_distribution",
+      "SystemTime::now"
+    ]
+  },
+  {
+    "function": "output_latency_to_file",
+    "file": "src/utils.rs",
+    "line": 316,
+    "calls": [
+      "to_string",
+      "File::create",
+      "iter",
+      "flush",
+      "Ok",
+      "format",
+      "Writer::from_writer",
+      "fs::create_dir_all",
+      "write_record"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/triggering_ends/kuksa_val_v2/conversions.rs",
+    "line": 18,
+    "calls": [
+      "DataValue::Uint32",
+      "clone",
+      "DataValue::Bool",
+      "DataValue::FloatArray",
+      "DataValue::Uint32Array",
+      "DataValue::Int64",
+      "DataValue::Uint64Array",
+      "DataValue::Int32Array",
+      "DataValue::Uint64",
+      "DataValue::Double",
+      "DataValue::DoubleArray",
+      "DataValue::String",
+      "DataValue::Float",
+      "DataValue::BoolArray",
+      "DataValue::Int64Array",
+      "DataValue::Int32",
+      "to_owned",
+      "DataValue::StringArray"
+    ]
+  },
+  {
+    "function": "build_registration_signal_request",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "line": 52,
+    "calls": [
+      "iter",
+      "map",
+      "open_provider_stream_request::Action::ProvideSignalRequest",
+      "Some",
+      "collect"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "line": 66,
+    "calls": [
+      "clone",
+      "mpsc::channel",
+      "tokio::spawn",
+      "Ok",
+      "TriggeringEnd::open_provider_stream",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "open_provider_stream",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "line": 85,
+    "calls": [
+      "into_inner",
+      "proto::val_client::ValClient::new",
+      "clone",
+      "iter",
+      "TriggerError::SendFailure",
+      "Ok::<",
+      "unwrap",
+      "tokio::spawn",
+      "Ok",
+      "is_empty",
+      "Error::TriggerError",
+      "debug",
+      "next",
+      "open_provider_stream",
+      "error",
+      "Err::<",
+      "ReceiverStream::new",
+      "message"
+    ]
+  },
+  {
+    "function": "trigger",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "line": 133,
+    "calls": [
+      "tonic::Request::new",
+      "Ok",
+      "Instant::now",
+      "get",
+      "to_string",
+      "clone",
+      "Err",
+      "iter",
+      "proto::signal_id::Signal::Id",
+      "send",
+      "proto::val_client::ValClient::new",
+      "TriggerError::SendFailure",
+      "Some",
+      "batch_actuate",
+      "DataValue::from",
+      "unwrap",
+      "open_provider_stream_request::Action::PublishValuesRequest",
+      "map",
+      "n_to_value",
+      "HashMap::from_iter",
+      "map_err",
+      "Vec::from_iter"
+    ]
+  },
+  {
+    "function": "validate_signals_metadata",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "line": 227,
+    "calls": [
+      "Ok",
+      "contains_key",
+      "Error::TriggerError",
+      "to_string",
+      "clone",
+      "into_inner",
+      "Err",
+      "iter",
+      "TriggerError::NoActuator",
+      "max_decoding_message_size",
+      "insert",
+      "list_metadata",
+      "send",
+      "eprintln",
+      "Vec::with_capacity",
+      "proto::val_client::ValClient::new",
+      "max_encoding_message_size",
+      "as_str",
+      "filter",
+      "keys",
+      "Some",
+      "Error::MetadataError",
+      "len",
+      "build_registration_signal_request",
+      "map",
+      "debug",
+      "format",
+      "cloned",
+      "push",
+      "collect"
+    ]
+  },
+  {
+    "function": "set_initial_signals_values",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "line": 304,
+    "calls": [
+      "Ok"
+    ]
+  },
+  {
+    "function": "n_to_value",
+    "file": "src/triggering_ends/kuksa_val_v2/triggering_end.rs",
+    "line": 313,
+    "calls": [
+      "proto::value::TypedValue::Uint32Array",
+      "Ok",
+      "proto::value::TypedValue::Float",
+      "and_then",
+      "proto::value::TypedValue::Uint64",
+      "Err",
+      "clone",
+      "to_string",
+      "unwrap_or",
+      "proto::value::TypedValue::Int32",
+      "proto::value::TypedValue::Double",
+      "proto::DataType::try_from",
+      "proto::value::TypedValue::Int64",
+      "Some",
+      "proto::value::TypedValue::StringArray",
+      "vec",
+      "unwrap",
+      "proto::value::TypedValue::Uint32",
+      "len",
+      "proto::value::TypedValue::Bool",
+      "into",
+      "is_some",
+      "proto::value::TypedValue::String"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "line": 44,
+    "calls": [
+      "clone",
+      "TriggeringEnd::run",
+      "mpsc::channel",
+      "tokio::spawn",
+      "Ok",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "line": 57,
+    "calls": [
+      "into_inner",
+      "unwrap",
+      "as_str_name",
+      "proto::DatapointError::try_from",
+      "Ok",
+      "debug",
+      "stream_datapoints",
+      "error",
+      "ReceiverStream::new",
+      "proto::collector_client::CollectorClient::new",
+      "message"
+    ]
+  },
+  {
+    "function": "trigger",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "line": 96,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "iter",
+      "TriggerError::SendFailure",
+      "map_err",
+      "Ok",
+      "map",
+      "n_to_value",
+      "Instant::now",
+      "HashMap::from_iter",
+      "get",
+      "Some",
+      "send"
+    ]
+  },
+  {
+    "function": "validate_signals_metadata",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "line": 122,
+    "calls": [
+      "tonic::Request::new",
+      "Ok",
+      "contains_key",
+      "Err",
+      "clone",
+      "into_inner",
+      "iter",
+      "get_metadata",
+      "max_decoding_message_size",
+      "insert",
+      "proto::broker_client::BrokerClient::new",
+      "max_encoding_message_size",
+      "as_str",
+      "filter",
+      "Some",
+      "Error::MetadataError",
+      "len",
+      "map_err",
+      "into_iter",
+      "map",
+      "debug",
+      "format",
+      "collect"
+    ]
+  },
+  {
+    "function": "set_initial_signals_values",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "line": 173,
+    "calls": [
+      "Ok"
+    ]
+  },
+  {
+    "function": "n_to_value",
+    "file": "src/triggering_ends/sdv_databroker_v1/triggering_end.rs",
+    "line": 182,
+    "calls": [
+      "proto::datapoint::Value::Uint32Value",
+      "println",
+      "Ok",
+      "and_then",
+      "proto::datapoint::Value::Int32Value",
+      "proto::datapoint::Value::StringArray",
+      "Err",
+      "clone",
+      "to_string",
+      "unwrap_or",
+      "proto::datapoint::Value::FloatValue",
+      "proto::DataType::try_from",
+      "proto::datapoint::Value::Uint32Array",
+      "proto::datapoint::Value::BoolValue",
+      "proto::datapoint::Value::DoubleValue",
+      "proto::datapoint::Value::Int64Value",
+      "Some",
+      "vec",
+      "unwrap",
+      "len",
+      "proto::datapoint::Value::Uint64Value",
+      "into",
+      "is_some",
+      "proto::datapoint::Value::StringValue"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/triggering_ends/kuksa_val_v1/conversions.rs",
+    "line": 18,
+    "calls": [
+      "to_string",
+      "DataValue::Uint32",
+      "clone",
+      "DataValue::Bool",
+      "DataValue::FloatArray",
+      "DataValue::Uint32Array",
+      "DataValue::Int64",
+      "DataValue::Uint64Array",
+      "DataValue::Int32Array",
+      "DataValue::Uint64",
+      "DataValue::Double",
+      "DataValue::DoubleArray",
+      "DataValue::String",
+      "DataValue::Float",
+      "DataValue::BoolArray",
+      "DataValue::Int64Array",
+      "DataValue::Int32",
+      "DataValue::StringArray"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "line": 43,
+    "calls": [
+      "clone",
+      "TriggeringEnd::run",
+      "mpsc::channel",
+      "tokio::spawn",
+      "Ok",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "line": 55,
+    "calls": [
+      "into_inner",
+      "proto::val_client::ValClient::new",
+      "unwrap",
+      "streamed_update",
+      "Ok",
+      "debug",
+      "error",
+      "ReceiverStream::new",
+      "message"
+    ]
+  },
+  {
+    "function": "trigger",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "line": 92,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "iter",
+      "TriggerError::SendFailure",
+      "map_err",
+      "Ok",
+      "map",
+      "n_to_value",
+      "Instant::now",
+      "get",
+      "Some",
+      "DataValue::from",
+      "Vec::from_iter",
+      "send",
+      "vec"
+    ]
+  },
+  {
+    "function": "validate_signals_metadata",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "line": 147,
+    "calls": [
+      "Ok",
+      "contains_key",
+      "get",
+      "to_string",
+      "clone",
+      "into_inner",
+      "Err",
+      "iter",
+      "max_decoding_message_size",
+      "insert",
+      "Vec::with_capacity",
+      "proto::val_client::ValClient::new",
+      "max_encoding_message_size",
+      "as_str",
+      "filter",
+      "Error::MetadataError",
+      "vec",
+      "len",
+      "map_err",
+      "take",
+      "into",
+      "map",
+      "debug",
+      "format",
+      "push",
+      "collect"
+    ]
+  },
+  {
+    "function": "set_initial_signals_values",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "line": 205,
+    "calls": [
+      "Ok"
+    ]
+  },
+  {
+    "function": "n_to_value",
+    "file": "src/triggering_ends/kuksa_val_v1/triggering_end.rs",
+    "line": 214,
+    "calls": [
+      "proto::datapoint::Value::Int32",
+      "Ok",
+      "proto::datapoint::Value::Int64Array",
+      "proto::datapoint::Value::StringArray",
+      "Err",
+      "clone",
+      "to_string",
+      "unwrap_or",
+      "proto::datapoint::Value::String",
+      "proto::datapoint::Value::Uint64",
+      "proto::datapoint::Value::Int32Array",
+      "proto::datapoint::Value::Uint32",
+      "proto::datapoint::Value::FloatArray",
+      "proto::DataType::try_from",
+      "proto::datapoint::Value::Uint32Array",
+      "proto::datapoint::Value::Int64",
+      "proto::datapoint::Value::Float",
+      "proto::datapoint::Value::Bool",
+      "proto::datapoint::Value::Uint64Array",
+      "proto::datapoint::Value::BoolArray",
+      "proto::datapoint::Value::Double",
+      "vec",
+      "len",
+      "proto::datapoint::Value::DoubleArray",
+      "into",
+      "is_empty",
+      "is_some"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "line": 44,
+    "calls": [
+      "clone",
+      "unwrap",
+      "into_iter",
+      "Ok",
+      "map",
+      "Arc::new",
+      "HashMap::from_iter",
+      "ReceivingEnd::start",
+      "broadcast::channel"
+    ]
+  },
+  {
+    "function": "start",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "line": 71,
+    "calls": [
+      "Self::handle_kuksa_val_v2"
+    ]
+  },
+  {
+    "function": "handle_kuksa_val_v2",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "line": 90,
+    "calls": [
+      "assert",
+      "subscribe_by_id",
+      "tokio::spawn",
+      "tonic::Request::new",
+      "Ok",
+      "Instant::now",
+      "get",
+      "to_string",
+      "into_inner",
+      "Err",
+      "iter",
+      "message",
+      "Error::RecvFailed",
+      "insert",
+      "info",
+      "send",
+      "to_owned",
+      "Vec::with_capacity",
+      "kuksa_val_v2::signal_id::Signal::Id",
+      "tokio_stream::iter",
+      "Error::SubscriptionFailed",
+      "for_each",
+      "Some",
+      "error",
+      "DataValue::from",
+      "kuksa_val_v2::val_client::ValClient::new",
+      "vec",
+      "unwrap",
+      "len",
+      "Ok::<",
+      "filter_map",
+      "map",
+      "open_provider_stream",
+      "map_err",
+      "kuksa_val_v2::open_provider_stream_request::Action::ProvideActuationRequest",
+      "push",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "get_receiver",
+    "file": "src/receiving_ends/kuksa_val_v2/receiving_end.rs",
+    "line": 242,
+    "calls": [
+      "Err",
+      "unwrap",
+      "to_string",
+      "Error::SignalNotFound",
+      "Ok",
+      "subscribe",
+      "get"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "line": 33,
+    "calls": [
+      "clone",
+      "into_iter",
+      "Ok",
+      "map",
+      "Arc::new",
+      "HashMap::from_iter",
+      "ReceivingEnd::start",
+      "broadcast::channel"
+    ]
+  },
+  {
+    "function": "query_from_signals",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "line": 46,
+    "calls": [
+      "format"
+    ]
+  },
+  {
+    "function": "start",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "line": 57,
+    "calls": [
+      "Self::handle_sdv_databroker_v1"
+    ]
+  },
+  {
+    "function": "handle_sdv_databroker_v1",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "line": 65,
+    "calls": [
+      "tokio::spawn",
+      "tonic::Request::new",
+      "Ok",
+      "Instant::now",
+      "get",
+      "to_string",
+      "clone",
+      "into_inner",
+      "Err",
+      "iter",
+      "subscribe",
+      "info",
+      "send",
+      "sdv_databroker_v1::broker_client::BrokerClient::new",
+      "Error::SubscriptionFailed",
+      "for_each",
+      "Ok::<",
+      "Self::query_from_signals",
+      "into_iter",
+      "filter_map",
+      "map",
+      "map_err",
+      "message"
+    ]
+  },
+  {
+    "function": "get_receiver",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "line": 121,
+    "calls": [
+      "Err",
+      "to_string",
+      "Error::SignalNotFound",
+      "Ok",
+      "subscribe",
+      "get"
+    ]
+  },
+  {
+    "function": "test_query_from_signal",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "line": 134,
+    "calls": [
+      "ReceivingEnd::query_from_signals",
+      "assert_eq",
+      "into_iter",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_query_from_signals",
+    "file": "src/receiving_ends/sdv_databroker_v1/receiving_end.rs",
+    "line": 146,
+    "calls": [
+      "ReceivingEnd::query_from_signals",
+      "assert_eq",
+      "into_iter",
+      "vec"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "line": 35,
+    "calls": [
+      "clone",
+      "into_iter",
+      "Ok",
+      "map",
+      "Arc::new",
+      "HashMap::from_iter",
+      "ReceivingEnd::start",
+      "broadcast::channel"
+    ]
+  },
+  {
+    "function": "start",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "line": 52,
+    "calls": [
+      "Self::handle_kuksa_val_v1"
+    ]
+  },
+  {
+    "function": "handle_kuksa_val_v1",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "line": 61,
+    "calls": [
+      "kuksa_val_v1::val_client::ValClient::new",
+      "assert",
+      "tokio::spawn",
+      "tonic::Request::new",
+      "HashMap::new",
+      "Ok",
+      "and_then",
+      "Instant::now",
+      "get",
+      "to_string",
+      "clone",
+      "into_inner",
+      "Err",
+      "iter",
+      "insert",
+      "subscribe",
+      "info",
+      "send",
+      "Error::SubscriptionFailed",
+      "for_each",
+      "DataValue::from",
+      "vec",
+      "unwrap",
+      "Ok::<",
+      "filter_map",
+      "map",
+      "map_err",
+      "as_ref",
+      "collect",
+      "message"
+    ]
+  },
+  {
+    "function": "get_receiver",
+    "file": "src/receiving_ends/kuksa_val_v1/receiving_end.rs",
+    "line": 144,
+    "calls": [
+      "Err",
+      "to_string",
+      "Error::SignalNotFound",
+      "Ok",
+      "subscribe",
+      "get"
+    ]
+  }
+]

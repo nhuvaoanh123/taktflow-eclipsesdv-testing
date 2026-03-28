@@ -1,0 +1,21 @@
+{
+  "function": "check_expired_for_reference",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:check_expired_for_reference",
+      "line": 589
+    },
+    {
+      "id": 1,
+      "label": "exit:check_expired_for_reference",
+      "line": 604
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

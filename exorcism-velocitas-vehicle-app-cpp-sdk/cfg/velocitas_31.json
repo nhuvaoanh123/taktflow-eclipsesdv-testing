@@ -1,0 +1,21 @@
+{
+  "function": "velocitas",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:velocitas",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:velocitas",
+      "line": 80
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

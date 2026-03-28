@@ -1,0 +1,21 @@
+{
+  "function": "test_update_entries_max_exceeded",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_update_entries_max_exceeded",
+      "line": 3300
+    },
+    {
+      "id": 1,
+      "label": "exit:test_update_entries_max_exceeded",
+      "line": 3312
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

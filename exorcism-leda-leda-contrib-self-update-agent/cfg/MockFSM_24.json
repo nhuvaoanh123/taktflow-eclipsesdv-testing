@@ -1,0 +1,21 @@
+{
+  "function": "MockFSM",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MockFSM",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:MockFSM",
+      "line": 38
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

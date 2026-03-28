@@ -1,0 +1,21 @@
+{
+  "function": "trunc",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:trunc",
+      "line": 245
+    },
+    {
+      "id": 1,
+      "label": "exit:trunc",
+      "line": 254
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

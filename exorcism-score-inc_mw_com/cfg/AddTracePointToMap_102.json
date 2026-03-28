@@ -1,0 +1,54 @@
+{
+  "function": "AddTracePointToMap",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AddTracePointToMap",
+      "line": 102
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 110
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 114
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 110
+    },
+    {
+      "id": 4,
+      "label": "exit:AddTracePointToMap",
+      "line": 124
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

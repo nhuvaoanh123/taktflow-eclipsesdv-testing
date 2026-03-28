@@ -1,0 +1,21 @@
+{
+  "function": "is_custom_type_path",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_custom_type_path",
+      "line": 291
+    },
+    {
+      "id": 1,
+      "label": "exit:is_custom_type_path",
+      "line": 322
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

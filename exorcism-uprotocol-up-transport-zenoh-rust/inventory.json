@@ -1,0 +1,16 @@
+{
+  "project": "uprotocol-up-transport-zenoh-rust",
+  "files_by_language": {
+    "Rust": {
+      "files": 15,
+      "loc": 2601
+    }
+  },
+  "total_files": 15,
+  "total_loc": 2601,
+  "total_functions": 67,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

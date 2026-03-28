@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Inc_Mw_Com — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Score Inc_Mw_Com</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Score Inc_Mw_Com</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">SCORE</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">770</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">106,815</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">4467</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">3</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">5.0</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>SCORE (Safety-Critical Open-source Reference Environment) is an Eclipse project providing safety-certified base libraries and middleware for safety-critical automotive ECUs. It targets ASIL-B/D requirements with components for communication (SOME/IP), logging, lifecycle management, and more.</p>
+    <p><strong>Project:</strong> <code>score-inc_mw_com</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>Unknown</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Python</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>Safety-critical vehicle systems (braking, steering, ADAS) need software components that meet ISO 26262 functional safety requirements. SCORE provides pre-certified building blocks.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by Tier-1 automotive suppliers and OEMs building safety-critical ECU software.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>C++</td><td>425</td><td>78,580</td></tr><tr><td>C</td><td>290</td><td>26,770</td></tr><tr><td>Python</td><td>55</td><td>1,465</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: score-inc<em>mw</em>com</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>C++, C, Python</td></tr>
+<tr><td>Build System</td><td>Unknown</td></tr>
+<tr><td>Total Files</td><td>770</td></tr>
+<tr><td>Total LOC</td><td>106,815</td></tr>
+<tr><td>Total Functions</td><td>4467</td></tr>
+<tr><td>State Machines</td><td>0</td></tr>
+<tr><td>Communication Patterns</td><td>3</td></tr>
+<tr><td>External Dependencies</td><td>0</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>C++</strong>: 425 files, 78,580 LOC</li>
+<li><strong>C</strong>: 290 files, 26,770 LOC</li>
+<li><strong>Python</strong>: 55 files, 1,465 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>Unknown</strong></p>
+<p></p>
+<h3>Communication Protocols</h3>
+<ul>
+<li><strong>gRPC_service</strong>: 1 occurrence(s)</li>
+<li><strong>MQTT_topic</strong>: 2 occurrence(s)</li>
+</ul>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>bmw (mw/com/types.h:41) cc=28</li>
+<li>mw (mw/com/types.h:43) cc=28</li>
+<li>com (mw/com/types.h:45) cc=28</li>
+<li>run<em>service (mw/com/test/service</em>discovery<em>offer</em>and_search/service.cpp:45) cc=14</li>
+<li>main (mw/com/test/reserving<em>skeleton</em>slots/reserving<em>skeleton</em>slots_application.cpp:111) cc=37</li>
+<li>main (mw/com/test/shared<em>memory</em>storage/shared<em>memory</em>storage_application.cpp:103) cc=83</li>
+<li>bmw (mw/com/test/shared<em>memory</em>storage/test_resources.h:36) cc=15</li>
+<li>run<em>service (mw/com/test/service</em>discovery<em>search</em>and_offer/service.cpp:44) cc=14</li>
+<li>run<em>inotify</em>test (mw/com/test/inotify/inotify_test.cpp:91) cc=100</li>
+<li>DoChildActions (mw/com/test/flock/flock_test.cpp:56) cc=43</li>
+<li>CheckSharedLockedFile (mw/com/test/flock/flock_test.cpp:126) cc=15</li>
+<li>CheckExclusiveLockedFile (mw/com/test/flock/flock_test.cpp:163) cc=12</li>
+<li>LockBothFilesExclusively (mw/com/test/flock/flock_test.cpp:199) cc=17</li>
+<li>WaitForChildFinished (mw/com/test/flock/flock_test.cpp:239) cc=33</li>
+<li>main (mw/com/test/flock/flock_test.cpp:299) cc=37</li>
+<li>message<em>sender (mw/com/test/separate</em>reception<em>threads/separate</em>reception<em>threads</em>application.cpp:57) cc=19</li>
+<li>main (mw/com/test/separate<em>reception</em>threads/separate<em>reception</em>threads_application.cpp:113) cc=55</li>
+<li>run_sender (mw/com/test/smokeyeyes/smokeyeyes.cpp:153) cc=40</li>
+<li>run_receiver (mw/com/test/smokeyeyes/smokeyeyes.cpp:214) cc=70</li>
+<li>main (mw/com/test/smokeyeyes/smokeyeyes.cpp:378) cc=63</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li>test<em>service</em>discovery<em>offer</em>and<em>search (mw/com/test/service</em>discovery<em>offer</em>and<em>search/service</em>discovery<em>offer</em>and<em>search</em>test.py:28) depth=5</li>
+<li>test<em>service</em>discovery<em>search</em>and<em>offer</em>test (mw/com/test/service<em>discovery</em>search<em>and</em>offer/service<em>discovery</em>search<em>and</em>offer_test.py:30) depth=5</li>
+<li>run<em>inotify</em>test (mw/com/test/inotify/inotify_test.cpp:91) depth=5</li>
+<li>&lt;anonymous&gt; (mw/com/test/partial<em>restart/provider</em>restart<em>max</em>subscribers/consumer.cpp:255) depth=4</li>
+<li>&lt;anonymous&gt; (mw/com/test/common<em>test</em>resources/sample<em>sender</em>receiver.cpp:412) depth=4</li>
+<li>&lt;anonymous&gt; (mw/com/test/common<em>test</em>resources/timeout_supervisor.cpp:67) depth=4</li>
+<li>&lt;anonymous&gt; (mw/com/test/common<em>test</em>resources/sctf<em>test</em>runner.cpp:234) depth=8</li>
+<li>test<em>field</em>initial<em>value (mw/com/test/field</em>initial<em>value/sct/field</em>initial<em>value</em>test.py:30) depth=5</li>
+<li>test<em>lola</em>data<em>slots</em>read<em>only (mw/com/test/data</em>slots<em>read</em>only/sct/data<em>slots</em>read<em>only</em>test.py:35) depth=7</li>
+<li>test<em>ara</em>com<em>mw</em>com<em>coexistence (mw/com/test/twoface/sct/mw</em>com<em>coexistence</em>test.py:33) depth=5</li>
+<li>test<em>find</em>all<em>semantics (mw/com/test/find</em>any<em>semantics/sct/find</em>any<em>semantics</em>test.py:29) depth=5</li>
+<li>RegisterPid (mw/com/impl/bindings/lola/uid<em>pid</em>mapping.cpp:112) depth=4</li>
+<li>&lt;anonymous&gt; (mw/com/impl/bindings/lola/transaction_log.cpp:156) depth=4</li>
+<li>TEST (mw/com/impl/bindings/lola/event<em>data</em>control<em>composite</em>test.cpp:464) depth=4</li>
+<li>com (mw/com/impl/bindings/lola/messaging/handler_base.h:32) depth=5</li>
+<li>impl (mw/com/impl/bindings/lola/messaging/handler_base.h:34) depth=5</li>
+<li>lola (mw/com/impl/bindings/lola/messaging/handler_base.h:36) depth=5</li>
+<li>HandlerBase (mw/com/impl/bindings/lola/messaging/handler_base.h:39) depth=5</li>
+<li>further<em>ids</em>avail (mw/com/impl/bindings/lola/messaging/handler_base.h:83) depth=5</li>
+<li>test<em>basic</em>message<em>passing</em>commander<em>first (mw/com/message</em>passing/test/sct/test<em>basic</em>message_passing.py:40) depth=5</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<ul>
+<li>main (mw/com/test/shared<em>memory</em>storage/shared<em>memory</em>storage_application.cpp:103) loc=282</li>
+<li>run<em>inotify</em>test (mw/com/test/inotify/inotify_test.cpp:91) loc=116</li>
+<li>main (mw/com/test/separate<em>reception</em>threads/separate<em>reception</em>threads_application.cpp:113) loc=133</li>
+<li>run_receiver (mw/com/test/smokeyeyes/smokeyeyes.cpp:214) loc=157</li>
+<li>main (mw/com/test/smokeyeyes/smokeyeyes.cpp:378) loc=141</li>
+<li>DoConsumerActions (mw/com/test/partial<em>restart/consumer</em>restart/consumer.cpp:37) loc=163</li>
+<li>DoConsumerRestart (mw/com/test/partial<em>restart/consumer</em>restart/consumer<em>restart</em>application.cpp:99) loc=199</li>
+<li>PerformSecondConsumerActions (mw/com/test/partial<em>restart/proxy</em>restart<em>shall</em>not<em>affect</em>other_proxies/consumer.cpp:184) loc=114</li>
+<li>DoControllerActions (mw/com/test/partial<em>restart/proxy</em>restart<em>shall</em>not<em>affect</em>other_proxies/application.cpp:45) loc=250</li>
+<li>&lt;anonymous&gt; (mw/com/test/partial<em>restart/provider</em>restart<em>max</em>subscribers/consumer.cpp:133) loc=121</li>
+<li>&lt;anonymous&gt; (mw/com/test/partial<em>restart/provider</em>restart<em>max</em>subscribers/consumer.cpp:255) loc=141</li>
+<li>DoProviderRestart (mw/com/test/partial<em>restart/provider</em>restart<em>max</em>subscribers/provider<em>restart</em>max<em>subscribers</em>application.cpp:94) loc=216</li>
+<li>main (mw/com/test/partial<em>restart/checks</em>number<em>of</em>allocations/application.cpp:100) loc=113</li>
+<li>DoConsumerActionsWithProxy (mw/com/test/partial<em>restart/provider</em>restart/consumer.cpp:33) loc=222</li>
+<li>DoConsumerActions (mw/com/test/partial<em>restart/provider</em>restart/consumer.cpp:269) loc=109</li>
+<li>DoProviderActions (mw/com/test/partial<em>restart/provider</em>restart/provider.cpp:115) loc=107</li>
+<li>DoProviderNormalRestartSubscribedProxy (mw/com/test/partial<em>restart/provider</em>restart/controller.cpp:48) loc=255</li>
+<li>DoProviderCrashRestartSubscribedProxy (mw/com/test/partial<em>restart/provider</em>restart/controller.cpp:309) loc=231</li>
+<li>main (mw/com/test/check<em>values</em>created<em>from</em>config/check<em>values</em>created<em>from</em>config_application.cpp:147) loc=102</li>
+<li>&lt;anonymous&gt; (mw/com/test/common<em>test</em>resources/sample<em>sender</em>receiver.cpp:412) loc=138</li>
+</ul>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 4467 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 786 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 0 state machine patterns</li>
+<li><code>metrics.json</code> — 4467 function metrics</li>
+<li><code>communication.json</code> — 3 protocol patterns</li>
+<li><code>dependencies.json</code> — 0 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>IsNonRecoverableError</code></td>
+              <td><span class="badge badge-red">114 (High)</span></td>
+              <td>2</td>
+              <td>54</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>mw/com/impl/tracing/tracing_runtime.cpp</small></td>
+            </tr><tr>
+              <td><code>right_lane_id</code></td>
+              <td><span class="badge badge-red">111 (High)</span></td>
+              <td>0</td>
+              <td>199</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/common_test_resources/big_datatype.h</small></td>
+            </tr><tr>
+              <td><code>width_in_cm</code></td>
+              <td><span class="badge badge-red">111 (High)</span></td>
+              <td>0</td>
+              <td>172</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/common_test_resources/big_datatype.h</small></td>
+            </tr><tr>
+              <td><code>message_passing</code></td>
+              <td><span class="badge badge-red">107 (High)</span></td>
+              <td>3</td>
+              <td>273</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/message_passing/receiver.h</small></td>
+            </tr><tr>
+              <td><code>run_inotify_test</code></td>
+              <td><span class="badge badge-red">100 (High)</span></td>
+              <td>5</td>
+              <td>116</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>mw/com/test/inotify/inotify_test.cpp</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">88 (High)</span></td>
+              <td>1</td>
+              <td>170</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>impl</code></td>
+              <td><span class="badge badge-red">88 (High)</span></td>
+              <td>1</td>
+              <td>167</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">85 (High)</span></td>
+              <td>2</td>
+              <td>171</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-red">83 (High)</span></td>
+              <td>2</td>
+              <td>282</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/shared_memory_storage/shared_memory_storage_application.cpp</small></td>
+            </tr><tr>
+              <td><code>DoConsumerActionsWithProxy</code></td>
+              <td><span class="badge badge-red">80 (High)</span></td>
+              <td>2</td>
+              <td>222</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/partial_restart/provider_restart/consumer.cpp</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">80 (High)</span></td>
+              <td>2</td>
+              <td>206</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/message_passing/sender.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">80 (High)</span></td>
+              <td>2</td>
+              <td>203</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/message_passing/sender.h</small></td>
+            </tr><tr>
+              <td><code>message_passing</code></td>
+              <td><span class="badge badge-red">80 (High)</span></td>
+              <td>2</td>
+              <td>200</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/message_passing/sender.h</small></td>
+            </tr><tr>
+              <td><code>ISender</code></td>
+              <td><span class="badge badge-red">78 (High)</span></td>
+              <td>2</td>
+              <td>174</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/message_passing/sender.h</small></td>
+            </tr><tr>
+              <td><code>DoConsumerActions</code></td>
+              <td><span class="badge badge-red">74 (High)</span></td>
+              <td>2</td>
+              <td>163</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/partial_restart/consumer_restart/consumer.cpp</small></td>
+            </tr><tr>
+              <td><code>impl</code></td>
+              <td><span class="badge badge-red">72 (High)</span></td>
+              <td>1</td>
+              <td>173</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/skeleton_field.h</small></td>
+            </tr><tr>
+              <td><code>run_receiver</code></td>
+              <td><span class="badge badge-red">70 (High)</span></td>
+              <td>3</td>
+              <td>157</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/smokeyeyes/smokeyeyes.cpp</small></td>
+            </tr><tr>
+              <td><code>bmw</code></td>
+              <td><span class="badge badge-red">68 (High)</span></td>
+              <td>1</td>
+              <td>136</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/configuration/configuration_common_resources.h</small></td>
+            </tr><tr>
+              <td><code>bmw</code></td>
+              <td><span class="badge badge-red">68 (High)</span></td>
+              <td>1</td>
+              <td>302</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/skeleton.h</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">65 (High)</span></td>
+              <td>1</td>
+              <td>149</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/com_error.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">65 (High)</span></td>
+              <td>1</td>
+              <td>146</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/com_error.h</small></td>
+            </tr><tr>
+              <td><code>impl</code></td>
+              <td><span class="badge badge-red">65 (High)</span></td>
+              <td>1</td>
+              <td>143</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/com_error.h</small></td>
+            </tr><tr>
+              <td><code>ErrorCode</code></td>
+              <td><span class="badge badge-red">65 (High)</span></td>
+              <td>1</td>
+              <td>134</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/com_error.h</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-red">63 (High)</span></td>
+              <td>3</td>
+              <td>141</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/smokeyeyes/smokeyeyes.cpp</small></td>
+            </tr><tr>
+              <td><code>is_fully_attributed</code></td>
+              <td><span class="badge badge-red">59 (High)</span></td>
+              <td>0</td>
+              <td>45</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>mw/com/test/common_test_resources/big_datatype.h</small></td>
+            </tr><tr>
+              <td><code>DoDeferredUpdate</code></td>
+              <td><span class="badge badge-red">58 (High)</span></td>
+              <td>1</td>
+              <td>130</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/skeleton_field.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">58 (High)</span></td>
+              <td>1</td>
+              <td>153</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/configuration/binding_service_type_deployment.h</small></td>
+            </tr><tr>
+              <td><code>impl</code></td>
+              <td><span class="badge badge-red">58 (High)</span></td>
+              <td>1</td>
+              <td>150</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/configuration/binding_service_type_deployment.h</small></td>
+            </tr><tr>
+              <td><code>binding_service_type_deployment_detail</code></td>
+              <td><span class="badge badge-red">58 (High)</span></td>
+              <td>1</td>
+              <td>146</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/configuration/binding_service_type_deployment.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">57 (High)</span></td>
+              <td>4</td>
+              <td>138</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>mw/com/test/common_test_resources/sample_sender_receiver.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>4</td>
+              <td>141</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>mw/com/test/partial_restart/provider_restart_max_subscribers/consumer.cpp</small></td>
+            </tr><tr>
+              <td><code>bmw</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>1</td>
+              <td>109</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/mock_binding/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>1</td>
+              <td>106</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/mock_binding/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>1</td>
+              <td>103</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/mock_binding/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>impl</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>1</td>
+              <td>100</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>mw/com/impl/bindings/mock_binding/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>mock_binding</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>1</td>
+              <td>97</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>mw/com/impl/bindings/mock_binding/proxy_event.h</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>1</td>
+              <td>248</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/skeleton.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>1</td>
+              <td>245</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/skeleton.h</small></td>
+            </tr><tr>
+              <td><code>move</code></td>
+              <td><span class="badge badge-red">56 (High)</span></td>
+              <td>2</td>
+              <td>105</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/skeleton_event.h</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-red">55 (High)</span></td>
+              <td>3</td>
+              <td>133</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/separate_reception_threads/separate_reception_threads_application.cpp</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">53 (High)</span></td>
+              <td>0</td>
+              <td>142</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/plumbing/sample_ptr.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">53 (High)</span></td>
+              <td>0</td>
+              <td>139</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/plumbing/sample_ptr.h</small></td>
+            </tr><tr>
+              <td><code>impl</code></td>
+              <td><span class="badge badge-red">53 (High)</span></td>
+              <td>0</td>
+              <td>136</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/plumbing/sample_ptr.h</small></td>
+            </tr><tr>
+              <td><code>created_file</code></td>
+              <td><span class="badge badge-red">52 (High)</span></td>
+              <td>1</td>
+              <td>95</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>mw/com/test/common_test_resources/shared_memory_object_creator.h</small></td>
+            </tr><tr>
+              <td><code>final</code></td>
+              <td><span class="badge badge-red">51 (High)</span></td>
+              <td>0</td>
+              <td>125</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/plumbing/sample_ptr.h</small></td>
+            </tr><tr>
+              <td><code>EnumerateTypes</code></td>
+              <td><span class="badge badge-red">49 (High)</span></td>
+              <td>0</td>
+              <td>27</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>mw/com/test/common_test_resources/big_datatype.h</small></td>
+            </tr><tr>
+              <td><code>DoControllerActions</code></td>
+              <td><span class="badge badge-red">48 (High)</span></td>
+              <td>3</td>
+              <td>250</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/test/partial_restart/proxy_restart_shall_not_affect_other_proxies/application.cpp</small></td>
+            </tr><tr>
+              <td><code>bmw</code></td>
+              <td><span class="badge badge-red">47 (High)</span></td>
+              <td>2</td>
+              <td>199</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/sample_allocatee_ptr.h</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">47 (High)</span></td>
+              <td>2</td>
+              <td>196</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/sample_allocatee_ptr.h</small></td>
+            </tr><tr>
+              <td><code>com</code></td>
+              <td><span class="badge badge-red">47 (High)</span></td>
+              <td>2</td>
+              <td>193</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>mw/com/impl/bindings/lola/sample_allocatee_ptr.h</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>main</code></td>
+              <td>35</td>
+              <td><small>po::store, getpid, po::value&lt;std::string&gt;, style, options.add_options, po::value&lt;std::size_t&gt;, get, std::strerror …</small></td>
+              <td><small>mw/com/test/smokeyeyes/smokeyeyes.cpp:378</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>34</td>
+              <td><small>GetBindingType, An&lt;SampleAllocateePtr&lt;TestSampleType&gt;&gt;, PrepareOffer, WillOnce, WithArgs&lt;1&gt;, has_value, GetTracingRuntime, Invoke …</small></td>
+              <td><small>mw/com/impl/tracing/skeleton_field_tracing_test.cpp:834</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>34</td>
+              <td><small>GetBindingType, An&lt;SampleAllocateePtr&lt;TestSampleType&gt;&gt;, PrepareOffer, WillOnce, WithArgs&lt;1&gt;, has_value, GetTracingRuntime, Invoke …</small></td>
+              <td><small>mw/com/impl/tracing/skeleton_field_tracing_test.cpp:948</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>33</td>
+              <td><small>GetBindingType, An&lt;SampleAllocateePtr&lt;TestSampleType&gt;&gt;, PrepareOffer, WillOnce, WithArgs&lt;1&gt;, has_value, GetTracingRuntime, Invoke …</small></td>
+              <td><small>mw/com/impl/tracing/skeleton_field_tracing_test.cpp:725</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>32</td>
+              <td><small>bmw::mw::com::test::SharedMemoryObjectCreator&lt;BigDataServiceElementData&gt;::CreateOrOpenObject, Message, GetElementFqId&lt;bmw::mw::com::impl::SkeletonEventView&lt;DummyDataStamped&gt;,
+                           bmw::mw::com::impl::lola::SkeletonEvent&lt;DummyDataStamped&gt;&gt;, size, has_value, GetElementFqId&lt;bmw::mw::com::impl::SkeletonEventView&lt;MapApiLanesStamped&gt;,
+                           bmw::mw::com::impl::lola::SkeletonEvent&lt;MapApiLanesStamped&gt;&gt;, notify_all, data …</small></td>
+              <td><small>mw/com/test/shared_memory_storage/shared_memory_storage_application.cpp:103</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>32</td>
+              <td><small>GetBindingType, An&lt;SampleAllocateePtr&lt;TestSampleType&gt;&gt;, PrepareOffer, WillOnce, WithArgs&lt;1&gt;, has_value, GetTracingRuntime, Invoke …</small></td>
+              <td><small>mw/com/impl/tracing/skeleton_event_tracing_test.cpp:800</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>32</td>
+              <td><small>GetBindingType, An&lt;SampleAllocateePtr&lt;TestSampleType&gt;&gt;, PrepareOffer, WillOnce, WithArgs&lt;1&gt;, has_value, GetTracingRuntime, Invoke …</small></td>
+              <td><small>mw/com/impl/tracing/skeleton_event_tracing_test.cpp:903</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>31</td>
+              <td><small>GetBindingType, An&lt;SampleAllocateePtr&lt;TestSampleType&gt;&gt;, PrepareOffer, WillOnce, WithArgs&lt;1&gt;, has_value, GetTracingRuntime, Invoke …</small></td>
+              <td><small>mw/com/impl/tracing/skeleton_event_tracing_test.cpp:701</small></td>
+            </tr><tr>
+              <td><code>TEST</code></td>
+              <td>30</td>
+              <td><small>An&lt;SampleAllocateePtr&lt;TestSampleType&gt;&gt;, PrepareOffer, WillOnce, has_value, Invoke, WillByDefault, RecordProperty, ASSERT_FALSE …</small></td>
+              <td><small>mw/com/impl/skeleton_field_test.cpp:595</small></td>
+            </tr><tr>
+              <td><code>TEST</code></td>
+              <td>30</td>
+              <td><small>GetBindingType, PrepareOffer, size, WillOnce, has_value, Invoke, WillByDefault, make_InstanceIdentifier …</small></td>
+              <td><small>mw/com/impl/traits_test.cpp:779</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (0 detected)</h3>
+  <p><em>No state machines detected.</em></p>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>LOC</th><th>File</th></tr></thead><tbody><tr><td><code>bmw</code></td><td>302</td><td><small>mw/com/impl/bindings/lola/skeleton.h</small></td></tr><tr><td><code>main</code></td><td>282</td><td><small>mw/com/test/shared_memory_storage/shared_memory_storage_application.cpp</small></td></tr><tr><td><code>message_passing</code></td><td>273</td><td><small>mw/com/message_passing/receiver.h</small></td></tr><tr><td><code>bmw</code></td><td>257</td><td><small>mw/com/impl/bindings/lola/messaging/notify_event_handler.h</small></td></tr><tr><td><code>DoProviderNormalRestartSubscribedProxy</code></td><td>255</td><td><small>mw/com/test/partial_restart/provider_restart/controller.cpp</small></td></tr><tr><td><code>mw</code></td><td>254</td><td><small>mw/com/impl/bindings/lola/messaging/notify_event_handler.h</small></td></tr><tr><td><code>com</code></td><td>251</td><td><small>mw/com/impl/bindings/lola/messaging/notify_event_handler.h</small></td></tr><tr><td><code>DoControllerActions</code></td><td>250</td><td><small>mw/com/test/partial_restart/proxy_restart_shall_not_affect_other_proxies/application.cpp</small></td></tr><tr><td><code>mw</code></td><td>248</td><td><small>mw/com/impl/bindings/lola/skeleton.h</small></td></tr><tr><td><code>impl</code></td><td>248</td><td><small>mw/com/impl/bindings/lola/messaging/notify_event_handler.h</small></td></tr><tr><td><code>com</code></td><td>245</td><td><small>mw/com/impl/bindings/lola/skeleton.h</small></td></tr><tr><td><code>lola</code></td><td>245</td><td><small>mw/com/impl/bindings/lola/messaging/notify_event_handler.h</small></td></tr><tr><td><code>DoProviderCrashRestartSubscribedProxy</code></td><td>231</td><td><small>mw/com/test/partial_restart/provider_restart/controller.cpp</small></td></tr><tr><td><code>DoConsumerActionsWithProxy</code></td><td>222</td><td><small>mw/com/test/partial_restart/provider_restart/consumer.cpp</small></td></tr><tr><td><code>DoProviderRestart</code></td><td>216</td><td><small>mw/com/test/partial_restart/provider_restart_max_subscribers/provider_restart_max_subscribers_application.cpp</small></td></tr><tr><td><code>impl</code></td><td>211</td><td><small>mw/com/impl/bindings/lola/skeleton.h</small></td></tr><tr><td><code>lola</code></td><td>208</td><td><small>mw/com/impl/bindings/lola/skeleton.h</small></td></tr><tr><td><code>mw</code></td><td>206</td><td><small>mw/com/message_passing/sender.h</small></td></tr><tr><td><code>com</code></td><td>203</td><td><small>mw/com/message_passing/sender.h</small></td></tr><tr><td><code>message_passing</code></td><td>200</td><td><small>mw/com/message_passing/sender.h</small></td></tr></tbody></table>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    score-inc_mw_com --&gt;|gRPC| gRPC[&quot;gRPC&quot;]
+    score-inc_mw_com --&gt;|MQTT| broker[&quot;
+        &quot;]
+    score-inc_mw_com --&gt;|MQTT| broker[&quot;
+                         &quot;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  
+<details open>
+  <summary>gRPC_service (1 occurrences)</summary>
+  <div class="inner">
+    <table class="data-table">
+      <thead><tr><th>Protocol</th><th>Detail</th><th>File</th></tr></thead>
+      <tbody><tr><td>gRPC_service</td><td></td><td><small>mw/com/test/partial_restart/provider_restart/consumer.cpp</small></td></tr></tbody>
+    </table>
+  </div>
+</details>
+<details open>
+  <summary>MQTT_topic (2 occurrences)</summary>
+  <div class="inner">
+    <table class="data-table">
+      <thead><tr><th>Protocol</th><th>Detail</th><th>File</th></tr></thead>
+      <tbody><tr><td>MQTT_topic</td><td>Topic: <code>
+        </code></td><td><small>mw/com/impl/tracing/proxy_event_tracing_test.cpp</small></td></tr><tr><td>MQTT_topic</td><td>Topic: <code>
+                         </code></td><td><small>mw/com/impl/tracing/proxy_event_tracing_test.cpp</small></td></tr></tbody>
+    </table>
+  </div>
+</details>
+
+  <h3>Dependencies</h3>
+  <p><em>No explicit dependencies recorded.</em></p>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: Unknown</h3>
+    <pre><code># Check the project README for build instructions.
+# Common patterns:
+#   Rust: cargo build --release
+#   Python: pip install -r requirements.txt &amp;&amp; python3 main.py
+#   C/C++: mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make
+#   Java/Maven: mvn clean install
+#   Bazel: bazel build //...</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">C++</span> toolchain required</li><li><span class="tag">C</span> toolchain required</li><li><span class="tag">Python</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">5.0</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">20</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">20</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">352</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>IsNonRecoverableError</code></td><td><span class="badge badge-red">114 (High)</span></td><td>54</td><td><small>mw/com/impl/tracing/tracing_runtime.cpp:50</small></td></tr><tr><td><code>right_lane_id</code></td><td><span class="badge badge-red">111 (High)</span></td><td>199</td><td><small>mw/com/test/common_test_resources/big_datatype.h:258</small></td></tr><tr><td><code>width_in_cm</code></td><td><span class="badge badge-red">111 (High)</span></td><td>172</td><td><small>mw/com/test/common_test_resources/big_datatype.h:282</small></td></tr><tr><td><code>message_passing</code></td><td><span class="badge badge-red">107 (High)</span></td><td>273</td><td><small>mw/com/message_passing/receiver.h:50</small></td></tr><tr><td><code>run_inotify_test</code></td><td><span class="badge badge-red">100 (High)</span></td><td>116</td><td><small>mw/com/test/inotify/inotify_test.cpp:91</small></td></tr><tr><td><code>com</code></td><td><span class="badge badge-red">88 (High)</span></td><td>170</td><td><small>mw/com/impl/bindings/lola/proxy_event.h:44</small></td></tr><tr><td><code>impl</code></td><td><span class="badge badge-red">88 (High)</span></td><td>167</td><td><small>mw/com/impl/bindings/lola/proxy_event.h:46</small></td></tr><tr><td><code>com</code></td><td><span class="badge badge-red">85 (High)</span></td><td>171</td><td><small>mw/com/impl/proxy_event.h:40</small></td></tr><tr><td><code>main</code></td><td><span class="badge badge-red">83 (High)</span></td><td>282</td><td><small>mw/com/test/shared_memory_storage/shared_memory_storage_application.cpp:103</small></td></tr><tr><td><code>DoConsumerActionsWithProxy</code></td><td><span class="badge badge-red">80 (High)</span></td><td>222</td><td><small>mw/com/test/partial_restart/provider_restart/consumer.cpp:33</small></td></tr><tr><td><code>mw</code></td><td><span class="badge badge-red">80 (High)</span></td><td>206</td><td><small>mw/com/message_passing/sender.h:39</small></td></tr><tr><td><code>com</code></td><td><span class="badge badge-red">80 (High)</span></td><td>203</td><td><small>mw/com/message_passing/sender.h:41</small></td></tr><tr><td><code>message_passing</code></td><td><span class="badge badge-red">80 (High)</span></td><td>200</td><td><small>mw/com/message_passing/sender.h:43</small></td></tr><tr><td><code>ISender</code></td><td><span class="badge badge-red">78 (High)</span></td><td>174</td><td><small>mw/com/message_passing/sender.h:68</small></td></tr><tr><td><code>DoConsumerActions</code></td><td><span class="badge badge-red">74 (High)</span></td><td>163</td><td><small>mw/com/test/partial_restart/consumer_restart/consumer.cpp:37</small></td></tr><tr><td><code>impl</code></td><td><span class="badge badge-red">72 (High)</span></td><td>173</td><td><small>mw/com/impl/skeleton_field.h:38</small></td></tr><tr><td><code>run_receiver</code></td><td><span class="badge badge-red">70 (High)</span></td><td>157</td><td><small>mw/com/test/smokeyeyes/smokeyeyes.cpp:214</small></td></tr><tr><td><code>bmw</code></td><td><span class="badge badge-red">68 (High)</span></td><td>136</td><td><small>mw/com/impl/configuration/configuration_common_resources.h:25</small></td></tr><tr><td><code>bmw</code></td><td><span class="badge badge-red">68 (High)</span></td><td>302</td><td><small>mw/com/impl/bindings/lola/skeleton.h:50</small></td></tr><tr><td><code>mw</code></td><td><span class="badge badge-red">65 (High)</span></td><td>149</td><td><small>mw/com/impl/com_error.h:22</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>bmw</code> — CC 28, nesting 0 in mw/com/types.h</li><li><span class="badge badge-red">Risk</span> <code>mw</code> — CC 28, nesting 0 in mw/com/types.h</li><li><span class="badge badge-red">Risk</span> <code>com</code> — CC 28, nesting 0 in mw/com/types.h</li><li><span class="badge badge-red">Risk</span> <code>main</code> — CC 37, nesting 3 in mw/com/test/reserving_skeleton_slots/reserving_skeleton_slots_application.cpp</li><li><span class="badge badge-red">Risk</span> <code>main</code> — CC 83, nesting 2 in mw/com/test/shared_memory_storage/shared_memory_storage_application.cpp</li><li><span class="badge badge-red">Risk</span> <code>run_inotify_test</code> — CC 100, nesting 5 in mw/com/test/inotify/inotify_test.cpp</li><li><span class="badge badge-red">Risk</span> <code>DoChildActions</code> — CC 43, nesting 1 in mw/com/test/flock/flock_test.cpp</li><li><span class="badge badge-red">Risk</span> <code>LockBothFilesExclusively</code> — CC 17, nesting 1 in mw/com/test/flock/flock_test.cpp</li><li><span class="badge badge-red">Risk</span> <code>WaitForChildFinished</code> — CC 33, nesting 3 in mw/com/test/flock/flock_test.cpp</li><li><span class="badge badge-red">Risk</span> <code>main</code> — CC 37, nesting 2 in mw/com/test/flock/flock_test.cpp</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

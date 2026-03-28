@@ -1,0 +1,21 @@
+{
+  "function": "get_signals_values_from_provider",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_signals_values_from_provider",
+      "line": 148
+    },
+    {
+      "id": 1,
+      "label": "exit:get_signals_values_from_provider",
+      "line": 192
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

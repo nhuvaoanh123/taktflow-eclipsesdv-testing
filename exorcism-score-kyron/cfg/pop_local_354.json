@@ -1,0 +1,21 @@
+{
+  "function": "pop_local",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:pop_local",
+      "line": 354
+    },
+    {
+      "id": 1,
+      "label": "exit:pop_local",
+      "line": 396
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

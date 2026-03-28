@@ -1,0 +1,16 @@
+{
+  "project": "eclipse-velocitas-sdk",
+  "files_by_language": {
+    "Python": {
+      "files": 103,
+      "loc": 8564
+    }
+  },
+  "total_files": 103,
+  "total_loc": 8564,
+  "total_functions": 572,
+  "build_system": "Python/setuptools",
+  "languages": [
+    "Python"
+  ]
+}

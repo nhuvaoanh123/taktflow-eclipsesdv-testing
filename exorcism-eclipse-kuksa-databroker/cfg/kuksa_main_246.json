@@ -1,0 +1,21 @@
+{
+  "function": "kuksa_main",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kuksa_main",
+      "line": 246
+    },
+    {
+      "id": 1,
+      "label": "exit:kuksa_main",
+      "line": 753
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

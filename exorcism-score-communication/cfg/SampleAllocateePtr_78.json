@@ -1,0 +1,57 @@
+{
+  "function": "SampleAllocateePtr",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SampleAllocateePtr",
+      "line": 78
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 105
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 129
+    },
+    {
+      "id": 3,
+      "label": "return_statement",
+      "line": 150
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 159
+    },
+    {
+      "id": 5,
+      "label": "exit:SampleAllocateePtr",
+      "line": 160
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    },
+    {
+      "from": 0,
+      "to": 4
+    },
+    {
+      "from": 0,
+      "to": 5
+    }
+  ]
+}

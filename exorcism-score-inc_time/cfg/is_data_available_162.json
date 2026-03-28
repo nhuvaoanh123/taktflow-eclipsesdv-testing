@@ -1,0 +1,97 @@
+{
+  "function": "is_data_available",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_data_available",
+      "line": 162
+    },
+    {
+      "id": 1,
+      "label": "loop (while_statement)",
+      "line": 163
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 183
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 163
+    },
+    {
+      "id": 4,
+      "label": "if ((publish_callback_))",
+      "line": 196
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 204
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 196
+    },
+    {
+      "id": 7,
+      "label": "else",
+      "line": 196
+    },
+    {
+      "id": 8,
+      "label": "exit:is_data_available",
+      "line": 207
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 8
+    }
+  ]
+}

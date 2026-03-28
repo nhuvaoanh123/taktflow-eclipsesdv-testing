@@ -1,0 +1,21 @@
+{
+  "function": "read_config",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:read_config",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:read_config",
+      "line": 86
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

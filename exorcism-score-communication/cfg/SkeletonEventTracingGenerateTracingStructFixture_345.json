@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonEventTracingGenerateTracingStructFixture",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonEventTracingGenerateTracingStructFixture",
+      "line": 345
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonEventTracingGenerateTracingStructFixture",
+      "line": 354
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

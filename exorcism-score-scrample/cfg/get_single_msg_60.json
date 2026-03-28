@@ -1,0 +1,21 @@
+{
+  "function": "get_single_msg",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_single_msg",
+      "line": 60
+    },
+    {
+      "id": 1,
+      "label": "exit:get_single_msg",
+      "line": 78
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

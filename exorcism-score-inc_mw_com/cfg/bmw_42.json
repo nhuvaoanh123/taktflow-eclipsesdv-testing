@@ -1,0 +1,21 @@
+{
+  "function": "bmw",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:bmw",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "exit:bmw",
+      "line": 159
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

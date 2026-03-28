@@ -1,0 +1,63 @@
+{
+  "function": "LogStreamSupports",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LogStreamSupports",
+      "line": 99
+    },
+    {
+      "id": 1,
+      "label": "if ((not(IsCharPtrType<T>())))",
+      "line": 117
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 132
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 117
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 117
+    },
+    {
+      "id": 5,
+      "label": "exit:LogStreamSupports",
+      "line": 133
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

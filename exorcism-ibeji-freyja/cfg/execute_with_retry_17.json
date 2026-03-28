@@ -1,0 +1,21 @@
+{
+  "function": "execute_with_retry",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:execute_with_retry",
+      "line": 17
+    },
+    {
+      "id": 1,
+      "label": "exit:execute_with_retry",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

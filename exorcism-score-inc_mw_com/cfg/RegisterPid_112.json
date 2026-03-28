@@ -1,0 +1,97 @@
+{
+  "function": "RegisterPid",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:RegisterPid",
+      "line": 112
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 118
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 121
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 118
+    },
+    {
+      "id": 4,
+      "label": "loop (while_statement)",
+      "line": 126
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 151
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 126
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 152
+    },
+    {
+      "id": 8,
+      "label": "exit:RegisterPid",
+      "line": 153
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 5,
+      "to": 8
+    }
+  ]
+}

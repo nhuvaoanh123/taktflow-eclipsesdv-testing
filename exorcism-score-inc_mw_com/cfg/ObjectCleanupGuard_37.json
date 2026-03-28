@@ -1,0 +1,21 @@
+{
+  "function": "ObjectCleanupGuard",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ObjectCleanupGuard",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:ObjectCleanupGuard",
+      "line": 55
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

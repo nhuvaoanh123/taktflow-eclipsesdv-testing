@@ -1,0 +1,21 @@
+{
+  "function": "chooseValue",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:chooseValue",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:chooseValue",
+      "line": 44
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

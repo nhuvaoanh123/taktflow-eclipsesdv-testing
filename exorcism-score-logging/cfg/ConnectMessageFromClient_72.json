@@ -1,0 +1,21 @@
+{
+  "function": "ConnectMessageFromClient",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ConnectMessageFromClient",
+      "line": 72
+    },
+    {
+      "id": 1,
+      "label": "exit:ConnectMessageFromClient",
+      "line": 103
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

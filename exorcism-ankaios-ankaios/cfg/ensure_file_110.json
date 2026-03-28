@@ -1,0 +1,21 @@
+{
+  "function": "ensure_file",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ensure_file",
+      "line": 110
+    },
+    {
+      "id": 1,
+      "label": "exit:ensure_file",
+      "line": 121
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

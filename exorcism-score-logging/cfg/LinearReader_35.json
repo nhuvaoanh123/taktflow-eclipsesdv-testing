@@ -1,0 +1,21 @@
+{
+  "function": "LinearReader",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LinearReader",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "exit:LinearReader",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

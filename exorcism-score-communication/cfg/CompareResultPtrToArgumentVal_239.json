@@ -1,0 +1,21 @@
+{
+  "function": "CompareResultPtrToArgumentVal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CompareResultPtrToArgumentVal",
+      "line": 239
+    },
+    {
+      "id": 1,
+      "label": "exit:CompareResultPtrToArgumentVal",
+      "line": 246
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

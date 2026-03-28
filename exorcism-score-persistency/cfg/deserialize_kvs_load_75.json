@@ -1,0 +1,21 @@
+{
+  "function": "deserialize_kvs_load",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deserialize_kvs_load",
+      "line": 75
+    },
+    {
+      "id": 1,
+      "label": "exit:deserialize_kvs_load",
+      "line": 91
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

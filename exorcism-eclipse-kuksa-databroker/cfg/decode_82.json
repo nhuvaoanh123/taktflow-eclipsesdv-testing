@@ -1,0 +1,21 @@
+{
+  "function": "decode",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:decode",
+      "line": 82
+    },
+    {
+      "id": 1,
+      "label": "exit:decode",
+      "line": 87
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "test_multi_subscribe",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_multi_subscribe",
+      "line": 3824
+    },
+    {
+      "id": 1,
+      "label": "exit:test_multi_subscribe",
+      "line": 3927
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "helper_add_uint8",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:helper_add_uint8",
+      "line": 3416
+    },
+    {
+      "id": 1,
+      "label": "exit:helper_add_uint8",
+      "line": 3463
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

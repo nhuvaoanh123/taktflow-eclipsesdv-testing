@@ -1,0 +1,11 @@
+{
+  "function": "convertConfigFileVariablesToMap",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:convertConfigFileVariablesToMap",
+      "line": 29
+    }
+  ],
+  "edges": []
+}

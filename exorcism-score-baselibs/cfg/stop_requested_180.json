@@ -1,0 +1,30 @@
+{
+  "function": "stop_requested",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stop_requested",
+      "line": 180
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 180
+    },
+    {
+      "id": 2,
+      "label": "exit:stop_requested",
+      "line": 180
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

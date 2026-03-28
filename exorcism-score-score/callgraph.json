@@ -1,0 +1,26 @@
+[
+  {
+    "function": "main",
+    "file": ".github/scripts/check_doc_tool_version.py",
+    "line": 22,
+    "calls": [
+      "Path",
+      "argparse.ArgumentParser",
+      "MODULE.exists",
+      "DOC.read_text",
+      "\"\\n\".join",
+      "re.search",
+      "parser.add_argument",
+      "MODULE.read_text",
+      "doc_match.group",
+      "sys.exit",
+      "doc_version_raw.lstrip",
+      "parser.parse_args",
+      "re.escape",
+      "SystemExit",
+      "module_bazel_match.group",
+      "DOC.exists",
+      "print"
+    ]
+  }
+]

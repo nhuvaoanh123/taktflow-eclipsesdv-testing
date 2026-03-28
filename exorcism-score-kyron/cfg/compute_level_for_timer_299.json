@@ -1,0 +1,21 @@
+{
+  "function": "compute_level_for_timer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:compute_level_for_timer",
+      "line": 299
+    },
+    {
+      "id": 1,
+      "label": "exit:compute_level_for_timer",
+      "line": 312
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

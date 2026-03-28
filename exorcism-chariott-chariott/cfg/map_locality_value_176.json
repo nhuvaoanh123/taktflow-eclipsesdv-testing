@@ -1,0 +1,21 @@
+{
+  "function": "map_locality_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:map_locality_value",
+      "line": 176
+    },
+    {
+      "id": 1,
+      "label": "exit:map_locality_value",
+      "line": 182
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "copy_tree_nodes_without_data",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:copy_tree_nodes_without_data",
+      "line": 227
+    },
+    {
+      "id": 1,
+      "label": "exit:copy_tree_nodes_without_data",
+      "line": 240
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

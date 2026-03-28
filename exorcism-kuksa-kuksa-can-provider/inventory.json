@@ -1,0 +1,16 @@
+{
+  "project": "kuksa-kuksa-can-provider",
+  "files_by_language": {
+    "Python": {
+      "files": 27,
+      "loc": 3458
+    }
+  },
+  "total_files": 27,
+  "total_loc": 3458,
+  "total_functions": 161,
+  "build_system": "Unknown",
+  "languages": [
+    "Python"
+  ]
+}

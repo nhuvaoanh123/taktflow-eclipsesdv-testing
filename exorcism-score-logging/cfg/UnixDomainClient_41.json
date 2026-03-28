@@ -1,0 +1,54 @@
+{
+  "function": "UnixDomainClient",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:UnixDomainClient",
+      "line": 41
+    },
+    {
+      "id": 1,
+      "label": "if ((client_thread_.joinable()))",
+      "line": 74
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 77
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 74
+    },
+    {
+      "id": 4,
+      "label": "exit:UnixDomainClient",
+      "line": 78
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

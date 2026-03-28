@@ -1,0 +1,21 @@
+{
+  "function": "ThreadPool",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ThreadPool",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:ThreadPool",
+      "line": 78
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

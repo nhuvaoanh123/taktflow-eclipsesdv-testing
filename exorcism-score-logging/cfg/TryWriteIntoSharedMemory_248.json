@@ -1,0 +1,21 @@
+{
+  "function": "TryWriteIntoSharedMemory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TryWriteIntoSharedMemory",
+      "line": 248
+    },
+    {
+      "id": 1,
+      "label": "exit:TryWriteIntoSharedMemory",
+      "line": 259
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

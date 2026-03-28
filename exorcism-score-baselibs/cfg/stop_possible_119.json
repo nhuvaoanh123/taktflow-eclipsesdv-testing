@@ -1,0 +1,30 @@
+{
+  "function": "stop_possible",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stop_possible",
+      "line": 119
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 119
+    },
+    {
+      "id": 2,
+      "label": "exit:stop_possible",
+      "line": 119
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

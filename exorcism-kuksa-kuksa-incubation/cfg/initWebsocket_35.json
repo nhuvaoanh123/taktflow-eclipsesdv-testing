@@ -1,0 +1,11 @@
+{
+  "function": "initWebsocket",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:initWebsocket",
+      "line": 35
+    }
+  ],
+  "edges": []
+}

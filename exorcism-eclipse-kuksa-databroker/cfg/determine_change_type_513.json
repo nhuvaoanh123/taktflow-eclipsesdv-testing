@@ -1,0 +1,21 @@
+{
+  "function": "determine_change_type",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:determine_change_type",
+      "line": 513
+    },
+    {
+      "id": 1,
+      "label": "exit:determine_change_type",
+      "line": 531
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

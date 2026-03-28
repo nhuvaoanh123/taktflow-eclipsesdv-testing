@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonBindingFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonBindingFactory",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonBindingFactory",
+      "line": 53
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

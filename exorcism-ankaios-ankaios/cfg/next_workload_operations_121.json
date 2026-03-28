@@ -1,0 +1,21 @@
+{
+  "function": "next_workload_operations",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:next_workload_operations",
+      "line": 121
+    },
+    {
+      "id": 1,
+      "label": "exit:next_workload_operations",
+      "line": 184
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

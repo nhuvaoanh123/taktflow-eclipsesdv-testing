@@ -1,0 +1,21 @@
+{
+  "function": "log",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:log",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:log",
+      "line": 124
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

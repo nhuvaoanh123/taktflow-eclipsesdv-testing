@@ -1,0 +1,21 @@
+{
+  "function": "enqueue_pending_delete",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:enqueue_pending_delete",
+      "line": 283
+    },
+    {
+      "id": 1,
+      "label": "exit:enqueue_pending_delete",
+      "line": 307
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

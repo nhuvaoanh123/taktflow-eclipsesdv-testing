@@ -1,0 +1,21 @@
+{
+  "function": "MmanMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MmanMock",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:MmanMock",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

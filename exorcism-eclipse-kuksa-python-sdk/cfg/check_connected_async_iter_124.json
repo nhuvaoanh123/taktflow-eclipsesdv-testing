@@ -1,0 +1,30 @@
+{
+  "function": "check_connected_async_iter",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:check_connected_async_iter",
+      "line": 124
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 140
+    },
+    {
+      "id": 2,
+      "label": "exit:check_connected_async_iter",
+      "line": 140
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

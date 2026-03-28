@@ -1,0 +1,26 @@
+{
+  "project": "uprotocol-up-cpp",
+  "files_by_language": {
+    "Python": {
+      "files": 1,
+      "loc": 32
+    },
+    "C": {
+      "files": 27,
+      "loc": 3936
+    },
+    "C++": {
+      "files": 48,
+      "loc": 13748
+    }
+  },
+  "total_files": 76,
+  "total_loc": 17716,
+  "total_functions": 824,
+  "build_system": "CMake",
+  "languages": [
+    "Python",
+    "C",
+    "C++"
+  ]
+}

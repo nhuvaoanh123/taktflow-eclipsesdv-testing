@@ -1,0 +1,3044 @@
+[
+  {
+    "function": "sua",
+    "file": "src/SelfUpdateAgent.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SelfUpdateAgent",
+    "file": "src/SelfUpdateAgent.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/SelfUpdateAgent.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/SelfUpdateAgent.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 58,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/SelfUpdateAgent.cpp",
+    "start_line": 96,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/SelfUpdateAgent.cpp",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "src/main.cpp",
+    "start_line": 63,
+    "cyclomatic_complexity": 133,
+    "nesting_depth": 4,
+    "loc": 188,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Logger.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Logger.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Logger.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Logger.cpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Logger.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Logger.cpp",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FotaEvent.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Logger.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 43,
+    "nesting_depth": 1,
+    "loc": 79,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "Logger",
+    "file": "src/Logger.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 43,
+    "nesting_depth": 1,
+    "loc": 75,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "trace",
+    "file": "src/Logger.h",
+    "start_line": 46,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "debug",
+    "file": "src/Logger.h",
+    "start_line": 54,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "info",
+    "file": "src/Logger.h",
+    "start_line": 62,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "warning",
+    "file": "src/Logger.h",
+    "start_line": 70,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "error",
+    "file": "src/Logger.h",
+    "start_line": 78,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "critical",
+    "file": "src/Logger.h",
+    "start_line": 86,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Context.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/TechCodes.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TechCode",
+    "file": "src/TechCodes.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toString",
+    "file": "src/FotaEvent.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/StateFactory.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/State.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/State.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/State.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/State.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/State.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/State.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "State",
+    "file": "src/FSM/State.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/StateFactory.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "StateFactory",
+    "file": "src/FSM/StateFactory.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/FSM.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "FSM",
+    "file": "src/FSM/FSM.h",
+    "start_line": 37,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/FSM.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/FSM.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/FSM.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/FSM.cpp",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/FSM.cpp",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/FSM.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 2,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Downloading.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Activating.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Activating.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Uninitialized.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Uninitialized",
+    "file": "src/FSM/States/Uninitialized.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Connected.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Connected.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Connected.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Connected.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Cleaning.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Connected",
+    "file": "src/FSM/States/Cleaning.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Idle.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Idle.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Failed.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Failed",
+    "file": "src/FSM/States/Failed.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Cleaning.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Cleaning.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Idle.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Connected",
+    "file": "src/FSM/States/Idle.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Installing.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Installing.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Installing.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 19,
+    "nesting_depth": 2,
+    "loc": 79,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Installed.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Installed",
+    "file": "src/FSM/States/Installed.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Uninitialized.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Uninitialized.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Installing.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Activating.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Activating",
+    "file": "src/FSM/States/Activating.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/SendCurrentState.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/SendCurrentState.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/SendCurrentState.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Failed.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Failed.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Installed.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/Connected.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Connected",
+    "file": "src/FSM/States/Connected.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/FSM/States/SendCurrentState.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SendCurrentState",
+    "file": "src/FSM/States/SendCurrentState.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Downloading.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Downloading.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/FSM/States/Downloading.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 2,
+    "loc": 53,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "sua",
+    "file": "src/Patterns/Dispatcher.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Dispatcher",
+    "file": "src/Patterns/Dispatcher.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DispatcherSubscriber",
+    "file": "src/Patterns/Dispatcher.h",
+    "start_line": 49,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Patterns/Dispatcher.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Patterns/Dispatcher.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Patterns/Dispatcher.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Patterns/Dispatcher.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Patterns/Dispatcher.cpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Patterns/Dispatcher.cpp",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Install/IRaucInstaller.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IRaucInstaller",
+    "file": "src/Install/IRaucInstaller.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/Installer.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/Installer.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 16,
+    "nesting_depth": 3,
+    "loc": 42,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "on_completed",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "on_properties_changed",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 19,
+    "nesting_depth": 7,
+    "loc": 62,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 121,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 129,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 141,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 159,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 164,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 169,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 176,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 2,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 202,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 210,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 237,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 243,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 258,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 291,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 4,
+    "loc": 44,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 336,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 370,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 4,
+    "loc": 47,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 418,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 4,
+    "loc": 28,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 447,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 480,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 485,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 490,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 521,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 531,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 537,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 542,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DBusRaucInstaller.cpp",
+    "start_line": 547,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 68,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Install/DummyRaucInstaller.cpp",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Install/Installer.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Installer",
+    "file": "src/Install/Installer.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Install/DBusRaucInstaller.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DBusRaucInstaller",
+    "file": "src/Install/DBusRaucInstaller.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Install/DummyRaucInstaller.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DummyRaucInstaller",
+    "file": "src/Install/DummyRaucInstaller.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessage.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Mqtt/MqttConfiguration.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 5,
+    "loc": 28,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 1,
+    "loc": 51,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 116,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 135,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 2,
+    "loc": 110,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 246,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 266,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 304,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.cpp",
+    "start_line": 340,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "MqttMessagingProtocolJSON",
+    "file": "src/Mqtt/MqttMessagingProtocolJSON.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "sua",
+    "file": "src/Mqtt/MqttListener.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttListener",
+    "file": "src/Mqtt/MqttListener.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Mqtt/IMqttMessagingProtocol.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IMqttMessagingProtocol",
+    "file": "src/Mqtt/IMqttMessagingProtocol.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttActionListener",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "on_failure",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "on_success",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttCallback",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "reconnect",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 60,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "on_failure",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 73,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "on_success",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "connected",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "connection_lost",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 98,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "message_arrived",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 106,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 4,
+    "loc": 47,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "delivery_complete",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 154,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 168,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 173,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 205,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Mqtt/MqttProcessor.cpp",
+    "start_line": 216,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Mqtt/MqttProcessor.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IMqttProcessor",
+    "file": "src/Mqtt/MqttProcessor.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Mqtt/IMqttProcessor.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IMqttProcessor",
+    "file": "src/Mqtt/IMqttProcessor.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttMessage",
+    "file": "src/Mqtt/MqttMessage.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Utils/JsonUtils.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Utils/ServerAddressParser.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "jsonTemplate",
+    "file": "src/Utils/JsonUtils.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Utils/ServerAddressParser.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ServerAddressParser",
+    "file": "src/Utils/ServerAddressParser.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Utils/BundleChecker.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IBundleChecker",
+    "file": "src/Utils/BundleChecker.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Utils/BundleChecker.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Utils/BundleChecker.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Utils/IBundleChecker.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IBundleChecker",
+    "file": "src/Utils/IBundleChecker.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Download/IDownloader.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IDownloader",
+    "file": "src/Download/IDownloader.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "progress_callback",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "write_data",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "init",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 93,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 105,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "download",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 115,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 2,
+    "loc": 73,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 195,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/Download/Downloader.cpp",
+    "start_line": 203,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sua",
+    "file": "src/Download/Downloader.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IDownloader",
+    "file": "src/Download/Downloader.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MockMqttProcessor",
+    "file": "utest/MockMqttProcessor.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "send",
+    "file": "utest/MockMqttProcessor.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "installBundle",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 40,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getBundleName",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getSlotStatus",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getBootedVersion",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getBundleVersion",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 72,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "triggerIdentify",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 105,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "trigger",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 137,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "triggerCurrentStateRequest",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 154,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "execute",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 167,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 177,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 198,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 222,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 231,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 243,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 257,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 271,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 285,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 305,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 321,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 338,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 356,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 377,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 397,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestSelfUpdateScenarios.cpp",
+    "start_line": 420,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MockFSM",
+    "file": "utest/MockFSM.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "transitTo",
+    "file": "utest/MockFSM.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "A",
+    "file": "utest/TestFSM.cpp",
+    "start_line": 11,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "B",
+    "file": "utest/TestFSM.cpp",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "C",
+    "file": "utest/TestFSM.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "utest/TestFSM.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "utest/TestDownloader.cpp",
+    "start_line": 14,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "epochTime",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 15,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "validateJsonSyntax",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 113,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 156,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 186,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 220,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 254,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 271,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 285,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 300,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 42,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 343,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 42,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 386,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 409,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 442,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 465,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 488,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 521,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 558,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 595,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 633,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 666,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 701,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 736,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 771,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 804,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 811,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 847,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 880,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 913,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 946,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 968,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 990,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 1012,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 1035,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestMqttMessagingProtocolJSON.cpp",
+    "start_line": 1057,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MockMqttMessagingProtocol",
+    "file": "utest/MockMqttMessagingProtocol.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MockDownloader",
+    "file": "utest/MockDownloader.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "parse",
+    "file": "utest/TestServerAddressParser.cpp",
+    "start_line": 9,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestServerAddressParser.cpp",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestServerAddressParser.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestServerAddressParser.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestServerAddressParser.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "EXPECT_EQ_MULTILINE",
+    "file": "utest/Utils.cpp",
+    "start_line": 8,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 2,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "A",
+    "file": "utest/TestStateFactory.cpp",
+    "start_line": 9,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "B",
+    "file": "utest/TestStateFactory.cpp",
+    "start_line": 16,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "utest/TestStateFactory.cpp",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "utest/TestStateFactory.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "dispatch",
+    "file": "utest/TestDispatcher.cpp",
+    "start_line": 13,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestDispatcher.cpp",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestDispatcher.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "utest/TestDispatcher.cpp",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 66,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MockBundleChecker",
+    "file": "utest/MockBundleChecker.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isTimeFormatCorrect",
+    "file": "utest/TestLogger.cpp",
+    "start_line": 11,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "readAndAdaptLog",
+    "file": "utest/TestLogger.cpp",
+    "start_line": 18,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "utest/TestLogger.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  }
+]

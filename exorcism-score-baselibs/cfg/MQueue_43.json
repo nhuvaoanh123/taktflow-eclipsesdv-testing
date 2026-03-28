@@ -1,0 +1,21 @@
+{
+  "function": "MQueue",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MQueue",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:MQueue",
+      "line": 84
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

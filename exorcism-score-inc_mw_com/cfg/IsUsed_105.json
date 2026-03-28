@@ -1,0 +1,21 @@
+{
+  "function": "IsUsed",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IsUsed",
+      "line": 105
+    },
+    {
+      "id": 1,
+      "label": "exit:IsUsed",
+      "line": 155
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "latch",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:latch",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:latch",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

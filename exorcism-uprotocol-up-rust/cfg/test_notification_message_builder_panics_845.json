@@ -1,0 +1,21 @@
+{
+  "function": "test_notification_message_builder_panics",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_notification_message_builder_panics",
+      "line": 845
+    },
+    {
+      "id": 1,
+      "label": "exit:test_notification_message_builder_panics",
+      "line": 861
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "ISharedMemoryReaderMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ISharedMemoryReaderMock",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:ISharedMemoryReaderMock",
+      "line": 61
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

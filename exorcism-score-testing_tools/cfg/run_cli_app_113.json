@@ -1,0 +1,21 @@
+{
+  "function": "run_cli_app",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:run_cli_app",
+      "line": 113
+    },
+    {
+      "id": 1,
+      "label": "exit:run_cli_app",
+      "line": 156
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

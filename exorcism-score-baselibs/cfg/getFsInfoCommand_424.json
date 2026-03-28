@@ -1,0 +1,30 @@
+{
+  "function": "getFsInfoCommand",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getFsInfoCommand",
+      "line": 424
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 444
+    },
+    {
+      "id": 2,
+      "label": "exit:getFsInfoCommand",
+      "line": 446
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "handle_request",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_request",
+      "line": 258
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_request",
+      "line": 372
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

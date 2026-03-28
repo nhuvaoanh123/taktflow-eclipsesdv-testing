@@ -1,0 +1,21 @@
+{
+  "function": "fib",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fib",
+      "line": 45
+    },
+    {
+      "id": 1,
+      "label": "exit:fib",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

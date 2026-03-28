@@ -1,0 +1,21 @@
+{
+  "function": "test_format_spec_display_hint_binary",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_format_spec_display_hint_binary",
+      "line": 250
+    },
+    {
+      "id": 1,
+      "label": "exit:test_format_spec_display_hint_binary",
+      "line": 260
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

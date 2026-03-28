@@ -1,0 +1,21 @@
+{
+  "function": "InterprocessMutex",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:InterprocessMutex",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "exit:InterprocessMutex",
+      "line": 73
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "test_get_datapoint_using_wildcard",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_get_datapoint_using_wildcard",
+      "line": 1317
+    },
+    {
+      "id": 1,
+      "label": "exit:test_get_datapoint_using_wildcard",
+      "line": 1379
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

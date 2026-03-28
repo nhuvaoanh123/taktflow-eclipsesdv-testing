@@ -1,0 +1,21 @@
+{
+  "function": "Deadline",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Deadline",
+      "line": 90
+    },
+    {
+      "id": 1,
+      "label": "exit:Deadline",
+      "line": 115
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

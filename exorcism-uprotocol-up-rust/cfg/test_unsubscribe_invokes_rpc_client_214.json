@@ -1,0 +1,21 @@
+{
+  "function": "test_unsubscribe_invokes_rpc_client",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_unsubscribe_invokes_rpc_client",
+      "line": 214
+    },
+    {
+      "id": 1,
+      "label": "exit:test_unsubscribe_invokes_rpc_client",
+      "line": 259
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

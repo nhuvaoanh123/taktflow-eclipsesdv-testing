@@ -1,0 +1,21 @@
+{
+  "function": "push_local_queue",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:push_local_queue",
+      "line": 297
+    },
+    {
+      "id": 1,
+      "label": "exit:push_local_queue",
+      "line": 319
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

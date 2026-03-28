@@ -1,0 +1,21 @@
+{
+  "function": "generic_cpu_load_action",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:generic_cpu_load_action",
+      "line": 44
+    },
+    {
+      "id": 1,
+      "label": "exit:generic_cpu_load_action",
+      "line": 56
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

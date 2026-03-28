@@ -1,0 +1,21 @@
+{
+  "function": "deregister_subscriptions",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deregister_subscriptions",
+      "line": 243
+    },
+    {
+      "id": 1,
+      "label": "exit:deregister_subscriptions",
+      "line": 269
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

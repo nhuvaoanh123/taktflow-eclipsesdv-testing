@@ -1,0 +1,21 @@
+{
+  "function": "iterator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:iterator",
+      "line": 84
+    },
+    {
+      "id": 1,
+      "label": "exit:iterator",
+      "line": 88
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

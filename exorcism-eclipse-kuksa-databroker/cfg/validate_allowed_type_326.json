@@ -1,0 +1,21 @@
+{
+  "function": "validate_allowed_type",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_allowed_type",
+      "line": 326
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_allowed_type",
+      "line": 363
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

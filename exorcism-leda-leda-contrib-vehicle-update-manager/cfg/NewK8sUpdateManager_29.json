@@ -1,0 +1,21 @@
+{
+  "function": "NewK8sUpdateManager",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:NewK8sUpdateManager",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:NewK8sUpdateManager",
+      "line": 72
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

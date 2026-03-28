@@ -1,0 +1,21 @@
+{
+  "function": "intent_kind_display_succeeds",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:intent_kind_display_succeeds",
+      "line": 787
+    },
+    {
+      "id": 1,
+      "label": "exit:intent_kind_display_succeeds",
+      "line": 811
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

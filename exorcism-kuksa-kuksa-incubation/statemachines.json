@@ -1,0 +1,32 @@
+{
+  "state_machines": [
+    {
+      "file": "kuksa-persistence-provider/src/main.rs",
+      "line": 103,
+      "type": "match",
+      "condition": "parsed_cfg_hash[\"state-storage\"]",
+      "states": [
+        "ConfigValue::Object(ref parsed_storage_config)",
+        "_"
+      ]
+    },
+    {
+      "file": "seat_service/src/lib/seat_adjuster/seat_controller/tests/cansim/seatadjuster_engine.c",
+      "line": 62,
+      "type": "switch",
+      "condition": "state",
+      "states": [
+        "MotorDirection_OFF",
+        "return \"OFF\";",
+        "MotorDirection_INC",
+        "return \"INC\";",
+        "MotorDirection_DEC",
+        "return \"DEC\";",
+        "MotorDirection_INV",
+        "return \"INV\";",
+        "return \"UNKNOWN\";"
+      ]
+    }
+  ],
+  "count": 2
+}

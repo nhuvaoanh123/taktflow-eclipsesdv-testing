@@ -1,0 +1,21 @@
+{
+  "function": "resolve_literal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:resolve_literal",
+      "line": 396
+    },
+    {
+      "id": 1,
+      "label": "exit:resolve_literal",
+      "line": 473
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

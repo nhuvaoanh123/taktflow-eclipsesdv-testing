@@ -1,0 +1,21 @@
+{
+  "function": "FlagFile",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FlagFile",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:FlagFile",
+      "line": 65
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

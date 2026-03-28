@@ -1,0 +1,21 @@
+{
+  "function": "ProvidedService",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProvidedService",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:ProvidedService",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

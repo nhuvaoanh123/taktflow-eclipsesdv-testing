@@ -1,0 +1,21 @@
+{
+  "function": "write_i64",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:write_i64",
+      "line": 350
+    },
+    {
+      "id": 1,
+      "label": "exit:write_i64",
+      "line": 371
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

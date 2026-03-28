@@ -1,0 +1,63 @@
+{
+  "function": "get_dbc2vss_mapping",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_dbc2vss_mapping",
+      "line": 483
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 487
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 490
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 487
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 491
+    },
+    {
+      "id": 5,
+      "label": "exit:get_dbc2vss_mapping",
+      "line": 491
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

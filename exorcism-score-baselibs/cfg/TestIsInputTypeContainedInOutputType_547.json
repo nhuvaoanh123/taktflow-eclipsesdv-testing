@@ -1,0 +1,21 @@
+{
+  "function": "TestIsInputTypeContainedInOutputType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestIsInputTypeContainedInOutputType",
+      "line": 547
+    },
+    {
+      "id": 1,
+      "label": "exit:TestIsInputTypeContainedInOutputType",
+      "line": 658
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

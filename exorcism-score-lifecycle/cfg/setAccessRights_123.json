@@ -1,0 +1,195 @@
+{
+  "function": "setAccessRights",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:setAccessRights",
+      "line": 123
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 126
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 129
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 126
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 138
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 142
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 138
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 201
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 204
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 201
+    },
+    {
+      "id": 10,
+      "label": "if (...)",
+      "line": 206
+    },
+    {
+      "id": 11,
+      "label": "merge",
+      "line": 209
+    },
+    {
+      "id": 12,
+      "label": "then",
+      "line": 206
+    },
+    {
+      "id": 13,
+      "label": "if (...)",
+      "line": 211
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 214
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 211
+    },
+    {
+      "id": 16,
+      "label": "return_statement",
+      "line": 216
+    },
+    {
+      "id": 17,
+      "label": "exit:setAccessRights",
+      "line": 217
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "true"
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 16
+    },
+    {
+      "from": 14,
+      "to": 17
+    }
+  ]
+}

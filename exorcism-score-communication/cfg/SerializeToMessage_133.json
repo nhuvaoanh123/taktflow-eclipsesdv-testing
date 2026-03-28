@@ -1,0 +1,30 @@
+{
+  "function": "SerializeToMessage",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SerializeToMessage",
+      "line": 133
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 143
+    },
+    {
+      "id": 2,
+      "label": "exit:SerializeToMessage",
+      "line": 144
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

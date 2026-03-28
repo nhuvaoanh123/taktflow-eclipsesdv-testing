@@ -1,0 +1,4142 @@
+[
+  {
+    "function": "main",
+    "file": "build.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "unwrap_or_unreachable",
+    "file": "src/extensions.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "unwrap_or_unreachable",
+    "file": "src/extensions.rs",
+    "start_line": 66,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_unreachable_option_some",
+    "file": "src/extensions.rs",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_unreachable_option_none",
+    "file": "src/extensions.rs",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_unreachable_result_ok",
+    "file": "src/extensions.rs",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_unreachable_result_err",
+    "file": "src/extensions.rs",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/ankaios.rs",
+    "start_line": 272,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new_with_timeout",
+    "file": "src/ankaios.rs",
+    "start_line": 289,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "send_request",
+    "file": "src/ankaios.rs",
+    "start_line": 316,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 7,
+    "loc": 31,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "apply_manifest",
+    "file": "src/ankaios.rs",
+    "start_line": 365,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 32,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "delete_manifest",
+    "file": "src/ankaios.rs",
+    "start_line": 415,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 32,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "apply_workload",
+    "file": "src/ankaios.rs",
+    "start_line": 465,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 39,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_workload",
+    "file": "src/ankaios.rs",
+    "start_line": 522,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "delete_workload",
+    "file": "src/ankaios.rs",
+    "start_line": 549,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 34,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_configs",
+    "file": "src/ankaios.rs",
+    "start_line": 601,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 34,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_config",
+    "file": "src/ankaios.rs",
+    "start_line": 655,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 37,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_configs",
+    "file": "src/ankaios.rs",
+    "start_line": 706,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_config",
+    "file": "src/ankaios.rs",
+    "start_line": 730,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "delete_all_configs",
+    "file": "src/ankaios.rs",
+    "start_line": 749,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 25,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "delete_config",
+    "file": "src/ankaios.rs",
+    "start_line": 788,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 27,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_state",
+    "file": "src/ankaios.rs",
+    "start_line": 833,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set_agent_tags",
+    "file": "src/ankaios.rs",
+    "start_line": 872,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 35,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_agents",
+    "file": "src/ankaios.rs",
+    "start_line": 921,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_agent",
+    "file": "src/ankaios.rs",
+    "start_line": 939,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_workload_states",
+    "file": "src/ankaios.rs",
+    "start_line": 963,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_execution_state_for_instance_name",
+    "file": "src/ankaios.rs",
+    "start_line": 987,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_workload_states_on_agent",
+    "file": "src/ankaios.rs",
+    "start_line": 1020,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_workload_states_for_name",
+    "file": "src/ankaios.rs",
+    "start_line": 1047,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 15,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "wait_for_workload_to_reach_state",
+    "file": "src/ankaios.rs",
+    "start_line": 1077,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 6,
+    "loc": 32,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "request_logs",
+    "file": "src/ankaios.rs",
+    "start_line": 1123,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 36,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "stop_receiving_logs",
+    "file": "src/ankaios.rs",
+    "start_line": 1173,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 26,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "register_event",
+    "file": "src/ankaios.rs",
+    "start_line": 1213,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 4,
+    "loc": 40,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "unregister_event",
+    "file": "src/ankaios.rs",
+    "start_line": 1267,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 27,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "drop",
+    "file": "src/ankaios.rs",
+    "start_line": 1297,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_test_ankaios",
+    "file": "src/ankaios.rs",
+    "start_line": 1314,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "itest_create_ankaios",
+    "file": "src/ankaios.rs",
+    "start_line": 1362,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_timeout_while_connecting",
+    "file": "src/ankaios.rs",
+    "start_line": 1387,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_state_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 1415,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_state_incorrect_id_and_timeout",
+    "file": "src/ankaios.rs",
+    "start_line": 1456,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_state_err",
+    "file": "src/ankaios.rs",
+    "start_line": 1496,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_state_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 1536,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_apply_manifest_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 1576,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_apply_manifest_err",
+    "file": "src/ankaios.rs",
+    "start_line": 1625,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_apply_manifest_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 1677,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_manifest_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 1729,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_manifest_err",
+    "file": "src/ankaios.rs",
+    "start_line": 1778,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_manifest_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 1830,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_apply_workload_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 1882,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_apply_workload_err",
+    "file": "src/ankaios.rs",
+    "start_line": 1931,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_apply_workload_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 1983,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_apply_workload_empty_masks_uses_main_mask",
+    "file": "src/ankaios.rs",
+    "start_line": 2035,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 40,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_workload",
+    "file": "src/ankaios.rs",
+    "start_line": 2077,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_workload_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 2129,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 44,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_workload_err",
+    "file": "src/ankaios.rs",
+    "start_line": 2175,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_workload_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 2224,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_update_configs_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 2273,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 46,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_update_configs_err",
+    "file": "src/ankaios.rs",
+    "start_line": 2321,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 49,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_update_configs_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 2372,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 49,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_add_config_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 2423,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_add_config_err",
+    "file": "src/ankaios.rs",
+    "start_line": 2472,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_add_config_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 2524,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_configs",
+    "file": "src/ankaios.rs",
+    "start_line": 2576,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_config",
+    "file": "src/ankaios.rs",
+    "start_line": 2626,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_all_configs_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 2679,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 41,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_all_configs_err",
+    "file": "src/ankaios.rs",
+    "start_line": 2722,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 46,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_all_configs_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 2770,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 46,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_config_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 2818,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 41,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_config_err",
+    "file": "src/ankaios.rs",
+    "start_line": 2861,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 46,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_delete_config_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 2909,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 46,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_set_agent_tags_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 2957,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 7,
+    "loc": 63,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "itest_set_agent_tags_err",
+    "file": "src/ankaios.rs",
+    "start_line": 3022,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 53,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_set_agent_tags_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 3077,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 53,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_agents",
+    "file": "src/ankaios.rs",
+    "start_line": 3132,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 58,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_agent_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 3192,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 56,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_agent_not_found",
+    "file": "src/ankaios.rs",
+    "start_line": 3250,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_workload_states",
+    "file": "src/ankaios.rs",
+    "start_line": 3300,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_execution_state_for_instance_name",
+    "file": "src/ankaios.rs",
+    "start_line": 3349,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 61,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_workload_states_on_agent",
+    "file": "src/ankaios.rs",
+    "start_line": 3412,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_get_workload_states_for_name",
+    "file": "src/ankaios.rs",
+    "start_line": 3464,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_wait_for_workload_to_reach_state_timeout",
+    "file": "src/ankaios.rs",
+    "start_line": 3514,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 59,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_request_logs_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 3575,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 83,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_request_logs_error",
+    "file": "src/ankaios.rs",
+    "start_line": 3660,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 49,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_request_logs_error_on_unexpected_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 3711,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 49,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_stop_receiving_logs_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 3762,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 54,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_stop_receiving_logs_response_error",
+    "file": "src/ankaios.rs",
+    "start_line": 3818,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 58,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_stop_receiving_logs_unexpected_response",
+    "file": "src/ankaios.rs",
+    "start_line": 3878,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 58,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_register_events_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 3938,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 69,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_register_events_error",
+    "file": "src/ankaios.rs",
+    "start_line": 4009,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_register_events_error_on_unexpected_response_type",
+    "file": "src/ankaios.rs",
+    "start_line": 4050,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_unregister_events_ok",
+    "file": "src/ankaios.rs",
+    "start_line": 4091,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 44,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_unregister_events_response_error",
+    "file": "src/ankaios.rs",
+    "start_line": 4137,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "itest_unregister_events_unexpected_response",
+    "file": "src/ankaios.rs",
+    "start_line": 4187,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/event_types.rs",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/event_types.rs",
+    "start_line": 112,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_request_id",
+    "file": "src/components/event_types.rs",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "utest_events_entry",
+    "file": "src/components/event_types.rs",
+    "start_line": 150,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_events_campaign_response",
+    "file": "src/components/event_types.rs",
+    "start_line": 170,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/components/log_types.rs",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/log_types.rs",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/log_types.rs",
+    "start_line": 174,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_request_id",
+    "file": "src/components/log_types.rs",
+    "start_line": 193,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "utest_log_entry_proto_to_sdk_object",
+    "file": "src/components/log_types.rs",
+    "start_line": 217,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_log_campaign_response_get_request_id",
+    "file": "src/components/log_types.rs",
+    "start_line": 239,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/components/response.rs",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/response.rs",
+    "start_line": 130,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_request_id",
+    "file": "src/components/response.rs",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_content",
+    "file": "src/components/response.rs",
+    "start_line": 151,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/response.rs",
+    "start_line": 157,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 8,
+    "loc": 81,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/response.rs",
+    "start_line": 252,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/response.rs",
+    "start_line": 291,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_test_control_interface_accepted_response",
+    "file": "src/components/response.rs",
+    "start_line": 320,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_test_proto_update_state_success",
+    "file": "src/components/response.rs",
+    "start_line": 328,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_test_response_update_state_success",
+    "file": "src/components/response.rs",
+    "start_line": 345,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_test_proto_from_ankaios_log_entries_response",
+    "file": "src/components/response.rs",
+    "start_line": 350,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "generate_test_proto_log_entries_response",
+    "file": "src/components/response.rs",
+    "start_line": 369,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_test_logs_stop_response",
+    "file": "src/components/response.rs",
+    "start_line": 393,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "generate_test_response_event_entry",
+    "file": "src/components/response.rs",
+    "start_line": 404,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "utest_response_type",
+    "file": "src/components/response.rs",
+    "start_line": 455,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_error",
+    "file": "src/components/response.rs",
+    "start_line": 473,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_complete_state",
+    "file": "src/components/response.rs",
+    "start_line": 492,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_update_state_success",
+    "file": "src/components/response.rs",
+    "start_line": 520,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_control_interface_accepted",
+    "file": "src/components/response.rs",
+    "start_line": 539,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_connection_closed",
+    "file": "src/components/response.rs",
+    "start_line": 553,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_empty",
+    "file": "src/components/response.rs",
+    "start_line": 567,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_update_state_success",
+    "file": "src/components/response.rs",
+    "start_line": 579,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 53,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_logs_request_accepted",
+    "file": "src/components/response.rs",
+    "start_line": 634,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_logs_cancel_accepted",
+    "file": "src/components/response.rs",
+    "start_line": 674,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_log_entries_response",
+    "file": "src/components/response.rs",
+    "start_line": 690,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_logs_stop_response",
+    "file": "src/components/response.rs",
+    "start_line": 710,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_event_entry",
+    "file": "src/components/response.rs",
+    "start_line": 742,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_response_events_cancel_accepted",
+    "file": "src/components/response.rs",
+    "start_line": 772,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "start_line": 122,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "start_line": 144,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "start_line": 150,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "start_line": 167,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "start_line": 189,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "start_line": 193,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "start_line": 199,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/request.rs",
+    "start_line": 227,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "start_line": 252,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "start_line": 256,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "start_line": 262,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "start_line": 290,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "start_line": 305,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "start_line": 309,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "start_line": 315,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "start_line": 343,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "start_line": 361,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "start_line": 365,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "start_line": 371,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "start_line": 399,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "start_line": 414,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "start_line": 418,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "start_line": 424,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "generate_test_request",
+    "file": "src/components/request.rs",
+    "start_line": 438,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_request_update_state",
+    "file": "src/components/request.rs",
+    "start_line": 457,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_request_get_state",
+    "file": "src/components/request.rs",
+    "start_line": 481,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_request_logs",
+    "file": "src/components/request.rs",
+    "start_line": 502,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_request_logs_cancel",
+    "file": "src/components/request.rs",
+    "start_line": 533,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_request_events",
+    "file": "src/components/request.rs",
+    "start_line": 550,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_request_events_cancel",
+    "file": "src/components/request.rs",
+    "start_line": 572,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "insert",
+    "file": "src/components/control_interface.rs",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "remove",
+    "file": "src/components/control_interface.rs",
+    "start_line": 103,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_cloned",
+    "file": "src/components/control_interface.rs",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/components/control_interface.rs",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "read_varint_data",
+    "file": "src/components/control_interface.rs",
+    "start_line": 171,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 12,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "read_protobuf_data",
+    "file": "src/components/control_interface.rs",
+    "start_line": 193,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/control_interface.rs",
+    "start_line": 216,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "connect",
+    "file": "src/components/control_interface.rs",
+    "start_line": 235,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 4,
+    "loc": 51,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "src/components/control_interface.rs",
+    "start_line": 292,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "change_state",
+    "file": "src/components/control_interface.rs",
+    "start_line": 319,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "prepare_writer",
+    "file": "src/components/control_interface.rs",
+    "start_line": 332,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 9,
+    "loc": 54,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "read_from_control_interface",
+    "file": "src/components/control_interface.rs",
+    "start_line": 389,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 10,
+    "loc": 92,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "handle_decoded_response",
+    "file": "src/components/control_interface.rs",
+    "start_line": 493,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 5,
+    "loc": 57,
+    "param_count": 5,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "write_request",
+    "file": "src/components/control_interface.rs",
+    "start_line": 560,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 21,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "add_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 590,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "remove_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 603,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 617,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "remove_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 634,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "forward_log_entries",
+    "file": "src/components/control_interface.rs",
+    "start_line": 649,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 23,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "forward_logs_stop_response",
+    "file": "src/components/control_interface.rs",
+    "start_line": 682,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 22,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "forward_event_response",
+    "file": "src/components/control_interface.rs",
+    "start_line": 714,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 18,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "send_initial_hello",
+    "file": "src/components/control_interface.rs",
+    "start_line": 738,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_state",
+    "file": "src/components/control_interface.rs",
+    "start_line": 804,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "utest_read_protobuf_data",
+    "file": "src/components/control_interface.rs",
+    "start_line": 813,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_state",
+    "file": "src/components/control_interface.rs",
+    "start_line": 841,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_connect",
+    "file": "src/components/control_interface.rs",
+    "start_line": 855,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 6,
+    "loc": 76,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "utest_control_interface_connect_timeout",
+    "file": "src/components/control_interface.rs",
+    "start_line": 933,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_send_request",
+    "file": "src/components/control_interface.rs",
+    "start_line": 963,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 6,
+    "loc": 101,
+    "param_count": 0,
+    "flags": [
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "utest_control_interface_agent_disconnected",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1066,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 6,
+    "loc": 117,
+    "param_count": 0,
+    "flags": [
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "utest_handle_decoded_response",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1185,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 62,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_receive_log_entries",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1249,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 66,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_forward_log_entries_response_unable_to_find_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1317,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_receive_logs_stop_response",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1355,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 68,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_forward_logs_stop_response_unable_to_find_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1425,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 45,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_receive_event_entry",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1472,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 67,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_add_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1541,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_remove_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1565,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_add_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1604,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_control_interface_remove_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "start_line": 1628,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "read_file_to_string",
+    "file": "src/components/manifest.rs",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from_dict",
+    "file": "src/components/manifest.rs",
+    "start_line": 93,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from_string",
+    "file": "src/components/manifest.rs",
+    "start_line": 110,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from_file",
+    "file": "src/components/manifest.rs",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "calculate_masks",
+    "file": "src/components/manifest.rs",
+    "start_line": 137,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 14,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "to_desired_state",
+    "file": "src/components/manifest.rs",
+    "start_line": 158,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "try_from",
+    "file": "src/components/manifest.rs",
+    "start_line": 166,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 10,
+    "loc": 75,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/components/manifest.rs",
+    "start_line": 246,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "try_from",
+    "file": "src/components/manifest.rs",
+    "start_line": 257,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "read_to_string_mock",
+    "file": "src/components/manifest.rs",
+    "start_line": 276,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_test_manifest",
+    "file": "src/components/manifest.rs",
+    "start_line": 301,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_creation",
+    "file": "src/components/manifest.rs",
+    "start_line": 312,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_no_workloads",
+    "file": "src/components/manifest.rs",
+    "start_line": 327,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/complete_state.rs",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new_from_manifest",
+    "file": "src/components/complete_state.rs",
+    "start_line": 147,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/complete_state.rs",
+    "start_line": 163,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new_from_configs",
+    "file": "src/components/complete_state.rs",
+    "start_line": 179,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new_from_workloads",
+    "file": "src/components/complete_state.rs",
+    "start_line": 195,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 6,
+    "loc": 18,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/complete_state.rs",
+    "start_line": 220,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 36,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/complete_state.rs",
+    "start_line": 263,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "set_api_version",
+    "file": "src/components/complete_state.rs",
+    "start_line": 272,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_api_version",
+    "file": "src/components/complete_state.rs",
+    "start_line": 291,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_workload",
+    "file": "src/components/complete_state.rs",
+    "start_line": 309,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 8,
+    "loc": 13,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_workloads",
+    "file": "src/components/complete_state.rs",
+    "start_line": 329,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 6,
+    "loc": 11,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_workload_states",
+    "file": "src/components/complete_state.rs",
+    "start_line": 347,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_agents",
+    "file": "src/components/complete_state.rs",
+    "start_line": 360,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 9,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "set_agent_tags",
+    "file": "src/components/complete_state.rs",
+    "start_line": 376,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "set_configs",
+    "file": "src/components/complete_state.rs",
+    "start_line": 400,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 5,
+    "loc": 49,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "to_config_item",
+    "file": "src/components/complete_state.rs",
+    "start_line": 401,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 32,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_configs",
+    "file": "src/components/complete_state.rs",
+    "start_line": 456,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 5,
+    "loc": 27,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "from_config_item",
+    "file": "src/components/complete_state.rs",
+    "start_line": 457,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/complete_state.rs",
+    "start_line": 496,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 4,
+    "loc": 29,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/complete_state.rs",
+    "start_line": 532,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/components/complete_state.rs",
+    "start_line": 555,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/complete_state.rs",
+    "start_line": 561,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/complete_state.rs",
+    "start_line": 567,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/complete_state.rs",
+    "start_line": 573,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_test_configs_proto",
+    "file": "src/components/complete_state.rs",
+    "start_line": 593,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 60,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_agents_proto",
+    "file": "src/components/complete_state.rs",
+    "start_line": 655,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_complete_state_proto",
+    "file": "src/components/complete_state.rs",
+    "start_line": 673,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_api_version",
+    "file": "src/components/complete_state.rs",
+    "start_line": 701,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_proto",
+    "file": "src/components/complete_state.rs",
+    "start_line": 709,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_from_manifest",
+    "file": "src/components/complete_state.rs",
+    "start_line": 716,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_from_configs",
+    "file": "src/components/complete_state.rs",
+    "start_line": 728,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_from_workloads",
+    "file": "src/components/complete_state.rs",
+    "start_line": 744,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_invalid_value_config",
+    "file": "src/components/complete_state.rs",
+    "start_line": 754,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_to_dict",
+    "file": "src/components/complete_state.rs",
+    "start_line": 764,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 84,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_get_workload",
+    "file": "src/components/complete_state.rs",
+    "start_line": 850,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_get_workload_states",
+    "file": "src/components/complete_state.rs",
+    "start_line": 857,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_get_agents",
+    "file": "src/components/complete_state.rs",
+    "start_line": 870,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "start_line": 43,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "parse_state",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "start_line": 94,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "utest_default_functionality",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "start_line": 135,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_filter_mask",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "start_line": 99,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "utest_instance_name",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "start_line": 169,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new_from_ank_base",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "new_from_exec_state",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 130,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 4,
+    "loc": 19,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "add_workload_state",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 156,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "as_dict",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 175,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "as_mapping",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 185,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "as_list",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 195,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_for_instance_name",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 210,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 222,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 228,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 234,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 4,
+    "loc": 21,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 258,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 4,
+    "loc": 19,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "generate_test_workload_states_proto",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 288,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 66,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_state",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 366,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_state_collection",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "start_line": 419,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 54,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new_from_str",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 94,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 1,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "as_i32",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from_str",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 122,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 1,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 152,
+    "cyclomatic_complexity": 34,
+    "nesting_depth": 4,
+    "loc": 63,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "to_i32",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 221,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 1,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "from_str",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 250,
+    "cyclomatic_complexity": 19,
+    "nesting_depth": 2,
+    "loc": 21,
+    "param_count": 1,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "utest_workload_state_enum_helpers",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 291,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_state_str_invalid",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 331,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_sub_state_enum_helpers",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 337,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_substate_enum_err",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 454,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_substate_str_invalid",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "start_line": 466,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "read_file_to_string",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "workload_name",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 103,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "agent_name",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "runtime",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 131,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "runtime_config",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 145,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "runtime_config_from_file",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 163,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "restart_policy",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 177,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_dependency",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 192,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "add_tag",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 208,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "add_allow_rule",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 223,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "add_deny_rule",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 242,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "add_config",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 261,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "add_file",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 275,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "build",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 295,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 3,
+    "loc": 52,
+    "param_count": 1,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "utest_workload_builder",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 368,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_build_return_err",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "start_line": 396,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 45,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "from_data",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "from_binary_data",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 94,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 107,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 148,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 4,
+    "loc": 52,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "into_proto",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 207,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from_proto",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 227,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_from_data",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 265,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_binary_data",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 273,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_data_with_empty_content",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 285,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_binary_data_with_empty_content",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 293,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_data_file_to_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 301,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_binary_data_file_to_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 320,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_with_data_content",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 337,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_with_binary_data_content",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 355,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_missing_mount_point",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 377,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_no_content",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 397,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_both_data_and_binary_data_content",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 417,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_invalid_mount_point_type",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 448,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_invalid_data_content_type",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 472,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_dict_invalid_binary_data_content_type",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 496,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_data_file_round_trip_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 520,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_binary_data_file_round_trip_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 529,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_to_proto_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 539,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_to_proto_binary_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 553,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_proto_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 568,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_from_proto_binary_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 581,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_round_trip_proto_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 598,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_round_trip_proto_binary_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 607,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_clone",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 617,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_file_content_equality",
+    "file": "src/components/workload_mod/file.rs",
+    "start_line": 627,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "read_to_string_mock",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_test_dependencies",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_test_runtime_config",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_test_workload_proto",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 49,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "generate_test_workload",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "start_line": 99,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "read_file_to_string",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new_from_builder",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 188,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 209,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new_from_dict",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 235,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 7,
+    "loc": 226,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 469,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 479,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 8,
+    "loc": 157,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "builder",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 643,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "update_workload_name",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 652,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_agent_name",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 663,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_runtime",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 673,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_runtime_config",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 683,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_runtime_config_from_file",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 697,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_restart_policy",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 716,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_dependencies",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 741,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 6,
+    "loc": 11,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "update_dependencies",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 763,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 4,
+    "loc": 24,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "add_tag",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 794,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_tags",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 817,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "update_tags",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 835,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "generate_access_right_rule",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 862,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "access_right_rule_to_str",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 900,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 4,
+    "loc": 27,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_allow_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 937,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 6,
+    "loc": 15,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "update_allow_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 962,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 26,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_deny_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 998,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 6,
+    "loc": 15,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "update_deny_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1023,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 26,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "add_config",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1056,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_configs",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1077,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 9,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "update_configs",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1092,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_file",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1104,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_files",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1121,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "update_files",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1141,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_mask",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1160,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 8,
+    "loc": 22,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "utest_workload",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1203,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_proto",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1217,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_dict",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1226,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_update_fields",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1235,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_dependencies",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1276,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_tags",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1292,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1317,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_configs",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1357,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 45,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_files",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1404,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 49,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_workload_builder",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1564,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_build_return_err",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1591,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 41,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "utest_display",
+    "file": "src/components/workload_mod/workload.rs",
+    "start_line": 1634,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "serialize_to_ordered_map",
+    "file": "src/ankaios_api/helpers.rs",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "utest_serialize_to_ordered_map",
+    "file": "src/ankaios_api/helpers.rs",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_manifest.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_manifest.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 3,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_workload.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_workload.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 20,
+    "nesting_depth": 4,
+    "loc": 121,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/get_state.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/get_state.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 55,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/simple_test.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/state_event.rs",
+    "start_line": 18,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 51,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/hello_ankaios.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 3,
+    "loc": 90,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/get_logs.rs",
+    "start_line": 18,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 79,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_configs.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_configs.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 76,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_files.rs",
+    "start_line": 18,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 12,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_files.rs",
+    "start_line": 32,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 141,
+    "param_count": 0,
+    "flags": [
+      "high_nesting",
+      "high_loc"
+    ]
+  }
+]

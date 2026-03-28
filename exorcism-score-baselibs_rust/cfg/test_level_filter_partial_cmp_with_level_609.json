@@ -1,0 +1,21 @@
+{
+  "function": "test_level_filter_partial_cmp_with_level",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_level_filter_partial_cmp_with_level",
+      "line": 609
+    },
+    {
+      "id": 1,
+      "label": "exit:test_level_filter_partial_cmp_with_level",
+      "line": 625
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

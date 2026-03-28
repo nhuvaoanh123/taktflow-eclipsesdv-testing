@@ -1,0 +1,21 @@
+{
+  "function": "MqueueReceiverTraits",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MqueueReceiverTraits",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:MqueueReceiverTraits",
+      "line": 139
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

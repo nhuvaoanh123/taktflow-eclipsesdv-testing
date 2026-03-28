@@ -1,0 +1,21 @@
+{
+  "function": "park_worker",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:park_worker",
+      "line": 191
+    },
+    {
+      "id": 1,
+      "label": "exit:park_worker",
+      "line": 217
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

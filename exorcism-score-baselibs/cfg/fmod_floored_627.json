@@ -1,0 +1,30 @@
+{
+  "function": "fmod_floored",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fmod_floored",
+      "line": 627
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 631
+    },
+    {
+      "id": 2,
+      "label": "exit:fmod_floored",
+      "line": 632
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

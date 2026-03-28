@@ -1,0 +1,21 @@
+{
+  "function": "gatewayd",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:gatewayd",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:gatewayd",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

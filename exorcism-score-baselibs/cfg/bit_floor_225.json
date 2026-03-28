@@ -1,0 +1,30 @@
+{
+  "function": "bit_floor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:bit_floor",
+      "line": 225
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 228
+    },
+    {
+      "id": 2,
+      "label": "exit:bit_floor",
+      "line": 229
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

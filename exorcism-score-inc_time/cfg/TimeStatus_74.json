@@ -1,0 +1,21 @@
+{
+  "function": "TimeStatus",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TimeStatus",
+      "line": 74
+    },
+    {
+      "id": 1,
+      "label": "exit:TimeStatus",
+      "line": 192
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

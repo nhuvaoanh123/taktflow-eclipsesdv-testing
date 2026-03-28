@@ -1,0 +1,21 @@
+{
+  "function": "INITIAL_REF_COUNT_VALUE",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:INITIAL_REF_COUNT_VALUE",
+      "line": 136
+    },
+    {
+      "id": 1,
+      "label": "exit:INITIAL_REF_COUNT_VALUE",
+      "line": 171
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

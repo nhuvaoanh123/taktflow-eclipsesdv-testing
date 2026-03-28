@@ -1,0 +1,21 @@
+{
+  "function": "filesystem",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:filesystem",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:filesystem",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

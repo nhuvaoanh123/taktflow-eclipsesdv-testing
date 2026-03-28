@@ -1,0 +1,21 @@
+{
+  "function": "ResolveModuleWithFallback",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ResolveModuleWithFallback",
+      "line": 15
+    },
+    {
+      "id": 1,
+      "label": "exit:ResolveModuleWithFallback",
+      "line": 42
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "createApplyOptions",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:createApplyOptions",
+      "line": 61
+    },
+    {
+      "id": 1,
+      "label": "exit:createApplyOptions",
+      "line": 136
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

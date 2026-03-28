@@ -1,0 +1,21 @@
+{
+  "function": "create_design",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_design",
+      "line": 519
+    },
+    {
+      "id": 1,
+      "label": "exit:create_design",
+      "line": 579
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "project": "score-inc_mw_com",
+  "files_by_language": {
+    "C++": {
+      "files": 425,
+      "loc": 78580
+    },
+    "C": {
+      "files": 290,
+      "loc": 26770
+    },
+    "Python": {
+      "files": 55,
+      "loc": 1465
+    }
+  },
+  "total_files": 770,
+  "total_loc": 106815,
+  "total_functions": 4467,
+  "build_system": "Unknown",
+  "languages": [
+    "C++",
+    "C",
+    "Python"
+  ]
+}

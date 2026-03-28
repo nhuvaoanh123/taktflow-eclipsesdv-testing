@@ -1,0 +1,21 @@
+{
+  "function": "ConstructDltExtendedHeader",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ConstructDltExtendedHeader",
+      "line": 86
+    },
+    {
+      "id": 1,
+      "label": "exit:ConstructDltExtendedHeader",
+      "line": 97
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

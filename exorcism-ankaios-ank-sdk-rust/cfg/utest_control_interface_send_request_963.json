@@ -1,0 +1,21 @@
+{
+  "function": "utest_control_interface_send_request",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_control_interface_send_request",
+      "line": 963
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_control_interface_send_request",
+      "line": 1063
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

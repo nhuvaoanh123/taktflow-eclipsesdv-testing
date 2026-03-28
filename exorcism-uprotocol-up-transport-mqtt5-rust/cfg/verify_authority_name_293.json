@@ -1,0 +1,21 @@
+{
+  "function": "verify_authority_name",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:verify_authority_name",
+      "line": 293
+    },
+    {
+      "id": 1,
+      "label": "exit:verify_authority_name",
+      "line": 309
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

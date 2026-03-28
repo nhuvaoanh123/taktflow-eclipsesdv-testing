@@ -1,0 +1,63 @@
+{
+  "function": "seatctrl_set_event_callback",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:seatctrl_set_event_callback",
+      "line": 851
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 853
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 856
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 853
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 862
+    },
+    {
+      "id": 5,
+      "label": "exit:seatctrl_set_event_callback",
+      "line": 863
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

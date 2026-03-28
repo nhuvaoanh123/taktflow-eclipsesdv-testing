@@ -1,0 +1,21 @@
+{
+  "function": "error_after_third_run",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:error_after_third_run",
+      "line": 190
+    },
+    {
+      "id": 1,
+      "label": "exit:error_after_third_run",
+      "line": 202
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

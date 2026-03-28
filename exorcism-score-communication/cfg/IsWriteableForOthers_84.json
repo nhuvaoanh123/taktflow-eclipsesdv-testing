@@ -1,0 +1,54 @@
+{
+  "function": "IsWriteableForOthers",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IsWriteableForOthers",
+      "line": 84
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 88
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 93
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 88
+    },
+    {
+      "id": 4,
+      "label": "exit:IsWriteableForOthers",
+      "line": 97
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

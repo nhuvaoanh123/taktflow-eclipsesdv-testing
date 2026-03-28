@@ -1,0 +1,30 @@
+{
+  "function": "get_ts",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_ts",
+      "line": 71
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 74
+    },
+    {
+      "id": 2,
+      "label": "exit:get_ts",
+      "line": 75
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

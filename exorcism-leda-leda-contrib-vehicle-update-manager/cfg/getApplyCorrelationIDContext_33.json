@@ -1,0 +1,21 @@
+{
+  "function": "getApplyCorrelationIDContext",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getApplyCorrelationIDContext",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:getApplyCorrelationIDContext",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "handle_get_state_command",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_get_state_command",
+      "line": 413
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_get_state_command",
+      "line": 436
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

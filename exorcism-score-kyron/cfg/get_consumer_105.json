@@ -1,0 +1,21 @@
+{
+  "function": "get_consumer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_consumer",
+      "line": 105
+    },
+    {
+      "id": 1,
+      "label": "exit:get_consumer",
+      "line": 115
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "handle_connection_no_response",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_connection_no_response",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_connection_no_response",
+      "line": 92
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "mw",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:mw",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:mw",
+      "line": 57
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

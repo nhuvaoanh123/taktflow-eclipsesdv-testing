@@ -1,0 +1,21 @@
+{
+  "function": "handle_activity_signal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_activity_signal",
+      "line": 80
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_activity_signal",
+      "line": 111
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

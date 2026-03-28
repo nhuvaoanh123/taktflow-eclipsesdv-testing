@@ -1,0 +1,21 @@
+{
+  "function": "unchecked_store",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:unchecked_store",
+      "line": 796
+    },
+    {
+      "id": 1,
+      "label": "exit:unchecked_store",
+      "line": 800
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

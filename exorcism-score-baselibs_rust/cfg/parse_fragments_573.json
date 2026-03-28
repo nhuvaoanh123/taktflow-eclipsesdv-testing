@@ -1,0 +1,21 @@
+{
+  "function": "parse_fragments",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parse_fragments",
+      "line": 573
+    },
+    {
+      "id": 1,
+      "label": "exit:parse_fragments",
+      "line": 628
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

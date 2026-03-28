@@ -1,0 +1,21 @@
+{
+  "function": "is_del_condition_fulfilled_by_state",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_del_condition_fulfilled_by_state",
+      "line": 52
+    },
+    {
+      "id": 1,
+      "label": "exit:is_del_condition_fulfilled_by_state",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

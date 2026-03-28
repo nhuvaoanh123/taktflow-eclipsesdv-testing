@@ -1,0 +1,21 @@
+{
+  "function": "update_allow_rules",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:update_allow_rules",
+      "line": 962
+    },
+    {
+      "id": 1,
+      "label": "exit:update_allow_rules",
+      "line": 987
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

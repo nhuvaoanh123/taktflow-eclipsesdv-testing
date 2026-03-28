@@ -1,0 +1,21 @@
+{
+  "function": "try_notify_siblings_worker_unconditional",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:try_notify_siblings_worker_unconditional",
+      "line": 197
+    },
+    {
+      "id": 1,
+      "label": "exit:try_notify_siblings_worker_unconditional",
+      "line": 223
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

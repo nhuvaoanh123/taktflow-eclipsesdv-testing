@@ -1,0 +1,21 @@
+{
+  "function": "getTelemetryMapping",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getTelemetryMapping",
+      "line": 146
+    },
+    {
+      "id": 1,
+      "label": "exit:getTelemetryMapping",
+      "line": 179
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

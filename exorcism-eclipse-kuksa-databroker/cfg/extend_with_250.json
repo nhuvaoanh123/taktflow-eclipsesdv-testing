@@ -1,0 +1,21 @@
+{
+  "function": "extend_with",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:extend_with",
+      "line": 250
+    },
+    {
+      "id": 1,
+      "label": "exit:extend_with",
+      "line": 275
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

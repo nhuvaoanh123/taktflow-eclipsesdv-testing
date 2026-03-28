@@ -1,0 +1,21 @@
+{
+  "function": "WriteProjectConfig",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:WriteProjectConfig",
+      "line": 19
+    },
+    {
+      "id": 1,
+      "label": "exit:WriteProjectConfig",
+      "line": 29
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

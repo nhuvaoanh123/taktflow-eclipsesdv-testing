@@ -1,0 +1,21 @@
+{
+  "function": "v2_subscribe_actuation_requests",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:v2_subscribe_actuation_requests",
+      "line": 1443
+    },
+    {
+      "id": 1,
+      "label": "exit:v2_subscribe_actuation_requests",
+      "line": 1468
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

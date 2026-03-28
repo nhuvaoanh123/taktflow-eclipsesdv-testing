@@ -1,0 +1,21 @@
+{
+  "function": "num_alloc_retries",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:num_alloc_retries",
+      "line": 233
+    },
+    {
+      "id": 1,
+      "label": "exit:num_alloc_retries",
+      "line": 245
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

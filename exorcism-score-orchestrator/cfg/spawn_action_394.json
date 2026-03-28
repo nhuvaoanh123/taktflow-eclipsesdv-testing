@@ -1,0 +1,21 @@
+{
+  "function": "spawn_action",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:spawn_action",
+      "line": 394
+    },
+    {
+      "id": 1,
+      "label": "exit:spawn_action",
+      "line": 404
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

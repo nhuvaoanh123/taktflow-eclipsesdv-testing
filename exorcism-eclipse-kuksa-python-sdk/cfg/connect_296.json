@@ -1,0 +1,63 @@
+{
+  "function": "connect",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect",
+      "line": 296
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 298
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 335
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 298
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 298
+    },
+    {
+      "id": 5,
+      "label": "exit:connect",
+      "line": 335
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "function": "installComponent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:installComponent",
+      "line": 180
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,63 @@
+{
+  "function": "io_lseek_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:io_lseek_handler",
+      "line": 93
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 103
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 112
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 103
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 103
+    },
+    {
+      "id": 5,
+      "label": "exit:io_lseek_handler",
+      "line": 113
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

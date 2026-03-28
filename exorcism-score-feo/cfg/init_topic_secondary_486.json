@@ -1,0 +1,21 @@
+{
+  "function": "init_topic_secondary",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:init_topic_secondary",
+      "line": 486
+    },
+    {
+      "id": 1,
+      "label": "exit:init_topic_secondary",
+      "line": 510
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

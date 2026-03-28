@@ -1,0 +1,54 @@
+{
+  "function": "motor_pos_cb",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:motor_pos_cb",
+      "line": 308
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 310
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 317
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 310
+    },
+    {
+      "id": 4,
+      "label": "exit:motor_pos_cb",
+      "line": 318
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

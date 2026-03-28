@@ -1,0 +1,21 @@
+{
+  "function": "ILogger",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ILogger",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:ILogger",
+      "line": 67
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

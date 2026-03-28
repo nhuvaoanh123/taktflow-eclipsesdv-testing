@@ -1,0 +1,21 @@
+{
+  "function": "test_subscribe_set_multiple",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_subscribe_set_multiple",
+      "line": 4078
+    },
+    {
+      "id": 1,
+      "label": "exit:test_subscribe_set_multiple",
+      "line": 4197
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

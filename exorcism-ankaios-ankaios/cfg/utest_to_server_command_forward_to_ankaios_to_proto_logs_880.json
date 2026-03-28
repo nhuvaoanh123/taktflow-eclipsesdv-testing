@@ -1,0 +1,21 @@
+{
+  "function": "utest_to_server_command_forward_to_ankaios_to_proto_logs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_to_server_command_forward_to_ankaios_to_proto_logs",
+      "line": 880
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_to_server_command_forward_to_ankaios_to_proto_logs",
+      "line": 939
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

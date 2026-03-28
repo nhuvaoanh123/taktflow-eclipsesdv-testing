@@ -1,0 +1,21 @@
+{
+  "function": "my_msg_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:my_msg_handler",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:my_msg_handler",
+      "line": 87
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "send_can_data",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:send_can_data",
+      "line": 49
+    },
+    {
+      "id": 1,
+      "label": "exit:send_can_data",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

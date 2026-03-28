@@ -1,0 +1,21 @@
+{
+  "function": "isConnected",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:isConnected",
+      "line": 337
+    },
+    {
+      "id": 1,
+      "label": "exit:isConnected",
+      "line": 357
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

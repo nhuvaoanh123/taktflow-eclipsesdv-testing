@@ -1,0 +1,21 @@
+{
+  "project": "leda-leda",
+  "files_by_language": {
+    "JavaScript": {
+      "files": 2,
+      "loc": 29
+    },
+    "Python": {
+      "files": 1,
+      "loc": 126
+    }
+  },
+  "total_files": 3,
+  "total_loc": 155,
+  "total_functions": 2,
+  "build_system": "npm/Node",
+  "languages": [
+    "JavaScript",
+    "Python"
+  ]
+}

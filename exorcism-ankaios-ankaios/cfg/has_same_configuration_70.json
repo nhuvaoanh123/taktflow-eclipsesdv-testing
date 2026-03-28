@@ -1,0 +1,21 @@
+{
+  "function": "has_same_configuration",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:has_same_configuration",
+      "line": 70
+    },
+    {
+      "id": 1,
+      "label": "exit:has_same_configuration",
+      "line": 79
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

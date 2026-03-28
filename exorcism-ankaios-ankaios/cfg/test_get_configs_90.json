@@ -1,0 +1,21 @@
+{
+  "function": "test_get_configs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_get_configs",
+      "line": 90
+    },
+    {
+      "id": 1,
+      "label": "exit:test_get_configs",
+      "line": 117
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "LoggingIdentifier",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LoggingIdentifier",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:LoggingIdentifier",
+      "line": 88
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

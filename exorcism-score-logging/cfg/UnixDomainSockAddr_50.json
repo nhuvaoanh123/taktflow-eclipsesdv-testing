@@ -1,0 +1,21 @@
+{
+  "function": "UnixDomainSockAddr",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:UnixDomainSockAddr",
+      "line": 50
+    },
+    {
+      "id": 1,
+      "label": "exit:UnixDomainSockAddr",
+      "line": 67
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "IServiceDiscovery",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IServiceDiscovery",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:IServiceDiscovery",
+      "line": 62
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

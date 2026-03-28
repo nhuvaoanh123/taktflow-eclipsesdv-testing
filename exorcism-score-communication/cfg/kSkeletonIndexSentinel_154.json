@@ -1,0 +1,21 @@
+{
+  "function": "kSkeletonIndexSentinel",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kSkeletonIndexSentinel",
+      "line": 154
+    },
+    {
+      "id": 1,
+      "label": "exit:kSkeletonIndexSentinel",
+      "line": 241
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "floor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:floor",
+      "line": 171
+    },
+    {
+      "id": 1,
+      "label": "exit:floor",
+      "line": 180
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

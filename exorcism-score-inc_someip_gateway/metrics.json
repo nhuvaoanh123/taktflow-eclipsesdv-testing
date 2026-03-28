@@ -1,0 +1,909 @@
+[
+  {
+    "function": "message_transfer",
+    "file": "src/network_service/interfaces/message_transfer.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "termination_handler",
+    "file": "src/someipd/main.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "src/someipd/main.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 2,
+    "loc": 109,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "gatewayd",
+    "file": "src/gatewayd/remote_service_instance.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "RemoteServiceInstance",
+    "file": "src/gatewayd/remote_service_instance.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "gatewayd",
+    "file": "src/gatewayd/local_service_instance.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "LocalServiceInstance",
+    "file": "src/gatewayd/local_service_instance.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "termination_handler",
+    "file": "src/gatewayd/main.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "src/gatewayd/main.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 1,
+    "loc": 83,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/local_service_instance.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 20,
+    "nesting_depth": 1,
+    "loc": 88,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "FindServiceContext",
+    "file": "src/gatewayd/local_service_instance.cpp",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/local_service_instance.cpp",
+    "start_line": 134,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 1,
+    "loc": 42,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/remote_service_instance.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 1,
+    "loc": 44,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "FindServiceContext",
+    "file": "src/gatewayd/remote_service_instance.cpp",
+    "start_line": 82,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/remote_service_instance.cpp",
+    "start_line": 90,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 1,
+    "loc": 50,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "eprint",
+    "file": ".github/tools/qnx_credential_helper.py",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/car_window_sim/src/car_window_controller.rs",
+    "start_line": 23,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 7,
+    "loc": 61,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "WindowCommand",
+    "file": "examples/car_window_sim/src/car_window_types.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "examples/car_window_sim/src/car_window_types.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "examples/car_window_sim/src/car_window_types.rs",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "update_state_machine",
+    "file": "examples/car_window_sim/src/car_window.rs",
+    "start_line": 26,
+    "cyclomatic_complexity": 34,
+    "nesting_depth": 7,
+    "loc": 94,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/car_window_sim/src/car_window.rs",
+    "start_line": 121,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 7,
+    "loc": 40,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_hello",
+    "file": "tests/rust/test_main.rs",
+    "start_line": 14,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 16,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "someipd_config",
+    "file": "tests/integration/conftest.py",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "someipd",
+    "file": "tests/integration/conftest.py",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "pytest_configure",
+    "file": "tests/integration/conftest.py",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "pytest_collection_modifyitems",
+    "file": "tests/integration/conftest.py",
+    "start_line": 51,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_dummy",
+    "file": "tests/integration/test_dummy.py",
+    "start_line": 17,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "enhex",
+    "file": "tests/integration/client.py",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "tests/integration/client.py",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "message_received",
+    "file": "tests/integration/client.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "run",
+    "file": "tests/integration/client.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 40,
+    "param_count": 7,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "auto_int",
+    "file": "tests/integration/client.py",
+    "start_line": 102,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup_log",
+    "file": "tests/integration/client.py",
+    "start_line": 106,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/integration/client.py",
+    "start_line": 116,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SampleClient",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "on_state",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "on_event",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SigTermHandlerFunction",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Initialize",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 60,
+    "cyclomatic_complexity": 50,
+    "nesting_depth": 3,
+    "loc": 100,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "Cleanup",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 161,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SendEchoRequestSync",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 188,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 2,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SendEchoRequestAsync",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 224,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SendEchoRequestSyncWithPolling",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 232,
+    "cyclomatic_complexity": 16,
+    "nesting_depth": 2,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "SendRequestUsingCorrectEvent",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 270,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 65,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProcessResponsesTiny",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 341,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProcessResponsesSmall",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 362,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProcessResponsesMedium",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 384,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProcessResponsesLarge",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 406,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProcessResponsesXLarge",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 428,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProcessResponsesXXLarge",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 450,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 485,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 492,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GetPayloadSizeFromArg",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 514,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GetPayloadSizeName",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 521,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Percentile",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 531,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "BENCHMARK_DEFINE_F",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 551,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "BENCHMARK_DEFINE_F",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 580,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "BENCHMARK_DEFINE_F",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 606,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "start_line": 635,
+    "cyclomatic_complexity": 16,
+    "nesting_depth": 1,
+    "loc": 42,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "SigTermHandlerFunction",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TryConnectToClient",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 44,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProcessSingleEchoRequestTiny",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestSmall",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 95,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestMedium",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 128,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestLarge",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 161,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestXLarge",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 194,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestXXLarge",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 227,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ProcessEchoRequests",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 259,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "start_line": 313,
+    "cyclomatic_complexity": 62,
+    "nesting_depth": 4,
+    "loc": 129,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "echo_service",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 91,
+    "nesting_depth": 2,
+    "loc": 132,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "PayloadSize",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 75,
+    "nesting_depth": 2,
+    "loc": 110,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "utils",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "start_line": 109,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "GetCurrentTimeNanos",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "start_line": 111,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GetSizeFromEnum",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "start_line": 136,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GetEnumFromSize",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "start_line": 138,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  }
+]

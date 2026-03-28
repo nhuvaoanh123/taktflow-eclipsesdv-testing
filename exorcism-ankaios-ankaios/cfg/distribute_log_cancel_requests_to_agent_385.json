@@ -1,0 +1,21 @@
+{
+  "function": "distribute_log_cancel_requests_to_agent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:distribute_log_cancel_requests_to_agent",
+      "line": 385
+    },
+    {
+      "id": 1,
+      "label": "exit:distribute_log_cancel_requests_to_agent",
+      "line": 413
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

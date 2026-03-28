@@ -1,0 +1,21 @@
+{
+  "function": "assertion_stdout_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:assertion_stdout_handler",
+      "line": 85
+    },
+    {
+      "id": 1,
+      "label": "exit:assertion_stdout_handler",
+      "line": 89
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

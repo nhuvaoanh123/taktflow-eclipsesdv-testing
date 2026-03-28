@@ -1,0 +1,21 @@
+{
+  "function": "kAbortOnError",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kAbortOnError",
+      "line": 134
+    },
+    {
+      "id": 1,
+      "label": "exit:kAbortOnError",
+      "line": 175
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

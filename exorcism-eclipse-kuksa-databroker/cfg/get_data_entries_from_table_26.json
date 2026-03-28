@@ -1,0 +1,21 @@
+{
+  "function": "get_data_entries_from_table",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_data_entries_from_table",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:get_data_entries_from_table",
+      "line": 74
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

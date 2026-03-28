@@ -1,0 +1,21 @@
+{
+  "function": "front_mut",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:front_mut",
+      "line": 100
+    },
+    {
+      "id": 1,
+      "label": "exit:front_mut",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

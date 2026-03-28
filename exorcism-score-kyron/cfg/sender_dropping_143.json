@@ -1,0 +1,21 @@
+{
+  "function": "sender_dropping",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sender_dropping",
+      "line": 143
+    },
+    {
+      "id": 1,
+      "label": "exit:sender_dropping",
+      "line": 154
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

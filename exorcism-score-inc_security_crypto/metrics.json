@@ -1,0 +1,62 @@
+[
+  {
+    "function": "test_hello",
+    "file": "tests/rust/test_main.rs",
+    "start_line": 2,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 16,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  }
+]

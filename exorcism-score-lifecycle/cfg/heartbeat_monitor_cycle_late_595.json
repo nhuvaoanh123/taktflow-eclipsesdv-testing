@@ -1,0 +1,21 @@
+{
+  "function": "heartbeat_monitor_cycle_late",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:heartbeat_monitor_cycle_late",
+      "line": 595
+    },
+    {
+      "id": 1,
+      "label": "exit:heartbeat_monitor_cycle_late",
+      "line": 634
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

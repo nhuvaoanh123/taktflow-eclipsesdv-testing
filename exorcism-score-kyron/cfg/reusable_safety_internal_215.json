@@ -1,0 +1,21 @@
+{
+  "function": "reusable_safety_internal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:reusable_safety_internal",
+      "line": 215
+    },
+    {
+      "id": 1,
+      "label": "exit:reusable_safety_internal",
+      "line": 252
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

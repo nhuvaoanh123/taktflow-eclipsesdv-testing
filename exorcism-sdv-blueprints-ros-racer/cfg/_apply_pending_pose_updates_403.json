@@ -1,0 +1,130 @@
+{
+  "function": "_apply_pending_pose_updates",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_apply_pending_pose_updates",
+      "line": 403
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 405
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 406
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 405
+    },
+    {
+      "id": 4,
+      "label": "loop (for_statement)",
+      "line": 409
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 418
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 409
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 410
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 418
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 410
+    },
+    {
+      "id": 10,
+      "label": "else",
+      "line": 410
+    },
+    {
+      "id": 11,
+      "label": "exit:_apply_pending_pose_updates",
+      "line": 422
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 11
+    }
+  ]
+}

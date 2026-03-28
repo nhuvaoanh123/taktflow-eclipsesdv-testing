@@ -1,0 +1,21 @@
+{
+  "function": "AraComProperties",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AraComProperties",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:AraComProperties",
+      "line": 45
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

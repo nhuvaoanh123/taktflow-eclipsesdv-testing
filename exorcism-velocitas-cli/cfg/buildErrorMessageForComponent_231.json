@@ -1,0 +1,11 @@
+{
+  "function": "buildErrorMessageForComponent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:buildErrorMessageForComponent",
+      "line": 231
+    }
+  ],
+  "edges": []
+}

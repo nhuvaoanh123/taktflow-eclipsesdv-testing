@@ -1,0 +1,21 @@
+{
+  "function": "is_add_condition_fulfilled_by_state",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_add_condition_fulfilled_by_state",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:is_add_condition_fulfilled_by_state",
+      "line": 41
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

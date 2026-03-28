@@ -1,0 +1,21 @@
+{
+  "function": "test_float_array",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_float_array",
+      "line": 4705
+    },
+    {
+      "id": 1,
+      "label": "exit:test_float_array",
+      "line": 4770
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "function": "FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+      "line": 1230
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 1236
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 1239
+    },
+    {
+      "id": 3,
+      "label": "return_statement",
+      "line": 1242
+    },
+    {
+      "id": 4,
+      "label": "exit:FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+      "line": 1251
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    },
+    {
+      "from": 0,
+      "to": 4
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "mock_binding",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:mock_binding",
+      "line": 22
+    },
+    {
+      "id": 1,
+      "label": "exit:mock_binding",
+      "line": 60
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

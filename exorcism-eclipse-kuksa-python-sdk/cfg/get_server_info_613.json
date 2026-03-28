@@ -1,0 +1,30 @@
+{
+  "function": "get_server_info",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_server_info",
+      "line": 613
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 633
+    },
+    {
+      "id": 2,
+      "label": "exit:get_server_info",
+      "line": 633
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

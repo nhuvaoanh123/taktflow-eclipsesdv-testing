@@ -1,0 +1,69 @@
+{
+  "external": [
+    {
+      "name": "prost",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tonic",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "log",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "env_logger",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "serde",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "serde_yaml",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "thiserror",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "uuid",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "async-trait",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tokio",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "home",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tempfile",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "nix",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "mockall",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "mockall_double",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tonic-prost-build",
+      "source": "Cargo.toml"
+    }
+  ],
+  "internal": []
+}

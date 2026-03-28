@@ -1,0 +1,21 @@
+{
+  "function": "add_kuksa_attribute",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:add_kuksa_attribute",
+      "line": 54
+    },
+    {
+      "id": 1,
+      "label": "exit:add_kuksa_attribute",
+      "line": 113
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

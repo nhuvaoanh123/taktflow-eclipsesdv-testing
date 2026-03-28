@@ -1,0 +1,21 @@
+{
+  "function": "_mock_update_request_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_mock_update_request_handler",
+      "line": 148
+    },
+    {
+      "id": 1,
+      "label": "exit:_mock_update_request_handler",
+      "line": 166
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "run_as_secondary",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:run_as_secondary",
+      "line": 58
+    },
+    {
+      "id": 1,
+      "label": "exit:run_as_secondary",
+      "line": 79
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

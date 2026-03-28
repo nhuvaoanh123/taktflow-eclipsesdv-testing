@@ -1,0 +1,21 @@
+{
+  "function": "ElementType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ElementType",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:ElementType",
+      "line": 92
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

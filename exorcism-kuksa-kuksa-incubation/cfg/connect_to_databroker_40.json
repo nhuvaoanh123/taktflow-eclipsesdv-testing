@@ -1,0 +1,21 @@
+{
+  "function": "connect_to_databroker",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect_to_databroker",
+      "line": 40
+    },
+    {
+      "id": 1,
+      "label": "exit:connect_to_databroker",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

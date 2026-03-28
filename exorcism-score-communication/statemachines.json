@@ -1,0 +1,15 @@
+{
+  "state_machines": [
+    {
+      "file": "score/mw/com/example/ipc_bridge/ipc_bridge.rs",
+      "line": 158,
+      "type": "match",
+      "condition": "args.mode",
+      "states": [
+        "Mode::Send | Mode::Skeleton",
+        "Mode::Recv | Mode::Proxy"
+      ]
+    }
+  ],
+  "count": 1
+}

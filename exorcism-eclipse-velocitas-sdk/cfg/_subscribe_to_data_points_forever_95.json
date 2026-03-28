@@ -1,0 +1,55 @@
+{
+  "function": "_subscribe_to_data_points_forever",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_subscribe_to_data_points_forever",
+      "line": 95
+    },
+    {
+      "id": 1,
+      "label": "loop (while_statement)",
+      "line": 96
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 111
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 96
+    },
+    {
+      "id": 4,
+      "label": "exit:_subscribe_to_data_points_forever",
+      "line": 111
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

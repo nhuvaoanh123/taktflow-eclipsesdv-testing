@@ -1,0 +1,21 @@
+{
+  "function": "get_event_creator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_event_creator",
+      "line": 765
+    },
+    {
+      "id": 1,
+      "label": "exit:get_event_creator",
+      "line": 770
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

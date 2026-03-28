@@ -1,0 +1,21 @@
+{
+  "function": "process_workload_updates",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:process_workload_updates",
+      "line": 120
+    },
+    {
+      "id": 1,
+      "label": "exit:process_workload_updates",
+      "line": 158
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

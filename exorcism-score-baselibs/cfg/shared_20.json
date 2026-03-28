@@ -1,0 +1,21 @@
+{
+  "function": "shared",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:shared",
+      "line": 20
+    },
+    {
+      "id": 1,
+      "label": "exit:shared",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

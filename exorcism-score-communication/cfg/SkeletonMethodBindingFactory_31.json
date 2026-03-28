@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonMethodBindingFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonMethodBindingFactory",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonMethodBindingFactory",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

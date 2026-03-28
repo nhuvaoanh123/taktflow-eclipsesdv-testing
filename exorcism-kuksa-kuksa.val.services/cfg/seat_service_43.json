@@ -1,0 +1,21 @@
+{
+  "function": "seat_service",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:seat_service",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:seat_service",
+      "line": 69
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "SimpleTaskFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SimpleTaskFactory",
+      "line": 162
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 183
+    },
+    {
+      "id": 2,
+      "label": "exit:SimpleTaskFactory",
+      "line": 187
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

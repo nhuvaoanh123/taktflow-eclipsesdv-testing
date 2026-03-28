@@ -1,0 +1,21 @@
+{
+  "function": "distribute_workload_states_to_agents",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:distribute_workload_states_to_agents",
+      "line": 232
+    },
+    {
+      "id": 1,
+      "label": "exit:distribute_workload_states_to_agents",
+      "line": 275
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

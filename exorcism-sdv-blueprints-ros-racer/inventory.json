@@ -1,0 +1,21 @@
+{
+  "project": "sdv-blueprints-ros-racer",
+  "files_by_language": {
+    "C++": {
+      "files": 3,
+      "loc": 621
+    },
+    "Python": {
+      "files": 20,
+      "loc": 2331
+    }
+  },
+  "total_files": 23,
+  "total_loc": 2952,
+  "total_functions": 71,
+  "build_system": "Unknown",
+  "languages": [
+    "C++",
+    "Python"
+  ]
+}

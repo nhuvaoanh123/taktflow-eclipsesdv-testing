@@ -1,0 +1,30 @@
+{
+  "function": "kvs_hash_paths",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kvs_hash_paths",
+      "line": 17
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 25
+    },
+    {
+      "id": 2,
+      "label": "exit:kvs_hash_paths",
+      "line": 26
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "kuksa-kuksa-dds-provider",
+  "files_by_language": {
+    "Python": {
+      "files": 14,
+      "loc": 1171
+    }
+  },
+  "total_files": 14,
+  "total_loc": 1171,
+  "total_functions": 59,
+  "build_system": "Unknown",
+  "languages": [
+    "Python"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "SysWait",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SysWait",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:SysWait",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

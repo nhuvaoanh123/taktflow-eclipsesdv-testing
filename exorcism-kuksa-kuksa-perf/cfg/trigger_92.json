@@ -1,0 +1,21 @@
+{
+  "function": "trigger",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:trigger",
+      "line": 92
+    },
+    {
+      "id": 1,
+      "label": "exit:trigger",
+      "line": 145
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

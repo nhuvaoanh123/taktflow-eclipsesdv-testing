@@ -1,0 +1,21 @@
+{
+  "function": "encode",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:encode",
+      "line": 153
+    },
+    {
+      "id": 1,
+      "label": "exit:encode",
+      "line": 211
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

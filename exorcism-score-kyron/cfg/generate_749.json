@@ -1,0 +1,21 @@
+{
+  "function": "generate",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:generate",
+      "line": 749
+    },
+    {
+      "id": 1,
+      "label": "exit:generate",
+      "line": 773
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

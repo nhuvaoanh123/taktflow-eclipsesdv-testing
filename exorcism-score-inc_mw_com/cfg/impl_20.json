@@ -1,0 +1,81 @@
+{
+  "function": "impl",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:impl",
+      "line": 20
+    },
+    {
+      "id": 1,
+      "label": "if ((this == &rhs))",
+      "line": 51
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 54
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 51
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 53
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 56
+    },
+    {
+      "id": 6,
+      "label": "return_statement",
+      "line": 67
+    },
+    {
+      "id": 7,
+      "label": "exit:impl",
+      "line": 74
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 2,
+      "to": 6
+    },
+    {
+      "from": 2,
+      "to": 7
+    }
+  ]
+}

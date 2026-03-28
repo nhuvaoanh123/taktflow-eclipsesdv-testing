@@ -1,0 +1,21 @@
+{
+  "function": "write_global_output",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:write_global_output",
+      "line": 132
+    },
+    {
+      "id": 1,
+      "label": "exit:write_global_output",
+      "line": 218
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

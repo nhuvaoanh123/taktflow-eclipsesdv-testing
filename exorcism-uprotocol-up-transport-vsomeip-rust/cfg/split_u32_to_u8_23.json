@@ -1,0 +1,21 @@
+{
+  "function": "split_u32_to_u8",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:split_u32_to_u8",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:split_u32_to_u8",
+      "line": 29
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

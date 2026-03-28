@@ -1,0 +1,72 @@
+{
+  "function": "QuotaValueAsString",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:QuotaValueAsString",
+      "line": 60
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 65
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 72
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 65
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 65
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 74
+    },
+    {
+      "id": 6,
+      "label": "exit:QuotaValueAsString",
+      "line": 75
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 2,
+      "to": 6
+    }
+  ]
+}

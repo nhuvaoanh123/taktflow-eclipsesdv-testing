@@ -1,0 +1,21 @@
+{
+  "function": "gen_random_in_range",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:gen_random_in_range",
+      "line": 490
+    },
+    {
+      "id": 1,
+      "label": "exit:gen_random_in_range",
+      "line": 494
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

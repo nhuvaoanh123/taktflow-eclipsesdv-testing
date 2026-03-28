@@ -1,0 +1,21 @@
+{
+  "function": "new_vehicle_status",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:new_vehicle_status",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:new_vehicle_status",
+      "line": 223
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

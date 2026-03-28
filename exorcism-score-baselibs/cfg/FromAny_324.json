@@ -1,0 +1,114 @@
+{
+  "function": "FromAny",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FromAny",
+      "line": 324
+    },
+    {
+      "id": 1,
+      "label": "if ((auto number = any.As<Number>()))",
+      "line": 326
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 340
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 326
+    },
+    {
+      "id": 4,
+      "label": "if ((auto val = number->get().As<N>(); val.has_value()))",
+      "line": 328
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 335
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 328
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 330
+    },
+    {
+      "id": 8,
+      "label": "else",
+      "line": 328
+    },
+    {
+      "id": 9,
+      "label": "else",
+      "line": 326
+    },
+    {
+      "id": 10,
+      "label": "exit:FromAny",
+      "line": 341
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 9,
+      "label": "false"
+    },
+    {
+      "from": 9,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 10
+    }
+  ]
+}

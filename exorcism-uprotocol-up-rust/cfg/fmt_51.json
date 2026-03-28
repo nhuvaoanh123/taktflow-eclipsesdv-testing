@@ -1,0 +1,21 @@
+{
+  "function": "fmt",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fmt",
+      "line": 51
+    },
+    {
+      "id": 1,
+      "label": "exit:fmt",
+      "line": 56
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

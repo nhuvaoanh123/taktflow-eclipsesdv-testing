@@ -1,0 +1,21 @@
+{
+  "function": "subscribe_by_id",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:subscribe_by_id",
+      "line": 458
+    },
+    {
+      "id": 1,
+      "label": "exit:subscribe_by_id",
+      "line": 478
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

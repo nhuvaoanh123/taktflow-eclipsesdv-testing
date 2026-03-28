@@ -1,0 +1,63 @@
+{
+  "function": "resize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:resize",
+      "line": 332
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 335
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 342
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 335
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 335
+    },
+    {
+      "id": 5,
+      "label": "exit:resize",
+      "line": 343
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "test_mt_one_push_mpmc_one_stealer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_mt_one_push_mpmc_one_stealer",
+      "line": 974
+    },
+    {
+      "id": 1,
+      "label": "exit:test_mt_one_push_mpmc_one_stealer",
+      "line": 1017
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

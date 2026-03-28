@@ -1,0 +1,286 @@
+{
+  "function": "_analyze_vss2dbc",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_analyze_vss2dbc",
+      "line": 377
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 383
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 385
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 383
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 388
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 393
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 388
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 395
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 409
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 395
+    },
+    {
+      "id": 10,
+      "label": "if (...)",
+      "line": 415
+    },
+    {
+      "id": 11,
+      "label": "merge",
+      "line": 416
+    },
+    {
+      "id": 12,
+      "label": "then",
+      "line": 415
+    },
+    {
+      "id": 13,
+      "label": "if (...)",
+      "line": 417
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 418
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 417
+    },
+    {
+      "id": 16,
+      "label": "if (...)",
+      "line": 422
+    },
+    {
+      "id": 17,
+      "label": "merge",
+      "line": 423
+    },
+    {
+      "id": 18,
+      "label": "then",
+      "line": 422
+    },
+    {
+      "id": 19,
+      "label": "loop (for_statement)",
+      "line": 427
+    },
+    {
+      "id": 20,
+      "label": "loop_exit",
+      "line": 430
+    },
+    {
+      "id": 21,
+      "label": "body",
+      "line": 427
+    },
+    {
+      "id": 22,
+      "label": "if (...)",
+      "line": 428
+    },
+    {
+      "id": 23,
+      "label": "merge",
+      "line": 429
+    },
+    {
+      "id": 24,
+      "label": "then",
+      "line": 428
+    },
+    {
+      "id": 25,
+      "label": "exit:_analyze_vss2dbc",
+      "line": 430
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "true"
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 16
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "label": "true"
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "label": "false"
+    },
+    {
+      "from": 17,
+      "to": 19
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "label": "done"
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "label": "continue"
+    },
+    {
+      "from": 21,
+      "to": 22
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "label": "true"
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "label": "false"
+    },
+    {
+      "from": 23,
+      "to": 19,
+      "label": "back"
+    },
+    {
+      "from": 20,
+      "to": 25
+    }
+  ]
+}

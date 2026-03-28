@@ -1,0 +1,73 @@
+{
+  "external": [
+    {
+      "name": "databroker-proto",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "hdrhistogram",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tokio",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tokio-stream",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tonic",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tonic-build",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "tower",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "clap",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "serde_json",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "anyhow",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "serde",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "thiserror",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "log",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "stderrlog",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "indicatif",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "console",
+      "source": "Cargo.toml"
+    },
+    {
+      "name": "csv",
+      "source": "Cargo.toml"
+    }
+  ],
+  "internal": []
+}

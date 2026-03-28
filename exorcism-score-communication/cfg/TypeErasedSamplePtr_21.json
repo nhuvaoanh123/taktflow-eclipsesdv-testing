@@ -1,0 +1,21 @@
+{
+  "function": "TypeErasedSamplePtr",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TypeErasedSamplePtr",
+      "line": 21
+    },
+    {
+      "id": 1,
+      "label": "exit:TypeErasedSamplePtr",
+      "line": 28
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "waitSelfUpdateOperationInitiated",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:waitSelfUpdateOperationInitiated",
+      "line": 238
+    },
+    {
+      "id": 1,
+      "label": "exit:waitSelfUpdateOperationInitiated",
+      "line": 245
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

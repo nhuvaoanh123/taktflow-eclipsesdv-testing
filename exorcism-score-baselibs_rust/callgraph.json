@@ -1,0 +1,7131 @@
+[
+  {
+    "function": "is_leap_year",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 22,
+    "calls": [
+      "is_multiple_of"
+    ]
+  },
+  {
+    "function": "get_time",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 28,
+    "calls": [
+      "debug_assert"
+    ]
+  },
+  {
+    "function": "get_date",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 49,
+    "calls": [
+      "is_leap_year",
+      "debug_assert"
+    ]
+  },
+  {
+    "function": "write",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 88,
+    "calls": [
+      "iter_mut",
+      "pow",
+      "enumerate"
+    ]
+  },
+  {
+    "function": "timestamp",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 97,
+    "calls": [
+      "debug_assert",
+      "as_secs",
+      "get_time",
+      "get_date",
+      "write::<2>",
+      "write::<7>",
+      "subsec_nanos",
+      "write::<4>"
+    ]
+  },
+  {
+    "function": "test_get_time_zero",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 144,
+    "calls": [
+      "get_time",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_get_time_in_range",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 152,
+    "calls": [
+      "get_time",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_get_time_max_allowed",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 160,
+    "calls": [
+      "get_time",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_get_time_out_of_range",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 169,
+    "calls": [
+      "get_time"
+    ]
+  },
+  {
+    "function": "test_get_date_zero",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 174,
+    "calls": [
+      "get_date",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_get_date_in_range",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 182,
+    "calls": [
+      "get_date",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_get_date_max_allowed",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 190,
+    "calls": [
+      "get_date",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_get_date_out_of_range",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 199,
+    "calls": [
+      "get_date"
+    ]
+  },
+  {
+    "function": "test_timestamp_zero",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 204,
+    "calls": [
+      "unwrap",
+      "timestamp",
+      "str::from_utf8",
+      "as_slice",
+      "assert_eq",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "test_timestamp_in_range",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 212,
+    "calls": [
+      "unwrap",
+      "timestamp",
+      "Duration::from_nanos",
+      "str::from_utf8",
+      "as_slice",
+      "assert_eq",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "test_timestamp_max_allowed",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 220,
+    "calls": [
+      "unwrap",
+      "timestamp",
+      "Duration::from_nanos",
+      "str::from_utf8",
+      "as_slice",
+      "assert_eq",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "test_timestamp_out_of_range",
+    "file": "src/log/stdout_logger/timestamp.rs",
+    "line": 229,
+    "calls": [
+      "timestamp",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "as_str",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 38,
+    "calls": [
+      "core::str::from_utf8_unchecked"
+    ]
+  },
+  {
+    "function": "clear",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "remaining",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 49,
+    "calls": []
+  },
+  {
+    "function": "default",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 55,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "write_str",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 61,
+    "calls": [
+      "len",
+      "copy_from_slice",
+      "Ok",
+      "is_char_boundary",
+      "as_bytes",
+      "min",
+      "remaining"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 100,
+    "calls": [
+      "FixedBuf::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 105,
+    "calls": [
+      "as_str"
+    ]
+  },
+  {
+    "function": "clear",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 110,
+    "calls": [
+      "clear"
+    ]
+  },
+  {
+    "function": "write_bool",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 116,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_f32",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 120,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_f64",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 124,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i8",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 128,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i16",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 132,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i32",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 136,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i64",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 140,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i128",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 144,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u8",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 148,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u16",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 152,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u32",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 156,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u64",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 160,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u128",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 164,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_str",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 168,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 178,
+    "calls": [
+      "Self::default"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 183,
+    "calls": [
+      "to_string"
+    ]
+  },
+  {
+    "function": "show_module",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 189,
+    "calls": []
+  },
+  {
+    "function": "show_file",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 195,
+    "calls": []
+  },
+  {
+    "function": "show_line",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 201,
+    "calls": []
+  },
+  {
+    "function": "show_timestamp",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 213,
+    "calls": []
+  },
+  {
+    "function": "log_level",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 219,
+    "calls": []
+  },
+  {
+    "function": "build",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 225,
+    "calls": []
+  },
+  {
+    "function": "set_as_default_logger",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 230,
+    "calls": [
+      "try_set_as_default_logger",
+      "panic"
+    ]
+  },
+  {
+    "function": "try_set_as_default_logger",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 237,
+    "calls": [
+      "score_log::set_max_level",
+      "log_level",
+      "build",
+      "Ok",
+      "score_log::set_global_logger",
+      "Box::new"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 247,
+    "calls": [
+      "to_string",
+      "Self"
+    ]
+  },
+  {
+    "function": "log_level",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 275,
+    "calls": []
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 281,
+    "calls": [
+      "level",
+      "log_level"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 285,
+    "calls": []
+  },
+  {
+    "function": "log",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 289,
+    "calls": [
+      "enabled",
+      "metadata",
+      "std::process::id",
+      "clear",
+      "as_str",
+      "timestamp",
+      "println",
+      "duration_since",
+      "level",
+      "as_slice",
+      "str::from_utf8_unchecked",
+      "score_write",
+      "context",
+      "with_borrow_mut",
+      "SystemTime::now"
+    ]
+  },
+  {
+    "function": "flush",
+    "file": "src/log/stdout_logger/lib.rs",
+    "line": 336,
+    "calls": [
+      "unwrap",
+      "flush",
+      "std::io::stdout"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/log/score_log/lib.rs",
+    "line": 58,
+    "calls": []
+  },
+  {
+    "function": "partial_cmp",
+    "file": "src/log/score_log/lib.rs",
+    "line": 65,
+    "calls": [
+      "Some",
+      "cmp"
+    ]
+  },
+  {
+    "function": "from_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 72,
+    "calls": [
+      "eq_ignore_ascii_case",
+      "unwrap",
+      "ParseLevelError",
+      "iter",
+      "Level::from_usize",
+      "into_iter",
+      "map",
+      "filter",
+      "next",
+      "position",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log/lib.rs",
+    "line": 85,
+    "calls": [
+      "as_str",
+      "pad"
+    ]
+  },
+  {
+    "function": "from_usize",
+    "file": "src/log/score_log/lib.rs",
+    "line": 91,
+    "calls": [
+      "Some"
+    ]
+  },
+  {
+    "function": "max",
+    "file": "src/log/score_log/lib.rs",
+    "line": 105,
+    "calls": []
+  },
+  {
+    "function": "to_level_filter",
+    "file": "src/log/score_log/lib.rs",
+    "line": 111,
+    "calls": [
+      "unwrap",
+      "LevelFilter::from_usize"
+    ]
+  },
+  {
+    "function": "as_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 118,
+    "calls": []
+  },
+  {
+    "function": "eq",
+    "file": "src/log/score_log/lib.rs",
+    "line": 147,
+    "calls": [
+      "eq"
+    ]
+  },
+  {
+    "function": "partial_cmp",
+    "file": "src/log/score_log/lib.rs",
+    "line": 154,
+    "calls": [
+      "Some",
+      "cmp"
+    ]
+  },
+  {
+    "function": "from_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 161,
+    "calls": [
+      "eq_ignore_ascii_case",
+      "unwrap",
+      "ParseLevelError",
+      "iter",
+      "LevelFilter::from_usize",
+      "map",
+      "position",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log/lib.rs",
+    "line": 171,
+    "calls": [
+      "as_str",
+      "pad"
+    ]
+  },
+  {
+    "function": "from_usize",
+    "file": "src/log/score_log/lib.rs",
+    "line": 177,
+    "calls": [
+      "Some"
+    ]
+  },
+  {
+    "function": "max",
+    "file": "src/log/score_log/lib.rs",
+    "line": 192,
+    "calls": []
+  },
+  {
+    "function": "to_level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 200,
+    "calls": [
+      "Level::from_usize"
+    ]
+  },
+  {
+    "function": "as_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 207,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log/lib.rs",
+    "line": 225,
+    "calls": []
+  },
+  {
+    "function": "args",
+    "file": "src/log/score_log/lib.rs",
+    "line": 237,
+    "calls": []
+  },
+  {
+    "function": "metadata",
+    "file": "src/log/score_log/lib.rs",
+    "line": 243,
+    "calls": []
+  },
+  {
+    "function": "level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 249,
+    "calls": [
+      "level"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/lib.rs",
+    "line": 255,
+    "calls": [
+      "context"
+    ]
+  },
+  {
+    "function": "module_path",
+    "file": "src/log/score_log/lib.rs",
+    "line": 261,
+    "calls": []
+  },
+  {
+    "function": "file",
+    "file": "src/log/score_log/lib.rs",
+    "line": 267,
+    "calls": []
+  },
+  {
+    "function": "line",
+    "file": "src/log/score_log/lib.rs",
+    "line": 273,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log/lib.rs",
+    "line": 288,
+    "calls": []
+  },
+  {
+    "function": "level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 294,
+    "calls": []
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/lib.rs",
+    "line": 300,
+    "calls": []
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/score_log/lib.rs",
+    "line": 329,
+    "calls": []
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/lib.rs",
+    "line": 333,
+    "calls": []
+  },
+  {
+    "function": "log",
+    "file": "src/log/score_log/lib.rs",
+    "line": 337,
+    "calls": []
+  },
+  {
+    "function": "flush",
+    "file": "src/log/score_log/lib.rs",
+    "line": 339,
+    "calls": []
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/score_log/lib.rs",
+    "line": 343,
+    "calls": [
+      "enabled"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/lib.rs",
+    "line": 347,
+    "calls": [
+      "context"
+    ]
+  },
+  {
+    "function": "log",
+    "file": "src/log/score_log/lib.rs",
+    "line": 351,
+    "calls": [
+      "log"
+    ]
+  },
+  {
+    "function": "flush",
+    "file": "src/log/score_log/lib.rs",
+    "line": 355,
+    "calls": [
+      "flush"
+    ]
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/score_log/lib.rs",
+    "line": 361,
+    "calls": [
+      "enabled",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/lib.rs",
+    "line": 365,
+    "calls": [
+      "context",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "log",
+    "file": "src/log/score_log/lib.rs",
+    "line": 369,
+    "calls": [
+      "as_ref",
+      "log"
+    ]
+  },
+  {
+    "function": "flush",
+    "file": "src/log/score_log/lib.rs",
+    "line": 373,
+    "calls": [
+      "as_ref",
+      "flush"
+    ]
+  },
+  {
+    "function": "set_max_level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 384,
+    "calls": [
+      "store"
+    ]
+  },
+  {
+    "function": "max_level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 393,
+    "calls": [
+      "mem::transmute",
+      "load"
+    ]
+  },
+  {
+    "function": "set_global_logger",
+    "file": "src/log/score_log/lib.rs",
+    "line": 414,
+    "calls": [
+      "SetLoggerError",
+      "set",
+      "map_err"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log/lib.rs",
+    "line": 422,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log/lib.rs",
+    "line": 432,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "global_logger",
+    "file": "src/log/score_log/lib.rs",
+    "line": 440,
+    "calls": [
+      "Box::new",
+      "unwrap_or_else",
+      "LazyLock::new",
+      "get",
+      "eprintln"
+    ]
+  },
+  {
+    "function": "level_iter",
+    "file": "src/log/score_log/lib.rs",
+    "line": 453,
+    "calls": [
+      "map",
+      "unwrap",
+      "Level::from_usize"
+    ]
+  },
+  {
+    "function": "level_filter_iter",
+    "file": "src/log/score_log/lib.rs",
+    "line": 457,
+    "calls": [
+      "map",
+      "unwrap",
+      "LevelFilter::from_usize"
+    ]
+  },
+  {
+    "function": "test_level_partial_eq_with_level_filter",
+    "file": "src/log/score_log/lib.rs",
+    "line": 462,
+    "calls": [
+      "level_iter",
+      "level_filter_iter",
+      "HashSet::from",
+      "contains",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_partial_cmp_with_level_filter",
+    "file": "src/log/score_log/lib.rs",
+    "line": 484,
+    "calls": [
+      "assert",
+      "level_iter",
+      "level_filter_iter",
+      "to_level_filter"
+    ]
+  },
+  {
+    "function": "test_level_from_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 502,
+    "calls": [
+      "Err",
+      "assert",
+      "ParseLevelError",
+      "Ok"
+    ]
+  },
+  {
+    "function": "test_level_display",
+    "file": "src/log/score_log/lib.rs",
+    "line": 525,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_from_usize",
+    "file": "src/log/score_log/lib.rs",
+    "line": 535,
+    "calls": [
+      "Some",
+      "enumerate",
+      "iter",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_max",
+    "file": "src/log/score_log/lib.rs",
+    "line": 552,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_to_level_filter",
+    "file": "src/log/score_log/lib.rs",
+    "line": 557,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_as_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 572,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_filter_partial_eq_with_level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 587,
+    "calls": [
+      "level_iter",
+      "level_filter_iter",
+      "HashSet::from",
+      "contains",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_filter_partial_cmp_with_level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 609,
+    "calls": [
+      "unwrap",
+      "level_iter",
+      "level_filter_iter",
+      "assert",
+      "skip",
+      "to_level"
+    ]
+  },
+  {
+    "function": "test_level_filter_from_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 628,
+    "calls": [
+      "Err",
+      "assert",
+      "ParseLevelError",
+      "Ok"
+    ]
+  },
+  {
+    "function": "test_level_filter_display",
+    "file": "src/log/score_log/lib.rs",
+    "line": 652,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_filter_from_usize",
+    "file": "src/log/score_log/lib.rs",
+    "line": 663,
+    "calls": [
+      "Some",
+      "enumerate",
+      "iter",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_filter_max",
+    "file": "src/log/score_log/lib.rs",
+    "line": 680,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_filter_to_level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 685,
+    "calls": [
+      "Some",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_level_filter_as_str",
+    "file": "src/log/score_log/lib.rs",
+    "line": 701,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_record_new_and_params",
+    "file": "src/log/score_log/lib.rs",
+    "line": 717,
+    "calls": [
+      "clone",
+      "Record::new",
+      "Metadata::new",
+      "assert_eq",
+      "format_args"
+    ]
+  },
+  {
+    "function": "test_metadata_new_and_params",
+    "file": "src/log/score_log/lib.rs",
+    "line": 745,
+    "calls": [
+      "Metadata::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/score_log/lib.rs",
+    "line": 758,
+    "calls": [
+      "unimplemented"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/lib.rs",
+    "line": 762,
+    "calls": []
+  },
+  {
+    "function": "log",
+    "file": "src/log/score_log/lib.rs",
+    "line": 766,
+    "calls": [
+      "unimplemented"
+    ]
+  },
+  {
+    "function": "flush",
+    "file": "src/log/score_log/lib.rs",
+    "line": 770,
+    "calls": [
+      "unimplemented"
+    ]
+  },
+  {
+    "function": "test_set_global_logger_and_global_logger",
+    "file": "src/log/score_log/lib.rs",
+    "line": 776,
+    "calls": [
+      "assert",
+      "set_global_logger",
+      "global_logger",
+      "Box::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_foreign_impl",
+    "file": "src/log/score_log/lib.rs",
+    "line": 809,
+    "calls": [
+      "assert_is_log::<&T>",
+      "assert_is_log::<Box<T>>",
+      "assert_is_log::<&dyn Log>",
+      "assert_is_log::<Box<dyn Log>>"
+    ]
+  },
+  {
+    "function": "assert_is_log",
+    "file": "src/log/score_log/lib.rs",
+    "line": 810,
+    "calls": []
+  },
+  {
+    "function": "forall",
+    "file": "src/log/score_log/lib.rs",
+    "line": 818,
+    "calls": [
+      "assert_is_log::<&T>",
+      "assert_is_log::<Box<T>>"
+    ]
+  },
+  {
+    "function": "test_max_level_and_set_max_level",
+    "file": "src/log/score_log/lib.rs",
+    "line": 826,
+    "calls": [
+      "set_max_level",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_set_global_logger_error_message",
+    "file": "src/log/score_log/lib.rs",
+    "line": 842,
+    "calls": [
+      "SetLoggerError",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_parse_level_error_message",
+    "file": "src/log/score_log/lib.rs",
+    "line": 852,
+    "calls": [
+      "ParseLevelError",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "log",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "flush",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "level_iter",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 42,
+    "calls": [
+      "into_iter"
+    ]
+  },
+  {
+    "function": "no_args",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 55,
+    "calls": [
+      "level_iter",
+      "log",
+      "all_log_macros"
+    ]
+  },
+  {
+    "function": "anonymous_args",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 86,
+    "calls": [
+      "level_iter",
+      "log",
+      "all_log_macros"
+    ]
+  },
+  {
+    "function": "named_args",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 114,
+    "calls": [
+      "level_iter",
+      "log",
+      "all_log_macros"
+    ]
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 142,
+    "calls": [
+      "log_enabled",
+      "level_iter"
+    ]
+  },
+  {
+    "function": "expr",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 154,
+    "calls": [
+      "level_iter",
+      "log"
+    ]
+  },
+  {
+    "function": "logger_short_lived",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 165,
+    "calls": [
+      "all_log_macros"
+    ]
+  },
+  {
+    "function": "logger_expr",
+    "file": "src/log/score_log/tests/macros.rs",
+    "line": 171,
+    "calls": [
+      "all_log_macros"
+    ]
+  },
+  {
+    "function": "enabled",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "context",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "log",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 36,
+    "calls": [
+      "unwrap",
+      "level",
+      "lock",
+      "line",
+      "Some"
+    ]
+  },
+  {
+    "function": "flush",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 40,
+    "calls": []
+  },
+  {
+    "function": "test_filter",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 43,
+    "calls": [
+      "unwrap",
+      "take",
+      "score_log::set_max_level",
+      "trace",
+      "warn",
+      "debug",
+      "assert_eq",
+      "lock",
+      "error",
+      "info",
+      "Some",
+      "last",
+      "t"
+    ]
+  },
+  {
+    "function": "t",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 57,
+    "calls": [
+      "Some"
+    ]
+  },
+  {
+    "function": "last",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 64,
+    "calls": [
+      "unwrap",
+      "assert_eq",
+      "lock",
+      "take"
+    ]
+  },
+  {
+    "function": "test_line_numbers",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 70,
+    "calls": [
+      "unwrap",
+      "take",
+      "score_log::set_max_level",
+      "core::panic::Location::caller",
+      "assert_eq",
+      "lock",
+      "check_log_location",
+      "line",
+      "info"
+    ]
+  },
+  {
+    "function": "check_log_location",
+    "file": "src/log/score_log/tests/integration.rs",
+    "line": 77,
+    "calls": [
+      "unwrap",
+      "take",
+      "core::panic::Location::caller",
+      "assert_eq",
+      "lock",
+      "line"
+    ]
+  },
+  {
+    "function": "parse_argument",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 32,
+    "calls": [
+      "to_string",
+      "s.parse::<usize>",
+      "Ok",
+      "is_empty",
+      "Argument::Index",
+      "Argument::Name"
+    ]
+  },
+  {
+    "function": "get_alignment",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 44,
+    "calls": [
+      "Err",
+      "ParseError",
+      "Ok",
+      "format"
+    ]
+  },
+  {
+    "function": "get_sign",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 54,
+    "calls": [
+      "Err",
+      "ParseError",
+      "Ok",
+      "format"
+    ]
+  },
+  {
+    "function": "parse_spec",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 63,
+    "calls": [
+      "get_sign",
+      "parse",
+      "align",
+      "contains",
+      "zero_pad",
+      "Ok",
+      "peek",
+      "alternate",
+      "is_none",
+      "Err",
+      "to_string",
+      "chars.collect::<String>",
+      "display_hint",
+      "fill",
+      "get_alignment",
+      "chars",
+      "is_ascii_digit",
+      "ParseError",
+      "as_str",
+      "FormatSpec::new",
+      "peekable",
+      "Some",
+      "debug_as_hex",
+      "sign",
+      "precision",
+      "is_empty",
+      "next",
+      "width",
+      "format",
+      "is_some",
+      "String::new",
+      "push"
+    ]
+  },
+  {
+    "function": "tokenize_spec",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 218,
+    "calls": [
+      "get_sign",
+      "get_precision",
+      "quote",
+      "get_zero_pad",
+      "get_debug_as_hex",
+      "get_align",
+      "get_width",
+      "tokenize_alignment",
+      "tokenize_option_u16",
+      "get_alternate",
+      "get_display_hint",
+      "tokenize_sign",
+      "get_fill",
+      "tokenize_display_hint",
+      "tokenize_debug_as_hex"
+    ]
+  },
+  {
+    "function": "tokenize_display_hint",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 220,
+    "calls": [
+      "quote"
+    ]
+  },
+  {
+    "function": "tokenize_alignment",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 234,
+    "calls": [
+      "quote"
+    ]
+  },
+  {
+    "function": "tokenize_sign",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 245,
+    "calls": [
+      "quote"
+    ]
+  },
+  {
+    "function": "tokenize_debug_as_hex",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 255,
+    "calls": [
+      "quote"
+    ]
+  },
+  {
+    "function": "tokenize_option_u16",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 265,
+    "calls": [
+      "quote"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 303,
+    "calls": [
+      "to_string",
+      "FormatSpec::default",
+      "ParseError",
+      "trim",
+      "strip_prefix",
+      "Ok",
+      "is_empty",
+      "split_once",
+      "parse_spec",
+      "strip_suffix",
+      "Some",
+      "parse_argument",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "process_escaped_braces",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 345,
+    "calls": [
+      "replace"
+    ]
+  },
+  {
+    "function": "process_format_string",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 349,
+    "calls": [
+      "extend",
+      "Spec::Placeholder",
+      "Ok",
+      "to_string",
+      "Err",
+      "clone",
+      "iter",
+      "ok_or_else",
+      "Placeholder::from",
+      "sort_by_key",
+      "chars",
+      "ParseError",
+      "Vec::new",
+      "Spec::Literal",
+      "peekable",
+      "Some",
+      "enumerate",
+      "len",
+      "process_escaped_braces",
+      "into_iter",
+      "map",
+      "next",
+      "peek",
+      "push"
+    ]
+  },
+  {
+    "function": "validate_args",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 457,
+    "calls": [
+      "Err",
+      "iter",
+      "Error::new_spanned",
+      "Ok"
+    ]
+  },
+  {
+    "function": "select_arg_with_name",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 512,
+    "calls": [
+      "Err",
+      "clone",
+      "to_string",
+      "len",
+      "iter",
+      "Error::new_spanned",
+      "proc_macro2::Span::call_site",
+      "to_token_stream",
+      "Vec::new",
+      "Ok",
+      "Some",
+      "as_ref",
+      "Error::new",
+      "push"
+    ]
+  },
+  {
+    "function": "parse_fragments",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 573,
+    "calls": [
+      "proc_macro2::Span::call_site",
+      "Error::new_spanned",
+      "process_format_string",
+      "Ok",
+      "Err",
+      "clone",
+      "iter",
+      "validate_args",
+      "push",
+      "select_arg_with_name",
+      "Error::new",
+      "quote",
+      "Vec::new",
+      "into_iter",
+      "next",
+      "value",
+      "map_err",
+      "tokenize_spec",
+      "collect"
+    ]
+  },
+  {
+    "function": "expand",
+    "file": "src/log/score_log_fmt_macro/format_args.rs",
+    "line": 630,
+    "calls": [
+      "to_compile_error",
+      "parse_macro_input",
+      "quote",
+      "into",
+      "into_iter",
+      "parse_fragments"
+    ]
+  },
+  {
+    "function": "score_log_format_args",
+    "file": "src/log/score_log_fmt_macro/lib.rs",
+    "line": 31,
+    "calls": [
+      "format_args::expand"
+    ]
+  },
+  {
+    "function": "score_debug",
+    "file": "src/log/score_log_fmt_macro/lib.rs",
+    "line": 37,
+    "calls": [
+      "score_debug::expand"
+    ]
+  },
+  {
+    "function": "generate_for_struct",
+    "file": "src/log/score_log_fmt_macro/score_debug.rs",
+    "line": 20,
+    "calls": [
+      "to_string",
+      "Err",
+      "Index::from",
+      "len",
+      "Error::new_spanned",
+      "quote",
+      "Vec::new",
+      "into_iter",
+      "Ok",
+      "push"
+    ]
+  },
+  {
+    "function": "generate_for_enum",
+    "file": "src/log/score_log_fmt_macro/score_debug.rs",
+    "line": 87,
+    "calls": [
+      "to_string",
+      "Err",
+      "format_ident",
+      "len",
+      "quote",
+      "Error::new_spanned",
+      "Vec::new",
+      "Ok",
+      "is_empty",
+      "push"
+    ]
+  },
+  {
+    "function": "generate_score_debug",
+    "file": "src/log/score_log_fmt_macro/score_debug.rs",
+    "line": 178,
+    "calls": [
+      "Err",
+      "proc_macro2::Span::call_site",
+      "split_for_impl",
+      "generate_for_struct",
+      "generate_for_enum",
+      "Error::new"
+    ]
+  },
+  {
+    "function": "expand",
+    "file": "src/log/score_log_fmt_macro/score_debug.rs",
+    "line": 200,
+    "calls": [
+      "into_compile_error",
+      "into",
+      "generate_score_debug",
+      "parse_macro_input"
+    ]
+  },
+  {
+    "function": "test_struct_named",
+    "file": "src/log/score_log_fmt_macro/tests/test_score_debug.rs",
+    "line": 28,
+    "calls": [
+      "to_string",
+      "format",
+      "write",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "score_log_format_args",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_struct_unnamed",
+    "file": "src/log/score_log_fmt_macro/tests/test_score_debug.rs",
+    "line": 52,
+    "calls": [
+      "to_string",
+      "Point",
+      "format",
+      "write",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "score_log_format_args",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_struct_unit",
+    "file": "src/log/score_log_fmt_macro/tests/test_score_debug.rs",
+    "line": 68,
+    "calls": [
+      "format",
+      "write",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "score_log_format_args",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_struct_generics",
+    "file": "src/log/score_log_fmt_macro/tests/test_score_debug.rs",
+    "line": 84,
+    "calls": [
+      "format",
+      "write",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "score_log_format_args",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_enum_plain",
+    "file": "src/log/score_log_fmt_macro/tests/test_score_debug.rs",
+    "line": 107,
+    "calls": [
+      "format",
+      "write",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "score_log_format_args",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_enum_nested",
+    "file": "src/log/score_log_fmt_macro/tests/test_score_debug.rs",
+    "line": 128,
+    "calls": [
+      "to_string",
+      "Variant::String",
+      "format",
+      "Variant::Nested",
+      "Variant::Bool",
+      "write",
+      "assert_eq",
+      "Variant::Int",
+      "StringWriter::new",
+      "panic",
+      "score_log_format_args",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_enum_empty",
+    "file": "src/log/score_log_fmt_macro/tests/test_score_debug.rs",
+    "line": 162,
+    "calls": []
+  },
+  {
+    "function": "common_format_args_test",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 28,
+    "calls": [
+      "map_err",
+      "std::fmt::format",
+      "write",
+      "StringWriter::new",
+      "panic",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_single_literal",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 48,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_escaped_braces",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 55,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_single_placeholder",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 62,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_mixed_literals_and_placeholders",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 69,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_arg_index",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 76,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_arg_pos_and_index",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 83,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_arg_name",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 90,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_arg_name_alias",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 103,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_arg_pos_and_name",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 113,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_arg_mixed",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 126,
+    "calls": [
+      "common_format_args_test",
+      "format_args",
+      "score_log_format_args"
+    ]
+  },
+  {
+    "function": "test_format_spec_empty",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 135,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "assert_eq",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_all",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 156,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "assert_eq",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_debug",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 177,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "assert_eq",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_display_hint_octal",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 198,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_display_hint_lower_hex",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 211,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_display_hint_upper_hex",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 224,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_display_hint_pointer",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 237,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_display_hint_binary",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 250,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_display_hint_lower_exp",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 263,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "test_format_spec_display_hint_upper_exp",
+    "file": "src/log/score_log_fmt_macro/tests/test_format_args.rs",
+    "line": 276,
+    "calls": [
+      "first",
+      "unwrap",
+      "assert",
+      "panic",
+      "score_log_format_args",
+      "format_spec"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 24,
+    "calls": [
+      "String::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 28,
+    "calls": [
+      "as_str"
+    ]
+  },
+  {
+    "function": "write_bool",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 34,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_f32",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 38,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_f64",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 42,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i8",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 46,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i16",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 50,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i32",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 54,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i64",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 58,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i128",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 62,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u8",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 66,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u16",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 70,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u32",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 74,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u64",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 78,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u128",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 82,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_str",
+    "file": "src/log/score_log_fmt_macro/tests/utils/mod.rs",
+    "line": 86,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 46,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 52,
+    "calls": [
+      "FormatSpec::new",
+      "write_str",
+      "get_display_hint"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 66,
+    "calls": [
+      "ScoreDebug::fmt",
+      "as_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 72,
+    "calls": [
+      "error_len",
+      "finish",
+      "DebugStruct::new",
+      "field",
+      "valid_up_to"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 82,
+    "calls": [
+      "finish",
+      "utf8_error",
+      "DebugStruct::new",
+      "field",
+      "as_bytes"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 92,
+    "calls": [
+      "write_f64",
+      "as_secs_f64",
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 119,
+    "calls": [
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 125,
+    "calls": [
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 131,
+    "calls": [
+      "DebugList::new",
+      "iter",
+      "entries",
+      "finish"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 138,
+    "calls": [
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 144,
+    "calls": [
+      "finish",
+      "DebugTuple::new",
+      "field"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 151,
+    "calls": [
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 157,
+    "calls": [
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 163,
+    "calls": [
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 169,
+    "calls": [
+      "FormatSpec::new",
+      "ScoreDebug::fmt",
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 183,
+    "calls": [
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 193,
+    "calls": [
+      "DebugMap::new",
+      "iter",
+      "entries",
+      "finish"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 200,
+    "calls": [
+      "DebugStruct::new",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 207,
+    "calls": [
+      "DebugTuple::new",
+      "field",
+      "finish"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 213,
+    "calls": [
+      "DebugTuple::new",
+      "field",
+      "finish"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 223,
+    "calls": [
+      "DebugTuple::new",
+      "field",
+      "finish"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 234,
+    "calls": [
+      "DebugTuple::new",
+      "field",
+      "finish"
+    ]
+  },
+  {
+    "function": "test_bool_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 250,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_f32_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 255,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_f64_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 260,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_i8_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 265,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_i16_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 270,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_i32_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 275,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_i64_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 280,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_i128_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 285,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_u8_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 290,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_u16_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 295,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_u32_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 300,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_u64_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 305,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_u128_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 310,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_unit_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 315,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_str_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 320,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_string_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 325,
+    "calls": [
+      "common_test_debug",
+      "String::from"
+    ]
+  },
+  {
+    "function": "test_utf8_error_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 330,
+    "calls": [
+      "unwrap_err",
+      "core::str::from_utf8",
+      "common_test_debug",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_from_utf8_error_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 337,
+    "calls": [
+      "unwrap_err",
+      "try_into",
+      "common_test_debug",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_isize_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 344,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_usize_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 349,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_slice_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 354,
+    "calls": [
+      "as_slice",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_array_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 359,
+    "calls": [
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_try_from_slice_error_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 364,
+    "calls": [
+      "unwrap_err",
+      "as_slice",
+      "try_into",
+      "common_test_debug",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_vec_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 371,
+    "calls": [
+      "common_test_debug",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_rc_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 376,
+    "calls": [
+      "std::rc::Rc::new",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_arc_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 382,
+    "calls": [
+      "std::sync::Arc::new",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_option_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 388,
+    "calls": [
+      "Some",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_box_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 394,
+    "calls": [
+      "Box::new",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_duration_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 399,
+    "calls": [
+      "core::time::Duration::new",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_hashmap_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 404,
+    "calls": [
+      "std::collections::HashMap::from",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_poison_error_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 409,
+    "calls": [
+      "std::sync::PoisonError::new",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_tuples_debug",
+    "file": "src/log/score_log_fmt/fmt_impl.rs",
+    "line": 415,
+    "calls": [
+      "std::sync::Arc::new",
+      "Box::new",
+      "Some",
+      "common_test_debug",
+      "std::collections::HashMap::from",
+      "vec"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 31,
+    "calls": [
+      "FormatSpec::new",
+      "write_str"
+    ]
+  },
+  {
+    "function": "field",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 42,
+    "calls": [
+      "field_with",
+      "fmt"
+    ]
+  },
+  {
+    "function": "field_with",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 49,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "value_fmt",
+      "write_str"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 51,
+    "calls": []
+  },
+  {
+    "function": "finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 67,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 80,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 103,
+    "calls": [
+      "FormatSpec::new",
+      "is_empty",
+      "write_str"
+    ]
+  },
+  {
+    "function": "field",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 115,
+    "calls": [
+      "field_with",
+      "fmt"
+    ]
+  },
+  {
+    "function": "field_with",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 122,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "value_fmt",
+      "write_str"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 124,
+    "calls": []
+  },
+  {
+    "function": "finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 138,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 151,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "entry_with",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 174,
+    "calls": [
+      "FormatSpec::new",
+      "entry_writer",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 176,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 200,
+    "calls": [
+      "FormatSpec::new",
+      "write_str"
+    ]
+  },
+  {
+    "function": "entry",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 213,
+    "calls": [
+      "entry_with",
+      "fmt"
+    ]
+  },
+  {
+    "function": "entry_with",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 221,
+    "calls": [
+      "entry_with"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 223,
+    "calls": []
+  },
+  {
+    "function": "entries",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 230,
+    "calls": [
+      "entry"
+    ]
+  },
+  {
+    "function": "finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 242,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 255,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 274,
+    "calls": [
+      "FormatSpec::new",
+      "write_str"
+    ]
+  },
+  {
+    "function": "entry",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 287,
+    "calls": [
+      "entry_with",
+      "fmt"
+    ]
+  },
+  {
+    "function": "entry_with",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 295,
+    "calls": [
+      "entry_with"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 297,
+    "calls": []
+  },
+  {
+    "function": "entries",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 304,
+    "calls": [
+      "entry"
+    ]
+  },
+  {
+    "function": "finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 316,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 328,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "write_str"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 351,
+    "calls": [
+      "FormatSpec::new",
+      "write_str"
+    ]
+  },
+  {
+    "function": "entry",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 363,
+    "calls": [
+      "value",
+      "key"
+    ]
+  },
+  {
+    "function": "key",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 376,
+    "calls": [
+      "key_with",
+      "fmt"
+    ]
+  },
+  {
+    "function": "key_with",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 383,
+    "calls": [
+      "assert",
+      "write_str",
+      "Ok",
+      "FormatSpec::new",
+      "and_then",
+      "key_fmt"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 385,
+    "calls": []
+  },
+  {
+    "function": "value",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 417,
+    "calls": [
+      "value_with",
+      "fmt"
+    ]
+  },
+  {
+    "function": "value_with",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 424,
+    "calls": [
+      "and_then",
+      "assert",
+      "value_fmt",
+      "Ok"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 426,
+    "calls": []
+  },
+  {
+    "function": "entries",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 440,
+    "calls": [
+      "entry"
+    ]
+  },
+  {
+    "function": "finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 453,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "assert",
+      "write_str"
+    ]
+  },
+  {
+    "function": "finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 473,
+    "calls": [
+      "FormatSpec::new",
+      "and_then",
+      "assert",
+      "write_str"
+    ]
+  },
+  {
+    "function": "test_struct_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 490,
+    "calls": [
+      "DebugStruct::new",
+      "field",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_struct_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 511,
+    "calls": [
+      "finish",
+      "DebugStruct::new",
+      "field",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_struct_empty_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 532,
+    "calls": [
+      "DebugStruct::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_struct_empty_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 543,
+    "calls": [
+      "finish",
+      "DebugStruct::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_tuple_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 559,
+    "calls": [
+      "field",
+      "DebugTuple::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_tuple_empty_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 575,
+    "calls": [
+      "DebugTuple::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_tuple_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 586,
+    "calls": [
+      "finish",
+      "field",
+      "DebugTuple::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_tuple_empty_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 602,
+    "calls": [
+      "finish",
+      "DebugTuple::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_tuple_single_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 613,
+    "calls": [
+      "finish",
+      "field",
+      "DebugTuple::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_set_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 627,
+    "calls": [
+      "clone",
+      "DebugSet::new",
+      "std::collections::BTreeSet::from",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_set_empty_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 641,
+    "calls": [
+      "DebugSet::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_set_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 652,
+    "calls": [
+      "clone",
+      "finish",
+      "DebugSet::new",
+      "std::collections::HashSet::from",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_set_empty_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 666,
+    "calls": [
+      "clone",
+      "finish",
+      "std::collections::HashSet::<i32>::new",
+      "DebugSet::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_list_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 680,
+    "calls": [
+      "DebugList::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_list_empty_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 694,
+    "calls": [
+      "DebugList::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_list_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 705,
+    "calls": [
+      "finish",
+      "DebugList::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_list_empty_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 719,
+    "calls": [
+      "finish",
+      "DebugList::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err"
+    ]
+  },
+  {
+    "function": "test_map_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 733,
+    "calls": [
+      "DebugMap::new",
+      "clone",
+      "display_hint",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err",
+      "std::collections::BTreeMap::from",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_map_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 748,
+    "calls": [
+      "DebugMap::new",
+      "clone",
+      "finish",
+      "display_hint",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err",
+      "std::collections::BTreeMap::from"
+    ]
+  },
+  {
+    "function": "test_map_empty_finish_non_exhaustive",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 763,
+    "calls": [
+      "DebugMap::new",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "map_err",
+      "finish_non_exhaustive"
+    ]
+  },
+  {
+    "function": "test_map_empty_finish",
+    "file": "src/log/score_log_fmt/builders.rs",
+    "line": 774,
+    "calls": [
+      "DebugMap::new",
+      "clone",
+      "finish",
+      "FormatSpec::new",
+      "assert_eq",
+      "StringWriter::new",
+      "panic",
+      "entries",
+      "map_err",
+      "std::collections::BTreeMap::<&str, i32>::new"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl_qm.rs",
+    "line": 25,
+    "calls": [
+      "invalid",
+      "utf8_chunks",
+      "is_empty",
+      "as_encoded_bytes",
+      "Ok",
+      "valid",
+      "ScoreDebug::fmt",
+      "as_os_str",
+      "encode_utf8",
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl_qm.rs",
+    "line": 50,
+    "calls": [
+      "as_path",
+      "ScoreDebug::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt_impl_qm.rs",
+    "line": 56,
+    "calls": [
+      "format",
+      "write_str"
+    ]
+  },
+  {
+    "function": "test_path_ref_debug",
+    "file": "src/log/score_log_fmt/fmt_impl_qm.rs",
+    "line": 67,
+    "calls": [
+      "Path::new",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_pathbuf_debug",
+    "file": "src/log/score_log_fmt/fmt_impl_qm.rs",
+    "line": 72,
+    "calls": [
+      "PathBuf::from",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "test_addr_parse_error_debug",
+    "file": "src/log/score_log_fmt/fmt_impl_qm.rs",
+    "line": 77,
+    "calls": [
+      "parse",
+      "unwrap_err",
+      "common_test_debug"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 70,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 77,
+    "calls": [
+      "v.cast::<T>",
+      "NonNull::from_ref",
+      "as_ref",
+      "cast",
+      "fmt"
+    ]
+  },
+  {
+    "function": "format_spec",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 93,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 98,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 118,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "write",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 133,
+    "calls": [
+      "FormatSpec::new",
+      "Ok",
+      "fmt",
+      "write_str"
+    ]
+  },
+  {
+    "function": "test_arguments_debug",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 150,
+    "calls": [
+      "assert",
+      "Fragment::Placeholder",
+      "FormatSpec::new",
+      "Arguments",
+      "StringWriter::new",
+      "ScoreDebug::fmt",
+      "Fragment::Literal",
+      "Placeholder::new"
+    ]
+  },
+  {
+    "function": "test_write_empty",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 185,
+    "calls": [
+      "assert",
+      "Arguments",
+      "StringWriter::new"
+    ]
+  },
+  {
+    "function": "test_write_literals_only",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 192,
+    "calls": [
+      "assert",
+      "Arguments",
+      "StringWriter::new",
+      "Fragment::Literal"
+    ]
+  },
+  {
+    "function": "test_write_placeholders_only",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 200,
+    "calls": [
+      "assert",
+      "Fragment::Placeholder",
+      "FormatSpec::new",
+      "Arguments",
+      "StringWriter::new",
+      "assert_eq",
+      "Placeholder::new"
+    ]
+  },
+  {
+    "function": "test_write_mixed",
+    "file": "src/log/score_log_fmt/fmt.rs",
+    "line": 232,
+    "calls": [
+      "assert",
+      "Fragment::Placeholder",
+      "FormatSpec::new",
+      "Arguments",
+      "StringWriter::new",
+      "Fragment::Literal",
+      "Placeholder::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "from_params",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 117,
+    "calls": []
+  },
+  {
+    "function": "display_hint",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 142,
+    "calls": []
+  },
+  {
+    "function": "fill",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 148,
+    "calls": []
+  },
+  {
+    "function": "align",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 154,
+    "calls": []
+  },
+  {
+    "function": "sign",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 160,
+    "calls": []
+  },
+  {
+    "function": "alternate",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 166,
+    "calls": []
+  },
+  {
+    "function": "zero_pad",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 172,
+    "calls": []
+  },
+  {
+    "function": "debug_as_hex",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 178,
+    "calls": []
+  },
+  {
+    "function": "width",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 184,
+    "calls": []
+  },
+  {
+    "function": "precision",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 190,
+    "calls": []
+  },
+  {
+    "function": "get_display_hint",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 196,
+    "calls": []
+  },
+  {
+    "function": "get_fill",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 201,
+    "calls": []
+  },
+  {
+    "function": "get_align",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 206,
+    "calls": []
+  },
+  {
+    "function": "get_sign",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 211,
+    "calls": []
+  },
+  {
+    "function": "get_alternate",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 216,
+    "calls": []
+  },
+  {
+    "function": "get_zero_pad",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 221,
+    "calls": []
+  },
+  {
+    "function": "get_debug_as_hex",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 226,
+    "calls": []
+  },
+  {
+    "function": "get_width",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 231,
+    "calls": []
+  },
+  {
+    "function": "get_precision",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 236,
+    "calls": []
+  },
+  {
+    "function": "default",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 242,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "test_new",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 252,
+    "calls": [
+      "FormatSpec::new",
+      "assert",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_default",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 267,
+    "calls": [
+      "FormatSpec::default",
+      "assert",
+      "FormatSpec::new"
+    ]
+  },
+  {
+    "function": "test_from_params",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 283,
+    "calls": [
+      "Some",
+      "FormatSpec::from_params",
+      "assert"
+    ]
+  },
+  {
+    "function": "test_display_hint",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 318,
+    "calls": [
+      "FormatSpec::new",
+      "assert",
+      "display_hint"
+    ]
+  },
+  {
+    "function": "test_fill",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 326,
+    "calls": [
+      "FormatSpec::new",
+      "fill",
+      "assert"
+    ]
+  },
+  {
+    "function": "test_align",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 334,
+    "calls": [
+      "FormatSpec::new",
+      "Some",
+      "assert",
+      "align"
+    ]
+  },
+  {
+    "function": "test_sign",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 342,
+    "calls": [
+      "FormatSpec::new",
+      "Some",
+      "assert",
+      "sign"
+    ]
+  },
+  {
+    "function": "test_alternate",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 350,
+    "calls": [
+      "FormatSpec::new",
+      "assert",
+      "alternate"
+    ]
+  },
+  {
+    "function": "test_zero_pad",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 358,
+    "calls": [
+      "FormatSpec::new",
+      "assert",
+      "zero_pad"
+    ]
+  },
+  {
+    "function": "test_debug_as_hex",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 366,
+    "calls": [
+      "FormatSpec::new",
+      "Some",
+      "assert",
+      "debug_as_hex"
+    ]
+  },
+  {
+    "function": "test_width",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 374,
+    "calls": [
+      "FormatSpec::new",
+      "Some",
+      "assert",
+      "width"
+    ]
+  },
+  {
+    "function": "test_precision",
+    "file": "src/log/score_log_fmt/fmt_spec.rs",
+    "line": 382,
+    "calls": [
+      "FormatSpec::new",
+      "Some",
+      "assert",
+      "precision"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 20,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 30,
+    "calls": [
+      "String::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 34,
+    "calls": [
+      "as_str"
+    ]
+  },
+  {
+    "function": "write_bool",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 40,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_f32",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 44,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_f64",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 48,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_i8",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 52,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_i16",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 56,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_i32",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 60,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_i64",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 64,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_i128",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 68,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_u8",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 72,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_u16",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 76,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_u32",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 80,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_u64",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 84,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_u128",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 88,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "write_str",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 92,
+    "calls": [
+      "write",
+      "Ok"
+    ]
+  },
+  {
+    "function": "common_test_debug",
+    "file": "src/log/score_log_fmt/test_utils.rs",
+    "line": 99,
+    "calls": [
+      "display_hint",
+      "FormatSpec::new",
+      "StringWriter::new",
+      "ScoreDebug::fmt",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.cpp",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.cpp",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.cpp",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.cpp",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.cpp",
+    "line": 51,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.cpp",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.cpp",
+    "line": 63,
+    "calls": [
+      "set_default_logger",
+      "value",
+      "c_str",
+      "size"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.h",
+    "line": 19,
+    "calls": [
+      "ShowModule",
+      "ShowLine",
+      "ShowFile",
+      "ShowTimestamp",
+      "Context",
+      "LogLevel"
+    ]
+  },
+  {
+    "function": "LogLevel",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.h",
+    "line": 23,
+    "calls": [
+      "ShowModule",
+      "ShowLine",
+      "ShowFile",
+      "ShowTimestamp",
+      "Context",
+      "LogLevel"
+    ]
+  },
+  {
+    "function": "StdoutLoggerBuilder",
+    "file": "src/log/stdout_logger_cpp_init/stdout_logger_init.h",
+    "line": 40,
+    "calls": [
+      "ShowModule",
+      "ShowLine",
+      "ShowFile",
+      "ShowTimestamp",
+      "Context",
+      "LogLevel"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/log/stdout_logger_cpp_init/ffi.rs",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "set_default_logger",
+    "file": "src/log/stdout_logger_cpp_init/ffi.rs",
+    "line": 47,
+    "calls": [
+      "show_line",
+      "StdoutLoggerBuilder::new",
+      "into",
+      "log_level",
+      "is_null",
+      "set_as_default_logger",
+      "str::from_utf8_unchecked",
+      "from_raw_parts",
+      "show_file",
+      "context",
+      "cast",
+      "show_timestamp",
+      "show_module"
+    ]
+  },
+  {
+    "function": "new_in",
+    "file": "src/sync/arc_in.rs",
+    "line": 46,
+    "calls": [
+      "write",
+      "ptr.cast::<ArcInner<T>>",
+      "as_ptr",
+      "panic",
+      "std::alloc::Layout::new::<ArcInner<T>>",
+      "AtomicUsize::new",
+      "allocate"
+    ]
+  },
+  {
+    "function": "strong_count",
+    "file": "src/sync/arc_in.rs",
+    "line": 66,
+    "calls": [
+      "as_ref",
+      "load"
+    ]
+  },
+  {
+    "function": "clone",
+    "file": "src/sync/arc_in.rs",
+    "line": 73,
+    "calls": [
+      "as_ref",
+      "fetch_add",
+      "clone"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/sync/arc_in.rs",
+    "line": 88,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/sync/arc_in.rs",
+    "line": 94,
+    "calls": [
+      "T::default",
+      "ArcIn::new_in",
+      "A::default"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/sync/arc_in.rs",
+    "line": 100,
+    "calls": [
+      "deref",
+      "fmt"
+    ]
+  },
+  {
+    "function": "as_ref",
+    "file": "src/sync/arc_in.rs",
+    "line": 106,
+    "calls": [
+      "deref"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/sync/arc_in.rs",
+    "line": 112,
+    "calls": []
+  },
+  {
+    "function": "partial_cmp",
+    "file": "src/sync/arc_in.rs",
+    "line": 120,
+    "calls": [
+      "partial_cmp"
+    ]
+  },
+  {
+    "function": "cmp",
+    "file": "src/sync/arc_in.rs",
+    "line": 126,
+    "calls": [
+      "cmp"
+    ]
+  },
+  {
+    "function": "hash",
+    "file": "src/sync/arc_in.rs",
+    "line": 132,
+    "calls": [
+      "hash"
+    ]
+  },
+  {
+    "function": "drop",
+    "file": "src/sync/arc_in.rs",
+    "line": 141,
+    "calls": [
+      "fetch_sub",
+      "std::ptr::drop_in_place",
+      "cast",
+      "std::sync::atomic::fence",
+      "std::alloc::Layout::new::<ArcInner<T>>",
+      "as_mut",
+      "as_ref",
+      "deallocate"
+    ]
+  },
+  {
+    "function": "new_and_deref",
+    "file": "src/sync/arc_in.rs",
+    "line": 163,
+    "calls": [
+      "ArcIn::new_in",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "clone_increases_count",
+    "file": "src/sync/arc_in.rs",
+    "line": 171,
+    "calls": [
+      "clone",
+      "ArcIn::new_in",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "drop_decreases_count",
+    "file": "src/sync/arc_in.rs",
+    "line": 180,
+    "calls": [
+      "clone",
+      "ArcIn::new_in",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "debug_trait",
+    "file": "src/sync/arc_in.rs",
+    "line": 193,
+    "calls": [
+      "ArcIn::new_in",
+      "assert_eq",
+      "format"
+    ]
+  },
+  {
+    "function": "default_trait",
+    "file": "src/sync/arc_in.rs",
+    "line": 201,
+    "calls": [
+      "ArcIn::default",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "as_ref_trait",
+    "file": "src/sync/arc_in.rs",
+    "line": 208,
+    "calls": [
+      "to_string",
+      "as_ref",
+      "ArcIn::new_in",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "eq_ord_hash",
+    "file": "src/sync/arc_in.rs",
+    "line": 216,
+    "calls": [
+      "assert",
+      "DefaultHasher::new",
+      "ArcIn::new_in",
+      "hash",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "strong_count_multiple_clones",
+    "file": "src/sync/arc_in.rs",
+    "line": 235,
+    "calls": [
+      "clone",
+      "drop",
+      "map",
+      "ArcIn::new_in",
+      "assert_eq",
+      "collect"
+    ]
+  },
+  {
+    "function": "drop_on_zero",
+    "file": "src/sync/arc_in.rs",
+    "line": 245,
+    "calls": [
+      "ArcIn::new_in",
+      "assert",
+      "DropCounter"
+    ]
+  },
+  {
+    "function": "drop",
+    "file": "src/sync/arc_in.rs",
+    "line": 248,
+    "calls": []
+  },
+  {
+    "function": "test_with_log",
+    "file": "src/testing_macros/lib.rs",
+    "line": 20,
+    "calls": [
+      "quote",
+      "parse_macro_input",
+      "TokenStream::from"
+    ]
+  },
+  {
+    "function": "test_mod_with_log",
+    "file": "src/testing_macros/lib.rs",
+    "line": 43,
+    "calls": [
+      "path",
+      "parse_macro_input",
+      "iter",
+      "syn::parse_quote",
+      "quote",
+      "any",
+      "TokenStream::from",
+      "iter_mut",
+      "is_ident"
+    ]
+  },
+  {
+    "function": "allocate",
+    "file": "src/elementary/global_allocator.rs",
+    "line": 26,
+    "calls": [
+      "Err",
+      "alloc",
+      "NonNull::new_unchecked",
+      "size",
+      "is_null",
+      "Ok",
+      "NonNull::slice_from_raw_parts"
+    ]
+  },
+  {
+    "function": "deallocate",
+    "file": "src/elementary/global_allocator.rs",
+    "line": 43,
+    "calls": [
+      "dealloc",
+      "as_ptr"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/elementary/global_allocator.rs",
+    "line": 49,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/lib.rs",
+    "line": 32,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/generic/vec.rs",
+    "line": 36,
+    "calls": [
+      "S::new"
+    ]
+  },
+  {
+    "function": "try_new",
+    "file": "src/containers/generic/vec.rs",
+    "line": 47,
+    "calls": [
+      "Some",
+      "S::try_new"
+    ]
+  },
+  {
+    "function": "as_slice",
+    "file": "src/containers/generic/vec.rs",
+    "line": 58,
+    "calls": [
+      "subslice"
+    ]
+  },
+  {
+    "function": "as_mut_slice",
+    "file": "src/containers/generic/vec.rs",
+    "line": 65,
+    "calls": [
+      "subslice_mut"
+    ]
+  },
+  {
+    "function": "capacity",
+    "file": "src/containers/generic/vec.rs",
+    "line": 70,
+    "calls": [
+      "capacity"
+    ]
+  },
+  {
+    "function": "len",
+    "file": "src/containers/generic/vec.rs",
+    "line": 75,
+    "calls": []
+  },
+  {
+    "function": "is_empty",
+    "file": "src/containers/generic/vec.rs",
+    "line": 80,
+    "calls": []
+  },
+  {
+    "function": "is_full",
+    "file": "src/containers/generic/vec.rs",
+    "line": 85,
+    "calls": [
+      "capacity",
+      "len"
+    ]
+  },
+  {
+    "function": "push",
+    "file": "src/containers/generic/vec.rs",
+    "line": 93,
+    "calls": [
+      "Err",
+      "capacity",
+      "write",
+      "Ok",
+      "element_mut"
+    ]
+  },
+  {
+    "function": "pop",
+    "file": "src/containers/generic/vec.rs",
+    "line": 106,
+    "calls": [
+      "Some",
+      "assume_init_read",
+      "element"
+    ]
+  },
+  {
+    "function": "clear",
+    "file": "src/containers/generic/vec.rs",
+    "line": 117,
+    "calls": [
+      "needs_drop::<T>",
+      "subslice_mut",
+      "ptr::drop_in_place"
+    ]
+  },
+  {
+    "function": "set_len",
+    "file": "src/containers/generic/vec.rs",
+    "line": 134,
+    "calls": [
+      "debug_assert"
+    ]
+  },
+  {
+    "function": "extend_from_slice",
+    "file": "src/containers/generic/vec.rs",
+    "line": 145,
+    "calls": [
+      "Err",
+      "len",
+      "capacity",
+      "copy_from_nonoverlapping",
+      "as_ptr",
+      "checked_add",
+      "Ok",
+      "subslice_mut",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/generic/vec.rs",
+    "line": 176,
+    "calls": [
+      "as_slice"
+    ]
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/generic/vec.rs",
+    "line": 182,
+    "calls": [
+      "as_mut_slice"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/generic/vec.rs",
+    "line": 188,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_slice"
+    ]
+  },
+  {
+    "function": "push_and_pop",
+    "file": "src/containers/generic/vec.rs",
+    "line": 200,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "assert_eq",
+      "GenericVec::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/vec.rs",
+    "line": 201,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "assert_eq",
+      "GenericVec::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "is_full_and_is_empty",
+    "file": "src/containers/generic/vec.rs",
+    "line": 235,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "GenericVec::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/vec.rs",
+    "line": 236,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "GenericVec::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/generic/string.rs",
+    "line": 37,
+    "calls": [
+      "GenericVec::new"
+    ]
+  },
+  {
+    "function": "try_new",
+    "file": "src/containers/generic/string.rs",
+    "line": 48,
+    "calls": [
+      "Some",
+      "GenericVec::try_new"
+    ]
+  },
+  {
+    "function": "as_bytes",
+    "file": "src/containers/generic/string.rs",
+    "line": 54,
+    "calls": [
+      "as_slice"
+    ]
+  },
+  {
+    "function": "as_str",
+    "file": "src/containers/generic/string.rs",
+    "line": 61,
+    "calls": [
+      "as_slice",
+      "str::from_utf8_unchecked"
+    ]
+  },
+  {
+    "function": "as_mut_str",
+    "file": "src/containers/generic/string.rs",
+    "line": 68,
+    "calls": [
+      "as_mut_slice",
+      "str::from_utf8_unchecked_mut"
+    ]
+  },
+  {
+    "function": "capacity",
+    "file": "src/containers/generic/string.rs",
+    "line": 75,
+    "calls": [
+      "capacity"
+    ]
+  },
+  {
+    "function": "len",
+    "file": "src/containers/generic/string.rs",
+    "line": 82,
+    "calls": [
+      "len"
+    ]
+  },
+  {
+    "function": "is_empty",
+    "file": "src/containers/generic/string.rs",
+    "line": 87,
+    "calls": [
+      "is_empty"
+    ]
+  },
+  {
+    "function": "is_full",
+    "file": "src/containers/generic/string.rs",
+    "line": 92,
+    "calls": [
+      "is_full"
+    ]
+  },
+  {
+    "function": "push",
+    "file": "src/containers/generic/string.rs",
+    "line": 99,
+    "calls": [
+      "push_str",
+      "encode_utf8"
+    ]
+  },
+  {
+    "function": "push_str",
+    "file": "src/containers/generic/string.rs",
+    "line": 107,
+    "calls": [
+      "extend_from_slice",
+      "as_bytes",
+      "Ok",
+      "Err"
+    ]
+  },
+  {
+    "function": "pop",
+    "file": "src/containers/generic/string.rs",
+    "line": 117,
+    "calls": [
+      "len",
+      "set_len",
+      "len_utf8",
+      "Some",
+      "next_back",
+      "chars"
+    ]
+  },
+  {
+    "function": "clear",
+    "file": "src/containers/generic/string.rs",
+    "line": 130,
+    "calls": [
+      "clear"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/generic/string.rs",
+    "line": 138,
+    "calls": [
+      "as_str"
+    ]
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/generic/string.rs",
+    "line": 144,
+    "calls": [
+      "as_mut_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/generic/string.rs",
+    "line": 150,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_str"
+    ]
+  },
+  {
+    "function": "push_and_pop",
+    "file": "src/containers/generic/string.rs",
+    "line": 162,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "take",
+      "GenericString::<Vec<MaybeUninit<u8>>>::new",
+      "assert_eq",
+      "String::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/string.rs",
+    "line": 163,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "take",
+      "GenericString::<Vec<MaybeUninit<u8>>>::new",
+      "assert_eq",
+      "String::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "push_str",
+    "file": "src/containers/generic/string.rs",
+    "line": 197,
+    "calls": [
+      "len",
+      "assert",
+      "run_test",
+      "capacity",
+      "GenericString::<Vec<MaybeUninit<u8>>>::new",
+      "push_str",
+      "assert_eq",
+      "String::new"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/string.rs",
+    "line": 198,
+    "calls": [
+      "len",
+      "assert",
+      "capacity",
+      "GenericString::<Vec<MaybeUninit<u8>>>::new",
+      "push_str",
+      "assert_eq",
+      "String::new"
+    ]
+  },
+  {
+    "function": "is_full_and_is_empty",
+    "file": "src/containers/generic/string.rs",
+    "line": 225,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "take",
+      "GenericString::<Vec<MaybeUninit<u8>>>::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/string.rs",
+    "line": 226,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "take",
+      "GenericString::<Vec<MaybeUninit<u8>>>::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/generic/queue.rs",
+    "line": 37,
+    "calls": [
+      "S::new"
+    ]
+  },
+  {
+    "function": "as_slices",
+    "file": "src/containers/generic/queue.rs",
+    "line": 59,
+    "calls": [
+      "slice_ranges",
+      "subslice"
+    ]
+  },
+  {
+    "function": "as_mut_slices",
+    "file": "src/containers/generic/queue.rs",
+    "line": 80,
+    "calls": [
+      "slice_ranges",
+      "subslice_mut"
+    ]
+  },
+  {
+    "function": "front",
+    "file": "src/containers/generic/queue.rs",
+    "line": 89,
+    "calls": [
+      "Some",
+      "element",
+      "assume_init_ref"
+    ]
+  },
+  {
+    "function": "front_mut",
+    "file": "src/containers/generic/queue.rs",
+    "line": 100,
+    "calls": [
+      "Some",
+      "assume_init_mut",
+      "element_mut"
+    ]
+  },
+  {
+    "function": "back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 111,
+    "calls": [
+      "map",
+      "element",
+      "assume_init_ref",
+      "back_index"
+    ]
+  },
+  {
+    "function": "back_mut",
+    "file": "src/containers/generic/queue.rs",
+    "line": 120,
+    "calls": [
+      "map",
+      "assume_init_mut",
+      "element_mut",
+      "back_index"
+    ]
+  },
+  {
+    "function": "iter",
+    "file": "src/containers/generic/queue.rs",
+    "line": 128,
+    "calls": [
+      "as_slices",
+      "iter"
+    ]
+  },
+  {
+    "function": "iter_mut",
+    "file": "src/containers/generic/queue.rs",
+    "line": 137,
+    "calls": [
+      "iter_mut",
+      "as_mut_slices"
+    ]
+  },
+  {
+    "function": "capacity",
+    "file": "src/containers/generic/queue.rs",
+    "line": 146,
+    "calls": [
+      "capacity"
+    ]
+  },
+  {
+    "function": "len",
+    "file": "src/containers/generic/queue.rs",
+    "line": 151,
+    "calls": []
+  },
+  {
+    "function": "is_empty",
+    "file": "src/containers/generic/queue.rs",
+    "line": 156,
+    "calls": []
+  },
+  {
+    "function": "is_full",
+    "file": "src/containers/generic/queue.rs",
+    "line": 161,
+    "calls": [
+      "capacity",
+      "len"
+    ]
+  },
+  {
+    "function": "push_back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 169,
+    "calls": [
+      "Err",
+      "capacity",
+      "write",
+      "Ok",
+      "element_mut"
+    ]
+  },
+  {
+    "function": "push_front",
+    "file": "src/containers/generic/queue.rs",
+    "line": 189,
+    "calls": [
+      "Err",
+      "capacity",
+      "write",
+      "Ok",
+      "element_mut"
+    ]
+  },
+  {
+    "function": "pop_front",
+    "file": "src/containers/generic/queue.rs",
+    "line": 209,
+    "calls": [
+      "capacity",
+      "Some",
+      "assume_init_read",
+      "element"
+    ]
+  },
+  {
+    "function": "pop_back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 227,
+    "calls": [
+      "Some",
+      "assume_init_read",
+      "element",
+      "back_index"
+    ]
+  },
+  {
+    "function": "clear",
+    "file": "src/containers/generic/queue.rs",
+    "line": 237,
+    "calls": [
+      "slice_ranges",
+      "needs_drop::<T>",
+      "subslice_mut",
+      "ptr::drop_in_place"
+    ]
+  },
+  {
+    "function": "slice_ranges",
+    "file": "src/containers/generic/queue.rs",
+    "line": 251,
+    "calls": [
+      "capacity"
+    ]
+  },
+  {
+    "function": "back_index",
+    "file": "src/containers/generic/queue.rs",
+    "line": 266,
+    "calls": [
+      "capacity",
+      "Some"
+    ]
+  },
+  {
+    "function": "clone",
+    "file": "src/containers/generic/queue.rs",
+    "line": 288,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "next",
+    "file": "src/containers/generic/queue.rs",
+    "line": 299,
+    "calls": [
+      "or_else",
+      "next",
+      "core::mem::swap"
+    ]
+  },
+  {
+    "function": "last",
+    "file": "src/containers/generic/queue.rs",
+    "line": 308,
+    "calls": [
+      "next_back"
+    ]
+  },
+  {
+    "function": "size_hint",
+    "file": "src/containers/generic/queue.rs",
+    "line": 312,
+    "calls": [
+      "Some",
+      "len"
+    ]
+  },
+  {
+    "function": "next_back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 319,
+    "calls": [
+      "or_else",
+      "next_back",
+      "core::mem::swap"
+    ]
+  },
+  {
+    "function": "len",
+    "file": "src/containers/generic/queue.rs",
+    "line": 330,
+    "calls": [
+      "len"
+    ]
+  },
+  {
+    "function": "next",
+    "file": "src/containers/generic/queue.rs",
+    "line": 345,
+    "calls": [
+      "or_else",
+      "next",
+      "core::mem::swap"
+    ]
+  },
+  {
+    "function": "last",
+    "file": "src/containers/generic/queue.rs",
+    "line": 354,
+    "calls": [
+      "next_back"
+    ]
+  },
+  {
+    "function": "size_hint",
+    "file": "src/containers/generic/queue.rs",
+    "line": 358,
+    "calls": [
+      "Some",
+      "len"
+    ]
+  },
+  {
+    "function": "next_back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 365,
+    "calls": [
+      "or_else",
+      "next_back",
+      "core::mem::swap"
+    ]
+  },
+  {
+    "function": "len",
+    "file": "src/containers/generic/queue.rs",
+    "line": 376,
+    "calls": [
+      "len"
+    ]
+  },
+  {
+    "function": "to_vec",
+    "file": "src/containers/generic/queue.rs",
+    "line": 389,
+    "calls": [
+      "extend_from_slice",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "front_and_back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 396,
+    "calls": [
+      "unwrap",
+      "run_test",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "assert_eq",
+      "check_front_and_back"
+    ]
+  },
+  {
+    "function": "check_front_and_back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 397,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/queue.rs",
+    "line": 404,
+    "calls": [
+      "unwrap",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "check_front_and_back"
+    ]
+  },
+  {
+    "function": "iter",
+    "file": "src/containers/generic/queue.rs",
+    "line": 439,
+    "calls": [
+      "unwrap",
+      "run_test",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "check_iter",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "check_iter",
+    "file": "src/containers/generic/queue.rs",
+    "line": 440,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/queue.rs",
+    "line": 458,
+    "calls": [
+      "unwrap",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "check_iter"
+    ]
+  },
+  {
+    "function": "push_back_and_pop_front",
+    "file": "src/containers/generic/queue.rs",
+    "line": 493,
+    "calls": [
+      "unwrap",
+      "assert",
+      "run_test",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/queue.rs",
+    "line": 494,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "push_front_and_pop_back",
+    "file": "src/containers/generic/queue.rs",
+    "line": 536,
+    "calls": [
+      "unwrap",
+      "assert",
+      "run_test",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_front",
+      "assert_eq",
+      "pop_back"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/queue.rs",
+    "line": 537,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_front",
+      "assert_eq",
+      "pop_back"
+    ]
+  },
+  {
+    "function": "is_empty_and_is_full",
+    "file": "src/containers/generic/queue.rs",
+    "line": 579,
+    "calls": [
+      "unwrap",
+      "assert",
+      "run_test",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/generic/queue.rs",
+    "line": 580,
+    "calls": [
+      "unwrap",
+      "assert",
+      "GenericQueue::<i64, Vec<MaybeUninit<i64>>>::new",
+      "push_back",
+      "pop_front",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 36,
+    "calls": [
+      "GenericVec::new",
+      "assert"
+    ]
+  },
+  {
+    "function": "try_new",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 50,
+    "calls": [
+      "Some",
+      "GenericVec::try_new"
+    ]
+  },
+  {
+    "function": "drop",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 62,
+    "calls": [
+      "clear"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 70,
+    "calls": []
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 76,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 82,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_slice"
+    ]
+  },
+  {
+    "function": "push_and_pop",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 92,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "FixedCapacityVec::<i64>::new",
+      "assert_eq",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 93,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "FixedCapacityVec::<i64>::new",
+      "assert_eq",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "is_full_and_is_empty",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 127,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "FixedCapacityVec::<i64>::new",
+      "push"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/vec.rs",
+    "line": 128,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "FixedCapacityVec::<i64>::new",
+      "push"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 40,
+    "calls": [
+      "assert",
+      "GenericString::new"
+    ]
+  },
+  {
+    "function": "try_new",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 56,
+    "calls": [
+      "Some",
+      "GenericString::try_new"
+    ]
+  },
+  {
+    "function": "drop",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 68,
+    "calls": [
+      "clear"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 76,
+    "calls": []
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 88,
+    "calls": [
+      "fmt::Display::fmt",
+      "as_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 94,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_str"
+    ]
+  },
+  {
+    "function": "push_and_pop",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 104,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "FixedCapacityString::new",
+      "take",
+      "assert_eq",
+      "String::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 105,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "FixedCapacityString::new",
+      "take",
+      "assert_eq",
+      "String::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "push_str",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 139,
+    "calls": [
+      "len",
+      "assert",
+      "run_test",
+      "FixedCapacityString::new",
+      "capacity",
+      "push_str",
+      "assert_eq",
+      "String::new"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 140,
+    "calls": [
+      "len",
+      "assert",
+      "FixedCapacityString::new",
+      "capacity",
+      "push_str",
+      "assert_eq",
+      "String::new"
+    ]
+  },
+  {
+    "function": "is_full_and_is_empty",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 167,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test",
+      "FixedCapacityString::new",
+      "take",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/string.rs",
+    "line": 168,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "FixedCapacityString::new",
+      "take",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 35,
+    "calls": [
+      "assert",
+      "GenericQueue::new"
+    ]
+  },
+  {
+    "function": "drop",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 47,
+    "calls": [
+      "clear"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 61,
+    "calls": []
+  },
+  {
+    "function": "to_vec",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 72,
+    "calls": [
+      "extend_from_slice",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "front_and_back",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 79,
+    "calls": [
+      "unwrap",
+      "run_test",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "FixedCapacityQueue::<i64>::new",
+      "assert_eq",
+      "check_front_and_back"
+    ]
+  },
+  {
+    "function": "check_front_and_back",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 80,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 87,
+    "calls": [
+      "unwrap",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "FixedCapacityQueue::<i64>::new",
+      "check_front_and_back"
+    ]
+  },
+  {
+    "function": "push_back_and_pop_front",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 122,
+    "calls": [
+      "unwrap",
+      "assert",
+      "run_test",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "FixedCapacityQueue::<i64>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 123,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "FixedCapacityQueue::<i64>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "push_front_and_pop_back",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 165,
+    "calls": [
+      "unwrap",
+      "assert",
+      "run_test",
+      "VecDeque::new",
+      "FixedCapacityQueue::<i64>::new",
+      "push_front",
+      "assert_eq",
+      "pop_back"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 166,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "FixedCapacityQueue::<i64>::new",
+      "push_front",
+      "assert_eq",
+      "pop_back"
+    ]
+  },
+  {
+    "function": "is_empty_and_is_full",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 208,
+    "calls": [
+      "unwrap",
+      "assert",
+      "run_test",
+      "push_back",
+      "pop_front",
+      "FixedCapacityQueue::<i64>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/fixed_capacity/queue.rs",
+    "line": 209,
+    "calls": [
+      "unwrap",
+      "assert",
+      "push_back",
+      "pop_front",
+      "FixedCapacityQueue::<i64>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/storage/inline.rs",
+    "line": 39,
+    "calls": [
+      "MaybeUninit::uninit",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "try_new",
+    "file": "src/containers/storage/inline.rs",
+    "line": 51,
+    "calls": [
+      "Some",
+      "MaybeUninit::uninit"
+    ]
+  },
+  {
+    "function": "capacity",
+    "file": "src/containers/storage/inline.rs",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "element",
+    "file": "src/containers/storage/inline.rs",
+    "line": 69,
+    "calls": [
+      "debug_assert",
+      "get_unchecked"
+    ]
+  },
+  {
+    "function": "element_mut",
+    "file": "src/containers/storage/inline.rs",
+    "line": 78,
+    "calls": [
+      "get_unchecked_mut",
+      "debug_assert"
+    ]
+  },
+  {
+    "function": "subslice",
+    "file": "src/containers/storage/inline.rs",
+    "line": 87,
+    "calls": [
+      "as_ptr",
+      "debug_assert",
+      "add",
+      "ptr.cast::<T>",
+      "ptr::slice_from_raw_parts"
+    ]
+  },
+  {
+    "function": "subslice_mut",
+    "file": "src/containers/storage/inline.rs",
+    "line": 99,
+    "calls": [
+      "as_mut_ptr",
+      "ptr::slice_from_raw_parts_mut",
+      "debug_assert",
+      "add",
+      "ptr.cast::<T>"
+    ]
+  },
+  {
+    "function": "subslice",
+    "file": "src/containers/storage/inline.rs",
+    "line": 117,
+    "calls": [
+      "subslice",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq",
+      "Inline::<T, N>::new"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/inline.rs",
+    "line": 120,
+    "calls": [
+      "Inline::<T, N>::new",
+      "subslice",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "subslice_mut",
+    "file": "src/containers/storage/inline.rs",
+    "line": 157,
+    "calls": [
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "subslice_mut",
+      "run_test::<5>",
+      "assert_eq",
+      "Inline::<T, N>::new"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/inline.rs",
+    "line": 160,
+    "calls": [
+      "Inline::<T, N>::new",
+      "subslice_mut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "element",
+    "file": "src/containers/storage/inline.rs",
+    "line": 197,
+    "calls": [
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "element",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq",
+      "Inline::<T, N>::new"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/inline.rs",
+    "line": 200,
+    "calls": [
+      "Inline::<T, N>::new",
+      "element",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "element_mut",
+    "file": "src/containers/storage/inline.rs",
+    "line": 238,
+    "calls": [
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "element_mut",
+      "run_test::<5>",
+      "assert_eq",
+      "Inline::<T, N>::new"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/inline.rs",
+    "line": 241,
+    "calls": [
+      "Inline::<T, N>::new",
+      "element_mut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/storage/mod.rs",
+    "line": 83,
+    "calls": [
+      "Self::try_new",
+      "unwrap_or_else",
+      "panic"
+    ]
+  },
+  {
+    "function": "try_new",
+    "file": "src/containers/storage/mod.rs",
+    "line": 87,
+    "calls": [
+      "extend",
+      "MaybeUninit::zeroed",
+      "map",
+      "try_reserve_exact",
+      "Some",
+      "ok",
+      "vec"
+    ]
+  },
+  {
+    "function": "capacity",
+    "file": "src/containers/storage/mod.rs",
+    "line": 97,
+    "calls": [
+      "capacity"
+    ]
+  },
+  {
+    "function": "element",
+    "file": "src/containers/storage/mod.rs",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "element_mut",
+    "file": "src/containers/storage/mod.rs",
+    "line": 105,
+    "calls": []
+  },
+  {
+    "function": "subslice",
+    "file": "src/containers/storage/mod.rs",
+    "line": 109,
+    "calls": [
+      "debug_assert",
+      "as_ptr",
+      "add",
+      "ptr::slice_from_raw_parts",
+      "cast"
+    ]
+  },
+  {
+    "function": "subslice_mut",
+    "file": "src/containers/storage/mod.rs",
+    "line": 118,
+    "calls": [
+      "as_mut_ptr",
+      "ptr::slice_from_raw_parts_mut",
+      "debug_assert",
+      "add",
+      "cast"
+    ]
+  },
+  {
+    "function": "layout",
+    "file": "src/containers/storage/heap.rs",
+    "line": 39,
+    "calls": [
+      "size_of::<T>",
+      "Layout::from_size_align",
+      "and_then",
+      "checked_mul",
+      "ok",
+      "align_of::<T>"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/storage/heap.rs",
+    "line": 52,
+    "calls": [
+      "Self::try_new",
+      "unwrap_or_else",
+      "panic"
+    ]
+  },
+  {
+    "function": "try_new",
+    "file": "src/containers/storage/heap.rs",
+    "line": 64,
+    "calls": [
+      "alloc",
+      "NonNull::new",
+      "storage.cast::<T>",
+      "Some",
+      "Self::layout",
+      "NonNull::dangling"
+    ]
+  },
+  {
+    "function": "capacity",
+    "file": "src/containers/storage/heap.rs",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "element",
+    "file": "src/containers/storage/heap.rs",
+    "line": 83,
+    "calls": [
+      "self.elements.add",
+      "as_ref",
+      "debug_assert",
+      "add"
+    ]
+  },
+  {
+    "function": "element_mut",
+    "file": "src/containers/storage/heap.rs",
+    "line": 92,
+    "calls": [
+      "self.elements.add",
+      "add",
+      "debug_assert",
+      "as_mut"
+    ]
+  },
+  {
+    "function": "subslice",
+    "file": "src/containers/storage/heap.rs",
+    "line": 101,
+    "calls": [
+      "as_ptr",
+      "debug_assert",
+      "ptr::slice_from_raw_parts",
+      "add"
+    ]
+  },
+  {
+    "function": "subslice_mut",
+    "file": "src/containers/storage/heap.rs",
+    "line": 111,
+    "calls": [
+      "as_ptr",
+      "debug_assert",
+      "ptr::slice_from_raw_parts_mut",
+      "add"
+    ]
+  },
+  {
+    "function": "drop",
+    "file": "src/containers/storage/heap.rs",
+    "line": 123,
+    "calls": [
+      "unwrap",
+      "as_ptr",
+      "dealloc",
+      "Self::layout",
+      "self.elements.as_ptr"
+    ]
+  },
+  {
+    "function": "subslice",
+    "file": "src/containers/storage/heap.rs",
+    "line": 141,
+    "calls": [
+      "subslice",
+      "run_test",
+      "size_of::<T>",
+      "Heap::<T>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/heap.rs",
+    "line": 144,
+    "calls": [
+      "subslice",
+      "Heap::<T>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "subslice_mut",
+    "file": "src/containers/storage/heap.rs",
+    "line": 175,
+    "calls": [
+      "run_test",
+      "size_of::<T>",
+      "Heap::<T>::new",
+      "subslice_mut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/heap.rs",
+    "line": 178,
+    "calls": [
+      "Heap::<T>::new",
+      "subslice_mut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "element",
+    "file": "src/containers/storage/heap.rs",
+    "line": 209,
+    "calls": [
+      "run_test",
+      "size_of::<T>",
+      "Heap::<T>::new",
+      "element",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/heap.rs",
+    "line": 212,
+    "calls": [
+      "Heap::<T>::new",
+      "element",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "element_mut",
+    "file": "src/containers/storage/heap.rs",
+    "line": 244,
+    "calls": [
+      "run_test",
+      "size_of::<T>",
+      "Heap::<T>::new",
+      "element_mut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/storage/heap.rs",
+    "line": 247,
+    "calls": [
+      "Heap::<T>::new",
+      "element_mut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "some",
+    "file": "src/containers/inline/option.rs",
+    "line": 39,
+    "calls": [
+      "MaybeUninit::new"
+    ]
+  },
+  {
+    "function": "none",
+    "file": "src/containers/inline/option.rs",
+    "line": 47,
+    "calls": [
+      "MaybeUninit::uninit"
+    ]
+  },
+  {
+    "function": "from_option",
+    "file": "src/containers/inline/option.rs",
+    "line": 55,
+    "calls": [
+      "Self::some",
+      "Self::none"
+    ]
+  },
+  {
+    "function": "into_option",
+    "file": "src/containers/inline/option.rs",
+    "line": 64,
+    "calls": [
+      "Some",
+      "assume_init"
+    ]
+  },
+  {
+    "function": "as_ref",
+    "file": "src/containers/inline/option.rs",
+    "line": 74,
+    "calls": [
+      "Some",
+      "assume_init_ref"
+    ]
+  },
+  {
+    "function": "as_mut",
+    "file": "src/containers/inline/option.rs",
+    "line": 84,
+    "calls": [
+      "Some",
+      "assume_init_mut"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/containers/inline/option.rs",
+    "line": 95,
+    "calls": [
+      "MaybeUninit::uninit"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/containers/inline/option.rs",
+    "line": 104,
+    "calls": [
+      "MaybeUninit::new"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/containers/inline/option.rs",
+    "line": 113,
+    "calls": [
+      "Self::from_option"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/containers/inline/option.rs",
+    "line": 119,
+    "calls": [
+      "into_option"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/containers/inline/option.rs",
+    "line": 125,
+    "calls": [
+      "as_ref",
+      "eq"
+    ]
+  },
+  {
+    "function": "partial_cmp",
+    "file": "src/containers/inline/option.rs",
+    "line": 138,
+    "calls": [
+      "Some",
+      "as_ref",
+      "partial_cmp"
+    ]
+  },
+  {
+    "function": "cmp",
+    "file": "src/containers/inline/option.rs",
+    "line": 149,
+    "calls": [
+      "as_ref",
+      "cmp"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/inline/option.rs",
+    "line": 163,
+    "calls": [
+      "as_ref",
+      "fmt::Display::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/inline/option.rs",
+    "line": 172,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "from_and_into",
+    "file": "src/containers/inline/option.rs",
+    "line": 182,
+    "calls": [
+      "Some",
+      "InlineOption::from_option",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "as_ref",
+    "file": "src/containers/inline/option.rs",
+    "line": 193,
+    "calls": [
+      "Some",
+      "InlineOption::from_option",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "as_mut",
+    "file": "src/containers/inline/option.rs",
+    "line": 204,
+    "calls": [
+      "unwrap",
+      "assert_eq",
+      "as_mut",
+      "Some",
+      "InlineOption::from_option"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/containers/inline/option.rs",
+    "line": 218,
+    "calls": [
+      "InlineOption::some",
+      "check",
+      "InlineOption::none",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "check",
+    "file": "src/containers/inline/option.rs",
+    "line": 220,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "partial_cmp",
+    "file": "src/containers/inline/option.rs",
+    "line": 238,
+    "calls": [
+      "InlineOption::some",
+      "check",
+      "InlineOption::none",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "check",
+    "file": "src/containers/inline/option.rs",
+    "line": 240,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "cmp",
+    "file": "src/containers/inline/option.rs",
+    "line": 261,
+    "calls": [
+      "InlineOption::some",
+      "check",
+      "InlineOption::none",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "check",
+    "file": "src/containers/inline/option.rs",
+    "line": 263,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "ok",
+    "file": "src/containers/inline/result.rs",
+    "line": 43,
+    "calls": [
+      "ManuallyDrop::new"
+    ]
+  },
+  {
+    "function": "err",
+    "file": "src/containers/inline/result.rs",
+    "line": 53,
+    "calls": [
+      "ManuallyDrop::new"
+    ]
+  },
+  {
+    "function": "from_result",
+    "file": "src/containers/inline/result.rs",
+    "line": 63,
+    "calls": [
+      "Self::err",
+      "Self::ok"
+    ]
+  },
+  {
+    "function": "into_result",
+    "file": "src/containers/inline/result.rs",
+    "line": 71,
+    "calls": [
+      "ManuallyDrop::into_inner",
+      "Ok",
+      "Err"
+    ]
+  },
+  {
+    "function": "as_ref",
+    "file": "src/containers/inline/result.rs",
+    "line": 82,
+    "calls": [
+      "Err",
+      "Ok"
+    ]
+  },
+  {
+    "function": "as_mut",
+    "file": "src/containers/inline/result.rs",
+    "line": 93,
+    "calls": [
+      "Err",
+      "Ok"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/containers/inline/result.rs",
+    "line": 105,
+    "calls": [
+      "T::default",
+      "ManuallyDrop::new"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/containers/inline/result.rs",
+    "line": 116,
+    "calls": [
+      "ManuallyDrop::new"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/containers/inline/result.rs",
+    "line": 127,
+    "calls": [
+      "Self::from_result"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/containers/inline/result.rs",
+    "line": 133,
+    "calls": [
+      "into_result"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/containers/inline/result.rs",
+    "line": 139,
+    "calls": [
+      "as_ref",
+      "eq"
+    ]
+  },
+  {
+    "function": "partial_cmp",
+    "file": "src/containers/inline/result.rs",
+    "line": 152,
+    "calls": [
+      "Some",
+      "as_ref",
+      "partial_cmp"
+    ]
+  },
+  {
+    "function": "cmp",
+    "file": "src/containers/inline/result.rs",
+    "line": 163,
+    "calls": [
+      "as_ref",
+      "cmp"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/inline/result.rs",
+    "line": 177,
+    "calls": [
+      "as_ref",
+      "fmt::Display::fmt"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/inline/result.rs",
+    "line": 186,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "from_and_into",
+    "file": "src/containers/inline/result.rs",
+    "line": 196,
+    "calls": [
+      "InlineResult::from_result",
+      "Err",
+      "Ok",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "as_ref",
+    "file": "src/containers/inline/result.rs",
+    "line": 207,
+    "calls": [
+      "InlineResult::from_result",
+      "Err",
+      "Ok",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "as_mut",
+    "file": "src/containers/inline/result.rs",
+    "line": 218,
+    "calls": [
+      "Err",
+      "unwrap",
+      "Ok",
+      "InlineResult::from_result",
+      "assert_eq",
+      "as_mut"
+    ]
+  },
+  {
+    "function": "eq",
+    "file": "src/containers/inline/result.rs",
+    "line": 232,
+    "calls": [
+      "check",
+      "InlineResult::err",
+      "InlineResult::ok",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "check",
+    "file": "src/containers/inline/result.rs",
+    "line": 234,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "partial_cmp",
+    "file": "src/containers/inline/result.rs",
+    "line": 253,
+    "calls": [
+      "check",
+      "InlineResult::err",
+      "InlineResult::ok",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "check",
+    "file": "src/containers/inline/result.rs",
+    "line": 255,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "cmp",
+    "file": "src/containers/inline/result.rs",
+    "line": 277,
+    "calls": [
+      "check",
+      "InlineResult::err",
+      "InlineResult::ok",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "check",
+    "file": "src/containers/inline/result.rs",
+    "line": 279,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/inline/vec.rs",
+    "line": 46,
+    "calls": [
+      "GenericVec::new"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/containers/inline/vec.rs",
+    "line": 56,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/inline/vec.rs",
+    "line": 64,
+    "calls": []
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/inline/vec.rs",
+    "line": 70,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/inline/vec.rs",
+    "line": 76,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_slice"
+    ]
+  },
+  {
+    "function": "push_and_pop",
+    "file": "src/containers/inline/vec.rs",
+    "line": 86,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "InlineVec::<i64, N>::new",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/vec.rs",
+    "line": 87,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "InlineVec::<i64, N>::new",
+      "assert_eq",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "is_full_and_is_empty",
+    "file": "src/containers/inline/vec.rs",
+    "line": 123,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "InlineVec::<i64, N>::new",
+      "push"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/vec.rs",
+    "line": 124,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "InlineVec::<i64, N>::new",
+      "push"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/inline/string.rs",
+    "line": 48,
+    "calls": [
+      "GenericString::new"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/containers/inline/string.rs",
+    "line": 58,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/inline/string.rs",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/inline/string.rs",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "src/containers/inline/string.rs",
+    "line": 78,
+    "calls": [
+      "fmt::Debug::fmt",
+      "as_str"
+    ]
+  },
+  {
+    "function": "push_and_pop",
+    "file": "src/containers/inline/string.rs",
+    "line": 88,
+    "calls": [
+      "unwrap",
+      "pop",
+      "InlineString::<N>::new",
+      "assert",
+      "take",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq",
+      "String::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/string.rs",
+    "line": 89,
+    "calls": [
+      "unwrap",
+      "pop",
+      "InlineString::<N>::new",
+      "assert",
+      "take",
+      "assert_eq",
+      "String::new",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "push_str",
+    "file": "src/containers/inline/string.rs",
+    "line": 125,
+    "calls": [
+      "run_test::<20>",
+      "InlineString::<N>::new",
+      "len",
+      "assert",
+      "capacity",
+      "push_str",
+      "run_test::<1>",
+      "run_test::<5>",
+      "assert_eq",
+      "run_test::<30>",
+      "String::new"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/string.rs",
+    "line": 126,
+    "calls": [
+      "InlineString::<N>::new",
+      "len",
+      "assert",
+      "capacity",
+      "push_str",
+      "assert_eq",
+      "String::new"
+    ]
+  },
+  {
+    "function": "is_full_and_is_empty",
+    "file": "src/containers/inline/string.rs",
+    "line": 154,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "InlineString::<N>::new",
+      "take",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/string.rs",
+    "line": 155,
+    "calls": [
+      "unwrap",
+      "pop",
+      "assert",
+      "InlineString::<N>::new",
+      "take",
+      "push",
+      "chars"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/containers/inline/queue.rs",
+    "line": 47,
+    "calls": [
+      "GenericQueue::new"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/containers/inline/queue.rs",
+    "line": 57,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "src/containers/inline/queue.rs",
+    "line": 65,
+    "calls": []
+  },
+  {
+    "function": "deref_mut",
+    "file": "src/containers/inline/queue.rs",
+    "line": 71,
+    "calls": []
+  },
+  {
+    "function": "to_vec",
+    "file": "src/containers/inline/queue.rs",
+    "line": 82,
+    "calls": [
+      "extend_from_slice",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "front_and_back",
+    "file": "src/containers/inline/queue.rs",
+    "line": 89,
+    "calls": [
+      "unwrap",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "InlineQueue::<i64, N>::new",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq",
+      "check_front_and_back"
+    ]
+  },
+  {
+    "function": "check_front_and_back",
+    "file": "src/containers/inline/queue.rs",
+    "line": 90,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/queue.rs",
+    "line": 97,
+    "calls": [
+      "unwrap",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "InlineQueue::<i64, N>::new",
+      "check_front_and_back"
+    ]
+  },
+  {
+    "function": "push_back_and_pop_front",
+    "file": "src/containers/inline/queue.rs",
+    "line": 134,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "InlineQueue::<i64, N>::new",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/queue.rs",
+    "line": 135,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "push_back",
+      "pop_front",
+      "InlineQueue::<i64, N>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "push_front_and_pop_back",
+    "file": "src/containers/inline/queue.rs",
+    "line": 179,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "InlineQueue::<i64, N>::new",
+      "run_test::<2>",
+      "push_front",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq",
+      "pop_back"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/queue.rs",
+    "line": 180,
+    "calls": [
+      "unwrap",
+      "assert",
+      "VecDeque::new",
+      "InlineQueue::<i64, N>::new",
+      "push_front",
+      "assert_eq",
+      "pop_back"
+    ]
+  },
+  {
+    "function": "is_empty_and_is_full",
+    "file": "src/containers/inline/queue.rs",
+    "line": 224,
+    "calls": [
+      "unwrap",
+      "assert",
+      "push_back",
+      "pop_front",
+      "InlineQueue::<i64, N>::new",
+      "run_test::<2>",
+      "run_test::<3>",
+      "run_test::<1>",
+      "run_test::<4>",
+      "run_test::<5>",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "run_test",
+    "file": "src/containers/inline/queue.rs",
+    "line": 225,
+    "calls": [
+      "unwrap",
+      "assert",
+      "push_back",
+      "pop_front",
+      "InlineQueue::<i64, N>::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "eprint",
+    "file": "scripts/internal/qnx_creds.py",
+    "line": 25,
+    "calls": [
+      "print"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 23,
+    "calls": [
+      "String::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 27,
+    "calls": [
+      "as_str"
+    ]
+  },
+  {
+    "function": "write_bool",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 33,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_f32",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 37,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_f64",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 41,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i8",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 45,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i16",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 49,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i32",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 53,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i64",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 57,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_i128",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 61,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u8",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 65,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u16",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 69,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u32",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 73,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u64",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 77,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_u128",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 81,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "write_str",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 85,
+    "calls": [
+      "write",
+      "map_err"
+    ]
+  },
+  {
+    "function": "enabled",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 93,
+    "calls": [
+      "level",
+      "max_level"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 97,
+    "calls": []
+  },
+  {
+    "function": "log",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 101,
+    "calls": [
+      "enabled",
+      "metadata",
+      "args",
+      "write",
+      "StringWriter::new",
+      "eprintln"
+    ]
+  },
+  {
+    "function": "flush",
+    "file": "examples/log_custom/src/logger.rs",
+    "line": 114,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "examples/log_custom/src/main.rs",
+    "line": 21,
+    "calls": [
+      "fatal",
+      "trace",
+      "score_log::set_max_level",
+      "Box::new",
+      "score_log::set_global_logger",
+      "panic",
+      "debug",
+      "warn",
+      "error",
+      "info"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/log_cpp_init/src/main.cpp",
+    "line": 20,
+    "calls": [
+      "ShowModule",
+      "ShowLine",
+      "SetAsDefaultLogger",
+      "ShowFile",
+      "Context",
+      "show_logs"
+    ]
+  },
+  {
+    "function": "show_logs",
+    "file": "examples/log_cpp_init/src/example_lib.rs",
+    "line": 22,
+    "calls": [
+      "fatal",
+      "show_line",
+      "context",
+      "trace",
+      "StdoutLoggerBuilder::new",
+      "build",
+      "warn",
+      "debug",
+      "error",
+      "info",
+      "show_file",
+      "show_module"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/log_builtin/src/main.rs",
+    "line": 19,
+    "calls": [
+      "show_line",
+      "fatal",
+      "StdoutLoggerBuilder::new",
+      "trace",
+      "log_level",
+      "debug",
+      "warn",
+      "set_as_default_logger",
+      "show_file",
+      "info",
+      "context",
+      "error",
+      "show_module"
+    ]
+  }
+]

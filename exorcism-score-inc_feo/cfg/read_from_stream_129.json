@@ -1,0 +1,21 @@
+{
+  "function": "read_from_stream",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:read_from_stream",
+      "line": 129
+    },
+    {
+      "id": 1,
+      "label": "exit:read_from_stream",
+      "line": 155
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

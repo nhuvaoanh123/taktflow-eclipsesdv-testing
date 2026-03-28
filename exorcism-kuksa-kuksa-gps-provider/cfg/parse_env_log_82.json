@@ -1,0 +1,96 @@
+{
+  "function": "parse_env_log",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parse_env_log",
+      "line": 82
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 100
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 113
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 100
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 115
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 116
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 115
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 118
+    },
+    {
+      "id": 8,
+      "label": "exit:parse_env_log",
+      "line": 118
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 5,
+      "to": 8
+    }
+  ]
+}

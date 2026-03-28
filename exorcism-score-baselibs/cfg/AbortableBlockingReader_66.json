@@ -1,0 +1,21 @@
+{
+  "function": "AbortableBlockingReader",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AbortableBlockingReader",
+      "line": 66
+    },
+    {
+      "id": 1,
+      "label": "exit:AbortableBlockingReader",
+      "line": 119
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

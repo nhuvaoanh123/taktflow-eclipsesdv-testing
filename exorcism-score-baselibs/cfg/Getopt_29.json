@@ -1,0 +1,21 @@
+{
+  "function": "Getopt",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Getopt",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:Getopt",
+      "line": 65
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

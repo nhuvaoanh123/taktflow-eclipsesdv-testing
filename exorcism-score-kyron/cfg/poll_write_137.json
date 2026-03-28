@@ -1,0 +1,21 @@
+{
+  "function": "poll_write",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:poll_write",
+      "line": 137
+    },
+    {
+      "id": 1,
+      "label": "exit:poll_write",
+      "line": 162
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

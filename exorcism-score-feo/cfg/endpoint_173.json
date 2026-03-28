@@ -1,0 +1,21 @@
+{
+  "function": "endpoint",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:endpoint",
+      "line": 173
+    },
+    {
+      "id": 1,
+      "label": "exit:endpoint",
+      "line": 179
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

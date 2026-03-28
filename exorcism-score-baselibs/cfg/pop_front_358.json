@@ -1,0 +1,54 @@
+{
+  "function": "pop_front",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:pop_front",
+      "line": 358
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 360
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 365
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 360
+    },
+    {
+      "id": 4,
+      "label": "exit:pop_front",
+      "line": 366
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

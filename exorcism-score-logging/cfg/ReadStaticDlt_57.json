@@ -1,0 +1,414 @@
+{
+  "function": "ReadStaticDlt",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ReadStaticDlt",
+      "line": 57
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 66
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 70
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 66
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 76
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 80
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 76
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 81
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 85
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 81
+    },
+    {
+      "id": 10,
+      "label": "if (...)",
+      "line": 86
+    },
+    {
+      "id": 11,
+      "label": "merge",
+      "line": 90
+    },
+    {
+      "id": 12,
+      "label": "then",
+      "line": 86
+    },
+    {
+      "id": 13,
+      "label": "if (...)",
+      "line": 92
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 96
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 92
+    },
+    {
+      "id": 16,
+      "label": "loop (for_statement)",
+      "line": 101
+    },
+    {
+      "id": 17,
+      "label": "loop_exit",
+      "line": 117
+    },
+    {
+      "id": 18,
+      "label": "body",
+      "line": 101
+    },
+    {
+      "id": 19,
+      "label": "loop (for_statement)",
+      "line": 120
+    },
+    {
+      "id": 20,
+      "label": "loop_exit",
+      "line": 133
+    },
+    {
+      "id": 21,
+      "label": "body",
+      "line": 120
+    },
+    {
+      "id": 22,
+      "label": "if (...)",
+      "line": 135
+    },
+    {
+      "id": 23,
+      "label": "merge",
+      "line": 142
+    },
+    {
+      "id": 24,
+      "label": "then",
+      "line": 135
+    },
+    {
+      "id": 25,
+      "label": "else",
+      "line": 135
+    },
+    {
+      "id": 26,
+      "label": "if (...)",
+      "line": 144
+    },
+    {
+      "id": 27,
+      "label": "merge",
+      "line": 156
+    },
+    {
+      "id": 28,
+      "label": "then",
+      "line": 144
+    },
+    {
+      "id": 29,
+      "label": "else",
+      "line": 144
+    },
+    {
+      "id": 30,
+      "label": "loop (for_statement)",
+      "line": 159
+    },
+    {
+      "id": 31,
+      "label": "loop_exit",
+      "line": 168
+    },
+    {
+      "id": 32,
+      "label": "body",
+      "line": 159
+    },
+    {
+      "id": 33,
+      "label": "if (...)",
+      "line": 170
+    },
+    {
+      "id": 34,
+      "label": "merge",
+      "line": 189
+    },
+    {
+      "id": 35,
+      "label": "then",
+      "line": 170
+    },
+    {
+      "id": 36,
+      "label": "return_statement",
+      "line": 190
+    },
+    {
+      "id": 37,
+      "label": "exit:ReadStaticDlt",
+      "line": 191
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "true"
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 16
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "label": "done"
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "label": "continue"
+    },
+    {
+      "from": 18,
+      "to": 16,
+      "label": "back"
+    },
+    {
+      "from": 17,
+      "to": 19
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "label": "done"
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "label": "continue"
+    },
+    {
+      "from": 21,
+      "to": 19,
+      "label": "back"
+    },
+    {
+      "from": 20,
+      "to": 22
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "label": "true"
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 22,
+      "to": 25,
+      "label": "false"
+    },
+    {
+      "from": 25,
+      "to": 23
+    },
+    {
+      "from": 23,
+      "to": 26
+    },
+    {
+      "from": 26,
+      "to": 28,
+      "label": "true"
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 26,
+      "to": 29,
+      "label": "false"
+    },
+    {
+      "from": 29,
+      "to": 27
+    },
+    {
+      "from": 27,
+      "to": 30
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "label": "done"
+    },
+    {
+      "from": 30,
+      "to": 32,
+      "label": "continue"
+    },
+    {
+      "from": 32,
+      "to": 30,
+      "label": "back"
+    },
+    {
+      "from": 31,
+      "to": 33
+    },
+    {
+      "from": 33,
+      "to": 35,
+      "label": "true"
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "label": "false"
+    },
+    {
+      "from": 34,
+      "to": 36
+    },
+    {
+      "from": 34,
+      "to": 37
+    }
+  ]
+}

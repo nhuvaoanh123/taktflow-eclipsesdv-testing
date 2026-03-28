@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonFieldBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonFieldBase",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonFieldBase",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

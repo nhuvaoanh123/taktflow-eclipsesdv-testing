@@ -1,0 +1,21 @@
+{
+  "function": "validateInitOptions",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validateInitOptions",
+      "line": 323
+    },
+    {
+      "id": 1,
+      "label": "exit:validateInitOptions",
+      "line": 356
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "json",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:json",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 155
+    },
+    {
+      "id": 2,
+      "label": "exit:json",
+      "line": 156
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

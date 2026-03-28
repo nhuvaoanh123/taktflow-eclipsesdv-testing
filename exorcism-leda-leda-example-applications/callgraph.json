@@ -1,0 +1,374 @@
+[
+  {
+    "function": "publish_driver_controls",
+    "file": "kuksa-carsim/driversim/driver_runner.py",
+    "line": 27,
+    "calls": [
+      "driver_sim.get_controls",
+      "Datapoint",
+      "logger.info",
+      "kuksa_client.set_current_values"
+    ]
+  },
+  {
+    "function": "main_loop",
+    "file": "kuksa-carsim/driversim/driver_runner.py",
+    "line": 50,
+    "calls": [
+      "VSSClient",
+      "publish_driver_controls",
+      "sleep"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-carsim/driversim/driver_base.py",
+    "line": 11,
+    "calls": []
+  },
+  {
+    "function": "accelerator_pos",
+    "file": "kuksa-carsim/driversim/driver_base.py",
+    "line": 16,
+    "calls": []
+  },
+  {
+    "function": "brake_pos",
+    "file": "kuksa-carsim/driversim/driver_base.py",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "steering_angle",
+    "file": "kuksa-carsim/driversim/driver_base.py",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "_update_driver_state",
+    "file": "kuksa-carsim/driversim/driver_base.py",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "get_controls",
+    "file": "kuksa-carsim/driversim/driver_base.py",
+    "line": 53,
+    "calls": [
+      "self._update_driver_state"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 7,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "recalculate_time",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 22,
+    "calls": []
+  },
+  {
+    "function": "calculate_good_driver",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 31,
+    "calls": [
+      "max",
+      "self.recalculate_time",
+      "min",
+      "math.exp"
+    ]
+  },
+  {
+    "function": "calculate_bad_driver",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 76,
+    "calls": [
+      "random.randint",
+      "self.recalculate_time"
+    ]
+  },
+  {
+    "function": "accelerator_pos",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 111,
+    "calls": [
+      "int"
+    ]
+  },
+  {
+    "function": "brake_pos",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 115,
+    "calls": [
+      "int"
+    ]
+  },
+  {
+    "function": "steering_angle",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 119,
+    "calls": [
+      "int"
+    ]
+  },
+  {
+    "function": "simulation_time",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 123,
+    "calls": []
+  },
+  {
+    "function": "_update_driver_state",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 126,
+    "calls": [
+      "self.calculate_good_driver",
+      "self.calculate_bad_driver"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "kuksa-carsim/driversim/driver.py",
+    "line": 135,
+    "calls": [
+      "Driver",
+      "d.get_controls",
+      "print"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 37,
+    "calls": [
+      "monotonic"
+    ]
+  },
+  {
+    "function": "steer_angle",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 85,
+    "calls": []
+  },
+  {
+    "function": "steer_angle",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 89,
+    "calls": []
+  },
+  {
+    "function": "brake_position",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 93,
+    "calls": []
+  },
+  {
+    "function": "brake_position",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 97,
+    "calls": []
+  },
+  {
+    "function": "accelerator_position",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "accelerator_position",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 105,
+    "calls": []
+  },
+  {
+    "function": "simul_time",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 111,
+    "calls": []
+  },
+  {
+    "function": "sys_timestamp",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 115,
+    "calls": []
+  },
+  {
+    "function": "heading_angle",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 119,
+    "calls": []
+  },
+  {
+    "function": "position",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 123,
+    "calls": []
+  },
+  {
+    "function": "velocity",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 127,
+    "calls": []
+  },
+  {
+    "function": "speed",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 131,
+    "calls": []
+  },
+  {
+    "function": "acceleration_world",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 135,
+    "calls": []
+  },
+  {
+    "function": "acceleration",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 139,
+    "calls": [
+      "np.linalg.norm",
+      "np.array",
+      "np.nan_to_num",
+      "np.isclose",
+      "float",
+      "np.cross",
+      "np.dot"
+    ]
+  },
+  {
+    "function": "acceleration_norm",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 154,
+    "calls": [
+      "np.sqrt"
+    ]
+  },
+  {
+    "function": "_acc_from_ctrl",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 157,
+    "calls": [
+      "max",
+      "min"
+    ]
+  },
+  {
+    "function": "_cog_turning_angle",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 164,
+    "calls": [
+      "np.tan",
+      "np.arctan"
+    ]
+  },
+  {
+    "function": "_rotational_speed",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 169,
+    "calls": [
+      "self._cog_turning_angle",
+      "np.tan",
+      "np.cos"
+    ]
+  },
+  {
+    "function": "_update_speed",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 176,
+    "calls": [
+      "max",
+      "self._acc_from_ctrl",
+      "min"
+    ]
+  },
+  {
+    "function": "_update_heading_angle",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 186,
+    "calls": [
+      "self._rotational_speed"
+    ]
+  },
+  {
+    "function": "_update_velocity",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 191,
+    "calls": [
+      "np.sin",
+      "self._cog_turning_angle",
+      "np.cos"
+    ]
+  },
+  {
+    "function": "_update_position",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 202,
+    "calls": []
+  },
+  {
+    "function": "_update_acceleration",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 206,
+    "calls": []
+  },
+  {
+    "function": "update_car",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 211,
+    "calls": [
+      "self._update_acceleration",
+      "self._update_velocity",
+      "monotonic",
+      "self._update_heading_angle",
+      "self._update_speed",
+      "self._update_position"
+    ]
+  },
+  {
+    "function": "test_data",
+    "file": "kuksa-carsim/carsim/carsim.py",
+    "line": 224,
+    "calls": [
+      "range",
+      "print",
+      "SimulatedCar",
+      "car.update_car"
+    ]
+  },
+  {
+    "function": "update_model_controls",
+    "file": "kuksa-carsim/carsim/carsim_runner.py",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "publish_model_state",
+    "file": "kuksa-carsim/carsim/carsim_runner.py",
+    "line": 48,
+    "calls": [
+      "logger.debug",
+      "Datapoint",
+      "logger.info",
+      "kuksa_client.set_current_values"
+    ]
+  },
+  {
+    "function": "main_loop",
+    "file": "kuksa-carsim/carsim/carsim_runner.py",
+    "line": 72,
+    "calls": [
+      "publish_model_state",
+      "VSSClient",
+      "kuksa_client.get_current_values",
+      "update_model_controls",
+      "car_sim.update_car",
+      "sleep"
+    ]
+  }
+]

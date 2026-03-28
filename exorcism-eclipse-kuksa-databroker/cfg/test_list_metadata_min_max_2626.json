@@ -1,0 +1,21 @@
+{
+  "function": "test_list_metadata_min_max",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_list_metadata_min_max",
+      "line": 2626
+    },
+    {
+      "id": 1,
+      "label": "exit:test_list_metadata_min_max",
+      "line": 2679
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

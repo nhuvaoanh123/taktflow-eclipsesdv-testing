@@ -1,0 +1,26 @@
+{
+  "project": "score-baselibs",
+  "files_by_language": {
+    "C": {
+      "files": 580,
+      "loc": 60355
+    },
+    "C++": {
+      "files": 1083,
+      "loc": 179536
+    },
+    "Python": {
+      "files": 5,
+      "loc": 242
+    }
+  },
+  "total_files": 1668,
+  "total_loc": 240133,
+  "total_functions": 12783,
+  "build_system": "Bazel",
+  "languages": [
+    "C",
+    "C++",
+    "Python"
+  ]
+}

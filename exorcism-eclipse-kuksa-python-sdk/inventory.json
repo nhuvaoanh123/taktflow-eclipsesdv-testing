@@ -1,0 +1,16 @@
+{
+  "project": "eclipse-kuksa-python-sdk",
+  "files_by_language": {
+    "Python": {
+      "files": 18,
+      "loc": 6841
+    }
+  },
+  "total_files": 18,
+  "total_loc": 6841,
+  "total_functions": 297,
+  "build_system": "Unknown",
+  "languages": [
+    "Python"
+  ]
+}

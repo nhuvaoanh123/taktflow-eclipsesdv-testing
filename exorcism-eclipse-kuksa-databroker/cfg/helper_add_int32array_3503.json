@@ -1,0 +1,21 @@
+{
+  "function": "helper_add_int32array",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:helper_add_int32array",
+      "line": 3503
+    },
+    {
+      "id": 1,
+      "label": "exit:helper_add_int32array",
+      "line": 3551
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

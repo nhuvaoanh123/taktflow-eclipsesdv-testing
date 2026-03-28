@@ -1,0 +1,21 @@
+{
+  "function": "featureOperationsHandler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:featureOperationsHandler",
+      "line": 87
+    },
+    {
+      "id": 1,
+      "label": "exit:featureOperationsHandler",
+      "line": 117
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

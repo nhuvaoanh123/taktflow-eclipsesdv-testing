@@ -1,0 +1,55 @@
+{
+  "function": "_agent_gone_routine",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_agent_gone_routine",
+      "line": 442
+    },
+    {
+      "id": 1,
+      "label": "loop (while_statement)",
+      "line": 449
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 457
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 449
+    },
+    {
+      "id": 4,
+      "label": "exit:_agent_gone_routine",
+      "line": 457
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "function": "main",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:main",
+      "line": 208
+    },
+    {
+      "id": 1,
+      "label": "if ((argc != 3))",
+      "line": 209
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 212
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 209
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 211
+    },
+    {
+      "id": 5,
+      "label": "if ((sigaction(SIGCHLD, &sa, NULL) == -1))",
+      "line": 219
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 222
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 219
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 221
+    },
+    {
+      "id": 9,
+      "label": "loop (while_statement)",
+      "line": 238
+    },
+    {
+      "id": 10,
+      "label": "loop_exit",
+      "line": 241
+    },
+    {
+      "id": 11,
+      "label": "body",
+      "line": 238
+    },
+    {
+      "id": 12,
+      "label": "loop (while_statement)",
+      "line": 248
+    },
+    {
+      "id": 13,
+      "label": "loop_exit",
+      "line": 251
+    },
+    {
+      "id": 14,
+      "label": "body",
+      "line": 248
+    },
+    {
+      "id": 15,
+      "label": "if ((local_pidfd == -1))",
+      "line": 265
+    },
+    {
+      "id": 16,
+      "label": "merge",
+      "line": 268
+    },
+    {
+      "id": 17,
+      "label": "then",
+      "line": 265
+    },
+    {
+      "id": 18,
+      "label": "return_statement",
+      "line": 267
+    },
+    {
+      "id": 19,
+      "label": "if ((agent_pidfd == -1))",
+      "line": 271
+    },
+    {
+      "id": 20,
+      "label": "merge",
+      "line": 275
+    },
+    {
+      "id": 21,
+      "label": "then",
+      "line": 271
+    },
+    {
+      "id": 22,
+      "label": "return_statement",
+      "line": 274
+    },
+    {
+      "id": 23,
+      "label": "loop (while_statement)",
+      "line": 278
+    },
+    {
+      "id": 24,
+      "label": "loop_exit",
+      "line": 328
+    },
+    {
+      "id": 25,
+      "label": "body",
+      "line": 278
+    },
+    {
+      "id": 26,
+      "label": "if ((local_pidfd != -1))",
+      "line": 331
+    },
+    {
+      "id": 27,
+      "label": "merge",
+      "line": 333
+    },
+    {
+      "id": 28,
+      "label": "then",
+      "line": 331
+    },
+    {
+      "id": 29,
+      "label": "if ((agent_pidfd != -1))",
+      "line": 334
+    },
+    {
+      "id": 30,
+      "label": "merge",
+      "line": 336
+    },
+    {
+      "id": 31,
+      "label": "then",
+      "line": 334
+    },
+    {
+      "id": 32,
+      "label": "return_statement",
+      "line": 339
+    },
+    {
+      "id": 33,
+      "label": "exit:main",
+      "line": 340
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "done"
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "continue"
+    },
+    {
+      "from": 11,
+      "to": 9,
+      "label": "back"
+    },
+    {
+      "from": 10,
+      "to": 12
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "label": "done"
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "label": "continue"
+    },
+    {
+      "from": 14,
+      "to": 12,
+      "label": "back"
+    },
+    {
+      "from": 13,
+      "to": 15
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "label": "true"
+    },
+    {
+      "from": 17,
+      "to": 18
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "label": "false"
+    },
+    {
+      "from": 16,
+      "to": 19
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "label": "true"
+    },
+    {
+      "from": 21,
+      "to": 22
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "label": "false"
+    },
+    {
+      "from": 20,
+      "to": 23
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "label": "done"
+    },
+    {
+      "from": 23,
+      "to": 25,
+      "label": "continue"
+    },
+    {
+      "from": 25,
+      "to": 23,
+      "label": "back"
+    },
+    {
+      "from": 24,
+      "to": 26
+    },
+    {
+      "from": 26,
+      "to": 28,
+      "label": "true"
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "label": "false"
+    },
+    {
+      "from": 27,
+      "to": 29
+    },
+    {
+      "from": 29,
+      "to": 31,
+      "label": "true"
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "label": "false"
+    },
+    {
+      "from": 30,
+      "to": 32
+    },
+    {
+      "from": 30,
+      "to": 33
+    }
+  ]
+}

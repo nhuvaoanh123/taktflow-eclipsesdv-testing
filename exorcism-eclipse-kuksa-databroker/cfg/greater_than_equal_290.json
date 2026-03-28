@@ -1,0 +1,21 @@
+{
+  "function": "greater_than_equal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:greater_than_equal",
+      "line": 290
+    },
+    {
+      "id": 1,
+      "label": "exit:greater_than_equal",
+      "line": 295
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

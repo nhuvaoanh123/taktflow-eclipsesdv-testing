@@ -1,0 +1,21 @@
+{
+  "function": "MqttMessage",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MqttMessage",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:MqttMessage",
+      "line": 50
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

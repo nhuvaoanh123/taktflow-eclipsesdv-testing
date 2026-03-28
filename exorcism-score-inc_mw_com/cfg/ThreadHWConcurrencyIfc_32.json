@@ -1,0 +1,21 @@
+{
+  "function": "ThreadHWConcurrencyIfc",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ThreadHWConcurrencyIfc",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:ThreadHWConcurrencyIfc",
+      "line": 45
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

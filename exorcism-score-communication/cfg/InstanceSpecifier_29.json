@@ -1,0 +1,21 @@
+{
+  "function": "InstanceSpecifier",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:InstanceSpecifier",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:InstanceSpecifier",
+      "line": 83
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

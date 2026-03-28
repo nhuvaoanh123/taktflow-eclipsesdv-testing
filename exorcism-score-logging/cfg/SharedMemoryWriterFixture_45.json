@@ -1,0 +1,21 @@
+{
+  "function": "SharedMemoryWriterFixture",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SharedMemoryWriterFixture",
+      "line": 45
+    },
+    {
+      "id": 1,
+      "label": "exit:SharedMemoryWriterFixture",
+      "line": 66
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

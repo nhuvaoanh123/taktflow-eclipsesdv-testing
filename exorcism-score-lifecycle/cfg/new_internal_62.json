@@ -1,0 +1,21 @@
+{
+  "function": "new_internal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:new_internal",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:new_internal",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "create_default_table",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_default_table",
+      "line": 60
+    },
+    {
+      "id": 1,
+      "label": "exit:create_default_table",
+      "line": 80
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

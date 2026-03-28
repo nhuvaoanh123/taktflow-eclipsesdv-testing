@@ -1,0 +1,21 @@
+{
+  "function": "validateSoftareArtifactHash",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validateSoftareArtifactHash",
+      "line": 122
+    },
+    {
+      "id": 1,
+      "label": "exit:validateSoftareArtifactHash",
+      "line": 133
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "spawn_thread",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:spawn_thread",
+      "line": 61
+    },
+    {
+      "id": 1,
+      "label": "exit:spawn_thread",
+      "line": 101
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

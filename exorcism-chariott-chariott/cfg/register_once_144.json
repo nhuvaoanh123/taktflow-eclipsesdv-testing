@@ -1,0 +1,21 @@
+{
+  "function": "register_once",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:register_once",
+      "line": 144
+    },
+    {
+      "id": 1,
+      "label": "exit:register_once",
+      "line": 199
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "ToFileInternalAtomic",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ToFileInternalAtomic",
+      "line": 195
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 201
+    },
+    {
+      "id": 2,
+      "label": "exit:ToFileInternalAtomic",
+      "line": 212
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

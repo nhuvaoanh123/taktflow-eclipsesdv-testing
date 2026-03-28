@@ -1,0 +1,66 @@
+{
+  "function": "shared",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:shared",
+      "line": 57
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 214
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 229
+    },
+    {
+      "id": 3,
+      "label": "return_statement",
+      "line": 249
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 257
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 262
+    },
+    {
+      "id": 6,
+      "label": "exit:shared",
+      "line": 381
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    },
+    {
+      "from": 0,
+      "to": 4
+    },
+    {
+      "from": 0,
+      "to": 5
+    },
+    {
+      "from": 0,
+      "to": 6
+    }
+  ]
+}

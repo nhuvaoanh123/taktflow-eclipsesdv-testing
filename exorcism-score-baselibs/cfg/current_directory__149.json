@@ -1,0 +1,21 @@
+{
+  "function": "current_directory_",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:current_directory_",
+      "line": 149
+    },
+    {
+      "id": 1,
+      "label": "exit:current_directory_",
+      "line": 153
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

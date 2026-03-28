@@ -1,0 +1,21 @@
+{
+  "function": "read_from_files",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:read_from_files",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:read_from_files",
+      "line": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

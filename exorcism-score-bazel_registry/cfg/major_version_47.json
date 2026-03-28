@@ -1,0 +1,63 @@
+{
+  "function": "major_version",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:major_version",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 49
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 52
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 49
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 49
+    },
+    {
+      "id": 5,
+      "label": "exit:major_version",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

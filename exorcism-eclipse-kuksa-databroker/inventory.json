@@ -1,0 +1,21 @@
+{
+  "project": "eclipse-kuksa-databroker",
+  "files_by_language": {
+    "Rust": {
+      "files": 57,
+      "loc": 32434
+    },
+    "Python": {
+      "files": 26,
+      "loc": 4631
+    }
+  },
+  "total_files": 83,
+  "total_loc": 37065,
+  "total_functions": 1058,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust",
+    "Python"
+  ]
+}

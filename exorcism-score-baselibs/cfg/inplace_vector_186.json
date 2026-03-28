@@ -1,0 +1,21 @@
+{
+  "function": "inplace_vector",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:inplace_vector",
+      "line": 186
+    },
+    {
+      "id": 1,
+      "label": "exit:inplace_vector",
+      "line": 199
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "external": [
+    {
+      "name": "autoprefixer",
+      "source": "package.json"
+    },
+    {
+      "name": "hugo-extended",
+      "source": "package.json"
+    },
+    {
+      "name": "postcss",
+      "source": "package.json"
+    },
+    {
+      "name": "postcss-cli",
+      "source": "package.json"
+    },
+    {
+      "name": "prettier",
+      "source": "package.json"
+    }
+  ],
+  "internal": []
+}

@@ -1,0 +1,21 @@
+{
+  "function": "getCommandMessageDescriptor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getCommandMessageDescriptor",
+      "line": 143
+    },
+    {
+      "id": 1,
+      "label": "exit:getCommandMessageDescriptor",
+      "line": 157
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

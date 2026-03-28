@@ -1,0 +1,21 @@
+{
+  "function": "path_is_option",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:path_is_option",
+      "line": 66
+    },
+    {
+      "id": 1,
+      "label": "exit:path_is_option",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

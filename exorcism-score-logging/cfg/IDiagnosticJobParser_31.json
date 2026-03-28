@@ -1,0 +1,21 @@
+{
+  "function": "IDiagnosticJobParser",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IDiagnosticJobParser",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:IDiagnosticJobParser",
+      "line": 37
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

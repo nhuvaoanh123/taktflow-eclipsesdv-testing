@@ -1,0 +1,21 @@
+{
+  "function": "extract_umessage_from_cloudevent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:extract_umessage_from_cloudevent",
+      "line": 94
+    },
+    {
+      "id": 1,
+      "label": "exit:extract_umessage_from_cloudevent",
+      "line": 108
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "function": "export_node",
+    "file": "vss/vspecjson2markdown.py",
+    "line": 102,
+    "calls": [
+      "StringIO",
+      "os.path.dirname",
+      "open",
+      "Template",
+      "node.qualified_name",
+      "node.has_unit",
+      "VSSUnitCollection.get_unit",
+      "mytemplate.render_context",
+      "os.path.join",
+      "outfile.write",
+      "buf.getvalue",
+      "Context",
+      "export_node",
+      "node.get_unit",
+      "os.makedirs",
+      "print"
+    ]
+  },
+  {
+    "function": "gtag",
+    "file": "assets/js/ga.js",
+    "line": 17,
+    "calls": [
+      "push"
+    ]
+  }
+]

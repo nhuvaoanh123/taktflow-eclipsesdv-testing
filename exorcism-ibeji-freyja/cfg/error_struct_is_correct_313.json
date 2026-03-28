@@ -1,0 +1,21 @@
+{
+  "function": "error_struct_is_correct",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:error_struct_is_correct",
+      "line": 313
+    },
+    {
+      "id": 1,
+      "label": "exit:error_struct_is_correct",
+      "line": 343
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

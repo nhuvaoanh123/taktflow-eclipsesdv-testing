@@ -1,0 +1,21 @@
+{
+  "function": "detach_prefix_from_request_id",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:detach_prefix_from_request_id",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:detach_prefix_from_request_id",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

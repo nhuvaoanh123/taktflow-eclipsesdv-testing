@@ -1,0 +1,21 @@
+{
+  "function": "set_safety_notified",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_safety_notified",
+      "line": 313
+    },
+    {
+      "id": 1,
+      "label": "exit:set_safety_notified",
+      "line": 329
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

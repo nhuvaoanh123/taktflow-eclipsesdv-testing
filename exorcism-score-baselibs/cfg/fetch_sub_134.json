@@ -1,0 +1,30 @@
+{
+  "function": "fetch_sub",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fetch_sub",
+      "line": 134
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 136
+    },
+    {
+      "id": 2,
+      "label": "exit:fetch_sub",
+      "line": 137
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

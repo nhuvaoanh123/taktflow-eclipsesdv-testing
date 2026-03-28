@@ -1,0 +1,25 @@
+{
+  "state_machines": [
+    {
+      "file": "src/rust/rust_kvs_tool/src/kvs_tool.rs",
+      "line": 567,
+      "type": "match",
+      "condition": "op_mode",
+      "states": [
+        "OperationMode::GetKey",
+        "OperationMode::SetKey",
+        "OperationMode::RemoveKey",
+        "OperationMode::ListKeys",
+        "OperationMode::Reset",
+        "OperationMode::SnapshotCount",
+        "OperationMode::SnapshotMaxCount",
+        "OperationMode::SnapshotRestore",
+        "OperationMode::GetKvsFilename",
+        "OperationMode::GetHashFilename",
+        "OperationMode::CreateTestData",
+        "OperationMode::Invalid"
+      ]
+    }
+  ],
+  "count": 1
+}

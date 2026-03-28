@@ -1,0 +1,21 @@
+{
+  "function": "_subscribe_to_data_points",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_subscribe_to_data_points",
+      "line": 80
+    },
+    {
+      "id": 1,
+      "label": "exit:_subscribe_to_data_points",
+      "line": 92
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

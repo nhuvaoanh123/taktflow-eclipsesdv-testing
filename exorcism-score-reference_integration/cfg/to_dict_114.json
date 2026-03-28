@@ -1,0 +1,171 @@
+{
+  "function": "to_dict",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:to_dict",
+      "line": 114
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 116
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 119
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 116
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 116
+    },
+    {
+      "id": 5,
+      "label": "if (...)",
+      "line": 121
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 122
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 121
+    },
+    {
+      "id": 8,
+      "label": "if (...)",
+      "line": 123
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 124
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 123
+    },
+    {
+      "id": 11,
+      "label": "if (...)",
+      "line": 125
+    },
+    {
+      "id": 12,
+      "label": "merge",
+      "line": 126
+    },
+    {
+      "id": 13,
+      "label": "then",
+      "line": 125
+    },
+    {
+      "id": 14,
+      "label": "return_statement",
+      "line": 127
+    },
+    {
+      "id": 15,
+      "label": "exit:to_dict",
+      "line": 127
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "false"
+    },
+    {
+      "from": 9,
+      "to": 11
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "true"
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "false"
+    },
+    {
+      "from": 12,
+      "to": 14
+    },
+    {
+      "from": 12,
+      "to": 15
+    }
+  ]
+}

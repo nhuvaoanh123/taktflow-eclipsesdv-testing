@@ -1,0 +1,21 @@
+{
+  "function": "loom_try_lock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:loom_try_lock",
+      "line": 167
+    },
+    {
+      "id": 1,
+      "label": "exit:loom_try_lock",
+      "line": 201
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

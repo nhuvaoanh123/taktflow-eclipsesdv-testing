@@ -1,0 +1,63 @@
+{
+  "function": "vector_offset",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:vector_offset",
+      "line": 55
+    },
+    {
+      "id": 1,
+      "label": "if ((new_size < v.out))",
+      "line": 77
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 84
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 77
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 77
+    },
+    {
+      "id": 5,
+      "label": "exit:vector_offset",
+      "line": 85
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

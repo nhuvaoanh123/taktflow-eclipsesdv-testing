@@ -1,0 +1,9 @@
+{
+  "external": [
+    {
+      "name": "bazel-bin",
+      "source": "pyproject.toml"
+    }
+  ],
+  "internal": []
+}

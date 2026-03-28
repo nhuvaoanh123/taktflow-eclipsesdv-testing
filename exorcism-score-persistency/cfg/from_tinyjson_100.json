@@ -1,0 +1,21 @@
+{
+  "function": "from_tinyjson",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:from_tinyjson",
+      "line": 100
+    },
+    {
+      "id": 1,
+      "label": "exit:from_tinyjson",
+      "line": 115
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

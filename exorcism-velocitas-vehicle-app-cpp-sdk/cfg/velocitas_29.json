@@ -1,0 +1,30 @@
+{
+  "function": "velocitas",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:velocitas",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 89
+    },
+    {
+      "id": 2,
+      "label": "exit:velocitas",
+      "line": 93
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

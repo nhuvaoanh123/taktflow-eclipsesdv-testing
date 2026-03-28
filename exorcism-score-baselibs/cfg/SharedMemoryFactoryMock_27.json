@@ -1,0 +1,21 @@
+{
+  "function": "SharedMemoryFactoryMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SharedMemoryFactoryMock",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:SharedMemoryFactoryMock",
+      "line": 62
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

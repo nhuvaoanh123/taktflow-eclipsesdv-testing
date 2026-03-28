@@ -1,0 +1,21 @@
+{
+  "function": "getUpdateManifest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getUpdateManifest",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "exit:getUpdateManifest",
+      "line": 60
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

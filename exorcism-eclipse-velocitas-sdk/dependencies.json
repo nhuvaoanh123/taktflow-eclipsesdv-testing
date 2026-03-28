@@ -1,0 +1,261 @@
+{
+  "external": [
+    {
+      "name": "aiohappyeyeballs",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "aiohttp",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "aiosignal",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "apscheduler",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "async-timeout",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "attrs",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "build",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cachetools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cfgv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "chardet",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "click",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cloudevents",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "colorama",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "coverage[toml]",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "deprecated",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "deprecation",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "distlib",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "exceptiongroup",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "filelock",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "frozenlist",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "grpc-stubs",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "grpcio",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "grpcio-tools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "identify",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "idna",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "importlib-metadata",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "iniconfig",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "multidict",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "mypy",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "mypy-extensions",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "mypy-protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "nodeenv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "opentelemetry-api",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "opentelemetry-distro",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "opentelemetry-instrumentation",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "opentelemetry-instrumentation-logging",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "packaging",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "paho-mqtt",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pip-tools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "platformdirs",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pluggy",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pre-commit",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "propcache",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyproject-api",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyproject-hooks",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pytest",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pytest-asyncio",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pytest-cov",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyyaml",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "tomli",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "tox",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "types-deprecated",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "types-mock",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "types-protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "typing-extensions",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "tzlocal",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "virtualenv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "wheel",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "wrapt",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "yarl",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "zipp",
+      "source": "requirements.txt"
+    }
+  ],
+  "internal": []
+}

@@ -1,0 +1,21 @@
+{
+  "function": "common",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:common",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:common",
+      "line": 149
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

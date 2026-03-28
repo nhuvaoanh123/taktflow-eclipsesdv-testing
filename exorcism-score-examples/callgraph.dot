@@ -1,0 +1,25 @@
+digraph callgraph {
+  rankdir=LR;
+  node [shape=box, fontname="Courier"];
+  "main";
+  "main" -> "GetID";
+  "main" -> "GetDepartmentByName";
+  "main" -> "GetName";
+  "main" -> "AddDepartment";
+  "TEST";
+  "TEST" -> "EXPECT_EQ";
+  "<anonymous>";
+  "<anonymous>" -> "std::move";
+  "Department";
+  "<anonymous>" -> "std::move";
+  "<anonymous>" -> "push_back";
+  "<anonymous>" -> "Department";
+  "<anonymous>" -> "std::move";
+  "<anonymous>" -> "compare";
+  "<anonymous>" -> "end";
+  "<anonymous>" -> "GetName";
+  "<anonymous>" -> "begin";
+  "<anonymous>" -> "size";
+  "Company";
+  "Company" -> "GetDepartmentByName";
+}

@@ -1,0 +1,21 @@
+{
+  "function": "stream_datapoints",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stream_datapoints",
+      "line": 87
+    },
+    {
+      "id": 1,
+      "label": "exit:stream_datapoints",
+      "line": 182
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

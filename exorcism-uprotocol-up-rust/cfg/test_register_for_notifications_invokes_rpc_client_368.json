@@ -1,0 +1,21 @@
+{
+  "function": "test_register_for_notifications_invokes_rpc_client",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_register_for_notifications_invokes_rpc_client",
+      "line": 368
+    },
+    {
+      "id": 1,
+      "label": "exit:test_register_for_notifications_invokes_rpc_client",
+      "line": 419
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

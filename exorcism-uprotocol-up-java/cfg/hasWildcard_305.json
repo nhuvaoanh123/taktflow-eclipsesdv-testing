@@ -1,0 +1,30 @@
+{
+  "function": "hasWildcard",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:hasWildcard",
+      "line": 305
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 307
+    },
+    {
+      "id": 2,
+      "label": "exit:hasWildcard",
+      "line": 312
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

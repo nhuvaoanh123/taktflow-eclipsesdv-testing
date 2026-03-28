@@ -1,0 +1,21 @@
+{
+  "function": "TracingRuntimeMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TracingRuntimeMock",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:TracingRuntimeMock",
+      "line": 57
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

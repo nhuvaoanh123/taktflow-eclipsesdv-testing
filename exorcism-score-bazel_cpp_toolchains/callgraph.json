@@ -1,0 +1,127 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "examples/main_pthread.cpp",
+    "line": 16,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "examples/main_pthread.cpp",
+    "line": 21,
+    "calls": [
+      "pthread_join",
+      "pthread_create"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/main.cpp",
+    "line": 15,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "examples/math_lib_test.cpp",
+    "line": 17,
+    "calls": [
+      "sub",
+      "assert",
+      "add"
+    ]
+  },
+  {
+    "function": "add",
+    "file": "examples/math_lib.cpp",
+    "line": 15,
+    "calls": []
+  },
+  {
+    "function": "sub",
+    "file": "examples/math_lib.cpp",
+    "line": 19,
+    "calls": []
+  },
+  {
+    "function": "lsan_buggy",
+    "file": "examples/lsan_test.cpp",
+    "line": 16,
+    "calls": [
+      "std::exit"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "examples/lsan_test.cpp",
+    "line": 26,
+    "calls": [
+      "EXPECT_EXIT",
+      "lsan_buggy",
+      "::testing::ExitedWithCode"
+    ]
+  },
+  {
+    "function": "buggy",
+    "file": "examples/asan_test.cpp",
+    "line": 16,
+    "calls": []
+  },
+  {
+    "function": "TEST",
+    "file": "examples/asan_test.cpp",
+    "line": 27,
+    "calls": [
+      "ASSERT_DEATH",
+      "buggy"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "examples/asan_test.cpp",
+    "line": 33,
+    "calls": [
+      "ASSERT_DEATH",
+      "buggy"
+    ]
+  },
+  {
+    "function": "ubsan_buggy",
+    "file": "examples/ubsan_test.cpp",
+    "line": 16,
+    "calls": []
+  },
+  {
+    "function": "TEST",
+    "file": "examples/ubsan_test.cpp",
+    "line": 24,
+    "calls": [
+      "ubsan_buggy",
+      "ASSERT_DEATH"
+    ]
+  },
+  {
+    "function": "tsan_buggy",
+    "file": "examples/tsan_test.cpp",
+    "line": 19,
+    "calls": [
+      "join"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "examples/tsan_test.cpp",
+    "line": 38,
+    "calls": [
+      "ASSERT_DEATH",
+      "tsan_buggy"
+    ]
+  },
+  {
+    "function": "eprint",
+    "file": "tools/qnx_credential_helper.py",
+    "line": 25,
+    "calls": [
+      "print"
+    ]
+  }
+]

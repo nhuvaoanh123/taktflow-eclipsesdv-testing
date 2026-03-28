@@ -1,0 +1,21 @@
+{
+  "function": "test_parse_cfgfile_valid_cfg",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_parse_cfgfile_valid_cfg",
+      "line": 321
+    },
+    {
+      "id": 1,
+      "label": "exit:test_parse_cfgfile_valid_cfg",
+      "line": 371
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

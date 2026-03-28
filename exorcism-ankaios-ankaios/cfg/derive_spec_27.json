@@ -1,0 +1,21 @@
+{
+  "function": "derive_spec",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:derive_spec",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:derive_spec",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

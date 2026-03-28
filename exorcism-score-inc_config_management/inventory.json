@@ -1,0 +1,26 @@
+{
+  "project": "score-inc_config_management",
+  "files_by_language": {
+    "Rust": {
+      "files": 1,
+      "loc": 4
+    },
+    "C++": {
+      "files": 1,
+      "loc": 41
+    },
+    "Python": {
+      "files": 1,
+      "loc": 56
+    }
+  },
+  "total_files": 3,
+  "total_loc": 101,
+  "total_functions": 6,
+  "build_system": "Bazel, Python/pyproject",
+  "languages": [
+    "Rust",
+    "C++",
+    "Python"
+  ]
+}

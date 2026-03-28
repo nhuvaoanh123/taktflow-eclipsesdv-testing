@@ -1,0 +1,30 @@
+{
+  "function": "iterator_to",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:iterator_to",
+      "line": 620
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 624
+    },
+    {
+      "id": 2,
+      "label": "exit:iterator_to",
+      "line": 625
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

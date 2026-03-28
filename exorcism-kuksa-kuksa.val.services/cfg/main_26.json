@@ -1,0 +1,55 @@
+{
+  "function": "main",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:main",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 34
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 67
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 34
+    },
+    {
+      "id": 4,
+      "label": "exit:main",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

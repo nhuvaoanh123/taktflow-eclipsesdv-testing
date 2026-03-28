@@ -1,0 +1,21 @@
+{
+  "function": "allocator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:allocator",
+      "line": 106
+    },
+    {
+      "id": 1,
+      "label": "exit:allocator",
+      "line": 111
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

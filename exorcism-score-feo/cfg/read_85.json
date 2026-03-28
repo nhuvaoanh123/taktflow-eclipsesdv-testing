@@ -1,0 +1,21 @@
+{
+  "function": "read",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:read",
+      "line": 85
+    },
+    {
+      "id": 1,
+      "label": "exit:read",
+      "line": 103
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

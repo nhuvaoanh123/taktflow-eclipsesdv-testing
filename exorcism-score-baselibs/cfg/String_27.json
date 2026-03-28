@@ -1,0 +1,21 @@
+{
+  "function": "String",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:String",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:String",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

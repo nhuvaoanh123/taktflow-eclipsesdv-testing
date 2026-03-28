@@ -1,0 +1,21 @@
+{
+  "function": "new_from_workloads",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:new_from_workloads",
+      "line": 195
+    },
+    {
+      "id": 1,
+      "label": "exit:new_from_workloads",
+      "line": 212
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

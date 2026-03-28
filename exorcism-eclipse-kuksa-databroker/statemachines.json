@@ -1,0 +1,55 @@
+{
+  "state_machines": [
+    {
+      "file": "lib/common/src/lib.rs",
+      "line": 361,
+      "type": "match",
+      "condition": "&self.connection_state_subs",
+      "states": [
+        "Some(stream)",
+        "None"
+      ]
+    },
+    {
+      "file": "databroker-cli/src/kuksa_cli.rs",
+      "line": 284,
+      "type": "match",
+      "condition": "state",
+      "states": [
+        "Ok(state)",
+        "Err(err)"
+      ]
+    },
+    {
+      "file": "databroker-cli/src/kuksa_cli.rs",
+      "line": 285,
+      "type": "match",
+      "condition": "state",
+      "states": [
+        "kuksa_common::ConnectionState::Connected",
+        "kuksa_common::ConnectionState::Disconnected"
+      ]
+    },
+    {
+      "file": "databroker-cli/src/sdv_cli.rs",
+      "line": 134,
+      "type": "match",
+      "condition": "state",
+      "states": [
+        "Ok(state)",
+        "Err(err)"
+      ]
+    },
+    {
+      "file": "databroker-cli/src/sdv_cli.rs",
+      "line": 135,
+      "type": "match",
+      "condition": "state",
+      "states": [
+        "kuksa_common::ConnectionState::Connected",
+        "kuksa_common::ConnectionState::Disconnected"
+      ]
+    }
+  ],
+  "count": 5
+}

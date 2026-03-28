@@ -1,0 +1,93 @@
+{
+  "function": "svt",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:svt",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 111
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 118
+    },
+    {
+      "id": 3,
+      "label": "return_statement",
+      "line": 124
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 133
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 139
+    },
+    {
+      "id": 6,
+      "label": "return_statement",
+      "line": 149
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 155
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 162
+    },
+    {
+      "id": 9,
+      "label": "exit:svt",
+      "line": 171
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    },
+    {
+      "from": 0,
+      "to": 4
+    },
+    {
+      "from": 0,
+      "to": 5
+    },
+    {
+      "from": 0,
+      "to": 6
+    },
+    {
+      "from": 0,
+      "to": 7
+    },
+    {
+      "from": 0,
+      "to": 8
+    },
+    {
+      "from": 0,
+      "to": 9
+    }
+  ]
+}

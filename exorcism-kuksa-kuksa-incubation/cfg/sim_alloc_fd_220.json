@@ -1,0 +1,147 @@
+{
+  "function": "sim_alloc_fd",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sim_alloc_fd",
+      "line": 220
+    },
+    {
+      "id": 1,
+      "label": "if ((!ctx))",
+      "line": 223
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 227
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 223
+    },
+    {
+      "id": 4,
+      "label": "if ((verbose))",
+      "line": 224
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 224
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 224
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 226
+    },
+    {
+      "id": 8,
+      "label": "if ((ctx->mock_socket == SOCKET_INVALID))",
+      "line": 230
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 241
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 230
+    },
+    {
+      "id": 11,
+      "label": "else",
+      "line": 230
+    },
+    {
+      "id": 12,
+      "label": "return_statement",
+      "line": 243
+    },
+    {
+      "id": 13,
+      "label": "exit:sim_alloc_fd",
+      "line": 244
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 12
+    },
+    {
+      "from": 9,
+      "to": 13
+    }
+  ]
+}

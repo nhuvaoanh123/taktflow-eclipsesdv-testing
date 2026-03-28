@@ -1,0 +1,21 @@
+{
+  "function": "NativeMiddleware",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:NativeMiddleware",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:NativeMiddleware",
+      "line": 33
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

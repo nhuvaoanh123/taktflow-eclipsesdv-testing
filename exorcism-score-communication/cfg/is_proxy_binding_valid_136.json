@@ -1,0 +1,30 @@
+{
+  "function": "is_proxy_binding_valid",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_proxy_binding_valid",
+      "line": 136
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 137
+    },
+    {
+      "id": 2,
+      "label": "exit:is_proxy_binding_valid",
+      "line": 138
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

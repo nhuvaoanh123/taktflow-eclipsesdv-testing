@@ -1,0 +1,45 @@
+{
+  "state_machines": [
+    {
+      "file": "mocks/mock_digital_twin/src/mock_provider.rs",
+      "line": 47,
+      "type": "match",
+      "condition": "find_entity(&state, &request.entity_id)",
+      "states": [
+        "Some(_)",
+        "None"
+      ]
+    },
+    {
+      "file": "mocks/mock_digital_twin/src/mock_provider.rs",
+      "line": 69,
+      "type": "match",
+      "condition": "get_entity_value(&mut state, &request.entity_id)",
+      "states": [
+        "Some(value)",
+        "None"
+      ]
+    },
+    {
+      "file": "mocks/mock_digital_twin/src/mock_provider.rs",
+      "line": 77,
+      "type": "match",
+      "condition": "state\r\n                    .response_channel_sender\r\n                    .send((request.consumer_uri, publish_request))",
+      "states": [
+        "Ok(_)",
+        "Err(e)"
+      ]
+    },
+    {
+      "file": "freyja/src/data_adapter_selector_impl.rs",
+      "line": 208,
+      "type": "match",
+      "condition": "state.data_adapters.entry(provider_uri)",
+      "states": [
+        "Entry::Occupied(data_adapter)",
+        "Entry::Vacant(_)"
+      ]
+    }
+  ],
+  "count": 4
+}

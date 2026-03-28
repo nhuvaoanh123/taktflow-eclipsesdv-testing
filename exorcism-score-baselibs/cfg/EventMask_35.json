@@ -1,0 +1,21 @@
+{
+  "function": "EventMask",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:EventMask",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "exit:EventMask",
+      "line": 60
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

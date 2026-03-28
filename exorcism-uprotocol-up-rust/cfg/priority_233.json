@@ -1,0 +1,21 @@
+{
+  "function": "priority",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:priority",
+      "line": 233
+    },
+    {
+      "id": 1,
+      "label": "exit:priority",
+      "line": 241
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

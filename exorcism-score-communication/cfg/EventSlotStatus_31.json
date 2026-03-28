@@ -1,0 +1,21 @@
+{
+  "function": "EventSlotStatus",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:EventSlotStatus",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:EventSlotStatus",
+      "line": 87
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

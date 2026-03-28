@@ -1,0 +1,280 @@
+{
+  "function": "main",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:main",
+      "line": 193
+    },
+    {
+      "id": 1,
+      "label": "if ((argc > 1 && (strcmp(argv[1], \"--help\") == 0 || strcmp(argv[)",
+      "line": 194
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 197
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 194
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 196
+    },
+    {
+      "id": 5,
+      "label": "if ((sigaction(SIGCHLD, &sa, NULL) == -1))",
+      "line": 211
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 214
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 211
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 213
+    },
+    {
+      "id": 9,
+      "label": "if ((socket_path == NULL))",
+      "line": 217
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 219
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 217
+    },
+    {
+      "id": 12,
+      "label": "if ((sockfd == -1))",
+      "line": 223
+    },
+    {
+      "id": 13,
+      "label": "merge",
+      "line": 226
+    },
+    {
+      "id": 14,
+      "label": "then",
+      "line": 223
+    },
+    {
+      "id": 15,
+      "label": "if ((bind(sockfd, (struct sockaddr*)&addr, sizeof(addr)) == -1))",
+      "line": 234
+    },
+    {
+      "id": 16,
+      "label": "merge",
+      "line": 237
+    },
+    {
+      "id": 17,
+      "label": "then",
+      "line": 234
+    },
+    {
+      "id": 18,
+      "label": "if ((listen(sockfd, 5) == -1))",
+      "line": 239
+    },
+    {
+      "id": 19,
+      "label": "merge",
+      "line": 242
+    },
+    {
+      "id": 20,
+      "label": "then",
+      "line": 239
+    },
+    {
+      "id": 21,
+      "label": "loop (while_statement)",
+      "line": 246
+    },
+    {
+      "id": 22,
+      "label": "loop_exit",
+      "line": 261
+    },
+    {
+      "id": 23,
+      "label": "body",
+      "line": 246
+    },
+    {
+      "id": 24,
+      "label": "return_statement",
+      "line": 264
+    },
+    {
+      "id": 25,
+      "label": "exit:main",
+      "line": 265
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 12
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "label": "true"
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "label": "false"
+    },
+    {
+      "from": 13,
+      "to": 15
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "label": "true"
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "label": "false"
+    },
+    {
+      "from": 16,
+      "to": 18
+    },
+    {
+      "from": 18,
+      "to": 20,
+      "label": "true"
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "label": "false"
+    },
+    {
+      "from": 19,
+      "to": 21
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "label": "done"
+    },
+    {
+      "from": 21,
+      "to": 23,
+      "label": "continue"
+    },
+    {
+      "from": 23,
+      "to": 21,
+      "label": "back"
+    },
+    {
+      "from": 22,
+      "to": 24
+    },
+    {
+      "from": 22,
+      "to": 25
+    }
+  ]
+}

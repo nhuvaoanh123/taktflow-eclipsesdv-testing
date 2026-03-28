@@ -1,0 +1,21 @@
+{
+  "function": "utest_handle_update_workload_subsequent_delete_before_adding",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_handle_update_workload_subsequent_delete_before_adding",
+      "line": 1760
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_handle_update_workload_subsequent_delete_before_adding",
+      "line": 1858
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

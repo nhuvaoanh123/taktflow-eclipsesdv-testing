@@ -1,0 +1,21 @@
+{
+  "function": "add_isSeverityCritical",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:add_isSeverityCritical",
+      "line": 1635
+    },
+    {
+      "id": 1,
+      "label": "exit:add_isSeverityCritical",
+      "line": 1644
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

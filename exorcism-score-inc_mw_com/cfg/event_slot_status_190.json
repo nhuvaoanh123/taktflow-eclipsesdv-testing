@@ -1,0 +1,30 @@
+{
+  "function": "event_slot_status",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:event_slot_status",
+      "line": 190
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 206
+    },
+    {
+      "id": 2,
+      "label": "exit:event_slot_status",
+      "line": 207
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

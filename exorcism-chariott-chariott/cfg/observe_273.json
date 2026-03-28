@@ -1,0 +1,21 @@
+{
+  "function": "observe",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:observe",
+      "line": 273
+    },
+    {
+      "id": 1,
+      "label": "exit:observe",
+      "line": 285
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

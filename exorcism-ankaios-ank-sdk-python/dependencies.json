@@ -1,0 +1,13 @@
+{
+  "external": [
+    {
+      "name": "setuptools",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "wheel",
+      "source": "pyproject.toml"
+    }
+  ],
+  "internal": []
+}

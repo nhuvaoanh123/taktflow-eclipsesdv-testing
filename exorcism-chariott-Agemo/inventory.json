@@ -1,0 +1,16 @@
+{
+  "project": "chariott-Agemo",
+  "files_by_language": {
+    "Rust": {
+      "files": 37,
+      "loc": 4900
+    }
+  },
+  "total_files": 37,
+  "total_loc": 4900,
+  "total_functions": 131,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

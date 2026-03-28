@@ -1,0 +1,21 @@
+{
+  "function": "is_value_default",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_value_default",
+      "line": 217
+    },
+    {
+      "id": 1,
+      "label": "exit:is_value_default",
+      "line": 227
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

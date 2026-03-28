@@ -1,0 +1,21 @@
+{
+  "function": "sqrt",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sqrt",
+      "line": 320
+    },
+    {
+      "id": 1,
+      "label": "exit:sqrt",
+      "line": 329
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

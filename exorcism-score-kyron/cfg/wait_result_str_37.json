@@ -1,0 +1,21 @@
+{
+  "function": "wait_result_str",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:wait_result_str",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:wait_result_str",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

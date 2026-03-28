@@ -1,0 +1,21 @@
+{
+  "function": "LockFile",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LockFile",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:LockFile",
+      "line": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

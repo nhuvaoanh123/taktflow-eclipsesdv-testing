@@ -1,0 +1,21 @@
+{
+  "function": "platform",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:platform",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "exit:platform",
+      "line": 102
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

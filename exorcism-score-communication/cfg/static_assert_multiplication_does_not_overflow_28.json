@@ -1,0 +1,21 @@
+{
+  "function": "static_assert_multiplication_does_not_overflow",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:static_assert_multiplication_does_not_overflow",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:static_assert_multiplication_does_not_overflow",
+      "line": 31
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "AreTracePointsEqual",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AreTracePointsEqual",
+      "line": 237
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 242
+    },
+    {
+      "id": 2,
+      "label": "exit:AreTracePointsEqual",
+      "line": 244
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

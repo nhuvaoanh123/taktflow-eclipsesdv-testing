@@ -1,0 +1,21 @@
+{
+  "function": "test_intent_mappings",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_intent_mappings",
+      "line": 266
+    },
+    {
+      "id": 1,
+      "label": "exit:test_intent_mappings",
+      "line": 294
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

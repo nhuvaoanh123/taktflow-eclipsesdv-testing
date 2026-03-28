@@ -1,0 +1,21 @@
+{
+  "function": "test_invoke_method_succeeds",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_invoke_method_succeeds",
+      "line": 358
+    },
+    {
+      "id": 1,
+      "label": "exit:test_invoke_method_succeeds",
+      "line": 454
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

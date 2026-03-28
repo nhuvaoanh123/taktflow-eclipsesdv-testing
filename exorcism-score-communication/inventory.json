@@ -1,0 +1,31 @@
+{
+  "project": "score-communication",
+  "files_by_language": {
+    "C": {
+      "files": 435,
+      "loc": 39359
+    },
+    "C++": {
+      "files": 618,
+      "loc": 117303
+    },
+    "Python": {
+      "files": 43,
+      "loc": 3133
+    },
+    "Rust": {
+      "files": 30,
+      "loc": 8755
+    }
+  },
+  "total_files": 1126,
+  "total_loc": 168550,
+  "total_functions": 6414,
+  "build_system": "Bazel",
+  "languages": [
+    "C",
+    "C++",
+    "Python",
+    "Rust"
+  ]
+}

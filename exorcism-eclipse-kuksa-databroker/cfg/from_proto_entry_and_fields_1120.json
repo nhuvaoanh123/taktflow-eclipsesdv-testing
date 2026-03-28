@@ -1,0 +1,21 @@
+{
+  "function": "from_proto_entry_and_fields",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:from_proto_entry_and_fields",
+      "line": 1120
+    },
+    {
+      "id": 1,
+      "label": "exit:from_proto_entry_and_fields",
+      "line": 1152
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

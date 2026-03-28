@@ -1,0 +1,21 @@
+{
+  "function": "set_invoke_worker_id",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_invoke_worker_id",
+      "line": 292
+    },
+    {
+      "id": 1,
+      "label": "exit:set_invoke_worker_id",
+      "line": 312
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "function": "set_memory_limit",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_memory_limit",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 36
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 39
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 36
+    },
+    {
+      "id": 4,
+      "label": "exit:set_memory_limit",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

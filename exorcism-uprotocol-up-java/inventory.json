@@ -1,0 +1,16 @@
+{
+  "project": "uprotocol-up-java",
+  "files_by_language": {
+    "Java": {
+      "files": 68,
+      "loc": 10401
+    }
+  },
+  "total_files": 68,
+  "total_loc": 10401,
+  "total_functions": 541,
+  "build_system": "Maven",
+  "languages": [
+    "Java"
+  ]
+}

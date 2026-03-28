@@ -1,0 +1,156 @@
+{
+  "function": "sae_pos_increment",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sae_pos_increment",
+      "line": 214
+    },
+    {
+      "id": 1,
+      "label": "if ((!ctx || ctx->_sim_fd == -1))",
+      "line": 215
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 218
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 215
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 217
+    },
+    {
+      "id": 5,
+      "label": "if ((!ctx->_sim_active))",
+      "line": 219
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 221
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 219
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 220
+    },
+    {
+      "id": 9,
+      "label": "if ((move_time == 0))",
+      "line": 223
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 225
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 223
+    },
+    {
+      "id": 12,
+      "label": "return_statement",
+      "line": 224
+    },
+    {
+      "id": 13,
+      "label": "return_statement",
+      "line": 228
+    },
+    {
+      "id": 14,
+      "label": "exit:sae_pos_increment",
+      "line": 232
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 13
+    },
+    {
+      "from": 10,
+      "to": 14
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "function": "_publish_speed_markers",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_publish_speed_markers",
+      "line": 571
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 574
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 604
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 574
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 592
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 599
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 592
+    },
+    {
+      "id": 7,
+      "label": "else",
+      "line": 592
+    },
+    {
+      "id": 8,
+      "label": "exit:_publish_speed_markers",
+      "line": 605
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 8
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "validate_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_value",
+      "line": 519
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_value",
+      "line": 752
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

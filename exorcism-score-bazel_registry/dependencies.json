@@ -1,0 +1,177 @@
+{
+  "external": [
+    {
+      "name": "hatchling",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "registry_manager",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "0",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "Tooling",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "PyGithub",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "semver",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "pyfakefs",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "pytest",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "ruff",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "basedpyright",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "pre-commit",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "src",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "tests",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "py312",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "E",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "W",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "F",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "I",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "N",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "UP",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "B",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "C4",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "C90",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "SIM",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "TCH",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "TID",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RUF",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "PT",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "PIE",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "T20",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RSE",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RET",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "E501",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "T201",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "RET505",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "S101",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "--import-mode",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "--strict-markers",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "--strict-config",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "standard",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "warning",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "build",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "dist",
+      "source": "pyproject.toml"
+    }
+  ],
+  "internal": []
+}

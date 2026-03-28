@@ -1,0 +1,21 @@
+{
+  "function": "EventDrivenMachine",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:EventDrivenMachine",
+      "line": 36
+    },
+    {
+      "id": 1,
+      "label": "exit:EventDrivenMachine",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

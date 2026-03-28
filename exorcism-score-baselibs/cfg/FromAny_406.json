@@ -1,0 +1,106 @@
+{
+  "function": "FromAny",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FromAny",
+      "line": 406
+    },
+    {
+      "id": 1,
+      "label": "if ((auto list = any.As<List>()))",
+      "line": 408
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 422
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 408
+    },
+    {
+      "id": 4,
+      "label": "loop (for_statement)",
+      "line": 412
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 417
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 412
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 420
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 423
+    },
+    {
+      "id": 9,
+      "label": "exit:FromAny",
+      "line": 424
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 8
+    },
+    {
+      "from": 2,
+      "to": 9
+    }
+  ]
+}

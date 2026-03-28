@@ -1,0 +1,21 @@
+{
+  "function": "test_subscribe_query_and_get",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_subscribe_query_and_get",
+      "line": 3737
+    },
+    {
+      "id": 1,
+      "label": "exit:test_subscribe_query_and_get",
+      "line": 3821
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

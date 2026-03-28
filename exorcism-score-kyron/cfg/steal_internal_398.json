@@ -1,0 +1,21 @@
+{
+  "function": "steal_internal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:steal_internal",
+      "line": 398
+    },
+    {
+      "id": 1,
+      "label": "exit:steal_internal",
+      "line": 468
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

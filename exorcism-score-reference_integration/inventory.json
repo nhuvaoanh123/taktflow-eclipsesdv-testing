@@ -1,0 +1,26 @@
+{
+  "project": "score-reference_integration",
+  "files_by_language": {
+    "Python": {
+      "files": 36,
+      "loc": 3896
+    },
+    "Rust": {
+      "files": 14,
+      "loc": 1148
+    },
+    "C++": {
+      "files": 1,
+      "loc": 38
+    }
+  },
+  "total_files": 51,
+  "total_loc": 5082,
+  "total_functions": 191,
+  "build_system": "Bazel, Python/pyproject",
+  "languages": [
+    "Python",
+    "Rust",
+    "C++"
+  ]
+}

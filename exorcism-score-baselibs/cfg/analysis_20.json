@@ -1,0 +1,21 @@
+{
+  "function": "analysis",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:analysis",
+      "line": 20
+    },
+    {
+      "id": 1,
+      "label": "exit:analysis",
+      "line": 39
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

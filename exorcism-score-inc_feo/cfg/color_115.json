@@ -1,0 +1,21 @@
+{
+  "function": "color",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:color",
+      "line": 115
+    },
+    {
+      "id": 1,
+      "label": "exit:color",
+      "line": 128
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

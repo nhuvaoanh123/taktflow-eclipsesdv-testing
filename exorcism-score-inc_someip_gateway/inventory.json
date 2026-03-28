@@ -1,0 +1,31 @@
+{
+  "project": "score-inc_someip_gateway",
+  "files_by_language": {
+    "C": {
+      "files": 5,
+      "loc": 384
+    },
+    "C++": {
+      "files": 10,
+      "loc": 1880
+    },
+    "Python": {
+      "files": 5,
+      "loc": 354
+    },
+    "Rust": {
+      "files": 4,
+      "loc": 329
+    }
+  },
+  "total_files": 24,
+  "total_loc": 2947,
+  "total_functions": 84,
+  "build_system": "Bazel, Python/pyproject",
+  "languages": [
+    "C",
+    "C++",
+    "Python",
+    "Rust"
+  ]
+}

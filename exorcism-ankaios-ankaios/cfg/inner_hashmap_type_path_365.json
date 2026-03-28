@@ -1,0 +1,21 @@
+{
+  "function": "inner_hashmap_type_path",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:inner_hashmap_type_path",
+      "line": 365
+    },
+    {
+      "id": 1,
+      "label": "exit:inner_hashmap_type_path",
+      "line": 377
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

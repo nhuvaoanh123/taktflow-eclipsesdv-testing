@@ -1,0 +1,21 @@
+{
+  "function": "fmax",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fmax",
+      "line": 106
+    },
+    {
+      "id": 1,
+      "label": "exit:fmax",
+      "line": 113
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

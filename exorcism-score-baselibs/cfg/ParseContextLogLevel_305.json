@@ -1,0 +1,63 @@
+{
+  "function": "ParseContextLogLevel",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ParseContextLogLevel",
+      "line": 305
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 310
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 313
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 310
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 345
+    },
+    {
+      "id": 5,
+      "label": "exit:ParseContextLogLevel",
+      "line": 346
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

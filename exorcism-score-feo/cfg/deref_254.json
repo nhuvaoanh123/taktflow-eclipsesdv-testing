@@ -1,0 +1,21 @@
+{
+  "function": "deref",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deref",
+      "line": 254
+    },
+    {
+      "id": 1,
+      "label": "exit:deref",
+      "line": 265
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

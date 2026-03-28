@@ -1,0 +1,21 @@
+{
+  "function": "restart_workload_with_bundle_reuse",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:restart_workload_with_bundle_reuse",
+      "line": 589
+    },
+    {
+      "id": 1,
+      "label": "exit:restart_workload_with_bundle_reuse",
+      "line": 642
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

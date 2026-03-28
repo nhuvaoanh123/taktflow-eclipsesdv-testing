@@ -1,0 +1,21 @@
+{
+  "function": "ResourceManagerFixtureBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ResourceManagerFixtureBase",
+      "line": 397
+    },
+    {
+      "id": 1,
+      "label": "exit:ResourceManagerFixtureBase",
+      "line": 446
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

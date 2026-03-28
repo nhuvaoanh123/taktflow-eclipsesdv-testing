@@ -1,0 +1,54 @@
+{
+  "function": "JsonSerializeStructImpl",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:JsonSerializeStructImpl",
+      "line": 133
+    },
+    {
+      "id": 1,
+      "label": "if ((!field_value.template As<Null>().has_value()))",
+      "line": 136
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 141
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 136
+    },
+    {
+      "id": 4,
+      "label": "exit:JsonSerializeStructImpl",
+      "line": 143
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

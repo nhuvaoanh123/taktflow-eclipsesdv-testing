@@ -1,0 +1,21 @@
+{
+  "function": "PushFakeSample",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:PushFakeSample",
+      "line": 97
+    },
+    {
+      "id": 1,
+      "label": "exit:PushFakeSample",
+      "line": 100
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

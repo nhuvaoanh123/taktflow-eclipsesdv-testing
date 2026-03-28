@@ -1,0 +1,21 @@
+{
+  "function": "echo_service",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:echo_service",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:echo_service",
+      "line": 154
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

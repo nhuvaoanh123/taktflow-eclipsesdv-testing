@@ -1,0 +1,63 @@
+{
+  "function": "event_output_shall_contain_altered_fields_with_removed_workloads",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:event_output_shall_contain_altered_fields_with_removed_workloads",
+      "line": 1037
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 1046
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 1078
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 1046
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 1046
+    },
+    {
+      "id": 5,
+      "label": "exit:event_output_shall_contain_altered_fields_with_removed_workloads",
+      "line": 1081
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

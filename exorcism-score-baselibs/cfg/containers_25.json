@@ -1,0 +1,21 @@
+{
+  "function": "containers",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:containers",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:containers",
+      "line": 83
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "itest_delete_manifest_err",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:itest_delete_manifest_err",
+      "line": 1778
+    },
+    {
+      "id": 1,
+      "label": "exit:itest_delete_manifest_err",
+      "line": 1827
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

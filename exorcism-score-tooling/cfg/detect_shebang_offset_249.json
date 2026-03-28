@@ -1,0 +1,30 @@
+{
+  "function": "detect_shebang_offset",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:detect_shebang_offset",
+      "line": 249
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 279
+    },
+    {
+      "id": 2,
+      "label": "exit:detect_shebang_offset",
+      "line": 279
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

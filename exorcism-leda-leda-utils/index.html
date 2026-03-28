@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leda Leda Utils — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Leda Leda Utils</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Leda Leda Utils</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">LEDA</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">16</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">2,264</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">94</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">2.6</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>Eclipse Leda is a complete Software Defined Vehicle reference stack — a Linux-based operating system distribution bundling all the Eclipse SDV components (KUKSA, Ankaios, Velocitas runtime, etc.) into a ready-to-flash image for automotive hardware like Raspberry Pi and QEMU.</p>
+    <p><strong>Project:</strong> <code>leda-leda-utils</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>Unknown</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">Python</span>, <span class="tag">Rust</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>Setting up an SDV stack from scratch requires integrating dozens of components. Leda provides a validated, integrated distribution so teams can get started quickly.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by OEM prototype teams, automotive researchers, and developers building SDV proof-of-concepts.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>Python</td><td>1</td><td>213</td></tr><tr><td>Rust</td><td>15</td><td>2,051</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: leda-leda-utils</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>Python, Rust</td></tr>
+<tr><td>Build System</td><td>Unknown</td></tr>
+<tr><td>Total Files</td><td>16</td></tr>
+<tr><td>Total LOC</td><td>2,264</td></tr>
+<tr><td>Total Functions</td><td>94</td></tr>
+<tr><td>State Machines</td><td>0</td></tr>
+<tr><td>Communication Patterns</td><td>0</td></tr>
+<tr><td>External Dependencies</td><td>0</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>Python</strong>: 1 files, 213 LOC</li>
+<li><strong>Rust</strong>: 15 files, 2,051 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>Unknown</strong></p>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>update<em>containers (src/python/kantocm-zeroconf/kantocm</em>zeroconf.py:65) cc=16</li>
+<li>process_request (src/rust/kanto-tui/src/io.rs:19) cc=13</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li>update<em>containers (src/python/kantocm-zeroconf/kantocm</em>zeroconf.py:65) depth=13</li>
+<li>update<em>service (src/python/kantocm-zeroconf/kantocm</em>zeroconf.py:119) depth=5</li>
+<li>handle_existing (src/rust/kanto-auto-deployer/src/main.rs:208) depth=5</li>
+<li>deploy (src/rust/kanto-auto-deployer/src/main.rs:250) depth=5</li>
+<li>redeploy<em>on</em>change (src/rust/kanto-auto-deployer/src/main.rs:311) depth=6</li>
+<li>main (src/rust/kanto-auto-deployer/src/main.rs:327) depth=6</li>
+<li>mqtt<em>main (src/rust/kanto-auto-deployer/src/mqtt</em>listener.rs:117) depth=8</li>
+<li>try<em>parse</em>manifest (src/rust/kanto-auto-deployer/src/manifest_parser.rs:121) depth=5</li>
+<li>publish_blueprint (src/rust/blueprint-selector/src/main.rs:127) depth=4</li>
+<li>copy<em>dir</em>recursive (src/rust/blueprint-selector/src/blueprint_fetchers.rs:47) depth=6</li>
+<li>process_request (src/rust/kanto-tui/src/io.rs:19) depth=4</li>
+<li>async<em>io</em>thread (src/rust/kanto-tui/src/io.rs:80) depth=5</li>
+<li>get<em>current</em>container (src/rust/kanto-tui/src/ui/containers<em>table</em>view.rs:116) depth=5</li>
+<li>run (src/rust/kanto-tui/src/ui/mod.rs:24) depth=6</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<p><em>None</em></p>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 94 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 24 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 0 state machine patterns</li>
+<li><code>metrics.json</code> — 94 function metrics</li>
+<li><code>communication.json</code> — 0 protocol patterns</li>
+<li><code>dependencies.json</code> — 0 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>update_containers</code></td>
+              <td><span class="badge badge-red">16 (High)</span></td>
+              <td>13</td>
+              <td>53</td>
+              <td>1</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>process_request</code></td>
+              <td><span class="badge badge-red">13 (High)</span></td>
+              <td>4</td>
+              <td>55</td>
+              <td>4</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>src/rust/kanto-tui/src/io.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>6</td>
+              <td>60</td>
+              <td>0</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>mqtt_main</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>8</td>
+              <td>46</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-auto-deployer/src/mqtt_listener.rs</small></td>
+            </tr><tr>
+              <td><code>deserialize</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>25</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/kantui_config.rs</small></td>
+            </tr><tr>
+              <td><code>tick</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>3</td>
+              <td>11</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>deploy</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>5</td>
+              <td>19</td>
+              <td>4</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>redeploy_on_change</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>6</td>
+              <td>14</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>try_parse_manifest</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>5</td>
+              <td>32</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-auto-deployer/src/manifest_parser.rs</small></td>
+            </tr><tr>
+              <td><code>copy_dir_recursive</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>6</td>
+              <td>18</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/blueprint-selector/src/blueprint_fetchers.rs</small></td>
+            </tr><tr>
+              <td><code>fmt</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>9</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/kantui_config.rs</small></td>
+            </tr><tr>
+              <td><code>to_column</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>8</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/ui/containers_table_view.rs</small></td>
+            </tr><tr>
+              <td><code>cmp</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>11</td>
+              <td>3</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/ui/containers_table_view.rs</small></td>
+            </tr><tr>
+              <td><code>run</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>6</td>
+              <td>92</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-tui/src/ui/mod.rs</small></td>
+            </tr><tr>
+              <td><code>publish_service</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>3</td>
+              <td>10</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>fmt</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>10</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/rust/blueprint-selector/src/blueprint_fetchers.rs</small></td>
+            </tr><tr>
+              <td><code>fetch</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>9</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/blueprint-selector/src/blueprint_fetchers.rs</small></td>
+            </tr><tr>
+              <td><code>update_service</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>6</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>_get_valid_service_name</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>9</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>is_filetype</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>11</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/fs_watcher.rs</small></td>
+            </tr><tr>
+              <td><code>handle_existing</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>5</td>
+              <td>25</td>
+              <td>4</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>deploy_new</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>15</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>parse_blueprint</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/blueprint-selector/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>parse_conf_file</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>14</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/kantui_config.rs</small></td>
+            </tr><tr>
+              <td><code>unpublish_service</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>7</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>deploy_directory</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>39</td>
+              <td>3</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>kad_enabled</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>1</td>
+              <td>3</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/mqtt_listener.rs</small></td>
+            </tr><tr>
+              <td><code>disable_kad</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>19</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/mqtt_listener.rs</small></td>
+            </tr><tr>
+              <td><code>try_mqtt_reconnect</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>14</td>
+              <td>4</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/mqtt_listener.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>35</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/rust/blueprint-selector/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>20</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>async_io_thread</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>5</td>
+              <td>12</td>
+              <td>3</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-tui/src/io.rs</small></td>
+            </tr><tr>
+              <td><code>get_current_container</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>5</td>
+              <td>13</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/kanto-tui/src/ui/containers_table_view.rs</small></td>
+            </tr><tr>
+              <td><code>unpublish_all_containers</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>3</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>async_watch</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>33</td>
+              <td>3</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/fs_watcher.rs</small></td>
+            </tr><tr>
+              <td><code>container_running</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>6</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>handle_mqtt_payload</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>22</td>
+              <td>3</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/mqtt_listener.rs</small></td>
+            </tr><tr>
+              <td><code>try_or_print</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>5</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-auto-deployer/src/manifest_parser.rs</small></td>
+            </tr><tr>
+              <td><code>publish_blueprint</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>4</td>
+              <td>16</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>src/rust/blueprint-selector/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>redeploy_containers</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>15</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/kanto_api.rs</small></td>
+            </tr><tr>
+              <td><code>parse_cli</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>9</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/kantui_config.rs</small></td>
+            </tr><tr>
+              <td><code>state_to_string</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/ui/containers_table_view.rs</small></td>
+            </tr><tr>
+              <td><code>update_table_items</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>12</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/rust/kanto-tui/src/ui/containers_table_view.rs</small></td>
+            </tr><tr>
+              <td><code>__init__</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>8</td>
+              <td>3</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>run</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>4</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>stop</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>5</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>__init__</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>4</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>get_container_status</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>5</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>close_connection</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr><tr>
+              <td><code>__init__</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>5</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>run</code></td>
+              <td>26</td>
+              <td><small>set_fps, try_recv, Ok, try_best, try_run_with, button, clone, scrollable …</small></td>
+              <td><small>src/rust/kanto-tui/src/ui/mod.rs:24</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>20</td>
+              <td><small>AtomicBool::new, Ok, Arc::new, filter_or, clone, log::info, log::debug, env_logger::init_from_env …</small></td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs:327</small></td>
+            </tr><tr>
+              <td><code>deploy_directory</code></td>
+              <td>18</td>
+              <td><small>Err, log::info, iter, glob, anyhow::anyhow, into_iter, log::debug, filter_map …</small></td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs:270</small></td>
+            </tr><tr>
+              <td><code>process_request</code></td>
+              <td>15</td>
+              <td><small>kanto_api::remove_container, kanto_api::stop_container, kanto_api::get_container_by_id, kanto_api::create_container, Ok, kanto_api::get_logs, kanto_api::redeploy_containers, try_best …</small></td>
+              <td><small>src/rust/kanto-tui/src/io.rs:19</small></td>
+            </tr><tr>
+              <td><code>mqtt_main</code></td>
+              <td>14</td>
+              <td><small>clone, log::info, iter, Client::new, log::debug, Ok, handle_mqtt_payload, subscribe …</small></td>
+              <td><small>src/rust/kanto-auto-deployer/src/mqtt_listener.rs:117</small></td>
+            </tr><tr>
+              <td><code>deserialize</code></td>
+              <td>14</td>
+              <td><small>is_ascii, format, is_whitespace, ok_or, event::Event::Char, Ok, event::Event::AltChar, filter …</small></td>
+              <td><small>src/rust/kanto-tui/src/kantui_config.rs:88</small></td>
+            </tr><tr>
+              <td><code>copy_dir_recursive</code></td>
+              <td>13</td>
+              <td><small>path, file_type, Err, file_name, anyhow, is_dir, fs::copy, fs::read_dir …</small></td>
+              <td><small>src/rust/blueprint-selector/src/blueprint_fetchers.rs:47</small></td>
+            </tr><tr>
+              <td><code>help_screen</code></td>
+              <td>13</td>
+              <td><small>scroll_x, scroll_y, scrollable, pop_layer, title, OnEventView::new, Dialog::around, TextView::new …</small></td>
+              <td><small>src/rust/kanto-tui/src/ui/containers_table_view.rs:221</small></td>
+            </tr><tr>
+              <td><code>deploy</code></td>
+              <td>12</td>
+              <td><small>find, into_inner, get_client, list, iter, Err, manifest_parser::try_parse_manifest, handle_existing …</small></td>
+              <td><small>src/rust/kanto-auto-deployer/src/main.rs:250</small></td>
+            </tr><tr>
+              <td><code>async_watcher</code></td>
+              <td>11</td>
+              <td><small>Duration::from_secs_f64, unwrap, Config::default, PollWatcher::new, with_compare_contents, Ok, tokio::runtime::Runtime::new, block_on …</small></td>
+              <td><small>src/rust/kanto-auto-deployer/src/fs_watcher.rs:29</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (0 detected)</h3>
+  <p><em>No state machines detected.</em></p>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <p><em>No functions exceed 100 lines.</em></p>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    leda-leda-utils[&#x27;Leda Leda Utils&#x27;]
+    note[&#x27;No external interfaces detected&#x27;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  <p><em>No communication patterns detected.</em></p>
+
+  <h3>Dependencies</h3>
+  <p><em>No explicit dependencies recorded.</em></p>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: Unknown</h3>
+    <pre><code># Check the project README for build instructions.
+# Common patterns:
+#   Rust: cargo build --release
+#   Python: pip install -r requirements.txt &amp;&amp; python3 main.py
+#   C/C++: mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make
+#   Java/Maven: mvn clean install
+#   Bazel: bazel build //...</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">Python</span> toolchain required</li><li><span class="tag">Rust</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">2.6</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">2</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">0</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">1</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>update_containers</code></td><td><span class="badge badge-red">16 (High)</span></td><td>53</td><td><small>src/python/kantocm-zeroconf/kantocm_zeroconf.py:65</small></td></tr><tr><td><code>process_request</code></td><td><span class="badge badge-red">13 (High)</span></td><td>55</td><td><small>src/rust/kanto-tui/src/io.rs:19</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>update_containers</code> — CC 16, nesting 13 in src/python/kantocm-zeroconf/kantocm_zeroconf.py</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "function": "connect_senders",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect_senders",
+      "line": 118
+    },
+    {
+      "id": 1,
+      "label": "exit:connect_senders",
+      "line": 148
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

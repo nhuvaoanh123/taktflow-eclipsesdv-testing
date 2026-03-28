@@ -1,0 +1,138 @@
+{
+  "function": "generate_file_content",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:generate_file_content",
+      "line": 161
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 186
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 191
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 186
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 192
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 201
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 192
+    },
+    {
+      "id": 7,
+      "label": "else",
+      "line": 192
+    },
+    {
+      "id": 8,
+      "label": "if (...)",
+      "line": 203
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 204
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 203
+    },
+    {
+      "id": 11,
+      "label": "return_statement",
+      "line": 206
+    },
+    {
+      "id": 12,
+      "label": "exit:generate_file_content",
+      "line": 206
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "false"
+    },
+    {
+      "from": 9,
+      "to": 11
+    },
+    {
+      "from": 9,
+      "to": 12
+    }
+  ]
+}

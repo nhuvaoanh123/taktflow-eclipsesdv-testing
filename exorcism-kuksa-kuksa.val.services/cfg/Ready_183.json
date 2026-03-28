@@ -1,0 +1,30 @@
+{
+  "function": "Ready",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Ready",
+      "line": 183
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 184
+    },
+    {
+      "id": 2,
+      "label": "exit:Ready",
+      "line": 185
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

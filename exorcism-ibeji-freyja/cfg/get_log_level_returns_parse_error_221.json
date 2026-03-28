@@ -1,0 +1,21 @@
+{
+  "function": "get_log_level_returns_parse_error",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_log_level_returns_parse_error",
+      "line": 221
+    },
+    {
+      "id": 1,
+      "label": "exit:get_log_level_returns_parse_error",
+      "line": 234
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

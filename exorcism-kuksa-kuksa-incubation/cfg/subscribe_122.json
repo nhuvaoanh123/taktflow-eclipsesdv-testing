@@ -1,0 +1,54 @@
+{
+  "function": "subscribe",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:subscribe",
+      "line": 122
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 130
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 132
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 130
+    },
+    {
+      "id": 4,
+      "label": "exit:subscribe",
+      "line": 178
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

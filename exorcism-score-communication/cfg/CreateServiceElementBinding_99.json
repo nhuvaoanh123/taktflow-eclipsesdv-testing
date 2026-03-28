@@ -1,0 +1,68 @@
+{
+  "function": "CreateServiceElementBinding",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CreateServiceElementBinding",
+      "line": 99
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 103
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 106
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 103
+    },
+    {
+      "id": 4,
+      "label": "match/switch",
+      "line": 108
+    },
+    {
+      "id": 5,
+      "label": "switch_exit",
+      "line": 121
+    },
+    {
+      "id": 6,
+      "label": "exit:CreateServiceElementBinding",
+      "line": 122
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 5,
+      "to": 6
+    }
+  ]
+}

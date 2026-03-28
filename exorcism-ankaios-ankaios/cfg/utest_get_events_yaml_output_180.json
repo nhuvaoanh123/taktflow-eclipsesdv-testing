@@ -1,0 +1,21 @@
+{
+  "function": "utest_get_events_yaml_output",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_get_events_yaml_output",
+      "line": 180
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_get_events_yaml_output",
+      "line": 236
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

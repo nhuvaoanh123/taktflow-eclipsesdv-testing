@@ -1,0 +1,21 @@
+{
+  "function": "LogString",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LogString",
+      "line": 120
+    },
+    {
+      "id": 1,
+      "label": "exit:LogString",
+      "line": 180
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

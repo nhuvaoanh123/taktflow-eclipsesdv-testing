@@ -1,0 +1,21 @@
+{
+  "function": "wait_next_ready",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:wait_next_ready",
+      "line": 399
+    },
+    {
+      "id": 1,
+      "label": "exit:wait_next_ready",
+      "line": 434
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

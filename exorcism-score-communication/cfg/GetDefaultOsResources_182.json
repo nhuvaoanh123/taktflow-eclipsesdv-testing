@@ -1,0 +1,21 @@
+{
+  "function": "GetDefaultOsResources",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetDefaultOsResources",
+      "line": 182
+    },
+    {
+      "id": 1,
+      "label": "exit:GetDefaultOsResources",
+      "line": 346
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

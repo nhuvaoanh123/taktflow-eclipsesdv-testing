@@ -1,0 +1,21 @@
+{
+  "function": "startThingsManagers",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:startThingsManagers",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:startThingsManagers",
+      "line": 71
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "score-process_description",
+  "files_by_language": {
+    "Python": {
+      "files": 1,
+      "loc": 36
+    }
+  },
+  "total_files": 1,
+  "total_loc": 36,
+  "total_functions": 0,
+  "build_system": "Bazel",
+  "languages": [
+    "Python"
+  ]
+}

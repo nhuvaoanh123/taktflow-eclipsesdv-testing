@@ -1,0 +1,21 @@
+{
+  "function": "lifecycle",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:lifecycle",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:lifecycle",
+      "line": 111
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

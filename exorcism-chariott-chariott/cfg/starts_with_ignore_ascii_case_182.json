@@ -1,0 +1,21 @@
+{
+  "function": "starts_with_ignore_ascii_case",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:starts_with_ignore_ascii_case",
+      "line": 182
+    },
+    {
+      "id": 1,
+      "label": "exit:starts_with_ignore_ascii_case",
+      "line": 185
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

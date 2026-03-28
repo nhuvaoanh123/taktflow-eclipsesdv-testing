@@ -1,0 +1,21 @@
+{
+  "function": "remove_dir_all",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:remove_dir_all",
+      "line": 268
+    },
+    {
+      "id": 1,
+      "label": "exit:remove_dir_all",
+      "line": 279
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

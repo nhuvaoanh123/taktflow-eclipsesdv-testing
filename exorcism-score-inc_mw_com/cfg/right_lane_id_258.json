@@ -1,0 +1,21 @@
+{
+  "function": "right_lane_id",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:right_lane_id",
+      "line": 258
+    },
+    {
+      "id": 1,
+      "label": "exit:right_lane_id",
+      "line": 456
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "TestSubscribe",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestSubscribe",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:TestSubscribe",
+      "line": 124
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

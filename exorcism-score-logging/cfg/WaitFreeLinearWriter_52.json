@@ -1,0 +1,21 @@
+{
+  "function": "WaitFreeLinearWriter",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:WaitFreeLinearWriter",
+      "line": 52
+    },
+    {
+      "id": 1,
+      "label": "exit:WaitFreeLinearWriter",
+      "line": 71
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

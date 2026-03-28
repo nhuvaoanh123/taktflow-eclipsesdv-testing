@@ -1,0 +1,21 @@
+{
+  "function": "specify_event_local_success",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:specify_event_local_success",
+      "line": 732
+    },
+    {
+      "id": 1,
+      "label": "exit:specify_event_local_success",
+      "line": 776
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

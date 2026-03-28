@@ -1,0 +1,21 @@
+{
+  "function": "verify_parsed_authority",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:verify_parsed_authority",
+      "line": 508
+    },
+    {
+      "id": 1,
+      "label": "exit:verify_parsed_authority",
+      "line": 534
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

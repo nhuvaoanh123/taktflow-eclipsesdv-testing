@@ -1,0 +1,30 @@
+{
+  "function": "ProvidedServiceBuilder",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProvidedServiceBuilder",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 64
+    },
+    {
+      "id": 2,
+      "label": "exit:ProvidedServiceBuilder",
+      "line": 74
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

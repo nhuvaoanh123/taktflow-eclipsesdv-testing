@@ -1,0 +1,21 @@
+{
+  "function": "set_registration_interval",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_registration_interval",
+      "line": 74
+    },
+    {
+      "id": 1,
+      "label": "exit:set_registration_interval",
+      "line": 88
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

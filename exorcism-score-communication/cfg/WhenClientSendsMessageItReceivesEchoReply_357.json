@@ -1,0 +1,21 @@
+{
+  "function": "WhenClientSendsMessageItReceivesEchoReply",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:WhenClientSendsMessageItReceivesEchoReply",
+      "line": 357
+    },
+    {
+      "id": 1,
+      "label": "exit:WhenClientSendsMessageItReceivesEchoReply",
+      "line": 397
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

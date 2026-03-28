@@ -1,0 +1,21 @@
+{
+  "function": "sleep_rand_millis",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sleep_rand_millis",
+      "line": 87
+    },
+    {
+      "id": 1,
+      "label": "exit:sleep_rand_millis",
+      "line": 89
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

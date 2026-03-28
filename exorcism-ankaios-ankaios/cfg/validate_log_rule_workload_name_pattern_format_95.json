@@ -1,0 +1,21 @@
+{
+  "function": "validate_log_rule_workload_name_pattern_format",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_log_rule_workload_name_pattern_format",
+      "line": 95
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_log_rule_workload_name_pattern_format",
+      "line": 110
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

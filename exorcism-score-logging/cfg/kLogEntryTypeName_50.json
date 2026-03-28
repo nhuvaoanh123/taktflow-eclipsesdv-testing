@@ -1,0 +1,30 @@
+{
+  "function": "kLogEntryTypeName",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kLogEntryTypeName",
+      "line": 50
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 162
+    },
+    {
+      "id": 2,
+      "label": "exit:kLogEntryTypeName",
+      "line": 177
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

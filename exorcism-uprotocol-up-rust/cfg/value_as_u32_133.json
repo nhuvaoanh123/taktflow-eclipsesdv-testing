@@ -1,0 +1,21 @@
+{
+  "function": "value_as_u32",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:value_as_u32",
+      "line": 133
+    },
+    {
+      "id": 1,
+      "label": "exit:value_as_u32",
+      "line": 139
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

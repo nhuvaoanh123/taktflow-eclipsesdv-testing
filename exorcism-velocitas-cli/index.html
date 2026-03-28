@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velocitas Cli — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Velocitas Cli</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Velocitas Cli</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">VELOCITAS</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">70</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">7,541</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">627</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">2.0</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>Eclipse Velocitas is a development toolchain for building Vehicle Apps — small software components that run inside the vehicle or in the cloud and interact with vehicle signals via KUKSA. Velocitas provides SDKs (Python, C++, Rust) and project templates so developers can write vehicle logic without knowing low-level protocols.</p>
+    <p><strong>Project:</strong> <code>velocitas-cli</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>npm/Node</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">TypeScript</span>, <span class="tag">Python</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>Without Velocitas, writing a vehicle app would require deep knowledge of CAN bus, gRPC, protobuf, and vehicle network topology. Velocitas abstracts all of that away.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by OEM app developers, Tier-1 suppliers writing vehicle features, and embedded developers building ECU software. Works alongside KUKSA Databroker.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>TypeScript</td><td>64</td><td>7,432</td></tr><tr><td>Python</td><td>6</td><td>109</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: velocitas-cli</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>TypeScript, Python</td></tr>
+<tr><td>Build System</td><td>npm/Node</td></tr>
+<tr><td>Total Files</td><td>70</td></tr>
+<tr><td>Total LOC</td><td>7,541</td></tr>
+<tr><td>Total Functions</td><td>627</td></tr>
+<tr><td>State Machines</td><td>0</td></tr>
+<tr><td>Communication Patterns</td><td>0</td></tr>
+<tr><td>External Dependencies</td><td>27</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>TypeScript</strong>: 64 files, 7,432 LOC</li>
+<li><strong>Python</strong>: 6 files, 109 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>npm/Node</strong></p>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>&lt;anonymous&gt; (src/commands/upgrade/index.ts:47) cc=13</li>
+<li>&lt;anonymous&gt; (src/commands/component/list.ts:35) cc=11</li>
+<li>&lt;anonymous&gt; (src/commands/package/index.ts:46) cc=27</li>
+<li>&lt;anonymous&gt; (src/commands/init/index.ts:219) cc=15</li>
+<li>runExecSpec (src/modules/exec.ts:91) cc=22</li>
+<li>createPythonVenv (src/modules/exec.ts:147) cc=12</li>
+<li>stdOutParser (src/modules/stdout-parser.ts:20) cc=12</li>
+<li>&lt;anonymous&gt; (src/modules/variables.ts:83) cc=24</li>
+<li>verifyGivenVariables (src/modules/variables.ts:190) cc=18</li>
+<li>buildErrorMessageForComponent (src/modules/variables.ts:231) cc=22</li>
+<li>&lt;anonymous&gt; (src/modules/projectConfig/projectConfigFileReader.ts:80) cc=11</li>
+<li>&lt;anonymous&gt; (src/modules/projectConfig/projectConfigFileReader.ts:97) cc=12</li>
+<li>&lt;anonymous&gt; (test/utils/mockfs.ts:56) cc=18</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li>&lt;anonymous&gt; (src/commands/package/index.ts:46) depth=5</li>
+<li>&lt;anonymous&gt; (src/commands/init/index.ts:219) depth=5</li>
+<li>getLatestVersion (src/modules/semver.ts:20) depth=4</li>
+<li>installComponent (src/modules/setup.ts:180) depth=5</li>
+<li>&lt;anonymous&gt; (src/modules/variables.ts:83) depth=4</li>
+<li>verifyGivenVariables (src/modules/variables.ts:190) depth=4</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<ul>
+<li>&lt;anonymous&gt; (test/commands/upgrade/upgrade.test.ts:28) loc=190</li>
+<li>&lt;anonymous&gt; (test/commands/upgrade/upgrade.test.ts:92) loc=125</li>
+<li>&lt;anonymous&gt; (test/commands/init/init.test.ts:24) loc=192</li>
+<li>&lt;anonymous&gt; (test/commands/create/create.test.ts:72) loc=171</li>
+<li>&lt;anonymous&gt; (test/system-test/exec.stest.ts:23) loc=168</li>
+<li>&lt;anonymous&gt; (test/system-test/exec.stest.ts:24) loc=166</li>
+<li>&lt;anonymous&gt; (test/unit/variables.test.ts:46) loc=243</li>
+<li>&lt;anonymous&gt; (test/unit/variables.test.ts:147) loc=141</li>
+<li>&lt;anonymous&gt; (test/unit/projectConfigIO.test.ts:91) loc=152</li>
+</ul>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 627 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 65 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 0 state machine patterns</li>
+<li><code>metrics.json</code> — 627 function metrics</li>
+<li><code>communication.json</code> — 0 protocol patterns</li>
+<li><code>dependencies.json</code> — 27 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">27 (High)</span></td>
+              <td>5</td>
+              <td>59</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>src/commands/package/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">24 (High)</span></td>
+              <td>4</td>
+              <td>43</td>
+              <td>4</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>src/modules/variables.ts</small></td>
+            </tr><tr>
+              <td><code>runExecSpec</code></td>
+              <td><span class="badge badge-red">22 (High)</span></td>
+              <td>2</td>
+              <td>51</td>
+              <td>5</td>
+              <td>high_complexity</td>
+              <td><small>src/modules/exec.ts</small></td>
+            </tr><tr>
+              <td><code>buildErrorMessageForComponent</code></td>
+              <td><span class="badge badge-red">22 (High)</span></td>
+              <td>3</td>
+              <td>38</td>
+              <td>3</td>
+              <td>high_complexity</td>
+              <td><small>src/modules/variables.ts</small></td>
+            </tr><tr>
+              <td><code>verifyGivenVariables</code></td>
+              <td><span class="badge badge-red">18 (High)</span></td>
+              <td>4</td>
+              <td>40</td>
+              <td>4</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>src/modules/variables.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">18 (High)</span></td>
+              <td>1</td>
+              <td>26</td>
+              <td>1</td>
+              <td>high_complexity</td>
+              <td><small>test/utils/mockfs.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">15 (High)</span></td>
+              <td>5</td>
+              <td>25</td>
+              <td>3</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>src/commands/init/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">13 (High)</span></td>
+              <td>3</td>
+              <td>29</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>src/commands/upgrade/index.ts</small></td>
+            </tr><tr>
+              <td><code>createPythonVenv</code></td>
+              <td><span class="badge badge-red">12 (High)</span></td>
+              <td>2</td>
+              <td>25</td>
+              <td>5</td>
+              <td>high_complexity</td>
+              <td><small>src/modules/exec.ts</small></td>
+            </tr><tr>
+              <td><code>stdOutParser</code></td>
+              <td><span class="badge badge-red">12 (High)</span></td>
+              <td>2</td>
+              <td>20</td>
+              <td>2</td>
+              <td>high_complexity</td>
+              <td><small>src/modules/stdout-parser.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">12 (High)</span></td>
+              <td>2</td>
+              <td>11</td>
+              <td>1</td>
+              <td>high_complexity</td>
+              <td><small>src/modules/projectConfig/projectConfigFileReader.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">11 (High)</span></td>
+              <td>2</td>
+              <td>25</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>src/commands/component/list.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">11 (High)</span></td>
+              <td>2</td>
+              <td>11</td>
+              <td>1</td>
+              <td>high_complexity</td>
+              <td><small>src/modules/projectConfig/projectConfigFileReader.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">10 (Medium)</span></td>
+              <td>3</td>
+              <td>31</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/commands/create/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">10 (Medium)</span></td>
+              <td>2</td>
+              <td>24</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/projectConfig.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>3</td>
+              <td>33</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/commands/exec/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>1</td>
+              <td>24</td>
+              <td>4</td>
+              <td></td>
+              <td><small>src/commands/upgrade/index.ts</small></td>
+            </tr><tr>
+              <td><code>incrementVersionRange</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>1</td>
+              <td>16</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/semver.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>0</td>
+              <td>4</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/setup.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>0</td>
+              <td>6</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/setup.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>1</td>
+              <td>16</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/package-index.ts</small></td>
+            </tr><tr>
+              <td><code>getLatestVersion</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>4</td>
+              <td>23</td>
+              <td>1</td>
+              <td>high_nesting</td>
+              <td><small>src/modules/semver.ts</small></td>
+            </tr><tr>
+              <td><code>resolveVersionIdentifier</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>1</td>
+              <td>19</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/semver.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>2</td>
+              <td>14</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/setup.ts</small></td>
+            </tr><tr>
+              <td><code>installComponent</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>5</td>
+              <td>27</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>src/modules/setup.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>26</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/create-interactive.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>1</td>
+              <td>28</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/create-interactive.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>3</td>
+              <td>22</td>
+              <td>3</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/projectConfigFileReader.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">8 (Medium)</span></td>
+              <td>2</td>
+              <td>29</td>
+              <td>2</td>
+              <td></td>
+              <td><small>test/helpers/simpleGit.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>20</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/commands/exec/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>13</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/commands/init/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>1</td>
+              <td>37</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/commands/create/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>1</td>
+              <td>17</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/modules/package.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>12</td>
+              <td>3</td>
+              <td></td>
+              <td><small>test/helpers/simpleGit.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>13</td>
+              <td>0</td>
+              <td></td>
+              <td><small>src/commands/sync/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>22</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/setup.ts</small></td>
+            </tr><tr>
+              <td><code>getGithubOrgFromRepoUri</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>1</td>
+              <td>16</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/variables.ts</small></td>
+            </tr><tr>
+              <td><code>parseLockFileVersions</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>12</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/readerUtil.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>2</td>
+              <td>13</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/projectConfigFileReader.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>29</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/commands/init/index.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>12</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/project-cache.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>3</td>
+              <td>13</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/package-downloader.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>1</td>
+              <td>11</td>
+              <td>3</td>
+              <td></td>
+              <td><small>src/modules/package-downloader.ts</small></td>
+            </tr><tr>
+              <td><code>mapReplacer</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>13</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/helpers.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>18</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/app-manifest.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>1</td>
+              <td>18</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/projectConfigFileWriter.ts</small></td>
+            </tr><tr>
+              <td><code>convertConfigFileVariablesToMap</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>1</td>
+              <td>6</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/readerUtil.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>2</td>
+              <td>11</td>
+              <td>1</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/projectConfigFileReader.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>1</td>
+              <td>14</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/projectConfigFileReader.ts</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>0</td>
+              <td>6</td>
+              <td>2</td>
+              <td></td>
+              <td><small>src/modules/projectConfig/projectConfig.ts</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>21</td>
+              <td><small>parse, removeSync, readdirSync, afterEach, join, expect, getPackageVersions, readFileSync …</small></td>
+              <td><small>test/system-test/create.stest.ts:26</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>21</td>
+              <td><small>an, setImpl, get, getVariableMappings, expect, instanceOf, read, getComponents …</small></td>
+              <td><small>test/unit/projectConfigIO.test.ts:91</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>20</td>
+              <td><small>parse, removeSync, readdirSync, afterEach, join, expect, getPackageVersions, readFileSync …</small></td>
+              <td><small>test/system-test/create.stest.ts:27</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>20</td>
+              <td><small>parse, removeSync, afterEach, join, expect, isDirectoryEmpty, readFileSync, getPackageDirectoryWithVersion …</small></td>
+              <td><small>test/system-test/init.stest.ts:30</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>20</td>
+              <td><small>eq, bind, setImpl, isLockAvailable, expect, getComponentContexts, isConfigAvailable, cwd …</small></td>
+              <td><small>test/unit/projectConfig.test.ts:23</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>19</td>
+              <td><small>parse, trim, expect, find, readFileSync, split, log, chdir …</small></td>
+              <td><small>test/system-test/exec.stest.ts:23</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>19</td>
+              <td><small>parse, removeSync, afterEach, join, expect, isDirectoryEmpty, readFileSync, getPackageDirectoryWithVersion …</small></td>
+              <td><small>test/system-test/init.stest.ts:31</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>18</td>
+              <td><small>toString, find, spawnSync, beforeEach, parse, readFileSync, copySync, chdir …</small></td>
+              <td><small>test/system-test/exec.stest.ts:24</small></td>
+            </tr><tr>
+              <td><code>awaitSpawn</code></td>
+              <td>16</td>
+              <td><small>lineCapturer, split, read, ptySpawn, setRawMode, on, bind, pause …</small></td>
+              <td><small>src/modules/exec.ts:38</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>16</td>
+              <td><small>mockFolders, returns, getPackages, isConfigAvailable, EXPECTED_INTERACTIVE_STDOUT, parse, read, do …</small></td>
+              <td><small>test/commands/create/create.test.ts:72</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (0 detected)</h3>
+  <p><em>No state machines detected.</em></p>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>LOC</th><th>File</th></tr></thead><tbody><tr><td><code>&lt;anonymous&gt;</code></td><td>243</td><td><small>test/unit/variables.test.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>192</td><td><small>test/commands/init/init.test.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>190</td><td><small>test/commands/upgrade/upgrade.test.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>171</td><td><small>test/commands/create/create.test.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>168</td><td><small>test/system-test/exec.stest.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>166</td><td><small>test/system-test/exec.stest.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>152</td><td><small>test/unit/projectConfigIO.test.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>141</td><td><small>test/unit/variables.test.ts</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>125</td><td><small>test/commands/upgrade/upgrade.test.ts</small></td></tr></tbody></table>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    velocitas-cli[&#x27;Velocitas Cli&#x27;]
+    note[&#x27;No external interfaces detected&#x27;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  <p><em>No communication patterns detected.</em></p>
+
+  <h3>Dependencies</h3>
+  <h3>External Dependencies</h3><ul><li><code>{&#x27;name&#x27;: &#x27;@oclif/core&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;fs-extra&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;inquirer&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;node-pty&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;recursive-copy&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;semver&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;simple-git&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@oclif/test&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@types/chai&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@types/fs-extra&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@types/mocha&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@types/node&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@types/semver&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@typescript-eslint/eslint-plugin&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@typescript-eslint/parser&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;@yao-pkg/pkg&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;chai&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;eslint&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;mocha&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;nyc&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;prettier&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;prettier-plugin-organize-imports&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;shx&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;sinon&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;ts-node&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;typescript&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li><li><code>{&#x27;name&#x27;: &#x27;yaml&#x27;, &#x27;source&#x27;: &#x27;package.json&#x27;}</code></li></ul>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: npm/Node</h3>
+    <pre><code># Check the project README for build instructions.
+# Common patterns:
+#   Rust: cargo build --release
+#   Python: pip install -r requirements.txt &amp;&amp; python3 main.py
+#   C/C++: mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make
+#   Java/Maven: mvn clean install
+#   Bazel: bazel build //...</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">TypeScript</span> toolchain required</li><li><span class="tag">Python</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">2.0</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">13</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">9</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">6</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">27 (High)</span></td><td>59</td><td><small>src/commands/package/index.ts:46</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">24 (High)</span></td><td>43</td><td><small>src/modules/variables.ts:83</small></td></tr><tr><td><code>runExecSpec</code></td><td><span class="badge badge-red">22 (High)</span></td><td>51</td><td><small>src/modules/exec.ts:91</small></td></tr><tr><td><code>buildErrorMessageForComponent</code></td><td><span class="badge badge-red">22 (High)</span></td><td>38</td><td><small>src/modules/variables.ts:231</small></td></tr><tr><td><code>verifyGivenVariables</code></td><td><span class="badge badge-red">18 (High)</span></td><td>40</td><td><small>src/modules/variables.ts:190</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">18 (High)</span></td><td>26</td><td><small>test/utils/mockfs.ts:56</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">15 (High)</span></td><td>25</td><td><small>src/commands/init/index.ts:219</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">13 (High)</span></td><td>29</td><td><small>src/commands/upgrade/index.ts:47</small></td></tr><tr><td><code>createPythonVenv</code></td><td><span class="badge badge-red">12 (High)</span></td><td>25</td><td><small>src/modules/exec.ts:147</small></td></tr><tr><td><code>stdOutParser</code></td><td><span class="badge badge-red">12 (High)</span></td><td>20</td><td><small>src/modules/stdout-parser.ts:20</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">12 (High)</span></td><td>11</td><td><small>src/modules/projectConfig/projectConfigFileReader.ts:97</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">11 (High)</span></td><td>25</td><td><small>src/commands/component/list.ts:35</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">11 (High)</span></td><td>11</td><td><small>src/modules/projectConfig/projectConfigFileReader.ts:80</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>&lt;anonymous&gt;</code> — CC 27, nesting 5 in src/commands/package/index.ts</li><li><span class="badge badge-red">Risk</span> <code>runExecSpec</code> — CC 22, nesting 2 in src/modules/exec.ts</li><li><span class="badge badge-red">Risk</span> <code>&lt;anonymous&gt;</code> — CC 24, nesting 4 in src/modules/variables.ts</li><li><span class="badge badge-red">Risk</span> <code>verifyGivenVariables</code> — CC 18, nesting 4 in src/modules/variables.ts</li><li><span class="badge badge-red">Risk</span> <code>buildErrorMessageForComponent</code> — CC 22, nesting 3 in src/modules/variables.ts</li><li><span class="badge badge-red">Risk</span> <code>&lt;anonymous&gt;</code> — CC 18, nesting 1 in test/utils/mockfs.ts</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

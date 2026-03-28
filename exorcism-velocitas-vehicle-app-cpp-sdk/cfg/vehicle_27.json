@@ -1,0 +1,21 @@
+{
+  "function": "vehicle",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:vehicle",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:vehicle",
+      "line": 80
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "connect_cli",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect_cli",
+      "line": 51
+    },
+    {
+      "id": 1,
+      "label": "exit:connect_cli",
+      "line": 108
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

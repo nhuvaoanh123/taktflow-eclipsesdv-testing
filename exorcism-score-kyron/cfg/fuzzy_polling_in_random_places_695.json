@@ -1,0 +1,21 @@
+{
+  "function": "fuzzy_polling_in_random_places",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fuzzy_polling_in_random_places",
+      "line": 695
+    },
+    {
+      "id": 1,
+      "label": "exit:fuzzy_polling_in_random_places",
+      "line": 737
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "RecorderMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:RecorderMock",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:RecorderMock",
+      "line": 158
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

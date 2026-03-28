@@ -1,0 +1,21 @@
+{
+  "function": "EventSenderReceiver",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:EventSenderReceiver",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:EventSenderReceiver",
+      "line": 53
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

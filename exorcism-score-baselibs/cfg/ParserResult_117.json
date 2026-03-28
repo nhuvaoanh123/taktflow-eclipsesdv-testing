@@ -1,0 +1,30 @@
+{
+  "function": "ParserResult",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ParserResult",
+      "line": 117
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 132
+    },
+    {
+      "id": 2,
+      "label": "exit:ParserResult",
+      "line": 135
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

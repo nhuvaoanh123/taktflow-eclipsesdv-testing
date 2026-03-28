@@ -1,0 +1,21 @@
+{
+  "function": "tokenize_option_u16",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:tokenize_option_u16",
+      "line": 265
+    },
+    {
+      "id": 1,
+      "label": "exit:tokenize_option_u16",
+      "line": 270
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

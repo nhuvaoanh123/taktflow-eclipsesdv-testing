@@ -1,0 +1,21 @@
+{
+  "function": "StringComparisonAdaptor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:StringComparisonAdaptor",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:StringComparisonAdaptor",
+      "line": 78
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

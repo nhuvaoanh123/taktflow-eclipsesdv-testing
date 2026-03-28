@@ -1,0 +1,30 @@
+{
+  "function": "DatarouterMessageIdentifier",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DatarouterMessageIdentifier",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 69
+    },
+    {
+      "id": 2,
+      "label": "exit:DatarouterMessageIdentifier",
+      "line": 105
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

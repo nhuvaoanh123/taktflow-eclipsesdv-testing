@@ -1,0 +1,21 @@
+{
+  "function": "assert_removed",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:assert_removed",
+      "line": 982
+    },
+    {
+      "id": 1,
+      "label": "exit:assert_removed",
+      "line": 988
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "external": [
+    {
+      "name": "build",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "certifi",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cfgv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "charset-normalizer",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "click",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "colorama",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "conan",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cpplint",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "distlib",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "distro",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "fasteners",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "filelock",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "gcovr",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "identify",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "idna",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "jinja2",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "lxml",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "markupsafe",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "nodeenv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "packaging",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "patch-ng",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pip-tools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "platformdirs",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pre-commit",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pygments",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyproject-hooks",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "python-dateutil",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyyaml",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "requests",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "six",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "tomli",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "typing-extensions",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "urllib3",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "virtualenv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "wheel",
+      "source": "requirements.txt"
+    }
+  ],
+  "internal": []
+}

@@ -1,0 +1,30 @@
+{
+  "function": "procmgr_event_notify_delete",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:procmgr_event_notify_delete",
+      "line": 65
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 69
+    },
+    {
+      "id": 2,
+      "label": "exit:procmgr_event_notify_delete",
+      "line": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

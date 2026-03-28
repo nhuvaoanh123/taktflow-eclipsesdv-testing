@@ -1,0 +1,30 @@
+{
+  "function": "InternalToExternalTracePointType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:InternalToExternalTracePointType",
+      "line": 133
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 169
+    },
+    {
+      "id": 2,
+      "label": "exit:InternalToExternalTracePointType",
+      "line": 170
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

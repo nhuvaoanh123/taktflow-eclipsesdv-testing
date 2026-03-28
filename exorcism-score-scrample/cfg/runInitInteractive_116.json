@@ -1,0 +1,21 @@
+{
+  "function": "runInitInteractive",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:runInitInteractive",
+      "line": 116
+    },
+    {
+      "id": 1,
+      "label": "exit:runInitInteractive",
+      "line": 216
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

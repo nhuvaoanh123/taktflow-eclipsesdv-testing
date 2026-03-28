@@ -1,0 +1,63 @@
+{
+  "function": "get_hvac_str",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_hvac_str",
+      "line": 57
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 58
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 63
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 58
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 58
+    },
+    {
+      "id": 5,
+      "label": "exit:get_hvac_str",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

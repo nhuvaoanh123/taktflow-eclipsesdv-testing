@@ -1,0 +1,21 @@
+{
+  "function": "remove_listener",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:remove_listener",
+      "line": 565
+    },
+    {
+      "id": 1,
+      "label": "exit:remove_listener",
+      "line": 589
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

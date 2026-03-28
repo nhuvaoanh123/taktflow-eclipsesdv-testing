@@ -1,0 +1,976 @@
+[
+  {
+    "function": "is_running_in_github_actions",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "clear",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 32,
+    "calls": [
+      "self.warnings.clear"
+    ]
+  },
+  {
+    "function": "_loc",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 35,
+    "calls": [
+      "file.relative_to",
+      "file.is_absolute"
+    ]
+  },
+  {
+    "function": "_print",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 52,
+    "calls": [
+      "is_running_in_github_actions",
+      "prefix.upper",
+      "self._loc",
+      "print"
+    ]
+  },
+  {
+    "function": "debug",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 64,
+    "calls": [
+      "self._print"
+    ]
+  },
+  {
+    "function": "info",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 67,
+    "calls": [
+      "self._print"
+    ]
+  },
+  {
+    "function": "notice",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 70,
+    "calls": [
+      "self._print"
+    ]
+  },
+  {
+    "function": "warning",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 73,
+    "calls": [
+      "self._print",
+      "self.warnings.append"
+    ]
+  },
+  {
+    "function": "fatal",
+    "file": "src/registry_manager/gh_logging.py",
+    "line": 79,
+    "calls": [
+      "self._print",
+      "SystemExit"
+    ]
+  },
+  {
+    "function": "parse_args",
+    "file": "src/registry_manager/main.py",
+    "line": 33,
+    "calls": [
+      "parser.add_argument",
+      "argparse.ArgumentParser",
+      "parser.parse_args"
+    ]
+  },
+  {
+    "function": "get_token",
+    "file": "src/registry_manager/main.py",
+    "line": 55,
+    "calls": [
+      "os.getenv",
+      "log.debug",
+      "subprocess.check_output"
+    ]
+  },
+  {
+    "function": "is_release_semver_acceptable",
+    "file": "src/registry_manager/main.py",
+    "line": 81,
+    "calls": [
+      "max",
+      "log.warning"
+    ]
+  },
+  {
+    "function": "plan_module_updates",
+    "file": "src/registry_manager/main.py",
+    "line": 144,
+    "calls": [
+      "updated_modules.append",
+      "gh.get_latest_release",
+      "gh.try_get_module_file_content",
+      "parse_MODULE_file_content",
+      "is_release_semver_acceptable",
+      "ModuleUpdateInfo",
+      "log.debug",
+      "log.info",
+      "log.notice",
+      "log.warning",
+      "str"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "src/registry_manager/main.py",
+    "line": 215,
+    "calls": [
+      "len",
+      "log.clear",
+      "read_modules",
+      "GithubWrapper",
+      "plan_module_updates",
+      "ModuleUpdateRunner",
+      "log.notice",
+      "parse_args",
+      "log.info",
+      "get_token",
+      "log.fatal"
+    ]
+  },
+  {
+    "function": "cli",
+    "file": "src/registry_manager/main.py",
+    "line": 246,
+    "calls": [
+      "main"
+    ]
+  },
+  {
+    "function": "_parse_versions",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 34,
+    "calls": [
+      "sorted",
+      "isinstance",
+      "log.fatal",
+      "Version"
+    ]
+  },
+  {
+    "function": "read_modules",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 54,
+    "calls": [
+      "Path",
+      "try_parse_metadata_json",
+      "modules.append",
+      "metadata_path.parent.is_dir",
+      "log.fatal"
+    ]
+  },
+  {
+    "function": "try_parse_metadata_json",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 76,
+    "calls": [
+      "len",
+      "open",
+      "isinstance",
+      "metadata_json.exists",
+      "data.get",
+      "bool",
+      "module_path.is_dir",
+      "json.load",
+      "repo.startswith",
+      "_parse_versions",
+      "log.warning",
+      "module_path.name.startswith",
+      "BazelModuleInfo"
+    ]
+  },
+  {
+    "function": "parse_MODULE_file_content",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 127,
+    "calls": [
+      "m_ver.group",
+      "int",
+      "re.search",
+      "ModuleFileContent",
+      "Version",
+      "m_cl.group",
+      "str"
+    ]
+  },
+  {
+    "function": "_sha256_from_bytes",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 147,
+    "calls": [
+      "h.update",
+      "base64.b64encode",
+      "h.digest",
+      "hashlib.sha256"
+    ]
+  },
+  {
+    "function": "sha256_from_url",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 160,
+    "calls": [
+      "_sha256_from_bytes",
+      "resp.read",
+      "urllib.request.urlopen",
+      "chunk_iter"
+    ]
+  },
+  {
+    "function": "chunk_iter",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 164,
+    "calls": [
+      "resp.read"
+    ]
+  },
+  {
+    "function": "sha256_from_string",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 171,
+    "calls": [
+      "_sha256_from_bytes",
+      "content.encode"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 183,
+    "calls": [
+      "Path",
+      "str"
+    ]
+  },
+  {
+    "function": "generate_files",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 189,
+    "calls": [
+      "self._generate_source_json",
+      "self._write_files",
+      "self._add_version_to_metadata",
+      "self._create_patch_for_module_version_if_mismatch"
+    ]
+  },
+  {
+    "function": "_generate_source_json",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 203,
+    "calls": [
+      "sha256_from_url",
+      "open",
+      "f.write",
+      "self.info.module.org_and_repo.split",
+      "json.dump",
+      "self.module_version_path.mkdir",
+      "sha256_from_string",
+      "self.patches.items"
+    ]
+  },
+  {
+    "function": "_add_version_to_metadata",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 225,
+    "calls": [
+      "open",
+      "f.seek",
+      "str",
+      "f.write",
+      "json.load",
+      "json.dump",
+      "RuntimeError",
+      "f.truncate",
+      "_parse_versions",
+      "metadata.get"
+    ]
+  },
+  {
+    "function": "_write_files",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 248,
+    "calls": [
+      "open",
+      "patches_dir.mkdir",
+      "f.write",
+      "ValueError",
+      "self.module_version_path.mkdir",
+      "pf.write",
+      "self.patches.items"
+    ]
+  },
+  {
+    "function": "_create_patch_for_module_version_if_mismatch",
+    "file": "src/registry_manager/bazel_wrapper.py",
+    "line": 271,
+    "calls": [
+      "m.group",
+      "difflib.unified_diff",
+      "self.info.mod_file.content.splitlines",
+      "\"\".join",
+      "re.sub",
+      "ValueError",
+      "log.debug",
+      "log.info",
+      "stamped_content.splitlines"
+    ]
+  },
+  {
+    "function": "tarball",
+    "file": "src/registry_manager/github_wrapper.py",
+    "line": 34,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/registry_manager/github_wrapper.py",
+    "line": 41,
+    "calls": [
+      "github.Github"
+    ]
+  },
+  {
+    "function": "get_latest_release",
+    "file": "src/registry_manager/github_wrapper.py",
+    "line": 46,
+    "calls": [
+      "self.gh.get_repo",
+      "repo.get_releases",
+      "GitHubReleaseInfo",
+      "Version",
+      "sorted",
+      "all_releases.append",
+      "release.tag_name.lstrip",
+      "log.notice",
+      "log.warning"
+    ]
+  },
+  {
+    "function": "try_get_module_file_content",
+    "file": "src/registry_manager/github_wrapper.py",
+    "line": 91,
+    "calls": [
+      "isinstance",
+      "self.gh.get_repo",
+      "repo.get_contents",
+      "log.warning",
+      "content.decoded_content.decode"
+    ]
+  },
+  {
+    "function": "latest_version",
+    "file": "src/registry_manager/__init__.py",
+    "line": 32,
+    "calls": [
+      "ValueError"
+    ]
+  },
+  {
+    "function": "major_version",
+    "file": "src/registry_manager/__init__.py",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/registry_manager/version.py",
+    "line": 5,
+    "calls": [
+      "TypeError",
+      "semver.Version.parse",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "semver",
+    "file": "src/registry_manager/version.py",
+    "line": 17,
+    "calls": []
+  },
+  {
+    "function": "__lt__",
+    "file": "src/registry_manager/version.py",
+    "line": 20,
+    "calls": [
+      "isinstance"
+    ]
+  },
+  {
+    "function": "__eq__",
+    "file": "src/registry_manager/version.py",
+    "line": 28,
+    "calls": [
+      "isinstance"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "src/registry_manager/version.py",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "tests/conftest.py",
+    "line": 29,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "_print",
+    "file": "tests/conftest.py",
+    "line": 36,
+    "calls": [
+      "self.warning_messages.append",
+      "self.info_messages.append",
+      "self.error_messages.append",
+      "self.debug_messages.append"
+    ]
+  },
+  {
+    "function": "mock_logger",
+    "file": "tests/conftest.py",
+    "line": 50,
+    "calls": [
+      "MockLogger"
+    ]
+  },
+  {
+    "function": "build_fake_filesystem",
+    "file": "tests/conftest.py",
+    "line": 56,
+    "calls": [
+      "isinstance",
+      "base.rstrip",
+      "_build",
+      "fs.create_file",
+      "structure.items",
+      "fs.makedirs"
+    ]
+  },
+  {
+    "function": "_build",
+    "file": "tests/conftest.py",
+    "line": 59,
+    "calls": [
+      "isinstance",
+      "base.rstrip",
+      "_build",
+      "fs.create_file",
+      "structure.items",
+      "fs.makedirs"
+    ]
+  },
+  {
+    "function": "basic_registry_setup",
+    "file": "tests/conftest.py",
+    "line": 73,
+    "calls": [
+      "build_fake_filesystem",
+      "json.dumps"
+    ]
+  },
+  {
+    "function": "_setup",
+    "file": "tests/conftest.py",
+    "line": 76,
+    "calls": [
+      "build_fake_filesystem",
+      "json.dumps"
+    ]
+  },
+  {
+    "function": "make_module_info",
+    "file": "tests/conftest.py",
+    "line": 95,
+    "calls": [
+      "Path",
+      "BazelModuleInfo",
+      "Version"
+    ]
+  },
+  {
+    "function": "make_release_info",
+    "file": "tests/conftest.py",
+    "line": 112,
+    "calls": [
+      "datetime",
+      "GitHubReleaseInfo",
+      "Version"
+    ]
+  },
+  {
+    "function": "make_module_content",
+    "file": "tests/conftest.py",
+    "line": 130,
+    "calls": [
+      "int",
+      "version.split",
+      "ModuleFileContent",
+      "Version"
+    ]
+  },
+  {
+    "function": "make_update_info",
+    "file": "tests/conftest.py",
+    "line": 146,
+    "calls": [
+      "make_module_content",
+      "make_release_info",
+      "ModuleUpdateInfo",
+      "make_module_info"
+    ]
+  },
+  {
+    "function": "run_file_generation",
+    "file": "tests/conftest.py",
+    "line": 163,
+    "calls": [
+      "patch",
+      "ModuleUpdateRunner",
+      "runner.generate_files"
+    ]
+  },
+  {
+    "function": "setup_module_metadata",
+    "file": "tests/conftest.py",
+    "line": 176,
+    "calls": [
+      "modules_config.items",
+      "build_fake_filesystem",
+      "json.dumps"
+    ]
+  },
+  {
+    "function": "_setup",
+    "file": "tests/conftest.py",
+    "line": 179,
+    "calls": [
+      "modules_config.items",
+      "build_fake_filesystem",
+      "json.dumps"
+    ]
+  },
+  {
+    "function": "test_read_specific_modules_by_name",
+    "file": "tests/test_module_reading.py",
+    "line": 26,
+    "calls": [
+      "len",
+      "os.chdir",
+      "read_modules",
+      "setup_module_metadata"
+    ]
+  },
+  {
+    "function": "test_filter_out_obsolete_modules",
+    "file": "tests/test_module_reading.py",
+    "line": 47,
+    "calls": [
+      "os.chdir",
+      "read_modules",
+      "setup_module_metadata"
+    ]
+  },
+  {
+    "function": "test_filter_out_non_github_modules",
+    "file": "tests/test_module_reading.py",
+    "line": 72,
+    "calls": [
+      "os.chdir",
+      "read_modules",
+      "setup_module_metadata"
+    ]
+  },
+  {
+    "function": "test_versions_sorted_semver_desc",
+    "file": "tests/test_module_reading.py",
+    "line": 95,
+    "calls": [
+      "os.chdir",
+      "setup_module_metadata",
+      "read_modules",
+      "Version"
+    ]
+  },
+  {
+    "function": "test_invalid_versions_still_work",
+    "file": "tests/test_module_reading.py",
+    "line": 119,
+    "calls": [
+      "len",
+      "read_modules",
+      "setup_module_metadata",
+      "os.chdir",
+      "sorted",
+      "str"
+    ]
+  },
+  {
+    "function": "test_token_from_cli_argument",
+    "file": "tests/test_token.py",
+    "line": 24,
+    "calls": [
+      "get_token",
+      "patch.dict",
+      "Namespace"
+    ]
+  },
+  {
+    "function": "test_token_from_environment",
+    "file": "tests/test_token.py",
+    "line": 29,
+    "calls": [
+      "get_token",
+      "patch.dict",
+      "Namespace"
+    ]
+  },
+  {
+    "function": "test_token_fallback_when_unavailable",
+    "file": "tests/test_token.py",
+    "line": 34,
+    "calls": [
+      "patch.dict",
+      "Namespace",
+      "patch",
+      "get_token",
+      "subprocess.CalledProcessError"
+    ]
+  },
+  {
+    "function": "test_generates_source_json",
+    "file": "tests/test_file_generation.py",
+    "line": 29,
+    "calls": [
+      "Path",
+      "json.loads",
+      "os.chdir",
+      "ModuleUpdateRunner",
+      "runner.generate_files",
+      "patch",
+      "source_file.read_text",
+      "basic_registry_setup",
+      "source_file.exists",
+      "make_update_info"
+    ]
+  },
+  {
+    "function": "test_generates_module_file",
+    "file": "tests/test_file_generation.py",
+    "line": 61,
+    "calls": [
+      "Path",
+      "module_file.exists",
+      "os.chdir",
+      "module_file.read_text",
+      "ModuleUpdateRunner",
+      "runner.generate_files",
+      "patch",
+      "basic_registry_setup",
+      "make_update_info"
+    ]
+  },
+  {
+    "function": "test_creates_patch_when_mismatch",
+    "file": "tests/test_file_generation.py",
+    "line": 110,
+    "calls": [
+      "Path",
+      "patches_dir.exists",
+      "os.chdir",
+      "ModuleUpdateRunner",
+      "runner.generate_files",
+      "patch",
+      "patch_file.exists",
+      "patch_file.read_text",
+      "basic_registry_setup",
+      "make_update_info"
+    ]
+  },
+  {
+    "function": "test_no_patch_when_versions_match",
+    "file": "tests/test_file_generation.py",
+    "line": 157,
+    "calls": [
+      "Path",
+      "json.loads",
+      "os.chdir",
+      "ModuleUpdateRunner",
+      "runner.generate_files",
+      "patch",
+      "source_path.read_text",
+      "basic_registry_setup",
+      "make_update_info"
+    ]
+  },
+  {
+    "function": "test_appends_version_with_semver_sorting",
+    "file": "tests/test_file_generation.py",
+    "line": 185,
+    "calls": [
+      "Path",
+      "json.loads",
+      "os.chdir",
+      "ModuleUpdateRunner",
+      "runner.generate_files",
+      "patch",
+      "metadata_path.read_text",
+      "basic_registry_setup",
+      "make_update_info"
+    ]
+  },
+  {
+    "function": "test_parse_complete_module_file",
+    "file": "tests/test_module_parsing.py",
+    "line": 20,
+    "calls": [
+      "parse_MODULE_file_content",
+      "str"
+    ]
+  },
+  {
+    "function": "test_parse_minimal_module_file",
+    "file": "tests/test_module_parsing.py",
+    "line": 27,
+    "calls": [
+      "parse_MODULE_file_content"
+    ]
+  },
+  {
+    "function": "test_parse_module_file_content_preserved",
+    "file": "tests/test_module_parsing.py",
+    "line": 34,
+    "calls": [
+      "parse_MODULE_file_content"
+    ]
+  },
+  {
+    "function": "test_parse_args_no_arguments",
+    "file": "tests/test_args.py",
+    "line": 20,
+    "calls": [
+      "parse_args"
+    ]
+  },
+  {
+    "function": "test_parse_args_with_token",
+    "file": "tests/test_args.py",
+    "line": 25,
+    "calls": [
+      "parse_args"
+    ]
+  },
+  {
+    "function": "test_parse_args_with_module_names",
+    "file": "tests/test_args.py",
+    "line": 29,
+    "calls": [
+      "parse_args"
+    ]
+  },
+  {
+    "function": "test_parse_args_with_token_and_modules",
+    "file": "tests/test_args.py",
+    "line": 33,
+    "calls": [
+      "parse_args"
+    ]
+  },
+  {
+    "function": "verify_new_version",
+    "file": "tests/test_main.py",
+    "line": 33,
+    "calls": [
+      "is_release_semver_acceptable",
+      "Version"
+    ]
+  },
+  {
+    "function": "test_bumping_patch_version",
+    "file": "tests/test_main.py",
+    "line": 37,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_release_of_existing_versions",
+    "file": "tests/test_main.py",
+    "line": 48,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_backwards_patch",
+    "file": "tests/test_main.py",
+    "line": 53,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_minor_version_bump",
+    "file": "tests/test_main.py",
+    "line": 59,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_major_version_bump",
+    "file": "tests/test_main.py",
+    "line": 65,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_patch_of_old_release",
+    "file": "tests/test_main.py",
+    "line": 70,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_backwards_patch_suffix",
+    "file": "tests/test_main.py",
+    "line": 75,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_forward_patch_suffix",
+    "file": "tests/test_main.py",
+    "line": 81,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_prerelease_after_release",
+    "file": "tests/test_main.py",
+    "line": 87,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_all_bets_are_off_for_non_semver",
+    "file": "tests/test_main.py",
+    "line": 92,
+    "calls": [
+      "verify_new_version"
+    ]
+  },
+  {
+    "function": "test_all_correct",
+    "file": "tests/test_noop.py",
+    "line": 23,
+    "calls": [
+      "capsys.readouterr",
+      "build_fake_filesystem",
+      "line.lower",
+      "json.dumps",
+      "patch",
+      "MagicMock",
+      "suppress",
+      "captured.splitlines",
+      "main",
+      "print"
+    ]
+  },
+  {
+    "function": "test_plan_finds_module_needing_update",
+    "file": "tests/test_update_planning.py",
+    "line": 23,
+    "calls": [
+      "len",
+      "plan_module_updates",
+      "Namespace",
+      "MagicMock",
+      "make_module_info",
+      "str",
+      "make_release_info"
+    ]
+  },
+  {
+    "function": "test_plan_skips_uptodate_modules",
+    "file": "tests/test_update_planning.py",
+    "line": 45,
+    "calls": [
+      "gh.try_get_module_file_content.assert_not_called",
+      "len",
+      "plan_module_updates",
+      "Namespace",
+      "MagicMock",
+      "make_module_info",
+      "make_release_info"
+    ]
+  },
+  {
+    "function": "test_plan_handles_missing_module_file",
+    "file": "tests/test_update_planning.py",
+    "line": 62,
+    "calls": [
+      "len",
+      "plan_module_updates",
+      "Namespace",
+      "MagicMock",
+      "make_module_info",
+      "make_release_info"
+    ]
+  },
+  {
+    "function": "_get_warnings",
+    "file": "tests/test_update_planning.py",
+    "line": 78,
+    "calls": [
+      "line.lower",
+      "capsys.readouterr"
+    ]
+  },
+  {
+    "function": "test_plan_skips_non_semver_release",
+    "file": "tests/test_update_planning.py",
+    "line": 86,
+    "calls": [
+      "len",
+      "plan_module_updates",
+      "Namespace",
+      "MagicMock",
+      "_get_warnings",
+      "make_module_info",
+      "make_release_info"
+    ]
+  },
+  {
+    "function": "test_version_smaller",
+    "file": "tests/test_version.py",
+    "line": 17,
+    "calls": [
+      "Version"
+    ]
+  }
+]

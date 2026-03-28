@@ -1,0 +1,21 @@
+{
+  "function": "heartbeat",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:heartbeat",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:heartbeat",
+      "line": 82
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

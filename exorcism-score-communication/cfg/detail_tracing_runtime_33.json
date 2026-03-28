@@ -1,0 +1,21 @@
+{
+  "function": "detail_tracing_runtime",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:detail_tracing_runtime",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:detail_tracing_runtime",
+      "line": 60
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

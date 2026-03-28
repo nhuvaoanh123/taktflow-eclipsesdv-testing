@@ -1,0 +1,121 @@
+[
+  {
+    "function": "init_logging",
+    "file": "gpsd_feeder.py",
+    "start_line": 40,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "format",
+    "file": "gpsd_feeder.py",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "parse_env_log",
+    "file": "gpsd_feeder.py",
+    "start_line": 82,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 9,
+    "loc": 37,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "parse_level",
+    "file": "gpsd_feeder.py",
+    "start_line": 83,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 14,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "gpsd_feeder.py",
+    "start_line": 124,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "shutdown",
+    "file": "gpsd_feeder.py",
+    "start_line": 144,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setData",
+    "file": "gpsd_feeder.py",
+    "start_line": 147,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 9,
+    "loc": 22,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "gpsd_feeder.py",
+    "start_line": 172,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "run",
+    "file": "gpsd_feeder.py",
+    "start_line": 190,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 23,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "shutdown",
+    "file": "gpsd_feeder.py",
+    "start_line": 214,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "terminationSignalreceived",
+    "file": "gpsd_feeder.py",
+    "start_line": 322,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  }
+]

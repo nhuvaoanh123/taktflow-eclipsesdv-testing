@@ -1,0 +1,21 @@
+{
+  "function": "ProxyBinding",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProxyBinding",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:ProxyBinding",
+      "line": 65
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

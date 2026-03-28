@@ -1,0 +1,21 @@
+{
+  "function": "test_atomic_waker_mt",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_atomic_waker_mt",
+      "line": 150
+    },
+    {
+      "id": 1,
+      "label": "exit:test_atomic_waker_mt",
+      "line": 178
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

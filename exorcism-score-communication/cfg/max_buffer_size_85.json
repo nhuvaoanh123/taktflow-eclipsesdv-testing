@@ -1,0 +1,21 @@
+{
+  "function": "max_buffer_size",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:max_buffer_size",
+      "line": 85
+    },
+    {
+      "id": 1,
+      "label": "exit:max_buffer_size",
+      "line": 93
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

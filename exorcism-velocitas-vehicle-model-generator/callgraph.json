@@ -1,0 +1,721 @@
+[
+  {
+    "function": "main",
+    "file": "src/velocitas/model_generator/cli.py",
+    "line": 26,
+    "calls": [
+      "', '.join",
+      "argparse.ArgumentParser",
+      "len",
+      "generate_model",
+      "parser.add_argument",
+      "parser.parse_args",
+      "args.extended_attributes.split",
+      "print"
+    ]
+  },
+  {
+    "function": "camel_to_snake_case",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 19,
+    "calls": [
+      "map",
+      "re.findall",
+      "\"_\".join"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "__enter__",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 38,
+    "calls": [
+      "self.indent"
+    ]
+  },
+  {
+    "function": "__exit__",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 43,
+    "calls": [
+      "self.dedent"
+    ]
+  },
+  {
+    "function": "reset",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "set_position",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 52,
+    "calls": []
+  },
+  {
+    "function": "get_content",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 56,
+    "calls": [
+      "\"\".join"
+    ]
+  },
+  {
+    "function": "write",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 61,
+    "calls": [
+      "text.split",
+      "len",
+      "line.strip",
+      "self.model_code.insert"
+    ]
+  },
+  {
+    "function": "indent",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 96,
+    "calls": []
+  },
+  {
+    "function": "dedent",
+    "file": "src/velocitas/model_generator/utils.py",
+    "line": 100,
+    "calls": [
+      "SyntaxError"
+    ]
+  },
+  {
+    "function": "generate_model",
+    "file": "src/velocitas/model_generator/__init__.py",
+    "line": 35,
+    "calls": [
+      "', '.join",
+      "len",
+      "include_dirs.extend",
+      "shutil.rmtree",
+      "sys.exit",
+      "FileImport",
+      "VehicleModelCppGenerator",
+      "os.path.exists",
+      "VehicleModelPythonGenerator",
+      "print"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 31,
+    "calls": [
+      "set",
+      "CodeGeneratorContext",
+      "root_package.split"
+    ]
+  },
+  {
+    "function": "generate",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 50,
+    "calls": [
+      "self.__gen_model",
+      "self.__visit_nodes",
+      "self.__gen_package",
+      "os.path.join",
+      "os.makedirs"
+    ]
+  },
+  {
+    "function": "__gen_package",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 62,
+    "calls": [
+      "open",
+      "self.ctx.get_content",
+      "file.write",
+      "\".\".join",
+      "self.ctx.reset",
+      "os.path.join",
+      "self.ctx.indent",
+      "self.ctx.dedent",
+      "self.ctx.write"
+    ]
+  },
+  {
+    "function": "__visit_nodes",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 81,
+    "calls": [
+      "self.__gen_model",
+      "self.__visit_nodes",
+      "os.path.join",
+      "os.makedirs",
+      "os.path.exists"
+    ]
+  },
+  {
+    "function": "__gen_header",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 93,
+    "calls": [
+      "self.ctx.write"
+    ]
+  },
+  {
+    "function": "__gen_imports",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 103,
+    "calls": [
+      "len",
+      "self.model_imports.add",
+      "self.imports.clear",
+      "imp.split",
+      "sorted",
+      "self.ctx.indent",
+      "self.ctx.dedent",
+      "self.model_imports.clear",
+      "self.ctx.write"
+    ]
+  },
+  {
+    "function": "__write_collections",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 126,
+    "calls": [
+      "collection.ctx.get_content",
+      "self.collections.clear",
+      "self.ctx.write"
+    ]
+  },
+  {
+    "function": "__gen_model_docstring",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 133,
+    "calls": [
+      "len",
+      "hasattr",
+      "isinstance",
+      "\", \".join",
+      "self.ctx.indent",
+      "self.ctx.dedent",
+      "self.ctx.write"
+    ]
+  },
+  {
+    "function": "__gen_model",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 161,
+    "calls": [
+      "self.ctx.get_content",
+      "self.ctx.indent",
+      "self.__get_datatype",
+      "self.ctx.write",
+      "self.__gen_imports",
+      "file.write",
+      "self.collections.append",
+      "\".\".join",
+      "self.ctx.reset",
+      "self.imports.add",
+      "self.ctx.set_position",
+      "VssCollection",
+      "self.__write_collections",
+      "open",
+      "self.model_imports.add",
+      "self.__gen_header",
+      "os.path.join",
+      "self.ctx.dedent",
+      "self.__gen_model_docstring"
+    ]
+  },
+  {
+    "function": "__get_datatype",
+    "file": "src/velocitas/model_generator/python/python_generator.py",
+    "line": 232,
+    "calls": [
+      "datatype[0].upper"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/python/vss_collection.py",
+    "line": 37,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/python/vss_collection.py",
+    "line": 53,
+    "calls": [
+      "self.__gen_collection",
+      "CodeGeneratorContext"
+    ]
+  },
+  {
+    "function": "__gen_collection",
+    "file": "src/velocitas/model_generator/python/vss_collection.py",
+    "line": 59,
+    "calls": [
+      "self.__gen_getter",
+      "len",
+      "isinstance",
+      "self.ctx.write",
+      "self.__parse_instances",
+      "self.ctx.indent",
+      "def_ctx.write",
+      "re.match",
+      "self.__gen_collection_types",
+      "print",
+      "body_ctx.write"
+    ]
+  },
+  {
+    "function": "__gen_collection_types",
+    "file": "src/velocitas/model_generator/python/vss_collection.py",
+    "line": 137,
+    "calls": [
+      "body_ctx.write",
+      "def_ctx.write",
+      "print",
+      "type_ctx.write"
+    ]
+  },
+  {
+    "function": "__gen_getter",
+    "file": "src/velocitas/model_generator/python/vss_collection.py",
+    "line": 153,
+    "calls": [
+      "range",
+      "len",
+      "body_ctx.dedent",
+      "body_ctx.indent",
+      "base_ctx.write",
+      "body_ctx.write"
+    ]
+  },
+  {
+    "function": "__parse_instances",
+    "file": "src/velocitas/model_generator/python/vss_collection.py",
+    "line": 174,
+    "calls": [
+      "range",
+      "type",
+      "isinstance",
+      "VssInstance",
+      "re.split",
+      "ValueError",
+      "int",
+      "re.match",
+      "result.append"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/tree_generator/file_import.py",
+    "line": 24,
+    "calls": [
+      "Exception.__init__"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "src/velocitas/model_generator/tree_generator/file_import.py",
+    "line": 29,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/tree_generator/file_import.py",
+    "line": 34,
+    "calls": [
+      "self.__get_format_implementation"
+    ]
+  },
+  {
+    "function": "__get_format_implementation",
+    "file": "src/velocitas/model_generator/tree_generator/file_import.py",
+    "line": 51,
+    "calls": [
+      "Json",
+      "os.path.splitext",
+      "UnsupportedFileFormat",
+      "Vspec"
+    ]
+  },
+  {
+    "function": "load_tree",
+    "file": "src/velocitas/model_generator/tree_generator/file_import.py",
+    "line": 88,
+    "calls": [
+      "self.format_implementation.load_tree"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/tree_generator/file_formats.py",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "load_tree",
+    "file": "src/velocitas/model_generator/tree_generator/file_formats.py",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/tree_generator/file_formats.py",
+    "line": 38,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "load_tree",
+    "file": "src/velocitas/model_generator/tree_generator/file_formats.py",
+    "line": 52,
+    "calls": [
+      "vspec.merge_tree",
+      "vspec.load_units",
+      "print",
+      "vspec.load_tree"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/tree_generator/file_formats.py",
+    "line": 82,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "__extend_fields",
+    "file": "src/velocitas/model_generator/tree_generator/file_formats.py",
+    "line": 88,
+    "calls": [
+      "self.__extend_fields",
+      "d[\"children\"].values"
+    ]
+  },
+  {
+    "function": "load_tree",
+    "file": "src/velocitas/model_generator/tree_generator/file_formats.py",
+    "line": 95,
+    "calls": [
+      "open",
+      "iter",
+      "vspec.render_tree",
+      "vspec.load_units",
+      "self.__extend_fields",
+      "json.load",
+      "next",
+      "output_json.values",
+      "print"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 32,
+    "calls": [
+      "self.__split_into_namespace_list",
+      "set",
+      "CodeGeneratorContext"
+    ]
+  },
+  {
+    "function": "__split_into_namespace_list",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 47,
+    "calls": [
+      "namespace.split"
+    ]
+  },
+  {
+    "function": "generate",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 56,
+    "calls": [
+      "self.__gen_conan_package",
+      "self.__gen_model",
+      "self.__visit_nodes",
+      "self.__to_folder_names",
+      "os.path.join",
+      "os.makedirs"
+    ]
+  },
+  {
+    "function": "__gen_conan_package",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 71,
+    "calls": [
+      "os.path.join",
+      "file.write",
+      "open"
+    ]
+  },
+  {
+    "function": "__visit_nodes",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 98,
+    "calls": [
+      "self.__gen_model",
+      "self.__visit_nodes",
+      "self.__to_folder_names",
+      "os.path.join",
+      "os.makedirs",
+      "os.path.exists"
+    ]
+  },
+  {
+    "function": "__generate_opening_namespace_text",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 112,
+    "calls": [
+      "self.__get_namespace"
+    ]
+  },
+  {
+    "function": "__generate_closing_namespace_text",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 115,
+    "calls": [
+      "self.__get_namespace"
+    ]
+  },
+  {
+    "function": "__convert_to_namespace",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 118,
+    "calls": [
+      "camel_to_snake_case"
+    ]
+  },
+  {
+    "function": "__to_folder_names",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 124,
+    "calls": [
+      "self.__convert_to_namespace"
+    ]
+  },
+  {
+    "function": "__get_namespace",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 127,
+    "calls": [
+      "self.__convert_to_namespace",
+      "\"::\".join"
+    ]
+  },
+  {
+    "function": "__generate_guard_name",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 131,
+    "calls": [
+      "path_list.append",
+      "self.__to_folder_names",
+      "\"_\".join",
+      "n.upper",
+      "node.name.upper"
+    ]
+  },
+  {
+    "function": "__gen_header",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 136,
+    "calls": [
+      "self.__generate_guard_name",
+      "self.ctx_header.write"
+    ]
+  },
+  {
+    "function": "__gen_footer",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 144,
+    "calls": [
+      "self.__generate_guard_name",
+      "self.ctx_header.write",
+      "self.__generate_closing_namespace_text"
+    ]
+  },
+  {
+    "function": "__gen_imports",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 151,
+    "calls": [
+      "len",
+      "self.includes.clear",
+      "self.external_includes.clear",
+      "sorted",
+      "self.ctx_header.write"
+    ]
+  },
+  {
+    "function": "__gen_model_docstring",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 173,
+    "calls": [
+      "self.ctx_header.write"
+    ]
+  },
+  {
+    "function": "__document_member",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 176,
+    "calls": [
+      "len",
+      "hasattr",
+      "isinstance",
+      "\", \".join",
+      "self.ctx_header.write"
+    ]
+  },
+  {
+    "function": "__gen_nested_class",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 201,
+    "calls": [
+      "CodeGeneratorContext",
+      "self.__get_namespace",
+      "ctor_initializer_list.append",
+      "\"\\n\\n\".join",
+      "\",\\n\".join",
+      "method_list.append",
+      "class_code_context.write",
+      "ctor_initializer_list_scope.write",
+      "name.endswith",
+      "class_name.endswith",
+      "name.startswith",
+      "range",
+      "class_code_context.get_content",
+      "self.external_includes.add",
+      "\";\\n\".join",
+      "return_scope.write",
+      "method_scope.write",
+      "method_context.write",
+      "len",
+      "member_list.append",
+      "method_context.get_content",
+      "class_code_context.indent",
+      "public_scope.write"
+    ]
+  },
+  {
+    "function": "__gen_collection_types",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 311,
+    "calls": [
+      "range",
+      "self.__gen_nested_class",
+      "len",
+      "collection_types.append",
+      "generated_classes[0].replace",
+      "self.__to_folder_names",
+      "self.__gen_instances",
+      "\"\\n\\n\".join",
+      "os.path.join",
+      "generated_classes.append",
+      "self.includes.add"
+    ]
+  },
+  {
+    "function": "__gen_model",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 342,
+    "calls": [
+      "self.__get_namespace",
+      "self.__to_folder_names",
+      "header_public.indent",
+      "self.__gen_collection_types",
+      "header_public.write",
+      "self.__gen_imports",
+      "file.write",
+      "self.ctx_header.get_content",
+      "self.__document_member",
+      "open",
+      "self.external_includes.add",
+      "self.__gen_header",
+      "os.path.join",
+      "self.ctx_header.write",
+      "self.__generate_opening_namespace_text",
+      "self.__gen_footer",
+      "self.ctx_header.reset",
+      "header_public.dedent",
+      "child.type.value.upper",
+      "self.__gen_model_docstring",
+      "self.__get_data_type"
+    ]
+  },
+  {
+    "function": "__gen_instances",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 420,
+    "calls": [
+      "re.match",
+      "isinstance",
+      "result.append",
+      "self.__parse_instances"
+    ]
+  },
+  {
+    "function": "__parse_instances",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 441,
+    "calls": [
+      "type",
+      "isinstance",
+      "re.split",
+      "ValueError",
+      "int",
+      "re.match"
+    ]
+  },
+  {
+    "function": "__get_data_type",
+    "file": "src/velocitas/model_generator/cpp/cpp_generator.py",
+    "line": 459,
+    "calls": [
+      "data_type[0].upper"
+    ]
+  },
+  {
+    "function": "prepare_vss_repo_data",
+    "file": "tests/conftest.py",
+    "line": 22,
+    "calls": [
+      "Path",
+      "subprocess.call",
+      "os.path.exists",
+      "os.path.isfile",
+      "os.path.join",
+      "download_file",
+      "os.makedirs"
+    ]
+  },
+  {
+    "function": "pytest_configure",
+    "file": "tests/conftest.py",
+    "line": 52,
+    "calls": [
+      "prepare_vss_repo_data"
+    ]
+  },
+  {
+    "function": "test_generate",
+    "file": "tests/test_model_generator.py",
+    "line": 41,
+    "calls": [
+      "Path",
+      "subprocess.check_call",
+      "generate_model",
+      "compileall.compile_dir",
+      "print"
+    ]
+  }
+]

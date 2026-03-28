@@ -1,0 +1,93 @@
+[
+  {
+    "function": "test_runtime",
+    "file": ".devcontainer/tests/automated_tests/runtime_test.py",
+    "line": 33,
+    "calls": [
+      "runtime.replace",
+      "subprocess.check_call"
+    ]
+  },
+  {
+    "function": "test_requirements",
+    "file": ".devcontainer/tests/automated_tests/requirements_test.py",
+    "line": 28,
+    "calls": [
+      "pkg_resources.parse_requirements",
+      "Path",
+      "str",
+      "pkg_resources.require",
+      "self.subTest"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "app/src/main.py",
+    "line": 56,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "on_start",
+    "file": "app/src/main.py",
+    "line": 61,
+    "calls": [
+      "self.Vehicle.Speed.subscribe"
+    ]
+  },
+  {
+    "function": "on_speed_change",
+    "file": "app/src/main.py",
+    "line": 68,
+    "calls": [
+      "data.get",
+      "json.dumps",
+      "self.publish_event"
+    ]
+  },
+  {
+    "function": "on_get_speed_request_received",
+    "file": "app/src/main.py",
+    "line": 85,
+    "calls": [
+      "logger.debug",
+      "json.dumps",
+      "self.Vehicle.Speed.get",
+      "self.publish_event"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "app/src/main.py",
+    "line": 116,
+    "calls": [
+      "vehicle_app.run",
+      "logger.info",
+      "SampleApp"
+    ]
+  },
+  {
+    "function": "test_get_current_speed",
+    "file": "app/tests/integration/integration_test.py",
+    "line": 26,
+    "calls": [
+      "json.loads",
+      "IntTestHelper",
+      "MqttClient",
+      "print"
+    ]
+  },
+  {
+    "function": "test_dummy",
+    "file": "app/tests/unit/test_run.py",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "get_sample_response_data",
+    "file": "app/tests/unit/test_run.py",
+    "line": 58,
+    "calls": []
+  }
+]

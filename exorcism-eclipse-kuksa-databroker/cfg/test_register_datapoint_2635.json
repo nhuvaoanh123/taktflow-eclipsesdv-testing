@@ -1,0 +1,21 @@
+{
+  "function": "test_register_datapoint",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_register_datapoint",
+      "line": 2635
+    },
+    {
+      "id": 1,
+      "label": "exit:test_register_datapoint",
+      "line": 2720
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

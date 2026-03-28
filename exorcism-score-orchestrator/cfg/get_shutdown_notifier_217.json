@@ -1,0 +1,21 @@
+{
+  "function": "get_shutdown_notifier",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_shutdown_notifier",
+      "line": 217
+    },
+    {
+      "id": 1,
+      "label": "exit:get_shutdown_notifier",
+      "line": 227
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

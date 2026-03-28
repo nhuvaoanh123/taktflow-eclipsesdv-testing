@@ -1,0 +1,21 @@
+{
+  "function": "sample_meta_info",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sample_meta_info",
+      "line": 314
+    },
+    {
+      "id": 1,
+      "label": "exit:sample_meta_info",
+      "line": 349
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

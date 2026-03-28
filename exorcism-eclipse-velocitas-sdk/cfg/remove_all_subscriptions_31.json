@@ -1,0 +1,55 @@
+{
+  "function": "remove_all_subscriptions",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:remove_all_subscriptions",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 32
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 36
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 32
+    },
+    {
+      "id": 4,
+      "label": "exit:remove_all_subscriptions",
+      "line": 36
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

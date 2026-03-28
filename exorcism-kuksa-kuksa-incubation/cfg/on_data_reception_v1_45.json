@@ -1,0 +1,21 @@
+{
+  "function": "on_data_reception_v1",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:on_data_reception_v1",
+      "line": 45
+    },
+    {
+      "id": 1,
+      "label": "exit:on_data_reception_v1",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "is_output_with_workload_names",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_output_with_workload_names",
+      "line": 546
+    },
+    {
+      "id": 1,
+      "label": "exit:is_output_with_workload_names",
+      "line": 551
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

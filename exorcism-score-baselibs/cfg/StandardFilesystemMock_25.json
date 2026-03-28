@@ -1,0 +1,21 @@
+{
+  "function": "StandardFilesystemMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:StandardFilesystemMock",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:StandardFilesystemMock",
+      "line": 56
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

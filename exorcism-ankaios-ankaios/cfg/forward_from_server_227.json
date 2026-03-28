@@ -1,0 +1,21 @@
+{
+  "function": "forward_from_server",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:forward_from_server",
+      "line": 227
+    },
+    {
+      "id": 1,
+      "label": "exit:forward_from_server",
+      "line": 251
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

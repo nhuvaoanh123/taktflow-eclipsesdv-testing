@@ -1,0 +1,145 @@
+{
+  "external": [
+    {
+      "name": "argparse-addons",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "attrs",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "bitstruct",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "can-j1939",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cantools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cmd2",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "colorama",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "crccheck",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "diskcache",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "exceptiongroup",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "grpcio",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "grpcio-tools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "iniconfig",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "jsonpath-ng",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "kuksa-client",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "numpy",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "packaging",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pluggy",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "ply",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "py-expression-eval",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pygments",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyperclip",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyserial",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pytest",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "python-can",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyyaml",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "textparser",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "tomli",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "types-protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "types-pyyaml",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "typing-extensions",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "wcwidth",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "websockets",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "wrapt",
+      "source": "requirements.txt"
+    }
+  ],
+  "internal": []
+}

@@ -1,0 +1,21 @@
+{
+  "function": "compile_remote_proto",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:compile_remote_proto",
+      "line": 61
+    },
+    {
+      "id": 1,
+      "label": "exit:compile_remote_proto",
+      "line": 93
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

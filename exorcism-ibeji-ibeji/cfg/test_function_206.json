@@ -1,0 +1,21 @@
+{
+  "function": "test_function",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_function",
+      "line": 206
+    },
+    {
+      "id": 1,
+      "label": "exit:test_function",
+      "line": 214
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

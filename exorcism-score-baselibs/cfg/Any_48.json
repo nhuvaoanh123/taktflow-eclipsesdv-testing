@@ -1,0 +1,21 @@
+{
+  "function": "Any",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Any",
+      "line": 48
+    },
+    {
+      "id": 1,
+      "label": "exit:Any",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

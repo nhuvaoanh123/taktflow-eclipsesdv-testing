@@ -1,0 +1,30 @@
+{
+  "function": "value_type_size_from_bytesize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:value_type_size_from_bytesize",
+      "line": 132
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 134
+    },
+    {
+      "id": 2,
+      "label": "exit:value_type_size_from_bytesize",
+      "line": 135
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

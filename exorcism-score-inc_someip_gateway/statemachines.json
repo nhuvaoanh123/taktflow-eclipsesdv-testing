@@ -1,0 +1,44 @@
+{
+  "state_machines": [
+    {
+      "file": "examples/car_window_sim/src/car_window.rs",
+      "line": 46,
+      "type": "match",
+      "condition": "window_state",
+      "states": [
+        "WindowState::Open",
+        "WindowState::Closed",
+        "WindowState::Opening",
+        "WindowState::Closing",
+        "WindowState::Stopped"
+      ]
+    },
+    {
+      "file": "examples/car_window_sim/src/car_window.rs",
+      "line": 65,
+      "type": "match",
+      "condition": "window_state",
+      "states": [
+        "WindowState::Open",
+        "WindowState::Closed",
+        "WindowState::Opening",
+        "WindowState::Closing",
+        "WindowState::Stopped"
+      ]
+    },
+    {
+      "file": "examples/car_window_sim/src/car_window.rs",
+      "line": 87,
+      "type": "match",
+      "condition": "window_state",
+      "states": [
+        "WindowState::Open",
+        "WindowState::Closed",
+        "WindowState::Opening",
+        "WindowState::Closing",
+        "WindowState::Stopped"
+      ]
+    }
+  ],
+  "count": 3
+}

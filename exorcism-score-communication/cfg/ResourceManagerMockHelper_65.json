@@ -1,0 +1,30 @@
+{
+  "function": "ResourceManagerMockHelper",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ResourceManagerMockHelper",
+      "line": 65
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 287
+    },
+    {
+      "id": 2,
+      "label": "exit:ResourceManagerMockHelper",
+      "line": 297
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

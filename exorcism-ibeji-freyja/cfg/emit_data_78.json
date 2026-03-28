@@ -1,0 +1,21 @@
+{
+  "function": "emit_data",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:emit_data",
+      "line": 78
+    },
+    {
+      "id": 1,
+      "label": "exit:emit_data",
+      "line": 149
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

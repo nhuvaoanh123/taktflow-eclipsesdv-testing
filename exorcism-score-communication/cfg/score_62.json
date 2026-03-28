@@ -1,0 +1,114 @@
+{
+  "function": "score",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:score",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "if ((was_old_shm_region_reopened_))",
+      "line": 311
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 336
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 311
+    },
+    {
+      "id": 4,
+      "label": "if ((!rollback_result.has_value()))",
+      "line": 321
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 327
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 321
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 328
+    },
+    {
+      "id": 8,
+      "label": "else",
+      "line": 311
+    },
+    {
+      "id": 9,
+      "label": "return_statement",
+      "line": 360
+    },
+    {
+      "id": 10,
+      "label": "exit:score",
+      "line": 403
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 9
+    },
+    {
+      "from": 2,
+      "to": 10
+    }
+  ]
+}

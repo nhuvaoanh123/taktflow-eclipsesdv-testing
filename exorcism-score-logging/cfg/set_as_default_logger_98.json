@@ -1,0 +1,21 @@
+{
+  "function": "set_as_default_logger",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_as_default_logger",
+      "line": 98
+    },
+    {
+      "id": 1,
+      "label": "exit:set_as_default_logger",
+      "line": 126
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

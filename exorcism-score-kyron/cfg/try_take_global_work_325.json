@@ -1,0 +1,21 @@
+{
+  "function": "try_take_global_work",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:try_take_global_work",
+      "line": 325
+    },
+    {
+      "id": 1,
+      "label": "exit:try_take_global_work",
+      "line": 333
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

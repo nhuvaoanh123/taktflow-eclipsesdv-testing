@@ -1,0 +1,1697 @@
+[
+  {
+    "function": "__init__",
+    "file": "dbcfeeder.py",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "dbcfeeder.py",
+    "start_line": 104,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 7,
+    "loc": 73,
+    "param_count": 9,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "stop",
+    "file": "dbcfeeder.py",
+    "start_line": 178,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_running",
+    "file": "dbcfeeder.py",
+    "start_line": 189,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_register_datapoints",
+    "file": "dbcfeeder.py",
+    "start_line": 192,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 17,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_run_receiver",
+    "file": "dbcfeeder.py",
+    "start_line": 210,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 11,
+    "loc": 61,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_vss_update",
+    "file": "dbcfeeder.py",
+    "start_line": 272,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 7,
+    "loc": 38,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_run_subscribe",
+    "file": "dbcfeeder.py",
+    "start_line": 311,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_run_transmitter",
+    "file": "dbcfeeder.py",
+    "start_line": 320,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_parse_config",
+    "file": "dbcfeeder.py",
+    "start_line": 328,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 27,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_get_kuksa_val_client",
+    "file": "dbcfeeder.py",
+    "start_line": 357,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 3,
+    "loc": 54,
+    "param_count": 2,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "_get_command_line_args_parser",
+    "file": "dbcfeeder.py",
+    "start_line": 413,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 62,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "dbcfeeder.py",
+    "start_line": 477,
+    "cyclomatic_complexity": 40,
+    "nesting_depth": 5,
+    "loc": 125,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "signal_handler",
+    "file": "dbcfeeder.py",
+    "start_line": 576,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_current_gear",
+    "file": "test/test_example_mapping/test_example_mapping.py",
+    "start_line": 32,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_parking_lock",
+    "file": "test/test_example_mapping/test_example_mapping.py",
+    "start_line": 67,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_vehicle_speed",
+    "file": "test/test_example_mapping/test_example_mapping.py",
+    "start_line": 102,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_vehicle_obd_speed",
+    "file": "test/test_example_mapping/test_example_mapping.py",
+    "start_line": 119,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapping_read",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_no_transform_default",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_no_transform_interval_500",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_no_transform_on_change_true",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_no_transform_on_change_false",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 118,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_no_transform_on_change_interval_500",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_no_transform_always",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 161,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapping_math",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 182,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapping_string_int",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 192,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapping_string_string",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 204,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapping_int_int",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 217,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapping_int_duplicate",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 230,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapping_int_bool",
+    "file": "test/test_mapping_transform/test_mapping_transform.py",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_default_dbc",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_split_dbc",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_duplicated_dbc",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_single_kcd",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_split_kcd",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 98,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mixed_file_types",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 113,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_get_message_by_non_existing_frame_id_raises_keyerror",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_get_signals_by_non_existing_frame_id_returns_empty_list",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 135,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_get_messages_for_unused_signal_name_returns_empty_list",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_duplicate_signal_name_dbc",
+    "file": "test/test_dbc/dbcparser_test.py",
+    "start_line": 145,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_unknown_transform",
+    "file": "test/test_mapping_error/test_mapping_error.py",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_vss2dbc_sensor",
+    "file": "test/test_mapping_error/test_mapping_error.py",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_mapper_fails_for_duplicate_signal_definition",
+    "file": "test/test_mapping_error/test_mapping_error.py",
+    "start_line": 56,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_mapper_ignores_unused_duplicate_signal_definition",
+    "file": "test/test_mapping_error/test_mapping_error.py",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "change_test_dir",
+    "file": "test/test_arguments/test_arguments.py",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_server_type",
+    "file": "test/test_arguments/test_arguments.py",
+    "start_line": 29,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "_start_can_bus_listener",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_stop_can_bus_listener",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_can_message_handles_known_messages",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_can_message_ignores_out_of_range_values",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 80,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_can_message_ignores_unknown_messages",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_dbc2vss_mappings",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 123,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_message_definition",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "assert_signal_mappings",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 161,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_j1939reader_processes_j1939_message",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 170,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_dbcreader_processes_can_message",
+    "file": "test/test_readers/test_readers.py",
+    "start_line": 194,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "_do_init",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "set_ip",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set_port",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set_tls",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_tls",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "set_root_ca_path",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set_tls_server_name",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set_token_path",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_connected",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_signal_defined",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_datapoint",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 100,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "supports_subscription",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "dbcfeederlib/clientwrapper.py",
+    "start_line": 112,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 36,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "_serial_reader",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 72,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 31,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_serial_procesor",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 104,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 7,
+    "loc": 48,
+    "param_count": 3,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_init_elm",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 153,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 51,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_wait_for_prompt",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 205,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_write_to_elm",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 209,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "_read_response",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 218,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 8,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_execute_command",
+    "file": "dbcfeederlib/elm2canbridge.py",
+    "start_line": 227,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/canmessage.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_arbitration_id",
+    "file": "dbcfeederlib/canmessage.py",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_data",
+    "file": "dbcfeederlib/canmessage.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 40,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 39,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_populate_signal_to_message_map",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 80,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 9,
+    "loc": 25,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_determine_db_format_and_encoding",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 106,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_add_db_file",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 116,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "can_frame_id_whitelist_mask",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_messages_for_signal",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 133,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_message_by_frame_id",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 143,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_signals_by_frame_id",
+    "file": "dbcfeederlib/dbcparser.py",
+    "start_line": 150,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 11,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/dbcreader.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "_rx_worker",
+    "file": "dbcfeederlib/dbcreader.py",
+    "start_line": 39,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 9,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_start_can_bus_listener",
+    "file": "dbcfeederlib/dbcreader.py",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_stop_can_bus_listener",
+    "file": "dbcfeederlib/dbcreader.py",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/canplayer.py",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "_process_log",
+    "file": "dbcfeederlib/canplayer.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_tx_worker",
+    "file": "dbcfeederlib/canplayer.py",
+    "start_line": 65,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "dbcfeederlib/canplayer.py",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "dbcfeederlib/canplayer.py",
+    "start_line": 78,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/canclient.py",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "dbcfeederlib/canclient.py",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "recv",
+    "file": "dbcfeederlib/canclient.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 16,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "send",
+    "file": "dbcfeederlib/canclient.py",
+    "start_line": 54,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 9,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "_do_init",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 71,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 41,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "on_broker_connectivity_change",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 113,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 7,
+    "loc": 15,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "is_connected",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_signal_defined",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 132,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 29,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "update_datapoint",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 162,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 28,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 191,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "supports_subscription",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 199,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "dbcfeederlib/databrokerclientwrapper.py",
+    "start_line": 202,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 20,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 8,
+    "flags": []
+  },
+  {
+    "function": "time_condition_fulfilled",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 87,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 23,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "change_condition_fulfilled",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 111,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 24,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "transform_value",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 136,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 9,
+    "loc": 63,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 212,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 46,
+    "param_count": 7,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "can_frame_id_whitelist",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 259,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 7,
+    "loc": 10,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "transform_dbc_value",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 270,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_extract_verify_transform",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 289,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 7,
+    "loc": 40,
+    "param_count": 3,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_analyze_dbc2vss",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 330,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 5,
+    "loc": 46,
+    "param_count": 4,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_analyze_vss2dbc",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 377,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 5,
+    "loc": 54,
+    "param_count": 4,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_analyze_signal",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 432,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 5,
+    "loc": 23,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_traverse_vss_node",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 456,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 7,
+    "loc": 26,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_dbc2vss_mapping",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 483,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 7,
+    "loc": 9,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_dbc2vss_entries",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 493,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_vss2dbc_entries",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 497,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_vss_names",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 501,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 7,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "has_dbc2vss_mapping",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 509,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "has_vss2dbc_mapping",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 512,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_dbc2vss_mappings",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 515,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "handle_update",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 520,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_default_values",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 535,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 9,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_value_dict",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 545,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 9,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__contains__",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 555,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__getitem__",
+    "file": "dbcfeederlib/dbc2vssmapper.py",
+    "start_line": 558,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "_do_init",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_connected",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 70,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_signal_defined",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 77,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "update_datapoint",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 90,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 115,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "supports_subscription",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "dbcfeederlib/serverclientwrapper.py",
+    "start_line": 125,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/j1939reader.py",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "_on_message",
+    "file": "dbcfeederlib/j1939reader.py",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "_start_can_bus_listener",
+    "file": "dbcfeederlib/j1939reader.py",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_stop_can_bus_listener",
+    "file": "dbcfeederlib/j1939reader.py",
+    "start_line": 56,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 23,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "is_running",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_start_can_bus_listener",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 70,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_stop_can_bus_listener",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 80,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 86,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_process_can_message",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 92,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 11,
+    "loc": 21,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_handle_decoded_frame",
+    "file": "dbcfeederlib/canreader.py",
+    "start_line": 114,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 7,
+    "loc": 33,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  }
+]

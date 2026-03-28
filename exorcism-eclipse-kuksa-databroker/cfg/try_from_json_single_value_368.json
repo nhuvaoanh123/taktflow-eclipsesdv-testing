@@ -1,0 +1,21 @@
+{
+  "function": "try_from_json_single_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:try_from_json_single_value",
+      "line": 368
+    },
+    {
+      "id": 1,
+      "label": "exit:try_from_json_single_value",
+      "line": 398
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

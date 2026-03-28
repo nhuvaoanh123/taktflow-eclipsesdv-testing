@@ -1,0 +1,21 @@
+{
+  "function": "InotifyInstanceFacade",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:InotifyInstanceFacade",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:InotifyInstanceFacade",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

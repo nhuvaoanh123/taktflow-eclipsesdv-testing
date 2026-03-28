@@ -1,0 +1,21 @@
+{
+  "function": "back_index",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:back_index",
+      "line": 266
+    },
+    {
+      "id": 1,
+      "label": "exit:back_index",
+      "line": 278
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

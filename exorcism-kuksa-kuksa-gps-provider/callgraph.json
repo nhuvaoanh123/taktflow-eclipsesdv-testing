@@ -1,0 +1,143 @@
+[
+  {
+    "function": "init_logging",
+    "file": "gpsd_feeder.py",
+    "line": 40,
+    "calls": [
+      "root_logger.setLevel",
+      "logging.getLogger",
+      "console_logger.setLevel",
+      "logging.StreamHandler",
+      "sys.stdout.isatty",
+      "logging.Formatter",
+      "console_logger.setFormatter",
+      "root_logger.addHandler",
+      "ColorFormatter"
+    ]
+  },
+  {
+    "function": "format",
+    "file": "gpsd_feeder.py",
+    "line": 76,
+    "calls": [
+      "formatter.format",
+      "logging.Formatter",
+      "self.FORMATS.get"
+    ]
+  },
+  {
+    "function": "parse_env_log",
+    "file": "gpsd_feeder.py",
+    "line": 82,
+    "calls": [
+      "Exception",
+      "type",
+      "len",
+      "env_log.split",
+      "level.upper",
+      "log_spec.split",
+      "level.lower",
+      "parse_level"
+    ]
+  },
+  {
+    "function": "parse_level",
+    "file": "gpsd_feeder.py",
+    "line": 83,
+    "calls": [
+      "level.upper",
+      "type",
+      "Exception",
+      "level.lower"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "gpsd_feeder.py",
+    "line": 124,
+    "calls": [
+      "self.client.checkConnection",
+      "self.client.authorize",
+      "sys.exit",
+      "self.client.start",
+      "KuksaClientThread",
+      "log.info",
+      "str",
+      "provider_config.get",
+      "log.error"
+    ]
+  },
+  {
+    "function": "shutdown",
+    "file": "gpsd_feeder.py",
+    "line": 144,
+    "calls": [
+      "self.client.stop"
+    ]
+  },
+  {
+    "function": "setData",
+    "file": "gpsd_feeder.py",
+    "line": 147,
+    "calls": [
+      "json.loads",
+      "log.debug",
+      "log.info",
+      "data.items",
+      "self.client.setValue",
+      "str",
+      "log.error"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "gpsd_feeder.py",
+    "line": 172,
+    "calls": [
+      "super",
+      "GPSDClient",
+      "sys.exit",
+      "provider_config.getint",
+      "log.info",
+      "str",
+      "provider_config.get",
+      "log.error"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "gpsd_feeder.py",
+    "line": 190,
+    "calls": [
+      "result.get",
+      "self.client.dict_stream",
+      "self.consumer.setData",
+      "log.debug",
+      "log.info",
+      "time.sleep",
+      "log.error"
+    ]
+  },
+  {
+    "function": "shutdown",
+    "file": "gpsd_feeder.py",
+    "line": 214,
+    "calls": [
+      "self.is_alive",
+      "self.join",
+      "self.client.close",
+      "self.consumer.shutdown",
+      "log.info"
+    ]
+  },
+  {
+    "function": "terminationSignalreceived",
+    "file": "gpsd_feeder.py",
+    "line": 322,
+    "calls": [
+      "gpsd_client.shutdown",
+      "os._exit",
+      "log.info"
+    ]
+  }
+]

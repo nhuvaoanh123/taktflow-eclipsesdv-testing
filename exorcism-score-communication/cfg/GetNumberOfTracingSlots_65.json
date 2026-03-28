@@ -1,0 +1,63 @@
+{
+  "function": "GetNumberOfTracingSlots",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetNumberOfTracingSlots",
+      "line": 65
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 111
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 116
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 111
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 121
+    },
+    {
+      "id": 5,
+      "label": "exit:GetNumberOfTracingSlots",
+      "line": 122
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

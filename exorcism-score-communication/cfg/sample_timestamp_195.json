@@ -1,0 +1,21 @@
+{
+  "function": "sample_timestamp",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sample_timestamp",
+      "line": 195
+    },
+    {
+      "id": 1,
+      "label": "exit:sample_timestamp",
+      "line": 212
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

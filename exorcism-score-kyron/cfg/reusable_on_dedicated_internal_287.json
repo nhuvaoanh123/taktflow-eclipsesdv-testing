@@ -1,0 +1,21 @@
+{
+  "function": "reusable_on_dedicated_internal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:reusable_on_dedicated_internal",
+      "line": 287
+    },
+    {
+      "id": 1,
+      "label": "exit:reusable_on_dedicated_internal",
+      "line": 319
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

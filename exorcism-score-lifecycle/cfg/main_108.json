@@ -1,0 +1,139 @@
+{
+  "function": "main",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:main",
+      "line": 108
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 141
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 153
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 141
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 141
+    },
+    {
+      "id": 5,
+      "label": "loop (for_statement)",
+      "line": 156
+    },
+    {
+      "id": 6,
+      "label": "loop_exit",
+      "line": 191
+    },
+    {
+      "id": 7,
+      "label": "body",
+      "line": 156
+    },
+    {
+      "id": 8,
+      "label": "if (...)",
+      "line": 177
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 191
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 177
+    },
+    {
+      "id": 11,
+      "label": "else",
+      "line": 177
+    },
+    {
+      "id": 12,
+      "label": "exit:main",
+      "line": 193
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "done"
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "continue"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 5,
+      "label": "back"
+    },
+    {
+      "from": 6,
+      "to": 12
+    }
+  ]
+}

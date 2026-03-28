@@ -1,0 +1,21 @@
+{
+  "function": "Company",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Company",
+      "line": 21
+    },
+    {
+      "id": 1,
+      "label": "exit:Company",
+      "line": 34
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

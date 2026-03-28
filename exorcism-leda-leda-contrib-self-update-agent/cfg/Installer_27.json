@@ -1,0 +1,21 @@
+{
+  "function": "Installer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Installer",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:Installer",
+      "line": 37
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

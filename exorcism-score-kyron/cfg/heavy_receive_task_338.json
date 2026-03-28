@@ -1,0 +1,21 @@
+{
+  "function": "heavy_receive_task",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:heavy_receive_task",
+      "line": 338
+    },
+    {
+      "id": 1,
+      "label": "exit:heavy_receive_task",
+      "line": 359
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

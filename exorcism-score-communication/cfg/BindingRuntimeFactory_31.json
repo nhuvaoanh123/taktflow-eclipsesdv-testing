@@ -1,0 +1,21 @@
+{
+  "function": "BindingRuntimeFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:BindingRuntimeFactory",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:BindingRuntimeFactory",
+      "line": 38
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

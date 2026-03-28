@@ -1,0 +1,21 @@
+{
+  "function": "isFeatureEnabled",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:isFeatureEnabled",
+      "line": 101
+    },
+    {
+      "id": 1,
+      "label": "exit:isFeatureEnabled",
+      "line": 111
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

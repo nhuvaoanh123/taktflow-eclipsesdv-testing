@@ -1,0 +1,321 @@
+{
+  "function": "_get_kuksa_val_client",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_get_kuksa_val_client",
+      "line": 357
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 360
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 365
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 360
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 360
+    },
+    {
+      "id": 5,
+      "label": "if (...)",
+      "line": 371
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 376
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 371
+    },
+    {
+      "id": 8,
+      "label": "else",
+      "line": 371
+    },
+    {
+      "id": 9,
+      "label": "if (...)",
+      "line": 379
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 382
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 379
+    },
+    {
+      "id": 12,
+      "label": "if (...)",
+      "line": 385
+    },
+    {
+      "id": 13,
+      "label": "merge",
+      "line": 388
+    },
+    {
+      "id": 14,
+      "label": "then",
+      "line": 385
+    },
+    {
+      "id": 15,
+      "label": "if (...)",
+      "line": 390
+    },
+    {
+      "id": 16,
+      "label": "merge",
+      "line": 391
+    },
+    {
+      "id": 17,
+      "label": "then",
+      "line": 390
+    },
+    {
+      "id": 18,
+      "label": "if (...)",
+      "line": 393
+    },
+    {
+      "id": 19,
+      "label": "merge",
+      "line": 398
+    },
+    {
+      "id": 20,
+      "label": "then",
+      "line": 393
+    },
+    {
+      "id": 21,
+      "label": "if (...)",
+      "line": 400
+    },
+    {
+      "id": 22,
+      "label": "merge",
+      "line": 402
+    },
+    {
+      "id": 23,
+      "label": "then",
+      "line": 400
+    },
+    {
+      "id": 24,
+      "label": "if (...)",
+      "line": 404
+    },
+    {
+      "id": 25,
+      "label": "merge",
+      "line": 408
+    },
+    {
+      "id": 26,
+      "label": "then",
+      "line": 404
+    },
+    {
+      "id": 27,
+      "label": "else",
+      "line": 404
+    },
+    {
+      "id": 28,
+      "label": "return_statement",
+      "line": 410
+    },
+    {
+      "id": 29,
+      "label": "exit:_get_kuksa_val_client",
+      "line": 410
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 12
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "label": "true"
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "label": "false"
+    },
+    {
+      "from": 13,
+      "to": 15
+    },
+    {
+      "from": 15,
+      "to": 17,
+      "label": "true"
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "label": "false"
+    },
+    {
+      "from": 16,
+      "to": 18
+    },
+    {
+      "from": 18,
+      "to": 20,
+      "label": "true"
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "label": "false"
+    },
+    {
+      "from": 19,
+      "to": 21
+    },
+    {
+      "from": 21,
+      "to": 23,
+      "label": "true"
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "label": "false"
+    },
+    {
+      "from": 22,
+      "to": 24
+    },
+    {
+      "from": 24,
+      "to": 26,
+      "label": "true"
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 24,
+      "to": 27,
+      "label": "false"
+    },
+    {
+      "from": 27,
+      "to": 25
+    },
+    {
+      "from": 25,
+      "to": 28
+    },
+    {
+      "from": 25,
+      "to": 29
+    }
+  ]
+}

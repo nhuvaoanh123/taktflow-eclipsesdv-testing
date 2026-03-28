@@ -1,0 +1,63 @@
+{
+  "function": "configure_logging",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:configure_logging",
+      "line": 225
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 237
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 242
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 237
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 237
+    },
+    {
+      "id": 5,
+      "label": "exit:configure_logging",
+      "line": 246
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

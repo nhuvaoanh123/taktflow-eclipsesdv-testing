@@ -1,0 +1,341 @@
+{
+  "external": [
+    {
+      "name": "github.com/cenkalti/backoff/v3",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/docker/docker",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/eclipse-kanto/container-management",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/eclipse/paho.mqtt.golang",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/golang/mock",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/google/uuid",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/pkg/errors",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/sirupsen/logrus",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/spf13/cobra",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/spf13/pflag",
+      "source": "go.mod"
+    },
+    {
+      "name": "gopkg.in/yaml.v3",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/api",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/apimachinery",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/client-go",
+      "source": "go.mod"
+    },
+    {
+      "name": "sigs.k8s.io/yaml",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/cli-runtime",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/kubectl",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/Azure/go-ansiterm",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/MakeNowJust/heredoc",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/PuerkitoBio/purell",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/PuerkitoBio/urlesc",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/chai2010/gettext-go",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/containerd/containerd",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/davecgh/go-spew",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/evanphx/json-patch",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/exponent-io/jsonpath",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/fsnotify/fsnotify",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/fvbommel/sortorder",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/go-errors/errors",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/go-logr/logr",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/go-openapi/jsonpointer",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/go-openapi/jsonreference",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/go-openapi/swag",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/gogo/protobuf",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/golang/protobuf",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/google/btree",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/google/go-cmp",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/google/gofuzz",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/google/shlex",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/googleapis/gnostic",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/gorilla/websocket",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/gregjones/httpcache",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/imdario/mergo",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/inconshreveable/mousetrap",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/jonboulle/clockwork",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/josharian/intern",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/json-iterator/go",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/liggitt/tabwriter",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/mailru/easyjson",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/mitchellh/go-wordwrap",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/moby/spdystream",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/moby/term",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/modern-go/concurrent",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/modern-go/reflect2",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/monochromegane/go-gitignore",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/onsi/ginkgo",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/onsi/gomega",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/peterbourgon/diskv",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/pmezard/go-difflib",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/russross/blackfriday",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/stretchr/testify",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/xlab/treeprint",
+      "source": "go.mod"
+    },
+    {
+      "name": "go.starlark.net",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/net",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/oauth2",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/sys",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/term",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/text",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/time",
+      "source": "go.mod"
+    },
+    {
+      "name": "google.golang.org/appengine",
+      "source": "go.mod"
+    },
+    {
+      "name": "google.golang.org/genproto",
+      "source": "go.mod"
+    },
+    {
+      "name": "google.golang.org/grpc",
+      "source": "go.mod"
+    },
+    {
+      "name": "google.golang.org/protobuf",
+      "source": "go.mod"
+    },
+    {
+      "name": "gopkg.in/inf.v0",
+      "source": "go.mod"
+    },
+    {
+      "name": "gopkg.in/natefinch/lumberjack.v2",
+      "source": "go.mod"
+    },
+    {
+      "name": "gopkg.in/yaml.v2",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/component-base",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/klog/v2",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/kube-openapi",
+      "source": "go.mod"
+    },
+    {
+      "name": "k8s.io/utils",
+      "source": "go.mod"
+    },
+    {
+      "name": "sigs.k8s.io/json",
+      "source": "go.mod"
+    },
+    {
+      "name": "sigs.k8s.io/kustomize/api",
+      "source": "go.mod"
+    },
+    {
+      "name": "sigs.k8s.io/kustomize/kyaml",
+      "source": "go.mod"
+    },
+    {
+      "name": "sigs.k8s.io/structured-merge-diff/v4",
+      "source": "go.mod"
+    }
+  ],
+  "internal": []
+}

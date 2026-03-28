@@ -1,0 +1,21 @@
+{
+  "function": "isnormal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:isnormal",
+      "line": 515
+    },
+    {
+      "id": 1,
+      "label": "exit:isnormal",
+      "line": 524
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "InterruptibleSharedFuture",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:InterruptibleSharedFuture",
+      "line": 56
+    },
+    {
+      "id": 1,
+      "label": "exit:InterruptibleSharedFuture",
+      "line": 103
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

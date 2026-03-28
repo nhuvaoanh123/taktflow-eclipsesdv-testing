@@ -1,0 +1,21 @@
+{
+  "function": "test_publish_succeeds",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_publish_succeeds",
+      "line": 188
+    },
+    {
+      "id": 1,
+      "label": "exit:test_publish_succeeds",
+      "line": 226
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

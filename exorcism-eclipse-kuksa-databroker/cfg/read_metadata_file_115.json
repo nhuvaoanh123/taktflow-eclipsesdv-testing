@@ -1,0 +1,21 @@
+{
+  "function": "read_metadata_file",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:read_metadata_file",
+      "line": 115
+    },
+    {
+      "id": 1,
+      "label": "exit:read_metadata_file",
+      "line": 183
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

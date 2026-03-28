@@ -1,0 +1,105 @@
+{
+  "function": "created_file",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:created_file",
+      "line": 140
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 141
+    },
+    {
+      "id": 2,
+      "label": "if ((!detail_shared_memory_object_creator::WaitForFreeLockFile(l)",
+      "line": 149
+    },
+    {
+      "id": 3,
+      "label": "merge",
+      "line": 156
+    },
+    {
+      "id": 4,
+      "label": "then",
+      "line": 149
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 155
+    },
+    {
+      "id": 6,
+      "label": "if ((created_file_))",
+      "line": 227
+    },
+    {
+      "id": 7,
+      "label": "merge",
+      "line": 231
+    },
+    {
+      "id": 8,
+      "label": "then",
+      "line": 227
+    },
+    {
+      "id": 9,
+      "label": "exit:created_file",
+      "line": 234
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "label": "true"
+    },
+    {
+      "from": 4,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "label": "false"
+    },
+    {
+      "from": 3,
+      "to": 6
+    },
+    {
+      "from": 6,
+      "to": 8,
+      "label": "true"
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 9
+    }
+  ]
+}

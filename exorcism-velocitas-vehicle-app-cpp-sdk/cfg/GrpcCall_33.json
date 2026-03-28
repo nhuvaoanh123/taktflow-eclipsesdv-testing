@@ -1,0 +1,39 @@
+{
+  "function": "GrpcCall",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GrpcCall",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 70
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 75
+    },
+    {
+      "id": 3,
+      "label": "exit:GrpcCall",
+      "line": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "function": "Work",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Work",
+      "line": 127
+    },
+    {
+      "id": 1,
+      "label": "if ((next_possible_execution_point.has_value()))",
+      "line": 173
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 180
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 173
+    },
+    {
+      "id": 4,
+      "label": "if ((not free_.empty()))",
+      "line": 210
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 226
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 210
+    },
+    {
+      "id": 7,
+      "label": "else",
+      "line": 210
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 228
+    },
+    {
+      "id": 9,
+      "label": "exit:Work",
+      "line": 238
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 8
+    },
+    {
+      "from": 5,
+      "to": 9
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "test_available_state_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_available_state_handler",
+      "line": 159
+    },
+    {
+      "id": 1,
+      "label": "exit:test_available_state_handler",
+      "line": 259
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

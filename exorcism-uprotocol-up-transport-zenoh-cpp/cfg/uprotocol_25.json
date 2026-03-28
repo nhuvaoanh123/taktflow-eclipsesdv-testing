@@ -1,0 +1,21 @@
+{
+  "function": "uprotocol",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:uprotocol",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:uprotocol",
+      "line": 127
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

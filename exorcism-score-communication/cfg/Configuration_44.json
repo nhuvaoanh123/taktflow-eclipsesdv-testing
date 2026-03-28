@@ -1,0 +1,21 @@
+{
+  "function": "Configuration",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Configuration",
+      "line": 44
+    },
+    {
+      "id": 1,
+      "label": "exit:Configuration",
+      "line": 98
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "set_waker",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_waker",
+      "line": 277
+    },
+    {
+      "id": 1,
+      "label": "exit:set_waker",
+      "line": 287
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "CheckEmpty",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CheckEmpty",
+      "line": 53
+    },
+    {
+      "id": 1,
+      "label": "exit:CheckEmpty",
+      "line": 65
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

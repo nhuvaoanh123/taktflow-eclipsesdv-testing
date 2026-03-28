@@ -1,0 +1,189 @@
+{
+  "function": "decode_DataEntry",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:decode_DataEntry",
+      "line": 77
+    },
+    {
+      "id": 1,
+      "label": "if ((arg == NULL))",
+      "line": 79
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 83
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 79
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 82
+    },
+    {
+      "id": 5,
+      "label": "if ((entry == NULL))",
+      "line": 87
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 91
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 87
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 90
+    },
+    {
+      "id": 9,
+      "label": "if ((!pb_decode(stream, kuksa_val_v1_DataEntry_fields, entry)))",
+      "line": 94
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 98
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 94
+    },
+    {
+      "id": 12,
+      "label": "return_statement",
+      "line": 97
+    },
+    {
+      "id": 13,
+      "label": "if ((entry->has_value))",
+      "line": 100
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 103
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 100
+    },
+    {
+      "id": 16,
+      "label": "return_statement",
+      "line": 105
+    },
+    {
+      "id": 17,
+      "label": "exit:decode_DataEntry",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 16
+    },
+    {
+      "from": 14,
+      "to": 17
+    }
+  ]
+}

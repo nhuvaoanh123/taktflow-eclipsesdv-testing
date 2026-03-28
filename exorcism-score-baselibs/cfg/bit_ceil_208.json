@@ -1,0 +1,30 @@
+{
+  "function": "bit_ceil",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:bit_ceil",
+      "line": 208
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 212
+    },
+    {
+      "id": 2,
+      "label": "exit:bit_ceil",
+      "line": 213
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

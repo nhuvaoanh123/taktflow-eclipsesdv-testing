@@ -1,0 +1,1072 @@
+[
+  {
+    "function": "message_transfer",
+    "file": "src/network_service/interfaces/message_transfer.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "termination_handler",
+    "file": "src/someipd/main.cpp",
+    "line": 59,
+    "calls": [
+      "store"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "src/someipd/main.cpp",
+    "line": 64,
+    "calls": [
+      "subspan",
+      "Message",
+      "stop",
+      "init",
+      "std::string",
+      "load",
+      "size",
+      "has_value",
+      "get_data",
+      "request_service",
+      "data",
+      "GetNewSamples",
+      "memcpy",
+      "get_length",
+      "SomeipMessageTransferProxy::Create",
+      "offer_service",
+      "score::mw::com::InstanceSpecifier::Create",
+      "offer_event",
+      "score::mw::com::runtime::InitializeRuntime",
+      "notify",
+      "start",
+      "std::thread",
+      "detach",
+      "std::move",
+      "register_message_handler",
+      "insert",
+      "subscribe",
+      "reinterpret_cast<const vsomeip_v3::byte_t*>",
+      "create_payload",
+      "std::this_thread::sleep_for",
+      "Allocate",
+      "create_application",
+      "SomeipMessageTransferSkeleton::Create",
+      "OfferService",
+      "error",
+      "vsomeip::runtime::get",
+      "Subscribe",
+      "request_event",
+      "std::chrono::milliseconds",
+      "get_payload",
+      "Send",
+      "set_data",
+      "std::signal",
+      "value",
+      "front",
+      "SomeipMessageTransferProxy::FindService"
+    ]
+  },
+  {
+    "function": "gatewayd",
+    "file": "src/gatewayd/remote_service_instance.h",
+    "line": 25,
+    "calls": [
+      "RemoteServiceInstance"
+    ]
+  },
+  {
+    "function": "RemoteServiceInstance",
+    "file": "src/gatewayd/remote_service_instance.h",
+    "line": 27,
+    "calls": [
+      "RemoteServiceInstance"
+    ]
+  },
+  {
+    "function": "gatewayd",
+    "file": "src/gatewayd/local_service_instance.h",
+    "line": 24,
+    "calls": [
+      "LocalServiceInstance"
+    ]
+  },
+  {
+    "function": "LocalServiceInstance",
+    "file": "src/gatewayd/local_service_instance.h",
+    "line": 26,
+    "calls": [
+      "LocalServiceInstance"
+    ]
+  },
+  {
+    "function": "termination_handler",
+    "file": "src/gatewayd/main.cpp",
+    "line": 37,
+    "calls": [
+      "store"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "src/gatewayd/main.cpp",
+    "line": 42,
+    "calls": [
+      "load",
+      "std::string",
+      "local_service_instances",
+      "seekg",
+      "is_open",
+      "get",
+      "score::mw::com::InstanceSpecifier::Create",
+      "score::mw::com::runtime::InitializeRuntime",
+      "config::GetRoot",
+      "RemoteServiceInstance::CreateAsyncRemoteService",
+      "read",
+      "std::shared_ptr<const config::Root>",
+      "std::move",
+      "LocalServiceInstance::CreateAsyncLocalService",
+      "std::this_thread::sleep_for",
+      "SomeipMessageTransferSkeleton::Create",
+      "open",
+      "OfferService",
+      "close",
+      "std::chrono::milliseconds",
+      "tellg",
+      "remote_service_instances",
+      "std::signal",
+      "value",
+      "std::shared_ptr<const config::ServiceInstance>",
+      "std::shared_ptr<char>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/local_service_instance.cpp",
+    "line": 31,
+    "calls": [
+      "subspan",
+      "Message",
+      "size",
+      "has_value",
+      "GetEvents",
+      "data",
+      "someip_method_id",
+      "GetNewSamples",
+      "get",
+      "find",
+      "string_view",
+      "std::memcpy",
+      "events",
+      "std::move",
+      "event_name",
+      "Allocate",
+      "static_cast<std::byte>",
+      "error",
+      "someip_service_id",
+      "Subscribe",
+      "cend",
+      "std::min",
+      "Send",
+      "SetReceiveHandler",
+      "someip_service_version_major",
+      "GetSampleSize",
+      "value"
+    ]
+  },
+  {
+    "function": "FindServiceContext",
+    "file": "src/gatewayd/local_service_instance.cpp",
+    "line": 126,
+    "calls": [
+      "std::move"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/local_service_instance.cpp",
+    "line": 134,
+    "calls": [
+      "std::make_unique<FindServiceContext>",
+      "string_view",
+      "GenericProxy::Create",
+      "has_value",
+      "push_back",
+      "std::move",
+      "str",
+      "GenericProxy::StopFindService",
+      "instance_specifier",
+      "value",
+      "std::make_unique<LocalServiceInstance>",
+      "GenericProxy::StartFindService",
+      "MakeUnexpected",
+      "front",
+      "score::mw::com::InstanceSpecifier::Create"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/remote_service_instance.cpp",
+    "line": 31,
+    "calls": [
+      "std::min",
+      "subspan",
+      "Message",
+      "size",
+      "std::memcpy",
+      "has_value",
+      "Send",
+      "SetReceiveHandler",
+      "Get",
+      "std::move",
+      "data",
+      "GetNewSamples",
+      "value",
+      "OfferService",
+      "error",
+      "Allocate",
+      "Subscribe"
+    ]
+  },
+  {
+    "function": "FindServiceContext",
+    "file": "src/gatewayd/remote_service_instance.cpp",
+    "line": 82,
+    "calls": [
+      "std::move"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/gatewayd/remote_service_instance.cpp",
+    "line": 90,
+    "calls": [
+      "Message",
+      "std::string",
+      "has_value",
+      "SomeipMessageTransferProxy::StartFindService",
+      "SomeipMessageTransferProxy::Create",
+      "str",
+      "score::mw::com::InstanceSpecifier::Create",
+      "echo_service::EchoResponseSkeleton::Create",
+      "std::make_unique<FindServiceContext>",
+      "string_view",
+      "push_back",
+      "std::move",
+      "instance_specifier",
+      "SomeipMessageTransferProxy::StopFindService",
+      "MakeUnexpected",
+      "error",
+      "std::make_unique<RemoteServiceInstance>",
+      "value",
+      "front"
+    ]
+  },
+  {
+    "function": "eprint",
+    "file": ".github/tools/qnx_credential_helper.py",
+    "line": 25,
+    "calls": [
+      "print"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/car_window_sim/src/car_window_controller.rs",
+    "line": 23,
+    "calls": [
+      "println",
+      "to_lowercase",
+      "io::stdin",
+      "Ok",
+      "expect",
+      "kind",
+      "Path::new",
+      "read_line",
+      "mw_com::InstanceSpecifier::try_from",
+      "send",
+      "eprintln",
+      "as_str",
+      "car_window_types::WindowControlInterface::Skeleton::new",
+      "mw_com::initialize",
+      "car_window_types::WindowControl::default",
+      "trim_end",
+      "Some",
+      "stop_offer_service",
+      "std::thread::sleep",
+      "format",
+      "std::time::Duration::from_millis",
+      "String::new",
+      "offer_service"
+    ]
+  },
+  {
+    "function": "WindowCommand",
+    "file": "examples/car_window_sim/src/car_window_types.h",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "default",
+    "file": "examples/car_window_sim/src/car_window_types.rs",
+    "line": 37,
+    "calls": []
+  },
+  {
+    "function": "default",
+    "file": "examples/car_window_sim/src/car_window_types.rs",
+    "line": 43,
+    "calls": []
+  },
+  {
+    "function": "update_state_machine",
+    "file": "examples/car_window_sim/src/car_window.rs",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "examples/car_window_sim/src/car_window.rs",
+    "line": 121,
+    "calls": [
+      "clone",
+      "len",
+      "Path::new",
+      "mw_com::proxy::find_service",
+      "println",
+      "mw_com::initialize",
+      "mw_com::InstanceSpecifier::try_from",
+      "subscribe",
+      "get_new_sample",
+      "sleep",
+      "Some",
+      "expect",
+      "WindowInfo::default",
+      "update_state_machine",
+      "car_window_types::WindowControlInterface::Proxy::new",
+      "Duration::from_millis"
+    ]
+  },
+  {
+    "function": "test_hello",
+    "file": "tests/rust/test_main.rs",
+    "line": 14,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "add",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 16,
+    "calls": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 19,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 24,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 29,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 36,
+    "calls": [
+      "RUN_ALL_TESTS",
+      "::testing::InitGoogleTest"
+    ]
+  },
+  {
+    "function": "someipd_config",
+    "file": "tests/integration/conftest.py",
+    "line": 25,
+    "calls": [
+      "Path"
+    ]
+  },
+  {
+    "function": "someipd",
+    "file": "tests/integration/conftest.py",
+    "line": 32,
+    "calls": [
+      "subprocess.Popen",
+      "someipd.terminate",
+      "someipd_config.absolute",
+      "someipd.wait",
+      "str"
+    ]
+  },
+  {
+    "function": "pytest_configure",
+    "file": "tests/integration/conftest.py",
+    "line": 44,
+    "calls": [
+      "config.addinivalue_line"
+    ]
+  },
+  {
+    "function": "pytest_collection_modifyitems",
+    "file": "tests/integration/conftest.py",
+    "line": 51,
+    "calls": [
+      "item.add_marker"
+    ]
+  },
+  {
+    "function": "test_dummy",
+    "file": "tests/integration/test_dummy.py",
+    "line": 17,
+    "calls": []
+  },
+  {
+    "function": "enhex",
+    "file": "tests/integration/client.py",
+    "line": 29,
+    "calls": [
+      "sep.join"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "tests/integration/client.py",
+    "line": 34,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "message_received",
+    "file": "tests/integration/client.py",
+    "line": 37,
+    "calls": [
+      "enhex",
+      "self.log.warning",
+      "self.log.info"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "tests/integration/client.py",
+    "line": 60,
+    "calls": [
+      "protocol.discovery.find_subscribe_eventgroup",
+      "evgrp_receiver.get_extra_info",
+      "trsp_m.close",
+      "protocol.start",
+      "asyncio.sleep",
+      "EventGroupReceiver.create_unicast_endpoint",
+      "trsp_u.close",
+      "Eventgroup",
+      "ServiceDiscoveryProtocol.create_endpoints",
+      "protocol.stop",
+      "str",
+      "evgrp_receiver.close"
+    ]
+  },
+  {
+    "function": "auto_int",
+    "file": "tests/integration/client.py",
+    "line": 102,
+    "calls": [
+      "int"
+    ]
+  },
+  {
+    "function": "setup_log",
+    "file": "tests/integration/client.py",
+    "line": 106,
+    "calls": [
+      "coloredlogs.install",
+      "logging.basicConfig",
+      "logging.info"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/integration/client.py",
+    "line": 116,
+    "calls": [
+      "argparse.ArgumentParser",
+      "parser.add_argument",
+      "parser.parse_args",
+      "asyncio.get_event_loop",
+      "setup_log",
+      "run"
+    ]
+  },
+  {
+    "function": "SampleClient",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "line": 27,
+    "calls": [
+      "create_application",
+      "vsomeip::runtime::get"
+    ]
+  },
+  {
+    "function": "on_state",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "line": 29,
+    "calls": [
+      "request_service"
+    ]
+  },
+  {
+    "function": "on_event",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "line": 35,
+    "calls": [
+      "get_payload",
+      "notify",
+      "get_data",
+      "set_data",
+      "create_payload",
+      "get_length",
+      "vsomeip::runtime::get"
+    ]
+  },
+  {
+    "function": "start",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "line": 42,
+    "calls": [
+      "init",
+      "on_state",
+      "register_state_handler",
+      "request_event",
+      "start",
+      "insert",
+      "register_message_handler",
+      "subscribe",
+      "offer_service",
+      "on_event",
+      "offer_event"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/integration/sample_client/sample_client.cpp",
+    "line": 67,
+    "calls": [
+      "start"
+    ]
+  },
+  {
+    "function": "SigTermHandlerFunction",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 48,
+    "calls": [
+      "request_stop",
+      "benchmark::Shutdown"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "Initialize",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 60,
+    "calls": [
+      "has_value",
+      "stop_requested",
+      "std::to_string",
+      "score::mw::com::InstanceSpecifier::Create",
+      "std::move",
+      "ProcessResponsesXLarge",
+      "ProcessResponsesSmall",
+      "ProcessResponsesLarge",
+      "EchoRequestSkeleton::Create",
+      "empty",
+      "std::this_thread::sleep_for",
+      "EchoResponseProxy::Create",
+      "OfferService",
+      "ProcessResponsesXXLarge",
+      "Subscribe",
+      "std::runtime_error",
+      "ProcessResponsesMedium",
+      "SetReceiveHandler",
+      "value",
+      "EchoResponseProxy::FindService",
+      "front"
+    ]
+  },
+  {
+    "function": "Cleanup",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 161,
+    "calls": [
+      "has_value",
+      "UnsetReceiveHandler",
+      "Unsubscribe",
+      "reset"
+    ]
+  },
+  {
+    "function": "SendEchoRequestSync",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 188,
+    "calls": [
+      "SendRequestUsingCorrectEvent",
+      "std::chrono::duration_cast<std::chrono::nanoseconds>",
+      "erase",
+      "SendEchoRequestSyncWithPolling",
+      "std::chrono::high_resolution_clock::now",
+      "static_cast<std::uint32_t>",
+      "std::to_string",
+      "std::runtime_error",
+      "wait_for"
+    ]
+  },
+  {
+    "function": "SendEchoRequestAsync",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 224,
+    "calls": [
+      "SendRequestUsingCorrectEvent",
+      "static_cast<std::uint32_t>"
+    ]
+  },
+  {
+    "function": "SendEchoRequestSyncWithPolling",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 232,
+    "calls": [
+      "std::chrono::microseconds",
+      "std::chrono::high_resolution_clock::now",
+      "GetNewSamples",
+      "stop_requested",
+      "std::this_thread::sleep_for",
+      "std::chrono::duration_cast<std::chrono::nanoseconds>"
+    ]
+  },
+  {
+    "function": "SendRequestUsingCorrectEvent",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 270,
+    "calls": [
+      "utils::GetCurrentTimeNanos",
+      "Send",
+      "std::move",
+      "utils::FillTestPayload",
+      "value",
+      "Allocate"
+    ]
+  },
+  {
+    "function": "ProcessResponsesTiny",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 341,
+    "calls": [
+      "find",
+      "notify_all",
+      "std::chrono::high_resolution_clock::now",
+      "end",
+      "GetNewSamples",
+      "stop_requested"
+    ]
+  },
+  {
+    "function": "ProcessResponsesSmall",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 362,
+    "calls": [
+      "find",
+      "notify_all",
+      "std::chrono::high_resolution_clock::now",
+      "end",
+      "GetNewSamples",
+      "stop_requested"
+    ]
+  },
+  {
+    "function": "ProcessResponsesMedium",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 384,
+    "calls": [
+      "find",
+      "notify_all",
+      "std::chrono::high_resolution_clock::now",
+      "end",
+      "GetNewSamples",
+      "stop_requested"
+    ]
+  },
+  {
+    "function": "ProcessResponsesLarge",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 406,
+    "calls": [
+      "find",
+      "notify_all",
+      "std::chrono::high_resolution_clock::now",
+      "end",
+      "GetNewSamples",
+      "stop_requested"
+    ]
+  },
+  {
+    "function": "ProcessResponsesXLarge",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 428,
+    "calls": [
+      "find",
+      "notify_all",
+      "std::chrono::high_resolution_clock::now",
+      "end",
+      "GetNewSamples",
+      "stop_requested"
+    ]
+  },
+  {
+    "function": "ProcessResponsesXXLarge",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 450,
+    "calls": [
+      "find",
+      "notify_all",
+      "std::chrono::high_resolution_clock::now",
+      "end",
+      "GetNewSamples",
+      "stop_requested"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 485,
+    "calls": [
+      "BenchmarkFixture::Instance",
+      "Initialize"
+    ]
+  },
+  {
+    "function": "TearDown",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 492,
+    "calls": []
+  },
+  {
+    "function": "GetPayloadSizeFromArg",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 514,
+    "calls": [
+      "static_cast<int64_t>"
+    ]
+  },
+  {
+    "function": "GetPayloadSizeName",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 521,
+    "calls": []
+  },
+  {
+    "function": "Percentile",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 531,
+    "calls": [
+      "std::ceil",
+      "size",
+      "static_cast<size_t>",
+      "end",
+      "empty",
+      "begin",
+      "std::floor",
+      "std::sort"
+    ]
+  },
+  {
+    "function": "BENCHMARK_DEFINE_F",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 551,
+    "calls": [
+      "range",
+      "GetPayloadSizeFromArg",
+      "GetPayloadSizeName",
+      "count",
+      "SendEchoRequestSync",
+      "benchmark::Counter",
+      "static_cast<std::uint32_t>",
+      "SetLabel",
+      "static_cast<double>",
+      "BenchmarkFixture::Instance",
+      "SetIterationTime"
+    ]
+  },
+  {
+    "function": "BENCHMARK_DEFINE_F",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 580,
+    "calls": [
+      "range",
+      "GetPayloadSizeFromArg",
+      "GetPayloadSizeName",
+      "benchmark::Counter",
+      "static_cast<std::uint32_t>",
+      "SendEchoRequestAsync",
+      "SetLabel",
+      "static_cast<double>",
+      "BenchmarkFixture::Instance",
+      "iterations"
+    ]
+  },
+  {
+    "function": "BENCHMARK_DEFINE_F",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 606,
+    "calls": [
+      "range",
+      "GetPayloadSizeFromArg",
+      "GetPayloadSizeName",
+      "benchmark::Counter",
+      "static_cast<std::uint32_t>",
+      "SendEchoRequestAsync",
+      "SetLabel",
+      "static_cast<double>",
+      "std::to_string",
+      "BenchmarkFixture::Instance",
+      "iterations"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/performance_benchmarks/ipc_benchmarks.cpp",
+    "line": 635,
+    "calls": [
+      "score::mw::com::runtime::InitializeRuntime",
+      "Cleanup",
+      "benchmark::RunSpecifiedBenchmarks",
+      "benchmark::AddCustomContext",
+      "benchmark::Initialize",
+      "std::signal",
+      "stop_requested",
+      "BenchmarkFixture::Instance",
+      "get_token",
+      "benchmark::ReportUnrecognizedArguments"
+    ]
+  },
+  {
+    "function": "SigTermHandlerFunction",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 42,
+    "calls": [
+      "request_stop"
+    ]
+  },
+  {
+    "function": "TryConnectToClient",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 44,
+    "calls": [
+      "EchoRequestProxy::FindService",
+      "has_value",
+      "EchoRequestProxy::Create",
+      "std::move",
+      "value",
+      "empty",
+      "front",
+      "score::mw::com::InstanceSpecifier::Create"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestTiny",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 62,
+    "calls": [
+      "utils::CopyMessageForEcho",
+      "Send",
+      "has_value",
+      "std::move",
+      "value",
+      "stop_requested",
+      "std::this_thread::sleep_for",
+      "Allocate"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestSmall",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 95,
+    "calls": [
+      "utils::CopyMessageForEcho",
+      "Send",
+      "has_value",
+      "std::move",
+      "value",
+      "stop_requested",
+      "std::this_thread::sleep_for",
+      "Allocate"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestMedium",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 128,
+    "calls": [
+      "utils::CopyMessageForEcho",
+      "Send",
+      "has_value",
+      "std::move",
+      "value",
+      "stop_requested",
+      "std::this_thread::sleep_for",
+      "Allocate"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestLarge",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 161,
+    "calls": [
+      "utils::CopyMessageForEcho",
+      "Send",
+      "has_value",
+      "std::move",
+      "value",
+      "stop_requested",
+      "std::this_thread::sleep_for",
+      "Allocate"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestXLarge",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 194,
+    "calls": [
+      "utils::CopyMessageForEcho",
+      "Send",
+      "has_value",
+      "std::move",
+      "value",
+      "stop_requested",
+      "std::this_thread::sleep_for",
+      "Allocate"
+    ]
+  },
+  {
+    "function": "ProcessSingleEchoRequestXXLarge",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 227,
+    "calls": [
+      "utils::CopyMessageForEcho",
+      "Send",
+      "has_value",
+      "std::move",
+      "value",
+      "stop_requested",
+      "std::this_thread::sleep_for",
+      "Allocate"
+    ]
+  },
+  {
+    "function": "ProcessEchoRequests",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 259,
+    "calls": [
+      "ProcessSingleEchoRequestXXLarge",
+      "ProcessSingleEchoRequestMedium",
+      "ProcessSingleEchoRequestLarge",
+      "ProcessSingleEchoRequestXLarge",
+      "GetNewSamples",
+      "ProcessSingleEchoRequestTiny",
+      "stop_requested",
+      "ProcessSingleEchoRequestSmall"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/performance_benchmarks/echo_server.cpp",
+    "line": 313,
+    "calls": [
+      "score::mw::com::runtime::InitializeRuntime",
+      "TryConnectToClient",
+      "Unsubscribe",
+      "has_value",
+      "std::move",
+      "std::chrono::steady_clock::now",
+      "ProcessEchoRequests",
+      "std::signal",
+      "EchoResponseSkeleton::Create",
+      "value",
+      "OfferService",
+      "std::this_thread::sleep_for",
+      "stop_requested",
+      "get_token",
+      "Subscribe",
+      "score::mw::com::InstanceSpecifier::Create"
+    ]
+  },
+  {
+    "function": "echo_service",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "line": 23,
+    "calls": [
+      "count",
+      "memcpy",
+      "time_since_epoch",
+      "CopyMessageForEcho"
+    ]
+  },
+  {
+    "function": "PayloadSize",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "line": 25,
+    "calls": [
+      "count",
+      "time_since_epoch"
+    ]
+  },
+  {
+    "function": "utils",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "line": 109,
+    "calls": [
+      "count",
+      "time_since_epoch"
+    ]
+  },
+  {
+    "function": "GetCurrentTimeNanos",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "line": 111,
+    "calls": [
+      "count",
+      "time_since_epoch"
+    ]
+  },
+  {
+    "function": "GetSizeFromEnum",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "line": 136,
+    "calls": []
+  },
+  {
+    "function": "GetEnumFromSize",
+    "file": "tests/performance_benchmarks/echo_service.h",
+    "line": 138,
+    "calls": []
+  }
+]

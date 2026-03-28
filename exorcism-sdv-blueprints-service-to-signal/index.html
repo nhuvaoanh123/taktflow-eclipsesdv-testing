@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sdv Blueprints Service To Signal — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Sdv Blueprints Service To Signal</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Sdv Blueprints Service To Signal</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">SDV-BLUEPRINTS</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">18</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">1,347</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">45</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">2</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">3.3</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>SDV Blueprints are reference implementations and example applications showing how to build complete end-to-end SDV use cases using Eclipse SDV components. They include fleet management, insurance telematics, companion apps, ROS-based racing, and more.</p>
+    <p><strong>Project:</strong> <code>sdv-blueprints-service-to-signal</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>Unknown</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">Rust</span>, <span class="tag">C</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>Seeing a complete working example helps developers understand how to integrate multiple SDV components together.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by developers learning the SDV ecosystem, OEMs evaluating the technology, and hackathon participants.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>Rust</td><td>16</td><td>944</td></tr><tr><td>C</td><td>2</td><td>403</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: sdv-blueprints-service-to-signal</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>Rust, C</td></tr>
+<tr><td>Build System</td><td>Unknown</td></tr>
+<tr><td>Total Files</td><td>18</td></tr>
+<tr><td>Total LOC</td><td>1,347</td></tr>
+<tr><td>Total Functions</td><td>45</td></tr>
+<tr><td>State Machines</td><td>2</td></tr>
+<tr><td>Communication Patterns</td><td>0</td></tr>
+<tr><td>External Dependencies</td><td>0</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>Rust</strong>: 16 files, 944 LOC</li>
+<li><strong>C</strong>: 2 files, 403 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>Unknown</strong></p>
+<p></p>
+<h3>State Machines Detected</h3>
+<ul>
+<li><code>components/horn-service-kuksa/src/request<em>processor.rs:60</code> — match on <code>req.mode.enum</em>value()</code> (2 states)</li>
+<li><code>components/horn-service-kuksa/src/request_processor.rs:62</code> — match on <code>mode</code> (4 states)</li>
+</ul>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>sample_handler (components/actuator-provider/src/main.c:138) cc=17</li>
+<li>event_handler (components/actuator-provider/src/main.c:193) cc=20</li>
+<li>app_main (components/actuator-provider/src/main.c:260) cc=15</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li>sample_handler (components/actuator-provider/src/main.c:138) depth=5</li>
+<li>main (components/software-horn/src/main.rs:38) depth=6</li>
+<li>send<em>to</em>databroker (components/horn-service-kuksa/src/connections.rs:23) depth=4</li>
+<li>horn<em>request</em>apply (components/horn-service-kuksa/src/request_processor.rs:56) depth=5</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<p><em>None</em></p>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 45 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 14 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 2 state machine patterns</li>
+<li><code>metrics.json</code> — 45 function metrics</li>
+<li><code>communication.json</code> — 0 protocol patterns</li>
+<li><code>dependencies.json</code> — 0 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>event_handler</code></td>
+              <td><span class="badge badge-red">20 (High)</span></td>
+              <td>3</td>
+              <td>22</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>sample_handler</code></td>
+              <td><span class="badge badge-red">17 (High)</span></td>
+              <td>5</td>
+              <td>54</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>app_main</code></td>
+              <td><span class="badge badge-red">15 (High)</span></td>
+              <td>2</td>
+              <td>90</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>horn_request_apply</code></td>
+              <td><span class="badge badge-yellow">9 (Medium)</span></td>
+              <td>5</td>
+              <td>19</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>components/horn-service-kuksa/src/request_processor.rs</small></td>
+            </tr><tr>
+              <td><code>attachment_handler</code></td>
+              <td><span class="badge badge-yellow">7 (Medium)</span></td>
+              <td>2</td>
+              <td>22</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-yellow">6 (Medium)</span></td>
+              <td>1</td>
+              <td>18</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>activate_horn</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>3</td>
+              <td>33</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_client.rs</small></td>
+            </tr><tr>
+              <td><code>deactivate_horn</code></td>
+              <td><span class="badge badge-green">5 (Low)</span></td>
+              <td>3</td>
+              <td>30</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_client.rs</small></td>
+            </tr><tr>
+              <td><code>is_valid_tcp_url</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>1</td>
+              <td>14</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>turn_led</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>11</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>get_prebuilt_activation_request</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>2</td>
+              <td>6</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_requests.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>6</td>
+              <td>36</td>
+              <td>0</td>
+              <td>high_nesting</td>
+              <td><small>components/software-horn/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>print_is_active</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/connections.rs</small></td>
+            </tr><tr>
+              <td><code>request_apply</code></td>
+              <td><span class="badge badge-green">4 (Low)</span></td>
+              <td>3</td>
+              <td>16</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_processor.rs</small></td>
+            </tr><tr>
+              <td><code>wifi_init_sta</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>1</td>
+              <td>43</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>45</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>get_zenoh_config</code></td>
+              <td><span class="badge badge-green">3 (Low)</span></td>
+              <td>3</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/config.rs</small></td>
+            </tr><tr>
+              <td><code>publish_current_status</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>3</td>
+              <td>9</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/software-horn/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>contains_target_value</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>1</td>
+              <td>6</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/software-horn/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>send_to_databroker</code></td>
+              <td><span class="badge badge-green">2 (Low)</span></td>
+              <td>4</td>
+              <td>18</td>
+              <td>2</td>
+              <td>high_nesting</td>
+              <td><small>components/horn-service-kuksa/src/connections.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>18</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/horn-proto/build.rs</small></td>
+            </tr><tr>
+              <td><code>gpio_init</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>0</td>
+              <td>5</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>pub_status</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>0</td>
+              <td>12</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>app_main</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>0</td>
+              <td>6</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/actuator-provider/src/main.c</small></td>
+            </tr><tr>
+              <td><code>example_horn_loop</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>21</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_loop.rs</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>14</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/horn-client/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>create_sequenced_horn_request</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>31</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_requests.rs</small></td>
+            </tr><tr>
+              <td><code>create_continuous_horn_request</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>10</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_requests.rs</small></td>
+            </tr><tr>
+              <td><code>create_deactivate_horn_request</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>3</td>
+              <td>0</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_requests.rs</small></td>
+            </tr><tr>
+              <td><code>sleep</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>3</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-client/src/lib.rs</small></td>
+            </tr><tr>
+              <td><code>create_rpc_client</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>16</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/horn-client/src/rpc_client.rs</small></td>
+            </tr><tr>
+              <td><code>new</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>6</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_client.rs</small></td>
+            </tr><tr>
+              <td><code>activate_horn_with_prebuilt_request</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>7</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/horn-client/src/horn_client.rs</small></td>
+            </tr><tr>
+              <td><code>get_zenoh_config</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>4</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-client/src/config.rs</small></td>
+            </tr><tr>
+              <td><code>get_zenoh_config</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>4</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/software-horn/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>payload_as_bool</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/software-horn/src/main.rs</small></td>
+            </tr><tr>
+              <td><code>send_to_terminal</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>2</td>
+              <td>9</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/connections.rs</small></td>
+            </tr><tr>
+              <td><code>receive_requests</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>3</td>
+              <td>15</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_processor.rs</small></td>
+            </tr><tr>
+              <td><code>horn_continous_apply</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>4</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_processor.rs</small></td>
+            </tr><tr>
+              <td><code>horn_sequence_apply</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>3</td>
+              <td>16</td>
+              <td>2</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_processor.rs</small></td>
+            </tr><tr>
+              <td><code>new</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_handler.rs</small></td>
+            </tr><tr>
+              <td><code>handle_request</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>21</td>
+              <td>4</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_handler.rs</small></td>
+            </tr><tr>
+              <td><code>new</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>7</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_handler.rs</small></td>
+            </tr><tr>
+              <td><code>handle_request</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>22</td>
+              <td>4</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/request_handler.rs</small></td>
+            </tr><tr>
+              <td><code>valid_uri</code></td>
+              <td><span class="badge badge-green">1 (Low)</span></td>
+              <td>1</td>
+              <td>3</td>
+              <td>1</td>
+              <td></td>
+              <td><small>components/horn-service-kuksa/src/config.rs</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>app_main</code></td>
+              <td>29</td>
+              <td><small>zp_stop_lease_task, z_string_make, printf, z_keyexpr, z_close, z_declare_subscriber, z_check, is_valid_tcp_url …</small></td>
+              <td><small>components/actuator-provider/src/main.c:260</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>28</td>
+              <td><small>tokio::signal::ctrl_c, init, Env::default, get_authority, register_endpoint, tokio::spawn, Ok, Arc::new …</small></td>
+              <td><small>components/horn-service-kuksa/src/main.rs:33</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>19</td>
+              <td><small>publish_current_status, init, Env::default, Ok, zenoh::open, declare_publisher, String::from, info …</small></td>
+              <td><small>components/software-horn/src/main.rs:38</small></td>
+            </tr><tr>
+              <td><code>wifi_init_sta</code></td>
+              <td>14</td>
+              <td><small>esp_event_handler_instance_unregister, xEventGroupCreate, esp_wifi_start, esp_event_loop_create_default, vEventGroupDelete, esp_netif_create_default_wifi_sta, xEventGroupWaitBits, WIFI_INIT_CONFIG_DEFAULT …</small></td>
+              <td><small>components/actuator-provider/src/main.c:216</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>13</td>
+              <td><small>clone, init, Env::default, Args::parse, example_horn_loop, create_rpc_client, HornClient::new, StaticUriProvider::new …</small></td>
+              <td><small>components/horn-client/src/main.rs:30</small></td>
+            </tr><tr>
+              <td><code>sample_handler</code></td>
+              <td>12</td>
+              <td><small>ESP_LOGI, z_attachment_iterate, pub_status, z_str_drop, z_str_move, z_attachment_check, turn_led, free …</small></td>
+              <td><small>components/actuator-provider/src/main.c:138</small></td>
+            </tr><tr>
+              <td><code>create_rpc_client</code></td>
+              <td>12</td>
+              <td><small>with_config, clone, get_zenoh_config, get_authority, trace, build, Ok, map …</small></td>
+              <td><small>components/horn-client/src/rpc_client.rs:22</small></td>
+            </tr><tr>
+              <td><code>send_to_databroker</code></td>
+              <td>12</td>
+              <td><small>to_string, prost_types::Timestamp::from, HashMap::from, debug, recv, KuksaClient::new, v1_proto::datapoint::Value::Bool, error …</small></td>
+              <td><small>components/horn-service-kuksa/src/connections.rs:23</small></td>
+            </tr><tr>
+              <td><code>handle_request</code></td>
+              <td>11</td>
+              <td><small>unwrap, clone, Status::new, MessageField::some, Default::default, Ok, request_payload
+            .unwrap, info …</small></td>
+              <td><small>components/horn-service-kuksa/src/request_handler.rs:39</small></td>
+            </tr><tr>
+              <td><code>main</code></td>
+              <td>10</td>
+              <td><small>unwrap, cargo_out_dir, include, Ok, protobuf_codegen::Codegen::new, protoc_bin_vendored::protoc_bin_path, protoc, run_from_script …</small></td>
+              <td><small>components/horn-proto/build.rs:17</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (2 detected)</h3>
+  
+<details>
+  <summary>MATCH on <code>req.mode.enum_value()</code>
+    — <small>components/horn-service-kuksa/src/request_processor.rs:60</small></summary>
+  <div class="inner">
+    <table class="sm-table">
+      <thead><tr><th>State / Case</th></tr></thead>
+      <tbody><tr><td><code>Ok(mode)</code></td></tr><tr><td><code>Err(e)</code></td></tr></tbody>
+    </table>
+  </div>
+</details>
+<details>
+  <summary>MATCH on <code>mode</code>
+    — <small>components/horn-service-kuksa/src/request_processor.rs:62</small></summary>
+  <div class="inner">
+    <table class="sm-table">
+      <thead><tr><th>State / Case</th></tr></thead>
+      <tbody><tr><td><code>HornMode::HM_SEQUENCED</code></td></tr><tr><td><code>HornMode::HM_CONTINUOUS</code></td></tr><tr><td><code>HornMode::HM_UNKNOWN</code></td></tr><tr><td><code>HornMode::HM_UNSPECIFIED</code></td></tr></tbody>
+    </table>
+  </div>
+</details>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <p><em>No functions exceed 100 lines.</em></p>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    sdv-blueprints-servi[&#x27;Sdv Blueprints Service To Signal&#x27;]
+    note[&#x27;No external interfaces detected&#x27;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  <p><em>No communication patterns detected.</em></p>
+
+  <h3>Dependencies</h3>
+  <p><em>No explicit dependencies recorded.</em></p>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: Unknown</h3>
+    <pre><code># Check the project README for build instructions.
+# Common patterns:
+#   Rust: cargo build --release
+#   Python: pip install -r requirements.txt &amp;&amp; python3 main.py
+#   C/C++: mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make
+#   Java/Maven: mvn clean install
+#   Bazel: bazel build //...</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">Rust</span> toolchain required</li><li><span class="tag">C</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">3.3</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">3</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">0</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">2</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>event_handler</code></td><td><span class="badge badge-red">20 (High)</span></td><td>22</td><td><small>components/actuator-provider/src/main.c:193</small></td></tr><tr><td><code>sample_handler</code></td><td><span class="badge badge-red">17 (High)</span></td><td>54</td><td><small>components/actuator-provider/src/main.c:138</small></td></tr><tr><td><code>app_main</code></td><td><span class="badge badge-red">15 (High)</span></td><td>90</td><td><small>components/actuator-provider/src/main.c:260</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>sample_handler</code> — CC 17, nesting 5 in components/actuator-provider/src/main.c</li><li><span class="badge badge-red">Risk</span> <code>event_handler</code> — CC 20, nesting 3 in components/actuator-provider/src/main.c</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "function": "endMeasurement",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:endMeasurement",
+      "line": 85
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 96
+    },
+    {
+      "id": 2,
+      "label": "exit:endMeasurement",
+      "line": 97
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

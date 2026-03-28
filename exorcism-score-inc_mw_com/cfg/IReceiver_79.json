@@ -1,0 +1,21 @@
+{
+  "function": "IReceiver",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IReceiver",
+      "line": 79
+    },
+    {
+      "id": 1,
+      "label": "exit:IReceiver",
+      "line": 132
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

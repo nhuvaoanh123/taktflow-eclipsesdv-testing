@@ -1,0 +1,131 @@
+{
+  "function": "find_unsafe_headers",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:find_unsafe_headers",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 38
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 44
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 38
+    },
+    {
+      "id": 4,
+      "label": "loop (for_statement)",
+      "line": 39
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 44
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 39
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 43
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 44
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 43
+    },
+    {
+      "id": 10,
+      "label": "return_statement",
+      "line": 46
+    },
+    {
+      "id": 11,
+      "label": "exit:find_unsafe_headers",
+      "line": 46
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 10
+    },
+    {
+      "from": 2,
+      "to": 11
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "register_datapoints",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:register_datapoints",
+      "line": 70
+    },
+    {
+      "id": 1,
+      "label": "exit:register_datapoints",
+      "line": 98
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "SampleReferenceTracker",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SampleReferenceTracker",
+      "line": 73
+    },
+    {
+      "id": 1,
+      "label": "exit:SampleReferenceTracker",
+      "line": 156
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

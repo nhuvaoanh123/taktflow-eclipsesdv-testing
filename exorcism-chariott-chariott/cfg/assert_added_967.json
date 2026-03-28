@@ -1,0 +1,21 @@
+{
+  "function": "assert_added",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:assert_added",
+      "line": 967
+    },
+    {
+      "id": 1,
+      "label": "exit:assert_added",
+      "line": 980
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

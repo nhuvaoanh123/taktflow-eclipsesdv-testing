@@ -1,0 +1,21 @@
+{
+  "function": "handleResourceEvent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handleResourceEvent",
+      "line": 105
+    },
+    {
+      "id": 1,
+      "label": "exit:handleResourceEvent",
+      "line": 129
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

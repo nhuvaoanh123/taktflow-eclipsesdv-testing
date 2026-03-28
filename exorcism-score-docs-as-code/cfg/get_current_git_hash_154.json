@@ -1,0 +1,21 @@
+{
+  "function": "get_current_git_hash",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_current_git_hash",
+      "line": 154
+    },
+    {
+      "id": 1,
+      "label": "exit:get_current_git_hash",
+      "line": 190
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

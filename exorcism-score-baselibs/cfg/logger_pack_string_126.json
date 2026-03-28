@@ -1,0 +1,30 @@
+{
+  "function": "logger_pack_string",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:logger_pack_string",
+      "line": 126
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 133
+    },
+    {
+      "id": 2,
+      "label": "exit:logger_pack_string",
+      "line": 134
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

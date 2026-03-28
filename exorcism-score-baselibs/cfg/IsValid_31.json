@@ -1,0 +1,30 @@
+{
+  "function": "IsValid",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IsValid",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 41
+    },
+    {
+      "id": 2,
+      "label": "exit:IsValid",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

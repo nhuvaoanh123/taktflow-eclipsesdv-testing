@@ -1,0 +1,30 @@
+{
+  "function": "TransactionLogSetAttorney",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TransactionLogSetAttorney",
+      "line": 39
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 51
+    },
+    {
+      "id": 2,
+      "label": "exit:TransactionLogSetAttorney",
+      "line": 66
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

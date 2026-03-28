@@ -1,0 +1,21 @@
+{
+  "function": "test_publish_value_request_without_first_claiming_it",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_publish_value_request_without_first_claiming_it",
+      "line": 2528
+    },
+    {
+      "id": 1,
+      "label": "exit:test_publish_value_request_without_first_claiming_it",
+      "line": 2623
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

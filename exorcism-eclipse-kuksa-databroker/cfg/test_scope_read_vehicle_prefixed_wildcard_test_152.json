@@ -1,0 +1,21 @@
+{
+  "function": "test_scope_read_vehicle_prefixed_wildcard_test",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_scope_read_vehicle_prefixed_wildcard_test",
+      "line": 152
+    },
+    {
+      "id": 1,
+      "label": "exit:test_scope_read_vehicle_prefixed_wildcard_test",
+      "line": 159
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

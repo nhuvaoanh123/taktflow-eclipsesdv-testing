@@ -1,0 +1,764 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 1,
+    "loc": 196,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 231,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 239,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 245,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 250,
+    "cyclomatic_complexity": 20,
+    "nesting_depth": 1,
+    "loc": 79,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 330,
+    "cyclomatic_complexity": 41,
+    "nesting_depth": 4,
+    "loc": 70,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 401,
+    "cyclomatic_complexity": 37,
+    "nesting_depth": 4,
+    "loc": 57,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 459,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 461,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 477,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 485,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 494,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/multiagent_plugin/src/multiagent_plugin.cpp",
+    "start_line": 501,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "clamp",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "preprocess_lidar",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "apply_safety_bubble",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 86,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "apply_disparity_extender",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 108,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 11,
+    "loc": 23,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_best_gap_index",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 137,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 5,
+    "loc": 56,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_front_distance",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 195,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_side_distances",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 211,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "steering_from_target",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 232,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "rate_limit",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 251,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 264,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "cb",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 290,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 7,
+    "loc": 99,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "publish_visualization",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 390,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 7,
+    "loc": 119,
+    "param_count": 9,
+    "flags": [
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "publish_drive",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 510,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "src/gap_follower/gap_follower/gap_follower.py",
+    "start_line": 519,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_pep257",
+    "file": "src/gap_follower/test/test_pep257.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_flake8",
+    "file": "src/gap_follower/test/test_flake8.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_copyright",
+    "file": "src/gap_follower/test/test_copyright.py",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_launch_description",
+    "file": "src/gap_follower/launch/gap_follow_fast.launch.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "generate_launch_description",
+    "file": "src/gap_follower/launch/gap_follow.launch.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_pep257",
+    "file": "src/f1tenth_gym_ros/test/test_pep257.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_flake8",
+    "file": "src/f1tenth_gym_ros/test/test_flake8.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_copyright",
+    "file": "src/f1tenth_gym_ros/test/test_copyright.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 59,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 3,
+    "loc": 223,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "_publish_static_laser_transforms",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 283,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "handle_collision",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 297,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "choose_active_racecar_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 314,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "spawn_all_mode_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 320,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "start_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 326,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "pause_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 332,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 7,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "reset_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 340,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "drive_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 351,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 5,
+    "loc": 27,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "drive_timer_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 379,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 9,
+    "loc": 23,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_apply_pending_pose_updates",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 403,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 20,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_update_tick_cache",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 424,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_visualization_timer_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 440,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_stats_timer_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 452,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "timer_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 459,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 23,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "pose_reset_callback",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 483,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 7,
+    "loc": 36,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_publish_odom",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 520,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_publish_name_markers",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 552,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_publish_speed_markers",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 571,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 35,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_update_trajectory_history",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 607,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_publish_trajectories",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 625,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 18,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_publish_race_stats_json",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 644,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_publish_transforms",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 675,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_publish_wheel_transforms",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 698,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 31,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "src/f1tenth_gym_ros/f1tenth_gym_ros/gym_bridge.py",
+    "start_line": 731,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "launch_setup",
+    "file": "src/f1tenth_gym_ros/launch/gym_bridge_launch.py",
+    "start_line": 45,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 110,
+    "param_count": 1,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "generate_launch_description",
+    "file": "src/f1tenth_gym_ros/launch/gym_bridge_launch.py",
+    "start_line": 157,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "demo/scripts/deploy-stack.py",
+    "start_line": 30,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 35,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "publish_stack",
+    "file": "demo/scripts/deploy-stack.py",
+    "start_line": 66,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "shutdown",
+    "file": "demo/scripts/deploy-stack.py",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "demo/scripts/deploy-stack.py",
+    "start_line": 89,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 51,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "demo/scripts/deploy-stack-fleet.py",
+    "start_line": 19,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "generate_edge_service",
+    "file": "scripts/generate-compose.py",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_stack",
+    "file": "scripts/generate-gap-follower-stacks.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "scripts/generate-gap-follower-stacks.py",
+    "start_line": 53,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 12,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "generate_launch_description",
+    "file": "launch/muto.launch.py",
+    "start_line": 8,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 221,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  }
+]

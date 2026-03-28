@@ -1,0 +1,21 @@
+{
+  "function": "notify",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:notify",
+      "line": 952
+    },
+    {
+      "id": 1,
+      "label": "exit:notify",
+      "line": 1087
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

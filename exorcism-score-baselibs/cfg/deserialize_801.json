@@ -1,0 +1,105 @@
+{
+  "function": "deserialize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deserialize",
+      "line": 801
+    },
+    {
+      "id": 1,
+      "label": "if ((offset == 0UL))",
+      "line": 806
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 811
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 806
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 810
+    },
+    {
+      "id": 5,
+      "label": "if ((string_size_location == nullptr))",
+      "line": 814
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 819
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 814
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 818
+    },
+    {
+      "id": 9,
+      "label": "exit:deserialize",
+      "line": 860
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "io_call",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:io_call",
+      "line": 134
+    },
+    {
+      "id": 1,
+      "label": "exit:io_call",
+      "line": 154
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

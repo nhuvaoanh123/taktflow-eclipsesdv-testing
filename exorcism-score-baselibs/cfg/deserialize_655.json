@@ -1,0 +1,223 @@
+{
+  "function": "deserialize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deserialize",
+      "line": 655
+    },
+    {
+      "id": 1,
+      "label": "if ((offset == 0))",
+      "line": 660
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 665
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 660
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 664
+    },
+    {
+      "id": 5,
+      "label": "if ((vector_size_location == nullptr))",
+      "line": 667
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 672
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 667
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 671
+    },
+    {
+      "id": 9,
+      "label": "if ((vector_contents_address == nullptr))",
+      "line": 679
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 683
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 679
+    },
+    {
+      "id": 12,
+      "label": "return_statement",
+      "line": 682
+    },
+    {
+      "id": 13,
+      "label": "if ((t.max_size() < n))",
+      "line": 684
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 689
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 684
+    },
+    {
+      "id": 16,
+      "label": "return_statement",
+      "line": 688
+    },
+    {
+      "id": 17,
+      "label": "loop (for_statement)",
+      "line": 691
+    },
+    {
+      "id": 18,
+      "label": "loop_exit",
+      "line": 696
+    },
+    {
+      "id": 19,
+      "label": "body",
+      "line": 691
+    },
+    {
+      "id": 20,
+      "label": "exit:deserialize",
+      "line": 697
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 16
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 17
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "label": "done"
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "label": "continue"
+    },
+    {
+      "from": 19,
+      "to": 17,
+      "label": "back"
+    },
+    {
+      "from": 18,
+      "to": 20
+    }
+  ]
+}

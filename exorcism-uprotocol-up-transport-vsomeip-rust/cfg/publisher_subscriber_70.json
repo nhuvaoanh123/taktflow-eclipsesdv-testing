@@ -1,0 +1,21 @@
+{
+  "function": "publisher_subscriber",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:publisher_subscriber",
+      "line": 70
+    },
+    {
+      "id": 1,
+      "label": "exit:publisher_subscriber",
+      "line": 188
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

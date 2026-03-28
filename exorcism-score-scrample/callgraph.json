@@ -1,0 +1,1284 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 45,
+    "calls": [
+      "ToString"
+    ]
+  },
+  {
+    "function": "ToStringImpl",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 52,
+    "calls": []
+  },
+  {
+    "function": "ToStringImpl",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 58,
+    "calls": [
+      "ToStringImpl"
+    ]
+  },
+  {
+    "function": "ToString",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 65,
+    "calls": [
+      "ToStringImpl",
+      "str"
+    ]
+  },
+  {
+    "function": "HashArray",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 72,
+    "calls": [
+      "cend",
+      "score::cpp::hash_bytes_fnv1a",
+      "static_cast<const void*>",
+      "static_cast<std::size_t>",
+      "data",
+      "reinterpret_cast<const std::uint8_t*>",
+      "SCORE_LANGUAGE_FUTURECPP_ASSERT_PRD",
+      "cbegin"
+    ]
+  },
+  {
+    "function": "SampleReceiver",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 83,
+    "calls": []
+  },
+  {
+    "function": "ReceiveSample",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 91,
+    "calls": [
+      "CheckReceivedSample",
+      "ToString"
+    ]
+  },
+  {
+    "function": "GetReceivedSampleCount",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 102,
+    "calls": []
+  },
+  {
+    "function": "CheckReceivedSample",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 108,
+    "calls": [
+      "HashArray",
+      "has_value",
+      "value",
+      "ToString"
+    ]
+  },
+  {
+    "function": "GetMapApiLanesStampedProxyEvent",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 153,
+    "calls": []
+  },
+  {
+    "function": "GetMapApiLanesStampedProxyEvent",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 159,
+    "calls": [
+      "find",
+      "GetEvents",
+      "cend"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 173,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 181,
+    "calls": [
+      "static_cast<const MapApiLanesStamped*>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 190,
+    "calls": [
+      "const_cast<SampleType*>",
+      "get"
+    ]
+  },
+  {
+    "function": "ModifySampleValue",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 206,
+    "calls": [
+      "ExtractNonConstPointer"
+    ]
+  },
+  {
+    "function": "ModifySampleValue",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 212,
+    "calls": [
+      "ExtractNonConstPointer",
+      "static_cast<MapApiLanesStamped*>"
+    ]
+  },
+  {
+    "function": "GetHandleFromSpecifier",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 221,
+    "calls": [
+      "MakeUnexpected<impl::HandleType>",
+      "size",
+      "has_value",
+      "ProxyType::FindService",
+      "std::move",
+      "value",
+      "error",
+      "std::this_thread::sleep_for",
+      "front",
+      "ToString"
+    ]
+  },
+  {
+    "function": "PrepareMapLaneSample",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 243,
+    "calls": [
+      "std::uniform_int_distribution<std::size_t>",
+      "has_value",
+      "count",
+      "std::chrono::steady_clock::now",
+      "std::move",
+      "static_cast<std::uint32_t>",
+      "value",
+      "HashArray",
+      "static_cast<std::default_random_engine::result_type>",
+      "Allocate",
+      "ToString",
+      "time_since_epoch"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 275,
+    "calls": [
+      "GetMapApiLanesStampedProxyEvent",
+      "has_value",
+      "GetNewSamples",
+      "ProxyType::Create",
+      "get",
+      "str",
+      "notify",
+      "std::move",
+      "std::chrono::steady_clock::now",
+      "std::this_thread::sleep_for",
+      "count",
+      "ReceiveSample",
+      "GetHandleFromSpecifier",
+      "reset",
+      "error",
+      "ModifySampleValue",
+      "Subscribe",
+      "ToString",
+      "Unsubscribe",
+      "GetSamplePtrValue",
+      "GetReceivedSampleCount",
+      "SetReceiveHandler",
+      "value",
+      "std::chrono::duration_cast<std::chrono::milliseconds>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/sample_sender_receiver.cpp",
+    "line": 406,
+    "calls": [
+      "Send",
+      "has_value",
+      "StopOfferService",
+      "std::move",
+      "value",
+      "OfferService",
+      "error",
+      "std::this_thread::sleep_for",
+      "IpcBridgeSkeleton::Create",
+      "PrepareMapLaneSample"
+    ]
+  },
+  {
+    "function": "GetValueIfProvided",
+    "file": "src/main.cpp",
+    "line": 36,
+    "calls": [
+      "count",
+      "static_cast<SavedType>",
+      "score::cpp::optional<SavedType>"
+    ]
+  },
+  {
+    "function": "ParseCommandLineArguments",
+    "file": "src/main.cpp",
+    "line": 42,
+    "calls": [
+      "po::store",
+      "GetValueIfProvided<std::size_t, std::chrono::milliseconds>",
+      "default_value",
+      "add_options",
+      "po::value<std::string>",
+      "GetValueIfProvided<std::size_t>",
+      "po::bool_switch",
+      "style",
+      "count",
+      "options.add_options",
+      "po::value<std::size_t>",
+      "GetValueIfProvided<std::string>",
+      "std::exit",
+      "options",
+      "run"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "src/main.cpp",
+    "line": 85,
+    "calls": [
+      "score::mw::com::SetupAssertHandler",
+      "score::mw::com::runtime::InitializeRuntime",
+      "RunAsSkeleton",
+      "has_value",
+      "value",
+      "c_str",
+      "RunAsProxy",
+      "score::mw::com::InstanceSpecifier::Create",
+      "ParseCommandLineArguments"
+    ]
+  },
+  {
+    "function": "assert_handler",
+    "file": "src/assert_handler.cpp",
+    "line": 30,
+    "calls": [
+      "score::mw::log::LogFatal",
+      "flush",
+      "std::quick_exit",
+      "std::this_thread::sleep_for",
+      "std::strcmp",
+      "std::getenv",
+      "std::chrono::milliseconds"
+    ]
+  },
+  {
+    "function": "SetupAssertHandler",
+    "file": "src/assert_handler.cpp",
+    "line": 60,
+    "calls": [
+      "score::cpp::set_assertion_handler",
+      "std::this_thread::sleep_for",
+      "std::abort",
+      "std::set_terminate",
+      "std::chrono::milliseconds"
+    ]
+  },
+  {
+    "function": "map_api",
+    "file": "src/datatype.h",
+    "line": 89,
+    "calls": []
+  },
+  {
+    "function": "adp",
+    "file": "src/datatype.h",
+    "line": 121,
+    "calls": []
+  },
+  {
+    "function": "LaneType",
+    "file": "src/datatype.h",
+    "line": 128,
+    "calls": []
+  },
+  {
+    "function": "LaneTypeNew",
+    "file": "src/datatype.h",
+    "line": 133,
+    "calls": []
+  },
+  {
+    "function": "map_api",
+    "file": "src/datatype.h",
+    "line": 142,
+    "calls": []
+  },
+  {
+    "function": "is_fully_attributed",
+    "file": "src/datatype.h",
+    "line": 227,
+    "calls": []
+  },
+  {
+    "function": "event_data_qualifier",
+    "file": "src/datatype.h",
+    "line": 277,
+    "calls": []
+  },
+  {
+    "function": "EventSenderReceiver",
+    "file": "src/sample_sender_receiver.h",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "src/assert_handler.h",
+    "line": 17,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "scorex/main.go",
+    "line": 17,
+    "calls": [
+      "cmd.Execute"
+    ]
+  },
+  {
+    "function": "Run",
+    "file": "scorex/internal/service/projectinit/service.go",
+    "line": 33,
+    "calls": [
+      "len",
+      "filepath.Join",
+      "fmt.Errorf",
+      "config.WriteProjectConfig",
+      "knowngood.Load",
+      "skeleton.Generate",
+      "templateFor",
+      "module.ResolveModules"
+    ]
+  },
+  {
+    "function": "templateFor",
+    "file": "scorex/internal/service/projectinit/service.go",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "ResolveModuleWithFallback",
+    "file": "scorex/internal/service/module/resolver.go",
+    "line": 15,
+    "calls": [
+      "fetchLatestGithubMainCommit",
+      "fmt.Sprintf",
+      "fmt.Errorf",
+      "strings.TrimPrefix"
+    ]
+  },
+  {
+    "function": "ResolveModules",
+    "file": "scorex/internal/service/module/resolver.go",
+    "line": 47,
+    "calls": [
+      "make",
+      "len",
+      "strings.HasPrefix",
+      "ResolveModuleWithFallback",
+      "fmt.Errorf"
+    ]
+  },
+  {
+    "function": "fetchLatestGithubMainCommit",
+    "file": "scorex/internal/service/module/resolver.go",
+    "line": 69,
+    "calls": [
+      "resp.Body.Close",
+      "fmt.Errorf",
+      "json.NewDecoder",
+      "fmt.Sprintf",
+      "client.Get"
+    ]
+  },
+  {
+    "function": "renderTemplate",
+    "file": "scorex/internal/service/skeleton/generator.go",
+    "line": 31,
+    "calls": [
+      "t.Execute",
+      "os.Create",
+      "filepath.Dir",
+      "template.ParseFS",
+      "f.Close",
+      "os.MkdirAll"
+    ]
+  },
+  {
+    "function": "undotifyPath",
+    "file": "scorex/internal/service/skeleton/generator.go",
+    "line": 50,
+    "calls": [
+      "filepath.ToSlash",
+      "strings.HasPrefix",
+      "filepath.FromSlash",
+      "strings.Split",
+      "strings.Join",
+      "strings.TrimPrefix"
+    ]
+  },
+  {
+    "function": "Generate",
+    "file": "scorex/internal/service/skeleton/generator.go",
+    "line": 62,
+    "calls": [
+      "filepath.ToSlash",
+      "undotifyPath",
+      "renderTemplate",
+      "filepath.Base",
+      "filepath.Join",
+      "d.IsDir",
+      "strings.HasPrefix",
+      "filepath.Rel",
+      "strings.TrimSuffix",
+      "toAnyMap",
+      "filepath.Dir",
+      "os.MkdirAll",
+      "strings.TrimPrefix",
+      "fs.WalkDir",
+      "strings.HasSuffix"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "scorex/internal/service/skeleton/generator.go",
+    "line": 85,
+    "calls": [
+      "filepath.ToSlash",
+      "undotifyPath",
+      "renderTemplate",
+      "filepath.Base",
+      "strings.HasPrefix",
+      "d.IsDir",
+      "filepath.Join",
+      "filepath.Rel",
+      "strings.TrimSuffix",
+      "filepath.Dir",
+      "strings.TrimPrefix",
+      "strings.HasSuffix"
+    ]
+  },
+  {
+    "function": "toAnyMap",
+    "file": "scorex/internal/service/skeleton/generator.go",
+    "line": 127,
+    "calls": [
+      "make",
+      "len"
+    ]
+  },
+  {
+    "function": "Load",
+    "file": "scorex/internal/service/knowngood/loader.go",
+    "line": 15,
+    "calls": [
+      "json.Unmarshal",
+      "http.Get",
+      "resp.Body.Close",
+      "io.ReadAll",
+      "strings.HasPrefix",
+      "fmt.Errorf",
+      "os.ReadFile"
+    ]
+  },
+  {
+    "function": "Run",
+    "file": "scorex/internal/projectinit/service.go",
+    "line": 12,
+    "calls": [
+      "serviceprojectinit.Run"
+    ]
+  },
+  {
+    "function": "ResolveModuleWithFallback",
+    "file": "scorex/internal/utils/module_resolver.go",
+    "line": 9,
+    "calls": [
+      "module.ResolveModuleWithFallback"
+    ]
+  },
+  {
+    "function": "ResolveModules",
+    "file": "scorex/internal/utils/module_resolver.go",
+    "line": 14,
+    "calls": [
+      "module.ResolveModules"
+    ]
+  },
+  {
+    "function": "LoadKnownGood",
+    "file": "scorex/internal/config/known_good.go",
+    "line": 12,
+    "calls": [
+      "knowngood.Load"
+    ]
+  },
+  {
+    "function": "WriteProjectConfig",
+    "file": "scorex/internal/config/project_config.go",
+    "line": 19,
+    "calls": [
+      "filepath.Join",
+      "os.MkdirAll",
+      "json.MarshalIndent",
+      "os.WriteFile"
+    ]
+  },
+  {
+    "function": "ReadProjectConfig",
+    "file": "scorex/internal/config/project_config.go",
+    "line": 31,
+    "calls": [
+      "json.Unmarshal",
+      "filepath.Join",
+      "os.ReadFile"
+    ]
+  },
+  {
+    "function": "LoadModulePresets",
+    "file": "scorex/internal/config/module_presets.go",
+    "line": 26,
+    "calls": [
+      "json.Unmarshal",
+      "make",
+      "len",
+      "fmt.Errorf",
+      "strings.TrimSpace",
+      "normalizeModuleName",
+      "dedupeStrings"
+    ]
+  },
+  {
+    "function": "ApplicableModulePresets",
+    "file": "scorex/internal/config/module_presets.go",
+    "line": 62,
+    "calls": [
+      "append"
+    ]
+  },
+  {
+    "function": "FindModulePreset",
+    "file": "scorex/internal/config/module_presets.go",
+    "line": 76,
+    "calls": [
+      "strings.TrimSpace"
+    ]
+  },
+  {
+    "function": "normalizeModuleName",
+    "file": "scorex/internal/config/module_presets.go",
+    "line": 86,
+    "calls": [
+      "strings.HasPrefix",
+      "strings.TrimSpace"
+    ]
+  },
+  {
+    "function": "dedupeStrings",
+    "file": "scorex/internal/config/module_presets.go",
+    "line": 97,
+    "calls": [
+      "make",
+      "append",
+      "len",
+      "strings.TrimSpace"
+    ]
+  },
+  {
+    "function": "ValidateModulePresetUsage",
+    "file": "scorex/internal/config/module_presets.go",
+    "line": 115,
+    "calls": [
+      "len",
+      "fmt.Errorf"
+    ]
+  },
+  {
+    "function": "KnownPresetIDs",
+    "file": "scorex/internal/config/module_presets.go",
+    "line": 125,
+    "calls": [
+      "make",
+      "append",
+      "slices.Sort",
+      "len"
+    ]
+  },
+  {
+    "function": "Generate",
+    "file": "scorex/internal/skeleton/generator.go",
+    "line": 6,
+    "calls": [
+      "serviceskeleton.Generate"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "scorex/cmd/version.go",
+    "line": 26,
+    "calls": [
+      "fmt.Printf"
+    ]
+  },
+  {
+    "function": "init",
+    "file": "scorex/cmd/version.go",
+    "line": 33,
+    "calls": [
+      "rootCmd.AddCommand"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "scorex/cmd/init.go",
+    "line": 51,
+    "calls": [
+      "len",
+      "runInit",
+      "applyPresetNonInteractive",
+      "runInitInteractive",
+      "config.ValidateModulePresetUsage",
+      "validateInitOptions"
+    ]
+  },
+  {
+    "function": "init",
+    "file": "scorex/cmd/init.go",
+    "line": 73,
+    "calls": [
+      "initCmd.Flags",
+      "rootCmd.AddCommand"
+    ]
+  },
+  {
+    "function": "runInit",
+    "file": "scorex/cmd/init.go",
+    "line": 95,
+    "calls": [
+      "fmt.Println",
+      "projectinit.Run"
+    ]
+  },
+  {
+    "function": "runInitInteractive",
+    "file": "scorex/cmd/init.go",
+    "line": 116,
+    "calls": [
+      "len",
+      "fmt.Errorf",
+      "fmt.Printf",
+      "runInit",
+      "promptModules",
+      "applyPresetInteractive",
+      "bufio.NewReader",
+      "knowngood.Load",
+      "strings.ToLower",
+      "readLine",
+      "validateInitOptions",
+      "confirm"
+    ]
+  },
+  {
+    "function": "applyPresetNonInteractive",
+    "file": "scorex/cmd/init.go",
+    "line": 218,
+    "calls": [
+      "config.KnownPresetIDs",
+      "len",
+      "fmt.Errorf",
+      "config.LoadModulePresets",
+      "strings.Join",
+      "append",
+      "config.FindModulePreset"
+    ]
+  },
+  {
+    "function": "applyPresetInteractive",
+    "file": "scorex/cmd/init.go",
+    "line": 240,
+    "calls": [
+      "fmt.Println",
+      "len",
+      "fmt.Printf",
+      "fmt.Print",
+      "strconv.Atoi",
+      "fmt.Errorf",
+      "promptModules",
+      "config.LoadModulePresets",
+      "strings.TrimSpace",
+      "append",
+      "mergeUnique",
+      "config.ApplicableModulePresets",
+      "readLine",
+      "confirm"
+    ]
+  },
+  {
+    "function": "mergeUnique",
+    "file": "scorex/cmd/init.go",
+    "line": 297,
+    "calls": [
+      "make",
+      "append",
+      "len"
+    ]
+  },
+  {
+    "function": "validateInitOptions",
+    "file": "scorex/cmd/init.go",
+    "line": 323,
+    "calls": [
+      "slices.Contains",
+      "fmt.Errorf"
+    ]
+  },
+  {
+    "function": "readLine",
+    "file": "scorex/cmd/init.go",
+    "line": 358,
+    "calls": [
+      "r.ReadString",
+      "strings.TrimSpace"
+    ]
+  },
+  {
+    "function": "promptModules",
+    "file": "scorex/cmd/init.go",
+    "line": 366,
+    "calls": [
+      "make",
+      "fmt.Println",
+      "len",
+      "fmt.Errorf",
+      "fmt.Printf",
+      "fmt.Print",
+      "strconv.Atoi",
+      "strings.Split",
+      "strings.TrimSpace",
+      "append",
+      "fmt.Sprintf",
+      "readLine",
+      "sort.Strings",
+      "confirm"
+    ]
+  },
+  {
+    "function": "confirm",
+    "file": "scorex/cmd/init.go",
+    "line": 433,
+    "calls": [
+      "readLine",
+      "strings.ToLower",
+      "fmt.Printf",
+      "strings.TrimSpace"
+    ]
+  },
+  {
+    "function": "Execute",
+    "file": "scorex/cmd/root.go",
+    "line": 48,
+    "calls": [
+      "os.Exit",
+      "rootCmd.Execute"
+    ]
+  },
+  {
+    "function": "init",
+    "file": "scorex/cmd/root.go",
+    "line": 55,
+    "calls": [
+      "rootCmd.Flags"
+    ]
+  },
+  {
+    "function": "eprint",
+    "file": ".github/tools/qnx_credential_helper.py",
+    "line": 25,
+    "calls": [
+      "print"
+    ]
+  },
+  {
+    "function": "test_hello",
+    "file": "tests/rust/test_main.rs",
+    "line": 14,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "add",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 17,
+    "calls": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 22,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 27,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 32,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 39,
+    "calls": [
+      "RUN_ALL_TESTS",
+      "::testing::InitGoogleTest"
+    ]
+  },
+  {
+    "function": "socket_paths",
+    "file": "feo/ad-demo/src/activities/application_config.rs",
+    "line": 43,
+    "calls": [
+      "Path::new",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "agent_assignments",
+    "file": "feo/ad-demo/src/activities/application_config.rs",
+    "line": 50,
+    "calls": [
+      "into",
+      "into_iter",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "activity_dependencies",
+    "file": "feo/ad-demo/src/activities/application_config.rs",
+    "line": 70,
+    "calls": [
+      "into",
+      "vec"
+    ]
+  },
+  {
+    "function": "topic_dependencies",
+    "file": "feo/ad-demo/src/activities/application_config.rs",
+    "line": 76,
+    "calls": [
+      "vec"
+    ]
+  },
+  {
+    "function": "worker_agent_map",
+    "file": "feo/ad-demo/src/activities/application_config.rs",
+    "line": 85,
+    "calls": [
+      "iter",
+      "flat_map",
+      "map",
+      "agent_assignments",
+      "collect"
+    ]
+  },
+  {
+    "function": "agent_assignments_ids",
+    "file": "feo/ad-demo/src/activities/application_config.rs",
+    "line": 96,
+    "calls": [
+      "map",
+      "into_iter",
+      "agent_assignments",
+      "collect"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "feo/ad-demo/src/activities/camera_activity.rs",
+    "line": 26,
+    "calls": [
+      "Box::new",
+      "activity_output"
+    ]
+  },
+  {
+    "function": "get_image",
+    "file": "feo/ad-demo/src/activities/camera_activity.rs",
+    "line": 33,
+    "calls": [
+      "rand::rng",
+      "random_range"
+    ]
+  },
+  {
+    "function": "id",
+    "file": "feo/ad-demo/src/activities/camera_activity.rs",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "startup",
+    "file": "feo/ad-demo/src/activities/camera_activity.rs",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "step",
+    "file": "feo/ad-demo/src/activities/camera_activity.rs",
+    "line": 53,
+    "calls": [
+      "unwrap",
+      "write_payload",
+      "get_image",
+      "write_uninit",
+      "debug",
+      "send"
+    ]
+  },
+  {
+    "function": "shutdown",
+    "file": "feo/ad-demo/src/activities/camera_activity.rs",
+    "line": 65,
+    "calls": []
+  },
+  {
+    "function": "activity_input",
+    "file": "feo/ad-demo/src/activities/common.rs",
+    "line": 30,
+    "calls": [
+      "Box::new",
+      "Iox2Input::new"
+    ]
+  },
+  {
+    "function": "activity_output",
+    "file": "feo/ad-demo/src/activities/common.rs",
+    "line": 38,
+    "calls": [
+      "Box::new",
+      "Iox2Output::new"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "feo/ad-demo/src/activities/render_activity.rs",
+    "line": 28,
+    "calls": [
+      "Box::new",
+      "activity_output",
+      "activity_input"
+    ]
+  },
+  {
+    "function": "id",
+    "file": "feo/ad-demo/src/activities/render_activity.rs",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "startup",
+    "file": "feo/ad-demo/src/activities/render_activity.rs",
+    "line": 43,
+    "calls": []
+  },
+  {
+    "function": "step",
+    "file": "feo/ad-demo/src/activities/render_activity.rs",
+    "line": 46,
+    "calls": [
+      "rand::rng",
+      "write_payload",
+      "unwrap",
+      "read",
+      "write_uninit",
+      "debug",
+      "random_range",
+      "send"
+    ]
+  },
+  {
+    "function": "shutdown",
+    "file": "feo/ad-demo/src/activities/render_activity.rs",
+    "line": 76,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 34,
+    "calls": [
+      "debug_struct",
+      "field",
+      "finish"
+    ]
+  },
+  {
+    "function": "map_mcap",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 43,
+    "calls": [
+      "debug",
+      "Mmap::map",
+      "fs::File::open",
+      "context",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 50,
+    "calls": [
+      "MessageStream::new",
+      "Box::new",
+      "into_boxed_slice",
+      "to_vec",
+      "expect",
+      "Box::leak",
+      "Self::map_mcap"
+    ]
+  },
+  {
+    "function": "get_single_msg",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 60,
+    "calls": [
+      "serde_json::from_slice",
+      "Some",
+      "Ok",
+      "debug",
+      "next",
+      "context"
+    ]
+  },
+  {
+    "function": "send_tcp_msg",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 80,
+    "calls": [
+      "TcpStream::connect",
+      "shutdown",
+      "write",
+      "debug",
+      "as_bytes"
+    ]
+  },
+  {
+    "function": "id",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 98,
+    "calls": []
+  },
+  {
+    "function": "startup",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 103,
+    "calls": [
+      "debug"
+    ]
+  },
+  {
+    "function": "step",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 108,
+    "calls": [
+      "send_tcp_msg",
+      "get_single_msg",
+      "debug",
+      "expect",
+      "serde_json::to_string"
+    ]
+  },
+  {
+    "function": "shutdown",
+    "file": "feo/ad-demo/src/activities/mcap_activity.rs",
+    "line": 123,
+    "calls": [
+      "debug"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "feo/ad-demo/src/agents/secondary.rs",
+    "line": 27,
+    "calls": [
+      "feo_logger::init",
+      "unwrap",
+      "run",
+      "iter",
+      "topic_dependencies",
+      "AgentId::new",
+      "copied",
+      "agent_assignments_ids",
+      "NodeAddress::Tcp",
+      "flat_map",
+      "initialize_com_secondary",
+      "info",
+      "Secondary::new",
+      "remove",
+      "feo_tracing::init",
+      "agent_assignments",
+      "collect",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "feo/ad-demo/src/agents/primary.rs",
+    "line": 31,
+    "calls": [
+      "feo_logger::init",
+      "unwrap",
+      "initialize_com_primary",
+      "topic_dependencies",
+      "generate_primary_config",
+      "agent_assignments_ids",
+      "info",
+      "feo_tracing::init",
+      "Primary::new",
+      "run"
+    ]
+  },
+  {
+    "function": "get_cycle_time_from_args",
+    "file": "feo/ad-demo/src/agents/primary.rs",
+    "line": 51,
+    "calls": [
+      "unwrap_or",
+      "std::env::args",
+      "map",
+      "argument.parse::<u64>",
+      "and_then",
+      "ok",
+      "get",
+      "collect"
+    ]
+  },
+  {
+    "function": "generate_primary_config",
+    "file": "feo/ad-demo/src/agents/primary.rs",
+    "line": 60,
+    "calls": [
+      "unwrap",
+      "iter",
+      "worker_agent_map",
+      "get_cycle_time_from_args",
+      "Duration::from_secs",
+      "NodeAddress::Tcp",
+      "flat_map",
+      "map",
+      "activity_dependencies",
+      "values",
+      "remove",
+      "agent_assignments",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "tcp_listener",
+    "file": "feo/ad-demo/lichtblick-com/foxglove_ws_server.py",
+    "line": 29,
+    "calls": [
+      "json.loads",
+      "data.decode",
+      "asyncio.start_server",
+      "message_fxg.update",
+      "foxglove_server.send_message",
+      "json.dumps",
+      "writer.wait_closed",
+      "reader.readline",
+      "writer.close",
+      "tcp_server.serve_forever",
+      "writer.get_extra_info",
+      "time.time_ns",
+      "tcp_server.sockets[0].getsockname",
+      "print"
+    ]
+  },
+  {
+    "function": "handle_client",
+    "file": "feo/ad-demo/lichtblick-com/foxglove_ws_server.py",
+    "line": 30,
+    "calls": [
+      "json.loads",
+      "data.decode",
+      "message_fxg.update",
+      "foxglove_server.send_message",
+      "json.dumps",
+      "writer.wait_closed",
+      "reader.readline",
+      "writer.close",
+      "writer.get_extra_info",
+      "time.time_ns",
+      "print"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "feo/ad-demo/lichtblick-com/foxglove_ws_server.py",
+    "line": 89,
+    "calls": [
+      "tcp_task.cancel",
+      "FoxgloveServer",
+      "server.add_channel",
+      "server.set_listener",
+      "json.dumps",
+      "Listener",
+      "tcp_listener",
+      "asyncio.create_task",
+      "print",
+      "asyncio.Event"
+    ]
+  },
+  {
+    "function": "on_subscribe",
+    "file": "feo/ad-demo/lichtblick-com/foxglove_ws_server.py",
+    "line": 91,
+    "calls": [
+      "print"
+    ]
+  },
+  {
+    "function": "on_unsubscribe",
+    "file": "feo/ad-demo/lichtblick-com/foxglove_ws_server.py",
+    "line": 94,
+    "calls": [
+      "print"
+    ]
+  }
+]

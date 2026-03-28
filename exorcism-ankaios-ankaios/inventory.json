@@ -1,0 +1,31 @@
+{
+  "project": "ankaios-ankaios",
+  "files_by_language": {
+    "Rust": {
+      "files": 175,
+      "loc": 68335
+    },
+    "Python": {
+      "files": 10,
+      "loc": 1846
+    },
+    "JavaScript": {
+      "files": 1,
+      "loc": 234
+    },
+    "C++": {
+      "files": 1,
+      "loc": 216
+    }
+  },
+  "total_files": 187,
+  "total_loc": 70631,
+  "total_functions": 2363,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust",
+    "Python",
+    "JavaScript",
+    "C++"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "updateCurrentState",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:updateCurrentState",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:updateCurrentState",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

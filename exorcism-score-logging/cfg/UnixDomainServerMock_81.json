@@ -1,0 +1,21 @@
+{
+  "function": "UnixDomainServerMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:UnixDomainServerMock",
+      "line": 81
+    },
+    {
+      "id": 1,
+      "label": "exit:UnixDomainServerMock",
+      "line": 85
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

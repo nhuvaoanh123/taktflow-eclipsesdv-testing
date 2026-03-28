@@ -1,0 +1,21 @@
+{
+  "function": "add_tag",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:add_tag",
+      "line": 794
+    },
+    {
+      "id": 1,
+      "label": "exit:add_tag",
+      "line": 809
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "function": "LogInfo",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LogInfo",
+      "line": 181
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 184
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 189
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 184
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 190
+    },
+    {
+      "id": 5,
+      "label": "exit:LogInfo",
+      "line": 191
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "publish_provider_error",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:publish_provider_error",
+      "line": 1164
+    },
+    {
+      "id": 1,
+      "label": "exit:publish_provider_error",
+      "line": 1176
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

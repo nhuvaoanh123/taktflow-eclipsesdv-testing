@@ -1,0 +1,3672 @@
+[
+  {
+    "function": "run_pytest_utest",
+    "file": "run_checks.py",
+    "line": 40,
+    "calls": [
+      "\"--junitxml={}\".format",
+      "exit",
+      "os.path.join",
+      "os.makedirs",
+      "pytest.main"
+    ]
+  },
+  {
+    "function": "run_pytest_cov",
+    "file": "run_checks.py",
+    "line": 56,
+    "calls": [
+      "\"--cov-report=html:{}\".format",
+      "exit",
+      "\"--cov={}\".format",
+      "os.path.join",
+      "\"--cov-report=xml:{}\".format",
+      "os.makedirs",
+      "pytest.main"
+    ]
+  },
+  {
+    "function": "run_pylint",
+    "file": "run_checks.py",
+    "line": 77,
+    "calls": [
+      "subprocess.run",
+      "open",
+      "re.search",
+      "pylint_output.split",
+      "exit",
+      "f.write",
+      "rating_re.group",
+      "os.path.join",
+      "\"\\n\".join",
+      "float",
+      "os.makedirs",
+      "print"
+    ]
+  },
+  {
+    "function": "run_pycodestyle",
+    "file": "run_checks.py",
+    "line": 115,
+    "calls": [
+      "subprocess.run",
+      "len",
+      "open",
+      "exit",
+      "f.write",
+      "os.path.join",
+      "\"\\n\".join",
+      "output_lines.pop",
+      "os.makedirs",
+      "result.stdout.split",
+      "print"
+    ]
+  },
+  {
+    "function": "extract_the_proto_files",
+    "file": "setup.py",
+    "line": 29,
+    "calls": [
+      "open",
+      "response.raise_for_status",
+      "ANKAIOS_RELEASE_LINK.format",
+      "requests.get",
+      "ANKAIOS_BRANCH_LINK.format",
+      "f.write",
+      "os.makedirs",
+      "os.environ.get",
+      "os.path.exists",
+      "ANKAIOS_MAIN_LINK.format",
+      "ankaios_version.endswith",
+      "print"
+    ]
+  },
+  {
+    "function": "generate_protos",
+    "file": "setup.py",
+    "line": 77,
+    "calls": [
+      "Exception",
+      "proto_path.replace",
+      "open",
+      "filedata.replace",
+      "file.write",
+      "os.path.getmtime",
+      "protoc.main",
+      "os.path.join",
+      "os.listdir",
+      "os.path.exists",
+      "file.read",
+      "file.endswith",
+      "print",
+      "os.popen"
+    ]
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/apps/get_logs.py",
+    "line": 31,
+    "calls": [
+      "sys.exit"
+    ]
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/apps/sleepy.py",
+    "line": 21,
+    "calls": [
+      "sys.exit"
+    ]
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/apps/state_event.py",
+    "line": 29,
+    "calls": [
+      "sys.exit"
+    ]
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/apps/follow_state.py",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/apps/hello_ankaios.py",
+    "line": 23,
+    "calls": [
+      "sys.exit"
+    ]
+  },
+  {
+    "function": "test_from_file",
+    "file": "tests/test_manifest.py",
+    "line": 82,
+    "calls": [
+      "mock_open",
+      "pytest.raises",
+      "mock_from_string.assert_called_once_with",
+      "patch",
+      "Manifest.from_file"
+    ]
+  },
+  {
+    "function": "test_from_string",
+    "file": "tests/test_manifest.py",
+    "line": 97,
+    "calls": [
+      "patch",
+      "mock_from_dict.assert_called_once_with",
+      "pytest.raises",
+      "Manifest.from_string"
+    ]
+  },
+  {
+    "function": "test_from_dict",
+    "file": "tests/test_manifest.py",
+    "line": 111,
+    "calls": [
+      "Manifest.from_dict",
+      "pytest.raises",
+      "manifest._to_desired_state"
+    ]
+  },
+  {
+    "function": "test_calculate_masks",
+    "file": "tests/test_manifest.py",
+    "line": 140,
+    "calls": [
+      "MANIFEST_DICT.copy",
+      "manifest._calculate_masks",
+      "len",
+      "Manifest.from_dict"
+    ]
+  },
+  {
+    "function": "test_manifest_only_configs",
+    "file": "tests/test_manifest.py",
+    "line": 161,
+    "calls": [
+      "len",
+      "manifest_dict.pop",
+      "manifest._calculate_masks",
+      "Manifest.from_dict",
+      "MANIFEST_DICT.copy"
+    ]
+  },
+  {
+    "function": "test_log_queue",
+    "file": "tests/test_log_campaign.py",
+    "line": 27,
+    "calls": [
+      "log_queue.put",
+      "generate_test_log_entry",
+      "log_queue.get",
+      "LogQueue",
+      "WorkloadInstanceName",
+      "LogEntry._from_entries",
+      "log_queue.empty"
+    ]
+  },
+  {
+    "function": "builder",
+    "file": "tests/test_workload_builder.py",
+    "line": 36,
+    "calls": [
+      "WorkloadBuilder"
+    ]
+  },
+  {
+    "function": "test_workload_fields",
+    "file": "tests/test_workload_builder.py",
+    "line": 46,
+    "calls": [
+      "mock_open",
+      "builder.restart_policy",
+      "builder.runtime",
+      "patch",
+      "builder.runtime_config",
+      "builder.agent_name",
+      "builder.runtime_config_from_file"
+    ]
+  },
+  {
+    "function": "test_add_dependency",
+    "file": "tests/test_workload_builder.py",
+    "line": 75,
+    "calls": [
+      "len",
+      "builder.add_dependency"
+    ]
+  },
+  {
+    "function": "test_add_tag",
+    "file": "tests/test_workload_builder.py",
+    "line": 101,
+    "calls": [
+      "builder.add_tag",
+      "len"
+    ]
+  },
+  {
+    "function": "test_add_state_rule",
+    "file": "tests/test_workload_builder.py",
+    "line": 119,
+    "calls": [
+      "len",
+      "builder.deny_rules[0]._to_proto",
+      "builder.add_deny_state_rule",
+      "builder.add_allow_state_rule",
+      "_ank_base.StateRule",
+      "builder.allow_rules[0]._to_proto",
+      "_ank_base.AccessRightsRule"
+    ]
+  },
+  {
+    "function": "test_add_log_rule",
+    "file": "tests/test_workload_builder.py",
+    "line": 149,
+    "calls": [
+      "len",
+      "builder.add_deny_log_rule",
+      "_ank_base.LogRule",
+      "builder.deny_rules[0]._to_proto",
+      "builder.add_allow_log_rule",
+      "builder.allow_rules[0]._to_proto",
+      "_ank_base.AccessRightsRule"
+    ]
+  },
+  {
+    "function": "test_add_config",
+    "file": "tests/test_workload_builder.py",
+    "line": 175,
+    "calls": [
+      "builder.add_config",
+      "len"
+    ]
+  },
+  {
+    "function": "test_add_file",
+    "file": "tests/test_workload_builder.py",
+    "line": 190,
+    "calls": [
+      "builder.add_file",
+      "len",
+      "File.from_binary_data",
+      "File.from_data",
+      "BinaryFileContent",
+      "DataFileContent"
+    ]
+  },
+  {
+    "function": "test_build",
+    "file": "tests/test_workload_builder.py",
+    "line": 223,
+    "calls": [
+      "isinstance",
+      "pytest.raises",
+      "builder.runtime",
+      "_ank_base.StateRule",
+      "builder.runtime_config",
+      "builder.workload_name",
+      "builder.build",
+      "_ank_base.Dependencies",
+      "_ank_base.Tags",
+      "builder.agent_name",
+      "_ank_base.AccessRightsRule"
+    ]
+  },
+  {
+    "function": "test_state",
+    "file": "tests/test_control_interface.py",
+    "line": 45,
+    "calls": [
+      "ci._logger.debug.assert_called_with",
+      "ci.change_state",
+      "MagicMock",
+      "ControlInterface",
+      "str"
+    ]
+  },
+  {
+    "function": "test_connection",
+    "file": "tests/test_control_interface.py",
+    "line": 70,
+    "calls": [
+      "ci._logger.debug.assert_called_with",
+      "pytest.raises",
+      "mock_open_file.assert_called_once_with",
+      "mock_thread_instance.join.assert_called_once",
+      "mock_thread.assert_called_once_with",
+      "mock_initial_hello.assert_called_once",
+      "patch",
+      "MagicMock",
+      "ControlInterface",
+      "ci.connect",
+      "output_file_mock.close.assert_called_once",
+      "mock_thread_instance.start.assert_called_once",
+      "ci.disconnect",
+      "ci._disconnect_event.is_set"
+    ]
+  },
+  {
+    "function": "test_read_thread_general",
+    "file": "tests/test_control_interface.py",
+    "line": 161,
+    "calls": [
+      "mock_open",
+      "mock_file.assert_called_once_with",
+      "bytes",
+      "pytest.raises",
+      "ci._read_from_control_interface",
+      "threading.Thread",
+      "ci._read_thread.start",
+      "mock_disconnect.assert_called_once",
+      "ci._disconnect_event.set",
+      "patch",
+      "ci._read_thread.join",
+      "ControlInterface",
+      "mock_handle_response.assert_called_once",
+      "time.sleep"
+    ]
+  },
+  {
+    "function": "test_read_thread_agent_disconnected",
+    "file": "tests/test_control_interface.py",
+    "line": 222,
+    "calls": [
+      "mock_open",
+      "mock_file.assert_called_once_with",
+      "threading.Thread",
+      "ci._read_thread.start",
+      "ci._disconnect_event.set",
+      "patch",
+      "ci._read_thread.join",
+      "ControlInterface",
+      "mock_agent_gone.assert_called",
+      "time.sleep"
+    ]
+  },
+  {
+    "function": "test_read_thread_connection_closed",
+    "file": "tests/test_control_interface.py",
+    "line": 265,
+    "calls": [
+      "mock_open",
+      "mock_file.assert_called_once_with",
+      "bytes",
+      "threading.Thread",
+      "ci._read_thread.start",
+      "patch",
+      "ci._read_thread.join",
+      "ControlInterface",
+      "time.sleep"
+    ]
+  },
+  {
+    "function": "test_handle_response",
+    "file": "tests/test_control_interface.py",
+    "line": 308,
+    "calls": [
+      "ci._logger.warning.assert_called_with",
+      "ci._logger.error.assert_called_with",
+      "ci._handle_response",
+      "Response",
+      "response_callback.assert_called_once_with",
+      "MagicMock",
+      "ControlInterface",
+      "response_callback.assert_not_called"
+    ]
+  },
+  {
+    "function": "test_handle_response_control_interface_accepted",
+    "file": "tests/test_control_interface.py",
+    "line": 352,
+    "calls": [
+      "ci._logger.warning.assert_called_with",
+      "ci._handle_response",
+      "Response",
+      "MagicMock",
+      "ControlInterface"
+    ]
+  },
+  {
+    "function": "test_handle_response_connection_closed",
+    "file": "tests/test_control_interface.py",
+    "line": 389,
+    "calls": [
+      "pytest.raises",
+      "ci._handle_response",
+      "Response",
+      "MagicMock",
+      "ControlInterface"
+    ]
+  },
+  {
+    "function": "test_handle_response_logs",
+    "file": "tests/test_control_interface.py",
+    "line": 425,
+    "calls": [
+      "ci._handle_response",
+      "Response",
+      "MagicMock",
+      "ControlInterface",
+      "response_callback.assert_not_called",
+      "logs_callback.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_handle_response_events",
+    "file": "tests/test_control_interface.py",
+    "line": 447,
+    "calls": [
+      "ci._handle_response",
+      "Response",
+      "MagicMock",
+      "ControlInterface",
+      "response_callback.assert_not_called",
+      "events_callback.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_agent_gone_routine",
+    "file": "tests/test_control_interface.py",
+    "line": 469,
+    "calls": [
+      "original_sleep",
+      "threading.Thread",
+      "agent_gone_thread.start",
+      "agent_gone_thread.join",
+      "patch",
+      "mock_initial_hello.assert_called",
+      "ControlInterface",
+      "mock_initial_hello.assert_not_called",
+      "time.sleep",
+      "ci._agent_gone_routine"
+    ]
+  },
+  {
+    "function": "test_write_to_pipe",
+    "file": "tests/test_control_interface.py",
+    "line": 509,
+    "calls": [
+      "pytest.raises",
+      "ci._write_to_pipe",
+      "output_file.write.assert_called",
+      "output_file.flush.assert_called_once",
+      "MagicMock",
+      "ControlInterface",
+      "_control_api.FromAnkaios"
+    ]
+  },
+  {
+    "function": "test_write_request",
+    "file": "tests/test_control_interface.py",
+    "line": 534,
+    "calls": [
+      "ci.write_request",
+      "pytest.raises",
+      "mock_write.assert_called_once",
+      "generate_test_request",
+      "patch",
+      "ControlInterface"
+    ]
+  },
+  {
+    "function": "test_send_initial_hello",
+    "file": "tests/test_control_interface.py",
+    "line": 563,
+    "calls": [
+      "mock_write.assert_called_once_with",
+      "_control_api.ToAnkaios",
+      "ci._send_initial_hello",
+      "patch",
+      "ControlInterface",
+      "_control_api.Hello",
+      "str"
+    ]
+  },
+  {
+    "function": "generate_test_ankaios",
+    "file": "tests/test_ankaios.py",
+    "line": 65,
+    "calls": [
+      "patch",
+      "Ankaios",
+      "mock_connect.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_logger",
+    "file": "tests/test_ankaios.py",
+    "line": 83,
+    "calls": [
+      "StringIO",
+      "logging.StreamHandler",
+      "ankaios.logger.error",
+      "ankaios.logger.addHandler",
+      "ankaios.logger.debug",
+      "str_stream.getvalue",
+      "generate_test_ankaios",
+      "ankaios.set_logger_level"
+    ]
+  },
+  {
+    "function": "test_connect_disconnect",
+    "file": "tests/test_ankaios.py",
+    "line": 102,
+    "calls": [
+      "mock_ci_connect.assert_called_once",
+      "isinstance",
+      "mock_ci_disconnect.assert_called_once",
+      "patch",
+      "Ankaios"
+    ]
+  },
+  {
+    "function": "test_connection_timeout",
+    "file": "tests/test_ankaios.py",
+    "line": 121,
+    "calls": [
+      "patch",
+      "Ankaios",
+      "mock_ci_connect.assert_called_once",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_add_response",
+    "file": "tests/test_ankaios.py",
+    "line": 141,
+    "calls": [
+      "ankaios._responses.qsize",
+      "ankaios._add_response",
+      "Response",
+      "ankaios._responses.get",
+      "ankaios._responses.empty",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_add_logs",
+    "file": "tests/test_ankaios.py",
+    "line": 157,
+    "calls": [
+      "ankaios.logger.warning.assert_not_called",
+      "len",
+      "ankaios.logger.warning.assert_called_once",
+      "generate_test_log_entry",
+      "ankaios._add_logs",
+      "MagicMock",
+      "generate_test_ankaios",
+      "LogEntry._from_entries"
+    ]
+  },
+  {
+    "function": "test_add_events",
+    "file": "tests/test_ankaios.py",
+    "line": 182,
+    "calls": [
+      "ankaios.logger.warning.assert_not_called",
+      "len",
+      "ankaios.logger.warning.assert_called_once",
+      "ankaios._add_events",
+      "MagicMock",
+      "generate_test_event_entry",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_get_reponse_by_id",
+    "file": "tests/test_ankaios.py",
+    "line": 204,
+    "calls": [
+      "ankaios._responses.qsize",
+      "pytest.raises",
+      "ankaios._get_response_by_id",
+      "Response",
+      "ankaios._responses.put",
+      "ankaios._responses.empty",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_send_request",
+    "file": "tests/test_ankaios.py",
+    "line": 227,
+    "calls": [
+      "mock_write.assert_called_once_with",
+      "ankaios._send_request",
+      "mock_get_response.assert_called_once_with",
+      "request.get_id",
+      "TimeoutError",
+      "pytest.raises",
+      "generate_test_request",
+      "patch",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_apply_manifest",
+    "file": "tests/test_ankaios.py",
+    "line": 256,
+    "calls": [
+      "ankaios.apply_manifest",
+      "mock_send_request.assert_called_once",
+      "isinstance",
+      "pytest.raises",
+      "TimeoutError",
+      "Manifest.from_dict",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_delete_manifest",
+    "file": "tests/test_ankaios.py",
+    "line": 301,
+    "calls": [
+      "ankaios.delete_manifest",
+      "mock_send_request.assert_called_once",
+      "isinstance",
+      "pytest.raises",
+      "TimeoutError",
+      "Manifest.from_dict",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_apply_workload",
+    "file": "tests/test_ankaios.py",
+    "line": 346,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "list",
+      "isinstance",
+      "generate_test_workload",
+      "pytest.raises",
+      "TimeoutError",
+      "ankaios.apply_workload",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_get_workload",
+    "file": "tests/test_ankaios.py",
+    "line": 405,
+    "calls": [
+      "generate_test_workload",
+      "mock_state_get_workloads.assert_called_once",
+      "generate_test_ankaios",
+      "CompleteState",
+      "mock_get_state.assert_called_once_with",
+      "patch",
+      "ankaios.get_workload"
+    ]
+  },
+  {
+    "function": "test_delete_workload",
+    "file": "tests/test_ankaios.py",
+    "line": 426,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "isinstance",
+      "pytest.raises",
+      "TimeoutError",
+      "patch",
+      "ankaios.delete_workload",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_update_configs",
+    "file": "tests/test_ankaios.py",
+    "line": 470,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "pytest.raises",
+      "ankaios.update_configs",
+      "TimeoutError",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_add_config",
+    "file": "tests/test_ankaios.py",
+    "line": 513,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "pytest.raises",
+      "TimeoutError",
+      "patch",
+      "Response",
+      "ankaios.add_config",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_get_configs",
+    "file": "tests/test_ankaios.py",
+    "line": 556,
+    "calls": [
+      "ankaios.get_configs",
+      "CompleteState",
+      "mock_get_state.assert_called_once_with",
+      "patch",
+      "mock_state_get_configs.assert_called_once",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_get_config",
+    "file": "tests/test_ankaios.py",
+    "line": 573,
+    "calls": [
+      "CompleteState",
+      "ankaios.get_config",
+      "mock_get_state.assert_called_once_with",
+      "patch",
+      "mock_state_get_configs.assert_called_once",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_delete_all_configs",
+    "file": "tests/test_ankaios.py",
+    "line": 590,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "pytest.raises",
+      "TimeoutError",
+      "ankaios.delete_all_configs",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_delete_config",
+    "file": "tests/test_ankaios.py",
+    "line": 633,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "pytest.raises",
+      "TimeoutError",
+      "ankaios.delete_config",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_get_state",
+    "file": "tests/test_ankaios.py",
+    "line": 676,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "isinstance",
+      "pytest.raises",
+      "TimeoutError",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios",
+      "ankaios.get_state"
+    ]
+  },
+  {
+    "function": "test_set_agent_tags",
+    "file": "tests/test_ankaios.py",
+    "line": 719,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "pytest.raises",
+      "TimeoutError",
+      "ankaios.set_agent_tags",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios"
+    ]
+  },
+  {
+    "function": "test_get_agents",
+    "file": "tests/test_ankaios.py",
+    "line": 762,
+    "calls": [
+      "CompleteState",
+      "mock_get_state.assert_called_once_with",
+      "patch",
+      "ankaios.get_agents",
+      "generate_test_ankaios",
+      "mock_state_get_agents.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_get_agent",
+    "file": "tests/test_ankaios.py",
+    "line": 779,
+    "calls": [
+      "ankaios.get_agent",
+      "pytest.raises",
+      "CompleteState",
+      "mock_get_state.assert_called_once_with",
+      "patch",
+      "MagicMock",
+      "generate_test_ankaios",
+      "mock_state_get_agents.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_get_workload_states",
+    "file": "tests/test_ankaios.py",
+    "line": 821,
+    "calls": [
+      "mock_get_state.assert_called_once_with",
+      "CompleteState",
+      "ankaios.get_workload_states",
+      "patch",
+      "generate_test_ankaios",
+      "mock_state_get_workload_states.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_get_execution_state_for_instance_name",
+    "file": "tests/test_ankaios.py",
+    "line": 838,
+    "calls": [
+      "pytest.raises",
+      "ankaios.get_execution_state_for_instance_name",
+      "generate_test_ankaios",
+      "CompleteState",
+      "patch",
+      "MagicMock",
+      "ankaios.logger.error.assert_called",
+      "WorkloadInstanceName",
+      "mock_state_get_workload_states.assert_called_once",
+      "WorkloadStateCollection"
+    ]
+  },
+  {
+    "function": "test_get_workload_states_on_agent",
+    "file": "tests/test_ankaios.py",
+    "line": 881,
+    "calls": [
+      "mock_get_state.assert_called_once_with",
+      "CompleteState",
+      "ankaios.get_workload_states_on_agent",
+      "patch",
+      "generate_test_ankaios",
+      "mock_state_get_workload_states.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_get_workload_states_for_name",
+    "file": "tests/test_ankaios.py",
+    "line": 898,
+    "calls": [
+      "len",
+      "isinstance",
+      "ankaios.get_workload_states_for_name",
+      "CompleteState",
+      "patch",
+      "ret.get_as_list",
+      "wl_state_collection.add_workload_state",
+      "generate_test_ankaios",
+      "generate_test_workload_state",
+      "str",
+      "WorkloadStateCollection"
+    ]
+  },
+  {
+    "function": "test_wait_for_workload_to_reach_state",
+    "file": "tests/test_ankaios.py",
+    "line": 919,
+    "calls": [
+      "mock_get_state.assert_called",
+      "ankaios.wait_for_workload_to_reach_state",
+      "pytest.raises",
+      "generate_test_ankaios",
+      "patch",
+      "mock_get_state",
+      "MagicMock",
+      "WorkloadInstanceName"
+    ]
+  },
+  {
+    "function": "test_request_logs",
+    "file": "tests/test_ankaios.py",
+    "line": 954,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "len",
+      "isinstance",
+      "ankaios.request_logs",
+      "pytest.raises",
+      "request.get_id",
+      "TimeoutError",
+      "generate_test_ankaios",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "WorkloadInstanceName"
+    ]
+  },
+  {
+    "function": "test_stop_receiving_logs",
+    "file": "tests/test_ankaios.py",
+    "line": 1007,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "len",
+      "isinstance",
+      "ankaios.request_logs",
+      "cancel_request._to_proto",
+      "pytest.raises",
+      "TimeoutError",
+      "generate_test_ankaios",
+      "ankaios.stop_receiving_logs",
+      "patch",
+      "Response",
+      "LogsCancelRequest",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "WorkloadInstanceName",
+      "request._to_proto"
+    ]
+  },
+  {
+    "function": "test_register_events",
+    "file": "tests/test_ankaios.py",
+    "line": 1067,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "len",
+      "isinstance",
+      "pytest.raises",
+      "request.get_id",
+      "TimeoutError",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "events_queue.qsize",
+      "generate_test_ankaios",
+      "ankaios.register_event"
+    ]
+  },
+  {
+    "function": "test_unregister_event",
+    "file": "tests/test_ankaios.py",
+    "line": 1120,
+    "calls": [
+      "mock_send_request.assert_called_once",
+      "len",
+      "isinstance",
+      "cancel_request._to_proto",
+      "pytest.raises",
+      "TimeoutError",
+      "EventsCancelRequest",
+      "request._to_proto",
+      "ankaios.unregister_event",
+      "patch",
+      "Response",
+      "MagicMock",
+      "ankaios.logger.info.assert_called",
+      "ankaios.logger.error.assert_called",
+      "generate_test_ankaios",
+      "ankaios.register_event"
+    ]
+  },
+  {
+    "function": "test_general_functionality",
+    "file": "tests/test_complete_state.py",
+    "line": 90,
+    "calls": [
+      "complete_state._set_api_version",
+      "complete_state.get_api_version",
+      "CompleteState",
+      "str"
+    ]
+  },
+  {
+    "function": "test_workload_functionality",
+    "file": "tests/test_complete_state.py",
+    "line": 101,
+    "calls": [
+      "complete_state.get_workload",
+      "len",
+      "generate_test_workload",
+      "CompleteState",
+      "complete_state.get_workloads",
+      "wl_nginx._to_proto"
+    ]
+  },
+  {
+    "function": "test_workload_states",
+    "file": "tests/test_complete_state.py",
+    "line": 123,
+    "calls": [
+      "len",
+      "isinstance",
+      "complete_state.get_workload_states",
+      "CompleteState",
+      "workload_states.get_as_list",
+      "_ank_base.CompleteState"
+    ]
+  },
+  {
+    "function": "test_get_agents",
+    "file": "tests/test_complete_state.py",
+    "line": 137,
+    "calls": [
+      "complete_state.set_agent_tags",
+      "len",
+      "CompleteState",
+      "complete_state.get_agents",
+      "_ank_base.CompleteState"
+    ]
+  },
+  {
+    "function": "test_get_configs",
+    "file": "tests/test_complete_state.py",
+    "line": 156,
+    "calls": [
+      "complete_state.set_configs",
+      "CompleteState",
+      "_ank_base.CompleteState",
+      "complete_state.get_configs",
+      "_ank_base.State"
+    ]
+  },
+  {
+    "function": "test_from_manifest",
+    "file": "tests/test_complete_state.py",
+    "line": 175,
+    "calls": [
+      "complete_state.get_api_version",
+      "len",
+      "CompleteState",
+      "Manifest.from_dict",
+      "complete_state.get_workloads",
+      "complete_state.get_configs"
+    ]
+  },
+  {
+    "function": "test_to_dict",
+    "file": "tests/test_complete_state.py",
+    "line": 188,
+    "calls": [
+      "complete_state.to_dict",
+      "json.dumps",
+      "CompleteState"
+    ]
+  },
+  {
+    "function": "test_proto",
+    "file": "tests/test_complete_state.py",
+    "line": 292,
+    "calls": [
+      "CompleteState",
+      "complete_state._to_proto"
+    ]
+  },
+  {
+    "function": "test_agent_attributes",
+    "file": "tests/test_complete_state.py",
+    "line": 302,
+    "calls": [
+      "AgentAttributes._from_proto"
+    ]
+  },
+  {
+    "function": "generate_test_event_entry",
+    "file": "tests/test_event_campaign.py",
+    "line": 32,
+    "calls": [
+      "EventEntry",
+      "CompleteState"
+    ]
+  },
+  {
+    "function": "test_events_queue",
+    "file": "tests/test_event_campaign.py",
+    "line": 46,
+    "calls": [
+      "events_queue.put",
+      "events_queue.get",
+      "isinstance",
+      "EventsRequest",
+      "EventQueue",
+      "events_queue.empty",
+      "generate_test_event_entry",
+      "str"
+    ]
+  },
+  {
+    "function": "test_get_logger",
+    "file": "tests/test_utils.py",
+    "line": 23,
+    "calls": [
+      "len",
+      "isinstance",
+      "get_logger"
+    ]
+  },
+  {
+    "function": "generate_test_workload",
+    "file": "tests/workload/test_workload.py",
+    "line": 96,
+    "calls": [
+      "Workload.builder",
+      "File.from_data"
+    ]
+  },
+  {
+    "function": "workload",
+    "file": "tests/workload/test_workload.py",
+    "line": 126,
+    "calls": [
+      "generate_test_workload"
+    ]
+  },
+  {
+    "function": "test_builder",
+    "file": "tests/workload/test_workload.py",
+    "line": 136,
+    "calls": [
+      "isinstance",
+      "workload.builder"
+    ]
+  },
+  {
+    "function": "test_update_fields",
+    "file": "tests/workload/test_workload.py",
+    "line": 148,
+    "calls": [
+      "workload.update_runtime_config",
+      "mock_open",
+      "workload.update_runtime_config_from_file",
+      "pytest.raises",
+      "workload.update_restart_policy",
+      "workload.update_agent_name",
+      "patch",
+      "workload.update_runtime",
+      "workload.update_workload_name"
+    ]
+  },
+  {
+    "function": "test_dependencies",
+    "file": "tests/workload/test_workload.py",
+    "line": 183,
+    "calls": [
+      "len",
+      "workload.update_dependencies",
+      "pytest.raises",
+      "workload.get_dependencies",
+      "deps.pop"
+    ]
+  },
+  {
+    "function": "test_tags",
+    "file": "tests/workload/test_workload.py",
+    "line": 209,
+    "calls": [
+      "list",
+      "len",
+      "workload.update_tags",
+      "tags.keys",
+      "tags.pop",
+      "workload.get_tags",
+      "workload.add_tag"
+    ]
+  },
+  {
+    "function": "test_rules",
+    "file": "tests/workload/test_workload.py",
+    "line": 229,
+    "calls": [
+      "workload.get_allow_rules",
+      "len",
+      "workload.update_deny_rules",
+      "workload.update_allow_rules",
+      "pytest.raises",
+      "workload.get_deny_rules",
+      "AccessRightRule.state_rule",
+      "allow_rules.append",
+      "deny_rules.append",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "test_configs",
+    "file": "tests/workload/test_workload.py",
+    "line": 270,
+    "calls": [
+      "workload.add_config",
+      "len",
+      "workload.update_configs",
+      "workload.get_configs"
+    ]
+  },
+  {
+    "function": "test_files",
+    "file": "tests/workload/test_workload.py",
+    "line": 289,
+    "calls": [
+      "len",
+      "files.append",
+      "workload.get_files",
+      "workload.add_file",
+      "workload.update_files",
+      "File.from_binary_data",
+      "File.from_data",
+      "print"
+    ]
+  },
+  {
+    "function": "test_to_proto",
+    "file": "tests/workload/test_workload.py",
+    "line": 318,
+    "calls": [
+      "workload._to_proto",
+      "_ank_base.Tags"
+    ]
+  },
+  {
+    "function": "test_proto",
+    "file": "tests/workload/test_workload.py",
+    "line": 339,
+    "calls": [
+      "Workload",
+      "workload_new._from_proto",
+      "workload_new._to_proto"
+    ]
+  },
+  {
+    "function": "test_from_to_dict",
+    "file": "tests/workload/test_workload.py",
+    "line": 348,
+    "calls": [
+      "str",
+      "workload_new.to_dict",
+      "generate_test_workload",
+      "Workload._from_dict"
+    ]
+  },
+  {
+    "function": "test_mask_generation",
+    "file": "tests/workload/test_workload.py",
+    "line": 426,
+    "calls": [
+      "getattr",
+      "Workload",
+      "len"
+    ]
+  },
+  {
+    "function": "generate_test_data_file",
+    "file": "tests/workload/test_file.py",
+    "line": 54,
+    "calls": [
+      "File.from_data"
+    ]
+  },
+  {
+    "function": "generate_test_binary_file",
+    "file": "tests/workload/test_file.py",
+    "line": 64,
+    "calls": [
+      "File.from_binary_data"
+    ]
+  },
+  {
+    "function": "test_data_creation",
+    "file": "tests/workload/test_file.py",
+    "line": 74,
+    "calls": [
+      "DataFileContent"
+    ]
+  },
+  {
+    "function": "test_data_equality",
+    "file": "tests/workload/test_file.py",
+    "line": 82,
+    "calls": [
+      "DataFileContent"
+    ]
+  },
+  {
+    "function": "test_binary_data_creation",
+    "file": "tests/workload/test_file.py",
+    "line": 94,
+    "calls": [
+      "BinaryFileContent"
+    ]
+  },
+  {
+    "function": "test_binary_data_equality",
+    "file": "tests/workload/test_file.py",
+    "line": 102,
+    "calls": [
+      "BinaryFileContent"
+    ]
+  },
+  {
+    "function": "test_file_init_with_data",
+    "file": "tests/workload/test_file.py",
+    "line": 114,
+    "calls": [
+      "DataFileContent",
+      "isinstance",
+      "File"
+    ]
+  },
+  {
+    "function": "test_file_init_with_binary_data",
+    "file": "tests/workload/test_file.py",
+    "line": 126,
+    "calls": [
+      "BinaryFileContent",
+      "isinstance",
+      "File"
+    ]
+  },
+  {
+    "function": "test_from_data_classmethod",
+    "file": "tests/workload/test_file.py",
+    "line": 138,
+    "calls": [
+      "File.from_data",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "test_from_binary_data_classmethod",
+    "file": "tests/workload/test_file.py",
+    "line": 153,
+    "calls": [
+      "isinstance",
+      "File.from_binary_data"
+    ]
+  },
+  {
+    "function": "test_to_dict",
+    "file": "tests/workload/test_file.py",
+    "line": 168,
+    "calls": [
+      "binary_file.to_dict",
+      "generate_test_binary_file",
+      "generate_test_data_file",
+      "data_file.to_dict"
+    ]
+  },
+  {
+    "function": "test_from_dict",
+    "file": "tests/workload/test_file.py",
+    "line": 183,
+    "calls": [
+      "File._from_dict",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "test_from_dict_invalid_format",
+    "file": "tests/workload/test_file.py",
+    "line": 202,
+    "calls": [
+      "File._from_dict",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_to_proto",
+    "file": "tests/workload/test_file.py",
+    "line": 219,
+    "calls": [
+      "isinstance",
+      "data_file._to_proto",
+      "binary_file._to_proto",
+      "generate_test_data_file",
+      "generate_test_binary_file"
+    ]
+  },
+  {
+    "function": "test_from_proto",
+    "file": "tests/workload/test_file.py",
+    "line": 242,
+    "calls": [
+      "File._from_proto",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "test_from_proto_invalid_format",
+    "file": "tests/workload/test_file.py",
+    "line": 261,
+    "calls": [
+      "File._from_proto",
+      "pytest.raises",
+      "_ank_base.File"
+    ]
+  },
+  {
+    "function": "test_str_method",
+    "file": "tests/workload/test_file.py",
+    "line": 271,
+    "calls": [
+      "generate_test_data_file",
+      "str"
+    ]
+  },
+  {
+    "function": "test_state_rule",
+    "file": "tests/workload/test_access_right_rule.py",
+    "line": 23,
+    "calls": [
+      "rule._to_proto",
+      "AccessRightRule.state_rule",
+      "_ank_base.StateRule",
+      "rule.to_dict",
+      "str",
+      "_ank_base.AccessRightsRule"
+    ]
+  },
+  {
+    "function": "test_log_rule",
+    "file": "tests/workload/test_access_right_rule.py",
+    "line": 46,
+    "calls": [
+      "AccessRightRule.log_rule",
+      "_ank_base.LogRule",
+      "rule._to_proto",
+      "rule.to_dict",
+      "str",
+      "_ank_base.AccessRightsRule"
+    ]
+  },
+  {
+    "function": "test_unknown_rule",
+    "file": "tests/workload/test_access_right_rule.py",
+    "line": 64,
+    "calls": [
+      "_ank_base.AccessRightsRule",
+      "rule.to_dict",
+      "str",
+      "AccessRightRule"
+    ]
+  },
+  {
+    "function": "test_interpret_state",
+    "file": "tests/workload_state/test_workload_execution_state.py",
+    "line": 29,
+    "calls": [
+      "_ank_base.ExecutionState",
+      "WorkloadExecutionState"
+    ]
+  },
+  {
+    "function": "test_interpret_state_error",
+    "file": "tests/workload_state/test_workload_execution_state.py",
+    "line": 49,
+    "calls": [
+      "WorkloadExecutionState",
+      "_ank_base.ExecutionState",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_get",
+    "file": "tests/workload_state/test_workload_state_collection.py",
+    "line": 69,
+    "calls": [
+      "len",
+      "_ank_base.ExecutionState",
+      "isinstance",
+      "WorkloadState",
+      "workload_state_collection.get_as_list",
+      "workload_state_collection.get_as_dict",
+      "workload_states_dict[\"agent_Test\"][\"workload_Test\"].keys",
+      "workload_state_collection.get_for_instance_name",
+      "workload_state_collection.add_workload_state",
+      "WorkloadInstanceName",
+      "workload_states_dict[\"agent_Test\"].keys",
+      "str",
+      "WorkloadStateCollection"
+    ]
+  },
+  {
+    "function": "test_from_proto",
+    "file": "tests/workload_state/test_workload_state_collection.py",
+    "line": 128,
+    "calls": [
+      "workload_state_collection._from_proto",
+      "len",
+      "workload_state_collection.get_as_list",
+      "WorkloadStateCollection"
+    ]
+  },
+  {
+    "function": "generate_test_workload_state",
+    "file": "tests/workload_state/test_workload_state.py",
+    "line": 24,
+    "calls": [
+      "_ank_base.ExecutionState",
+      "WorkloadState"
+    ]
+  },
+  {
+    "function": "test_creation",
+    "file": "tests/workload_state/test_workload_state.py",
+    "line": 39,
+    "calls": [
+      "generate_test_workload_state"
+    ]
+  },
+  {
+    "function": "test_methods",
+    "file": "tests/workload_state/test_workload_instance_name.py",
+    "line": 24,
+    "calls": [
+      "workload_instance_name.get_filter_mask",
+      "_ank_base.WorkloadInstanceName",
+      "workload_instance_name._to_proto",
+      "workload_instance_name.to_dict",
+      "WorkloadInstanceName",
+      "str"
+    ]
+  },
+  {
+    "function": "test_equality",
+    "file": "tests/workload_state/test_workload_instance_name.py",
+    "line": 56,
+    "calls": [
+      "WorkloadInstanceName"
+    ]
+  },
+  {
+    "function": "test_get",
+    "file": "tests/workload_state/test_workload_substate_enum.py",
+    "line": 25,
+    "calls": [
+      "WorkloadSubStateEnum._get"
+    ]
+  },
+  {
+    "function": "test_get_error",
+    "file": "tests/workload_state/test_workload_substate_enum.py",
+    "line": 117,
+    "calls": [
+      "pytest.raises",
+      "WorkloadSubStateEnum._get"
+    ]
+  },
+  {
+    "function": "test_sub_state2ank_base",
+    "file": "tests/workload_state/test_workload_substate_enum.py",
+    "line": 129,
+    "calls": [
+      "substate._sub_state2ank_base",
+      "str"
+    ]
+  },
+  {
+    "function": "test_get",
+    "file": "tests/workload_state/test_workload_state_enum.py",
+    "line": 23,
+    "calls": [
+      "WorkloadStateEnum._get",
+      "str"
+    ]
+  },
+  {
+    "function": "test_update_state",
+    "file": "tests/request/test_update_state_request.py",
+    "line": 23,
+    "calls": [
+      "CompleteState",
+      "str",
+      "request._to_proto",
+      "UpdateStateRequest",
+      "complete_state._to_proto"
+    ]
+  },
+  {
+    "function": "test_get_state",
+    "file": "tests/request/test_get_state_request.py",
+    "line": 23,
+    "calls": [
+      "GetStateRequest"
+    ]
+  },
+  {
+    "function": "test_logs_request",
+    "file": "tests/request/test_logs.py",
+    "line": 25,
+    "calls": [
+      "pytest.raises",
+      "datetime",
+      "LogsRequest",
+      "request._request.HasField",
+      "WorkloadInstanceName"
+    ]
+  },
+  {
+    "function": "test_cancel_request",
+    "file": "tests/request/test_logs.py",
+    "line": 69,
+    "calls": [
+      "LogsCancelRequest",
+      "request._request.HasField"
+    ]
+  },
+  {
+    "function": "generate_test_request",
+    "file": "tests/request/test_request.py",
+    "line": 29,
+    "calls": [
+      "generate_test_workload",
+      "pytest.raises",
+      "CompleteState",
+      "Request",
+      "UpdateStateRequest",
+      "GetStateRequest"
+    ]
+  },
+  {
+    "function": "test_proto",
+    "file": "tests/request/test_request.py",
+    "line": 47,
+    "calls": [
+      "request.get_id",
+      "CompleteState",
+      "request._to_proto",
+      "UpdateStateRequest",
+      "GetStateRequest"
+    ]
+  },
+  {
+    "function": "test_initialisation",
+    "file": "tests/response/test_response.py",
+    "line": 185,
+    "calls": [
+      "response.get_request_id",
+      "len",
+      "isinstance",
+      "pytest.raises",
+      "Response",
+      "str"
+    ]
+  },
+  {
+    "function": "test_getters",
+    "file": "tests/response/test_response.py",
+    "line": 255,
+    "calls": [
+      "Response",
+      "response.get_request_id",
+      "response.get_content",
+      "str"
+    ]
+  },
+  {
+    "function": "generate_test_log_entry",
+    "file": "tests/response/test_log_response.py",
+    "line": 29,
+    "calls": [
+      "_ank_base.WorkloadInstanceName",
+      "_ank_base.LogEntry"
+    ]
+  },
+  {
+    "function": "generate_test_logs_stop_reponse",
+    "file": "tests/response/test_log_response.py",
+    "line": 44,
+    "calls": [
+      "_ank_base.WorkloadInstanceName",
+      "_ank_base.LogsStopResponse"
+    ]
+  },
+  {
+    "function": "test_log_entries",
+    "file": "tests/response/test_log_response.py",
+    "line": 60,
+    "calls": [
+      "LogEntry._from_entries",
+      "str",
+      "generate_test_log_entry"
+    ]
+  },
+  {
+    "function": "test_log_stop_response",
+    "file": "tests/response/test_log_response.py",
+    "line": 71,
+    "calls": [
+      "str",
+      "generate_test_logs_stop_reponse",
+      "LogsStopResponse._from_stop_response"
+    ]
+  },
+  {
+    "function": "test_functionality",
+    "file": "tests/response/test_update_state_success.py",
+    "line": 23,
+    "calls": [
+      "len",
+      "update_state_success.added_workloads.append",
+      "UpdateStateSuccess",
+      "update_state_success.to_dict",
+      "update_state_success.deleted_workloads.append",
+      "WorkloadInstanceName",
+      "str"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 189,
+    "calls": [
+      "self.logger.error",
+      "self.set_logger_level",
+      "ConnectionClosedException",
+      "time.time",
+      "get_logger",
+      "ControlInterface",
+      "Queue",
+      "self._control_interface.disconnect",
+      "time.sleep",
+      "self._control_interface.connect"
+    ]
+  },
+  {
+    "function": "__enter__",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 231,
+    "calls": []
+  },
+  {
+    "function": "__exit__",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 240,
+    "calls": [
+      "self.logger.error",
+      "self._control_interface.disconnect"
+    ]
+  },
+  {
+    "function": "_add_response",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 260,
+    "calls": [
+      "self.logger.debug",
+      "response.get_request_id",
+      "self._responses.put"
+    ]
+  },
+  {
+    "function": "_add_logs",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 272,
+    "calls": [
+      "self._logs_callbacks[request_id]",
+      "self.logger.warning"
+    ]
+  },
+  {
+    "function": "_add_events",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 290,
+    "calls": [
+      "self.logger.warning",
+      "self._events_callbacks[request_id]"
+    ]
+  },
+  {
+    "function": "_get_response_by_id",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 307,
+    "calls": [
+      "self.logger.error",
+      "response.get_request_id",
+      "ConnectionClosedException",
+      "self.logger.warning",
+      "TimeoutError",
+      "self._responses.get"
+    ]
+  },
+  {
+    "function": "_send_request",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 348,
+    "calls": [
+      "request.get_id",
+      "self._control_interface.write_request",
+      "self._get_response_by_id"
+    ]
+  },
+  {
+    "function": "set_logger_level",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 370,
+    "calls": [
+      "self.logger.setLevel"
+    ]
+  },
+  {
+    "function": "apply_manifest",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 379,
+    "calls": [
+      "self.logger.error",
+      "len",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "manifest._calculate_masks",
+      "self._send_request",
+      "CompleteState",
+      "response.get_content",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "delete_manifest",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 429,
+    "calls": [
+      "self.logger.error",
+      "len",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "manifest._calculate_masks",
+      "self._send_request",
+      "CompleteState",
+      "response.get_content",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "apply_workload",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 479,
+    "calls": [
+      "self.logger.error",
+      "len",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "self._send_request",
+      "response.get_content",
+      "CompleteState",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "get_workload",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 534,
+    "calls": [
+      "self.get_state"
+    ]
+  },
+  {
+    "function": "delete_workload",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 560,
+    "calls": [
+      "self.logger.error",
+      "len",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "self._send_request",
+      "response.get_content",
+      "CompleteState",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "update_configs",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 609,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "self._send_request",
+      "response.get_content",
+      "CompleteState",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "add_config",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 648,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "self._send_request",
+      "response.get_content",
+      "CompleteState",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "get_configs",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 695,
+    "calls": [
+      "self.get_state"
+    ]
+  },
+  {
+    "function": "get_config",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 717,
+    "calls": [
+      "self.get_state"
+    ]
+  },
+  {
+    "function": "delete_all_configs",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 743,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "self._send_request",
+      "response.get_content",
+      "CompleteState",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "delete_config",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 778,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "self._send_request",
+      "response.get_content",
+      "CompleteState",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "get_state",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 817,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self._send_request",
+      "response.get_content",
+      "AnkaiosProtocolException",
+      "GetStateRequest"
+    ]
+  },
+  {
+    "function": "set_agent_tags",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 858,
+    "calls": [
+      "self.logger.error",
+      "complete_state.set_agent_tags",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "self._send_request",
+      "CompleteState",
+      "response.get_content",
+      "AnkaiosProtocolException",
+      "UpdateStateRequest"
+    ]
+  },
+  {
+    "function": "get_agents",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 906,
+    "calls": [
+      "self.get_state"
+    ]
+  },
+  {
+    "function": "get_agent",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 925,
+    "calls": [
+      "self.logger.error",
+      "self.get_state",
+      "AnkaiosProtocolException"
+    ]
+  },
+  {
+    "function": "get_workload_states",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 955,
+    "calls": [
+      "self.get_state"
+    ]
+  },
+  {
+    "function": "get_execution_state_for_instance_name",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 978,
+    "calls": [
+      "self.logger.error",
+      "self.get_state",
+      "len",
+      "state.get_workload_states",
+      "instance_name.get_filter_mask",
+      "AnkaiosProtocolException"
+    ]
+  },
+  {
+    "function": "get_workload_states_on_agent",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 1017,
+    "calls": [
+      "self.get_state",
+      "state.get_workload_states"
+    ]
+  },
+  {
+    "function": "get_workload_states_for_name",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 1042,
+    "calls": [
+      "workload_states_for_name.add_workload_state",
+      "self.get_state",
+      "state.get_workload_states",
+      "WorkloadStateCollection"
+    ]
+  },
+  {
+    "function": "wait_for_workload_to_reach_state",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 1075,
+    "calls": [
+      "time.time",
+      "self.get_execution_state_for_instance_name",
+      "time.sleep",
+      "TimeoutError"
+    ]
+  },
+  {
+    "function": "request_logs",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 1112,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "request.get_id",
+      "self._send_request",
+      "response.get_content",
+      "LogCampaignResponse",
+      "LogsRequest",
+      "AnkaiosProtocolException",
+      "LogQueue"
+    ]
+  },
+  {
+    "function": "stop_receiving_logs",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 1180,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "request.get_id",
+      "self._send_request",
+      "response.get_content",
+      "LogsCancelRequest",
+      "AnkaiosProtocolException",
+      "self._logs_callbacks.pop"
+    ]
+  },
+  {
+    "function": "register_event",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 1217,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "request.get_id",
+      "EventsRequest",
+      "self._send_request",
+      "EventQueue",
+      "response.get_content",
+      "event_queue.put",
+      "AnkaiosProtocolException",
+      "EventEntry"
+    ]
+  },
+  {
+    "function": "unregister_event",
+    "file": "ankaios_sdk/ankaios.py",
+    "line": 1264,
+    "calls": [
+      "self.logger.error",
+      "AnkaiosResponseError",
+      "self.logger.info",
+      "request.get_id",
+      "self._send_request",
+      "EventsCancelRequest",
+      "response.get_content",
+      "AnkaiosProtocolException",
+      "self._events_callbacks.pop"
+    ]
+  },
+  {
+    "function": "get_logger",
+    "file": "ankaios_sdk/utils.py",
+    "line": 76,
+    "calls": [
+      "logger.addHandler",
+      "isinstance",
+      "logging.getLogger",
+      "logging.StreamHandler",
+      "any",
+      "logging.Formatter",
+      "handler.setFormatter"
+    ]
+  },
+  {
+    "function": "_to_config_item",
+    "file": "ankaios_sdk/utils.py",
+    "line": 100,
+    "calls": [
+      "_to_config_item",
+      "isinstance",
+      "item.items",
+      "_ank_base.ConfigItem",
+      "config_item.object.fields[key].CopyFrom",
+      "config_item.array.values.append"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/exceptions.py",
+    "line": 65,
+    "calls": [
+      "super",
+      "\", \".join"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/exceptions.py",
+    "line": 94,
+    "calls": [
+      "super",
+      "inspect.stack"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 85,
+    "calls": [
+      "self._set_api_version",
+      "self.set_configs",
+      "workload._to_proto",
+      "self._complete_state.desiredState.CopyFrom",
+      "logger.debug",
+      "self._complete_state.desiredState.workloads.workloads.clear",
+      "_ank_base.CompleteState",
+      "self._complete_state.desiredState.workloads.workloads[\r\n                    workload.name\r\n                ].CopyFrom",
+      "manifest._to_desired_state"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 129,
+    "calls": [
+      "self._to_proto",
+      "str"
+    ]
+  },
+  {
+    "function": "_set_api_version",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 138,
+    "calls": []
+  },
+  {
+    "function": "get_api_version",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 147,
+    "calls": [
+      "str"
+    ]
+  },
+  {
+    "function": "get_workload",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 156,
+    "calls": [
+      "Workload",
+      "self._complete_state.desiredState.workloads.workloads.keys",
+      "workload._from_proto"
+    ]
+  },
+  {
+    "function": "get_workloads",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 180,
+    "calls": [
+      "self._complete_state.desiredState.workloads.workloads.items",
+      "Workload",
+      "workload._from_proto",
+      "workloads.append"
+    ]
+  },
+  {
+    "function": "get_workload_states",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 197,
+    "calls": [
+      "workload_state_collection._from_proto",
+      "WorkloadStateCollection"
+    ]
+  },
+  {
+    "function": "get_agents",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 210,
+    "calls": [
+      "AgentAttributes._from_proto",
+      "self._complete_state.agents.agents.items"
+    ]
+  },
+  {
+    "function": "set_agent_tags",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 222,
+    "calls": [
+      "agent_attributes.tags.tags.clear",
+      "tags.items"
+    ]
+  },
+  {
+    "function": "set_configs",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 236,
+    "calls": [
+      "_to_config_item",
+      "self._complete_state.desiredState.configs.configs[key].CopyFrom",
+      "self._complete_state.desiredState.configs.configs.clear",
+      "configs.items"
+    ]
+  },
+  {
+    "function": "get_configs",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 249,
+    "calls": [
+      "_from_config_item",
+      "item.object.fields.items",
+      "self._complete_state.desiredState.configs.configs.items",
+      "item.HasField"
+    ]
+  },
+  {
+    "function": "_from_config_item",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 257,
+    "calls": [
+      "_from_config_item",
+      "item.object.fields.items",
+      "item.HasField"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 281,
+    "calls": [
+      "exec_states.items",
+      "self.get_api_version",
+      "workload.to_dict",
+      "exec_states_id.items",
+      "self.get_agents",
+      "self.get_workloads",
+      "self.get_configs",
+      "wl_states.items",
+      "exec_state.to_dict",
+      "agent_attributes.to_dict",
+      "self.get_workload_states"
+    ]
+  },
+  {
+    "function": "_to_proto",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 315,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 333,
+    "calls": [
+      "_ank_base.AgentStatus"
+    ]
+  },
+  {
+    "function": "status",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 341,
+    "calls": [
+      "int"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 354,
+    "calls": []
+  },
+  {
+    "function": "_from_proto",
+    "file": "ankaios_sdk/_components/complete_state.py",
+    "line": 368,
+    "calls": [
+      "dict",
+      "AgentAttributes"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/manifest.py",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "from_file",
+    "file": "ankaios_sdk/_components/manifest.py",
+    "line": 72,
+    "calls": [
+      "file.read",
+      "open",
+      "ValueError",
+      "Manifest.from_string"
+    ]
+  },
+  {
+    "function": "from_string",
+    "file": "ankaios_sdk/_components/manifest.py",
+    "line": 92,
+    "calls": [
+      "ValueError",
+      "yaml.safe_load",
+      "Manifest.from_dict"
+    ]
+  },
+  {
+    "function": "from_dict",
+    "file": "ankaios_sdk/_components/manifest.py",
+    "line": 110,
+    "calls": [
+      "manifest.keys",
+      "_to_config_item",
+      "configs.items",
+      "desired_state.configs.configs[key].CopyFrom",
+      "InvalidManifestException",
+      "desired_state.workloads.workloads[wl_name].CopyFrom",
+      "Manifest",
+      "workloads.items",
+      "workload._to_proto",
+      "Workload._from_dict",
+      "_ank_base.State"
+    ]
+  },
+  {
+    "function": "_calculate_masks",
+    "file": "ankaios_sdk/_components/manifest.py",
+    "line": 144,
+    "calls": [
+      "masks.extend",
+      "sorted",
+      "self._desired_state.configs.configs.keys",
+      "self._desired_state.workloads.workloads.keys"
+    ]
+  },
+  {
+    "function": "_to_desired_state",
+    "file": "ankaios_sdk/_components/manifest.py",
+    "line": 173,
+    "calls": []
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 103,
+    "calls": [
+      "threading.Event",
+      "threading.Lock",
+      "get_logger"
+    ]
+  },
+  {
+    "function": "_state",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 139,
+    "calls": []
+  },
+  {
+    "function": "_state",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 150,
+    "calls": []
+  },
+  {
+    "function": "connected",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 161,
+    "calls": []
+  },
+  {
+    "function": "connect",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 170,
+    "calls": [
+      "self._send_initial_hello",
+      "open",
+      "self._logger.error",
+      "threading.Thread",
+      "self.change_state",
+      "ControlInterfaceException",
+      "os.path.exists",
+      "self._read_thread.start"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 215,
+    "calls": [
+      "self._read_thread.is_alive",
+      "self._logger.error",
+      "self._disconnect_event.set",
+      "self._logger.debug",
+      "self._read_thread.join",
+      "self._cleanup"
+    ]
+  },
+  {
+    "function": "_cleanup",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 235,
+    "calls": [
+      "self.change_state",
+      "self._logger.debug",
+      "self._output_file.close",
+      "self._input_file.close"
+    ]
+  },
+  {
+    "function": "change_state",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 251,
+    "calls": [
+      "self._logger.debug"
+    ]
+  },
+  {
+    "function": "_read_from_control_interface",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 275,
+    "calls": [
+      "self._input_file.read",
+      "self._disconnect_event.is_set",
+      "self._handle_response",
+      "self._logger.error",
+      "os.set_blocking",
+      "self._input_file.close",
+      "range",
+      "open",
+      "self.change_state",
+      "Response",
+      "ControlInterfaceException",
+      "self._logger.debug",
+      "_DecodeVarint",
+      "bytes",
+      "self._logger.warning",
+      "bytearray",
+      "select.select",
+      "self._agent_gone_routine",
+      "self._cleanup",
+      "self._input_file.fileno",
+      "self.disconnect"
+    ]
+  },
+  {
+    "function": "_handle_response",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 359,
+    "calls": [
+      "self._add_response_callback",
+      "response.get_request_id",
+      "ConnectionClosedException",
+      "self.change_state",
+      "self._logger.error",
+      "self._add_log_callback",
+      "self._logger.warning",
+      "self._logger.debug",
+      "self._add_event_callback"
+    ]
+  },
+  {
+    "function": "_agent_gone_routine",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 442,
+    "calls": [
+      "self.change_state",
+      "self._send_initial_hello",
+      "self._logger.warning",
+      "time.sleep"
+    ]
+  },
+  {
+    "function": "_write_to_pipe",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 459,
+    "calls": [
+      "_VarintBytes",
+      "self._output_file.write",
+      "self._logger.error",
+      "ControlInterfaceException",
+      "to_ankaios.SerializeToString",
+      "self._output_file.flush",
+      "to_ankaios.ByteSize"
+    ]
+  },
+  {
+    "function": "write_request",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 483,
+    "calls": [
+      "ConnectionClosedException",
+      "_control_api.ToAnkaios",
+      "ControlInterfaceException",
+      "request._to_proto",
+      "self._write_to_pipe"
+    ]
+  },
+  {
+    "function": "_send_initial_hello",
+    "file": "ankaios_sdk/_components/control_interface.py",
+    "line": 507,
+    "calls": [
+      "_control_api.ToAnkaios",
+      "self._logger.debug",
+      "_control_api.Hello",
+      "str",
+      "self._write_to_pipe"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 116,
+    "calls": []
+  },
+  {
+    "function": "from_data",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 130,
+    "calls": [
+      "DataFileContent",
+      "cls"
+    ]
+  },
+  {
+    "function": "from_binary_data",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 147,
+    "calls": [
+      "BinaryFileContent",
+      "cls"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 164,
+    "calls": [
+      "self._to_proto",
+      "str"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 173,
+    "calls": [
+      "ValueError",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "_from_dict",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 195,
+    "calls": [
+      "file_dict.get",
+      "content.get",
+      "ValueError",
+      "File.from_binary_data",
+      "File.from_data"
+    ]
+  },
+  {
+    "function": "_to_proto",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 230,
+    "calls": [
+      "ValueError",
+      "isinstance",
+      "_ank_base.File"
+    ]
+  },
+  {
+    "function": "_from_proto",
+    "file": "ankaios_sdk/_components/file.py",
+    "line": 254,
+    "calls": [
+      "File.from_data",
+      "ValueError",
+      "File.from_binary_data"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 103,
+    "calls": []
+  },
+  {
+    "function": "_get",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 113,
+    "calls": [
+      "field.upper"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 171,
+    "calls": []
+  },
+  {
+    "function": "_get",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 181,
+    "calls": [
+      "getattr",
+      "elem.title",
+      "\"\".join",
+      "ValueError",
+      "state.name.split"
+    ]
+  },
+  {
+    "function": "_sub_state2ank_base",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 208,
+    "calls": [
+      "getattr",
+      "ValueError"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 240,
+    "calls": [
+      "self._interpret_state"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 253,
+    "calls": []
+  },
+  {
+    "function": "_interpret_state",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 265,
+    "calls": [
+      "getattr",
+      "exec_state.WhichOneof",
+      "WorkloadSubStateEnum._get",
+      "ValueError",
+      "WorkloadStateEnum._get",
+      "str"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 287,
+    "calls": [
+      "str"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 314,
+    "calls": []
+  },
+  {
+    "function": "__eq__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 331,
+    "calls": [
+      "isinstance"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 350,
+    "calls": []
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 359,
+    "calls": []
+  },
+  {
+    "function": "get_filter_mask",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 372,
+    "calls": []
+  },
+  {
+    "function": "_to_proto",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 384,
+    "calls": [
+      "_ank_base.WorkloadInstanceName"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 410,
+    "calls": [
+      "WorkloadInstanceName",
+      "isinstance",
+      "WorkloadExecutionState"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 437,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 457,
+    "calls": []
+  },
+  {
+    "function": "add_workload_state",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 463,
+    "calls": [
+      "self.ExecutionsStatesForId",
+      "self.ExecutionsStatesOfWorkload"
+    ]
+  },
+  {
+    "function": "get_as_dict",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 485,
+    "calls": []
+  },
+  {
+    "function": "get_as_list",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 494,
+    "calls": [
+      "WorkloadState",
+      "sorted",
+      "workloads.items",
+      "self._workload_states.items",
+      "workload_ids.items",
+      "workload_states.append"
+    ]
+  },
+  {
+    "function": "get_for_instance_name",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 512,
+    "calls": [
+      "WorkloadState"
+    ]
+  },
+  {
+    "function": "_from_proto",
+    "file": "ankaios_sdk/_components/workload_state.py",
+    "line": 538,
+    "calls": [
+      "WorkloadState",
+      "self.add_workload_state"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/log_campaign.py",
+    "line": 56,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/log_campaign.py",
+    "line": 82,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 81,
+    "calls": []
+  },
+  {
+    "function": "workload_name",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 97,
+    "calls": []
+  },
+  {
+    "function": "agent_name",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 110,
+    "calls": []
+  },
+  {
+    "function": "runtime",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 123,
+    "calls": []
+  },
+  {
+    "function": "runtime_config",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 136,
+    "calls": []
+  },
+  {
+    "function": "runtime_config_from_file",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 149,
+    "calls": [
+      "file.read",
+      "open"
+    ]
+  },
+  {
+    "function": "restart_policy",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 165,
+    "calls": []
+  },
+  {
+    "function": "add_dependency",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 178,
+    "calls": []
+  },
+  {
+    "function": "add_tag",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 195,
+    "calls": [
+      "self.tags.update"
+    ]
+  },
+  {
+    "function": "add_allow_state_rule",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 210,
+    "calls": [
+      "AccessRightRule.state_rule",
+      "self.allow_rules.append"
+    ]
+  },
+  {
+    "function": "add_deny_state_rule",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 231,
+    "calls": [
+      "AccessRightRule.state_rule",
+      "self.deny_rules.append"
+    ]
+  },
+  {
+    "function": "add_allow_log_rule",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 252,
+    "calls": [
+      "AccessRightRule.log_rule",
+      "self.allow_rules.append"
+    ]
+  },
+  {
+    "function": "add_deny_log_rule",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 268,
+    "calls": [
+      "AccessRightRule.log_rule",
+      "self.deny_rules.append"
+    ]
+  },
+  {
+    "function": "add_config",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 284,
+    "calls": []
+  },
+  {
+    "function": "add_file",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 299,
+    "calls": [
+      "self.files.append"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "ankaios_sdk/_components/workload_builder.py",
+    "line": 312,
+    "calls": [
+      "workload.update_runtime_config",
+      "len",
+      "workload.update_tags",
+      "workload.update_dependencies",
+      "workload.update_allow_rules",
+      "workload.update_deny_rules",
+      "workload.update_configs",
+      "workload.update_restart_policy",
+      "workload.update_agent_name",
+      "WorkloadBuilderException",
+      "workload.update_runtime",
+      "Workload",
+      "workload.update_files"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 108,
+    "calls": [
+      "self._parse_response"
+    ]
+  },
+  {
+    "function": "_parse_response",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 122,
+    "calls": [
+      "self._from_proto",
+      "from_ankaios.ParseFromString",
+      "logger.error",
+      "from_ankaios.HasField",
+      "logger.debug",
+      "_control_api.FromAnkaios",
+      "self.get_request_id",
+      "ResponseException"
+    ]
+  },
+  {
+    "function": "_from_proto",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 155,
+    "calls": [
+      "self.content.append",
+      "self._response.completeStateResponse.HasField",
+      "CompleteState",
+      "workload.split",
+      "EventEntry._from_response",
+      "self.content.deleted_workloads.append",
+      "LogsStopResponse._from_stop_response",
+      "UpdateStateSuccess",
+      "self.content.added_workloads.append",
+      "self._response.HasField",
+      "WorkloadInstanceName",
+      "LogEntry._from_entries",
+      "ResponseException"
+    ]
+  },
+  {
+    "function": "get_request_id",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 225,
+    "calls": []
+  },
+  {
+    "function": "get_content",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 239,
+    "calls": []
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 280,
+    "calls": [
+      "self.name.lower"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 301,
+    "calls": []
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 308,
+    "calls": [
+      "instance_name.to_dict"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 326,
+    "calls": [
+      "str"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 358,
+    "calls": []
+  },
+  {
+    "function": "_from_entries",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 373,
+    "calls": [
+      "WorkloadInstanceName",
+      "LogEntry"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 405,
+    "calls": []
+  },
+  {
+    "function": "_from_stop_response",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 420,
+    "calls": [
+      "WorkloadInstanceName",
+      "LogsStopResponse"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 459,
+    "calls": []
+  },
+  {
+    "function": "_from_response",
+    "file": "ankaios_sdk/_components/response.py",
+    "line": 476,
+    "calls": [
+      "CompleteState",
+      "EventEntry"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 95,
+    "calls": [
+      "_ank_base.Workload"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 110,
+    "calls": [
+      "self._to_proto",
+      "str"
+    ]
+  },
+  {
+    "function": "builder",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 120,
+    "calls": [
+      "WorkloadBuilder"
+    ]
+  },
+  {
+    "function": "update_workload_name",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 132,
+    "calls": [
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "update_agent_name",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 142,
+    "calls": [
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "update_runtime",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 152,
+    "calls": [
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "update_runtime_config",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 162,
+    "calls": [
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "update_runtime_config_from_file",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 172,
+    "calls": [
+      "self.update_runtime_config",
+      "file.read",
+      "open"
+    ]
+  },
+  {
+    "function": "update_restart_policy",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 182,
+    "calls": [
+      "self._add_mask",
+      "logger.error",
+      "WorkloadFieldException",
+      "_ank_base.RestartPolicy.keys",
+      "_ank_base.RestartPolicy.Value"
+    ]
+  },
+  {
+    "function": "get_dependencies",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 201,
+    "calls": [
+      "dict",
+      "_ank_base.AddCondition.Name"
+    ]
+  },
+  {
+    "function": "update_dependencies",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 214,
+    "calls": [
+      "_ank_base.AddCondition.Value",
+      "self._workload.dependencies.dependencies.clear",
+      "self._add_mask",
+      "logger.error",
+      "WorkloadFieldException",
+      "_ank_base.AddCondition.keys",
+      "dependencies.items"
+    ]
+  },
+  {
+    "function": "add_tag",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 240,
+    "calls": [
+      "self._add_mask",
+      "self._workload.tags.tags.update"
+    ]
+  },
+  {
+    "function": "get_tags",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 254,
+    "calls": [
+      "self._workload.tags.tags.items",
+      "tags.update"
+    ]
+  },
+  {
+    "function": "update_tags",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 266,
+    "calls": [
+      "self._add_mask",
+      "mask.startswith",
+      "self._workload.tags.tags.clear",
+      "tags.items",
+      "self._workload.tags.tags.update"
+    ]
+  },
+  {
+    "function": "get_allow_rules",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 283,
+    "calls": [
+      "rules.append",
+      "AccessRightRule"
+    ]
+  },
+  {
+    "function": "update_allow_rules",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 295,
+    "calls": [
+      "self._workload.controlInterfaceAccess.allowRules.append",
+      "rule._to_proto",
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "get_deny_rules",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 309,
+    "calls": [
+      "rules.append",
+      "AccessRightRule"
+    ]
+  },
+  {
+    "function": "update_deny_rules",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 321,
+    "calls": [
+      "rule._to_proto",
+      "self._workload.controlInterfaceAccess.denyRules.append",
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "add_config",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 335,
+    "calls": [
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "get_configs",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 347,
+    "calls": [
+      "self._workload.configs.configs.items"
+    ]
+  },
+  {
+    "function": "update_configs",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 360,
+    "calls": [
+      "self._workload.configs.configs.clear",
+      "self.add_config",
+      "configs.items"
+    ]
+  },
+  {
+    "function": "add_file",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 372,
+    "calls": [
+      "file._to_proto",
+      "self._workload.files.files.append",
+      "self._add_mask"
+    ]
+  },
+  {
+    "function": "get_files",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 382,
+    "calls": [
+      "File._from_proto"
+    ]
+  },
+  {
+    "function": "update_files",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 391,
+    "calls": [
+      "self.add_file"
+    ]
+  },
+  {
+    "function": "_add_mask",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 402,
+    "calls": [
+      "self._masks.append"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 413,
+    "calls": [
+      "workload_dict[\"controlInterfaceAccess\"][\"allowRules\"].append",
+      "self._workload.tags.tags.items",
+      "workload_dict[\"files\"].append",
+      "access_rule.to_dict",
+      "File._from_proto",
+      "self._workload.dependencies.dependencies.items",
+      "self._workload.configs.configs.items",
+      "_ank_base.RestartPolicy.Name",
+      "_ank_base.AddCondition.Name",
+      "workload_dict[\"controlInterfaceAccess\"][\"denyRules\"].append",
+      "workload_dict[\"tags\"].update",
+      "AccessRightRule"
+    ]
+  },
+  {
+    "function": "_from_dict",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 467,
+    "calls": [
+      "dict_workload[\"dependencies\"].items",
+      "workload.add_config",
+      "workload.build",
+      "workload.add_tag",
+      "dict_workload[\"configs\"].items",
+      "File._from_dict",
+      "workload.restart_policy",
+      "dict_workload[\"tags\"].items",
+      "workload.add_dependency",
+      "workload.add_deny_state_rule",
+      "workload.add_file",
+      "workload.add_allow_state_rule",
+      "Workload.builder",
+      "workload.agent_name",
+      "workload.runtime_config",
+      "workload.runtime"
+    ]
+  },
+  {
+    "function": "_to_proto",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 518,
+    "calls": []
+  },
+  {
+    "function": "_from_proto",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 528,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 545,
+    "calls": []
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 556,
+    "calls": [
+      "self._state_rule_to_str"
+    ]
+  },
+  {
+    "function": "type",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 573,
+    "calls": [
+      "self._rule.HasField"
+    ]
+  },
+  {
+    "function": "state_rule",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 587,
+    "calls": [
+      "_ank_base.AccessRightsRule",
+      "AccessRightRule",
+      "AccessRightRule._generate_state_rule"
+    ]
+  },
+  {
+    "function": "log_rule",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 613,
+    "calls": [
+      "_ank_base.LogRule",
+      "_ank_base.AccessRightsRule",
+      "AccessRightRule"
+    ]
+  },
+  {
+    "function": "_to_proto",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 629,
+    "calls": []
+  },
+  {
+    "function": "to_dict",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 639,
+    "calls": [
+      "self._state_rule_to_str",
+      "str"
+    ]
+  },
+  {
+    "function": "_generate_state_rule",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 665,
+    "calls": [
+      "enum_mapper.keys",
+      "_ank_base.StateRule",
+      "logger.error",
+      "WorkloadFieldException"
+    ]
+  },
+  {
+    "function": "_state_rule_to_str",
+    "file": "ankaios_sdk/_components/workload.py",
+    "line": 697,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 103,
+    "calls": [
+      "self._set_id",
+      "uuid.uuid4",
+      "get_logger",
+      "TypeError",
+      "_ank_base.Request",
+      "str"
+    ]
+  },
+  {
+    "function": "__str__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 118,
+    "calls": [
+      "self._to_proto",
+      "str"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 127,
+    "calls": []
+  },
+  {
+    "function": "_set_id",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 136,
+    "calls": []
+  },
+  {
+    "function": "_to_proto",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 145,
+    "calls": []
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 163,
+    "calls": [
+      "self._logger.debug",
+      "super"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 188,
+    "calls": [
+      "self._logger.debug",
+      "super",
+      "self._request.updateStateRequest.newState.CopyFrom",
+      "complete_state._to_proto"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 218,
+    "calls": [
+      "super",
+      "len",
+      "isinstance",
+      "self._request.logsRequest.CopyFrom",
+      "_ank_base.LogsRequest",
+      "until.isoformat",
+      "name._to_proto",
+      "since.isoformat",
+      "self._logger.debug",
+      "ValueError"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 282,
+    "calls": [
+      "self._logger.debug",
+      "super",
+      "self._request.logsCancelRequest.CopyFrom",
+      "_ank_base.LogsCancelRequest"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 305,
+    "calls": [
+      "self._logger.debug",
+      "super"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/request.py",
+    "line": 329,
+    "calls": [
+      "self._request.eventsCancelRequest.CopyFrom",
+      "super",
+      "_ank_base.EventsCancelRequest",
+      "self._logger.debug"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ankaios_sdk/_components/event_campaign.py",
+    "line": 49,
+    "calls": [
+      "super"
+    ]
+  }
+]

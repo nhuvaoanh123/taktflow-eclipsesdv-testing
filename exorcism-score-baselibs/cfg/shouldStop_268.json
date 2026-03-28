@@ -1,0 +1,63 @@
+{
+  "function": "shouldStop",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:shouldStop",
+      "line": 268
+    },
+    {
+      "id": 1,
+      "label": "if ((shouldStop))",
+      "line": 282
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 285
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 282
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 284
+    },
+    {
+      "id": 5,
+      "label": "exit:shouldStop",
+      "line": 286
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

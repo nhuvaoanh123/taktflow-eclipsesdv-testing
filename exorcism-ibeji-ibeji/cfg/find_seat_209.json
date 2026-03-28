@@ -1,0 +1,21 @@
+{
+  "function": "find_seat",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:find_seat",
+      "line": 209
+    },
+    {
+      "id": 1,
+      "label": "exit:find_seat",
+      "line": 239
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "shutdown",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:shutdown",
+      "line": 77
+    },
+    {
+      "id": 1,
+      "label": "exit:shutdown",
+      "line": 82
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

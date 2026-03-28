@@ -1,0 +1,21 @@
+{
+  "function": "fetch_update_with_return",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fetch_update_with_return",
+      "line": 334
+    },
+    {
+      "id": 1,
+      "label": "exit:fetch_update_with_return",
+      "line": 358
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

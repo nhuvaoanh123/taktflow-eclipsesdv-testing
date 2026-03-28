@@ -1,0 +1,21 @@
+{
+  "function": "client_thread_runner",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:client_thread_runner",
+      "line": 162
+    },
+    {
+      "id": 1,
+      "label": "exit:client_thread_runner",
+      "line": 173
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

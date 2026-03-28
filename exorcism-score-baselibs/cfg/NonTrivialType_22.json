@@ -1,0 +1,21 @@
+{
+  "function": "NonTrivialType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:NonTrivialType",
+      "line": 22
+    },
+    {
+      "id": 1,
+      "label": "exit:NonTrivialType",
+      "line": 69
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

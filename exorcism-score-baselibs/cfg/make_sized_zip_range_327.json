@@ -1,0 +1,30 @@
+{
+  "function": "make_sized_zip_range",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:make_sized_zip_range",
+      "line": 327
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 334
+    },
+    {
+      "id": 2,
+      "label": "exit:make_sized_zip_range",
+      "line": 335
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

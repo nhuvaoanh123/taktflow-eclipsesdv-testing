@@ -1,0 +1,21 @@
+{
+  "function": "Ipv4Address",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Ipv4Address",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:Ipv4Address",
+      "line": 115
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

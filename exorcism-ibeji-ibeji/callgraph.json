@@ -1,0 +1,3429 @@
+[
+  {
+    "function": "new",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "line": 80,
+    "calls": []
+  },
+  {
+    "function": "layer",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "line": 88,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "retrieve_grpc_names_from_uri",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "line": 105,
+    "calls": [
+      "path",
+      "to_string",
+      "unwrap",
+      "len",
+      "Regex::new",
+      "as_str",
+      "captures",
+      "warn",
+      "get",
+      "String::new"
+    ]
+  },
+  {
+    "function": "poll_ready",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "line": 145,
+    "calls": [
+      "poll_ready"
+    ]
+  },
+  {
+    "function": "call",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "line": 151,
+    "calls": [
+      "split_off",
+      "Ok",
+      "boxed_unsync",
+      "async_std::future::timeout",
+      "futures_util::stream::iter",
+      "handle_request",
+      "http::response::Response::from_parts",
+      "is_applicable",
+      "must_handle_response",
+      "Err",
+      "clone",
+      "Self::retrieve_grpc_names_from_uri",
+      "futures::executor::block_on",
+      "uri",
+      "http::request::Request::from_parts",
+      "tonic::Status::from_error",
+      "handle_response",
+      "hyper::body::to_bytes",
+      "method",
+      "tonic::transport::Body::wrap_stream",
+      "call",
+      "vec",
+      "core::time::Duration::from_secs",
+      "Box::pin",
+      "must_handle_request",
+      "into_parts",
+      "Box::new",
+      "map_err"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "core/common/src/utils.rs",
+    "line": 45,
+    "calls": [
+      "std::env::var",
+      "as_str",
+      "File::new",
+      "build",
+      "add_source",
+      "Config::builder",
+      "format",
+      "try_deserialize",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "execute_with_retry",
+    "file": "core/common/src/utils.rs",
+    "line": 68,
+    "calls": [
+      "function",
+      "Err",
+      "Ok",
+      "debug",
+      "sleep"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "core/common/src/utils.rs",
+    "line": 68,
+    "calls": []
+  },
+  {
+    "function": "discover_service_using_chariott",
+    "file": "core/common/src/utils.rs",
+    "line": 111,
+    "calls": [
+      "to_string",
+      "Request::new",
+      "into_inner",
+      "Err",
+      "Status::internal",
+      "Ok",
+      "ok_or_else",
+      "Status::not_found",
+      "ServiceRegistryClient::connect",
+      "discover",
+      "map_err",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "get_service_uri",
+    "file": "core/common/src/utils.rs",
+    "line": 150,
+    "calls": [
+      "format",
+      "Some",
+      "discover_service_using_chariott",
+      "Ok",
+      "info",
+      "execute_with_retry",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "is_subset",
+    "file": "core/common/src/utils.rs",
+    "line": 193,
+    "calls": [
+      "all",
+      "iter",
+      "any"
+    ]
+  },
+  {
+    "function": "test_function",
+    "file": "core/common/src/utils.rs",
+    "line": 206,
+    "calls": [
+      "Err",
+      "borrow_mut",
+      "Ok"
+    ]
+  },
+  {
+    "function": "test_retry_async_function",
+    "file": "core/common/src/utils.rs",
+    "line": 217,
+    "calls": [
+      "clone",
+      "String::from",
+      "RefCell::new",
+      "assert",
+      "borrow_mut",
+      "Some",
+      "Rc::new",
+      "test_function",
+      "assert_eq",
+      "execute_with_retry",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "is_subset_test",
+    "file": "core/common/src/utils.rs",
+    "line": 244,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/common/src/grpc_server.rs",
+    "line": 26,
+    "calls": [
+      "RoutesBuilder::default",
+      "ServiceBuilder::new"
+    ]
+  },
+  {
+    "function": "add_module",
+    "file": "core/common/src/grpc_server.rs",
+    "line": 39,
+    "calls": [
+      "clone",
+      "add_grpc_services"
+    ]
+  },
+  {
+    "function": "construct_server",
+    "file": "core/common/src/grpc_server.rs",
+    "line": 50,
+    "calls": [
+      "into_inner",
+      "Server::builder",
+      "clone",
+      "routes",
+      "add_routes",
+      "layer"
+    ]
+  },
+  {
+    "function": "sample_grpc_interceptor_factory",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "line": 22,
+    "calls": [
+      "Box::new"
+    ]
+  },
+  {
+    "function": "is_applicable",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "must_handle_request",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "must_handle_response",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "handle_request",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "line": 54,
+    "calls": [
+      "unwrap",
+      "Vec::new",
+      "Message::decode",
+      "reserve",
+      "Ok",
+      "encoded_len",
+      "encode",
+      "Bytes::from",
+      "info"
+    ]
+  },
+  {
+    "function": "handle_response",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "line": 77,
+    "calls": [
+      "unwrap",
+      "Vec::new",
+      "Message::decode",
+      "reserve",
+      "Ok",
+      "encoded_len",
+      "encode",
+      "Bytes::from",
+      "info"
+    ]
+  },
+  {
+    "function": "register_invehicle_digital_twin_service_with_chariott",
+    "file": "core/invehicle-digital-twin/src/main.rs",
+    "line": 60,
+    "calls": [
+      "to_string",
+      "Request::new",
+      "Status::internal",
+      "register",
+      "Ok",
+      "ServiceRegistryClient::connect",
+      "map_err",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "build_app_server_and_serve",
+    "file": "core/invehicle-digital-twin/src/main.rs",
+    "line": 101,
+    "calls": [
+      "clone",
+      "add_module",
+      "ManagedSubscribeModule::new",
+      "into",
+      "DigitalTwinGraphModule::new",
+      "DigitalTwinRegistryModule::new",
+      "construct_server",
+      "create_interceptor",
+      "Box::new",
+      "layer",
+      "add_service",
+      "serve",
+      "GrpcInterceptorLayer::new",
+      "map_err",
+      "error",
+      "info",
+      "GrpcServer::new"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "core/invehicle-digital-twin/src/main.rs",
+    "line": 177,
+    "calls": [
+      "parse",
+      "format",
+      "init",
+      "env::args",
+      "Ok",
+      "Arc::new",
+      "get",
+      "register_invehicle_digital_twin_service_with_chariott",
+      "expect",
+      "unwrap_or",
+      "Err",
+      "split",
+      "skip",
+      "info",
+      "to_owned",
+      "as_str",
+      "tokio_console_subscriber::init",
+      "LevelFilter::from_str",
+      "filter",
+      "panic",
+      "build_app_server_and_serve",
+      "error",
+      "Some",
+      "InvehicleDigitalTwinServer::new",
+      "unwrap",
+      "Builder::new",
+      "map",
+      "debug",
+      "next",
+      "RwLock::new",
+      "target",
+      "invehicle_digital_twin_config::load_settings",
+      "is_some",
+      "cloned",
+      "collect",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "find_by_id",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "line": 28,
+    "calls": [
+      "is_none",
+      "into_inner",
+      "Err",
+      "read",
+      "Ok",
+      "Status::not_found",
+      "debug",
+      "Response::new",
+      "get",
+      "info",
+      "cloned"
+    ]
+  },
+  {
+    "function": "register",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "line": 62,
+    "calls": [
+      "into_inner",
+      "clone",
+      "register_entity",
+      "Ok",
+      "debug",
+      "Response::new",
+      "info"
+    ]
+  },
+  {
+    "function": "register_entity",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "line": 87,
+    "calls": [
+      "Err",
+      "clone",
+      "write",
+      "insert",
+      "Ok",
+      "debug",
+      "get",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "find_by_id_test",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "line": 115,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "into_inner",
+      "write",
+      "tonic::Request::new",
+      "insert",
+      "Arc::new",
+      "vec",
+      "find_by_id",
+      "RwLock::new",
+      "assert_eq",
+      "String::from",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "register_test",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "line": 168,
+    "calls": [
+      "clone",
+      "assert",
+      "register",
+      "read",
+      "HashMap::new",
+      "tonic::Request::new",
+      "Arc::new",
+      "assert_eq",
+      "RwLock::new",
+      "String::from",
+      "vec"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_config.rs",
+    "line": 17,
+    "calls": [
+      "unwrap",
+      "utils::load_settings"
+    ]
+  },
+  {
+    "function": "find_by_model_id",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "line": 31,
+    "calls": [
+      "is_none",
+      "into_inner",
+      "Err",
+      "unwrap",
+      "read",
+      "Ok",
+      "debug",
+      "Status::not_found",
+      "Response::new",
+      "get",
+      "cloned"
+    ]
+  },
+  {
+    "function": "find_by_instance_id",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "line": 64,
+    "calls": [
+      "Err",
+      "into_inner",
+      "clone",
+      "Vec::<EntityAccessInfo>::new",
+      "read",
+      "Ok",
+      "is_empty",
+      "debug",
+      "Status::not_found",
+      "Response::new",
+      "values",
+      "push"
+    ]
+  },
+  {
+    "function": "register",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "line": 105,
+    "calls": [
+      "into_inner",
+      "register_entity",
+      "Ok",
+      "debug",
+      "Response::new",
+      "info"
+    ]
+  },
+  {
+    "function": "register_entity",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "line": 135,
+    "calls": [
+      "Err",
+      "unwrap",
+      "clone",
+      "Status::invalid_argument",
+      "write",
+      "get_mut",
+      "insert",
+      "is_empty",
+      "Ok",
+      "get",
+      "info",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "find_by_model_id_test",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "line": 196,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "find_by_model_id",
+      "into_inner",
+      "write",
+      "tonic::Request::new",
+      "insert",
+      "Arc::new",
+      "vec",
+      "assert_eq",
+      "RwLock::new",
+      "String::from",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "find_by_instance_id_test",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "line": 241,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "into_inner",
+      "write",
+      "tonic::Request::new",
+      "insert",
+      "Arc::new",
+      "vec",
+      "find_by_instance_id",
+      "RwLock::new",
+      "assert_eq",
+      "String::from",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "register_test",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "line": 286,
+    "calls": [
+      "clone",
+      "assert",
+      "register",
+      "read",
+      "HashMap::new",
+      "tonic::Request::new",
+      "Arc::new",
+      "assert_eq",
+      "RwLock::new",
+      "String::from",
+      "vec"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_module.rs",
+    "line": 18,
+    "calls": [
+      "Ok"
+    ]
+  },
+  {
+    "function": "add_grpc_services",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_module.rs",
+    "line": 28,
+    "calls": [
+      "DigitalTwinRegistryServer::new",
+      "add_service",
+      "DigitalTwinRegistryImpl::default"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 88,
+    "calls": [
+      "load_settings::<ConfigSettings>",
+      "to_string",
+      "Status::internal",
+      "map_err",
+      "get_service_uri",
+      "Ok",
+      "Arc::new",
+      "RwLock::new",
+      "format",
+      "ManagedSubscribeStore::new",
+      "info"
+    ]
+  },
+  {
+    "function": "create_interceptor",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 120,
+    "calls": [
+      "clone",
+      "ManagedSubscribeInterceptor::new"
+    ]
+  },
+  {
+    "function": "create_managed_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 128,
+    "calls": [
+      "to_string",
+      "Request::new",
+      "clone",
+      "create_topic",
+      "Status::from_error",
+      "PubSubClient::connect",
+      "Box::new",
+      "error",
+      "map_err"
+    ]
+  },
+  {
+    "function": "delete_managed_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 154,
+    "calls": [
+      "to_string",
+      "Request::new",
+      "Status::from_error",
+      "PubSubClient::connect",
+      "Box::new",
+      "error",
+      "map_err",
+      "delete_topic"
+    ]
+  },
+  {
+    "function": "add_grpc_services",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 178,
+    "calls": [
+      "ManagedSubscribeServer::new",
+      "clone",
+      "add_service",
+      "PublisherCallbackServer::new"
+    ]
+  },
+  {
+    "function": "call_provider_management_cb",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 194,
+    "calls": [
+      "to_string",
+      "Status::from_error",
+      "topic_management_cb",
+      "Ok",
+      "Box::new",
+      "error",
+      "map_err",
+      "ManagedSubscribeCallbackClient::connect"
+    ]
+  },
+  {
+    "function": "get_subscription_info",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 220,
+    "calls": [
+      "Err",
+      "into_inner",
+      "contains_entity",
+      "create_managed_topic",
+      "format",
+      "clone",
+      "read",
+      "write",
+      "Some",
+      "Ok",
+      "Status::not_found",
+      "debug",
+      "Response::new",
+      "add_topic",
+      "info",
+      "execute_with_retry",
+      "tokio::time::Duration::from_secs"
+    ]
+  },
+  {
+    "function": "manage_topic_callback",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "line": 284,
+    "calls": [
+      "get_entity_id",
+      "Ok",
+      "Status::not_found",
+      "get",
+      "to_string",
+      "into_inner",
+      "clone",
+      "read",
+      "write",
+      "ok_or_else",
+      "remove_topic",
+      "String::from",
+      "info",
+      "as_str",
+      "call_provider_management_cb",
+      "Some",
+      "execute_with_retry",
+      "get_entity_metadata",
+      "TopicAction::from_str",
+      "tokio::time::Duration::from_secs",
+      "unwrap",
+      "map_err",
+      "Response::new",
+      "delete_managed_topic",
+      "format"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 36,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 43,
+    "calls": [
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "add_entity",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 55,
+    "calls": [
+      "to_string",
+      "insert"
+    ]
+  },
+  {
+    "function": "contains_entity",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 63,
+    "calls": [
+      "contains_key"
+    ]
+  },
+  {
+    "function": "get_entity_metadata",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 71,
+    "calls": [
+      "get"
+    ]
+  },
+  {
+    "function": "get_entity_id",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 79,
+    "calls": [
+      "get"
+    ]
+  },
+  {
+    "function": "add_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 89,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "get_mut",
+      "insert"
+    ]
+  },
+  {
+    "function": "remove_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "line": 102,
+    "calls": [
+      "get_mut",
+      "remove",
+      "warn"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "line": 28,
+    "calls": [
+      "to_string"
+    ]
+  },
+  {
+    "function": "is_applicable",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "must_handle_request",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "must_handle_response",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "handle_request",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "line": 60,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "Vec::new",
+      "Message::decode",
+      "contains",
+      "HashMap::new",
+      "write",
+      "reserve",
+      "Ok",
+      "add_entity",
+      "encoded_len",
+      "encode",
+      "Bytes::from",
+      "info",
+      "vec"
+    ]
+  },
+  {
+    "function": "handle_response",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "line": 127,
+    "calls": [
+      "warn",
+      "Ok"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_module.rs",
+    "line": 25,
+    "calls": [
+      "Ok"
+    ]
+  },
+  {
+    "function": "add_grpc_services",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_module.rs",
+    "line": 35,
+    "calls": [
+      "clone",
+      "format",
+      "DigitalTwinGraphServer::new",
+      "RespondServer::new",
+      "Arc::new",
+      "add_service",
+      "RespondImpl::new",
+      "digital_twin_graph_config::load_settings",
+      "broadcast::channel",
+      "DigitalTwinGraphImpl::new"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_config.rs",
+    "line": 19,
+    "calls": [
+      "unwrap",
+      "utils::load_settings"
+    ]
+  },
+  {
+    "function": "load_settings_with_config_filename",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_config.rs",
+    "line": 27,
+    "calls": [
+      "unwrap",
+      "utils::load_settings"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_graph/src/respond_impl.rs",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "answer",
+    "file": "core/module/digital_twin_graph/src/respond_impl.rs",
+    "line": 32,
+    "calls": [
+      "Err",
+      "into_inner",
+      "tonic::Response::new",
+      "Ok",
+      "debug",
+      "format",
+      "tonic::Status::internal",
+      "send",
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 55,
+    "calls": [
+      "to_string"
+    ]
+  },
+  {
+    "function": "find_digital_twin_providers_with_model_id",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 74,
+    "calls": [
+      "tonic::Request::new",
+      "Ok",
+      "to_string",
+      "into_inner",
+      "clone",
+      "find_by_model_id",
+      "iter",
+      "tonic::Status::internal",
+      "ExponentialBackoff::from_millis",
+      "is_subset",
+      "DigitalTwinRegistryClient::connect",
+      "filter",
+      "take",
+      "map_err",
+      "Retry::spawn",
+      "map",
+      "format",
+      "cloned",
+      "collect"
+    ]
+  },
+  {
+    "function": "find_digital_twin_providers_with_instance_id",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 116,
+    "calls": [
+      "tonic::Request::new",
+      "Ok",
+      "find_by_instance_id",
+      "to_string",
+      "into_inner",
+      "clone",
+      "iter",
+      "tonic::Status::internal",
+      "ExponentialBackoff::from_millis",
+      "is_subset",
+      "DigitalTwinRegistryClient::connect",
+      "filter",
+      "take",
+      "map_err",
+      "Retry::spawn",
+      "map",
+      "format",
+      "cloned",
+      "collect"
+    ]
+  },
+  {
+    "function": "send_ask",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 160,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "format",
+      "serde_json::to_string_pretty",
+      "tonic::Request::new",
+      "Ok",
+      "ask",
+      "map_err",
+      "tonic::Status::internal"
+    ]
+  },
+  {
+    "function": "wait_for_answer",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 189,
+    "calls": [
+      "Default::default",
+      "timeout",
+      "Ok",
+      "warn",
+      "recv",
+      "sleep",
+      "Duration::from_millis",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "find",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 235,
+    "calls": [
+      "entry",
+      "std::collections::HashMap::new",
+      "Ok",
+      "tonic::Status::invalid_argument",
+      "find_digital_twin_providers_with_model_id",
+      "send_ask",
+      "Err",
+      "into_inner",
+      "to_string",
+      "clone",
+      "iter",
+      "tonic::Response::new",
+      "wait_for_answer",
+      "subscribe",
+      "Uuid::new_v4",
+      "fold",
+      "as_str",
+      "keys",
+      "RequestClient::connect",
+      "vec",
+      "unwrap",
+      "or_insert_with",
+      "is_empty",
+      "map",
+      "debug",
+      "is_err",
+      "warn",
+      "push"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 332,
+    "calls": [
+      "find_digital_twin_providers_with_instance_id",
+      "tonic::Status::invalid_argument",
+      "Ok",
+      "send_ask",
+      "Err",
+      "into_inner",
+      "to_string",
+      "clone",
+      "tonic::Response::new",
+      "wait_for_answer",
+      "subscribe",
+      "tonic::Status::internal",
+      "tonic::Status::not_found",
+      "Uuid::new_v4",
+      "as_str",
+      "RequestClient::connect",
+      "unwrap",
+      "is_empty",
+      "debug",
+      "is_err"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 406,
+    "calls": [
+      "Err",
+      "warn",
+      "tonic::Status::unimplemented"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "line": 419,
+    "calls": [
+      "find_digital_twin_providers_with_instance_id",
+      "tonic::Status::invalid_argument",
+      "Ok",
+      "send_ask",
+      "Err",
+      "into_inner",
+      "to_string",
+      "clone",
+      "tonic::Response::new",
+      "wait_for_answer",
+      "subscribe",
+      "tonic::Status::internal",
+      "tonic::Status::not_found",
+      "Uuid::new_v4",
+      "as_str",
+      "RequestClient::connect",
+      "unwrap",
+      "is_empty",
+      "debug",
+      "is_err"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "core/protobuf_data_access/build.rs",
+    "line": 5,
+    "calls": [
+      "tonic_build::configure",
+      "message_attribute",
+      "Ok",
+      "compile"
+    ]
+  },
+  {
+    "function": "create_canvas",
+    "file": "samples/common/src/image_rendering.rs",
+    "line": 22,
+    "calls": [
+      "into_canvas",
+      "format",
+      "window",
+      "build",
+      "video",
+      "set_draw_color",
+      "Ok",
+      "Color::RGB",
+      "allow_highdpi",
+      "map_err",
+      "position_centered"
+    ]
+  },
+  {
+    "function": "resize_image_to_fit_in_canvas",
+    "file": "samples/common/src/image_rendering.rs",
+    "line": 50,
+    "calls": [
+      "resize",
+      "height",
+      "output_size",
+      "Ok",
+      "width",
+      "min"
+    ]
+  },
+  {
+    "function": "render_image_to_canvas",
+    "file": "samples/common/src/image_rendering.rs",
+    "line": 71,
+    "calls": [
+      "to_rgb8",
+      "to_string",
+      "into_raw",
+      "height",
+      "format",
+      "clear",
+      "present",
+      "Rect::new",
+      "Ok",
+      "texture_creator",
+      "width",
+      "create_texture_from_surface",
+      "Surface::from_data",
+      "map_err",
+      "copy"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/common/src/provider_config.rs",
+    "line": 19,
+    "calls": [
+      "load_settings_with_config_filename"
+    ]
+  },
+  {
+    "function": "load_settings_with_config_filename",
+    "file": "samples/common/src/provider_config.rs",
+    "line": 26,
+    "calls": [
+      "unwrap",
+      "utils::load_settings"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/common/src/utils.rs",
+    "line": 28,
+    "calls": [
+      "std::env::var",
+      "as_str",
+      "File::new",
+      "build",
+      "add_source",
+      "Config::builder",
+      "format",
+      "try_deserialize",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "is_subset",
+    "file": "samples/common/src/utils.rs",
+    "line": 49,
+    "calls": [
+      "all",
+      "iter",
+      "any"
+    ]
+  },
+  {
+    "function": "retry_async_based_on_status",
+    "file": "samples/common/src/utils.rs",
+    "line": 62,
+    "calls": [
+      "function",
+      "Err",
+      "code",
+      "Ok",
+      "debug",
+      "sleep"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "samples/common/src/utils.rs",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "discover_digital_twin_provider_using_ibeji",
+    "file": "samples/common/src/utils.rs",
+    "line": 103,
+    "calls": [
+      "to_string",
+      "into_inner",
+      "find",
+      "is_subset",
+      "iter",
+      "Err",
+      "map_err",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "ok_or_else",
+      "debug",
+      "find_by_id",
+      "as_slice",
+      "format",
+      "info",
+      "cloned"
+    ]
+  },
+  {
+    "function": "discover_service_using_chariott",
+    "file": "samples/common/src/utils.rs",
+    "line": 153,
+    "calls": [
+      "to_string",
+      "Request::new",
+      "into_inner",
+      "Err",
+      "Status::internal",
+      "Ok",
+      "ok_or_else",
+      "Status::not_found",
+      "ServiceRegistryClient::connect",
+      "discover",
+      "map_err",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "retrieve_invehicle_digital_twin_uri",
+    "file": "samples/common/src/utils.rs",
+    "line": 194,
+    "calls": [
+      "Err",
+      "format",
+      "discover_service_using_chariott",
+      "retry_async_based_on_status",
+      "Ok",
+      "info",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "is_subset_test",
+    "file": "samples/common/src/utils.rs",
+    "line": 240,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/common/src/consumer_config.rs",
+    "line": 19,
+    "calls": [
+      "unwrap",
+      "utils::load_settings"
+    ]
+  },
+  {
+    "function": "start_get_signals_repeater",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "line": 34,
+    "calls": [
+      "send_get_request",
+      "sleep",
+      "retry_async_based_on_status",
+      "debug",
+      "info",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "start_show_notification_repeater",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "line": 59,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "sleep",
+      "tonic::Request::new",
+      "debug",
+      "is_err",
+      "warn",
+      "DigitalTwinProviderTutorialClient::connect",
+      "invoke",
+      "info",
+      "serde_json::to_string",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "send_get_request",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "line": 102,
+    "calls": [
+      "to_string",
+      "into_inner",
+      "Status::internal",
+      "tonic::Request::new",
+      "get",
+      "Ok",
+      "DigitalTwinProviderTutorialClient::connect",
+      "map_err",
+      "info"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "line": 114,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "target",
+      "init",
+      "tokio::select",
+      "insert",
+      "Ok",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "debug",
+      "info",
+      "consumer_config::load_settings",
+      "discover_digital_twin_provider_using_ibeji",
+      "Builder::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "register_entities",
+    "file": "samples/tutorial/provider/src/main.rs",
+    "line": 28,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "register",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "map_err",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/tutorial/provider/src/main.rs",
+    "line": 89,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "target",
+      "format",
+      "init",
+      "register_entities",
+      "retry_async_based_on_status",
+      "serve",
+      "Ok",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "add_service",
+      "DigitalTwinProviderTutorialServer::new",
+      "info",
+      "provider_config::load_settings",
+      "Builder::new",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "samples/tutorial/provider/src/provider_impl.rs",
+    "line": 22,
+    "calls": [
+      "into_inner",
+      "clone",
+      "as_str",
+      "Ok",
+      "Response::new",
+      "String::from"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/tutorial/provider/src/provider_impl.rs",
+    "line": 41,
+    "calls": [
+      "into_inner",
+      "clone",
+      "Ok",
+      "debug",
+      "Response::new",
+      "format",
+      "info"
+    ]
+  },
+  {
+    "function": "receive_ambient_air_temperature_updates",
+    "file": "samples/property/consumer/src/main.rs",
+    "line": 24,
+    "calls": [
+      "mqtt::MessageBuilder::new",
+      "Ok",
+      "will_message",
+      "to_string",
+      "connect",
+      "iter",
+      "topic",
+      "is_connected",
+      "disconnect",
+      "mqtt::Client::new",
+      "subscribe",
+      "keep_alive_interval",
+      "info",
+      "mqtt::CreateOptionsBuilder::new",
+      "finalize",
+      "is_ok",
+      "client_id",
+      "reconnect",
+      "Duration::from_secs",
+      "unwrap",
+      "map_err",
+      "clean_session",
+      "unsubscribe",
+      "mqtt::ConnectOptionsBuilder::new",
+      "debug",
+      "format",
+      "server_uri",
+      "payload",
+      "start_consuming"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/property/consumer/src/main.rs",
+    "line": 76,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "target",
+      "Status::internal",
+      "init",
+      "format",
+      "map_err",
+      "Ok",
+      "receive_ambient_air_temperature_updates",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "info",
+      "consumer_config::load_settings",
+      "discover_digital_twin_provider_using_ibeji",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "register_ambient_air_temperature",
+    "file": "samples/property/provider/src/main.rs",
+    "line": 37,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "register",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "map_err",
+      "vec"
+    ]
+  },
+  {
+    "function": "create_property_json",
+    "file": "samples/property/provider/src/main.rs",
+    "line": 70,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "serde_json::to_string"
+    ]
+  },
+  {
+    "function": "start_ambient_air_temperature_data_stream",
+    "file": "samples/property/provider/src/main.rs",
+    "line": 83,
+    "calls": [
+      "tokio::spawn",
+      "create_property_json",
+      "sleep",
+      "publish_message",
+      "debug",
+      "warn",
+      "info",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "publish_message",
+    "file": "samples/property/provider/src/main.rs",
+    "line": 129,
+    "calls": [
+      "Ok",
+      "to_string",
+      "connect",
+      "Err",
+      "disconnect",
+      "mqtt::Client::new",
+      "keep_alive_interval",
+      "mqtt::CreateOptionsBuilder::new",
+      "finalize",
+      "client_id",
+      "mqtt::Message::new",
+      "publish",
+      "Duration::from_secs",
+      "map_err",
+      "clean_session",
+      "mqtt::ConnectOptionsBuilder::new",
+      "warn",
+      "format",
+      "server_uri"
+    ]
+  },
+  {
+    "function": "convert_dtmi_to_topic",
+    "file": "samples/property/provider/src/main.rs",
+    "line": 164,
+    "calls": [
+      "Err",
+      "to_string",
+      "split",
+      "len",
+      "Ok",
+      "push_str",
+      "push",
+      "collect"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/property/provider/src/main.rs",
+    "line": 182,
+    "calls": [
+      "register_ambient_air_temperature",
+      "target",
+      "format",
+      "init",
+      "start_ambient_air_temperature_data_stream",
+      "retry_async_based_on_status",
+      "signal::ctrl_c",
+      "Ok",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "debug",
+      "convert_dtmi_to_topic",
+      "info",
+      "provider_config::load_settings",
+      "expect",
+      "Builder::new",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "start_show_notification_repeater",
+    "file": "samples/command/consumer/src/main.rs",
+    "line": 35,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "Uuid::new_v4",
+      "tokio::spawn",
+      "sleep",
+      "tonic::Request::new",
+      "debug",
+      "is_err",
+      "warn",
+      "invoke",
+      "info",
+      "serde_json::to_string",
+      "DigitalTwinProviderClient::connect",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/command/consumer/src/main.rs",
+    "line": 81,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "init",
+      "Ok",
+      "add_service",
+      "expect",
+      "discover_digital_twin_provider_using_ibeji",
+      "to_string",
+      "consumer_impl::ConsumerImpl::default",
+      "info",
+      "consumer_config::load_settings",
+      "filter",
+      "DigitalTwinConsumerServer::new",
+      "start_show_notification_repeater",
+      "unwrap",
+      "serve",
+      "retrieve_invehicle_digital_twin_uri",
+      "debug",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "publish",
+    "file": "samples/command/consumer/src/consumer_impl.rs",
+    "line": 21,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "respond",
+    "file": "samples/command/consumer/src/consumer_impl.rs",
+    "line": 34,
+    "calls": [
+      "into_inner",
+      "Response::new",
+      "Ok",
+      "info"
+    ]
+  },
+  {
+    "function": "respond_test",
+    "file": "samples/command/consumer/src/consumer_impl.rs",
+    "line": 54,
+    "calls": [
+      "to_string",
+      "assert",
+      "Uuid::new_v4",
+      "tonic::Request::new",
+      "String::from",
+      "respond"
+    ]
+  },
+  {
+    "function": "register_show_notification",
+    "file": "samples/command/provider/src/main.rs",
+    "line": 27,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "register",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "map_err",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/command/provider/src/main.rs",
+    "line": 56,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "target",
+      "format",
+      "init",
+      "register_show_notification",
+      "retry_async_based_on_status",
+      "serve",
+      "Ok",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "add_service",
+      "debug",
+      "info",
+      "provider_config::load_settings",
+      "DigitalTwinProviderServer::new",
+      "Builder::new",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "line": 35,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "line": 48,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "line": 61,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "line": 71,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "line": 81,
+    "calls": [
+      "tokio::spawn",
+      "tonic::Request::new",
+      "Ok",
+      "get",
+      "DigitalTwinConsumerClient::connect",
+      "to_string",
+      "into_inner",
+      "clone",
+      "Status::invalid_argument",
+      "info",
+      "Status::internal",
+      "serde_json::from_str",
+      "serde_json::from_value",
+      "unwrap",
+      "debug",
+      "Response::new",
+      "map_err",
+      "serde_json::to_string",
+      "respond"
+    ]
+  },
+  {
+    "function": "stream",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "line": 134,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "invoke_test",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "line": 159,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "assert",
+      "Uuid::new_v4",
+      "tonic::Request::new",
+      "invoke",
+      "String::from",
+      "serde_json::to_string"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/streaming/consumer/src/streaming_consumer_config.rs",
+    "line": 20,
+    "calls": [
+      "unwrap",
+      "File::new",
+      "build",
+      "add_source",
+      "Config::builder",
+      "try_deserialize"
+    ]
+  },
+  {
+    "function": "stream_images",
+    "file": "samples/streaming/consumer/src/main.rs",
+    "line": 29,
+    "calls": [
+      "to_string",
+      "into_inner",
+      "unwrap",
+      "is_none",
+      "render_image_to_canvas",
+      "stream",
+      "take",
+      "with_guessed_format",
+      "Ok",
+      "warn",
+      "sdl2::init",
+      "next",
+      "ImageReader::new",
+      "Cursor::new",
+      "decode",
+      "create_canvas",
+      "resize_image_to_fit_in_canvas"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/streaming/consumer/src/main.rs",
+    "line": 73,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "target",
+      "init",
+      "into",
+      "Ok",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "crate::streaming_consumer_config::load_settings",
+      "info",
+      "stream_images",
+      "DigitalTwinProviderClient::connect",
+      "discover_digital_twin_provider_using_ibeji",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "register_entities",
+    "file": "samples/streaming/provider/src/main.rs",
+    "line": 27,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "map_err",
+      "register",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "info",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/streaming/provider/src/main.rs",
+    "line": 59,
+    "calls": [
+      "Server::builder",
+      "crate::streaming_provider_config::load_settings",
+      "target",
+      "format",
+      "init",
+      "parse",
+      "register_entities",
+      "retry_async_based_on_status",
+      "serve",
+      "Ok",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "add_service",
+      "info",
+      "ProviderImpl::new",
+      "DigitalTwinProviderServer::new",
+      "Builder::new",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 41,
+    "calls": [
+      "to_string"
+    ]
+  },
+  {
+    "function": "read_image_file",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 53,
+    "calls": [
+      "Path::new",
+      "Vec::new",
+      "Ok",
+      "debug",
+      "join",
+      "read_to_end",
+      "expect",
+      "File::open"
+    ]
+  },
+  {
+    "function": "next",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 67,
+    "calls": [
+      "to_string",
+      "len",
+      "read_image_file",
+      "Some",
+      "ok"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 94,
+    "calls": [
+      "to_string"
+    ]
+  },
+  {
+    "function": "get_filenames_from_image_directory",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 99,
+    "calls": [
+      "file_type",
+      "unwrap",
+      "into_string",
+      "file_name",
+      "is_file",
+      "Ok",
+      "is_empty",
+      "panic",
+      "std::fs::read_dir",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 127,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 140,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 153,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 163,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 173,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "stream",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "line": 186,
+    "calls": [
+      "format",
+      "tokio::spawn",
+      "Ok",
+      "mpsc::channel",
+      "ImageFileIterator::new",
+      "info",
+      "throttle",
+      "send",
+      "get_filenames_from_image_directory",
+      "Status::internal",
+      "Result::<_, Status>::Ok",
+      "tokio_stream::iter",
+      "Duration::from_secs",
+      "Box::pin",
+      "debug",
+      "next",
+      "warn",
+      "Response::new",
+      "map_err",
+      "ReceiverStream::new"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/streaming/provider/src/streaming_provider_config.rs",
+    "line": 21,
+    "calls": [
+      "unwrap",
+      "File::new",
+      "build",
+      "add_source",
+      "Config::builder",
+      "try_deserialize"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/protobuf_data_access/build.rs",
+    "line": 5,
+    "calls": [
+      "Ok",
+      "tonic_build::configure",
+      "message_attribute",
+      "tonic_build::compile_protos",
+      "compile"
+    ]
+  },
+  {
+    "function": "start_seat_massage_steps",
+    "file": "samples/seat_massager/consumer/src/main.rs",
+    "line": 37,
+    "calls": [
+      "tokio::spawn",
+      "serde_json::to_string_pretty",
+      "tonic::Request::new",
+      "timeout",
+      "ask",
+      "to_string",
+      "clone",
+      "Default::default",
+      "sleep",
+      "info",
+      "Uuid::new_v4",
+      "StdRng::from_entropy",
+      "error",
+      "RequestClient::connect",
+      "vec",
+      "Duration::from_secs",
+      "unwrap",
+      "debug",
+      "is_err",
+      "warn",
+      "recv",
+      "gen_range"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/seat_massager/consumer/src/main.rs",
+    "line": 147,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "start_seat_massage_steps",
+      "init",
+      "Ok",
+      "add_service",
+      "expect",
+      "discover_digital_twin_provider_using_ibeji",
+      "to_string",
+      "clone",
+      "mpsc::channel",
+      "RespondServer::new",
+      "info",
+      "consumer_config::load_settings",
+      "filter",
+      "respond_impl::RespondImpl::new",
+      "unwrap",
+      "serve",
+      "retrieve_invehicle_digital_twin_uri",
+      "debug",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "samples/seat_massager/consumer/src/respond_impl.rs",
+    "line": 20,
+    "calls": []
+  },
+  {
+    "function": "answer",
+    "file": "samples/seat_massager/consumer/src/respond_impl.rs",
+    "line": 31,
+    "calls": [
+      "Err",
+      "into_inner",
+      "tonic::Response::new",
+      "format",
+      "Ok",
+      "debug",
+      "info",
+      "tonic::Status::internal",
+      "send"
+    ]
+  },
+  {
+    "function": "register_airbag_massager",
+    "file": "samples/seat_massager/provider/src/main.rs",
+    "line": 32,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "register",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "map_err",
+      "String::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/seat_massager/provider/src/main.rs",
+    "line": 65,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "init",
+      "retry_async_based_on_status",
+      "Ok",
+      "Arc::new",
+      "add_service",
+      "provider_config::load_settings",
+      "info",
+      "register_airbag_massager",
+      "Mutex::new",
+      "filter",
+      "Duration::from_secs",
+      "serve",
+      "RequestServer::new",
+      "retrieve_invehicle_digital_twin_uri",
+      "debug",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "ask",
+    "file": "samples/seat_massager/provider/src/request_impl.rs",
+    "line": 31,
+    "calls": [
+      "tokio::spawn",
+      "serde_json::to_string_pretty",
+      "tonic::Request::new",
+      "Ok",
+      "tonic::Status::invalid_argument",
+      "get",
+      "expect",
+      "to_string",
+      "into_inner",
+      "clone",
+      "Err",
+      "is_none",
+      "tonic::Response::new",
+      "Default::default",
+      "RespondClient::connect",
+      "info",
+      "serde_json::from_str",
+      "serde_json::from_value",
+      "error",
+      "unwrap",
+      "map_err",
+      "answer",
+      "debug",
+      "format"
+    ]
+  },
+  {
+    "function": "notify",
+    "file": "samples/seat_massager/provider/src/request_impl.rs",
+    "line": 121,
+    "calls": [
+      "Err",
+      "warn",
+      "tonic::Status::unimplemented"
+    ]
+  },
+  {
+    "function": "get_ambient_air_temperature_subscription_info",
+    "file": "samples/managed_subscribe/consumer/src/main.rs",
+    "line": 34,
+    "calls": [
+      "to_string",
+      "Request::new",
+      "into_inner",
+      "Status::from_error",
+      "into",
+      "Ok",
+      "get_subscription_info",
+      "ManagedSubscribeClient::connect",
+      "map_err"
+    ]
+  },
+  {
+    "function": "receive_ambient_air_temperature_updates",
+    "file": "samples/managed_subscribe/consumer/src/main.rs",
+    "line": 58,
+    "calls": [
+      "mqtt::ConnectOptionsBuilder::new_v5",
+      "format",
+      "mqtt::MessageBuilder::new",
+      "tokio::spawn",
+      "stop_consuming",
+      "Ok",
+      "will_message",
+      "signal::ctrl_c",
+      "connect",
+      "clone",
+      "to_string",
+      "iter",
+      "topic",
+      "is_connected",
+      "disconnect",
+      "mqtt::Client::new",
+      "subscribe",
+      "keep_alive_interval",
+      "info",
+      "mqtt::CreateOptionsBuilder::new",
+      "as_str",
+      "finalize",
+      "is_ok",
+      "client_id",
+      "reconnect",
+      "Duration::from_secs",
+      "unwrap",
+      "clean_session",
+      "unsubscribe",
+      "debug",
+      "map_err",
+      "server_uri",
+      "payload",
+      "start_consuming"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/managed_subscribe/consumer/src/main.rs",
+    "line": 130,
+    "calls": [
+      "format",
+      "init",
+      "contains",
+      "env::args",
+      "Ok",
+      "unwrap_or_else",
+      "discover_digital_twin_provider_using_ibeji",
+      "signal::ctrl_c",
+      "to_string",
+      "find_map",
+      "info",
+      "consumer_config::load_settings",
+      "get_ambient_air_temperature_subscription_info",
+      "Status::internal",
+      "replace",
+      "filter",
+      "Some",
+      "vec",
+      "unwrap",
+      "map_err",
+      "receive_ambient_air_temperature_updates",
+      "retrieve_invehicle_digital_twin_uri",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "register_ambient_air_temperature",
+    "file": "samples/managed_subscribe/provider/src/main.rs",
+    "line": 33,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "register",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "map_err",
+      "vec"
+    ]
+  },
+  {
+    "function": "start_ambient_air_temperature_data_stream",
+    "file": "samples/managed_subscribe/provider/src/main.rs",
+    "line": 65,
+    "calls": [
+      "Duration::from_millis",
+      "tokio::spawn",
+      "watch::channel",
+      "debug",
+      "warn",
+      "sleep",
+      "send"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/managed_subscribe/provider/src/main.rs",
+    "line": 108,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "init",
+      "retry_async_based_on_status",
+      "Ok",
+      "add_service",
+      "provider_config::load_settings",
+      "expect",
+      "signal::ctrl_c",
+      "ManagedSubscribeCallbackServer::new",
+      "info",
+      "ProviderImpl::new",
+      "start_ambient_air_temperature_data_stream",
+      "filter",
+      "Duration::from_secs",
+      "register_ambient_air_temperature",
+      "serve",
+      "retrieve_invehicle_digital_twin_uri",
+      "debug",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "create_property_json",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "line": 62,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "serde_json::to_string"
+    ]
+  },
+  {
+    "function": "publish_message",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "line": 76,
+    "calls": [
+      "Ok",
+      "to_string",
+      "connect",
+      "Err",
+      "disconnect",
+      "mqtt::Client::new",
+      "keep_alive_interval",
+      "mqtt::CreateOptionsBuilder::new",
+      "finalize",
+      "client_id",
+      "mqtt::Message::new",
+      "publish",
+      "Duration::from_secs",
+      "map_err",
+      "clean_session",
+      "mqtt::ConnectOptionsBuilder::new",
+      "warn",
+      "format",
+      "server_uri"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "line": 111,
+    "calls": [
+      "to_string",
+      "Vec::new",
+      "insert",
+      "Arc::new",
+      "RwLock::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "handle_publish_action",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "line": 126,
+    "calls": [
+      "Err",
+      "unwrap",
+      "clone",
+      "mpsc::channel",
+      "try_recv",
+      "Duration::from_millis",
+      "tokio::spawn",
+      "write",
+      "create_property_json",
+      "u64::from_str",
+      "sleep",
+      "publish_message",
+      "warn",
+      "debug",
+      "info",
+      "get_mut",
+      "borrow",
+      "push"
+    ]
+  },
+  {
+    "function": "handle_stop_publish_action",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "line": 196,
+    "calls": [
+      "unwrap",
+      "drop",
+      "write",
+      "swap_remove",
+      "position",
+      "warn",
+      "iter_mut",
+      "get_mut"
+    ]
+  },
+  {
+    "function": "topic_management_cb",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "line": 223,
+    "calls": [
+      "into_inner",
+      "unwrap",
+      "ProviderAction::from_str",
+      "Self::handle_publish_action",
+      "Ok",
+      "Response::new",
+      "Self::handle_stop_publish_action"
+    ]
+  },
+  {
+    "function": "start_show_notification_repeater",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "line": 45,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "Uuid::new_v4",
+      "tokio::spawn",
+      "sleep",
+      "tonic::Request::new",
+      "debug",
+      "is_err",
+      "warn",
+      "invoke",
+      "info",
+      "serde_json::to_string",
+      "DigitalTwinProviderClient::connect",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "start_activate_air_conditioning_repeater",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "line": 96,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "tokio::spawn",
+      "serde_json::to_string_pretty",
+      "sleep",
+      "tonic::Request::new",
+      "debug",
+      "is_err",
+      "warn",
+      "info",
+      "set",
+      "DigitalTwinProviderClient::connect",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "send_subscribe_request",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "line": 145,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "tonic::Request::new",
+      "Ok",
+      "subscribe",
+      "map_err",
+      "info",
+      "DigitalTwinProviderClient::connect"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "line": 164,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "send_subscribe_request",
+      "init",
+      "retry_async_based_on_status",
+      "Ok",
+      "add_service",
+      "expect",
+      "discover_digital_twin_provider_using_ibeji",
+      "to_string",
+      "clone",
+      "consumer_impl::ConsumerImpl::default",
+      "info",
+      "consumer_config::load_settings",
+      "filter",
+      "DigitalTwinConsumerServer::new",
+      "Duration::from_secs",
+      "start_show_notification_repeater",
+      "unwrap",
+      "start_activate_air_conditioning_repeater",
+      "serve",
+      "retrieve_invehicle_digital_twin_uri",
+      "debug",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "publish",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "line": 21,
+    "calls": [
+      "into_inner",
+      "Response::new",
+      "Ok",
+      "info"
+    ]
+  },
+  {
+    "function": "respond",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "line": 38,
+    "calls": [
+      "into_inner",
+      "Response::new",
+      "Ok",
+      "info"
+    ]
+  },
+  {
+    "function": "publish_test",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "line": 58,
+    "calls": [
+      "assert",
+      "publish",
+      "tonic::Request::new",
+      "String::from"
+    ]
+  },
+  {
+    "function": "respond_test",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "line": 70,
+    "calls": [
+      "to_string",
+      "assert",
+      "Uuid::new_v4",
+      "tonic::Request::new",
+      "String::from",
+      "respond"
+    ]
+  },
+  {
+    "function": "register_entities",
+    "file": "samples/mixed/provider/src/main.rs",
+    "line": 59,
+    "calls": [
+      "to_string",
+      "Status::internal",
+      "register",
+      "InvehicleDigitalTwinClient::connect",
+      "tonic::Request::new",
+      "Ok",
+      "map_err",
+      "vec"
+    ]
+  },
+  {
+    "function": "publish",
+    "file": "samples/mixed/provider/src/main.rs",
+    "line": 144,
+    "calls": [
+      "to_string",
+      "clone",
+      "unwrap",
+      "sleep",
+      "tonic::Request::new",
+      "Duration::from_secs",
+      "debug",
+      "is_err",
+      "warn",
+      "lock",
+      "get",
+      "publish",
+      "HashSet::new",
+      "DigitalTwinConsumerClient::connect"
+    ]
+  },
+  {
+    "function": "start_vehicle_simulator",
+    "file": "samples/mixed/provider/src/main.rs",
+    "line": 188,
+    "calls": [
+      "to_string",
+      "clone",
+      "unwrap",
+      "tokio::spawn",
+      "sleep",
+      "lock",
+      "info",
+      "execute_epoch",
+      "publish",
+      "serde_json::to_string",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/mixed/provider/src/main.rs",
+    "line": 258,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "init",
+      "retry_async_based_on_status",
+      "Ok",
+      "Vehicle::new",
+      "Arc::new",
+      "add_service",
+      "provider_config::load_settings",
+      "clone",
+      "info",
+      "Mutex::new",
+      "register_entities",
+      "filter",
+      "start_vehicle_simulator",
+      "DigitalTwinProviderServer::new",
+      "Duration::from_secs",
+      "Builder::new",
+      "serve",
+      "retrieve_invehicle_digital_twin_uri",
+      "target",
+      "SubscriptionMap::new"
+    ]
+  },
+  {
+    "function": "set_is_air_conditioning_active",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 33,
+    "calls": [
+      "lock",
+      "Ok"
+    ]
+  },
+  {
+    "function": "show_notification",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 47,
+    "calls": [
+      "info"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 60,
+    "calls": [
+      "into_inner",
+      "clone",
+      "insert",
+      "Ok",
+      "debug",
+      "Response::new",
+      "lock",
+      "get",
+      "info",
+      "HashSet::new"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 95,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 108,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 118,
+    "calls": [
+      "to_string",
+      "into_inner",
+      "clone",
+      "unwrap",
+      "ProviderImpl::set_is_air_conditioning_active",
+      "Status::invalid_argument",
+      "serde_json::from_str",
+      "tokio::spawn",
+      "get",
+      "Ok",
+      "is_err",
+      "warn",
+      "debug",
+      "serde_json::from_value",
+      "Response::new",
+      "map_err",
+      "info"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 161,
+    "calls": [
+      "Err",
+      "into_inner",
+      "clone",
+      "format",
+      "Status::internal",
+      "unwrap",
+      "tokio::spawn",
+      "ProviderImpl::show_notification",
+      "tonic::Request::new",
+      "Ok",
+      "debug",
+      "is_err",
+      "Response::new",
+      "info",
+      "respond",
+      "DigitalTwinConsumerClient::connect"
+    ]
+  },
+  {
+    "function": "stream",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 216,
+    "calls": [
+      "Err",
+      "warn",
+      "Status::unimplemented"
+    ]
+  },
+  {
+    "function": "subscribe_test",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 232,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "tonic::Request::new",
+      "get",
+      "Vehicle::new",
+      "Arc::new",
+      "subscribe",
+      "assert_eq",
+      "lock",
+      "String::from",
+      "Mutex::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "invoke_test",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "line": 284,
+    "calls": [
+      "to_string",
+      "assert",
+      "Uuid::new_v4",
+      "tonic::Request::new",
+      "Vehicle::new",
+      "Arc::new",
+      "invoke",
+      "String::from",
+      "Mutex::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "samples/mixed/provider/src/vehicle.rs",
+    "line": 16,
+    "calls": []
+  },
+  {
+    "function": "execute_epoch",
+    "file": "samples/mixed/provider/src/vehicle.rs",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "add_entry_to_instance_map",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "line": 51,
+    "calls": [
+      "insert"
+    ]
+  },
+  {
+    "function": "create_provider_state",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "line": 61,
+    "calls": [
+      "to_string",
+      "clone",
+      "unwrap",
+      "Default::default",
+      "HashMap::new",
+      "add_entry_to_instance_map",
+      "format",
+      "serde_json::to_string",
+      "vec"
+    ]
+  },
+  {
+    "function": "register_vehicle_parts",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "line": 219,
+    "calls": [
+      "tonic::Request::new",
+      "Ok",
+      "lock",
+      "to_string",
+      "clone",
+      "into_inner",
+      "Err",
+      "iter",
+      "register",
+      "info",
+      "ExponentialBackoff::from_millis",
+      "Status::internal",
+      "Vec::new",
+      "DigitalTwinRegistryClient::connect",
+      "for_each",
+      "vec",
+      "take",
+      "Retry::spawn",
+      "map",
+      "map_err",
+      "push"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "line": 277,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "init",
+      "Ok",
+      "Arc::new",
+      "add_service",
+      "provider_config::load_settings",
+      "clone",
+      "info",
+      "Mutex::new",
+      "filter",
+      "create_provider_state",
+      "register_vehicle_parts",
+      "serve",
+      "RequestServer::new",
+      "retrieve_invehicle_digital_twin_uri",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/request_impl.rs",
+    "line": 56,
+    "calls": [
+      "tokio::spawn",
+      "tonic::Request::new",
+      "Ok",
+      "tonic::Status::invalid_argument",
+      "lock",
+      "get",
+      "Err",
+      "clone",
+      "to_string",
+      "tonic::Response::new",
+      "RespondClient::connect",
+      "ExponentialBackoff::from_millis",
+      "take",
+      "map_err",
+      "Retry::spawn",
+      "is_empty",
+      "map",
+      "answer",
+      "format"
+    ]
+  },
+  {
+    "function": "ask",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/request_impl.rs",
+    "line": 127,
+    "calls": [
+      "Err",
+      "into_inner",
+      "unwrap",
+      "format",
+      "serde_json::from_str",
+      "tonic::Status::invalid_argument",
+      "get",
+      "info"
+    ]
+  },
+  {
+    "function": "notify",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/request_impl.rs",
+    "line": 160,
+    "calls": [
+      "Err",
+      "warn",
+      "tonic::Status::unimplemented"
+    ]
+  },
+  {
+    "function": "connect_to_digital_twin_graph_service",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 30,
+    "calls": [
+      "clone",
+      "format",
+      "take",
+      "Retry::spawn",
+      "Ok",
+      "map",
+      "map_err",
+      "ExponentialBackoff::from_millis",
+      "DigitalTwinGraphClient::connect"
+    ]
+  },
+  {
+    "function": "find",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 57,
+    "calls": [
+      "find",
+      "clone",
+      "into_inner",
+      "format",
+      "take",
+      "Retry::spawn",
+      "Ok",
+      "map",
+      "map_err",
+      "ExponentialBackoff::from_millis"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 88,
+    "calls": [
+      "clone",
+      "into_inner",
+      "format",
+      "take",
+      "Retry::spawn",
+      "get",
+      "Ok",
+      "map",
+      "map_err",
+      "ExponentialBackoff::from_millis"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 122,
+    "calls": [
+      "clone",
+      "into_inner",
+      "map_err",
+      "Ok",
+      "invoke",
+      "format"
+    ]
+  },
+  {
+    "function": "find_vehicle",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 151,
+    "calls": [
+      "find",
+      "unwrap",
+      "Err",
+      "to_string",
+      "serde_json::from_str",
+      "Ok",
+      "is_empty",
+      "info"
+    ]
+  },
+  {
+    "function": "find_cabin",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 176,
+    "calls": [
+      "Err",
+      "clone",
+      "to_string",
+      "unwrap",
+      "serde_json::from_str",
+      "get",
+      "Ok",
+      "is_empty",
+      "info"
+    ]
+  },
+  {
+    "function": "find_seat",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 209,
+    "calls": [
+      "Err",
+      "to_string",
+      "clone",
+      "unwrap",
+      "iter",
+      "serde_json::from_str",
+      "Ok",
+      "is_empty",
+      "get",
+      "info"
+    ]
+  },
+  {
+    "function": "find_premium_airbag_seat_massager",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 248,
+    "calls": [
+      "Err",
+      "clone",
+      "to_string",
+      "unwrap",
+      "format",
+      "serde_json::from_str",
+      "Ok",
+      "is_empty",
+      "get",
+      "info"
+    ]
+  },
+  {
+    "function": "perform_step",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 294,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "clone",
+      "Default::default",
+      "serde_json::to_string_pretty",
+      "Ok",
+      "invoke",
+      "info",
+      "vec"
+    ]
+  },
+  {
+    "function": "interact_with_digital_twin",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 335,
+    "calls": [
+      "perform_step",
+      "clone",
+      "find_cabin",
+      "unwrap",
+      "find_seat",
+      "find_vehicle",
+      "StdRng::from_entropy",
+      "Ok",
+      "connect_to_digital_twin_graph_service",
+      "find_premium_airbag_seat_massager",
+      "gen_range"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "line": 376,
+    "calls": [
+      "target",
+      "init",
+      "Ok",
+      "retrieve_invehicle_digital_twin_uri",
+      "filter",
+      "interact_with_digital_twin",
+      "info",
+      "consumer_config::load_settings",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "add_entry_to_instance_map",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "line": 51,
+    "calls": [
+      "insert"
+    ]
+  },
+  {
+    "function": "create_provider_state",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "line": 61,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "Default::default",
+      "Vec::<String>::new",
+      "add_entry_to_instance_map",
+      "serde_json::to_string",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "register_seat_massagers",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "line": 148,
+    "calls": [
+      "tonic::Request::new",
+      "Ok",
+      "lock",
+      "to_string",
+      "clone",
+      "into_inner",
+      "Err",
+      "iter",
+      "register",
+      "info",
+      "ExponentialBackoff::from_millis",
+      "Status::internal",
+      "Vec::new",
+      "DigitalTwinRegistryClient::connect",
+      "for_each",
+      "vec",
+      "take",
+      "Retry::spawn",
+      "map",
+      "map_err",
+      "push"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "line": 209,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "format",
+      "init",
+      "Ok",
+      "Arc::new",
+      "add_service",
+      "clone",
+      "register_seat_massagers",
+      "info",
+      "Mutex::new",
+      "provider_config::load_settings_with_config_filename",
+      "filter",
+      "create_provider_state",
+      "serve",
+      "RequestServer::new",
+      "retrieve_invehicle_digital_twin_uri",
+      "target",
+      "Builder::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "line": 57,
+    "calls": [
+      "tokio::spawn",
+      "tonic::Request::new",
+      "Ok",
+      "tonic::Status::invalid_argument",
+      "lock",
+      "get",
+      "Err",
+      "clone",
+      "to_string",
+      "tonic::Response::new",
+      "RespondClient::connect",
+      "ExponentialBackoff::from_millis",
+      "take",
+      "map_err",
+      "Retry::spawn",
+      "is_empty",
+      "map",
+      "answer",
+      "format"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "line": 128,
+    "calls": [
+      "tokio::spawn",
+      "tonic::Request::new",
+      "Ok",
+      "tonic::Status::invalid_argument",
+      "lock",
+      "get",
+      "Err",
+      "clone",
+      "to_string",
+      "tonic::Response::new",
+      "Self::perform_step",
+      "RespondClient::connect",
+      "ExponentialBackoff::from_millis",
+      "serde_json::from_str",
+      "unwrap",
+      "take",
+      "map_err",
+      "Retry::spawn",
+      "is_empty",
+      "map",
+      "answer",
+      "format",
+      "String::new"
+    ]
+  },
+  {
+    "function": "perform_step",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "line": 213,
+    "calls": [
+      "to_string",
+      "format",
+      "Default::default",
+      "map_err",
+      "info",
+      "serde_json::to_string"
+    ]
+  },
+  {
+    "function": "ask",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "line": 238,
+    "calls": [
+      "Err",
+      "into_inner",
+      "unwrap",
+      "format",
+      "serde_json::from_str",
+      "tonic::Status::invalid_argument",
+      "invoke",
+      "get",
+      "info"
+    ]
+  },
+  {
+    "function": "notify",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "line": 274,
+    "calls": [
+      "Err",
+      "warn",
+      "tonic::Status::unimplemented"
+    ]
+  },
+  {
+    "function": "context",
+    "file": "digital-twin-model/src/sdv_v1.rs",
+    "line": 11,
+    "calls": [
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "dtdl-tools/build.rs",
+    "line": 11,
+    "calls": [
+      "arg",
+      "unwrap",
+      "success",
+      "Command::new",
+      "println",
+      "env",
+      "io::stdout",
+      "panic",
+      "write_all",
+      "output"
+    ]
+  },
+  {
+    "function": "validate_dtdl_files",
+    "file": "dtdl-tools/src/lib.rs",
+    "line": 26,
+    "calls": [
+      "arg",
+      "unwrap",
+      "Path::new",
+      "Command::new",
+      "success",
+      "println",
+      "io::stdout",
+      "join",
+      "write_all",
+      "output"
+    ]
+  },
+  {
+    "function": "validate_digital_twin_model_dtdl_files",
+    "file": "dtdl-tools/src/lib.rs",
+    "line": 47,
+    "calls": [
+      "assert"
+    ]
+  }
+]

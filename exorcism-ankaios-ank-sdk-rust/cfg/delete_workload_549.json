@@ -1,0 +1,21 @@
+{
+  "function": "delete_workload",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:delete_workload",
+      "line": 549
+    },
+    {
+      "id": 1,
+      "label": "exit:delete_workload",
+      "line": 582
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

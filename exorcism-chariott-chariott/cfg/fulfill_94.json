@@ -1,0 +1,21 @@
+{
+  "function": "fulfill",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fulfill",
+      "line": 94
+    },
+    {
+      "id": 1,
+      "label": "exit:fulfill",
+      "line": 118
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

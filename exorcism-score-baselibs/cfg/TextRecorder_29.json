@@ -1,0 +1,21 @@
+{
+  "function": "TextRecorder",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TextRecorder",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:TextRecorder",
+      "line": 76
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

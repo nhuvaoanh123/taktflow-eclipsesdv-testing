@@ -1,0 +1,21 @@
+{
+  "function": "IAccessControlList",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IAccessControlList",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:IAccessControlList",
+      "line": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

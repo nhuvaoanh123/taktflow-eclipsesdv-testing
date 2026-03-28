@@ -1,0 +1,63 @@
+{
+  "function": "get_service_location",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_service_location",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 35
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 43
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 35
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 45
+    },
+    {
+      "id": 5,
+      "label": "exit:get_service_location",
+      "line": 45
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

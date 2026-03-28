@@ -1,0 +1,30 @@
+{
+  "function": "PeriodicTaskFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:PeriodicTaskFactory",
+      "line": 177
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 207
+    },
+    {
+      "id": 2,
+      "label": "exit:PeriodicTaskFactory",
+      "line": 213
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

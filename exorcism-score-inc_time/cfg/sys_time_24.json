@@ -1,0 +1,21 @@
+{
+  "function": "sys_time",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sys_time",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:sys_time",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

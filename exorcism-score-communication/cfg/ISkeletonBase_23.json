@@ -1,0 +1,21 @@
+{
+  "function": "ISkeletonBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ISkeletonBase",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:ISkeletonBase",
+      "line": 37
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

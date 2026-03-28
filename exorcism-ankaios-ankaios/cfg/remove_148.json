@@ -1,0 +1,21 @@
+{
+  "function": "remove",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:remove",
+      "line": 148
+    },
+    {
+      "id": 1,
+      "label": "exit:remove",
+      "line": 165
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

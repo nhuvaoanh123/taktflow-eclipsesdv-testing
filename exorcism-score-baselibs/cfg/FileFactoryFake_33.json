@@ -1,0 +1,21 @@
+{
+  "function": "FileFactoryFake",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FileFactoryFake",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:FileFactoryFake",
+      "line": 62
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

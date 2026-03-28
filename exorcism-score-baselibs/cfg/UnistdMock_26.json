@@ -1,0 +1,21 @@
+{
+  "function": "UnistdMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:UnistdMock",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:UnistdMock",
+      "line": 139
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

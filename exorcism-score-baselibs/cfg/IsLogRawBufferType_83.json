@@ -1,0 +1,30 @@
+{
+  "function": "IsLogRawBufferType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IsLogRawBufferType",
+      "line": 83
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 85
+    },
+    {
+      "id": 2,
+      "label": "exit:IsLogRawBufferType",
+      "line": 86
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

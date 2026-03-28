@@ -1,0 +1,45 @@
+{
+  "external": [
+    {
+      "name": "bazel-bin",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "bazel-",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "Debug",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "metadata",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "test_properties",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "_build",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "call",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "xunit1",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "ignore",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "src",
+      "source": "pyproject.toml"
+    }
+  ],
+  "internal": []
+}

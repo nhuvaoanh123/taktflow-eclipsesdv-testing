@@ -1,0 +1,21 @@
+{
+  "function": "getInstance",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getInstance",
+      "line": 514
+    },
+    {
+      "id": 1,
+      "label": "exit:getInstance",
+      "line": 526
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

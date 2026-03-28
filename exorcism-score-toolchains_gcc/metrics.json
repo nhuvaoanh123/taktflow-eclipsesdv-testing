@@ -1,0 +1,34 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "test/main_pthread.cpp",
+    "start_line": 17,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "test/main_pthread.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "test/main.cpp",
+    "start_line": 15,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  }
+]

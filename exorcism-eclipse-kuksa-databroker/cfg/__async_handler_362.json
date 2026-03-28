@@ -1,0 +1,21 @@
+{
+  "function": "__async_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:__async_handler",
+      "line": 362
+    },
+    {
+      "id": 1,
+      "label": "exit:__async_handler",
+      "line": 379
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

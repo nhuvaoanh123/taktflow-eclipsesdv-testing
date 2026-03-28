@@ -1,0 +1,21 @@
+{
+  "function": "add_isMaxCheckDisabled",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:add_isMaxCheckDisabled",
+      "line": 924
+    },
+    {
+      "id": 1,
+      "label": "exit:add_isMaxCheckDisabled",
+      "line": 926
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "HandleMessage",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:HandleMessage",
+      "line": 71
+    },
+    {
+      "id": 1,
+      "label": "exit:HandleMessage",
+      "line": 144
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

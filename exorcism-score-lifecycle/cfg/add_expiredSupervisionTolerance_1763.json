@@ -1,0 +1,21 @@
+{
+  "function": "add_expiredSupervisionTolerance",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:add_expiredSupervisionTolerance",
+      "line": 1763
+    },
+    {
+      "id": 1,
+      "label": "exit:add_expiredSupervisionTolerance",
+      "line": 1772
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

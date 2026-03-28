@@ -1,0 +1,21 @@
+{
+  "function": "kSharedMemoryRingBufferObjectOpenFlags",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kSharedMemoryRingBufferObjectOpenFlags",
+      "line": 261
+    },
+    {
+      "id": 1,
+      "label": "exit:kSharedMemoryRingBufferObjectOpenFlags",
+      "line": 285
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "MethodResourceMap",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MethodResourceMap",
+      "line": 44
+    },
+    {
+      "id": 1,
+      "label": "exit:MethodResourceMap",
+      "line": 91
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "parse_whitespace_separated",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parse_whitespace_separated",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:parse_whitespace_separated",
+      "line": 95
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

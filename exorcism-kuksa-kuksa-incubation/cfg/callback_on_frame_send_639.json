@@ -1,0 +1,44 @@
+{
+  "function": "callback_on_frame_send",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:callback_on_frame_send",
+      "line": 639
+    },
+    {
+      "id": 1,
+      "label": "match/switch",
+      "line": 642
+    },
+    {
+      "id": 2,
+      "label": "switch_exit",
+      "line": 663
+    },
+    {
+      "id": 3,
+      "label": "return_statement",
+      "line": 664
+    },
+    {
+      "id": 4,
+      "label": "exit:callback_on_frame_send",
+      "line": 665
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 2,
+      "to": 3
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "test_request_listener_invokes_operation_successfully",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_request_listener_invokes_operation_successfully",
+      "line": 376
+    },
+    {
+      "id": 1,
+      "label": "exit:test_request_listener_invokes_operation_successfully",
+      "line": 444
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

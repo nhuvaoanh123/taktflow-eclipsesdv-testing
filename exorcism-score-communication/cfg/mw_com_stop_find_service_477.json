@@ -1,0 +1,87 @@
+{
+  "function": "mw_com_stop_find_service",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:mw_com_stop_find_service",
+      "line": 477
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 479
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 482
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 479
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 490
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 493
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 490
+    },
+    {
+      "id": 7,
+      "label": "exit:mw_com_stop_find_service",
+      "line": 496
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    }
+  ]
+}

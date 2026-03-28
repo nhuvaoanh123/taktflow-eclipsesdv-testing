@@ -1,0 +1,21 @@
+{
+  "function": "metadata",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:metadata",
+      "line": 1268
+    },
+    {
+      "id": 1,
+      "label": "exit:metadata",
+      "line": 1273
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

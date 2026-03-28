@@ -1,0 +1,21 @@
+{
+  "function": "Socket",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Socket",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "exit:Socket",
+      "line": 191
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

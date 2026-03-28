@@ -1,0 +1,21 @@
+{
+  "function": "kCallbackSize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:kCallbackSize",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:kCallbackSize",
+      "line": 83
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

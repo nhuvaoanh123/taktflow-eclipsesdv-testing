@@ -1,0 +1,21 @@
+{
+  "function": "get_and_build_protos",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_and_build_protos",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:get_and_build_protos",
+      "line": 98
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

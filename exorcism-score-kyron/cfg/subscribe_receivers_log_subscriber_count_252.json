@@ -1,0 +1,21 @@
+{
+  "function": "subscribe_receivers_log_subscriber_count",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:subscribe_receivers_log_subscriber_count",
+      "line": 252
+    },
+    {
+      "id": 1,
+      "label": "exit:subscribe_receivers_log_subscriber_count",
+      "line": 273
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

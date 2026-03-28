@@ -1,0 +1,21 @@
+{
+  "function": "time",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:time",
+      "line": 22
+    },
+    {
+      "id": 1,
+      "label": "exit:time",
+      "line": 44
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

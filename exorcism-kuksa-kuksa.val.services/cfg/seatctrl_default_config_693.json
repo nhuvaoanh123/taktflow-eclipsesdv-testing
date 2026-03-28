@@ -1,0 +1,327 @@
+{
+  "function": "seatctrl_default_config",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:seatctrl_default_config",
+      "line": 693
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 695
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 695
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 695
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 707
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 707
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 707
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 709
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 709
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 709
+    },
+    {
+      "id": 10,
+      "label": "if (...)",
+      "line": 710
+    },
+    {
+      "id": 11,
+      "label": "merge",
+      "line": 710
+    },
+    {
+      "id": 12,
+      "label": "then",
+      "line": 710
+    },
+    {
+      "id": 13,
+      "label": "if (...)",
+      "line": 711
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 711
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 711
+    },
+    {
+      "id": 16,
+      "label": "if (...)",
+      "line": 712
+    },
+    {
+      "id": 17,
+      "label": "merge",
+      "line": 712
+    },
+    {
+      "id": 18,
+      "label": "then",
+      "line": 712
+    },
+    {
+      "id": 19,
+      "label": "if (...)",
+      "line": 714
+    },
+    {
+      "id": 20,
+      "label": "merge",
+      "line": 714
+    },
+    {
+      "id": 21,
+      "label": "then",
+      "line": 714
+    },
+    {
+      "id": 22,
+      "label": "if (...)",
+      "line": 715
+    },
+    {
+      "id": 23,
+      "label": "merge",
+      "line": 715
+    },
+    {
+      "id": 24,
+      "label": "then",
+      "line": 715
+    },
+    {
+      "id": 25,
+      "label": "if (...)",
+      "line": 722
+    },
+    {
+      "id": 26,
+      "label": "merge",
+      "line": 726
+    },
+    {
+      "id": 27,
+      "label": "then",
+      "line": 722
+    },
+    {
+      "id": 28,
+      "label": "return_statement",
+      "line": 727
+    },
+    {
+      "id": 29,
+      "label": "exit:seatctrl_default_config",
+      "line": 728
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "true"
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 16
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "label": "true"
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "label": "false"
+    },
+    {
+      "from": 17,
+      "to": 19
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "label": "true"
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "label": "false"
+    },
+    {
+      "from": 20,
+      "to": 22
+    },
+    {
+      "from": 22,
+      "to": 24,
+      "label": "true"
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "label": "false"
+    },
+    {
+      "from": 23,
+      "to": 25
+    },
+    {
+      "from": 25,
+      "to": 27,
+      "label": "true"
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "label": "false"
+    },
+    {
+      "from": 26,
+      "to": 28
+    },
+    {
+      "from": 26,
+      "to": 29
+    }
+  ]
+}

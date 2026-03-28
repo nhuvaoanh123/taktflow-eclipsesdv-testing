@@ -1,0 +1,30 @@
+{
+  "function": "StubServiceContainer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:StubServiceContainer",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 55
+    },
+    {
+      "id": 2,
+      "label": "exit:StubServiceContainer",
+      "line": 83
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

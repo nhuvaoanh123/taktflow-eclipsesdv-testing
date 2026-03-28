@@ -1,0 +1,21 @@
+{
+  "function": "get_service_metadata_with_retry",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_service_metadata_with_retry",
+      "line": 65
+    },
+    {
+      "id": 1,
+      "label": "exit:get_service_metadata_with_retry",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

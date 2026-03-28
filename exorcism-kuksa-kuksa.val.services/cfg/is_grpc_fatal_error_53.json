@@ -1,0 +1,72 @@
+{
+  "function": "is_grpc_fatal_error",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_grpc_fatal_error",
+      "line": 53
+    },
+    {
+      "id": 1,
+      "label": "if ((\r\n        e.code() == grpc.StatusCode.UNAVAILABLE\r\n        )",
+      "line": 54
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 64
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 54
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 61
+    },
+    {
+      "id": 5,
+      "label": "else",
+      "line": 54
+    },
+    {
+      "id": 6,
+      "label": "exit:is_grpc_fatal_error",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 6
+    }
+  ]
+}

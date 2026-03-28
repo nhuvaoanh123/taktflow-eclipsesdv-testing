@@ -1,0 +1,21 @@
+{
+  "function": "test_subscribe_case",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_subscribe_case",
+      "line": 2214
+    },
+    {
+      "id": 1,
+      "label": "exit:test_subscribe_case",
+      "line": 2361
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

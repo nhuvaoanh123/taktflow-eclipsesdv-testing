@@ -1,0 +1,105 @@
+{
+  "function": "serializationVersion",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:serializationVersion",
+      "line": 60
+    },
+    {
+      "id": 1,
+      "label": "if ((service_element_type == ServiceElementType::EVENT))",
+      "line": 102
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 109
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 102
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 102
+    },
+    {
+      "id": 5,
+      "label": "if ((service_element_instance_deployment_it == service_element_i)",
+      "line": 128
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 134
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 128
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 135
+    },
+    {
+      "id": 9,
+      "label": "exit:serializationVersion",
+      "line": 138
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 8
+    },
+    {
+      "from": 6,
+      "to": 9
+    }
+  ]
+}

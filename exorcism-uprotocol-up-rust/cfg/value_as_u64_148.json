@@ -1,0 +1,21 @@
+{
+  "function": "value_as_u64",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:value_as_u64",
+      "line": 148
+    },
+    {
+      "id": 1,
+      "label": "exit:value_as_u64",
+      "line": 154
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

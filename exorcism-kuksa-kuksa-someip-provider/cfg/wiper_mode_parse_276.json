@@ -1,0 +1,63 @@
+{
+  "function": "wiper_mode_parse",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:wiper_mode_parse",
+      "line": 276
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 277
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 291
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 277
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 277
+    },
+    {
+      "id": 5,
+      "label": "exit:wiper_mode_parse",
+      "line": 292
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

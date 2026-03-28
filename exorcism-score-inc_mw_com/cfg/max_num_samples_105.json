@@ -1,0 +1,21 @@
+{
+  "function": "max_num_samples",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:max_num_samples",
+      "line": 105
+    },
+    {
+      "id": 1,
+      "label": "exit:max_num_samples",
+      "line": 135
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

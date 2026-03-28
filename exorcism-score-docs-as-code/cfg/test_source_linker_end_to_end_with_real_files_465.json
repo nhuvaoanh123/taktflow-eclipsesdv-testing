@@ -1,0 +1,155 @@
+{
+  "function": "test_source_linker_end_to_end_with_real_files",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_source_linker_end_to_end_with_real_files",
+      "line": 465
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 540
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 546
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 540
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 541
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 543
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 541
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 544
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 546
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 544
+    },
+    {
+      "id": 10,
+      "label": "loop (for_statement)",
+      "line": 551
+    },
+    {
+      "id": 11,
+      "label": "loop_exit",
+      "line": 554
+    },
+    {
+      "id": 12,
+      "label": "body",
+      "line": 551
+    },
+    {
+      "id": 13,
+      "label": "exit:test_source_linker_end_to_end_with_real_files",
+      "line": 554
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "done"
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "continue"
+    },
+    {
+      "from": 12,
+      "to": 10,
+      "label": "back"
+    },
+    {
+      "from": 11,
+      "to": 13
+    }
+  ]
+}

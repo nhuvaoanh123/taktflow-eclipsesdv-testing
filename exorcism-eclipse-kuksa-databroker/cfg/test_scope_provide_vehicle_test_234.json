@@ -1,0 +1,21 @@
+{
+  "function": "test_scope_provide_vehicle_test",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_scope_provide_vehicle_test",
+      "line": 234
+    },
+    {
+      "id": 1,
+      "label": "exit:test_scope_provide_vehicle_test",
+      "line": 245
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

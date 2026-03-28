@@ -1,0 +1,21 @@
+{
+  "function": "f32_close_enough",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:f32_close_enough",
+      "line": 83
+    },
+    {
+      "id": 1,
+      "label": "exit:f32_close_enough",
+      "line": 90
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

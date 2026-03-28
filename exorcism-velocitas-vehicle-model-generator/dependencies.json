@@ -1,0 +1,49 @@
+{
+  "external": [
+    {
+      "name": "vss-tools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "velocitas_model_generator",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "Generates",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "version",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "dependencies",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "README",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "LICENSE",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "requirements",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "setuptools",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "setuptools_scm",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "velocitas",
+      "source": "pyproject.toml"
+    }
+  ],
+  "internal": []
+}

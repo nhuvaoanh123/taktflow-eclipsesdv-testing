@@ -1,0 +1,21 @@
+{
+  "function": "create_pool",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_pool",
+      "line": 115
+    },
+    {
+      "id": 1,
+      "label": "exit:create_pool",
+      "line": 126
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

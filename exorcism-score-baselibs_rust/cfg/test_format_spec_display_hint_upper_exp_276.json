@@ -1,0 +1,21 @@
+{
+  "function": "test_format_spec_display_hint_upper_exp",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_format_spec_display_hint_upper_exp",
+      "line": 276
+    },
+    {
+      "id": 1,
+      "label": "exit:test_format_spec_display_hint_upper_exp",
+      "line": 286
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

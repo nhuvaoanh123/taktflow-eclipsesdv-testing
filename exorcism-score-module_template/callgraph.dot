@@ -1,0 +1,17 @@
+digraph callgraph {
+  rankdir=LR;
+  node [shape=box, fontname="Courier"];
+  "test_hello";
+  "test_hello" -> "assert_eq";
+  "add";
+  "TEST";
+  "TEST" -> "EXPECT_EQ";
+  "TEST" -> "add";
+  "TEST" -> "EXPECT_EQ";
+  "TEST" -> "add";
+  "TEST" -> "EXPECT_EQ";
+  "TEST" -> "add";
+  "main";
+  "main" -> "RUN_ALL_TESTS";
+  "main" -> "::testing::InitGoogleTest";
+}

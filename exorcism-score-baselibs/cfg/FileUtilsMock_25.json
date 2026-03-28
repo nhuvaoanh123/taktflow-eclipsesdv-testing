@@ -1,0 +1,21 @@
+{
+  "function": "FileUtilsMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FileUtilsMock",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:FileUtilsMock",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

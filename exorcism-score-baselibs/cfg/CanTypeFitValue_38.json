@@ -1,0 +1,30 @@
+{
+  "function": "CanTypeFitValue",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CanTypeFitValue",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 44
+    },
+    {
+      "id": 2,
+      "label": "exit:CanTypeFitValue",
+      "line": 46
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

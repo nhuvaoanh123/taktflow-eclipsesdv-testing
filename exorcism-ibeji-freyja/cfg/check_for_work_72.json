@@ -1,0 +1,21 @@
+{
+  "function": "check_for_work",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:check_for_work",
+      "line": 72
+    },
+    {
+      "id": 1,
+      "label": "exit:check_for_work",
+      "line": 84
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "Persistency",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Persistency",
+      "line": 39
+    },
+    {
+      "id": 1,
+      "label": "exit:Persistency",
+      "line": 74
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

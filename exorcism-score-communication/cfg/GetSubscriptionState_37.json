@@ -1,0 +1,21 @@
+{
+  "function": "GetSubscriptionState",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetSubscriptionState",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:GetSubscriptionState",
+      "line": 66
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

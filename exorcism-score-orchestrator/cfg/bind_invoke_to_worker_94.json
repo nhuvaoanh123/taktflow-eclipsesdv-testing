@@ -1,0 +1,21 @@
+{
+  "function": "bind_invoke_to_worker",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:bind_invoke_to_worker",
+      "line": 94
+    },
+    {
+      "id": 1,
+      "label": "exit:bind_invoke_to_worker",
+      "line": 109
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "get_vehicleposition",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_vehicleposition",
+      "line": 124
+    },
+    {
+      "id": 1,
+      "label": "exit:get_vehicleposition",
+      "line": 224
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

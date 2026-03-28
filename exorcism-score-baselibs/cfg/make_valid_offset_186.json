@@ -1,0 +1,64 @@
+{
+  "function": "make_valid_offset",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:make_valid_offset",
+      "line": 186
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 189
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 193
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 189
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 194
+    },
+    {
+      "id": 5,
+      "label": "exit:make_valid_offset",
+      "line": 195
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

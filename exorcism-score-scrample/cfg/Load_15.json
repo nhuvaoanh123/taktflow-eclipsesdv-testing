@@ -1,0 +1,21 @@
+{
+  "function": "Load",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Load",
+      "line": 15
+    },
+    {
+      "id": 1,
+      "label": "exit:Load",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

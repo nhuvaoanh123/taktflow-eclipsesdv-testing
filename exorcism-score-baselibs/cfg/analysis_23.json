@@ -1,0 +1,63 @@
+{
+  "function": "analysis",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:analysis",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "if ((((nullptr == pointer) || (nullptr == memory_resource)) ||\r\n)",
+      "line": 75
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 79
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 75
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 87
+    },
+    {
+      "id": 5,
+      "label": "exit:analysis",
+      "line": 139
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

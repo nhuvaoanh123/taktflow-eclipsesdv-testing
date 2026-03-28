@@ -1,0 +1,16 @@
+{
+  "project": "ibeji-ibeji-example-applications",
+  "files_by_language": {
+    "Rust": {
+      "files": 11,
+      "loc": 447
+    }
+  },
+  "total_files": 11,
+  "total_loc": 447,
+  "total_functions": 7,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

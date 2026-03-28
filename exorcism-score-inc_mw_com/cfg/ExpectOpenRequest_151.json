@@ -1,0 +1,21 @@
+{
+  "function": "ExpectOpenRequest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ExpectOpenRequest",
+      "line": 151
+    },
+    {
+      "id": 1,
+      "label": "exit:ExpectOpenRequest",
+      "line": 174
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

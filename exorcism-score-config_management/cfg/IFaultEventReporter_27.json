@@ -1,0 +1,21 @@
+{
+  "function": "IFaultEventReporter",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IFaultEventReporter",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:IFaultEventReporter",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

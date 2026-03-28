@@ -1,0 +1,21 @@
+{
+  "function": "equals",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:equals",
+      "line": 308
+    },
+    {
+      "id": 1,
+      "label": "exit:equals",
+      "line": 487
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

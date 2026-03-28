@@ -1,0 +1,21 @@
+{
+  "function": "GetValueFromKuksaVal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetValueFromKuksaVal",
+      "line": 58
+    },
+    {
+      "id": 1,
+      "label": "exit:GetValueFromKuksaVal",
+      "line": 78
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

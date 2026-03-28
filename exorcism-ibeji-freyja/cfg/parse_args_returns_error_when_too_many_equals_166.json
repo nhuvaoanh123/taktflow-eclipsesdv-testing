@@ -1,0 +1,21 @@
+{
+  "function": "parse_args_returns_error_when_too_many_equals",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parse_args_returns_error_when_too_many_equals",
+      "line": 166
+    },
+    {
+      "id": 1,
+      "label": "exit:parse_args_returns_error_when_too_many_equals",
+      "line": 184
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "function": "withTtl",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:withTtl",
+      "line": 236
+    },
+    {
+      "id": 1,
+      "label": "if (((this.type == UMessageType.UMESSAGE_TYPE_REQUEST\r\n         )",
+      "line": 237
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 242
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 237
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 244
+    },
+    {
+      "id": 5,
+      "label": "exit:withTtl",
+      "line": 245
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

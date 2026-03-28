@@ -1,0 +1,21 @@
+{
+  "function": "populate_authorizer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:populate_authorizer",
+      "line": 289
+    },
+    {
+      "id": 1,
+      "label": "exit:populate_authorizer",
+      "line": 350
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

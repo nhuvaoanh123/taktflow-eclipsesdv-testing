@@ -1,0 +1,21 @@
+{
+  "function": "task_reschedule_never_happens_when_running",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:task_reschedule_never_happens_when_running",
+      "line": 983
+    },
+    {
+      "id": 1,
+      "label": "exit:task_reschedule_never_happens_when_running",
+      "line": 1038
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

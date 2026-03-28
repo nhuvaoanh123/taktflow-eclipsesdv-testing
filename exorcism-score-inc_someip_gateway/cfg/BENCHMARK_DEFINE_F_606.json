@@ -1,0 +1,21 @@
+{
+  "function": "BENCHMARK_DEFINE_F",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:BENCHMARK_DEFINE_F",
+      "line": 606
+    },
+    {
+      "id": 1,
+      "label": "exit:BENCHMARK_DEFINE_F",
+      "line": 626
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

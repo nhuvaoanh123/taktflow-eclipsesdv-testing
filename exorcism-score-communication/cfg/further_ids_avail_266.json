@@ -1,0 +1,130 @@
+{
+  "function": "further_ids_avail",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:further_ids_avail",
+      "line": 266
+    },
+    {
+      "id": 1,
+      "label": "if ((src_map.empty() == false))",
+      "line": 271
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 296
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 271
+    },
+    {
+      "id": 4,
+      "label": "if ((search != src_map.end()))",
+      "line": 274
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 295
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 274
+    },
+    {
+      "id": 7,
+      "label": "loop (for_statement)",
+      "line": 277
+    },
+    {
+      "id": 8,
+      "label": "loop_exit",
+      "line": 294
+    },
+    {
+      "id": 9,
+      "label": "body",
+      "line": 277
+    },
+    {
+      "id": 10,
+      "label": "return_statement",
+      "line": 297
+    },
+    {
+      "id": 11,
+      "label": "exit:further_ids_avail",
+      "line": 298
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "done"
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "continue"
+    },
+    {
+      "from": 9,
+      "to": 7,
+      "label": "back"
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 10
+    },
+    {
+      "from": 2,
+      "to": 11
+    }
+  ]
+}

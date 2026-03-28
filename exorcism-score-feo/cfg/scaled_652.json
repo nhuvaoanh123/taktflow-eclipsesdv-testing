@@ -1,0 +1,21 @@
+{
+  "function": "scaled",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:scaled",
+      "line": 652
+    },
+    {
+      "id": 1,
+      "label": "exit:scaled",
+      "line": 667
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

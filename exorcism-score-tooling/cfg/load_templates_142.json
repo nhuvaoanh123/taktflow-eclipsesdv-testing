@@ -1,0 +1,30 @@
+{
+  "function": "load_templates",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:load_templates",
+      "line": 142
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 188
+    },
+    {
+      "id": 2,
+      "label": "exit:load_templates",
+      "line": 188
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

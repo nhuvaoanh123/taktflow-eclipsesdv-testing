@@ -1,0 +1,21 @@
+{
+  "function": "_find_available_kvm_support",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_find_available_kvm_support",
+      "line": 113
+    },
+    {
+      "id": 1,
+      "label": "exit:_find_available_kvm_support",
+      "line": 123
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

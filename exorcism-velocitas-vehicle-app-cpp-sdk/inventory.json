@@ -1,0 +1,26 @@
+{
+  "project": "velocitas-vehicle-app-cpp-sdk",
+  "files_by_language": {
+    "Python": {
+      "files": 2,
+      "loc": 184
+    },
+    "C": {
+      "files": 42,
+      "loc": 3854
+    },
+    "C++": {
+      "files": 54,
+      "loc": 6023
+    }
+  },
+  "total_files": 98,
+  "total_loc": 10061,
+  "total_functions": 580,
+  "build_system": "CMake",
+  "languages": [
+    "Python",
+    "C",
+    "C++"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "function": "multi_span_fixture",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:multi_span_fixture",
+      "line": 952
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 958
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 961
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 958
+    },
+    {
+      "id": 4,
+      "label": "exit:multi_span_fixture",
+      "line": 963
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

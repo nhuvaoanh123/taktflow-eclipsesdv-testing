@@ -1,0 +1,21 @@
+{
+  "function": "DirectoryEntry",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DirectoryEntry",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:DirectoryEntry",
+      "line": 73
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

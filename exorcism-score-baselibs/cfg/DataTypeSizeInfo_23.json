@@ -1,0 +1,21 @@
+{
+  "function": "DataTypeSizeInfo",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DataTypeSizeInfo",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:DataTypeSizeInfo",
+      "line": 34
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

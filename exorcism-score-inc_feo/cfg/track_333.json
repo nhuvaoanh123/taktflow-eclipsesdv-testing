@@ -1,0 +1,21 @@
+{
+  "function": "track",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:track",
+      "line": 333
+    },
+    {
+      "id": 1,
+      "label": "exit:track",
+      "line": 344
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

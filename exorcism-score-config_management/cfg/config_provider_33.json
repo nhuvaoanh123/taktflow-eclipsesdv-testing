@@ -1,0 +1,21 @@
+{
+  "function": "config_provider",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:config_provider",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:config_provider",
+      "line": 155
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "detail_skeleton_event_tracing",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:detail_skeleton_event_tracing",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:detail_skeleton_event_tracing",
+      "line": 90
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "Signal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Signal",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:Signal",
+      "line": 83
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

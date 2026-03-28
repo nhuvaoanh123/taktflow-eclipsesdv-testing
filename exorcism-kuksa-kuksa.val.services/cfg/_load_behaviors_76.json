@@ -1,0 +1,173 @@
+{
+  "function": "_load_behaviors",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_load_behaviors",
+      "line": 76
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 81
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 118
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 81
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 84
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 118
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 84
+    },
+    {
+      "id": 7,
+      "label": "else",
+      "line": 84
+    },
+    {
+      "id": 8,
+      "label": "loop (for_statement)",
+      "line": 120
+    },
+    {
+      "id": 9,
+      "label": "loop_exit",
+      "line": 124
+    },
+    {
+      "id": 10,
+      "label": "body",
+      "line": 120
+    },
+    {
+      "id": 11,
+      "label": "if (...)",
+      "line": 121
+    },
+    {
+      "id": 12,
+      "label": "merge",
+      "line": 124
+    },
+    {
+      "id": 13,
+      "label": "then",
+      "line": 121
+    },
+    {
+      "id": 14,
+      "label": "return_statement",
+      "line": 126
+    },
+    {
+      "id": 15,
+      "label": "exit:_load_behaviors",
+      "line": 126
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "label": "done"
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "continue"
+    },
+    {
+      "from": 10,
+      "to": 11
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "true"
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "false"
+    },
+    {
+      "from": 12,
+      "to": 8,
+      "label": "back"
+    },
+    {
+      "from": 9,
+      "to": 14
+    },
+    {
+      "from": 9,
+      "to": 15
+    }
+  ]
+}

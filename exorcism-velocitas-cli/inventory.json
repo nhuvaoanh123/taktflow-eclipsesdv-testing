@@ -1,0 +1,21 @@
+{
+  "project": "velocitas-cli",
+  "files_by_language": {
+    "TypeScript": {
+      "files": 64,
+      "loc": 7432
+    },
+    "Python": {
+      "files": 6,
+      "loc": 109
+    }
+  },
+  "total_files": 70,
+  "total_loc": 7541,
+  "total_functions": 627,
+  "build_system": "npm/Node",
+  "languages": [
+    "TypeScript",
+    "Python"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "enqueue_pending_create",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:enqueue_pending_create",
+      "line": 187
+    },
+    {
+      "id": 1,
+      "label": "exit:enqueue_pending_create",
+      "line": 217
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "function": "detail",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:detail",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 246
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 263
+    },
+    {
+      "id": 3,
+      "label": "return_statement",
+      "line": 282
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 327
+    },
+    {
+      "id": 5,
+      "label": "exit:detail",
+      "line": 329
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    },
+    {
+      "from": 0,
+      "to": 4
+    },
+    {
+      "from": 0,
+      "to": 5
+    }
+  ]
+}

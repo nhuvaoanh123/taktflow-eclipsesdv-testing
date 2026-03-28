@@ -1,0 +1,21 @@
+{
+  "function": "dltserver",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:dltserver",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:dltserver",
+      "line": 50
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

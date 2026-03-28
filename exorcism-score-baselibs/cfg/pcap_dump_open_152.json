@@ -1,0 +1,129 @@
+{
+  "function": "pcap_dump_open",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:pcap_dump_open",
+      "line": 152
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 155
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 158
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 155
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 159
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 162
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 159
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 165
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 168
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 165
+    },
+    {
+      "id": 10,
+      "label": "return_statement",
+      "line": 169
+    },
+    {
+      "id": 11,
+      "label": "exit:pcap_dump_open",
+      "line": 170
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 8,
+      "to": 11
+    }
+  ]
+}

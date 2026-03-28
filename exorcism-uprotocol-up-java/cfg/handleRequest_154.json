@@ -1,0 +1,105 @@
+{
+  "function": "handleRequest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handleRequest",
+      "line": 154
+    },
+    {
+      "id": 1,
+      "label": "if ((requestAttributes.getType() != UMessageType.UMESSAGE_TYPE_R)",
+      "line": 158
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 161
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 158
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 160
+    },
+    {
+      "id": 5,
+      "label": "if ((requestHandler == null))",
+      "line": 165
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 168
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 165
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 167
+    },
+    {
+      "id": 9,
+      "label": "exit:handleRequest",
+      "line": 203
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    }
+  ]
+}

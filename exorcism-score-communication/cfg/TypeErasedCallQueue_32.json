@@ -1,0 +1,21 @@
+{
+  "function": "TypeErasedCallQueue",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TypeErasedCallQueue",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:TypeErasedCallQueue",
+      "line": 76
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

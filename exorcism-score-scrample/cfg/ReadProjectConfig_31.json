@@ -1,0 +1,21 @@
+{
+  "function": "ReadProjectConfig",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ReadProjectConfig",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:ReadProjectConfig",
+      "line": 42
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "function": "release",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:release",
+      "line": 41
+    },
+    {
+      "id": 1,
+      "label": "if ((started_ != time_point{}))",
+      "line": 43
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 99
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 43
+    },
+    {
+      "id": 4,
+      "label": "if ((now > started_ + timeout_))",
+      "line": 46
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 67
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 46
+    },
+    {
+      "id": 7,
+      "label": "exit:release",
+      "line": 114
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 7
+    }
+  ]
+}

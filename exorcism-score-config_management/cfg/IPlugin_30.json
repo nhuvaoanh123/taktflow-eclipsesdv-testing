@@ -1,0 +1,21 @@
+{
+  "function": "IPlugin",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IPlugin",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:IPlugin",
+      "line": 48
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

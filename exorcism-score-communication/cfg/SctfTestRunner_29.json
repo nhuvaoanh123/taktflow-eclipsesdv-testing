@@ -1,0 +1,21 @@
+{
+  "function": "SctfTestRunner",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SctfTestRunner",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:SctfTestRunner",
+      "line": 113
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

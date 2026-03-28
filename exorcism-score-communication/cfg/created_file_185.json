@@ -1,0 +1,123 @@
+{
+  "function": "created_file",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:created_file",
+      "line": 185
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 186
+    },
+    {
+      "id": 2,
+      "label": "if ((open_object_result.has_value()))",
+      "line": 196
+    },
+    {
+      "id": 3,
+      "label": "merge",
+      "line": 199
+    },
+    {
+      "id": 4,
+      "label": "then",
+      "line": 196
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 198
+    },
+    {
+      "id": 6,
+      "label": "if ((open_object_result.error() == os::Error::Code::kNoSuchFileO)",
+      "line": 201
+    },
+    {
+      "id": 7,
+      "label": "merge",
+      "line": 220
+    },
+    {
+      "id": 8,
+      "label": "then",
+      "line": 201
+    },
+    {
+      "id": 9,
+      "label": "return_statement",
+      "line": 211
+    },
+    {
+      "id": 10,
+      "label": "else",
+      "line": 201
+    },
+    {
+      "id": 11,
+      "label": "exit:created_file",
+      "line": 221
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "label": "true"
+    },
+    {
+      "from": 4,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "label": "false"
+    },
+    {
+      "from": 3,
+      "to": 6
+    },
+    {
+      "from": 6,
+      "to": 8,
+      "label": "true"
+    },
+    {
+      "from": 8,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 6,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 11
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "receive_can_data",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:receive_can_data",
+      "line": 108
+    },
+    {
+      "id": 1,
+      "label": "exit:receive_can_data",
+      "line": 204
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "QnxPthread",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:QnxPthread",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:QnxPthread",
+      "line": 36
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

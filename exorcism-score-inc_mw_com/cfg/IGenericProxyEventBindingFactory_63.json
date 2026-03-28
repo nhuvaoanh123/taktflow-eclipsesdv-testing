@@ -1,0 +1,21 @@
+{
+  "function": "IGenericProxyEventBindingFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IGenericProxyEventBindingFactory",
+      "line": 63
+    },
+    {
+      "id": 1,
+      "label": "exit:IGenericProxyEventBindingFactory",
+      "line": 81
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

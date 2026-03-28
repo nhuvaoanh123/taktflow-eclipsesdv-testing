@@ -1,0 +1,21 @@
+{
+  "function": "ITracingFilterConfig",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ITracingFilterConfig",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:ITracingFilterConfig",
+      "line": 77
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "test_add_listener",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_add_listener",
+      "line": 352
+    },
+    {
+      "id": 1,
+      "label": "exit:test_add_listener",
+      "line": 402
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "utest_get_events_output_current_state_response",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_get_events_output_current_state_response",
+      "line": 574
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_get_events_output_current_state_response",
+      "line": 618
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "score-score_rust_policies",
+  "files_by_language": {
+    "Rust": {
+      "files": 1,
+      "loc": 24
+    }
+  },
+  "total_files": 1,
+  "total_loc": 24,
+  "total_functions": 2,
+  "build_system": "Bazel",
+  "languages": [
+    "Rust"
+  ]
+}

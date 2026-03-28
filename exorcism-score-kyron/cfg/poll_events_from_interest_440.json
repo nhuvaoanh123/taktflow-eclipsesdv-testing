@@ -1,0 +1,21 @@
+{
+  "function": "poll_events_from_interest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:poll_events_from_interest",
+      "line": 440
+    },
+    {
+      "id": 1,
+      "label": "exit:poll_events_from_interest",
+      "line": 451
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

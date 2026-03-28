@@ -1,0 +1,21 @@
+{
+  "function": "CopyAndMovableType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CopyAndMovableType",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:CopyAndMovableType",
+      "line": 44
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "AssertError",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AssertError",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:AssertError",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "ErrorCode",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ErrorCode",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:ErrorCode",
+      "line": 216
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

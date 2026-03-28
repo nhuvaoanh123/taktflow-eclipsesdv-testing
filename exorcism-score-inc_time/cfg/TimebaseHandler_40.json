@@ -1,0 +1,21 @@
+{
+  "function": "TimebaseHandler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TimebaseHandler",
+      "line": 40
+    },
+    {
+      "id": 1,
+      "label": "exit:TimebaseHandler",
+      "line": 80
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

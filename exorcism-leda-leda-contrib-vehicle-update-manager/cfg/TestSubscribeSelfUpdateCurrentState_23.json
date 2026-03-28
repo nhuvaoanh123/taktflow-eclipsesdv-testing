@@ -1,0 +1,21 @@
+{
+  "function": "TestSubscribeSelfUpdateCurrentState",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestSubscribeSelfUpdateCurrentState",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:TestSubscribeSelfUpdateCurrentState",
+      "line": 57
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

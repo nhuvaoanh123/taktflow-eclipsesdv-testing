@@ -1,0 +1,21 @@
+{
+  "function": "test_write_when_receiver_opens_but_does_not_read",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_write_when_receiver_opens_but_does_not_read",
+      "line": 272
+    },
+    {
+      "id": 1,
+      "label": "exit:test_write_when_receiver_opens_but_does_not_read",
+      "line": 310
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "and_then",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:and_then",
+      "line": 390
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 396
+    },
+    {
+      "id": 2,
+      "label": "exit:and_then",
+      "line": 397
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

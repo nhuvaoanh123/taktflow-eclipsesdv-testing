@@ -1,0 +1,21 @@
+{
+  "function": "drop",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:drop",
+      "line": 227
+    },
+    {
+      "id": 1,
+      "label": "exit:drop",
+      "line": 244
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

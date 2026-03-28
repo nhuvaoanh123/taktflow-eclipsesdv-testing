@@ -1,0 +1,21 @@
+{
+  "function": "SocketBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SocketBase",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:SocketBase",
+      "line": 72
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "function": "wiper_mode_to_string",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:wiper_mode_to_string",
+      "line": 294
+    },
+    {
+      "id": 1,
+      "label": "match/switch",
+      "line": 295
+    },
+    {
+      "id": 2,
+      "label": "switch_exit",
+      "line": 306
+    },
+    {
+      "id": 3,
+      "label": "exit:wiper_mode_to_string",
+      "line": 307
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 2,
+      "to": 3
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "apply_workload",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:apply_workload",
+      "line": 465
+    },
+    {
+      "id": 1,
+      "label": "exit:apply_workload",
+      "line": 503
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

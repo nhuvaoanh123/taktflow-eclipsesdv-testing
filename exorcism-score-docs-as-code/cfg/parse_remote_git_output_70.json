@@ -1,0 +1,105 @@
+{
+  "function": "parse_remote_git_output",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parse_remote_git_output",
+      "line": 70
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 81
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 86
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 81
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 91
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 94
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 91
+    },
+    {
+      "id": 7,
+      "label": "else",
+      "line": 91
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 96
+    },
+    {
+      "id": 9,
+      "label": "exit:parse_remote_git_output",
+      "line": 96
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "false"
+    },
+    {
+      "from": 7,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 8
+    },
+    {
+      "from": 5,
+      "to": 9
+    }
+  ]
+}

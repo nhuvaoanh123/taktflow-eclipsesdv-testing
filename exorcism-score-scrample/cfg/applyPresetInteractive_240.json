@@ -1,0 +1,21 @@
+{
+  "function": "applyPresetInteractive",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:applyPresetInteractive",
+      "line": 240
+    },
+    {
+      "id": 1,
+      "label": "exit:applyPresetInteractive",
+      "line": 295
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

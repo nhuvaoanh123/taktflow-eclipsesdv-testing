@@ -1,0 +1,21 @@
+{
+  "function": "deploy_new",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deploy_new",
+      "line": 234
+    },
+    {
+      "id": 1,
+      "label": "exit:deploy_new",
+      "line": 248
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

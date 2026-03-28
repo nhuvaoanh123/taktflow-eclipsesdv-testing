@@ -1,0 +1,21 @@
+{
+  "function": "health_monitor_get_logic_monitor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:health_monitor_get_logic_monitor",
+      "line": 306
+    },
+    {
+      "id": 1,
+      "label": "exit:health_monitor_get_logic_monitor",
+      "line": 334
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

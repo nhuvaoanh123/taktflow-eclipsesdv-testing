@@ -1,0 +1,21 @@
+{
+  "function": "register_provided_signals",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:register_provided_signals",
+      "line": 1089
+    },
+    {
+      "id": 1,
+      "label": "exit:register_provided_signals",
+      "line": 1129
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

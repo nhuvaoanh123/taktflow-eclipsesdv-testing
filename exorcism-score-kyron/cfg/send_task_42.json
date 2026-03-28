@@ -1,0 +1,21 @@
+{
+  "function": "send_task",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:send_task",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "exit:send_task",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

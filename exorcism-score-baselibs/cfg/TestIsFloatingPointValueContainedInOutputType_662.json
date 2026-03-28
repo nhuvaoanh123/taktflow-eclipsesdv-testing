@@ -1,0 +1,21 @@
+{
+  "function": "TestIsFloatingPointValueContainedInOutputType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestIsFloatingPointValueContainedInOutputType",
+      "line": 662
+    },
+    {
+      "id": 1,
+      "label": "exit:TestIsFloatingPointValueContainedInOutputType",
+      "line": 717
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

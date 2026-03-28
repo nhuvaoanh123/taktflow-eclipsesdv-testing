@@ -1,0 +1,21 @@
+{
+  "function": "validate_signals_metadata",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_signals_metadata",
+      "line": 227
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_signals_metadata",
+      "line": 302
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

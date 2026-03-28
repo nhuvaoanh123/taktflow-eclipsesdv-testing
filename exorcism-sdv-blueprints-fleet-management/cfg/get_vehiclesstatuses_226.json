@@ -1,0 +1,21 @@
+{
+  "function": "get_vehiclesstatuses",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_vehiclesstatuses",
+      "line": 226
+    },
+    {
+      "id": 1,
+      "label": "exit:get_vehiclesstatuses",
+      "line": 394
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

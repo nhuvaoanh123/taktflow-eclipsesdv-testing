@@ -1,0 +1,21 @@
+{
+  "project": "kuksa-kuksa-someip-provider",
+  "files_by_language": {
+    "C++": {
+      "files": 10,
+      "loc": 3436
+    },
+    "C": {
+      "files": 11,
+      "loc": 1060
+    }
+  },
+  "total_files": 21,
+  "total_loc": 4496,
+  "total_functions": 142,
+  "build_system": "CMake",
+  "languages": [
+    "C++",
+    "C"
+  ]
+}

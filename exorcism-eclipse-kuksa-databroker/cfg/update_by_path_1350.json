@@ -1,0 +1,21 @@
+{
+  "function": "update_by_path",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:update_by_path",
+      "line": 1350
+    },
+    {
+      "id": 1,
+      "label": "exit:update_by_path",
+      "line": 1359
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,4376 @@
+[
+  {
+    "function": "get_env",
+    "file": "src/incremental.py",
+    "start_line": 30,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "find_correct_path",
+    "file": "src/extensions/score_plantuml.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_plantuml.py",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_sphinx_bundle/__init__.py",
+    "start_line": 38,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 48,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_sync_toml/__init__.py",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 51,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_header_service/__init__.py",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "register",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 52,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "generate_hash",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "request_from_directive",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 94,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "debug",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_extract_merge_commit_data",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 132,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 44,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_extract_github_data",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 178,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 35,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_extract_org",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 215,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "_extract_repo",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 223,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "_extract_github_token",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 231,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "_extract_pull_request",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 239,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "_extract_approvers",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 247,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_extract_team_info",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 264,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_append_approver_teams",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 278,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_extract_reviewers",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "start_line": 299,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_metadata",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "sphinx_app_setup",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 41,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 2,
+    "loc": 35,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_create_app",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 44,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 30,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "basic_conf",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "wrapper",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 80,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "basic_needs",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 112,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "template_needs",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 123,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_header_service_integration_github_data",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 162,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "test_header_service_integration_commit_data",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "start_line": 196,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "add_metadata",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_register",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_generate_hash",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_request_from_directive_github_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_request_from_directive_commit_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_debug",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_extract_merge_commit_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 138,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_extract_merge_commit_data_error",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 174,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_extract_github_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 196,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 38,
+    "param_count": 9,
+    "flags": []
+  },
+  {
+    "function": "test_extract_github_data_exception",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 237,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_extract_org",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 247,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_extract_repo",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 252,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_extract_github_token",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 257,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_extract_pull_request",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 262,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_extract_team_info",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 267,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_extract_approvers",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 291,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_append_approver_teams",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 312,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_extract_reviewers",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "start_line": 321,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "start_line": 58,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "SourceCodeLinks_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "start_line": 68,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "store_source_code_links_combined_json",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "load_source_code_links_combined_json",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "DefaultNeedLink",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "needlink_decoder",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "start_line": 56,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "store_source_code_links_json",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "load_source_code_links_json",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "start_line": 83,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 18,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_extract_references_from_line",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "start_line": 34,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 7,
+    "loc": 10,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_extract_references_from_file",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "start_line": 46,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 9,
+    "loc": 31,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "iterate_files_recursively",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "start_line": 79,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 7,
+    "loc": 23,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_should_skip_file",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "start_line": 80,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "find_all_need_references",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "start_line": 104,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 26,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_source_code_links_json",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "DataForTestLink_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 56,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "from_dict",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 95,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "clean_text",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__post_init__",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "check_verifies_fields",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 135,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_valid",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 148,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 29,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_test_links",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 178,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 45,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "parse_attributes",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 183,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 226,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "DataOfTestCase_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 232,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 25,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "store_test_xml_parsed_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 259,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "load_test_xml_parsed_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 277,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "store_data_of_test_case_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 291,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "load_data_of_test_case_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "start_line": 305,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "parse_testcase_result",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 3,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "parse_properties",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 77,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 11,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "read_test_xml_file",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 90,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 80,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_xml_files",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 172,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 15,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_test_folder",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 189,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "run_xml_parser",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 200,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "build_test_needs_from_files",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 224,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 21,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "short_hash",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 247,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "construct_and_add_need",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "start_line": 258,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 28,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "group_by_need",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 74,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 45,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_cache_filename",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "build_and_save_combined_file",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 129,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 25,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup_source_code_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 161,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 45,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "register_test_code_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 208,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup_test_code_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 215,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 39,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "register_combined_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 256,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup_combined_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 263,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "setup_once",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 275,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 26,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 303,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "find_need",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 315,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "inject_links_into_needs",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "start_line": 323,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 7,
+    "loc": 68,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_need",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 45,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "encode_comment",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "decode_comment",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 113,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 118,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "needlink_test_decoder",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 129,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "temp_dir",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 143,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "git_repo",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 150,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "sample_needlinks",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 178,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "cache_file_with_links",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 213,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "sample_needs",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 221,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_get_cache_filename",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 248,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "make_needs",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 256,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_find_need_direct_match",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 267,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_find_need_not_found",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 285,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_group_by_need",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 302,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 17,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_group_by_need_empty_list",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 326,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_get_github_link_with_real_repo",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 337,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_cache_file_operations",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 369,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_cache_file_with_encoded_comments",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 400,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_group_by_need_and_find_need_integration",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 437,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 21,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_source_linker_end_to_end_with_real_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 465,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 90,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_multiple_commits_hash_consistency",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "start_line": 562,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 30,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_write_test_xml",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 34,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 34,
+    "param_count": 6,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "tmp_xml_dirs",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 71,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 74,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_tmp_xml_dirs",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 74,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 69,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_find_xml_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 152,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_find_xml_folder",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 170,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_find_xml_folder_test_reports",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 181,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_find_xml_files_test_reports",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 192,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_early_return",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 211,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_parse_testcase_result",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 227,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_parse_properties",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 249,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_read_test_xml_file",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 265,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 36,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_short_hash_consistency_and_format",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "start_line": 308,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "git_repo_setup",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "create_demo_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 48,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "make_codelink_source_1",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "make_codelink_source_2",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "make_codelink_bad_source",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 156,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "make_test_xml_1",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 168,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "make_test_xml_2",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 191,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "construct_gh_url",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 215,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sphinx_app_setup",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 221,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 8,
+    "loc": 33,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_create_app",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 224,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 7,
+    "loc": 28,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "basic_conf",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 256,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "basic_needs",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 286,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "example_source_link_text_all_ok",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 306,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "example_test_link_text_all_ok",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 338,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 54,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "example_source_link_text_non_existent",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 395,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "make_source_link",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 411,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "make_test_link",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 415,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "compare_json_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 419,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "compare_grouped_json_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 439,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 34,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_source_link_integration_ok",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 475,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 62,
+    "param_count": 6,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_source_link_integration_non_existent_id",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "start_line": 539,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "test_testlink_serialization_roundtrip",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_testlink_encoder_handles_path",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_decoder_ignores_irrelevant_dicts",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_clean_text_removes_ansi_and_html_unescapes",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_testcaseneed_to_dict_multiple_links",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "start_line": 90,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_store_and_load_testlinks_roundtrip",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "start_line": 124,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "SourceCodeLinks_TEST_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 56,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "sample_needlink",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sample_testlink",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sample_source_code_links",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_encoder_outputs_serializable_dict",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_decoder_reconstructs_object",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 112,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_store_and_load_json",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_load_invalid_json_type",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 133,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_load_invalid_json_items",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "start_line": 141,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "return_html_theme_options",
+    "file": "src/extensions/score_layout/html_options.py",
+    "start_line": 18,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 41,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "return_html_context",
+    "file": "src/extensions/score_layout/html_options.py",
+    "start_line": 72,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_layout/__init__.py",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "update_config",
+    "file": "src/extensions/score_layout/__init__.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 35,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 62,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "scripts_directory_hash",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 73,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 16,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_process_interfaces",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 96,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 31,
+    "param_count": 6,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "draw_comp_incl_impl_int",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 129,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 71,
+    "param_count": 5,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "draw_impl_interface",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 202,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 22,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_process_impl_interfaces",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 226,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 18,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_process_used_interfaces",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 246,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 9,
+    "loc": 40,
+    "param_count": 7,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "draw_module",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 288,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 105,
+    "param_count": 4,
+    "flags": [
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 401,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_collect_interfaces_and_modules",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 404,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 9,
+    "loc": 52,
+    "param_count": 10,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_build_links",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 457,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 36,
+    "param_count": 6,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 494,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 58,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 555,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 558,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 572,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 575,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 21,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 599,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "start_line": 602,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "gen_format",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 23,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "gen_struct_element",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "gen_interface_element",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 17,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "gen_link_text",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "gen_header",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "gen_sytle_header",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 99,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get_alias",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_need_link",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 112,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_module",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 126,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 19,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_hierarchy_text",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 147,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 49,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_interface_from_component",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 198,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 14,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_interface_from_int",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 214,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_real_interface_logical",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 231,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 30,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_logical_interface_real",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 263,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 35,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_impl_comp_from_logic_iface",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 300,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_use_comp_from_real_iface",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "start_line": 317,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "_location",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 15,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "warning_for_option",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "warning_for_link",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 7,
+    "flags": []
+  },
+  {
+    "function": "warning_for_need",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "_log_message",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 83,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "info",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "warning",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 103,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "warnings",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "infos",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 115,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "flush_new_checks",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 118,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "make_header_line",
+    "file": "src/extensions/score_metamodel/log.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_parse_prohibited_words",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "default_options",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "_parse_need_type",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 101,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 29,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "_parse_needs_types",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 132,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_parse_links",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 150,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_collect_all_options",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 166,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_collect_all_custom_options",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 174,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "load_metamodel_data",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "start_line": 185,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "parse_checks_filter",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 51,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "discover_checks",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 74,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "local_check",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "graph_check",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 94,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_run_checks",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 101,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 5,
+    "loc": 65,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "is_check_enabled",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 127,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_remove_prefix",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 168,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 5,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_get_need_type_for_need",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 175,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 5,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_resolve_linkable_types",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 182,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 22,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "postprocess_need_links",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 206,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 25,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "start_line": 233,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 45,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_parse_bazel_external_need",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "parse_external_needs_sources_from_DATA",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 59,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "parse_external_needs_sources_from_bazel_query",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 72,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "extend_needs_json_exporter",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 111,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 28,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "temp",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 132,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_external_needs_source",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 141,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "add_external_needs_json",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 152,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 23,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_external_docs_sources",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 177,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "connect_external_needs",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "start_line": 197,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 20,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_standards_needs",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_standards_workproducts",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_workflows",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_workproducts",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_compliance_req_needs",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_compliance_wp_needs",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "my_pie_linked_standard_requirements",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 179,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 31,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "my_pie_linked_standard_requirements_by_tag",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 212,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 46,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "my_pie_linked_standard_workproducts",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 260,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 32,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "my_pie_workproducts_contained_in_exactly_one_workflow",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "start_line": 294,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 38,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_need_type",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 27,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 6,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_get_normalized",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 20,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_validate_value_pattern",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 57,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "_remove_namespace_prefix_",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validate_options",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 81,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 8,
+    "loc": 25,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_validate",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 90,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 13,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "validate_links",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 108,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 8,
+    "loc": 45,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_validate",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 117,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 33,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "check_options",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 162,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "check_extra_options",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 178,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 37,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "parse_milestone",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 217,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "check_validity_consistency",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "start_line": 230,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 25,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_need_type",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "start_line": 22,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 6,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "check_id_format",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "start_line": 32,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 25,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "check_id_length",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 25,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_check_options_for_prohibited_words",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "start_line": 87,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 20,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "check_for_prohibited_words",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "start_line": 112,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 13,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "id_contains_feature",
+    "file": "src/extensions/score_metamodel/checks/id_contains_feature.py",
+    "start_line": 25,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 3,
+    "loc": 52,
+    "param_count": 3,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "eval_need_check",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "eval_need_condition",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 41,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "filter_needs_by_criteria",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "start_line": 103,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 5,
+    "loc": 40,
+    "param_count": 4,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "check_metamodel_graph",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "start_line": 146,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 11,
+    "loc": 55,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_unknown_directive",
+    "file": "src/extensions/score_metamodel/tests/test_check_options.py",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_unknown_option_present_in_neither_req_opt_neither_opt_opt",
+    "file": "src/extensions/score_metamodel/tests/test_check_options.py",
+    "start_line": 94,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_milestone_parsing",
+    "file": "src/extensions/score_metamodel/tests/test_check_options.py",
+    "start_line": 123,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "dummy_local_check",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "dummy_graph_check",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "setup_checks",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_returns_empty_list_when_filter_is_empty",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_returns_valid_checks",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_strips_whitespace",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_raises_assertion_for_invalid_check",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_default_values",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 98,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_custom_values_override_defaults",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_link_fields_extracted",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 124,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_extra_fields_in_extras",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_empty_links_not_in_kwargs",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 152,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_combined_core_links_and_extras",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_my_pie_linked_standard_requirements",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 400,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 59,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_my_pie_linked_standard_workproducts",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 460,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 52,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_my_pie_workproducts_contained_in_exactly_one_workflow",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 513,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 122,
+    "param_count": 1,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "test_get_standards_needs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 636,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_standards_workproducts",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 666,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_compliance_req_needs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 696,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 47,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_compliance_wp_needs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 744,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 43,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_workflows",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 788,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 42,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_workproducts",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 831,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 43,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_positive_case_mixed_linked_and_unlinked",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 875,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 43,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_negative_case_no_needs_with_tag",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 919,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_assert_multiple_kwargs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "start_line": 940,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fake_check_logger",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 80,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assert_no_warnings",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "start_line": 39,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assert_no_infos",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "start_line": 46,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assert_warning",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "start_line": 53,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 26,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "assert_info",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "start_line": 80,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 26,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "need",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "start_line": 110,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 78,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_empty_list",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_single_entry_with_path",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_single_entry_no_path",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_single_entry_json_no_path",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_multiple_entries",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_multiple_entries_2",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_invalid_entry",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_parser",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "index_file",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "_create_rst_file",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "sphinx_app_setup",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 23,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_create_app",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "parse_line_for_message",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "extract_test_data",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 114,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 9,
+    "loc": 32,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "filter_warnings_by_position",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 148,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "warning_matches",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 160,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 12,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_rst_files",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "start_line": 175,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 9,
+    "loc": 43,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "load_model_data",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel_load.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_load_metamodel_data",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel_load.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 55,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_symlink_pairs",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "start_line": 59,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 21,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_create_symlinks",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "start_line": 82,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 26,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_cleanup_symlinks",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "start_line": 110,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 9,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_make_app",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 22,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 7,
+    "loc": 17,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "docs_dir",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "make_sphinx_app",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 49,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_factory",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_symlink_exposes_files_at_target_path",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_symlink_is_idempotent",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_stale_symlink_is_replaced",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 105,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_existing_non_symlink_logs_error_and_skips",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 122,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_empty_mapping_is_a_no_op",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 138,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_multiple_mappings",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 147,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_target_in_subfolder",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "start_line": 164,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "get_github_link",
+    "file": "src/helper_lib/additional_functions.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_config_setdefault_sets_when_not_in_raw_config",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_config_setdefault_does_not_overwrite_user_value",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "temp_dir",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "git_repo",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "git_repo_multiple_remotes",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "git_repo_with_https_remote",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_git_operations_with_no_commits",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 154,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_git_repo_with_no_remotes",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 172,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_parse_git_output_ssh_format",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 197,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_parse_git_output_https_format",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 204,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_parse_git_output_ssh_format_without_git_suffix",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 211,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_parse_git_output_invalid_format",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 218,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_parse_git_output_empty_string",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 225,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_get_github_repo_info_ssh_remote",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 232,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_github_repo_info_https_remote",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 238,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_github_repo_info_multiple_remotes",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_current_git_hash",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 250,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_get_current_git_hash_invalid_repo",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 259,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_runfiles_dir_found",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 265,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_runfiles_dir_missing_triggers_exit",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 276,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_git_root_search_success",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 286,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_git_root_search_not_found",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "start_line": 302,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "config_setdefault",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 27,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "find_ws_root",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "find_git_root",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 50,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 18,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "parse_remote_git_output",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 70,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_github_repo_info",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 99,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 34,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_github_base_url",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 135,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get_current_git_hash",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 154,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 37,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_runfiles_dir",
+    "file": "src/helper_lib/__init__.py",
+    "start_line": 193,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 28,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "pytest_addoption",
+    "file": "src/tests/conftest.py",
+    "start_line": 16,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "cleanup",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 136,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get_current_git_commit",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 147,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "filter_repos",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 161,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 29,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "comment_out_git_override",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 192,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "comment_out_block",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 203,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "replace_bazel_dep_with_local_override",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 214,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "replace_bazel_dep_with_git_override",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 230,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "strip_ansi_codes",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 245,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "parse_bazel_output",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 251,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 26,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "print_overview_logs",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 279,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 36,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "verbose_printout",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 317,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 21,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "print_running_cmd",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 340,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "analyze_build_success",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 364,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 28,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "print_final_result",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 394,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "print_result_table",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 426,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "stream_subprocess_output",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 447,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 7,
+    "loc": 28,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "run_cmd",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 477,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 44,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "setup_test_environment",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 523,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 6,
+    "loc": 44,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "debug_print",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 535,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "recreate_symlink",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 549,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 14,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "has_uncommitted_changes",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 569,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "prepare_repo_overrides",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 580,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 35,
+    "param_count": 5,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_and_clone_repos_updated",
+    "file": "src/tests/test_consumer.py",
+    "start_line": 618,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 9,
+    "loc": 77,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_path",
+    "file": "src/docs_assets_lib/__init__.py",
+    "start_line": 16,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "parse_broken_links",
+    "file": ".github/actions/link-check/link_parser.py",
+    "start_line": 17,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 30,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "generate_markdown_table",
+    "file": ".github/actions/link-check/link_parser.py",
+    "start_line": 49,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "generate_issue_body",
+    "file": ".github/actions/link-check/link_parser.py",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "strip_ansi_codes",
+    "file": ".github/actions/link-check/link_parser.py",
+    "start_line": 80,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "scripts_bazel/generate_sourcelinks_cli.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "scripts_bazel/merge_sourcelinks.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "test_merge_sourcelinks_basic",
+    "file": "scripts_bazel/tests/merge_sourcelinks_test.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 77,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_generate_sourcelinks_cli_basic",
+    "file": "scripts_bazel/tests/generate_sourcelinks_cli_test.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 51,
+    "param_count": 1,
+    "flags": []
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "communication": [
+    {
+      "type": "MQTT_topic",
+      "topic": "sampleapp/getSpeed",
+      "file": "app/src/main.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "sampleapp/getSpeed/response",
+      "file": "app/src/main.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "sampleapp/currentSpeed",
+      "file": "app/src/main.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "sampleapp/getSpeed",
+      "file": "app/tests/integration/integration_test.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "sampleapp/getSpeed/response",
+      "file": "app/tests/integration/integration_test.py"
+    }
+  ],
+  "count": 5
+}

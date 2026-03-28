@@ -1,0 +1,21 @@
+{
+  "function": "GrpcDataPointValueProvider",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GrpcDataPointValueProvider",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:GrpcDataPointValueProvider",
+      "line": 62
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "handle_cancel_events_command",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_cancel_events_command",
+      "line": 652
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_cancel_events_command",
+      "line": 681
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

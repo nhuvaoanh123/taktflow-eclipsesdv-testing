@@ -1,0 +1,21 @@
+{
+  "function": "IPersistentDictionary",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IPersistentDictionary",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:IPersistentDictionary",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

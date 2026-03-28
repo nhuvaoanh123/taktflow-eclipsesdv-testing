@@ -1,0 +1,21 @@
+{
+  "function": "utest_create_workload_success",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_create_workload_success",
+      "line": 666
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_create_workload_success",
+      "line": 712
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

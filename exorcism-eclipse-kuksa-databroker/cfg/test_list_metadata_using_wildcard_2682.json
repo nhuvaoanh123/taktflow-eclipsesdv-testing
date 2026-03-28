@@ -1,0 +1,21 @@
+{
+  "function": "test_list_metadata_using_wildcard",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_list_metadata_using_wildcard",
+      "line": 2682
+    },
+    {
+      "id": 1,
+      "label": "exit:test_list_metadata_using_wildcard",
+      "line": 2816
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

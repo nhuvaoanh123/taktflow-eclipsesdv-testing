@@ -1,0 +1,21 @@
+{
+  "function": "park",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:park",
+      "line": 133
+    },
+    {
+      "id": 1,
+      "label": "exit:park",
+      "line": 179
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

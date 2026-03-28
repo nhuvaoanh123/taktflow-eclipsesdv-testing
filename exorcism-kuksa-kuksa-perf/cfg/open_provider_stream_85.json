@@ -1,0 +1,21 @@
+{
+  "function": "open_provider_stream",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:open_provider_stream",
+      "line": 85
+    },
+    {
+      "id": 1,
+      "label": "exit:open_provider_stream",
+      "line": 128
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

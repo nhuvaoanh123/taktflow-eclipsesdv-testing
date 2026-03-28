@@ -1,0 +1,129 @@
+{
+  "external": [
+    {
+      "name": "github.com/ThreeDotsLabs/watermill",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/eclipse-kanto/azure-connector",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/eclipse-kanto/suite-connector",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/eclipse/ditto-clients-golang",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/imdario/mergo",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/jhump/protoreflect",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/pkg/errors",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/stretchr/testify",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/Jeffail/gabs/v2",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/cenkalti/backoff/v3",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/davecgh/go-spew",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/eclipse/paho.mqtt.golang",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/fsnotify/fsnotify",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/golang/protobuf",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/google/go-tpm",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/google/uuid",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/gorilla/websocket",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/hashicorp/errwrap",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/hashicorp/go-multierror",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/lithammer/shortuuid/v3",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/oklog/ulid",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/pmezard/go-difflib",
+      "source": "go.mod"
+    },
+    {
+      "name": "github.com/tevino/abool/v2",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/net",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/sync",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/sys",
+      "source": "go.mod"
+    },
+    {
+      "name": "golang.org/x/time",
+      "source": "go.mod"
+    },
+    {
+      "name": "google.golang.org/genproto",
+      "source": "go.mod"
+    },
+    {
+      "name": "google.golang.org/protobuf",
+      "source": "go.mod"
+    },
+    {
+      "name": "gopkg.in/natefinch/lumberjack.v2",
+      "source": "go.mod"
+    },
+    {
+      "name": "gopkg.in/yaml.v3",
+      "source": "go.mod"
+    }
+  ],
+  "internal": []
+}

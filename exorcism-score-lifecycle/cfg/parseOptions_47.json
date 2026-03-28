@@ -1,0 +1,64 @@
+{
+  "function": "parseOptions",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parseOptions",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "loop (while_statement)",
+      "line": 51
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 84
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 51
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 85
+    },
+    {
+      "id": 5,
+      "label": "exit:parseOptions",
+      "line": 86
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

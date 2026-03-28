@@ -1,0 +1,21 @@
+{
+  "function": "validate_tags",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_tags",
+      "line": 166
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_tags",
+      "line": 190
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "deadline_monitor_builder_add_deadline",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deadline_monitor_builder_add_deadline",
+      "line": 74
+    },
+    {
+      "id": 1,
+      "label": "exit:deadline_monitor_builder_add_deadline",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

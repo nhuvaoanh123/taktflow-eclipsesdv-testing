@@ -1,0 +1,21 @@
+{
+  "function": "async_call",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:async_call",
+      "line": 70
+    },
+    {
+      "id": 1,
+      "label": "exit:async_call",
+      "line": 91
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

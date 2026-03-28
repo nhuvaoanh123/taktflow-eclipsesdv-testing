@@ -1,0 +1,21 @@
+{
+  "function": "thingsClientInitializedHandler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:thingsClientInitializedHandler",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:thingsClientInitializedHandler",
+      "line": 54
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

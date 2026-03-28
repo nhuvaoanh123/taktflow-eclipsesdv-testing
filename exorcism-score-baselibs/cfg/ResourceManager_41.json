@@ -1,0 +1,21 @@
+{
+  "function": "ResourceManager",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ResourceManager",
+      "line": 41
+    },
+    {
+      "id": 1,
+      "label": "exit:ResourceManager",
+      "line": 121
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "monotonic_buffer_resource",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:monotonic_buffer_resource",
+      "line": 128
+    },
+    {
+      "id": 1,
+      "label": "exit:monotonic_buffer_resource",
+      "line": 140
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

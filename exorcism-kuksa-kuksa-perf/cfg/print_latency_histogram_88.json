@@ -1,0 +1,21 @@
+{
+  "function": "print_latency_histogram",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:print_latency_histogram",
+      "line": 88
+    },
+    {
+      "id": 1,
+      "label": "exit:print_latency_histogram",
+      "line": 119
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

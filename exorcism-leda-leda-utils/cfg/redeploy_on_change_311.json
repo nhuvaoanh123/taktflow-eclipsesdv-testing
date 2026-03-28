@@ -1,0 +1,21 @@
+{
+  "function": "redeploy_on_change",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:redeploy_on_change",
+      "line": 311
+    },
+    {
+      "id": 1,
+      "label": "exit:redeploy_on_change",
+      "line": 324
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

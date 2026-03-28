@@ -1,0 +1,21 @@
+{
+  "function": "ISharedMemoryFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ISharedMemoryFactory",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:ISharedMemoryFactory",
+      "line": 76
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

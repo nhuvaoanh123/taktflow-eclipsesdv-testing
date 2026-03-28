@@ -1,0 +1,87 @@
+{
+  "function": "ParseService",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ParseService",
+      "line": 621
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 631
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 635
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 631
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 641
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 649
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 641
+    },
+    {
+      "id": 7,
+      "label": "exit:ParseService",
+      "line": 650
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    }
+  ]
+}

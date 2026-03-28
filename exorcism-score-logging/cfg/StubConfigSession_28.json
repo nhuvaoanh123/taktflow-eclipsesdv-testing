@@ -1,0 +1,21 @@
+{
+  "function": "StubConfigSession",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:StubConfigSession",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:StubConfigSession",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

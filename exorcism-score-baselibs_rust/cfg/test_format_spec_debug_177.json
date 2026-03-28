@@ -1,0 +1,21 @@
+{
+  "function": "test_format_spec_debug",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_format_spec_debug",
+      "line": 177
+    },
+    {
+      "id": 1,
+      "label": "exit:test_format_spec_debug",
+      "line": 195
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "ModeFlag",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ModeFlag",
+      "line": 53
+    },
+    {
+      "id": 1,
+      "label": "exit:ModeFlag",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

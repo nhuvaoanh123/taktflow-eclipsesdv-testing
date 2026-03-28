@@ -1,0 +1,129 @@
+{
+  "function": "view",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:view",
+      "line": 188
+    },
+    {
+      "id": 1,
+      "label": "if ((send_trace_callback.has_value()))",
+      "line": 202
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 205
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 202
+    },
+    {
+      "id": 4,
+      "label": "if ((qm_event_update_notifications_registered_.load() && !qm_dis)",
+      "line": 211
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 216
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 211
+    },
+    {
+      "id": 7,
+      "label": "if ((asil_b_event_update_notifications_registered_.load() &&\r\n  )",
+      "line": 217
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 223
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 217
+    },
+    {
+      "id": 10,
+      "label": "return_statement",
+      "line": 224
+    },
+    {
+      "id": 11,
+      "label": "exit:view",
+      "line": 225
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 8,
+      "to": 11
+    }
+  ]
+}

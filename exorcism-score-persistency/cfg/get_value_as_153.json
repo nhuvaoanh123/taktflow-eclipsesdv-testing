@@ -1,0 +1,21 @@
+{
+  "function": "get_value_as",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_value_as",
+      "line": 153
+    },
+    {
+      "id": 1,
+      "label": "exit:get_value_as",
+      "line": 180
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "function": "ulp_bound",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ulp_bound",
+      "line": 402
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 403
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 406
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 403
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 408
+    },
+    {
+      "id": 5,
+      "label": "exit:ulp_bound",
+      "line": 409
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

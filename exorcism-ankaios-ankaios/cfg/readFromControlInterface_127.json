@@ -1,0 +1,11 @@
+{
+  "function": "readFromControlInterface",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:readFromControlInterface",
+      "line": 127
+    }
+  ],
+  "edges": []
+}

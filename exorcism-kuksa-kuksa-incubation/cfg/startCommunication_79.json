@@ -1,0 +1,21 @@
+{
+  "function": "startCommunication",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:startCommunication",
+      "line": 79
+    },
+    {
+      "id": 1,
+      "label": "exit:startCommunication",
+      "line": 183
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "lola",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:lola",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "exit:lola",
+      "line": 76
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

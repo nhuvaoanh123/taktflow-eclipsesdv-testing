@@ -1,0 +1,21 @@
+{
+  "function": "LogSeverity",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LogSeverity",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:LogSeverity",
+      "line": 41
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

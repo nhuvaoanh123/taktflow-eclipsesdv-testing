@@ -1,0 +1,21 @@
+{
+  "function": "printInfo",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:printInfo",
+      "line": 66
+    },
+    {
+      "id": 1,
+      "label": "exit:printInfo",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

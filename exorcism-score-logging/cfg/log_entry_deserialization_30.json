@@ -1,0 +1,21 @@
+{
+  "function": "log_entry_deserialization",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:log_entry_deserialization",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:log_entry_deserialization",
+      "line": 105
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

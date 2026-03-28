@@ -1,0 +1,30 @@
+{
+  "function": "LMFlatBuffer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LMFlatBuffer",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 192
+    },
+    {
+      "id": 2,
+      "label": "exit:LMFlatBuffer",
+      "line": 193
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

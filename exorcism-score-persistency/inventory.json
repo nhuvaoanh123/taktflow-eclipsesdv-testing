@@ -1,0 +1,26 @@
+{
+  "project": "score-persistency",
+  "files_by_language": {
+    "Rust": {
+      "files": 29,
+      "loc": 7791
+    },
+    "C++": {
+      "files": 36,
+      "loc": 6152
+    },
+    "Python": {
+      "files": 12,
+      "loc": 1802
+    }
+  },
+  "total_files": 77,
+  "total_loc": 15745,
+  "total_functions": 806,
+  "build_system": "Cargo, Bazel, Python/pyproject",
+  "languages": [
+    "Rust",
+    "C++",
+    "Python"
+  ]
+}

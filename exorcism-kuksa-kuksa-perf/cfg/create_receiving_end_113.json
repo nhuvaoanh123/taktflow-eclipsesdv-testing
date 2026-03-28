@@ -1,0 +1,21 @@
+{
+  "function": "create_receiving_end",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_receiving_end",
+      "line": 113
+    },
+    {
+      "id": 1,
+      "label": "exit:create_receiving_end",
+      "line": 150
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

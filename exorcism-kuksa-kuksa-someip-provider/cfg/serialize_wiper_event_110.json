@@ -1,0 +1,89 @@
+{
+  "function": "serialize_wiper_event",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:serialize_wiper_event",
+      "line": 110
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 116
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 118
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 116
+    },
+    {
+      "id": 4,
+      "label": "loop (for_statement)",
+      "line": 120
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 122
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 120
+    },
+    {
+      "id": 7,
+      "label": "exit:serialize_wiper_event",
+      "line": 135
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 7
+    }
+  ]
+}

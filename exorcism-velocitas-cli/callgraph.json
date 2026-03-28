@@ -1,0 +1,6183 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/exec/index.ts",
+    "line": 53,
+    "calls": [
+      "splice",
+      "startsWith",
+      "min"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/exec/index.ts",
+    "line": 74,
+    "calls": [
+      "findComponentByName",
+      "parse",
+      "createEnvVars",
+      "getPackageDirectoryWithVersion",
+      "read",
+      "getVariableCollection",
+      "_extractProgramArgsAndFlags",
+      "error",
+      "get",
+      "getVariableMappings",
+      "runExecSpec"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/upgrade/index.ts",
+    "line": 47,
+    "calls": [
+      "parse",
+      "getPackages",
+      "run",
+      "log",
+      "read",
+      "readLock",
+      "error",
+      "updatePackageIfAvailable"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/upgrade/index.ts",
+    "line": 77,
+    "calls": [
+      "resolveVersionIdentifier",
+      "log",
+      "findVersion",
+      "incrementVersionRange",
+      "write",
+      "setPackageVersion",
+      "getPackageName",
+      "getLatestVersion",
+      "getPackageVersions"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/component/remove.ts",
+    "line": 27,
+    "calls": [
+      "find",
+      "parse",
+      "read",
+      "write",
+      "Error",
+      "removeComponent",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/component/remove.ts",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/component/list.ts",
+    "line": 35,
+    "calls": [
+      "parse",
+      "log",
+      "read",
+      "getPackageName",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/component/add.ts",
+    "line": 28,
+    "calls": [
+      "find",
+      "parse",
+      "read",
+      "addComponent",
+      "write",
+      "Error",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/component/add.ts",
+    "line": 34,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/cache/get.ts",
+    "line": 45,
+    "calls": [
+      "parse",
+      "log",
+      "read",
+      "getCacheDir",
+      "get",
+      "raw",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/cache/set.ts",
+    "line": 29,
+    "calls": [
+      "read",
+      "write",
+      "parse",
+      "set"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/cache/clear.ts",
+    "line": 24,
+    "calls": [
+      "read",
+      "write",
+      "parse",
+      "clear"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/sync/index.ts",
+    "line": 29,
+    "calls": [
+      "log",
+      "read",
+      "getVariableCollection",
+      "getComponentContexts",
+      "installComponent"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/package/index.ts",
+    "line": 46,
+    "calls": [
+      "find",
+      "parse",
+      "getPackages",
+      "getPackageDirectoryWithVersion",
+      "log",
+      "read",
+      "repeat",
+      "getPackageName",
+      "readPackageManifest",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/package/index.ts",
+    "line": 58,
+    "calls": [
+      "getPackageName"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 87,
+    "calls": [
+      "parse",
+      "log",
+      "_initializeOrReadProject",
+      "_handleCompletePackageInit",
+      "_createProjectLockFile",
+      "_handleSinglePackageInit"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 101,
+    "calls": [
+      "validateUsedComponents",
+      "getPackages",
+      "_ensurePackagesAreDownloaded",
+      "getComponentContexts",
+      "_runPostInitHooks"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 110,
+    "calls": [
+      "updatePackageConfig",
+      "addPackageConfig",
+      "log",
+      "getComponentContextsForPackageConfig",
+      "_ensurePackagesAreDownloaded",
+      "_runPostInitHooks",
+      "getPackageName",
+      "_finalizeSinglePackageInit",
+      "_resolveVersion"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 140,
+    "calls": [
+      "addComponent",
+      "write",
+      "map",
+      "includes",
+      "readPackageManifest",
+      "forEach",
+      "some",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 142,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 143,
+    "calls": [
+      "includes"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 146,
+    "calls": [
+      "addComponent"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 154,
+    "calls": [
+      "read",
+      "write",
+      "isConfigAvailable",
+      "log"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 167,
+    "calls": [
+      "resolveVersionIdentifier",
+      "log",
+      "setPackageVersion",
+      "getPackageName",
+      "getPackageVersions"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 178,
+    "calls": [
+      "log",
+      "isPackageValidRepo",
+      "getPackageName",
+      "isPackageInstalled",
+      "_resolveVersion",
+      "downloadPackageVersion"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 192,
+    "calls": [
+      "createEnvVars",
+      "getPackageDirectoryWithVersion",
+      "stop",
+      "log",
+      "start",
+      "getVariableCollection",
+      "runExecSpec"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 219,
+    "calls": [
+      "log",
+      "read",
+      "_runSinglePostInitHook",
+      "get",
+      "getVariableMappings"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/init/index.ts",
+    "line": 245,
+    "calls": [
+      "isLockAvailable",
+      "writeLock",
+      "log"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 54,
+    "calls": [
+      "map",
+      "values"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 102,
+    "calls": [
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 108,
+    "calls": [
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 108,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 111,
+    "calls": [
+      "map",
+      "indexOf"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 117,
+    "calls": [
+      "map",
+      "indexOf"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 118,
+    "calls": [
+      "indexOf"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 121,
+    "calls": [
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 128,
+    "calls": [
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 128,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 131,
+    "calls": [
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 137,
+    "calls": [
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 137,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 140,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 151,
+    "calls": [
+      "extensionParameters",
+      "prompt",
+      "log"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 164,
+    "calls": [
+      "getExtensionParametersByParameterId",
+      "getMandatoryExtensionsByCoreId",
+      "map",
+      "createAppManifestInterfaceAttributes",
+      "getMandatoryExtensionsByExampleForCore",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 191,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 196,
+    "calls": [
+      "getMandatoryExtensionsByCoreId",
+      "getCores",
+      "configureExtensions",
+      "map",
+      "configureCore",
+      "getMandatoryExtensionsByExampleForCore"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 208,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 214,
+    "calls": [
+      "map",
+      "getExtensions",
+      "getCores"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 215,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 218,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/commands/create/index.ts",
+    "line": 223,
+    "calls": [
+      "parse",
+      "log",
+      "cwd",
+      "read",
+      "write",
+      "keys",
+      "_parseFlags",
+      "create",
+      "error",
+      "_runInteractiveMode",
+      "_loadDataFromPackageIndex",
+      "run"
+    ]
+  },
+  {
+    "function": "getLatestVersion",
+    "file": "src/modules/semver.ts",
+    "line": 20,
+    "calls": [
+      "gt",
+      "valid",
+      "log"
+    ]
+  },
+  {
+    "function": "resolveVersionIdentifier",
+    "file": "src/modules/semver.ts",
+    "line": 44,
+    "calls": [
+      "maxSatisfying",
+      "startsWith",
+      "getLatestVersion"
+    ]
+  },
+  {
+    "function": "incrementVersionRange",
+    "file": "src/modules/semver.ts",
+    "line": 64,
+    "calls": [
+      "satisfies",
+      "startsWith",
+      "includes"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 23,
+    "calls": [
+      "toString",
+      "stdOutParser",
+      "split",
+      "write",
+      "forEach"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 29,
+    "calls": [
+      "stdOutParser"
+    ]
+  },
+  {
+    "function": "setSpawnImplementation",
+    "file": "src/modules/exec.ts",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 36,
+    "calls": [
+      "spawn"
+    ]
+  },
+  {
+    "function": "awaitSpawn",
+    "file": "src/modules/exec.ts",
+    "line": 38,
+    "calls": [
+      "lineCapturer",
+      "split",
+      "read",
+      "ptySpawn",
+      "setRawMode",
+      "on",
+      "bind",
+      "pause",
+      "write",
+      "removeListener",
+      "removeAllListeners",
+      "exec",
+      "kill",
+      "onData",
+      "onExit",
+      "resolveFunc"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 53,
+    "calls": [
+      "lineCapturer"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 61,
+    "calls": [
+      "split",
+      "setRawMode",
+      "write",
+      "on",
+      "removeListener",
+      "pause",
+      "removeAllListeners",
+      "exec",
+      "kill",
+      "onExit",
+      "resolveFunc"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 63,
+    "calls": [
+      "split",
+      "exec"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 68,
+    "calls": [
+      "write",
+      "setRawMode",
+      "removeListener",
+      "removeAllListeners",
+      "pause",
+      "kill",
+      "resolveFunc"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 84,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "runExecSpec",
+    "file": "src/modules/exec.ts",
+    "line": 91,
+    "calls": [
+      "find",
+      "findComponentByName",
+      "isPython",
+      "concat",
+      "resolve",
+      "awaitSpawn",
+      "includes",
+      "info",
+      "createPythonVenv",
+      "getComponentPath"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/exec.ts",
+    "line": 116,
+    "calls": []
+  },
+  {
+    "function": "isPython",
+    "file": "src/modules/exec.ts",
+    "line": 143,
+    "calls": [
+      "includes"
+    ]
+  },
+  {
+    "function": "createPythonVenv",
+    "file": "src/modules/exec.ts",
+    "line": 147,
+    "calls": [
+      "getCacheDir",
+      "awaitSpawn"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/component.ts",
+    "line": 106,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/component.ts",
+    "line": 118,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/component.ts",
+    "line": 125,
+    "calls": [
+      "getPackageDirectoryWithVersion",
+      "join"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 31,
+    "calls": [
+      "get"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 35,
+    "calls": [
+      "set"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 43,
+    "calls": [
+      "clear"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 47,
+    "calls": [
+      "readFileSync",
+      "parse",
+      "getCacheDir",
+      "join",
+      "entries"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 60,
+    "calls": [
+      "toString",
+      "cwd",
+      "update",
+      "digest",
+      "createHash",
+      "join",
+      "getVelocitasRoot"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/project-cache.ts",
+    "line": 65,
+    "calls": [
+      "existsSync",
+      "parse",
+      "mkdirSync",
+      "getCacheDir",
+      "join",
+      "writeFileSync",
+      "stringify"
+    ]
+  },
+  {
+    "function": "stdOutParser",
+    "file": "src/modules/stdout-parser.ts",
+    "line": 20,
+    "calls": [
+      "split",
+      "substring",
+      "replace",
+      "trim",
+      "map",
+      "exec",
+      "endsWith",
+      "startsWith",
+      "set"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/stdout-parser.ts",
+    "line": 33,
+    "calls": [
+      "trim"
+    ]
+  },
+  {
+    "function": "maybeCreateReplaceVariablesTransform",
+    "file": "src/modules/setup.ts",
+    "line": 76,
+    "calls": [
+      "canHandleFile"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 90,
+    "calls": [
+      "super",
+      "extname"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 98,
+    "calls": [
+      "isArray",
+      "includes"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 103,
+    "calls": [
+      "isArray",
+      "includes"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 110,
+    "calls": [
+      "_hasMatchingFileExtension",
+      "_hasMatchingFilename"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 114,
+    "calls": [
+      "find",
+      "split",
+      "exec"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 122,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 129,
+    "calls": [
+      "slice"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 133,
+    "calls": [
+      "_isKnownFile",
+      "replace",
+      "_findInsertionLine",
+      "_insertCommentAfterLine"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 158,
+    "calls": [
+      "toString",
+      "callback",
+      "substitute",
+      "push",
+      "_tryInsertNoticeComment"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/setup.ts",
+    "line": 170,
+    "calls": [
+      "_isKnownFile"
+    ]
+  },
+  {
+    "function": "installComponent",
+    "file": "src/modules/setup.ts",
+    "line": 180,
+    "calls": [
+      "existsSync",
+      "basename",
+      "cwd",
+      "join",
+      "eval",
+      "error",
+      "maybeCreateReplaceVariablesTransform",
+      "copy",
+      "substitute",
+      "getComponentPath"
+    ]
+  },
+  {
+    "function": "getGithubOrgFromRepoUri",
+    "file": "src/modules/variables.ts",
+    "line": 51,
+    "calls": [
+      "lastIndexOf",
+      "substring"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 69,
+    "calls": [
+      "assign",
+      "entries",
+      "replaceAll",
+      "isArray",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 83,
+    "calls": [
+      "has",
+      "getPackageName",
+      "Error",
+      "some",
+      "set",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 117,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 127,
+    "calls": [
+      "getPackageRepo",
+      "getGithubOrgFromRepoUri",
+      "getPackageName",
+      "_addVariablesInScopeToMap",
+      "entries",
+      "set",
+      "verifyGivenVariables"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 164,
+    "calls": [
+      "replaceAll",
+      "entries"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 178,
+    "calls": []
+  },
+  {
+    "function": "verifyGivenVariables",
+    "file": "src/modules/variables.ts",
+    "line": 190,
+    "calls": [
+      "buildErrorMessageForComponent",
+      "push",
+      "delete",
+      "get",
+      "isArray"
+    ]
+  },
+  {
+    "function": "buildErrorMessageForComponent",
+    "file": "src/modules/variables.ts",
+    "line": 231,
+    "calls": [
+      "join",
+      "flatMap"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 249,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/variables.ts",
+    "line": 256,
+    "calls": []
+  },
+  {
+    "function": "createEnvVars",
+    "file": "src/modules/variables.ts",
+    "line": 270,
+    "calls": [
+      "cwd",
+      "read",
+      "asEnvVars",
+      "assign",
+      "realpathSync",
+      "getCacheDir",
+      "raw",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 136,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 148,
+    "calls": [
+      "readFileSync",
+      "parse"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 163,
+    "calls": [
+      "flatMap"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 164,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 172,
+    "calls": [
+      "filter",
+      "_getComponents"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 173,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 181,
+    "calls": [
+      "filter",
+      "_getComponents"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 182,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 191,
+    "calls": [
+      "filter",
+      "getExtensions",
+      "includes"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 192,
+    "calls": [
+      "includes"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 202,
+    "calls": [
+      "find",
+      "map",
+      "flatMap",
+      "getCores"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 203,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 209,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 210,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 211,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 216,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 225,
+    "calls": [
+      "find",
+      "some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 226,
+    "calls": [
+      "some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 227,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 237,
+    "calls": [
+      "find",
+      "some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 238,
+    "calls": [
+      "some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 239,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-index.ts",
+    "line": 247,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 50,
+    "calls": [
+      "endsWith"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 64,
+    "calls": [
+      "_isCustomPackage"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 71,
+    "calls": [
+      "lastIndexOf",
+      "replace",
+      "substring",
+      "_isCustomPackage"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 79,
+    "calls": [
+      "getPackageName",
+      "join",
+      "getPackageFolderPath"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 83,
+    "calls": [
+      "join",
+      "getPackageDirectory"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 87,
+    "calls": [
+      "getPackageDirectoryWithVersion",
+      "join"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 91,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 95,
+    "calls": [
+      "downloadPackage",
+      "tags",
+      "packageDownloader",
+      "log"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 109,
+    "calls": [
+      "downloadPackage",
+      "getPackageDirectoryWithVersion",
+      "removeSync",
+      "getPackageName",
+      "error",
+      "packageDownloader"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 123,
+    "calls": [
+      "existsSync",
+      "getPackageDirectoryWithVersion"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 127,
+    "calls": [
+      "getPackageDirectoryWithVersion",
+      "log",
+      "isValidRepo",
+      "getPackageName",
+      "packageDownloader"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package.ts",
+    "line": 135,
+    "calls": [
+      "readFileSync",
+      "log",
+      "getPackageName",
+      "getManifestFilePath",
+      "deserializePackageJSON"
+    ]
+  },
+  {
+    "function": "getVelocitasRoot",
+    "file": "src/modules/package.ts",
+    "line": 154,
+    "calls": [
+      "join",
+      "homedir"
+    ]
+  },
+  {
+    "function": "getPackageFolderPath",
+    "file": "src/modules/package.ts",
+    "line": 158,
+    "calls": [
+      "getVelocitasRoot",
+      "join"
+    ]
+  },
+  {
+    "function": "deserializePackageJSON",
+    "file": "src/modules/package.ts",
+    "line": 163,
+    "calls": [
+      "parse"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 29,
+    "calls": [
+      "clone",
+      "getPackageRepo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 33,
+    "calls": [
+      "fetch",
+      "log",
+      "checkIsRepo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 47,
+    "calls": [
+      "startsWith",
+      "substring",
+      "checkout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 52,
+    "calls": [
+      "_cloneRepository",
+      "existsSync",
+      "removeSync",
+      "isValidRepo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 64,
+    "calls": [
+      "simpleGit",
+      "checkIsRepo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 68,
+    "calls": [
+      "_updateRepository",
+      "join",
+      "getPackageDirectory",
+      "simpleGit",
+      "_checkoutVersion",
+      "_checkForValidRepo",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/package-downloader.ts",
+    "line": 95,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/create-interactive.ts",
+    "line": 45,
+    "calls": [
+      "coreParameters",
+      "coreOptions",
+      "prompt",
+      "core"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/create-interactive.ts",
+    "line": 78,
+    "calls": [
+      "find",
+      "createAppManifestInterfaceAttributes",
+      "filter",
+      "push",
+      "getExtensions",
+      "extensions",
+      "prompt"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/create-interactive.ts",
+    "line": 88,
+    "calls": [
+      "find"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/create-interactive.ts",
+    "line": 89,
+    "calls": []
+  },
+  {
+    "function": "mapReplacer",
+    "file": "src/modules/helpers.ts",
+    "line": 16,
+    "calls": [
+      "assign"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/app-manifest.ts",
+    "line": 62,
+    "calls": [
+      "_createInterfaceEntries"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/app-manifest.ts",
+    "line": 73,
+    "calls": [
+      "map",
+      "parse",
+      "fromEntries",
+      "entries"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/app-manifest.ts",
+    "line": 74,
+    "calls": [
+      "fromEntries",
+      "parse",
+      "map",
+      "entries"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/app-manifest.ts",
+    "line": 77,
+    "calls": [
+      "parse"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/app-manifest.ts",
+    "line": 95,
+    "calls": [
+      "existsSync",
+      "parse",
+      "readFileSync",
+      "error",
+      "info",
+      "isArray"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/app-manifest.ts",
+    "line": 114,
+    "calls": [
+      "outputFileSync",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 35,
+    "calls": [
+      "forEach",
+      "getPackages",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 37,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 52,
+    "calls": [
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 53,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 61,
+    "calls": [
+      "map",
+      "from"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 70,
+    "calls": [
+      "getPackages",
+      "getComponentContexts",
+      "map",
+      "getComponents",
+      "writeFileSync",
+      "_toWritableComponentConfig",
+      "getVariableMappings",
+      "_toWritablePackageConfig",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 76,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileWriter.ts",
+    "line": 99,
+    "calls": [
+      "writeFileSync",
+      "toLockString"
+    ]
+  },
+  {
+    "function": "convertConfigFileVariablesToMap",
+    "file": "src/modules/projectConfig/readerUtil.ts",
+    "line": 29,
+    "calls": [
+      "entries"
+    ]
+  },
+  {
+    "function": "parseLockFileVersions",
+    "file": "src/modules/projectConfig/readerUtil.ts",
+    "line": 41,
+    "calls": [
+      "isLockAvailable",
+      "readLock",
+      "findVersion"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigLock.ts",
+    "line": 22,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigLock.ts",
+    "line": 32,
+    "calls": [
+      "get"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigIO.ts",
+    "line": 29,
+    "calls": [
+      "existsSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigIO.ts",
+    "line": 39,
+    "calls": [
+      "read"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigIO.ts",
+    "line": 48,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigIO.ts",
+    "line": 57,
+    "calls": [
+      "existsSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigIO.ts",
+    "line": 65,
+    "calls": [
+      "read"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigIO.ts",
+    "line": 74,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 43,
+    "calls": [
+      "read",
+      "warn"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 80,
+    "calls": [
+      "split",
+      "set",
+      "includes"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 97,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 114,
+    "calls": [
+      "isArray"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 132,
+    "calls": [
+      "parseLockFileVersions",
+      "_isValidConfigFilePackages",
+      "_assignVariablesToConfig",
+      "entries",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 152,
+    "calls": [
+      "map",
+      "_assignVariablesToConfig",
+      "_isValidConfigFileComponents"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 159,
+    "calls": [
+      "_assignVariablesToConfig"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 177,
+    "calls": [
+      "readFileSync",
+      "parse",
+      "_parseConfigToPackageConfigArray",
+      "_parseConfigToComponentConfigArray",
+      "convertConfigFileVariablesToMap"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 207,
+    "calls": [
+      "forEach",
+      "push",
+      "convertConfigFileVariablesToMap",
+      "parseLockFileVersions"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 210,
+    "calls": [
+      "push",
+      "convertConfigFileVariablesToMap"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 222,
+    "calls": [
+      "forEach",
+      "push",
+      "convertConfigFileVariablesToMap"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 227,
+    "calls": [
+      "push",
+      "convertConfigFileVariablesToMap"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 243,
+    "calls": [
+      "readFileSync",
+      "parse",
+      "_parseLegacyComponentConfig",
+      "convertConfigFileVariablesToMap",
+      "_parseLegacyPackageConfig"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfigFileReader.ts",
+    "line": 265,
+    "calls": [
+      "readFileSync",
+      "parse",
+      "entries"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 48,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 62,
+    "calls": [
+      "getPackages",
+      "getPackageByComponentId",
+      "add",
+      "getLatestVersion",
+      "getVariableMappings",
+      "set",
+      "push",
+      "getPackageVersions"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 91,
+    "calls": [
+      "find"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 94,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 104,
+    "calls": [
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 113,
+    "calls": [
+      "filter"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 114,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 124,
+    "calls": [
+      "getPackages",
+      "getComponentContextsForPackageConfig",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 144,
+    "calls": [
+      "find",
+      "getComponentConfig",
+      "push",
+      "readPackageManifest"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 153,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 173,
+    "calls": [
+      "getPackages",
+      "readPackageManifest",
+      "Error",
+      "forEach",
+      "some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 174,
+    "calls": [
+      "some",
+      "getPackages",
+      "readPackageManifest",
+      "Error"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 175,
+    "calls": [
+      "some",
+      "readPackageManifest"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 176,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 189,
+    "calls": [
+      "find",
+      "getComponentContexts",
+      "Error"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 190,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 203,
+    "calls": [
+      "filter",
+      "isPackageInstalled"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 205,
+    "calls": [
+      "isPackageInstalled"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 218,
+    "calls": [
+      "find",
+      "getPackageName",
+      "getPackages"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 219,
+    "calls": [
+      "getPackageName"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 230,
+    "calls": [
+      "getPackageName",
+      "getPackageConfig",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 246,
+    "calls": [
+      "getPackageName",
+      "getPackageConfig",
+      "setPackageVersion"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 259,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 266,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/modules/projectConfig/projectConfig.ts",
+    "line": 275,
+    "calls": [
+      "getVariableMappings",
+      "build",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 98,
+    "calls": [
+      "readFileSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 102,
+    "calls": [
+      "existsSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 106,
+    "calls": [
+      "mkdirSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 110,
+    "calls": [
+      "removeSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 114,
+    "calls": [
+      "writeFileSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 118,
+    "calls": [
+      "outputFileSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 122,
+    "calls": [
+      "realpathSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 135,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 139,
+    "calls": [
+      "toString",
+      "startsWith",
+      "join",
+      "cwd"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 149,
+    "calls": [
+      "keys",
+      "some",
+      "toString",
+      "match"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 150,
+    "calls": [
+      "toString",
+      "match"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 153,
+    "calls": [
+      "toString"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 157,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 161,
+    "calls": [
+      "toString"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 165,
+    "calls": [
+      "startsWith",
+      "join",
+      "cwd"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 169,
+    "calls": [
+      "toString"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 173,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 177,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 188,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 192,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 199,
+    "calls": [
+      "readFileSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 208,
+    "calls": [
+      "existsSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 217,
+    "calls": [
+      "mkdirSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 226,
+    "calls": [
+      "removeSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 235,
+    "calls": [
+      "writeFileSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 244,
+    "calls": [
+      "outputFileSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 253,
+    "calls": [
+      "realpathSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 262,
+    "calls": [
+      "promisesMkdir"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "src/utils/fs-bridge.ts",
+    "line": 275,
+    "calls": [
+      "promisesWriteFile"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 34,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 42,
+    "calls": [
+      "listener"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 48,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 48,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 49,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 51,
+    "calls": [
+      "listener"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 51,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 53,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 59,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 61,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 64,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 67,
+    "calls": [
+      "mockFolders",
+      "returns",
+      "setSpawnImplementation",
+      "stderr",
+      "do",
+      "command",
+      "contain",
+      "catch",
+      "error",
+      "stub",
+      "it",
+      "expect",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 68,
+    "calls": [
+      "mockFolders",
+      "setSpawnImplementation"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 70,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 75,
+    "calls": [
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 79,
+    "calls": [
+      "mockFolders",
+      "setSpawnImplementation"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 81,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 93,
+    "calls": [
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 97,
+    "calls": [
+      "mockFolders",
+      "setSpawnImplementation"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 99,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 104,
+    "calls": [
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 108,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 111,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 114,
+    "calls": [
+      "expect",
+      "contain",
+      "error"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 119,
+    "calls": [
+      "mockFolders",
+      "setSpawnImplementation"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 121,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 128,
+    "calls": [
+      "mockFolders",
+      "setSpawnImplementation"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/exec/exec.test.ts",
+    "line": 130,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 28,
+    "calls": [
+      "mockFolders",
+      "returns",
+      "do",
+      "command",
+      "match",
+      "contain",
+      "describe",
+      "catch",
+      "stub",
+      "it",
+      "expect",
+      "simpleGitInstanceMock",
+      "stdout",
+      "throws"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 29,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 34,
+    "calls": [
+      "expect",
+      "match"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 37,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 41,
+    "calls": [
+      "throws"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 43,
+    "calls": [
+      "expect",
+      "match"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 46,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 50,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 52,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 59,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 63,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 65,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 72,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 76,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 78,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 92,
+    "calls": [
+      "mockFolders",
+      "returns",
+      "do",
+      "command",
+      "contain",
+      "match",
+      "catch",
+      "stub",
+      "it",
+      "expect",
+      "simpleGitInstanceMock",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 93,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 97,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 99,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 113,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 118,
+    "calls": [
+      "expect",
+      "match"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 121,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 125,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 127,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 134,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 138,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 140,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 147,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 151,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 153,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 166,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 170,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 172,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 179,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 183,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 185,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 197,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 201,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 202,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/upgrade/upgrade.test.ts",
+    "line": 204,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 19,
+    "calls": [
+      "mockFolders",
+      "eq",
+      "read",
+      "do",
+      "command",
+      "contain",
+      "map",
+      "catch",
+      "it",
+      "expect",
+      "stdout",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 20,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 25,
+    "calls": [
+      "read",
+      "contain",
+      "map",
+      "expect",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 29,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 33,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 38,
+    "calls": [
+      "expect",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 43,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-add.test.ts",
+    "line": 48,
+    "calls": [
+      "expect",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-list.test.ts",
+    "line": 18,
+    "calls": [
+      "mockFolders",
+      "do",
+      "command",
+      "equal",
+      "it",
+      "expect",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-list.test.ts",
+    "line": 19,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-list.test.ts",
+    "line": 24,
+    "calls": [
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-list.test.ts",
+    "line": 41,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-list.test.ts",
+    "line": 46,
+    "calls": [
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-list.test.ts",
+    "line": 53,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-list.test.ts",
+    "line": 58,
+    "calls": [
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 19,
+    "calls": [
+      "mockFolders",
+      "eq",
+      "read",
+      "do",
+      "command",
+      "contain",
+      "map",
+      "catch",
+      "it",
+      "expect",
+      "stdout",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 20,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 25,
+    "calls": [
+      "read",
+      "contain",
+      "map",
+      "expect",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 29,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 33,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 38,
+    "calls": [
+      "expect",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 45,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/component/component-remove.test.ts",
+    "line": 50,
+    "calls": [
+      "expect",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 20,
+    "calls": [
+      "mockFolders",
+      "eq",
+      "getCacheData",
+      "do",
+      "command",
+      "trim",
+      "equal",
+      "getVelocitasRoot",
+      "it",
+      "expect",
+      "startsWith",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 21,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 26,
+    "calls": [
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 30,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 35,
+    "calls": [
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 39,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 44,
+    "calls": [
+      "expect",
+      "startsWith",
+      "trim",
+      "getVelocitasRoot"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 48,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 53,
+    "calls": [
+      "expect",
+      "getCacheData",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 57,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/cache/cache.test.ts",
+    "line": 62,
+    "calls": [
+      "expect",
+      "getCacheData",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/sync/sync.test.ts",
+    "line": 19,
+    "calls": [
+      "mockFolders",
+      "do",
+      "command",
+      "contain",
+      "it",
+      "expect",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/sync/sync.test.ts",
+    "line": 20,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/sync/sync.test.ts",
+    "line": 25,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/package/package.test.ts",
+    "line": 19,
+    "calls": [
+      "mockFolders",
+      "do",
+      "command",
+      "contain",
+      "catch",
+      "it",
+      "expect",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/package/package.test.ts",
+    "line": 20,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/package/package.test.ts",
+    "line": 25,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/package/package.test.ts",
+    "line": 30,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/package/package.test.ts",
+    "line": 35,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/package/package.test.ts",
+    "line": 41,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/package/package.test.ts",
+    "line": 49,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 24,
+    "calls": [
+      "mockFolders",
+      "returns",
+      "existsSync",
+      "isLockAvailable",
+      "cwd",
+      "do",
+      "command",
+      "contain",
+      "catch",
+      "error",
+      "stub",
+      "it",
+      "expect",
+      "simpleGitInstanceMock",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 25,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 29,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 30,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 32,
+    "calls": [
+      "existsSync",
+      "expect",
+      "isLockAvailable",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 53,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 57,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 58,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 60,
+    "calls": [
+      "existsSync",
+      "expect",
+      "isLockAvailable",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 94,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 98,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 99,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 101,
+    "calls": [
+      "existsSync",
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 114,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 118,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 120,
+    "calls": [
+      "expect",
+      "contain",
+      "error"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 125,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 130,
+    "calls": [
+      "existsSync",
+      "cwd",
+      "contain",
+      "isLockAvailable",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 139,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 143,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 144,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 146,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 150,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 154,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 155,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 157,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 161,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 165,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 166,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 168,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 172,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 176,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 177,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 179,
+    "calls": [
+      "existsSync",
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 188,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 192,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 193,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 195,
+    "calls": [
+      "existsSync",
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 204,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 208,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 209,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 211,
+    "calls": [
+      "expect",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/init/init.test.ts",
+    "line": 214,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 72,
+    "calls": [
+      "mockFolders",
+      "returns",
+      "getPackages",
+      "isConfigAvailable",
+      "EXPECTED_INTERACTIVE_STDOUT",
+      "parse",
+      "read",
+      "do",
+      "command",
+      "equal",
+      "catch",
+      "stub",
+      "it",
+      "expect",
+      "simpleGitInstanceMock",
+      "stdout"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 73,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 77,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 78,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 79,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 81,
+    "calls": [
+      "getPackages",
+      "isConfigAvailable",
+      "read",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 96,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 100,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 101,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 106,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 114,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 122,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 130,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 134,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 135,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 136,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 137,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 150,
+    "calls": [
+      "getPackages",
+      "EXPECTED_INTERACTIVE_STDOUT",
+      "isConfigAvailable",
+      "parse",
+      "read",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 172,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 176,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 177,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 178,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 179,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 189,
+    "calls": [
+      "getPackages",
+      "EXPECTED_INTERACTIVE_STDOUT",
+      "isConfigAvailable",
+      "read",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 204,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 212,
+    "calls": [
+      "mockFolders"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 216,
+    "calls": [
+      "returns",
+      "simpleGitInstanceMock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 217,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 218,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 219,
+    "calls": [
+      "returns"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/commands/create/create.test.ts",
+    "line": 228,
+    "calls": [
+      "getPackages",
+      "EXPECTED_INTERACTIVE_STDOUT",
+      "isConfigAvailable",
+      "read",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 26,
+    "calls": [
+      "parse",
+      "removeSync",
+      "readdirSync",
+      "afterEach",
+      "join",
+      "expect",
+      "getPackageVersions",
+      "readFileSync",
+      "downloadPackage",
+      "chdir",
+      "getLatestVersion",
+      "it",
+      "spawnSync",
+      "every",
+      "replace",
+      "forEach",
+      "packageDownloader",
+      "existsSync",
+      "beforeEach",
+      "describe",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 27,
+    "calls": [
+      "parse",
+      "removeSync",
+      "readdirSync",
+      "afterEach",
+      "join",
+      "expect",
+      "getPackageVersions",
+      "readFileSync",
+      "downloadPackage",
+      "chdir",
+      "getLatestVersion",
+      "it",
+      "spawnSync",
+      "every",
+      "replace",
+      "forEach",
+      "packageDownloader",
+      "existsSync",
+      "beforeEach",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 29,
+    "calls": [
+      "downloadPackage",
+      "chdir",
+      "getLatestVersion",
+      "packageDownloader",
+      "getPackageVersions"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 43,
+    "calls": [
+      "chdir",
+      "removeSync",
+      "readdirSync",
+      "join",
+      "forEach"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 45,
+    "calls": [
+      "join",
+      "removeSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 52,
+    "calls": [
+      "readFileSync",
+      "spawnSync",
+      "parse",
+      "existsSync",
+      "every",
+      "replace",
+      "forEach",
+      "expect",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 62,
+    "calls": [
+      "existsSync",
+      "replace",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/create.stest.ts",
+    "line": 67,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 23,
+    "calls": [
+      "parse",
+      "trim",
+      "expect",
+      "find",
+      "readFileSync",
+      "split",
+      "log",
+      "chdir",
+      "contain",
+      "it",
+      "stringify",
+      "toString",
+      "spawnSync",
+      "equal",
+      "checkSpawn",
+      "beforeEach",
+      "copySync",
+      "describe",
+      "map"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 24,
+    "calls": [
+      "toString",
+      "find",
+      "spawnSync",
+      "beforeEach",
+      "parse",
+      "readFileSync",
+      "copySync",
+      "chdir",
+      "log",
+      "split",
+      "trim",
+      "contain",
+      "equal",
+      "map",
+      "checkSpawn",
+      "it",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 25,
+    "calls": [
+      "spawnSync",
+      "copySync",
+      "chdir"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 31,
+    "calls": [
+      "toString",
+      "find",
+      "spawnSync",
+      "parse",
+      "log",
+      "checkSpawn",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 46,
+    "calls": [
+      "readFileSync",
+      "spawnSync",
+      "parse",
+      "contain",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 57,
+    "calls": [
+      "equal",
+      "expect",
+      "spawnSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 65,
+    "calls": [
+      "expect",
+      "spawnSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 71,
+    "calls": [
+      "expect",
+      "spawnSync",
+      "contain"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 93,
+    "calls": [
+      "expect",
+      "spawnSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 99,
+    "calls": [
+      "spawnSync",
+      "split",
+      "trim",
+      "map",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 104,
+    "calls": [
+      "trim"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 114,
+    "calls": [
+      "spawnSync",
+      "split",
+      "trim",
+      "map",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 119,
+    "calls": [
+      "trim"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 125,
+    "calls": [
+      "spawnSync",
+      "split",
+      "trim",
+      "map",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 130,
+    "calls": [
+      "trim"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 138,
+    "calls": [
+      "spawnSync",
+      "split",
+      "trim",
+      "map",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 147,
+    "calls": [
+      "trim"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 157,
+    "calls": [
+      "spawnSync",
+      "split",
+      "trim",
+      "map",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 166,
+    "calls": [
+      "trim"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 176,
+    "calls": [
+      "equal",
+      "expect",
+      "spawnSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 183,
+    "calls": [
+      "equal",
+      "expect",
+      "spawnSync",
+      "trim"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 192,
+    "calls": [
+      "log",
+      "spawn",
+      "on",
+      "resolve",
+      "kill",
+      "reject"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 193,
+    "calls": [
+      "log",
+      "spawn",
+      "on",
+      "resolve",
+      "kill",
+      "reject"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 198,
+    "calls": [
+      "kill",
+      "log",
+      "resolve"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/exec.stest.ts",
+    "line": 203,
+    "calls": [
+      "log",
+      "resolve"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 25,
+    "calls": [
+      "readdirSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 30,
+    "calls": [
+      "parse",
+      "removeSync",
+      "afterEach",
+      "join",
+      "expect",
+      "isDirectoryEmpty",
+      "readFileSync",
+      "getPackageDirectoryWithVersion",
+      "chdir",
+      "read",
+      "it",
+      "spawnSync",
+      "equal",
+      "getCacheDir",
+      "existsSync",
+      "getPackages",
+      "beforeEach",
+      "copySync",
+      "describe",
+      "readLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 31,
+    "calls": [
+      "parse",
+      "removeSync",
+      "afterEach",
+      "join",
+      "expect",
+      "isDirectoryEmpty",
+      "readFileSync",
+      "getPackageDirectoryWithVersion",
+      "chdir",
+      "read",
+      "it",
+      "spawnSync",
+      "equal",
+      "getCacheDir",
+      "existsSync",
+      "getPackages",
+      "beforeEach",
+      "copySync",
+      "readLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 32,
+    "calls": [
+      "chdir"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 35,
+    "calls": [
+      "removeSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 41,
+    "calls": [
+      "readFileSync",
+      "spawnSync",
+      "parse",
+      "existsSync",
+      "getPackages",
+      "copySync",
+      "getPackageDirectoryWithVersion",
+      "read",
+      "equal",
+      "readLock",
+      "join",
+      "getCacheDir",
+      "expect",
+      "isDirectoryEmpty"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 59,
+    "calls": [
+      "readFileSync",
+      "spawnSync",
+      "parse",
+      "existsSync",
+      "getPackages",
+      "copySync",
+      "getPackageDirectoryWithVersion",
+      "read",
+      "equal",
+      "readLock",
+      "expect",
+      "isDirectoryEmpty"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/init.stest.ts",
+    "line": 77,
+    "calls": [
+      "equal",
+      "expect",
+      "spawnSync",
+      "copySync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/sync.stest.ts",
+    "line": 34,
+    "calls": [
+      "readFileSync",
+      "spawnSync",
+      "beforeEach",
+      "copySync",
+      "chdir",
+      "removeSync",
+      "describe",
+      "equal",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/sync.stest.ts",
+    "line": 35,
+    "calls": [
+      "readFileSync",
+      "spawnSync",
+      "beforeEach",
+      "copySync",
+      "chdir",
+      "removeSync",
+      "equal",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/sync.stest.ts",
+    "line": 36,
+    "calls": [
+      "copySync",
+      "chdir"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/sync.stest.ts",
+    "line": 40,
+    "calls": [
+      "removeSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/system-test/sync.stest.ts",
+    "line": 46,
+    "calls": [
+      "equal",
+      "expect",
+      "spawnSync",
+      "readFileSync"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/utils/mockfs.ts",
+    "line": 56,
+    "calls": [
+      "setImpl",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 184,
+    "calls": [
+      "getExtensionParametersByParameterId",
+      "getMandatoryExtensionsByCoreId",
+      "cwd",
+      "read",
+      "getCores",
+      "throw",
+      "describe",
+      "equal",
+      "setImpl",
+      "before",
+      "map",
+      "getExtensions",
+      "it",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 185,
+    "calls": [
+      "stringify",
+      "setImpl",
+      "cwd"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 195,
+    "calls": [
+      "getExtensionParametersByParameterId",
+      "getMandatoryExtensionsByCoreId",
+      "getCores",
+      "read",
+      "throw",
+      "equal",
+      "map",
+      "getExtensions",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 196,
+    "calls": [
+      "read",
+      "expect",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 197,
+    "calls": [
+      "read"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 199,
+    "calls": [
+      "read",
+      "expect",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 200,
+    "calls": [
+      "read"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 202,
+    "calls": [
+      "read",
+      "expect",
+      "equal",
+      "getCores"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 207,
+    "calls": [
+      "read",
+      "expect",
+      "getExtensions",
+      "equal"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 212,
+    "calls": [
+      "getMandatoryExtensionsByCoreId",
+      "read",
+      "map",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 214,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 217,
+    "calls": [
+      "read",
+      "expect",
+      "getExtensionParametersByParameterId",
+      "equal"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 222,
+    "calls": [
+      "read",
+      "expect",
+      "getCores"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 227,
+    "calls": [
+      "read",
+      "expect",
+      "getExtensions"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package-index.test.ts",
+    "line": 232,
+    "calls": [
+      "read",
+      "expect",
+      "getMandatoryExtensionsByCoreId"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 20,
+    "calls": [
+      "throw",
+      "equal",
+      "getLatestVersion",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 21,
+    "calls": [
+      "equal",
+      "expect",
+      "getLatestVersion"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 26,
+    "calls": [
+      "expect",
+      "getLatestVersion",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 28,
+    "calls": [
+      "getLatestVersion"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 32,
+    "calls": [
+      "resolveVersionIdentifier",
+      "throw",
+      "equal",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 38,
+    "calls": [
+      "equal",
+      "expect",
+      "resolveVersionIdentifier"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 42,
+    "calls": [
+      "equal",
+      "expect",
+      "resolveVersionIdentifier"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 46,
+    "calls": [
+      "equal",
+      "expect",
+      "resolveVersionIdentifier"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 50,
+    "calls": [
+      "expect",
+      "resolveVersionIdentifier",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 51,
+    "calls": [
+      "resolveVersionIdentifier"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 55,
+    "calls": [
+      "it",
+      "expect",
+      "incrementVersionRange",
+      "equal"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 56,
+    "calls": [
+      "equal",
+      "expect",
+      "incrementVersionRange"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 60,
+    "calls": [
+      "equal",
+      "expect",
+      "incrementVersionRange"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 65,
+    "calls": [
+      "equal",
+      "expect",
+      "incrementVersionRange"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/semver.test.ts",
+    "line": 70,
+    "calls": [
+      "equal",
+      "expect",
+      "incrementVersionRange"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 23,
+    "calls": [
+      "eq",
+      "bind",
+      "setImpl",
+      "isLockAvailable",
+      "expect",
+      "getComponentContexts",
+      "isConfigAvailable",
+      "cwd",
+      "homedir",
+      "read",
+      "before",
+      "stub",
+      "it",
+      "throws",
+      "length",
+      "throw",
+      "describe",
+      "readLock",
+      "restore",
+      "writeLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 29,
+    "calls": [
+      "setImpl"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 39,
+    "calls": [
+      "it",
+      "expect",
+      "isConfigAvailable"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 40,
+    "calls": [
+      "expect",
+      "isConfigAvailable"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 43,
+    "calls": [
+      "expect",
+      "isConfigAvailable"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 47,
+    "calls": [
+      "it",
+      "expect",
+      "isLockAvailable"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 48,
+    "calls": [
+      "isLockAvailable",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 51,
+    "calls": [
+      "isLockAvailable",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 55,
+    "calls": [
+      "it",
+      "expect",
+      "bind",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 56,
+    "calls": [
+      "expect",
+      "bind",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 59,
+    "calls": [
+      "expect",
+      "bind",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 63,
+    "calls": [
+      "it",
+      "expect",
+      "readLock",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 64,
+    "calls": [
+      "expect",
+      "readLock",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 65,
+    "calls": [
+      "readLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 67,
+    "calls": [
+      "expect",
+      "readLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 70,
+    "calls": [
+      "expect",
+      "readLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 74,
+    "calls": [
+      "read",
+      "throw",
+      "restore",
+      "stub",
+      "it",
+      "writeLock",
+      "expect",
+      "throws"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 75,
+    "calls": [
+      "read",
+      "throw",
+      "restore",
+      "stub",
+      "writeLock",
+      "expect",
+      "throws"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 78,
+    "calls": [
+      "writeLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 83,
+    "calls": [
+      "eq",
+      "read",
+      "length",
+      "it",
+      "expect",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 84,
+    "calls": [
+      "eq",
+      "read",
+      "length",
+      "expect",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfig.test.ts",
+    "line": 89,
+    "calls": [
+      "eq",
+      "read",
+      "length",
+      "expect",
+      "getComponentContexts"
+    ]
+  },
+  {
+    "function": "createDefaultComponentContext",
+    "file": "test/unit/component.test.ts",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/component.test.ts",
+    "line": 32,
+    "calls": [
+      "describe",
+      "equal",
+      "getPackageFolderPath",
+      "join",
+      "createDefaultComponentContext",
+      "it",
+      "expect",
+      "getComponentPath"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/component.test.ts",
+    "line": 33,
+    "calls": [
+      "equal",
+      "getPackageFolderPath",
+      "join",
+      "createDefaultComponentContext",
+      "it",
+      "expect",
+      "getComponentPath"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/component.test.ts",
+    "line": 34,
+    "calls": [
+      "equal",
+      "getPackageFolderPath",
+      "join",
+      "createDefaultComponentContext",
+      "expect",
+      "getComponentPath"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/component.test.ts",
+    "line": 39,
+    "calls": [
+      "equal",
+      "getPackageFolderPath",
+      "join",
+      "createDefaultComponentContext",
+      "expect",
+      "getComponentPath"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 46,
+    "calls": [
+      "getPackages",
+      "beforeEach",
+      "getComponentConfig",
+      "asEnvVars",
+      "throw",
+      "build",
+      "describe",
+      "instanceof",
+      "equal",
+      "entries",
+      "it",
+      "expect",
+      "set",
+      "substitute",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 47,
+    "calls": [
+      "getPackages",
+      "getComponentConfig",
+      "entries"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 147,
+    "calls": [
+      "getPackages",
+      "getComponentConfig",
+      "asEnvVars",
+      "throw",
+      "build",
+      "equal",
+      "instanceof",
+      "it",
+      "expect",
+      "set",
+      "substitute",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 148,
+    "calls": [
+      "expect",
+      "build",
+      "instanceof"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 153,
+    "calls": [
+      "expect",
+      "build",
+      "instanceof"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 159,
+    "calls": [
+      "getPackages",
+      "getComponentConfig",
+      "throw",
+      "build",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 179,
+    "calls": [
+      "build"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 181,
+    "calls": [
+      "getComponentConfig",
+      "throw",
+      "build",
+      "expect",
+      "set"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 189,
+    "calls": [
+      "build"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 193,
+    "calls": [
+      "build",
+      "equal",
+      "instanceof",
+      "expect",
+      "substitute"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 203,
+    "calls": [
+      "build",
+      "equal",
+      "instanceof",
+      "expect",
+      "substitute"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 221,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 237,
+    "calls": [
+      "equal",
+      "expect",
+      "substitute",
+      "build"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 246,
+    "calls": [
+      "equal",
+      "asEnvVars",
+      "expect",
+      "build"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 256,
+    "calls": [
+      "equal",
+      "expect",
+      "substitute",
+      "build"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 262,
+    "calls": [
+      "getPackages",
+      "getComponentConfig",
+      "throw",
+      "build",
+      "expect",
+      "push"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/variables.test.ts",
+    "line": 263,
+    "calls": [
+      "getPackages",
+      "getComponentConfig",
+      "push",
+      "build"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package.test.ts",
+    "line": 20,
+    "calls": [
+      "after",
+      "describe",
+      "setImpl",
+      "before",
+      "getPackageName",
+      "readPackageManifest",
+      "it",
+      "expect",
+      "equals"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package.test.ts",
+    "line": 22,
+    "calls": [
+      "setImpl"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package.test.ts",
+    "line": 31,
+    "calls": [
+      "it",
+      "readPackageManifest"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package.test.ts",
+    "line": 32,
+    "calls": [
+      "readPackageManifest"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package.test.ts",
+    "line": 40,
+    "calls": [
+      "it",
+      "expect",
+      "getPackageName",
+      "equals"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package.test.ts",
+    "line": 41,
+    "calls": [
+      "expect",
+      "getPackageName",
+      "equals"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/package.test.ts",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 91,
+    "calls": [
+      "an",
+      "setImpl",
+      "get",
+      "getVariableMappings",
+      "expect",
+      "instanceOf",
+      "read",
+      "getComponents",
+      "before",
+      "stub",
+      "it",
+      "throws",
+      "stringify",
+      "every",
+      "throw",
+      "equal",
+      "returns",
+      "getPackages",
+      "describe",
+      "readLock",
+      "restore"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 92,
+    "calls": [
+      "setImpl",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 104,
+    "calls": [
+      "getPackages",
+      "instanceOf",
+      "every",
+      "read",
+      "an",
+      "getVariableMappings",
+      "getComponents",
+      "equal",
+      "get",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 105,
+    "calls": [
+      "every",
+      "read",
+      "getComponents",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 108,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 113,
+    "calls": [
+      "getPackages",
+      "read",
+      "equal",
+      "get",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 120,
+    "calls": [
+      "read",
+      "getComponents",
+      "equal",
+      "get",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 127,
+    "calls": [
+      "getPackages",
+      "instanceOf",
+      "read",
+      "getComponents",
+      "equal",
+      "getVariableMappings",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 140,
+    "calls": [
+      "read",
+      "an",
+      "getComponents",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 147,
+    "calls": [
+      "getPackages",
+      "every",
+      "read",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 150,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 156,
+    "calls": [
+      "read",
+      "expect",
+      "equal"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 162,
+    "calls": [
+      "getPackages",
+      "instanceOf",
+      "every",
+      "read",
+      "an",
+      "getVariableMappings",
+      "getComponents",
+      "equal",
+      "get",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 163,
+    "calls": [
+      "every",
+      "read",
+      "getComponents",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 166,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 171,
+    "calls": [
+      "getPackages",
+      "read",
+      "equal",
+      "get",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 178,
+    "calls": [
+      "read",
+      "getComponents",
+      "equal",
+      "get",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 185,
+    "calls": [
+      "getPackages",
+      "instanceOf",
+      "read",
+      "getComponents",
+      "equal",
+      "getVariableMappings",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 198,
+    "calls": [
+      "read",
+      "an",
+      "getComponents",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 205,
+    "calls": [
+      "getPackages",
+      "every",
+      "read",
+      "equal",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 208,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 214,
+    "calls": [
+      "read",
+      "expect",
+      "equal"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 220,
+    "calls": [
+      "returns",
+      "read",
+      "throw",
+      "readLock",
+      "restore",
+      "stub",
+      "it",
+      "expect",
+      "throws"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 221,
+    "calls": [
+      "read",
+      "throw",
+      "restore",
+      "stub",
+      "expect",
+      "throws"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 223,
+    "calls": [
+      "read"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 228,
+    "calls": [
+      "returns",
+      "throw",
+      "readLock",
+      "restore",
+      "stub",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 230,
+    "calls": [
+      "readLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 235,
+    "calls": [
+      "throw",
+      "readLock",
+      "restore",
+      "stub",
+      "expect",
+      "throws"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/projectConfigIO.test.ts",
+    "line": 237,
+    "calls": [
+      "readLock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 21,
+    "calls": [
+      "split",
+      "stdOutParser",
+      "read",
+      "forEach",
+      "trim",
+      "getCacheData",
+      "describe",
+      "equal",
+      "setImpl",
+      "getCacheDir",
+      "before",
+      "get",
+      "it",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 23,
+    "calls": [
+      "setImpl",
+      "getCacheDir"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 31,
+    "calls": [
+      "split",
+      "stdOutParser",
+      "read",
+      "forEach",
+      "trim",
+      "equal",
+      "get",
+      "it",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 50,
+    "calls": [
+      "stdOutParser",
+      "split",
+      "read",
+      "trim",
+      "equal",
+      "get",
+      "forEach",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 51,
+    "calls": [
+      "stdOutParser",
+      "split",
+      "read",
+      "trim",
+      "equal",
+      "get",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 60,
+    "calls": [
+      "stdOutParser",
+      "read",
+      "forEach",
+      "getCacheData",
+      "equal",
+      "it",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 74,
+    "calls": [
+      "stdOutParser",
+      "read",
+      "getCacheData",
+      "equal",
+      "forEach",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/stdout-parser.test.ts",
+    "line": 75,
+    "calls": [
+      "stdOutParser",
+      "read",
+      "getCacheData",
+      "equal",
+      "expect",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/app-manifest.test.ts",
+    "line": 20,
+    "calls": [
+      "eq",
+      "read",
+      "bind",
+      "throw",
+      "describe",
+      "setImpl",
+      "before",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/app-manifest.test.ts",
+    "line": 21,
+    "calls": [
+      "setImpl"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/app-manifest.test.ts",
+    "line": 29,
+    "calls": [
+      "eq",
+      "read",
+      "bind",
+      "throw",
+      "it",
+      "expect"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/app-manifest.test.ts",
+    "line": 30,
+    "calls": [
+      "expect",
+      "bind",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/app-manifest.test.ts",
+    "line": 34,
+    "calls": [
+      "expect",
+      "bind",
+      "throw"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/app-manifest.test.ts",
+    "line": 38,
+    "calls": [
+      "read",
+      "expect",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/app-manifest.test.ts",
+    "line": 45,
+    "calls": [
+      "read",
+      "expect",
+      "eq"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/project-cache.test.ts",
+    "line": 19,
+    "calls": [
+      "it",
+      "expect",
+      "getCacheDir",
+      "equal"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/unit/project-cache.test.ts",
+    "line": 20,
+    "calls": [
+      "equal",
+      "expect",
+      "getCacheDir"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/helpers/cache.ts",
+    "line": 19,
+    "calls": [
+      "readFileSync",
+      "parse",
+      "getCacheDir"
+    ]
+  },
+  {
+    "function": "writeCacheData",
+    "file": "test/helpers/cache.ts",
+    "line": 23,
+    "calls": [
+      "existsSync",
+      "mkdirSync",
+      "join",
+      "getCacheDir",
+      "writeFileSync",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/helpers/simpleGit.ts",
+    "line": 18,
+    "calls": [
+      "promisesWriteFile",
+      "promisesMkdir",
+      "indexOf",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/helpers/simpleGit.ts",
+    "line": 20,
+    "calls": [
+      "promisesWriteFile",
+      "promisesMkdir",
+      "indexOf",
+      "stringify"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/helpers/simpleGit.ts",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/helpers/simpleGit.ts",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/helpers/simpleGit.ts",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "test/helpers/simpleGit.ts",
+    "line": 39,
+    "calls": []
+  }
+]

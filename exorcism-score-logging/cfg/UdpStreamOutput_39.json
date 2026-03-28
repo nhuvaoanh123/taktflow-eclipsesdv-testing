@@ -1,0 +1,21 @@
+{
+  "function": "UdpStreamOutput",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:UdpStreamOutput",
+      "line": 39
+    },
+    {
+      "id": 1,
+      "label": "exit:UdpStreamOutput",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

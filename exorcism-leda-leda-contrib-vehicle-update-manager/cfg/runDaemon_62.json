@@ -1,0 +1,21 @@
+{
+  "function": "runDaemon",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:runDaemon",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:runDaemon",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

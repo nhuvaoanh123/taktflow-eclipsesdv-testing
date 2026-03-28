@@ -1,0 +1,21 @@
+{
+  "function": "utest_create_workload_injects_control_interface_before_play_kube",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_create_workload_injects_control_interface_before_play_kube",
+      "line": 716
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_create_workload_injects_control_interface_before_play_kube",
+      "line": 808
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

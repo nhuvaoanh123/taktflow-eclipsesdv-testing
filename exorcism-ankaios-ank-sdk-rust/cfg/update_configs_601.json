@@ -1,0 +1,21 @@
+{
+  "function": "update_configs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:update_configs",
+      "line": 601
+    },
+    {
+      "id": 1,
+      "label": "exit:update_configs",
+      "line": 634
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

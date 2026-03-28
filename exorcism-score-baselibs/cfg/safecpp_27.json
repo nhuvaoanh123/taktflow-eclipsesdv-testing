@@ -1,0 +1,21 @@
+{
+  "function": "safecpp",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:safecpp",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:safecpp",
+      "line": 200
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

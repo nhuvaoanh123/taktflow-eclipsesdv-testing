@@ -1,0 +1,30 @@
+{
+  "function": "get_pool_index_spec",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_pool_index_spec",
+      "line": 1551
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 1558
+    },
+    {
+      "id": 2,
+      "label": "exit:get_pool_index_spec",
+      "line": 1559
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

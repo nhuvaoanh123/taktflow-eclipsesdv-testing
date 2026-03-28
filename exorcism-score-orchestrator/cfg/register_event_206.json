@@ -1,0 +1,21 @@
+{
+  "function": "register_event",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:register_event",
+      "line": 206
+    },
+    {
+      "id": 1,
+      "label": "exit:register_event",
+      "line": 217
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

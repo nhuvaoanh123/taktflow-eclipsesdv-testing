@@ -1,0 +1,21 @@
+{
+  "function": "build_with_location",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:build_with_location",
+      "line": 271
+    },
+    {
+      "id": 1,
+      "label": "exit:build_with_location",
+      "line": 282
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "truncate_log_entry",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:truncate_log_entry",
+      "line": 70
+    },
+    {
+      "id": 1,
+      "label": "exit:truncate_log_entry",
+      "line": 111
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

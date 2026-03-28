@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Logging — SDV Documentation</title>
+  <style>
+:root {
+  --bg: #f8f9fa;
+  --sidebar: #1e2433;
+  --sidebar-hover: #2d3550;
+  --accent: #4f8ef7;
+  --text: #333;
+  --border: #dde1e7;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+  --green: #28a745;
+  --yellow: #ffc107;
+  --red: #dc3545;
+  --card: #fff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+/* Sidebar */
+#sidebar {
+  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; padding-bottom: 24px;
+}
+#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
+#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
+                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
+#sidebar nav { padding: 12px 0; }
+#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
+              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar a:hover, #sidebar a.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
+#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
+                           color: #667; padding: 14px 18px 4px; }
+/* Content */
+#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
+section { margin-bottom: 48px; scroll-margin-top: 24px; }
+section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
+              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
+section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
+section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
+p { line-height: 1.7; margin-bottom: 10px; }
+ul { padding-left: 22px; margin-bottom: 10px; }
+ul li { line-height: 1.7; margin-bottom: 4px; }
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+         padding: 20px; margin-bottom: 16px; }
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+              gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; text-align: center; }
+.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
+.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
+.data-table tr:nth-child(even) td { background: #fafbfc; }
+/* Code */
+pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
+       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
+       margin-bottom: 16px; }
+code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
+:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
+                    border-radius: 3px; font-size: 12px; }
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #d4edda; color: var(--green); }
+.badge-yellow { background: #fff3cd; color: #856404; }
+.badge-red { background: #f8d7da; color: var(--red); }
+.badge-blue { background: #d1ecf1; color: #0c5460; }
+.badge-gray { background: #e2e3e5; color: #383d41; }
+/* Details/summary */
+details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
+details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
+                   user-select: none; background: #f7f8fa; border-radius: 6px; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
+details .inner { padding: 14px; }
+/* Mermaid */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
+/* State machine */
+.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
+.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
+/* Tags */
+.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
+        padding: 2px 7px; font-size: 11px; margin: 2px; }
+/* Responsive */
+@media (max-width: 768px) {
+  body { flex-direction: column; }
+  #sidebar { width: 100%; height: auto; position: static; }
+  #content { padding: 20px; }
+}
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Eclipse SDV</h1>
+    <div class="project-title">Score Logging</div>
+    
+<nav>
+  <div class="section-label">Sections</div>
+  <a href="#overview">1. Project Overview</a>
+  <a href="#architecture">2. Internal Architecture</a>
+  <a href="#interfaces">3. External Interfaces</a>
+  <a href="#getting-started">4. Getting Started</a>
+  <a href="#quality">5. Quality Assessment</a>
+  <a href="#glossary">6. Glossary</a>
+  <div class="section-label">Navigation</div>
+  <a href="../exorcism-master-index.html">← Master Index</a>
+</nav>
+
+  </div>
+  <div id="content">
+    <h1 style="font-size:28px;font-weight:800;margin-bottom:8px;color:#1e2433">Score Logging</h1>
+    <p style="color:#666;margin-bottom:32px">
+      <span class="badge badge-blue">SCORE</span>
+      &nbsp;Auto-generated documentation for newly graduated engineers
+    </p>
+    
+<section id="overview">
+  <h2>1. Project Overview</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="num">289</div><div class="lbl">Total Files</div></div>
+    <div class="stat-card"><div class="num">42,142</div><div class="lbl">Lines of Code</div></div>
+    <div class="stat-card"><div class="num">2184</div><div class="lbl">Functions</div></div>
+    <div class="stat-card"><div class="num">0</div><div class="lbl">State Machines</div></div>
+    <div class="stat-card"><div class="num">1</div><div class="lbl">Comm. Patterns</div></div>
+    <div class="stat-card"><div class="num">3.8</div><div class="lbl">Avg Complexity</div></div>
+  </div>
+
+  <div class="card">
+    <h3>What this project does</h3>
+    <p>SCORE (Safety-Critical Open-source Reference Environment) is an Eclipse project providing safety-certified base libraries and middleware for safety-critical automotive ECUs. It targets ASIL-B/D requirements with components for communication (SOME/IP), logging, lifecycle management, and more.</p>
+    <p><strong>Project:</strong> <code>score-logging</code> &nbsp;|&nbsp;
+       <strong>Build System:</strong> <code>Bazel, Python/pyproject</code> &nbsp;|&nbsp;
+       <strong>Languages:</strong> <span class="tag">Python</span>, <span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Rust</span></p>
+  </div>
+
+  <div class="card">
+    <h3>Why it exists in the SDV ecosystem</h3>
+    <p>Safety-critical vehicle systems (braking, steering, ADAS) need software components that meet ISO 26262 functional safety requirements. SCORE provides pre-certified building blocks.</p>
+  </div>
+
+  <div class="card">
+    <h3>Who uses it</h3>
+    <p>Used by Tier-1 automotive suppliers and OEMs building safety-critical ECU software.</p>
+  </div>
+
+  <details><summary>Language Breakdown</summary>
+    <div class="inner">
+      <table class="data-table">
+        <thead><tr><th>Language</th><th>Files</th><th>Lines of Code</th></tr></thead>
+        <tbody>
+          <tr><td>Python</td><td>3</td><td>263</td></tr><tr><td>C</td><td>135</td><td>11,214</td></tr><tr><td>C++</td><td>144</td><td>29,504</td></tr><tr><td>Rust</td><td>7</td><td>1,161</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+  <details><summary>Summary Report (from summary.md)</summary>
+    <div class="inner">
+      <h1>Project Analysis: score-logging</h1>
+<p></p>
+<h2>Overview</h2>
+<table class="data-table"><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Languages</td><td>Python, C, C++, Rust</td></tr>
+<tr><td>Build System</td><td>Bazel, Python/pyproject</td></tr>
+<tr><td>Total Files</td><td>289</td></tr>
+<tr><td>Total LOC</td><td>42,142</td></tr>
+<tr><td>Total Functions</td><td>2184</td></tr>
+<tr><td>State Machines</td><td>0</td></tr>
+<tr><td>Communication Patterns</td><td>1</td></tr>
+<tr><td>External Dependencies</td><td>1</td></tr>
+</tbody></table>
+<p></p>
+<h2>Language Breakdown</h2>
+<ul>
+<li><strong>Python</strong>: 3 files, 263 LOC</li>
+<li><strong>C</strong>: 135 files, 11,214 LOC</li>
+<li><strong>C++</strong>: 144 files, 29,504 LOC</li>
+<li><strong>Rust</strong>: 7 files, 1,161 LOC</li>
+</ul>
+<p></p>
+<h2>Architecture Overview</h2>
+<p>Build system: <strong>Bazel, Python/pyproject</strong></p>
+<p></p>
+<h3>Communication Protocols</h3>
+<ul>
+<li><strong>MQTT_topic</strong>: 1 occurrence(s)</li>
+</ul>
+<p></p>
+<h2>Key Findings</h2>
+<p></p>
+<h3>High Complexity Functions (cc &gt; 10)</h3>
+<ul>
+<li>score (score/mw/log/rust/score<em>log</em>bridge<em>cpp</em>init/score<em>log</em>bridge_init.h:19) cc=14</li>
+<li>ScoreLogBridgeBuilder (score/mw/log/rust/score<em>log</em>bridge<em>cpp</em>init/score<em>log</em>bridge_init.h:29) cc=14</li>
+<li>log (score/mw/log/rust/score<em>log</em>bridge/src/score<em>log</em>bridge.rs:182) cc=13</li>
+<li>mw (score/mw/log/test/fake<em>recorder/fake</em>recorder.h:29) cc=17</li>
+<li>log (score/mw/log/test/fake<em>recorder/fake</em>recorder.h:31) cc=17</li>
+<li>test (score/mw/log/test/fake<em>recorder/fake</em>recorder.h:33) cc=17</li>
+<li>helper (score/mw/log/detail/common/helper_functions.h:22) cc=37</li>
+<li>Sum (score/mw/log/detail/common/helper_functions.h:32) cc=11</li>
+<li>ClampTo (score/mw/log/detail/common/helper_functions.h:47) cc=14</li>
+<li>score (score/mw/log/detail/common/recorder_factory.h:23) cc=21</li>
+<li>mw (score/mw/log/detail/common/recorder_factory.h:25) cc=21</li>
+<li>log (score/mw/log/detail/common/recorder_factory.h:27) cc=21</li>
+<li>detail (score/mw/log/detail/common/recorder_factory.h:29) cc=21</li>
+<li>IRecorderFactory (score/mw/log/detail/common/recorder_factory.h:38) cc=21</li>
+<li>&lt;anonymous&gt; (score/mw/log/detail/file<em>recorder/file</em>recorder_factory.cpp:37) cc=11</li>
+<li>kDltHtypWEID (score/mw/log/detail/file<em>recorder/dlt</em>message<em>builder</em>types.h:50) cc=16</li>
+<li>kDltHtypWTMS (score/mw/log/detail/file<em>recorder/dlt</em>message<em>builder</em>types.h:51) cc=16</li>
+<li>kDltHtypVERS (score/mw/log/detail/file<em>recorder/dlt</em>message<em>builder</em>types.h:52) cc=16</li>
+<li>mw (score/mw/log/detail/file<em>recorder/file</em>recorder_factory.h:24) cc=11</li>
+<li>log (score/mw/log/detail/file<em>recorder/file</em>recorder_factory.h:26) cc=11</li>
+</ul>
+<p></p>
+<h3>High Nesting Functions (depth &gt; 3)</h3>
+<ul>
+<li><em>module</em>root (score/mw/log/taktflow<em>tests/test</em>module_contracts.py:15) depth=5</li>
+<li>test<em>unsafe</em>blocks<em>have</em>safety<em>justification (score/mw/log/taktflow</em>tests/test<em>module</em>contracts.py:99) depth=9</li>
+<li>set<em>default</em>logger (score/mw/log/rust/score<em>log</em>bridge<em>cpp</em>init/ffi.rs:18) depth=4</li>
+<li>set<em>as</em>default<em>logger (score/mw/log/rust/score</em>log<em>bridge/src/score</em>log_bridge.rs:98) depth=9</li>
+<li>log (score/mw/log/rust/score<em>log</em>bridge/src/score<em>log</em>bridge.rs:182) depth=5</li>
+<li>write<em>i8 (score/mw/log/rust/score</em>log_bridge/src/ffi.rs:278) depth=4</li>
+<li>write<em>i16 (score/mw/log/rust/score</em>log_bridge/src/ffi.rs:302) depth=4</li>
+<li>write<em>i32 (score/mw/log/rust/score</em>log_bridge/src/ffi.rs:326) depth=4</li>
+<li>write<em>i64 (score/mw/log/rust/score</em>log_bridge/src/ffi.rs:350) depth=4</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/applications/options.cpp:79) depth=6</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/daemon/udp<em>stream</em>output.cpp:25) depth=4</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/daemon/message<em>passing</em>server.cpp:214) depth=5</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/unix<em>domain/unix</em>domain_server.cpp:280) depth=6</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/unix<em>domain/unix</em>domain_server.cpp:336) depth=6</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/unix<em>domain/unix</em>domain_server.cpp:386) depth=4</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/unix<em>domain/unix</em>domain_server.cpp:418) depth=4</li>
+<li>RecvSocketMessage (score/datarouter/src/unix<em>domain/unix</em>domain_common.cpp:281) depth=6</li>
+<li>&lt;anonymous&gt; (score/datarouter/src/unix<em>domain/unix</em>domain_client.cpp:70) depth=5</li>
+<li>&lt;anonymous&gt; (score/datarouter/datarouter/data_router.cpp:209) depth=4</li>
+</ul>
+<p></p>
+<h3>Large Functions (LOC &gt; 100)</h3>
+<ul>
+<li>score (score/mw/log/detail/data<em>router/data</em>router<em>message</em>client_impl.h:32) loc=115</li>
+<li>mw (score/mw/log/detail/data<em>router/data</em>router<em>message</em>client_impl.h:34) loc=112</li>
+<li>log (score/mw/log/detail/data<em>router/data</em>router<em>message</em>client_impl.h:36) loc=109</li>
+<li>detail (score/mw/log/detail/data<em>router/data</em>router<em>message</em>client_impl.h:38) loc=106</li>
+<li>&lt;anonymous&gt; (score/mw/log/detail/data<em>router/shared</em>memory/reader<em>factory</em>impl.cpp:40) loc=101</li>
+<li>detail (score/mw/log/detail/data<em>router/shared</em>memory/shared<em>memory</em>writer.h:32) loc=177</li>
+<li>score (score/datarouter/include/daemon/diagnostic<em>job</em>handler.h:21) loc=160</li>
+<li>logging (score/datarouter/include/daemon/diagnostic<em>job</em>handler.h:23) loc=157</li>
+<li>dltserver (score/datarouter/include/daemon/diagnostic<em>job</em>handler.h:25) loc=154</li>
+<li>score (score/datarouter/include/daemon/dlt<em>log</em>server.h:43) loc=306</li>
+<li>logging (score/datarouter/include/daemon/dlt<em>log</em>server.h:45) loc=144</li>
+<li>dltserver (score/datarouter/include/daemon/dlt<em>log</em>server.h:47) loc=141</li>
+<li>kLogEntryTypeName (score/datarouter/include/daemon/dlt<em>log</em>server.h:50) loc=128</li>
+<li>kPersistentRequestTypeName (score/datarouter/include/daemon/dlt<em>log</em>server.h:51) loc=102</li>
+<li>score (score/datarouter/include/daemon/message<em>passing</em>server.h:39) loc=162</li>
+<li>platform (score/datarouter/include/daemon/message<em>passing</em>server.h:41) loc=159</li>
+<li>internal (score/datarouter/include/daemon/message<em>passing</em>server.h:43) loc=155</li>
+<li>IMessagePassingServerSessionWrapper (score/datarouter/include/daemon/message<em>passing</em>server.h:68) loc=106</li>
+<li>UnixDomainServer (score/datarouter/include/unix<em>domain/unix</em>domain_server.h:41) loc=172</li>
+<li>SessionWrapper (score/datarouter/include/unix<em>domain/unix</em>domain_server.h:62) loc=150</li>
+</ul>
+<p></p>
+<h2>Files Generated</h2>
+<ul>
+<li><code>inventory.json</code> — file/LOC/function counts, build system</li>
+<li><code>callgraph.json</code> — 2184 call relationships</li>
+<li><code>callgraph.dot</code> — Graphviz DOT call graph</li>
+<li><code>cfg/</code> — 412 per-function CFGs (cc &gt; 3)</li>
+<li><code>statemachines.json</code> — 0 state machine patterns</li>
+<li><code>metrics.json</code> — 2184 function metrics</li>
+<li><code>communication.json</code> — 1 protocol patterns</li>
+<li><code>dependencies.json</code> — 1 external dependencies</li>
+</ul>
+<p></p>
+    </div>
+  </details>
+</section>
+
+    
+<section id="architecture">
+  <h2>2. Internal Technical Architecture</h2>
+
+  <h3>Function Complexity Metrics</h3>
+  
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Function</th><th>Complexity</th><th>Max Nesting</th>
+      <th>LOC</th><th>Params</th><th>Flags</th><th>File</th>
+    </tr>
+  </thead>
+  <tbody><tr>
+              <td><code>PackageFileInformation</code></td>
+              <td><span class="badge badge-red">113 (High)</span></td>
+              <td>1</td>
+              <td>100</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/include/dlt/dlt_protocol.h</small></td>
+            </tr><tr>
+              <td><code>PackageFileData</code></td>
+              <td><span class="badge badge-red">79 (High)</span></td>
+              <td>1</td>
+              <td>83</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/include/dlt/dlt_protocol.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">76 (High)</span></td>
+              <td>1</td>
+              <td>180</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/dlt/dlt_headers.h</small></td>
+            </tr><tr>
+              <td><code>platform</code></td>
+              <td><span class="badge badge-red">76 (High)</span></td>
+              <td>1</td>
+              <td>177</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/dlt/dlt_headers.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">69 (High)</span></td>
+              <td>3</td>
+              <td>306</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/daemon/dlt_log_server.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">64 (High)</span></td>
+              <td>3</td>
+              <td>182</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/src/daemon/diagnostic_job_parser.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">64 (High)</span></td>
+              <td>1</td>
+              <td>87</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/datarouter/data_router.cpp</small></td>
+            </tr><tr>
+              <td><code>ReadStaticDlt</code></td>
+              <td><span class="badge badge-red">52 (High)</span></td>
+              <td>3</td>
+              <td>135</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/src/daemon/socketserver_config.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">48 (High)</span></td>
+              <td>5</td>
+              <td>177</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/datarouter/src/unix_domain/unix_domain_client.cpp</small></td>
+            </tr><tr>
+              <td><code>detail</code></td>
+              <td><span class="badge badge-red">47 (High)</span></td>
+              <td>1</td>
+              <td>177</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/detail/data_router/shared_memory/shared_memory_writer.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">47 (High)</span></td>
+              <td>4</td>
+              <td>124</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/datarouter/src/daemon/udp_stream_output.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">46 (High)</span></td>
+              <td>2</td>
+              <td>59</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/include/daemon/dlt_log_channel.h</small></td>
+            </tr><tr>
+              <td><code>RecvSocketMessage</code></td>
+              <td><span class="badge badge-red">43 (High)</span></td>
+              <td>6</td>
+              <td>150</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/datarouter/src/unix_domain/unix_domain_common.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">42 (High)</span></td>
+              <td>1</td>
+              <td>101</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/mw/log/detail/data_router/shared_memory/reader_factory_impl.cpp</small></td>
+            </tr><tr>
+              <td><code>ReadPersistentLoggingConfig</code></td>
+              <td><span class="badge badge-red">39 (High)</span></td>
+              <td>1</td>
+              <td>76</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/src/daemon/persistentlogging_config.cpp</small></td>
+            </tr><tr>
+              <td><code>helper</code></td>
+              <td><span class="badge badge-red">37 (High)</span></td>
+              <td>1</td>
+              <td>49</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/common/helper_functions.h</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">33 (High)</span></td>
+              <td>0</td>
+              <td>71</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/lib/synchronized/synchronized.h</small></td>
+            </tr><tr>
+              <td><code>platform</code></td>
+              <td><span class="badge badge-red">33 (High)</span></td>
+              <td>0</td>
+              <td>67</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/lib/synchronized/synchronized.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">32 (High)</span></td>
+              <td>6</td>
+              <td>77</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>score/datarouter/src/applications/options.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">30 (High)</span></td>
+              <td>1</td>
+              <td>46</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/src/daemon/priority_boost.cpp</small></td>
+            </tr><tr>
+              <td><code>SendSocketMessage</code></td>
+              <td><span class="badge badge-red">29 (High)</span></td>
+              <td>3</td>
+              <td>113</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/src/unix_domain/unix_domain_common.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">28 (High)</span></td>
+              <td>1</td>
+              <td>34</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/data_router/shared_memory/writer_factory.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">28 (High)</span></td>
+              <td>2</td>
+              <td>33</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/datarouter/data_router.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">27 (High)</span></td>
+              <td>5</td>
+              <td>110</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting, high_loc</td>
+              <td><small>score/datarouter/src/daemon/message_passing_server.cpp</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>0</td>
+              <td>82</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/data_router/data_router_messages.h</small></td>
+            </tr><tr>
+              <td><code>log</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>0</td>
+              <td>79</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/data_router/data_router_messages.h</small></td>
+            </tr><tr>
+              <td><code>detail</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>0</td>
+              <td>76</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/data_router/data_router_messages.h</small></td>
+            </tr><tr>
+              <td><code>DatarouterMessageIdentifier</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>0</td>
+              <td>72</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/data_router/data_router_messages.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>3</td>
+              <td>117</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/src/daemon/dlt_log_server.cpp</small></td>
+            </tr><tr>
+              <td><code>quota_overlimit_detected</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>1</td>
+              <td>149</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/datarouter/data_router.h</small></td>
+            </tr><tr>
+              <td><code>DataRouter</code></td>
+              <td><span class="badge badge-red">26 (High)</span></td>
+              <td>1</td>
+              <td>137</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/datarouter/data_router.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">25 (High)</span></td>
+              <td>1</td>
+              <td>32</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/data_router/shared_memory/writer_factory.cpp</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">25 (High)</span></td>
+              <td>0</td>
+              <td>160</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/daemon/diagnostic_job_handler.h</small></td>
+            </tr><tr>
+              <td><code>logging</code></td>
+              <td><span class="badge badge-red">25 (High)</span></td>
+              <td>0</td>
+              <td>157</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/daemon/diagnostic_job_handler.h</small></td>
+            </tr><tr>
+              <td><code>dltserver</code></td>
+              <td><span class="badge badge-red">25 (High)</span></td>
+              <td>0</td>
+              <td>154</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/daemon/diagnostic_job_handler.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">24 (High)</span></td>
+              <td>4</td>
+              <td>93</td>
+              <td>0</td>
+              <td>high_complexity, high_nesting</td>
+              <td><small>score/datarouter/datarouter/data_router.cpp</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">23 (High)</span></td>
+              <td>2</td>
+              <td>45</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/data_router/shared_memory/writer_factory.cpp</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">23 (High)</span></td>
+              <td>0</td>
+              <td>162</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/daemon/message_passing_server.h</small></td>
+            </tr><tr>
+              <td><code>platform</code></td>
+              <td><span class="badge badge-red">23 (High)</span></td>
+              <td>0</td>
+              <td>159</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/daemon/message_passing_server.h</small></td>
+            </tr><tr>
+              <td><code>internal</code></td>
+              <td><span class="badge badge-red">23 (High)</span></td>
+              <td>0</td>
+              <td>155</td>
+              <td>0</td>
+              <td>high_complexity, high_loc</td>
+              <td><small>score/datarouter/include/daemon/message_passing_server.h</small></td>
+            </tr><tr>
+              <td><code>deserialize</code></td>
+              <td><span class="badge badge-red">22 (High)</span></td>
+              <td>1</td>
+              <td>40</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/include/daemon/log_entry_deserialization_visitor.h</small></td>
+            </tr><tr>
+              <td><code>ConstructStorageVerbosePacket</code></td>
+              <td><span class="badge badge-red">22 (High)</span></td>
+              <td>0</td>
+              <td>28</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/include/dlt/dlt_headers.h</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td><span class="badge badge-red">22 (High)</span></td>
+              <td>1</td>
+              <td>95</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/datarouter/src/daemon/message_passing_server.cpp</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">21 (High)</span></td>
+              <td>0</td>
+              <td>42</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/common/recorder_factory.h</small></td>
+            </tr><tr>
+              <td><code>mw</code></td>
+              <td><span class="badge badge-red">21 (High)</span></td>
+              <td>0</td>
+              <td>39</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/common/recorder_factory.h</small></td>
+            </tr><tr>
+              <td><code>log</code></td>
+              <td><span class="badge badge-red">21 (High)</span></td>
+              <td>0</td>
+              <td>36</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/common/recorder_factory.h</small></td>
+            </tr><tr>
+              <td><code>detail</code></td>
+              <td><span class="badge badge-red">21 (High)</span></td>
+              <td>0</td>
+              <td>33</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/common/recorder_factory.h</small></td>
+            </tr><tr>
+              <td><code>IRecorderFactory</code></td>
+              <td><span class="badge badge-red">21 (High)</span></td>
+              <td>0</td>
+              <td>22</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/common/recorder_factory.h</small></td>
+            </tr><tr>
+              <td><code>TEST</code></td>
+              <td><span class="badge badge-red">21 (High)</span></td>
+              <td>2</td>
+              <td>73</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/wait_free_producer_queue/wait_free_linear_writer_test.cpp</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td><span class="badge badge-red">21 (High)</span></td>
+              <td>0</td>
+              <td>80</td>
+              <td>0</td>
+              <td>high_complexity</td>
+              <td><small>score/mw/log/detail/wait_free_producer_queue/linear_control_block.h</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>Call Graph — Top Callers</h3>
+  
+<table class="data-table">
+  <thead><tr><th>Function</th><th>Calls Out</th><th>Callees (sample)</th><th>Location</th></tr></thead>
+  <tbody><tr>
+              <td><code>TEST</code></td>
+              <td>59</td>
+              <td><small>getpid, Exactly, size, score::os::Socket::set_testing_instance, accept, has_value, bind, WillOnce …</small></td>
+              <td><small>score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp:735</small></td>
+            </tr><tr>
+              <td><code>EXPECT_DEATH</code></td>
+              <td>59</td>
+              <td><small>getpid, Exactly, size, score::os::Socket::set_testing_instance, accept, has_value, bind, WillOnce …</small></td>
+              <td><small>score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp:746</small></td>
+            </tr><tr>
+              <td><code>EXPECT_DEATH</code></td>
+              <td>59</td>
+              <td><small>getpid, Exactly, size, score::os::Socket::set_testing_instance, accept, has_value, bind, WillOnce …</small></td>
+              <td><small>score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp:759</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>30</td>
+              <td><small>ExpectOurPidIsQueried, Times, ExpectAndFailShortMessageSend, score::cpp::to_underlying, GetClientIdentity, wait, ExpectServerDestruction, std::memcpy …</small></td>
+              <td><small>score/datarouter/test/ut/ut_logging/test_message_passing_server.cpp:392</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>29</td>
+              <td><small>size, WillOnce, has_value, static_cast&lt;SlotIndex&gt;, data, std::make_unique&lt;RecorderMock&gt;, RecordProperty, LogUint64 …</small></td>
+              <td><small>score/mw/log/detail/common/composite_recorder_test.cpp:207</small></td>
+            </tr><tr>
+              <td><code>score</code></td>
+              <td>29</td>
+              <td><small>size, ShowChannelStatistics, InitLogChannels, DltidT, AssignedToChannels, lock, move, find …</small></td>
+              <td><small>score/datarouter/include/daemon/dlt_log_server.h:43</small></td>
+            </tr><tr>
+              <td><code>&lt;anonymous&gt;</code></td>
+              <td>28</td>
+              <td><small>static_cast&lt;const void*&gt;, load, on_disconnect_, has_value, on_request_, std::random_device{}, std::perror, reconnect_ms_range …</small></td>
+              <td><small>score/datarouter/src/unix_domain/unix_domain_client.cpp:70</small></td>
+            </tr><tr>
+              <td><code>ReadStaticDlt</code></td>
+              <td>26</td>
+              <td><small>IsArray, size, GetInt, Size, data, DltidT, ToLogLevelT, fclose …</small></td>
+              <td><small>score/datarouter/src/daemon/socketserver_config.cpp:57</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>25</td>
+              <td><small>subspan, std::string, size, WillOnce, UdpStreamOutput::Tester::Instance, Invoke, data, Times …</small></td>
+              <td><small>score/datarouter/test/ut/ut_logging/test_dltchannel.cpp:198</small></td>
+            </tr><tr>
+              <td><code>TEST_F</code></td>
+              <td>24</td>
+              <td><small>subspan, std::string, size, WillOnce, UdpStreamOutput::Tester::Instance, ASSERT_EQ, Invoke, data …</small></td>
+              <td><small>score/datarouter/test/ut/ut_logging/test_dltchannel.cpp:163</small></td>
+            </tr></tbody>
+</table>
+
+  <h3>State Machines (0 detected)</h3>
+  <p><em>No state machines detected.</em></p>
+
+  <h3>Long Functions (&gt; 100 LOC)</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>LOC</th><th>File</th></tr></thead><tbody><tr><td><code>TEST</code></td><td>311</td><td><small>score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp</small></td></tr><tr><td><code>score</code></td><td>306</td><td><small>score/datarouter/include/daemon/dlt_log_server.h</small></td></tr><tr><td><code>EXPECT_DEATH</code></td><td>299</td><td><small>score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp</small></td></tr><tr><td><code>EXPECT_DEATH</code></td><td>285</td><td><small>score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>182</td><td><small>score/datarouter/src/daemon/diagnostic_job_parser.cpp</small></td></tr><tr><td><code>score</code></td><td>180</td><td><small>score/datarouter/include/dlt/dlt_headers.h</small></td></tr><tr><td><code>detail</code></td><td>177</td><td><small>score/mw/log/detail/data_router/shared_memory/shared_memory_writer.h</small></td></tr><tr><td><code>platform</code></td><td>177</td><td><small>score/datarouter/include/dlt/dlt_headers.h</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td>177</td><td><small>score/datarouter/src/unix_domain/unix_domain_client.cpp</small></td></tr><tr><td><code>UnixDomainServer</code></td><td>172</td><td><small>score/datarouter/include/unix_domain/unix_domain_server.h</small></td></tr><tr><td><code>score</code></td><td>162</td><td><small>score/datarouter/include/daemon/message_passing_server.h</small></td></tr><tr><td><code>score</code></td><td>160</td><td><small>score/datarouter/include/daemon/diagnostic_job_handler.h</small></td></tr><tr><td><code>platform</code></td><td>159</td><td><small>score/datarouter/include/daemon/message_passing_server.h</small></td></tr><tr><td><code>logging</code></td><td>157</td><td><small>score/datarouter/include/daemon/diagnostic_job_handler.h</small></td></tr><tr><td><code>internal</code></td><td>155</td><td><small>score/datarouter/include/daemon/message_passing_server.h</small></td></tr><tr><td><code>dltserver</code></td><td>154</td><td><small>score/datarouter/include/daemon/diagnostic_job_handler.h</small></td></tr><tr><td><code>SessionWrapper</code></td><td>150</td><td><small>score/datarouter/include/unix_domain/unix_domain_server.h</small></td></tr><tr><td><code>RecvSocketMessage</code></td><td>150</td><td><small>score/datarouter/src/unix_domain/unix_domain_common.cpp</small></td></tr><tr><td><code>quota_overlimit_detected</code></td><td>149</td><td><small>score/datarouter/datarouter/data_router.h</small></td></tr><tr><td><code>logging</code></td><td>144</td><td><small>score/datarouter/include/daemon/dlt_log_server.h</small></td></tr></tbody></table>
+</section>
+
+    
+<section id="interfaces">
+  <h2>3. External Interfaces &amp; SDV Connections</h2>
+
+  <h3>Communication Diagram</h3>
+  <div class="mermaid">flowchart LR
+    score-logging --&gt;|MQTT| broker[&quot;subName&quot;]</div>
+
+  <h3>Protocols &amp; Messages</h3>
+  
+<details open>
+  <summary>MQTT_topic (1 occurrences)</summary>
+  <div class="inner">
+    <table class="data-table">
+      <thead><tr><th>Protocol</th><th>Detail</th><th>File</th></tr></thead>
+      <tbody><tr><td>MQTT_topic</td><td>Topic: <code>subName</code></td><td><small>score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp</small></td></tr></tbody>
+    </table>
+  </div>
+</details>
+
+  <h3>Dependencies</h3>
+  <h3>External Dependencies</h3><ul><li><code>{&#x27;name&#x27;: &#x27;bazel-bin&#x27;, &#x27;source&#x27;: &#x27;pyproject.toml&#x27;}</code></li></ul>
+</section>
+
+    
+<section id="getting-started">
+  <h2>4. Getting Started Guide</h2>
+
+  <div class="card">
+    <h3>Build System: Bazel, Python/pyproject</h3>
+    <pre><code># Check the project README for build instructions.
+# Common patterns:
+#   Rust: cargo build --release
+#   Python: pip install -r requirements.txt &amp;&amp; python3 main.py
+#   C/C++: mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; make
+#   Java/Maven: mvn clean install
+#   Bazel: bazel build //...</code></pre>
+  </div>
+
+  <div class="card">
+    <h3>Prerequisites</h3>
+    <ul>
+      <li><span class="tag">Python</span> toolchain required</li><li><span class="tag">C</span> toolchain required</li><li><span class="tag">C++</span> toolchain required</li><li><span class="tag">Rust</span> toolchain required</li>
+      <li>Git (to clone the repository)</li>
+      <li>Refer to the project README for exact version requirements</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Common Pitfalls for Newcomers</h3>
+    <ul>
+      <li>Make sure environment variables (e.g., <code>KUKSA_ADDRESS</code>, <code>MQTT_BROKER</code>) are set before running.</li>
+      <li>Protobuf/gRPC generated files may need to be regenerated after pulling.</li>
+      <li>SDV projects often depend on running companion services (databroker, MQTT broker). Check the README for docker-compose files.</li>
+      <li>Cross-compilation for embedded targets requires the appropriate sysroot.</li>
+    </ul>
+  </div>
+</section>
+
+    
+<section id="quality">
+  <h2>5. Quality Assessment</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="num"><span class="badge badge-green">3.8</span></div>
+      <div class="lbl">Avg Cyclomatic Complexity</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">20</div>
+      <div class="lbl">High Complexity Functions</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">20</div>
+      <div class="lbl">Long Functions (&gt;100 LOC)</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">123</div>
+      <div class="lbl">Risk Functions (CC&gt;15)</div>
+    </div>
+  </div>
+
+  <h3>Highest Complexity Functions</h3>
+  <table class="data-table"><thead><tr><th>Function</th><th>Complexity</th><th>LOC</th><th>File:Line</th></tr></thead><tbody><tr><td><code>PackageFileInformation</code></td><td><span class="badge badge-red">113 (High)</span></td><td>100</td><td><small>score/datarouter/include/dlt/dlt_protocol.h:639</small></td></tr><tr><td><code>PackageFileData</code></td><td><span class="badge badge-red">79 (High)</span></td><td>83</td><td><small>score/datarouter/include/dlt/dlt_protocol.h:340</small></td></tr><tr><td><code>score</code></td><td><span class="badge badge-red">76 (High)</span></td><td>180</td><td><small>score/datarouter/include/dlt/dlt_headers.h:22</small></td></tr><tr><td><code>platform</code></td><td><span class="badge badge-red">76 (High)</span></td><td>177</td><td><small>score/datarouter/include/dlt/dlt_headers.h:24</small></td></tr><tr><td><code>score</code></td><td><span class="badge badge-red">69 (High)</span></td><td>306</td><td><small>score/datarouter/include/daemon/dlt_log_server.h:43</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">64 (High)</span></td><td>182</td><td><small>score/datarouter/src/daemon/diagnostic_job_parser.cpp:54</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">64 (High)</span></td><td>87</td><td><small>score/datarouter/datarouter/data_router.cpp:447</small></td></tr><tr><td><code>ReadStaticDlt</code></td><td><span class="badge badge-red">52 (High)</span></td><td>135</td><td><small>score/datarouter/src/daemon/socketserver_config.cpp:57</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">48 (High)</span></td><td>177</td><td><small>score/datarouter/src/unix_domain/unix_domain_client.cpp:70</small></td></tr><tr><td><code>detail</code></td><td><span class="badge badge-red">47 (High)</span></td><td>177</td><td><small>score/mw/log/detail/data_router/shared_memory/shared_memory_writer.h:32</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">47 (High)</span></td><td>124</td><td><small>score/datarouter/src/daemon/udp_stream_output.cpp:25</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">46 (High)</span></td><td>59</td><td><small>score/datarouter/include/daemon/dlt_log_channel.h:248</small></td></tr><tr><td><code>RecvSocketMessage</code></td><td><span class="badge badge-red">43 (High)</span></td><td>150</td><td><small>score/datarouter/src/unix_domain/unix_domain_common.cpp:281</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">42 (High)</span></td><td>101</td><td><small>score/mw/log/detail/data_router/shared_memory/reader_factory_impl.cpp:40</small></td></tr><tr><td><code>ReadPersistentLoggingConfig</code></td><td><span class="badge badge-red">39 (High)</span></td><td>76</td><td><small>score/datarouter/src/daemon/persistentlogging_config.cpp:39</small></td></tr><tr><td><code>helper</code></td><td><span class="badge badge-red">37 (High)</span></td><td>49</td><td><small>score/mw/log/detail/common/helper_functions.h:22</small></td></tr><tr><td><code>score</code></td><td><span class="badge badge-red">33 (High)</span></td><td>71</td><td><small>score/datarouter/lib/synchronized/synchronized.h:22</small></td></tr><tr><td><code>platform</code></td><td><span class="badge badge-red">33 (High)</span></td><td>67</td><td><small>score/datarouter/lib/synchronized/synchronized.h:24</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">32 (High)</span></td><td>77</td><td><small>score/datarouter/src/applications/options.cpp:79</small></td></tr><tr><td><code>&lt;anonymous&gt;</code></td><td><span class="badge badge-red">30 (High)</span></td><td>46</td><td><small>score/datarouter/src/daemon/priority_boost.cpp:28</small></td></tr></tbody></table>
+
+  <h3>Code Smell Indicators</h3>
+  <ul>
+    <li><span class="badge badge-red">Risk</span> <code>mw</code> — CC 17, nesting 0 in score/mw/log/test/fake_recorder/fake_recorder.h</li><li><span class="badge badge-red">Risk</span> <code>log</code> — CC 17, nesting 0 in score/mw/log/test/fake_recorder/fake_recorder.h</li><li><span class="badge badge-red">Risk</span> <code>test</code> — CC 17, nesting 0 in score/mw/log/test/fake_recorder/fake_recorder.h</li><li><span class="badge badge-red">Risk</span> <code>helper</code> — CC 37, nesting 1 in score/mw/log/detail/common/helper_functions.h</li><li><span class="badge badge-red">Risk</span> <code>score</code> — CC 21, nesting 0 in score/mw/log/detail/common/recorder_factory.h</li><li><span class="badge badge-red">Risk</span> <code>mw</code> — CC 21, nesting 0 in score/mw/log/detail/common/recorder_factory.h</li><li><span class="badge badge-red">Risk</span> <code>log</code> — CC 21, nesting 0 in score/mw/log/detail/common/recorder_factory.h</li><li><span class="badge badge-red">Risk</span> <code>detail</code> — CC 21, nesting 0 in score/mw/log/detail/common/recorder_factory.h</li><li><span class="badge badge-red">Risk</span> <code>IRecorderFactory</code> — CC 21, nesting 0 in score/mw/log/detail/common/recorder_factory.h</li><li><span class="badge badge-red">Risk</span> <code>kDltHtypWEID</code> — CC 16, nesting 0 in score/mw/log/detail/file_recorder/dlt_message_builder_types.h</li>
+  </ul>
+</section>
+
+    
+<section id="glossary">
+  <h2>6. Glossary</h2>
+
+  <h3>SDV Ecosystem Terms</h3>
+  <table class="data-table">
+    <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr><td><strong>VSS</strong></td><td>Vehicle Signal Specification — a hierarchical data model from COVESA that standardizes vehicle data signals (e.g., Vehicle.Speed, Vehicle.Cabin.Seat.Row1.Pos1.Position). Ensures all apps speak the same &#x27;language&#x27; when referring to vehicle data.</td></tr><tr><td><strong>VISS</strong></td><td>Vehicle Information Service Specification — an API standard (W3C) for accessing VSS data over WebSocket or HTTP. KUKSA implements a gRPC variant.</td></tr><tr><td><strong>COVESA</strong></td><td>Connected Vehicle Systems Alliance — industry consortium that maintains VSS, VISS, and other automotive data standards.</td></tr><tr><td><strong>KUKSA</strong></td><td>Eclipse KUKSA — the vehicle data broker project. The &#x27;kuksa.val&#x27; databroker is the central in-vehicle VSS data store.</td></tr><tr><td><strong>Databroker</strong></td><td>The core KUKSA component that stores and serves vehicle signals. Other apps connect to it via gRPC to read or write values.</td></tr><tr><td><strong>Ankaios</strong></td><td>Eclipse Ankaios — lightweight workload orchestrator for automotive ECUs. Think of it as a tiny Kubernetes for embedded systems.</td></tr><tr><td><strong>Chariott</strong></td><td>Eclipse Chariott — service discovery and programming model for vehicles. Allows apps to find and call services by name.</td></tr><tr><td><strong>Agemo</strong></td><td>A publish/subscribe messaging system that is part of Eclipse Chariott.</td></tr><tr><td><strong>Leda</strong></td><td>Eclipse Leda — a complete SDV Linux distribution that bundles KUKSA, Ankaios, and other components into a ready-to-run image.</td></tr><tr><td><strong>Ibeji</strong></td><td>Eclipse Ibeji — in-vehicle digital twin service. Manages a live model of vehicle state.</td></tr><tr><td><strong>Freyja</strong></td><td>Part of Eclipse Ibeji — synchronizes the in-vehicle digital twin with a cloud-side digital twin.</td></tr><tr><td><strong>Velocitas</strong></td><td>Eclipse Velocitas — SDK and toolchain for developing Vehicle Apps that interact with KUKSA.</td></tr><tr><td><strong>Vehicle App</strong></td><td>A small software component (microservice) running inside the vehicle that implements a specific feature using vehicle data.</td></tr><tr><td><strong>ECU</strong></td><td>Electronic Control Unit — a small embedded computer inside the vehicle controlling a specific function (engine, brakes, seats, etc.).</td></tr><tr><td><strong>CAN Bus</strong></td><td>Controller Area Network — the dominant serial communication protocol used inside vehicles. All ECUs share a bus and broadcast messages by ID.</td></tr><tr><td><strong>SOME/IP</strong></td><td>Scalable service-Oriented Middleware over IP — AUTOSAR-defined middleware protocol for automotive Ethernet networks. Used for service calls and events.</td></tr><tr><td><strong>DDS</strong></td><td>Data Distribution Service — a publish/subscribe middleware standard (OMG) used in robotics and automotive applications for real-time data sharing.</td></tr><tr><td><strong>MQTT</strong></td><td>Message Queuing Telemetry Transport — lightweight publish/subscribe protocol commonly used for IoT and cloud connectivity.</td></tr><tr><td><strong>gRPC</strong></td><td>Google Remote Procedure Call — a high-performance RPC framework using Protocol Buffers. KUKSA uses gRPC as its primary API.</td></tr><tr><td><strong>Zenoh</strong></td><td>A pub/sub protocol optimized for robotics and edge/cloud deployments. Used as a transport in some SDV components.</td></tr><tr><td><strong>uProtocol</strong></td><td>Eclipse uProtocol — a transport-agnostic messaging protocol for vehicles bridging MQTT, SOME/IP, Zenoh, and others.</td></tr><tr><td><strong>ISO-TP</strong></td><td>ISO 15765-2 Transport Protocol — a CAN-based transport layer for multi-frame messages. Used in vehicle diagnostics.</td></tr><tr><td><strong>UDS</strong></td><td>Unified Diagnostic Services (ISO 14229) — the standard diagnostic protocol used by workshops to read fault codes and program ECUs.</td></tr><tr><td><strong>Digital Twin</strong></td><td>A virtual representation of a physical vehicle or component that mirrors its real-time state.</td></tr><tr><td><strong>AUTOSAR</strong></td><td>AUTomotive Open System ARchitecture — industry-wide software architecture standard for ECUs. AUTOSAR Adaptive Platform targets high-performance domains.</td></tr><tr><td><strong>OBD-II</strong></td><td>On-Board Diagnostics II — a standardized vehicle diagnostics interface present in all cars since the 1990s.</td></tr><tr><td><strong>ADAS</strong></td><td>Advanced Driver Assistance Systems — systems like automatic emergency braking, lane keeping, adaptive cruise control.</td></tr><tr><td><strong>SDV</strong></td><td>Software Defined Vehicle — a vehicle architecture where features are primarily defined and delivered through software rather than hardware.</td></tr><tr><td><strong>Cyclomatic Complexity</strong></td><td>A code metric measuring the number of independent paths through a function. Higher = more complex = harder to test and maintain. Aim for &lt;10.</td></tr><tr><td><strong>Nesting Depth</strong></td><td>How many levels deep the most deeply nested code is (if inside if inside loop, etc.). Deep nesting hurts readability.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+  </div>
+  <script>
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// Mermaid
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+</script>
+</body>
+</html>

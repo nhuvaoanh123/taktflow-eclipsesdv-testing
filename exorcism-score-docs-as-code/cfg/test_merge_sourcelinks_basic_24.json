@@ -1,0 +1,55 @@
+{
+  "function": "test_merge_sourcelinks_basic",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_merge_sourcelinks_basic",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 79
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 90
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 79
+    },
+    {
+      "id": 4,
+      "label": "exit:test_merge_sourcelinks_basic",
+      "line": 100
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

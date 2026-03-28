@@ -1,0 +1,87 @@
+{
+  "function": "stop_receiving_logs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stop_receiving_logs",
+      "line": 1180
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 1206
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 1210
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 1206
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 1211
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 1214
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 1211
+    },
+    {
+      "id": 7,
+      "label": "exit:stop_receiving_logs",
+      "line": 1215
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    }
+  ]
+}

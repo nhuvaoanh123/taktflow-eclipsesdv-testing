@@ -1,0 +1,21 @@
+{
+  "function": "handle_kuksa_val_v1",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_kuksa_val_v1",
+      "line": 61
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_kuksa_val_v1",
+      "line": 139
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

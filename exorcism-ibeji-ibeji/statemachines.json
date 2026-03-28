@@ -1,0 +1,25 @@
+{
+  "state_machines": [
+    {
+      "file": "samples/common/src/utils.rs",
+      "line": 210,
+      "type": "match",
+      "condition": "retry_async_based_on_status(\r\n                        30,\r\n                        Duration::from_secs(1),\r\n                        || discover_service_using_chariott(\r\n                            &value,\r\n                            INVEHICLE_DIGITAL_TWIN_SERVICE_NAMESPACE,\r\n                            INVEHICLE_DIGITAL_TWIN_SERVICE_NAME,\r\n                            INVEHICLE_DIGITAL_TWIN_SERVICE_VERSION,\r\n                            INVEHICLE_DIGITAL_TWIN_SERVICE_COMMUNICATION_KIND,\r\n                            INVEHICLE_DIGITAL_TWIN_SERVICE_COMMUNICATION_REFERENCE)\r\n                    ).await",
+      "states": [
+        "Ok(value)",
+        "Err(error)"
+      ]
+    },
+    {
+      "file": "samples/streaming/provider/src/provider_impl.rs",
+      "line": 203,
+      "type": "match",
+      "condition": "tx.send(Result::<_, Status>::Ok(item)).await",
+      "states": [
+        "Ok(_)",
+        "Err(err)"
+      ]
+    }
+  ],
+  "count": 2
+}

@@ -1,0 +1,5872 @@
+[
+  {
+    "function": "__run_cmd",
+    "file": "conanfile.py",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set_version",
+    "file": "conanfile.py",
+    "start_line": 45,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 7,
+    "loc": 27,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "config_options",
+    "file": "conanfile.py",
+    "start_line": 73,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "configure",
+    "file": "conanfile.py",
+    "start_line": 77,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "requirements",
+    "file": "conanfile.py",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "build_requirements",
+    "file": "conanfile.py",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "layout",
+    "file": "conanfile.py",
+    "start_line": 93,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "build",
+    "file": "conanfile.py",
+    "start_line": 104,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "package",
+    "file": "conanfile.py",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "package_info",
+    "file": "conanfile.py",
+    "start_line": 137,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/VehicleApp.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 36,
+    "nesting_depth": 0,
+    "loc": 129,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "VehicleApp",
+    "file": "sdk/include/sdk/VehicleApp.h",
+    "start_line": 39,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 0,
+    "loc": 84,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "onStart",
+    "file": "sdk/include/sdk/VehicleApp.h",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "onStop",
+    "file": "sdk/include/sdk/VehicleApp.h",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_isRunning",
+    "file": "sdk/include/sdk/VehicleApp.h",
+    "start_line": 152,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/Utils.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 105,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "StringUtils",
+    "file": "sdk/include/sdk/Utils.h",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SimpleUrlParse",
+    "file": "sdk/include/sdk/Utils.h",
+    "start_line": 94,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/DataPoint.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 0,
+    "loc": 41,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "DataPoint",
+    "file": "sdk/include/sdk/DataPoint.h",
+    "start_line": 40,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getType",
+    "file": "sdk/include/sdk/DataPoint.h",
+    "start_line": 55,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/Exceptions.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RpcException",
+    "file": "sdk/include/sdk/Exceptions.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "InvalidTypeException",
+    "file": "sdk/include/sdk/Exceptions.h",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "InvalidValueException",
+    "file": "sdk/include/sdk/Exceptions.h",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "AsyncException",
+    "file": "sdk/include/sdk/Exceptions.h",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/DataPointReply.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 1,
+    "loc": 65,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "DataPointReply",
+    "file": "sdk/include/sdk/DataPointReply.h",
+    "start_line": 40,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/ThreadPool.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ThreadPool",
+    "file": "sdk/include/sdk/ThreadPool.h",
+    "start_line": 37,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 42,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "QueryBuilder",
+    "file": "sdk/include/sdk/QueryBuilder.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 0,
+    "loc": 44,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "final",
+    "file": "sdk/include/sdk/QueryBuilder.h",
+    "start_line": 82,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 59,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/include/sdk/QueryBuilder.h",
+    "start_line": 135,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ScopedBoolInverter",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 35,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "insertResult",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 84,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "insertError",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 99,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "boolInverter",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 124,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 141,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 160,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_awaiting",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 210,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_status",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 211,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "next",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 234,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 255,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 268,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "insertNewItem",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 278,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "insertError",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 295,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "cancel",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 308,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_cancelled",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 315,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_status",
+    "file": "sdk/include/sdk/AsyncResult.h",
+    "start_line": 316,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/DataPointBatch.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 0,
+    "loc": 48,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "DataPointBatch",
+    "file": "sdk/include/sdk/DataPointBatch.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 0,
+    "loc": 39,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/Node.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 68,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Node",
+    "file": "sdk/include/sdk/Node.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 60,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/Logger.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 19,
+    "nesting_depth": 1,
+    "loc": 94,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ILogger",
+    "file": "sdk/include/sdk/Logger.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Logger",
+    "file": "sdk/include/sdk/Logger.h",
+    "start_line": 83,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setLoggerImplementation",
+    "file": "sdk/include/sdk/Logger.h",
+    "start_line": 156,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "logger",
+    "file": "sdk/include/sdk/Logger.h",
+    "start_line": 167,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "loggerInstance",
+    "file": "sdk/include/sdk/Logger.h",
+    "start_line": 168,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/IPubSubClient.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 122,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "IPubSubClient",
+    "file": "sdk/include/sdk/IPubSubClient.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 114,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "nanos",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Failure",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 74,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 45,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "clearUpdateStatus",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_timestamp",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 123,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_wasUpdated",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 125,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getValueType",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 130,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/include/sdk/DataPointValue.h",
+    "start_line": 223,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/Model.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Node",
+    "file": "sdk/include/sdk/Model.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Service",
+    "file": "sdk/include/sdk/Model.h",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/Job.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IJob",
+    "file": "sdk/include/sdk/Job.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IJob",
+    "file": "sdk/include/sdk/Job.h",
+    "start_line": 67,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "RecurringJob",
+    "file": "sdk/include/sdk/Job.h",
+    "start_line": 98,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "execute",
+    "file": "sdk/include/sdk/Job.h",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/VehicleModelContext.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 41,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "VehicleModelContext",
+    "file": "sdk/include/sdk/VehicleModelContext.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setVdbc",
+    "file": "sdk/include/sdk/VehicleModelContext.h",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/Status.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 44,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Status",
+    "file": "sdk/include/sdk/Status.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/vdb/IVehicleDataBrokerClient.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 62,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IVehicleDataBrokerClient",
+    "file": "sdk/include/sdk/vdb/IVehicleDataBrokerClient.h",
+    "start_line": 37,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/grpc/GrpcCall.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 1,
+    "loc": 84,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "GrpcCall",
+    "file": "sdk/include/sdk/grpc/GrpcCall.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 1,
+    "loc": 72,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "m_isComplete",
+    "file": "sdk/include/sdk/grpc/GrpcCall.h",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GrpcSingleResponseCall",
+    "file": "sdk/include/sdk/grpc/GrpcCall.h",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GrpcStreamingResponseCall",
+    "file": "sdk/include/sdk/grpc/GrpcCall.h",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/grpc/GrpcClient.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GrpcClient",
+    "file": "sdk/include/sdk/grpc/GrpcClient.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/grpc/AsyncGrpcFacade.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "AsyncGrpcFacade",
+    "file": "sdk/include/sdk/grpc/AsyncGrpcFacade.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/include/sdk/middleware/Middleware.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 101,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "Middleware",
+    "file": "sdk/include/sdk/middleware/Middleware.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 92,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "getInstance",
+    "file": "sdk/include/sdk/middleware/Middleware.h",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "sdk/include/sdk/middleware/Middleware.h",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "waitUntilReady",
+    "file": "sdk/include/sdk/middleware/Middleware.h",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "sdk/include/sdk/middleware/Middleware.h",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getMetadata",
+    "file": "sdk/include/sdk/middleware/Middleware.h",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 61,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 77,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 108,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 116,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/VehicleApp.cpp",
+    "start_line": 120,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Model.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Model.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "lowerJobPriority",
+    "file": "sdk/src/sdk/Job.cpp",
+    "start_line": 21,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Job.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Job.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Job.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Job.cpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "info",
+    "file": "sdk/src/sdk/Logger.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "warn",
+    "file": "sdk/src/sdk/Logger.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "error",
+    "file": "sdk/src/sdk/Logger.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "debug",
+    "file": "sdk/src/sdk/Logger.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "log",
+    "file": "sdk/src/sdk/Logger.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Logger.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Node.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Node.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Node.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Node.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/QueryBuilder.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/QueryBuilder.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/QueryBuilder.cpp",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getEnvVar",
+    "file": "sdk/src/sdk/Utils.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Utils.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Utils.cpp",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Utils.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/Utils.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "toString",
+    "file": "sdk/src/sdk/DataPointValue.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 56,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 77,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "executeJob",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 88,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/ThreadPool.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 91,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 95,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 99,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 103,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 115,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 123,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 131,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 135,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 139,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/DataPoint.cpp",
+    "start_line": 143,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/DataPointBatch.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/IVehicleDataBrokerClient.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "grpc",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "kuksa_val_v2",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "BrokerAsyncGrpcFacade",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.h",
+    "start_line": 35,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 40,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "initiate",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "cancel",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isCancelled",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Request",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 77,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setThisPtr",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getThisPtr",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "onResponse",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 87,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 3,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "onError",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 111,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 134,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "clear",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 142,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isPresent",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 147,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getByPath",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 151,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getById",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 158,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Query",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 172,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "addMetadata",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 181,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isFulfilled",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 187,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 188,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "notifyInitiator",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 192,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "notifyInitiator",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 203,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "notifyQueryInitiators",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 220,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "notifyQueryInitiators",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 226,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MetadataAgentImpl",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 236,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getByNumericId",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 270,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 275,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 281,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 294,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 302,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 317,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 323,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 329,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 337,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 343,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 2,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 378,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 384,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.cpp",
+    "start_line": 400,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "grpc",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "kuksa_val_v2",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 63,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "m_isKnown",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.h",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MetadataAgent",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/Metadata.h",
+    "start_line": 55,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 27,
+    "nesting_depth": 0,
+    "loc": 43,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "kuksa_val_v2",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 27,
+    "nesting_depth": 0,
+    "loc": 38,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "IVehicleDataBrokerClient",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.h",
+    "start_line": 36,
+    "cyclomatic_complexity": 27,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "assertProtobufArrayLimits",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 114,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 2,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 142,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isSignalProviderUnavailable",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 166,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 174,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "clearUpdateStatus",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 213,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "determineSubscribeBufferSize",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 219,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getSubscribeBufferSize",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 233,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getSignalPathAbstract",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 238,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SubscriptionHandler",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 250,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 259,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "onMetadataPresent",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 268,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "onUpdate",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 290,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "onError",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 306,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 2,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invalidateDataPointValues",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 330,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "resubscribe",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 360,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "resetResubscribeDelay",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 374,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "increaseResubscribeDelay",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 376,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getSubscription",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 383,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerClient.cpp",
+    "start_line": 399,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "kuksa_val_v2",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/TypeConversions.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "convertToGrpcValue",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/TypeConversions.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 136,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "convertValueArray",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/TypeConversions.cpp",
+    "start_line": 165,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "convertFromGrpcValue",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/TypeConversions.cpp",
+    "start_line": 171,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "convertFromGrpcDataPoint",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/TypeConversions.cpp",
+    "start_line": 220,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "parseQuery",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/TypeConversions.cpp",
+    "start_line": 234,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 2,
+    "loc": 25,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/kuksa_val_v2/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getChannelArguments",
+    "file": "sdk/src/sdk/vdb/grpc/common/ChannelConfiguration.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 5,
+    "loc": 34,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "grpc",
+    "file": "sdk/src/sdk/vdb/grpc/common/ChannelConfiguration.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/src/sdk/vdb/grpc/common/ChannelConfiguration.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "protobuf",
+    "file": "sdk/src/sdk/vdb/grpc/common/TypeConversions.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/src/sdk/vdb/grpc/common/TypeConversions.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "convertFromGrpcTimestamp",
+    "file": "sdk/src/sdk/vdb/grpc/common/TypeConversions.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sdv_databroker_v1",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 26,
+    "nesting_depth": 0,
+    "loc": 45,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "GrpcDataPointValueProvider",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 26,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "grpc",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerAsyncGrpcFacade.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sdv_databroker_v1",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerAsyncGrpcFacade.h",
+    "start_line": 36,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 81,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 88,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 107,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 135,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 142,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 154,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 161,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 173,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 177,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 183,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 187,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 193,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 197,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/GrpcDataPointValueProvider.cpp",
+    "start_line": 203,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sdv_databroker_v1",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/IDataPointValueProvider.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 69,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IDataPointValueProvider",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/IDataPointValueProvider.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 60,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sdv_databroker_v1",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 21,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "IVehicleDataBrokerClient",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 21,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "mapToGrpcType",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "convertToGrpcDataPoint",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 146,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "convertDataPointToInternal",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 221,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 64,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 286,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 306,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerClient.cpp",
+    "start_line": 331,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/vdb/grpc/sdv_databroker_v1/BrokerAsyncGrpcFacade.cpp",
+    "start_line": 95,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/grpc/GrpcClient.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/grpc/GrpcClient.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/grpc/AsyncGrpcFacade.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/grpc/AsyncGrpcFacade.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttPubSubClient",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttPubSubClient",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttPubSubClient",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttPubSubClient",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttPubSubClient",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttPubSubClient",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MqttPubSubClient",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "connect",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 76,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "disconnect",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isConnected",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "publishOnTopic",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 91,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "subscribeTopic",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "message_arrived",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 105,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 133,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 137,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 142,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 148,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp",
+    "start_line": 154,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/src/sdk/middleware/NativeMiddleware.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "NativeMiddleware",
+    "file": "sdk/src/sdk/middleware/NativeMiddleware.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/middleware/NativeMiddleware.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getDefaultLocation",
+    "file": "sdk/src/sdk/middleware/NativeMiddleware.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getServiceEnvVarName",
+    "file": "sdk/src/sdk/middleware/NativeMiddleware.cpp",
+    "start_line": 45,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/middleware/NativeMiddleware.cpp",
+    "start_line": 49,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/middleware/NativeMiddleware.cpp",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/src/sdk/middleware/Middleware.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 2,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/tests/model/Vehicle.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 60,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "vehicle",
+    "file": "sdk/tests/model/Vehicle.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 54,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "cabin",
+    "file": "sdk/tests/model/Vehicle.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParentClass",
+    "file": "sdk/tests/model/Vehicle.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParentClass",
+    "file": "sdk/tests/model/Vehicle.h",
+    "start_line": 40,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParentClass",
+    "file": "sdk/tests/model/Vehicle.h",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/tests/unit/TestBaseUsingEnvVars.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/tests/unit/TestBaseUsingEnvVars.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/tests/unit/TestBaseUsingEnvVars.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/tests/unit/TestBaseUsingEnvVars.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/QueryBuilder_tests.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/QueryBuilder_tests.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/QueryBuilder_tests.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/QueryBuilder_tests.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/QueryBuilder_tests.cpp",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 95,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 113,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Utils_tests.cpp",
+    "start_line": 124,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Node_tests.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Node_tests.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Middleware_tests.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Middleware_tests.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Middleware_tests.cpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Middleware_tests.cpp",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "execute",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "finish",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "throwException",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "waitForExecution",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "waitForFinished",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getExecutionState",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "shallRecur",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "cancel",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 98,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createAndExecuteJob",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "finishJob",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "stopCreatedJobs",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 112,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "occupyAllWorkers",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 119,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 137,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 143,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 145,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 156,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 166,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 174,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 189,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 203,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 213,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 224,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/ThreadPool_tests.cpp",
+    "start_line": 237,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "info",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "warn",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "error",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "debug",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getLogLevel",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 80,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 144,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 154,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 164,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 181,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 191,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/Logger_tests.cpp",
+    "start_line": 201,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 73,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 60,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 134,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 80,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 215,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 219,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 225,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 234,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 239,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 250,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 256,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/Job_tests.cpp",
+    "start_line": 264,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setTestCaseImpl",
+    "file": "sdk/tests/unit/DataPoint_tests.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getTestCaseImpl",
+    "file": "sdk/tests/unit/DataPoint_tests.cpp",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/DataPoint_tests.cpp",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/DataPoint_tests.cpp",
+    "start_line": 113,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/AsyncSubscription_tests.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/AsyncSubscription_tests.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "sdk/tests/unit/DataPointBatch_tests.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "bla",
+    "file": "sdk/tests/unit/DataPointBatch_tests.cpp",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/DataPointBatch_tests.cpp",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/DataPointBatch_tests.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/DataPointBatch_tests.cpp",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/DataPointBatch_tests.cpp",
+    "start_line": 99,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 82,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "valueType",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createTypedDataPointValue",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createTypedDataPointValue",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 112,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 142,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "checkTypedDataPointValueCtor",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/DataPointValue_tests.cpp",
+    "start_line": 176,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 41,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/tests/unit/TestBaseUsingEnvVars.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 44,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TestUsingEnvVars",
+    "file": "sdk/tests/unit/TestBaseUsingEnvVars.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/ScopedBoolInverter_tests.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/ScopedBoolInverter_tests.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/ScopedBoolInverter_tests.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/ScopedBoolInverter_tests.cpp",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/AsyncResult_tests.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/AsyncResult_tests.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/AsyncResult_tests.cpp",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/AsyncResult_tests.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/AsyncResult_tests.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "sdk/tests/unit/PubSub_tests.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "sdk/tests/unit/PubSub_tests.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "receivedMessage",
+    "file": "sdk/tests/unit/PubSub_tests.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "waitForMessage",
+    "file": "sdk/tests/unit/PubSub_tests.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/PubSub_tests.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "sdk/tests/unit/NativeMiddleware_tests.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "sdk/tests/unit/testmain.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "sdk/tests/unit/testmain.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 95,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 105,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 110,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 115,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 120,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 125,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 130,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 135,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 145,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createGrpcValue",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 150,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testValueConversion",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 156,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 177,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 207,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 211,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 215,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 219,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 230,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/kuksa_val_v2/TypeConversions_tests.cpp",
+    "start_line": 246,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/vdb/grpc/sdv_databroker_v1/BrokerClient_tests.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/grpc/GrpcClient_tests.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/grpc/GrpcClient_tests.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/grpc/GrpcClient_tests.cpp",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "sdk/tests/unit/grpc/GrpcClient_tests.cpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "sdk/tests/mocks/VehicleDataBrokerClientMock.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "VehicleDataBrokerClientMock",
+    "file": "sdk/tests/mocks/VehicleDataBrokerClientMock.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "requirements",
+    "file": "test_package/conanfile.py",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "build",
+    "file": "test_package/conanfile.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "layout",
+    "file": "test_package/conanfile.py",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test",
+    "file": "test_package/conanfile.py",
+    "start_line": 43,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "test_package/main.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetDataPointsApp",
+    "file": "examples/set-data-points/src/SetDataPointsApp.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "onStart",
+    "file": "examples/set-data-points/src/SetDataPointsApp.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 2,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/set-data-points/src/SetDataPointsApp.cpp",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/set-data-points/src/SetDataPointsApp.cpp",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 47,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 101,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 125,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 133,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.cpp",
+    "start_line": 138,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "example",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 52,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SeatAdjusterApp",
+    "file": "examples/seat-adjuster/src/SeatAdjusterApp.h",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 41,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "examples/example_model/vehicle/Vehicle.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParentClass",
+    "file": "examples/example_model/vehicle/Vehicle.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "examples/example_model/vehicle/Cabin/Cabin.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 52,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParentClass",
+    "file": "examples/example_model/vehicle/Cabin/Cabin.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "velocitas",
+    "file": "examples/example_model/vehicle/Cabin/Seat/Seat.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParentClass",
+    "file": "examples/example_model/vehicle/Cabin/Seat/Seat.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/grpc_server/src/Launcher.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/grpc_server/src/SeatsServiceImpl.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 2,
+    "loc": 34,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/grpc_server/src/SeatsServiceImpl.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/grpc_server/src/SeatsServiceImpl.cpp",
+    "start_line": 70,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 1,
+    "loc": 30,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "velocitas",
+    "file": "examples/grpc_server/src/SeatsServiceImpl.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SeatsService",
+    "file": "examples/grpc_server/src/SeatsServiceImpl.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/grpc_client/src/Launcher.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 2,
+    "loc": 53,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "signal_handler",
+    "file": "examples/performance-subscribe/src/Launcher.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getDefaultConfigFilePath",
+    "file": "examples/performance-subscribe/src/Launcher.cpp",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "readSignalNameFromFiles",
+    "file": "examples/performance-subscribe/src/Launcher.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "examples/performance-subscribe/src/Launcher.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getValueRepresentation",
+    "file": "examples/performance-subscribe/src/PerformanceTestApp.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getTimestamp",
+    "file": "examples/performance-subscribe/src/PerformanceTestApp.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/performance-subscribe/src/PerformanceTestApp.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "examples/performance-subscribe/src/PerformanceTestApp.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "example",
+    "file": "examples/performance-subscribe/src/PerformanceTestApp.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "PerformanceTestApp",
+    "file": "examples/performance-subscribe/src/PerformanceTestApp.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  }
+]

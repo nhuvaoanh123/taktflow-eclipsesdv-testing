@@ -1,0 +1,21 @@
+{
+  "function": "unregister_point_to_point_listener",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:unregister_point_to_point_listener",
+      "line": 532
+    },
+    {
+      "id": 1,
+      "label": "exit:unregister_point_to_point_listener",
+      "line": 621
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

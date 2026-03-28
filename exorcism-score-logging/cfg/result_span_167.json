@@ -1,0 +1,21 @@
+{
+  "function": "result_span",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:result_span",
+      "line": 167
+    },
+    {
+      "id": 1,
+      "label": "exit:result_span",
+      "line": 174
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

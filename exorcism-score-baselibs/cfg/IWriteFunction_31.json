@@ -1,0 +1,21 @@
+{
+  "function": "IWriteFunction",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IWriteFunction",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:IWriteFunction",
+      "line": 44
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

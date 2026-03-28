@@ -1,0 +1,21 @@
+{
+  "function": "ExpectSendConnectMessage",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ExpectSendConnectMessage",
+      "line": 372
+    },
+    {
+      "id": 1,
+      "label": "exit:ExpectSendConnectMessage",
+      "line": 394
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

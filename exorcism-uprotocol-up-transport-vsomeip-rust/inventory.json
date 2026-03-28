@@ -1,0 +1,26 @@
+{
+  "project": "uprotocol-up-transport-vsomeip-rust",
+  "files_by_language": {
+    "Rust": {
+      "files": 31,
+      "loc": 7842
+    },
+    "C": {
+      "files": 5,
+      "loc": 348
+    },
+    "C++": {
+      "files": 2,
+      "loc": 112
+    }
+  },
+  "total_files": 38,
+  "total_loc": 8302,
+  "total_functions": 236,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust",
+    "C",
+    "C++"
+  ]
+}

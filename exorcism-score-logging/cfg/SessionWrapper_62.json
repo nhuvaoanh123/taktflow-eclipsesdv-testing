@@ -1,0 +1,21 @@
+{
+  "function": "SessionWrapper",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SessionWrapper",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:SessionWrapper",
+      "line": 211
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

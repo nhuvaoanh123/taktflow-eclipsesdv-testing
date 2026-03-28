@@ -1,0 +1,21 @@
+{
+  "function": "resume_and_remove_from_added_workloads",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:resume_and_remove_from_added_workloads",
+      "line": 200
+    },
+    {
+      "id": 1,
+      "label": "exit:resume_and_remove_from_added_workloads",
+      "line": 383
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

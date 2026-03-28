@@ -1,0 +1,21 @@
+{
+  "function": "StubPTPEngine",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:StubPTPEngine",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:StubPTPEngine",
+      "line": 85
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

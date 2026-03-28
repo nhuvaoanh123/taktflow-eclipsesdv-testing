@@ -1,0 +1,21 @@
+{
+  "function": "TestLoadLocalConfig",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestLoadLocalConfig",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:TestLoadLocalConfig",
+      "line": 50
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

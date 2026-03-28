@@ -1,0 +1,16 @@
+{
+  "project": "uprotocol-up-transport-mqtt5-rust",
+  "files_by_language": {
+    "Rust": {
+      "files": 10,
+      "loc": 4228
+    }
+  },
+  "total_files": 10,
+  "total_loc": 4228,
+  "total_functions": 102,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

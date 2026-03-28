@@ -1,0 +1,2262 @@
+[
+  {
+    "function": "new",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "start_line": 80,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "layer",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "retrieve_grpc_names_from_uri",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "start_line": 105,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 7,
+    "loc": 22,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "poll_ready",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "start_line": 145,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "call",
+    "file": "core/common/src/grpc_interceptor.rs",
+    "start_line": 151,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 6,
+    "loc": 88,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "core/common/src/utils.rs",
+    "start_line": 45,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "execute_with_retry",
+    "file": "core/common/src/utils.rs",
+    "start_line": 68,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 33,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "core/common/src/utils.rs",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "discover_service_using_chariott",
+    "file": "core/common/src/utils.rs",
+    "start_line": 111,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 3,
+    "loc": 32,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "get_service_uri",
+    "file": "core/common/src/utils.rs",
+    "start_line": 150,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 37,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "is_subset",
+    "file": "core/common/src/utils.rs",
+    "start_line": 193,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 2,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_function",
+    "file": "core/common/src/utils.rs",
+    "start_line": 206,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_retry_async_function",
+    "file": "core/common/src/utils.rs",
+    "start_line": 217,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "is_subset_test",
+    "file": "core/common/src/utils.rs",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "core/common/src/grpc_server.rs",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "add_module",
+    "file": "core/common/src/grpc_server.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "construct_server",
+    "file": "core/common/src/grpc_server.rs",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "sample_grpc_interceptor_factory",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "is_applicable",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "start_line": 33,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "must_handle_request",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "must_handle_response",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "handle_request",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "handle_response",
+    "file": "core/common/src/sample_grpc_interceptor.rs",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "register_invehicle_digital_twin_service_with_chariott",
+    "file": "core/invehicle-digital-twin/src/main.rs",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 26,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "build_app_server_and_serve",
+    "file": "core/invehicle-digital-twin/src/main.rs",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 74,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "core/invehicle-digital-twin/src/main.rs",
+    "start_line": 177,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 76,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_by_id",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "start_line": 28,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 29,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "register",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "register_entity",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "start_line": 87,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 4,
+    "loc": 20,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_by_id_test",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "start_line": 115,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_test",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_impl.rs",
+    "start_line": 168,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "load_settings",
+    "file": "core/invehicle-digital-twin/src/invehicle_digital_twin_config.rs",
+    "start_line": 17,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "find_by_model_id",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "start_line": 31,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 28,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "find_by_instance_id",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "start_line": 64,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 6,
+    "loc": 36,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "register",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "start_line": 105,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 23,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "register_entity",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "start_line": 135,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 4,
+    "loc": 54,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_by_model_id_test",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "start_line": 196,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "find_by_instance_id_test",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "start_line": 241,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_test",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_impl.rs",
+    "start_line": 286,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_module.rs",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add_grpc_services",
+    "file": "core/module/digital_twin_registry/src/digital_twin_registry_module.rs",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create_interceptor",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 120,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "create_managed_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 128,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 21,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "delete_managed_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 154,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 17,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_grpc_services",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 178,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "call_provider_management_cb",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 194,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_subscription_info",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 220,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 56,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "manage_topic_callback",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs",
+    "start_line": 284,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 4,
+    "loc": 99,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add_entity",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "contains_entity",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_entity_metadata",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_entity_id",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "add_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "remove_topic",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_store.rs",
+    "start_line": 102,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 13,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "is_applicable",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "start_line": 39,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "must_handle_request",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "must_handle_response",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "handle_request",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "start_line": 60,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 6,
+    "loc": 60,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "handle_response",
+    "file": "core/module/managed_subscribe/src/managed_subscribe_interceptor.rs",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_module.rs",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add_grpc_services",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_module.rs",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "load_settings",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_config.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "load_settings_with_config_filename",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_config.rs",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_graph/src/respond_impl.rs",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "answer",
+    "file": "core/module/digital_twin_graph/src/respond_impl.rs",
+    "start_line": 32,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "find_digital_twin_providers_with_model_id",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 74,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 35,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "find_digital_twin_providers_with_instance_id",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 116,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 36,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "send_ask",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 23,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "wait_for_answer",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 189,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 6,
+    "loc": 38,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 235,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 92,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 332,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 69,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 406,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "invoke",
+    "file": "core/module/digital_twin_graph/src/digital_twin_graph_impl.rs",
+    "start_line": 419,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 75,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "core/protobuf_data_access/build.rs",
+    "start_line": 5,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create_canvas",
+    "file": "samples/common/src/image_rendering.rs",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "resize_image_to_fit_in_canvas",
+    "file": "samples/common/src/image_rendering.rs",
+    "start_line": 50,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "render_image_to_canvas",
+    "file": "samples/common/src/image_rendering.rs",
+    "start_line": 71,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 35,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/common/src/provider_config.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "load_settings_with_config_filename",
+    "file": "samples/common/src/provider_config.rs",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 28,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "is_subset",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 49,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 2,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "retry_async_based_on_status",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 62,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 7,
+    "loc": 33,
+    "param_count": 3,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "discover_digital_twin_provider_using_ibeji",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 103,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 3,
+    "loc": 40,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "discover_service_using_chariott",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 153,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "retrieve_invehicle_digital_twin_uri",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 194,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 6,
+    "loc": 40,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "is_subset_test",
+    "file": "samples/common/src/utils.rs",
+    "start_line": 240,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/common/src/consumer_config.rs",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "start_get_signals_repeater",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "start_line": 34,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 20,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "start_show_notification_repeater",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "start_line": 59,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 37,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "send_get_request",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "start_line": 102,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/tutorial/consumer/src/main.rs",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 67,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_entities",
+    "file": "samples/tutorial/provider/src/main.rs",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 60,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/tutorial/provider/src/main.rs",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get",
+    "file": "samples/tutorial/provider/src/provider_impl.rs",
+    "start_line": 22,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 14,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "invoke",
+    "file": "samples/tutorial/provider/src/provider_impl.rs",
+    "start_line": 41,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "receive_ambient_air_temperature_updates",
+    "file": "samples/property/consumer/src/main.rs",
+    "start_line": 24,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 8,
+    "loc": 50,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/property/consumer/src/main.rs",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_ambient_air_temperature",
+    "file": "samples/property/provider/src/main.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 28,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "create_property_json",
+    "file": "samples/property/provider/src/main.rs",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "start_ambient_air_temperature_data_stream",
+    "file": "samples/property/provider/src/main.rs",
+    "start_line": 83,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 8,
+    "loc": 39,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "publish_message",
+    "file": "samples/property/provider/src/main.rs",
+    "start_line": 129,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 28,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "convert_dtmi_to_topic",
+    "file": "samples/property/provider/src/main.rs",
+    "start_line": 164,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 4,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/property/provider/src/main.rs",
+    "start_line": 182,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "start_show_notification_repeater",
+    "file": "samples/command/consumer/src/main.rs",
+    "start_line": 35,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 6,
+    "loc": 44,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/command/consumer/src/main.rs",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "samples/command/consumer/src/consumer_impl.rs",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "respond",
+    "file": "samples/command/consumer/src/consumer_impl.rs",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "respond_test",
+    "file": "samples/command/consumer/src/consumer_impl.rs",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_show_notification",
+    "file": "samples/command/provider/src/main.rs",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/command/provider/src/main.rs",
+    "start_line": 56,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "invoke",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 48,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "stream",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "start_line": 134,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "invoke_test",
+    "file": "samples/command/provider/src/provider_impl.rs",
+    "start_line": 159,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/streaming/consumer/src/streaming_consumer_config.rs",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "stream_images",
+    "file": "samples/streaming/consumer/src/main.rs",
+    "start_line": 29,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 4,
+    "loc": 42,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/streaming/consumer/src/main.rs",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_entities",
+    "file": "samples/streaming/provider/src/main.rs",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 30,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/streaming/provider/src/main.rs",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "read_image_file",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "next",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 67,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 94,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_filenames_from_image_directory",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 99,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 16,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 153,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 163,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "invoke",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 173,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "stream",
+    "file": "samples/streaming/provider/src/provider_impl.rs",
+    "start_line": 186,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 33,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "load_settings",
+    "file": "samples/streaming/provider/src/streaming_provider_config.rs",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/protobuf_data_access/build.rs",
+    "start_line": 5,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 42,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "start_seat_massage_steps",
+    "file": "samples/seat_massager/consumer/src/main.rs",
+    "start_line": 37,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 9,
+    "loc": 108,
+    "param_count": 4,
+    "flags": [
+      "high_complexity",
+      "high_nesting",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/seat_massager/consumer/src/main.rs",
+    "start_line": 147,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "samples/seat_massager/consumer/src/respond_impl.rs",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "answer",
+    "file": "samples/seat_massager/consumer/src/respond_impl.rs",
+    "start_line": 31,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "register_airbag_massager",
+    "file": "samples/seat_massager/provider/src/main.rs",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/seat_massager/provider/src/main.rs",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 40,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ask",
+    "file": "samples/seat_massager/provider/src/request_impl.rs",
+    "start_line": 31,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 4,
+    "loc": 85,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "notify",
+    "file": "samples/seat_massager/provider/src/request_impl.rs",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get_ambient_air_temperature_subscription_info",
+    "file": "samples/managed_subscribe/consumer/src/main.rs",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "receive_ambient_air_temperature_updates",
+    "file": "samples/managed_subscribe/consumer/src/main.rs",
+    "start_line": 58,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 9,
+    "loc": 70,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/managed_subscribe/consumer/src/main.rs",
+    "start_line": 130,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 71,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "register_ambient_air_temperature",
+    "file": "samples/managed_subscribe/provider/src/main.rs",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "start_ambient_air_temperature_data_stream",
+    "file": "samples/managed_subscribe/provider/src/main.rs",
+    "start_line": 65,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 8,
+    "loc": 41,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/managed_subscribe/provider/src/main.rs",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create_property_json",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "publish_message",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "start_line": 76,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 28,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "handle_publish_action",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "start_line": 126,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 6,
+    "loc": 65,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "handle_stop_publish_action",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "start_line": 196,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "topic_management_cb",
+    "file": "samples/managed_subscribe/provider/src/provider_impl.rs",
+    "start_line": 223,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 17,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "start_show_notification_repeater",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "start_line": 45,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 6,
+    "loc": 46,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "start_activate_air_conditioning_repeater",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "start_line": 96,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 6,
+    "loc": 42,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "send_subscribe_request",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "start_line": 145,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/mixed/consumer/src/main.rs",
+    "start_line": 164,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 118,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "publish",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "respond",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "publish_test",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "respond_test",
+    "file": "samples/mixed/consumer/src/consumer_impl.rs",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_entities",
+    "file": "samples/mixed/provider/src/main.rs",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 78,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "samples/mixed/provider/src/main.rs",
+    "start_line": 144,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 4,
+    "loc": 38,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "start_vehicle_simulator",
+    "file": "samples/mixed/provider/src/main.rs",
+    "start_line": 188,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 68,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "samples/mixed/provider/src/main.rs",
+    "start_line": 258,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "set_is_air_conditioning_active",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "show_notification",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 60,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 95,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "set",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 118,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 6,
+    "loc": 38,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 161,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 4,
+    "loc": 50,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "stream",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 216,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "subscribe_test",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 232,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 50,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invoke_test",
+    "file": "samples/mixed/provider/src/provider_impl.rs",
+    "start_line": 284,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "new",
+    "file": "samples/mixed/provider/src/vehicle.rs",
+    "start_line": 16,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "execute_epoch",
+    "file": "samples/mixed/provider/src/vehicle.rs",
+    "start_line": 24,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 5,
+    "loc": 24,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "add_entry_to_instance_map",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "create_provider_state",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 150,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "register_vehicle_parts",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "start_line": 219,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 56,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/main.rs",
+    "start_line": 277,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/request_impl.rs",
+    "start_line": 56,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 6,
+    "loc": 63,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "ask",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/request_impl.rs",
+    "start_line": 127,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 28,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "notify",
+    "file": "samples/digital_twin_graph/vehicle_core_provider/src/request_impl.rs",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "connect_to_digital_twin_graph_service",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "find",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 22,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "get",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 24,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "invoke",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 122,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "find_vehicle",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 151,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "find_cabin",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 176,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 23,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "find_seat",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 209,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 4,
+    "loc": 31,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_premium_airbag_seat_massager",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 248,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 35,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "perform_step",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 294,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 34,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "interact_with_digital_twin",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 335,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 39,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/digital_twin_graph/consumer/src/main.rs",
+    "start_line": 376,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add_entry_to_instance_map",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "create_provider_state",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 79,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "register_seat_massagers",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "start_line": 148,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 2,
+    "loc": 59,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/main.rs",
+    "start_line": 209,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "start_line": 57,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 6,
+    "loc": 63,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "start_line": 128,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 6,
+    "loc": 81,
+    "param_count": 4,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "perform_step",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "start_line": 213,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "ask",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "start_line": 238,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 4,
+    "loc": 31,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "notify",
+    "file": "samples/digital_twin_graph/seat_massager_provider/src/request_impl.rs",
+    "start_line": 274,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "context",
+    "file": "digital-twin-model/src/sdv_v1.rs",
+    "start_line": 11,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "dtdl-tools/build.rs",
+    "start_line": 11,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 19,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "validate_dtdl_files",
+    "file": "dtdl-tools/src/lib.rs",
+    "start_line": 26,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "validate_digital_twin_model_dtdl_files",
+    "file": "dtdl-tools/src/lib.rs",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "function": "config",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:config",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:config",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

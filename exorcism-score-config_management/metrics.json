@@ -1,0 +1,5479 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 2,
+    "loc": 21,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 73,
+    "cyclomatic_complexity": 31,
+    "nesting_depth": 1,
+    "loc": 43,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 122,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 146,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "start_line": 170,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 2,
+    "loc": 29,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 153,
+    "nesting_depth": 3,
+    "loc": 160,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 102,
+    "nesting_depth": 1,
+    "loc": 95,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 102,
+    "nesting_depth": 1,
+    "loc": 91,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ParameterSet",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 102,
+    "nesting_depth": 1,
+    "loc": 87,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "CoverParameterSetAPI",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GenerateDummyJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 44,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GenerateDummyParameterSetJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GenerateDummySimpleParameterSetJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 116,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GenerateDummySimpleOfParametersJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 135,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 161,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 188,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 215,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 241,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 268,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 293,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 312,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 337,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 355,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 373,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 84,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 458,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 479,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 515,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 538,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 556,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 575,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 597,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 614,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 636,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 647,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 671,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 686,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 701,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 729,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 748,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 766,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 786,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 799,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 832,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 865,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 898,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 2,
+    "loc": 41,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 940,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 2,
+    "loc": 41,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 982,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 2,
+    "loc": 42,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1025,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 128,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1154,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1170,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1186,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1206,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1226,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 57,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1284,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "start_line": 1311,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 55,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 52,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 49,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "Persistency",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "start_line": 39,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "PersistencyMock",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TestMessage",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error_test.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error_test.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error_test.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MessageFor",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MakeError",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "PersistencyError",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 25,
+    "nesting_depth": 0,
+    "loc": 64,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 25,
+    "nesting_depth": 0,
+    "loc": 61,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 25,
+    "nesting_depth": 0,
+    "loc": 58,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ConfigProvider",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "start_line": 37,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 0,
+    "loc": 50,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/initial_qualifier_state_types.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_provider/code/config_provider/initial_qualifier_state_types.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_provider/code/config_provider/initial_qualifier_state_types.h",
+    "start_line": 38,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 26,
+    "nesting_depth": 0,
+    "loc": 56,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 26,
+    "nesting_depth": 0,
+    "loc": 53,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 26,
+    "nesting_depth": 0,
+    "loc": 50,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "Get",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CreateService",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 100,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 123,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 145,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "start_line": 169,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 79,
+    "nesting_depth": 0,
+    "loc": 130,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 79,
+    "nesting_depth": 0,
+    "loc": 127,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 79,
+    "nesting_depth": 0,
+    "loc": 123,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "ConfigProviderFactory",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "start_line": 38,
+    "cyclomatic_complexity": 76,
+    "nesting_depth": 0,
+    "loc": 115,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.cpp",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "UnblockMakeProxyAvailable",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "BlockUntilProxyIsReady",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 90,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUpPersistency",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 102,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "FailProxySearch",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 124,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUpProxyButProxyCouldNotProvideInitialQualifierStateOnFirstRequest",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 129,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUpProxy",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 143,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CreateConfigProviderWithAvailableCallback",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 182,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 218,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 249,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 281,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 305,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 332,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 368,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 390,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 413,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 465,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 487,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 42,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 530,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 554,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 44,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 599,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 633,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 667,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 701,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 741,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 779,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 61,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 841,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 875,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 913,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 52,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 966,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 63,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1030,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 68,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1099,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1136,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1166,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1195,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1215,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1245,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 58,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1304,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1324,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1342,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1367,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1382,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1403,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1430,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1460,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1482,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 56,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1543,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 78,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1622,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 52,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1675,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 62,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1738,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 64,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1810,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CoverConfigProviderAPI",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "start_line": 1862,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "GetParameterSetValue",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 2,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ConvertInitialQualifierStateToInitialQualifierState",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 79,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 128,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 2,
+    "loc": 19,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 148,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 155,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 175,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 205,
+    "cyclomatic_complexity": 16,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 226,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 231,
+    "cyclomatic_complexity": 25,
+    "nesting_depth": 1,
+    "loc": 45,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 277,
+    "cyclomatic_complexity": 26,
+    "nesting_depth": 1,
+    "loc": 61,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 339,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 360,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 366,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 371,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 376,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 404,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 410,
+    "cyclomatic_complexity": 30,
+    "nesting_depth": 2,
+    "loc": 45,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 456,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 471,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 477,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 2,
+    "loc": 24,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 502,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 516,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 1,
+    "loc": 28,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 545,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "start_line": 565,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MessageFor",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.cpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 57,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MakeError",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.cpp",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TestMessage",
+    "file": "score/config_management/config_provider/code/config_provider/error/error_test.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/config_provider/error/error_test.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ConfigProviderError",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider_mock.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider_mock.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider_mock.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "start_line": 31,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IInternalConfigProvider",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "start_line": 35,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CreateService",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "CreateProxy",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "start_line": 116,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 59,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 56,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.h",
+    "start_line": 36,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 53,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "Convert",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 34,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 70,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 85,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 95,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 104,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 116,
+    "cyclomatic_complexity": 20,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 150,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 3,
+    "loc": 49,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 200,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 210,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "start_line": 221,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 1,
+    "loc": 46,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "TestMainFunction",
+    "file": "score/config_management/config_daemon/code/main_test.cpp",
+    "start_line": 39,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/main_test.cpp",
+    "start_line": 61,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "score/config_management/config_daemon/code/main.cpp",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "InternalConfigProviderServiceReactor",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ProvidedService",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "InternalConfigProviderServiceReactorMock",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.cpp",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUpTestSuite",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 105,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "start_line": 146,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Convert",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 51,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "start_line": 93,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "start_line": 109,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "start_line": 118,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "start_line": 124,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "start_line": 138,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 39,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "mw_com_icp_types",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IPluginCreator",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IPlugin",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IPluginCollector",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl_test.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl_test.cpp",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl_test.cpp",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 1,
+    "loc": 26,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "ParameterSetQualifier",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 40,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 34,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IReadOnlyParameterSetCollection",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IReadOnlyParameterSetCollection",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 47,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 44,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 41,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 38,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 117,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 71,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 189,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 208,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 223,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 238,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 258,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 292,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 316,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 332,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 348,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 387,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 399,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 419,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 2,
+    "loc": 97,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 517,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "start_line": 539,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 87,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 102,
+    "cyclomatic_complexity": 19,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 136,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 153,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "start_line": 167,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 43,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 40,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "start_line": 34,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 37,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "start_line": 36,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 34,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "ParameterSet",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "start_line": 39,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Parameter",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetValue",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "start_line": 37,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 98,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 136,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 166,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "start_line": 198,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "AsString",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 57,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 2,
+    "loc": 40,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 98,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 109,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 124,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 139,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 144,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "start_line": 149,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MessageFor",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "MakeError",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.cpp",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TestMessage",
+    "file": "score/config_management/config_daemon/code/data_model/error/error_test.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_daemon/code/data_model/error/error_test.cpp",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "DataModelError",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 0,
+    "loc": 46,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 0,
+    "loc": 43,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 0,
+    "loc": 40,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 32,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 29,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "IFactory",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "start_line": 33,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 68,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 65,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 62,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "StubServiceContainer",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 54,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "StartServices",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "StopServices",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetNumServices",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.cpp",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.cpp",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/service_container_selector.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/service_container_selector.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/service_container_selector.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_impl.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_impl.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_impl.h",
+    "start_line": 29,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "start_line": 49,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "start_line": 70,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "start_line": 85,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "start_line": 99,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUpTestSuite",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 85,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 134,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 177,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 205,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 223,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 236,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "start_line": 247,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "FaultEventId",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "FaultEventReporterMock",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "start_line": 17,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "start_line": 19,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IFaultEventReporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "start_line": 18,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IFaultEventReporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.cpp",
+    "start_line": 27,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.cpp",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl_test.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl_test.cpp",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl_test.cpp",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "common",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "start_line": 24,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "start_line": 26,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "common",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "IJsonHelper",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "start_line": 39,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "common",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 23,
+    "nesting_depth": 0,
+    "loc": 27,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "start_line": 18,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "start_line": 20,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "start_line": 22,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Application",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "start_line": 25,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "start_line": 36,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "start_line": 54,
+    "cyclomatic_complexity": 21,
+    "nesting_depth": 1,
+    "loc": 39,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "start_line": 94,
+    "cyclomatic_complexity": 32,
+    "nesting_depth": 1,
+    "loc": 68,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "start_line": 163,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.h",
+    "start_line": 28,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.h",
+    "start_line": 30,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 33,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.h",
+    "start_line": 32,
+    "cyclomatic_complexity": 18,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 105,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 0,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 130,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 135,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 168,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 187,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 209,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 238,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 265,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 282,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 304,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 325,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 348,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 371,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "start_line": 394,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "start_line": 19,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_hello",
+    "file": "tests/rust/test_main.rs",
+    "start_line": 2,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "add",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 16,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/cpp/test_main.cpp",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  }
+]

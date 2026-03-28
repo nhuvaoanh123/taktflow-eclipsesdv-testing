@@ -1,0 +1,220 @@
+{
+  "function": "Initialize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Initialize",
+      "line": 60
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 61
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 63
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 61
+    },
+    {
+      "id": 4,
+      "label": "loop (for_statement)",
+      "line": 71
+    },
+    {
+      "id": 5,
+      "label": "loop_exit",
+      "line": 103
+    },
+    {
+      "id": 6,
+      "label": "body",
+      "line": 71
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 105
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 109
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 105
+    },
+    {
+      "id": 10,
+      "label": "if (...)",
+      "line": 124
+    },
+    {
+      "id": 11,
+      "label": "merge",
+      "line": 128
+    },
+    {
+      "id": 12,
+      "label": "then",
+      "line": 124
+    },
+    {
+      "id": 13,
+      "label": "if (...)",
+      "line": 143
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 145
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 143
+    },
+    {
+      "id": 16,
+      "label": "if (...)",
+      "line": 149
+    },
+    {
+      "id": 17,
+      "label": "merge",
+      "line": 151
+    },
+    {
+      "id": 18,
+      "label": "then",
+      "line": 149
+    },
+    {
+      "id": 19,
+      "label": "exit:Initialize",
+      "line": 159
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "done"
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "continue"
+    },
+    {
+      "from": 6,
+      "to": 4,
+      "label": "back"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 10,
+      "to": 12,
+      "label": "true"
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "label": "false"
+    },
+    {
+      "from": 11,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 16
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "label": "true"
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "label": "false"
+    },
+    {
+      "from": 17,
+      "to": 19
+    }
+  ]
+}

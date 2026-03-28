@@ -1,0 +1,21 @@
+{
+  "function": "GetValue",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetValue",
+      "line": 19
+    },
+    {
+      "id": 1,
+      "label": "exit:GetValue",
+      "line": 28
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

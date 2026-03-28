@@ -1,0 +1,21 @@
+{
+  "function": "uri_to_e2e_mqtt_topic",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:uri_to_e2e_mqtt_topic",
+      "line": 141
+    },
+    {
+      "id": 1,
+      "label": "exit:uri_to_e2e_mqtt_topic",
+      "line": 169
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

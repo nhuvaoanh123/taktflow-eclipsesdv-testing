@@ -1,0 +1,21 @@
+{
+  "function": "checkStateProgress",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:checkStateProgress",
+      "line": 153
+    },
+    {
+      "id": 1,
+      "label": "exit:checkStateProgress",
+      "line": 155
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "strict_permissions_",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:strict_permissions_",
+      "line": 79
+    },
+    {
+      "id": 1,
+      "label": "exit:strict_permissions_",
+      "line": 89
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

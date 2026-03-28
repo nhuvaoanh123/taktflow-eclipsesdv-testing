@@ -1,0 +1,21 @@
+{
+  "function": "NewSelfUpdateManager",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:NewSelfUpdateManager",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:NewSelfUpdateManager",
+      "line": 59
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

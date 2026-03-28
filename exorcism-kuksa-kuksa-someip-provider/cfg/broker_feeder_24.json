@@ -1,0 +1,21 @@
+{
+  "function": "broker_feeder",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:broker_feeder",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:broker_feeder",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "stream",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stream",
+      "line": 186
+    },
+    {
+      "id": 1,
+      "label": "exit:stream",
+      "line": 218
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

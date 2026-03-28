@@ -1,0 +1,16 @@
+{
+  "project": "velocitas-vehicle-model-python",
+  "files_by_language": {
+    "Python": {
+      "files": 108,
+      "loc": 8117
+    }
+  },
+  "total_files": 108,
+  "total_loc": 8117,
+  "total_functions": 143,
+  "build_system": "Python/setuptools",
+  "languages": [
+    "Python"
+  ]
+}

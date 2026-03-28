@@ -1,0 +1,63 @@
+{
+  "function": "turn_led",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:turn_led",
+      "line": 94
+    },
+    {
+      "id": 1,
+      "label": "if ((on))",
+      "line": 96
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 103
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 96
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 96
+    },
+    {
+      "id": 5,
+      "label": "exit:turn_led",
+      "line": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

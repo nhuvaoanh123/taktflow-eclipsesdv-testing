@@ -1,0 +1,21 @@
+{
+  "function": "subslice",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:subslice",
+      "line": 141
+    },
+    {
+      "id": 1,
+      "label": "exit:subslice",
+      "line": 172
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

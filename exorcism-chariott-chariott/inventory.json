@@ -1,0 +1,16 @@
+{
+  "project": "chariott-chariott",
+  "files_by_language": {
+    "Rust": {
+      "files": 59,
+      "loc": 7988
+    }
+  },
+  "total_files": 59,
+  "total_loc": 7988,
+  "total_functions": 419,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

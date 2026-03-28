@@ -1,0 +1,63 @@
+{
+  "function": "leapYearsSince1970",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:leapYearsSince1970",
+      "line": 20
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 23
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 29
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 23
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 31
+    },
+    {
+      "id": 5,
+      "label": "exit:leapYearsSince1970",
+      "line": 32
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

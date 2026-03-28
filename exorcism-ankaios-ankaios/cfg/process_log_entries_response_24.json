@@ -1,0 +1,21 @@
+{
+  "function": "process_log_entries_response",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:process_log_entries_response",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:process_log_entries_response",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

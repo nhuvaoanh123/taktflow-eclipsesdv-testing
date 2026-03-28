@@ -1,0 +1,21 @@
+{
+  "function": "render_files_field",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:render_files_field",
+      "line": 166
+    },
+    {
+      "id": 1,
+      "label": "exit:render_files_field",
+      "line": 195
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

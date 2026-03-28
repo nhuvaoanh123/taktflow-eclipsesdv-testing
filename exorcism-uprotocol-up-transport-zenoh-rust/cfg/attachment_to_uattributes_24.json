@@ -1,0 +1,21 @@
+{
+  "function": "attachment_to_uattributes",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:attachment_to_uattributes",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:attachment_to_uattributes",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "generate_metadata",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:generate_metadata",
+      "line": 509
+    },
+    {
+      "id": 1,
+      "label": "exit:generate_metadata",
+      "line": 539
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

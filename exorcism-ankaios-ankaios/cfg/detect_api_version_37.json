@@ -1,0 +1,21 @@
+{
+  "function": "detect_api_version",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:detect_api_version",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:detect_api_version",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

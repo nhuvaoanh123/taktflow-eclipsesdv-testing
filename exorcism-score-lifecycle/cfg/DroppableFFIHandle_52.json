@@ -1,0 +1,21 @@
+{
+  "function": "DroppableFFIHandle",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DroppableFFIHandle",
+      "line": 52
+    },
+    {
+      "id": 1,
+      "label": "exit:DroppableFFIHandle",
+      "line": 76
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

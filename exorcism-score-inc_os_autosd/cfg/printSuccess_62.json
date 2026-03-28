@@ -1,0 +1,21 @@
+{
+  "function": "printSuccess",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:printSuccess",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:printSuccess",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "lookup",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:lookup",
+      "line": 393
+    },
+    {
+      "id": 1,
+      "label": "exit:lookup",
+      "line": 401
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

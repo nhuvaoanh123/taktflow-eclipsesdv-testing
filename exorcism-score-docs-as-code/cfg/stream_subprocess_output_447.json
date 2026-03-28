@@ -1,0 +1,63 @@
+{
+  "function": "stream_subprocess_output",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stream_subprocess_output",
+      "line": 447
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 461
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 467
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 461
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 470
+    },
+    {
+      "id": 5,
+      "label": "exit:stream_subprocess_output",
+      "line": 474
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

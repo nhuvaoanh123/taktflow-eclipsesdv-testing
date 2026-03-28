@@ -1,0 +1,21 @@
+{
+  "function": "noexcept",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:noexcept",
+      "line": 163
+    },
+    {
+      "id": 1,
+      "label": "exit:noexcept",
+      "line": 176
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

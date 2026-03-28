@@ -1,0 +1,93 @@
+{
+  "external": [
+    {
+      "name": "build",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "cfgv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "click",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "distlib",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "filelock",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "identify",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "mypy",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "mypy-extensions",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "mypy-protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "nodeenv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "packaging",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pip-tools",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "platformdirs",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pre-commit",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyproject-hooks",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "pyyaml",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "tomli",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "types-protobuf",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "typing-extensions",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "virtualenv",
+      "source": "requirements.txt"
+    },
+    {
+      "name": "wheel",
+      "source": "requirements.txt"
+    }
+  ],
+  "internal": []
+}

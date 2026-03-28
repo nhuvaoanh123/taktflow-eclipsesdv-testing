@@ -1,0 +1,610 @@
+[
+  {
+    "function": "main",
+    "file": "ddsprovider.py",
+    "start_line": 26,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 3,
+    "loc": 63,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "signal_handler",
+    "file": "ddsprovider.py",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "on_data_available",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 55,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 24,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "register_datapoints",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 81,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 15,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 102,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "start",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 115,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "stop",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_should_shutdown",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 151,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_run",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 154,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 8,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_subscribe",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 163,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 26,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "_on_broker_connectivity_change",
+    "file": "ddsproviderlib/helper.py",
+    "start_line": 190,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 24,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "math",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "formula",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "map",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "transform",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 49,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 11,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_createdict",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 61,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 52,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__contains__",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__getitem__",
+    "file": "ddsproviderlib/vss2ddsmapper.py",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "ddsproviderlib/databroker.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "register",
+    "file": "ddsproviderlib/databroker.py",
+    "start_line": 43,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 26,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "_register",
+    "file": "ddsproviderlib/databroker.py",
+    "start_line": 70,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 17,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "update_datapoint",
+    "file": "ddsproviderlib/databroker.py",
+    "start_line": 88,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "pytest_html_report_title",
+    "file": "tests/conftest.py",
+    "start_line": 18,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "pytest_runtest_makereport",
+    "file": "tests/conftest.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "run_dds_feeder_and_send_dds_msg",
+    "file": "tests/integration/test_ddsprovider_int.py",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 12,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "parallel_thread",
+    "file": "tests/integration/test_ddsprovider_int.py",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_ddsprovider_start",
+    "file": "tests/integration/test_ddsprovider_int.py",
+    "start_line": 46,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 40,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "create_NavSatFix_dds_messages",
+    "file": "tests/integration/test_ddsprovider_int.py",
+    "start_line": 88,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 23,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "send_dds_messages",
+    "file": "tests/integration/test_ddsprovider_int.py",
+    "start_line": 113,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "setUp",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "create_dds_feeder",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_broker_connectivity_idle_first_time",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_broker_connectivity_idle_register_failure",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_broker_connectivity_connecting",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_broker_connectivity_transient_failure",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_broker_subscribe",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_run_shutdown_triggered",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 99,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_run_subscribes_when_connected_and_not_subscribed",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_run_sleeps_when_not_connected",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 122,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "stop_ddsprovider",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 125,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_run_does_nothing_when_connected_and_subscribed",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 139,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 18,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "stop_after_3_iterations",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 144,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_stop",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 158,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_on_data_available",
+    "file": "tests/unit/test_ddsprovider.py",
+    "start_line": 165,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "setUp",
+    "file": "tests/unit/test_mapper.py",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_contains_method",
+    "file": "tests/unit/test_mapper.py",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_getitem_method",
+    "file": "tests/unit/test_mapper.py",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setUp",
+    "file": "tests/unit/test_provider_broker.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_register",
+    "file": "tests/unit/test_provider_broker.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_register_exception_get_metadata",
+    "file": "tests/unit/test_provider_broker.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_register_exception_set_metadata",
+    "file": "tests/unit/test_provider_broker.py",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "test_update_datapoint_set_exception",
+    "file": "tests/unit/test_provider_broker.py",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "read_kml_file",
+    "file": "kml/dds_kmlreplay.py",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "__init__",
+    "file": "kml/dds_kmlreplay.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "_publish",
+    "file": "kml/dds_kmlreplay.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "run",
+    "file": "kml/dds_kmlreplay.py",
+    "start_line": 63,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "kml/dds_kmlreplay.py",
+    "start_line": 95,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  }
+]

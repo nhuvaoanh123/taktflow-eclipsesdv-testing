@@ -1,0 +1,21 @@
+{
+  "function": "copysign",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:copysign",
+      "line": 364
+    },
+    {
+      "id": 1,
+      "label": "exit:copysign",
+      "line": 373
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

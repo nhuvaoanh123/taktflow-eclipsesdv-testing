@@ -1,0 +1,21 @@
+{
+  "function": "create_workload",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_workload",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:create_workload",
+      "line": 59
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

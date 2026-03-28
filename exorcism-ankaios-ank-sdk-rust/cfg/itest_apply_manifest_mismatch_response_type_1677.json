@@ -1,0 +1,21 @@
+{
+  "function": "itest_apply_manifest_mismatch_response_type",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:itest_apply_manifest_mismatch_response_type",
+      "line": 1677
+    },
+    {
+      "id": 1,
+      "label": "exit:itest_apply_manifest_mismatch_response_type",
+      "line": 1726
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

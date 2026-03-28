@@ -1,0 +1,25 @@
+{
+  "state_machines": [
+    {
+      "file": "src/feo-com/src/linux_shm/shared_memory.rs",
+      "line": 93,
+      "type": "match",
+      "condition": "new_state",
+      "states": [
+        "Ok(_)",
+        "Err(actual_state)"
+      ]
+    },
+    {
+      "file": "src/feo-com/src/linux_shm/shared_memory.rs",
+      "line": 109,
+      "type": "match",
+      "condition": "new_state",
+      "states": [
+        "Ok(_)",
+        "Err(actual_state)"
+      ]
+    }
+  ],
+  "count": 2
+}

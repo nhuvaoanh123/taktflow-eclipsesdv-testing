@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonEventBindingBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonEventBindingBase",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonEventBindingBase",
+      "line": 96
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

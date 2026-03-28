@@ -1,0 +1,16 @@
+{
+  "project": "kuksa-kuksa-perf",
+  "files_by_language": {
+    "Rust": {
+      "files": 24,
+      "loc": 4526
+    }
+  },
+  "total_files": 24,
+  "total_loc": 4526,
+  "total_functions": 54,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonEventBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonEventBase",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonEventBase",
+      "line": 48
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

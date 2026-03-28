@@ -1,0 +1,21 @@
+{
+  "function": "poll_register_interest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:poll_register_interest",
+      "line": 282
+    },
+    {
+      "id": 1,
+      "label": "exit:poll_register_interest",
+      "line": 315
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

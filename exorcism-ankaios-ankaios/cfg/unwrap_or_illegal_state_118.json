@@ -1,0 +1,21 @@
+{
+  "function": "unwrap_or_illegal_state",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:unwrap_or_illegal_state",
+      "line": 118
+    },
+    {
+      "id": 1,
+      "label": "exit:unwrap_or_illegal_state",
+      "line": 125
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

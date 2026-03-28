@@ -1,0 +1,21 @@
+{
+  "function": "ISeekFunction",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ISeekFunction",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:ISeekFunction",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

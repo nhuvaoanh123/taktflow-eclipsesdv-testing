@@ -1,0 +1,39 @@
+{
+  "function": "DEFAULT_MIN_NUM_MESSAGES_TX_QUEUE",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:DEFAULT_MIN_NUM_MESSAGES_TX_QUEUE",
+      "line": 41
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 78
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 93
+    },
+    {
+      "id": 3,
+      "label": "exit:DEFAULT_MIN_NUM_MESSAGES_TX_QUEUE",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "IPubSubClient",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IPubSubClient",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:IPubSubClient",
+      "line": 144
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

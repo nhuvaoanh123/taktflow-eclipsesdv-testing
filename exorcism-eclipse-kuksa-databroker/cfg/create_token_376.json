@@ -1,0 +1,21 @@
+{
+  "function": "create_token",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_token",
+      "line": 376
+    },
+    {
+      "id": 1,
+      "label": "exit:create_token",
+      "line": 401
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

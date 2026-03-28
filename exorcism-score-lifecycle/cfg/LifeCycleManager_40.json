@@ -1,0 +1,21 @@
+{
+  "function": "LifeCycleManager",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LifeCycleManager",
+      "line": 40
+    },
+    {
+      "id": 1,
+      "label": "exit:LifeCycleManager",
+      "line": 109
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

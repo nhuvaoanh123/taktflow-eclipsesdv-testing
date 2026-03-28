@@ -1,0 +1,21 @@
+{
+  "function": "wait_one",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:wait_one",
+      "line": 84
+    },
+    {
+      "id": 1,
+      "label": "exit:wait_one",
+      "line": 95
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

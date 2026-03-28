@@ -1,0 +1,21 @@
+{
+  "function": "insert_message_handler_id_and_listener_config",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:insert_message_handler_id_and_listener_config",
+      "line": 466
+    },
+    {
+      "id": 1,
+      "label": "exit:insert_message_handler_id_and_listener_config",
+      "line": 497
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

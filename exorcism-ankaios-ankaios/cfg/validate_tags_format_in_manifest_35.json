@@ -1,0 +1,21 @@
+{
+  "function": "validate_tags_format_in_manifest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_tags_format_in_manifest",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_tags_format_in_manifest",
+      "line": 57
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

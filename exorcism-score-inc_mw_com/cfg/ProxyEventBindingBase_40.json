@@ -1,0 +1,21 @@
+{
+  "function": "ProxyEventBindingBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProxyEventBindingBase",
+      "line": 40
+    },
+    {
+      "id": 1,
+      "label": "exit:ProxyEventBindingBase",
+      "line": 114
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

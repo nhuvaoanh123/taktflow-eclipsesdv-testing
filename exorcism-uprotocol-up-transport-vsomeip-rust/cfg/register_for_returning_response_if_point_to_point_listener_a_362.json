@@ -1,0 +1,21 @@
+{
+  "function": "register_for_returning_response_if_point_to_point_listener_and_sending_request",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:register_for_returning_response_if_point_to_point_listener_and_sending_request",
+      "line": 362
+    },
+    {
+      "id": 1,
+      "label": "exit:register_for_returning_response_if_point_to_point_listener_and_sending_request",
+      "line": 450
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

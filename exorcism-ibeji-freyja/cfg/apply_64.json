@@ -1,0 +1,21 @@
+{
+  "function": "apply",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:apply",
+      "line": 64
+    },
+    {
+      "id": 1,
+      "label": "exit:apply",
+      "line": 69
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

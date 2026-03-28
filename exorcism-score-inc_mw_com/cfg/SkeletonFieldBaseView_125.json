@@ -1,0 +1,21 @@
+{
+  "function": "SkeletonFieldBaseView",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonFieldBaseView",
+      "line": 125
+    },
+    {
+      "id": 1,
+      "label": "exit:SkeletonFieldBaseView",
+      "line": 150
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

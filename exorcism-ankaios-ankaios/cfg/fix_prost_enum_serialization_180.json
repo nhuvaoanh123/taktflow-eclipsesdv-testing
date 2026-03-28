@@ -1,0 +1,21 @@
+{
+  "function": "fix_prost_enum_serialization",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fix_prost_enum_serialization",
+      "line": 180
+    },
+    {
+      "id": 1,
+      "label": "exit:fix_prost_enum_serialization",
+      "line": 289
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

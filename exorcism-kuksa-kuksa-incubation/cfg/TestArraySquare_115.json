@@ -1,0 +1,21 @@
+{
+  "function": "TestArraySquare",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestArraySquare",
+      "line": 115
+    },
+    {
+      "id": 1,
+      "label": "exit:TestArraySquare",
+      "line": 127
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

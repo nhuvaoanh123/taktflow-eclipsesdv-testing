@@ -1,0 +1,21 @@
+{
+  "function": "serve_uds",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:serve_uds",
+      "line": 158
+    },
+    {
+      "id": 1,
+      "label": "exit:serve_uds",
+      "line": 189
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "TestExtractOpts",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestExtractOpts",
+      "line": 89
+    },
+    {
+      "id": 1,
+      "label": "exit:TestExtractOpts",
+      "line": 102
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

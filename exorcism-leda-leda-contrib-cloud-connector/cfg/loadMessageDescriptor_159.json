@@ -1,0 +1,21 @@
+{
+  "function": "loadMessageDescriptor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:loadMessageDescriptor",
+      "line": 159
+    },
+    {
+      "id": 1,
+      "label": "exit:loadMessageDescriptor",
+      "line": 191
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

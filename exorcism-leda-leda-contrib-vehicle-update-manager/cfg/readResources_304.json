@@ -1,0 +1,21 @@
+{
+  "function": "readResources",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:readResources",
+      "line": 304
+    },
+    {
+      "id": 1,
+      "label": "exit:readResources",
+      "line": 326
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

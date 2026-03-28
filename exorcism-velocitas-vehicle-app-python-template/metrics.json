@@ -1,0 +1,104 @@
+[
+  {
+    "function": "test_runtime",
+    "file": ".devcontainer/tests/automated_tests/runtime_test.py",
+    "start_line": 33,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_requirements",
+    "file": ".devcontainer/tests/automated_tests/requirements_test.py",
+    "start_line": 28,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 9,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "app/src/main.py",
+    "start_line": 56,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "on_start",
+    "file": "app/src/main.py",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "on_speed_change",
+    "file": "app/src/main.py",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "on_get_speed_request_received",
+    "file": "app/src/main.py",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "app/src/main.py",
+    "start_line": 116,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_get_current_speed",
+    "file": "app/tests/integration/integration_test.py",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_dummy",
+    "file": "app/tests/unit/test_run.py",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "get_sample_response_data",
+    "file": "app/tests/unit/test_run.py",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  }
+]

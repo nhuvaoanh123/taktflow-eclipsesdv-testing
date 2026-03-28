@@ -1,0 +1,30 @@
+{
+  "function": "safe_math",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:safe_math",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 62
+    },
+    {
+      "id": 2,
+      "label": "exit:safe_math",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

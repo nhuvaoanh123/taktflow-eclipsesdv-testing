@@ -1,0 +1,21 @@
+{
+  "function": "test_list_metadata_bad_request_pattern_or_not_found",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_list_metadata_bad_request_pattern_or_not_found",
+      "line": 2819
+    },
+    {
+      "id": 1,
+      "label": "exit:test_list_metadata_bad_request_pattern_or_not_found",
+      "line": 2895
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

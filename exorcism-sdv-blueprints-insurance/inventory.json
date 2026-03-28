@@ -1,0 +1,16 @@
+{
+  "project": "sdv-blueprints-insurance",
+  "files_by_language": {
+    "Python": {
+      "files": 13,
+      "loc": 1821
+    }
+  },
+  "total_files": 13,
+  "total_loc": 1821,
+  "total_functions": 61,
+  "build_system": "Unknown",
+  "languages": [
+    "Python"
+  ]
+}

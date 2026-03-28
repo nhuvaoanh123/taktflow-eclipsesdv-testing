@@ -1,0 +1,21 @@
+{
+  "function": "printError",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:printError",
+      "line": 70
+    },
+    {
+      "id": 1,
+      "label": "exit:printError",
+      "line": 72
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

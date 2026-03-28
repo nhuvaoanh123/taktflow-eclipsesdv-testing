@@ -1,0 +1,21 @@
+{
+  "function": "store",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:store",
+      "line": 100
+    },
+    {
+      "id": 1,
+      "label": "exit:store",
+      "line": 103
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

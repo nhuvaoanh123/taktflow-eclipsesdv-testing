@@ -1,0 +1,27 @@
+{
+  "state_machines": [
+    {
+      "file": "components/horn-service-kuksa/src/request_processor.rs",
+      "line": 60,
+      "type": "match",
+      "condition": "req.mode.enum_value()",
+      "states": [
+        "Ok(mode)",
+        "Err(e)"
+      ]
+    },
+    {
+      "file": "components/horn-service-kuksa/src/request_processor.rs",
+      "line": 62,
+      "type": "match",
+      "condition": "mode",
+      "states": [
+        "HornMode::HM_SEQUENCED",
+        "HornMode::HM_CONTINUOUS",
+        "HornMode::HM_UNKNOWN",
+        "HornMode::HM_UNSPECIFIED"
+      ]
+    }
+  ],
+  "count": 2
+}

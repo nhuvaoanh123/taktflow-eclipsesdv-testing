@@ -1,0 +1,21 @@
+{
+  "function": "cleanup_topics",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:cleanup_topics",
+      "line": 317
+    },
+    {
+      "id": 1,
+      "label": "exit:cleanup_topics",
+      "line": 344
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "test_from_dict_invalid_data_content_type",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_from_dict_invalid_data_content_type",
+      "line": 472
+    },
+    {
+      "id": 1,
+      "label": "exit:test_from_dict_invalid_data_content_type",
+      "line": 493
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

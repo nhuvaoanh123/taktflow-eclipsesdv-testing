@@ -1,0 +1,21 @@
+{
+  "function": "intrusive_list_element",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:intrusive_list_element",
+      "line": 84
+    },
+    {
+      "id": 1,
+      "label": "exit:intrusive_list_element",
+      "line": 95
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

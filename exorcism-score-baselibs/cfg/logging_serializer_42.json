@@ -1,0 +1,21 @@
+{
+  "function": "logging_serializer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:logging_serializer",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "exit:logging_serializer",
+      "line": 198
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

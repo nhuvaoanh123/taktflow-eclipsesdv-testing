@@ -1,0 +1,26 @@
+{
+  "project": "score-inc_time",
+  "files_by_language": {
+    "C": {
+      "files": 67,
+      "loc": 5217
+    },
+    "C++": {
+      "files": 79,
+      "loc": 6896
+    },
+    "Python": {
+      "files": 2,
+      "loc": 137
+    }
+  },
+  "total_files": 148,
+  "total_loc": 12250,
+  "total_functions": 558,
+  "build_system": "Bazel, Python/pyproject",
+  "languages": [
+    "C",
+    "C++",
+    "Python"
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "function": "context_data",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:context_data",
+      "line": 96
+    },
+    {
+      "id": 1,
+      "label": "if ((!block_result.has_value()))",
+      "line": 106
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 110
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 106
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 109
+    },
+    {
+      "id": 5,
+      "label": "if ((!handler_result.has_value()))",
+      "line": 118
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 122
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 118
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 121
+    },
+    {
+      "id": 9,
+      "label": "if ((context_data.to_terminate))",
+      "line": 124
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 128
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 124
+    },
+    {
+      "id": 12,
+      "label": "return_statement",
+      "line": 127
+    },
+    {
+      "id": 13,
+      "label": "if ((receiver_state.message_queue_.empty()))",
+      "line": 132
+    },
+    {
+      "id": 14,
+      "label": "merge",
+      "line": 136
+    },
+    {
+      "id": 15,
+      "label": "then",
+      "line": 132
+    },
+    {
+      "id": 16,
+      "label": "return_statement",
+      "line": 135
+    },
+    {
+      "id": 17,
+      "label": "if ((receiver_state.message_queue_owned_))",
+      "line": 137
+    },
+    {
+      "id": 18,
+      "label": "merge",
+      "line": 141
+    },
+    {
+      "id": 19,
+      "label": "then",
+      "line": 137
+    },
+    {
+      "id": 20,
+      "label": "return_statement",
+      "line": 140
+    },
+    {
+      "id": 21,
+      "label": "loop (while_statement)",
+      "line": 146
+    },
+    {
+      "id": 22,
+      "label": "loop_exit",
+      "line": 181
+    },
+    {
+      "id": 23,
+      "label": "body",
+      "line": 146
+    },
+    {
+      "id": 24,
+      "label": "exit:context_data",
+      "line": 182
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 13
+    },
+    {
+      "from": 13,
+      "to": 15,
+      "label": "true"
+    },
+    {
+      "from": 15,
+      "to": 16
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "label": "false"
+    },
+    {
+      "from": 14,
+      "to": 17
+    },
+    {
+      "from": 17,
+      "to": 19,
+      "label": "true"
+    },
+    {
+      "from": 19,
+      "to": 20
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "label": "false"
+    },
+    {
+      "from": 18,
+      "to": 21
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "label": "done"
+    },
+    {
+      "from": 21,
+      "to": 23,
+      "label": "continue"
+    },
+    {
+      "from": 23,
+      "to": 21,
+      "label": "back"
+    },
+    {
+      "from": 22,
+      "to": 24
+    }
+  ]
+}

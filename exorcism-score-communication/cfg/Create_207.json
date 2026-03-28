@@ -1,0 +1,114 @@
+{
+  "function": "Create",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Create",
+      "line": 207
+    },
+    {
+      "id": 1,
+      "label": "if ((instance_specifier_creation_results_.has_value()))",
+      "line": 209
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 213
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 209
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 211
+    },
+    {
+      "id": 5,
+      "label": "if ((!skeleton_wrapper.AreBindingsValid()))",
+      "line": 217
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 223
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 217
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 222
+    },
+    {
+      "id": 9,
+      "label": "return_statement",
+      "line": 225
+    },
+    {
+      "id": 10,
+      "label": "exit:Create",
+      "line": 226
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 6,
+      "to": 10
+    }
+  ]
+}

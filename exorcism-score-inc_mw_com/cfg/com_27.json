@@ -1,0 +1,21 @@
+{
+  "function": "com",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:com",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:com",
+      "line": 53
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

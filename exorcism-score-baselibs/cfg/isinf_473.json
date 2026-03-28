@@ -1,0 +1,21 @@
+{
+  "function": "isinf",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:isinf",
+      "line": 473
+    },
+    {
+      "id": 1,
+      "label": "exit:isinf",
+      "line": 482
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

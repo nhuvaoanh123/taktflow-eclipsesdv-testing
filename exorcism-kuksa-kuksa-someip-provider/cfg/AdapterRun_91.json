@@ -1,0 +1,21 @@
+{
+  "function": "AdapterRun",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AdapterRun",
+      "line": 91
+    },
+    {
+      "id": 1,
+      "label": "exit:AdapterRun",
+      "line": 108
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

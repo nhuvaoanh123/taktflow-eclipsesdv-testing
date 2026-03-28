@@ -1,0 +1,21 @@
+{
+  "function": "bind_events_as_timer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:bind_events_as_timer",
+      "line": 69
+    },
+    {
+      "id": 1,
+      "label": "exit:bind_events_as_timer",
+      "line": 86
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

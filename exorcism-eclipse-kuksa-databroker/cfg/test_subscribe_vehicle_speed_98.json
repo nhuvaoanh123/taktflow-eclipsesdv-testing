@@ -1,0 +1,21 @@
+{
+  "function": "test_subscribe_vehicle_speed",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_subscribe_vehicle_speed",
+      "line": 98
+    },
+    {
+      "id": 1,
+      "label": "exit:test_subscribe_vehicle_speed",
+      "line": 134
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

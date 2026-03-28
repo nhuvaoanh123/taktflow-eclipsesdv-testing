@@ -1,0 +1,21 @@
+{
+  "function": "IMessagePassingService",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IMessagePassingService",
+      "line": 42
+    },
+    {
+      "id": 1,
+      "label": "exit:IMessagePassingService",
+      "line": 119
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

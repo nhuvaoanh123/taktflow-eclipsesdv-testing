@@ -1,0 +1,54 @@
+{
+  "function": "SubscribePosition",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SubscribePosition",
+      "line": 56
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 57
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 57
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 57
+    },
+    {
+      "id": 4,
+      "label": "exit:SubscribePosition",
+      "line": 59
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "join",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:join",
+      "line": 58
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 67
+    },
+    {
+      "id": 2,
+      "label": "exit:join",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

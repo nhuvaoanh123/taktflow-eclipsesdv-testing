@@ -1,0 +1,21 @@
+{
+  "function": "processThing",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:processThing",
+      "line": 56
+    },
+    {
+      "id": 1,
+      "label": "exit:processThing",
+      "line": 92
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

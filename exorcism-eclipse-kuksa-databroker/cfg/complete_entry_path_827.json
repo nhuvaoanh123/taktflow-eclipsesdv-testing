@@ -1,0 +1,21 @@
+{
+  "function": "complete_entry_path",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:complete_entry_path",
+      "line": 827
+    },
+    {
+      "id": 1,
+      "label": "exit:complete_entry_path",
+      "line": 892
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

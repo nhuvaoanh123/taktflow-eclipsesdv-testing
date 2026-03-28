@@ -1,0 +1,26 @@
+{
+  "project": "score-testing_tools",
+  "files_by_language": {
+    "Python": {
+      "files": 15,
+      "loc": 3669
+    },
+    "Rust": {
+      "files": 5,
+      "loc": 853
+    },
+    "C++": {
+      "files": 16,
+      "loc": 1210
+    }
+  },
+  "total_files": 36,
+  "total_loc": 5732,
+  "total_functions": 345,
+  "build_system": "Bazel, Python/pyproject",
+  "languages": [
+    "Python",
+    "Rust",
+    "C++"
+  ]
+}

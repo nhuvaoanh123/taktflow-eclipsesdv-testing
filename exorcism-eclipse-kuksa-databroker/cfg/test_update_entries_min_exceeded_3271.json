@@ -1,0 +1,21 @@
+{
+  "function": "test_update_entries_min_exceeded",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_update_entries_min_exceeded",
+      "line": 3271
+    },
+    {
+      "id": 1,
+      "label": "exit:test_update_entries_min_exceeded",
+      "line": 3283
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

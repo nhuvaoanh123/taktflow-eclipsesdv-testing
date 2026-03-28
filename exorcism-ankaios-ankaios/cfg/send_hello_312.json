@@ -1,0 +1,21 @@
+{
+  "function": "send_hello",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:send_hello",
+      "line": 312
+    },
+    {
+      "id": 1,
+      "label": "exit:send_hello",
+      "line": 334
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

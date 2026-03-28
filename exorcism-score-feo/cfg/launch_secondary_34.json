@@ -1,0 +1,21 @@
+{
+  "function": "launch_secondary",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:launch_secondary",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:launch_secondary",
+      "line": 110
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

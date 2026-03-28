@@ -1,0 +1,21 @@
+{
+  "function": "output_is_valid_use_statement",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:output_is_valid_use_statement",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "exit:output_is_valid_use_statement",
+      "line": 57
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "validate_manifest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_manifest",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_manifest",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "FSM",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FSM",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:FSM",
+      "line": 55
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

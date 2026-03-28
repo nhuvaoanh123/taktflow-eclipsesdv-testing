@@ -1,0 +1,21 @@
+{
+  "function": "IRuntime",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IRuntime",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "exit:IRuntime",
+      "line": 69
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

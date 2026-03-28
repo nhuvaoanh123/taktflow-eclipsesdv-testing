@@ -1,0 +1,21 @@
+{
+  "function": "valid_type_deployment_",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:valid_type_deployment_",
+      "line": 75
+    },
+    {
+      "id": 1,
+      "label": "exit:valid_type_deployment_",
+      "line": 90
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

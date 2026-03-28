@@ -1,0 +1,21 @@
+{
+  "function": "get_nth",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_nth",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:get_nth",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

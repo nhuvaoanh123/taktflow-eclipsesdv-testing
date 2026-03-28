@@ -1,0 +1,21 @@
+{
+  "function": "IFlexibleCircularAllocator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IFlexibleCircularAllocator",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:IFlexibleCircularAllocator",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

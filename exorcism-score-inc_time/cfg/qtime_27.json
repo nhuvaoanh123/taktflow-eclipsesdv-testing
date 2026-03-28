@@ -1,0 +1,21 @@
+{
+  "function": "qtime",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:qtime",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:qtime",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

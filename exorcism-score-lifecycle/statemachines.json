@@ -1,0 +1,56 @@
+{
+  "state_machines": [
+    {
+      "file": "src/health_monitoring_lib/rust/health_monitor.rs",
+      "line": 232,
+      "type": "match",
+      "condition": "monitor_state.take()",
+      "states": [
+        "Some(MonitorState::Available(monitor))",
+        "Some(MonitorState::Taken(handle))",
+        "None"
+      ]
+    },
+    {
+      "file": "src/health_monitoring_lib/rust/logic/logic_monitor.rs",
+      "line": 143,
+      "type": "match",
+      "condition": "initial_state_index_option",
+      "states": [
+        "Some(index)",
+        "None"
+      ]
+    },
+    {
+      "file": "src/health_monitoring_lib/rust/logic/logic_monitor.rs",
+      "line": 232,
+      "type": "match",
+      "condition": "self.state_graph.get(state_index)",
+      "states": [
+        "Some(node)",
+        "None"
+      ]
+    },
+    {
+      "file": "src/health_monitoring_lib/rust/logic/ffi.rs",
+      "line": 133,
+      "type": "match",
+      "condition": "monitor.transition(target_state)",
+      "states": [
+        "Ok(_)",
+        "Err(_)"
+      ]
+    },
+    {
+      "file": "src/health_monitoring_lib/rust/logic/ffi.rs",
+      "line": 151,
+      "type": "match",
+      "condition": "monitor.state()",
+      "states": [
+        "Ok(state)",
+        "Err(_)"
+      ]
+    }
+  ],
+  "count": 5
+}

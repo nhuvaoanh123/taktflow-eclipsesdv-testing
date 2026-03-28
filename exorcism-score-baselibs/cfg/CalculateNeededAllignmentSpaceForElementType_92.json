@@ -1,0 +1,72 @@
+{
+  "function": "CalculateNeededAllignmentSpaceForElementType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CalculateNeededAllignmentSpaceForElementType",
+      "line": 92
+    },
+    {
+      "id": 1,
+      "label": "if (((sizeof(T) % alignof(std::max_align_t)) == 0U))",
+      "line": 94
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 105
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 94
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 96
+    },
+    {
+      "id": 5,
+      "label": "else",
+      "line": 94
+    },
+    {
+      "id": 6,
+      "label": "exit:CalculateNeededAllignmentSpaceForElementType",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 6
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "create_engine_with_worker_and_verify_ids",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_engine_with_worker_and_verify_ids",
+      "line": 543
+    },
+    {
+      "id": 1,
+      "label": "exit:create_engine_with_worker_and_verify_ids",
+      "line": 565
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

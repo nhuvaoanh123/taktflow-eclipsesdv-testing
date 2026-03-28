@@ -1,0 +1,21 @@
+{
+  "function": "IOpenFunction",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IOpenFunction",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:IOpenFunction",
+      "line": 44
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

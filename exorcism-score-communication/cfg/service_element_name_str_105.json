@@ -1,0 +1,30 @@
+{
+  "function": "service_element_name_str",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:service_element_name_str",
+      "line": 105
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 133
+    },
+    {
+      "id": 2,
+      "label": "exit:service_element_name_str",
+      "line": 134
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

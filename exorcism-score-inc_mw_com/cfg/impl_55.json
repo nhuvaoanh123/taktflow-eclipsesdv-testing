@@ -1,0 +1,39 @@
+{
+  "function": "impl",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:impl",
+      "line": 55
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 111
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 114
+    },
+    {
+      "id": 3,
+      "label": "exit:impl",
+      "line": 118
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    }
+  ]
+}

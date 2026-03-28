@@ -1,0 +1,689 @@
+[
+  {
+    "function": "new",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "print_header",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 36,
+    "calls": [
+      "println"
+    ]
+  },
+  {
+    "function": "print_sub_header",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 49,
+    "calls": [
+      "println"
+    ]
+  },
+  {
+    "function": "print_success",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 53,
+    "calls": [
+      "println"
+    ]
+  },
+  {
+    "function": "print_info",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 57,
+    "calls": [
+      "println"
+    ]
+  },
+  {
+    "function": "print_error",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 61,
+    "calls": [
+      "println"
+    ]
+  },
+  {
+    "function": "print_kvs_value",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 65,
+    "calls": [
+      "println",
+      "print"
+    ]
+  },
+  {
+    "function": "demonstrate_basic_operations",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 82,
+    "calls": [
+      "get_value",
+      "remove_key",
+      "Ok",
+      "clone",
+      "InstanceId",
+      "KvsBuilder::new",
+      "print_info",
+      "print_sub_header",
+      "build",
+      "flush",
+      "dir",
+      "print_success",
+      "print_kvs_value",
+      "print_header",
+      "set_value",
+      "key_exists",
+      "format",
+      "kvs_load",
+      "get_all_keys"
+    ]
+  },
+  {
+    "function": "demonstrate_arrays_and_objects",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 137,
+    "calls": [
+      "get_value",
+      "Ok",
+      "to_string",
+      "clone",
+      "InstanceId",
+      "KvsBuilder::new",
+      "print_sub_header",
+      "build",
+      "flush",
+      "dir",
+      "vec",
+      "KvsMap::from",
+      "print_success",
+      "print_kvs_value",
+      "print_header",
+      "set_value",
+      "KvsValue::from",
+      "kvs_load",
+      "get_all_keys"
+    ]
+  },
+  {
+    "function": "demonstrate_snapshots",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 184,
+    "calls": [
+      "get_value",
+      "Ok",
+      "snapshot_count",
+      "SnapshotId",
+      "clone",
+      "InstanceId",
+      "KvsBuilder::new",
+      "print_info",
+      "print_sub_header",
+      "build",
+      "flush",
+      "dir",
+      "snapshot_restore",
+      "snapshot_max_count",
+      "print_success",
+      "print_kvs_value",
+      "print_header",
+      "set_value",
+      "format",
+      "kvs_load"
+    ]
+  },
+  {
+    "function": "create_defaults_file",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 233,
+    "calls": [
+      "to_string",
+      "KvsMap::from",
+      "std::fs::write",
+      "KvsValue::from",
+      "Ok",
+      "join",
+      "format",
+      "PathBuf::from"
+    ]
+  },
+  {
+    "function": "demonstrate_defaults",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 273,
+    "calls": [
+      "get_value",
+      "Ok",
+      "defaults",
+      "clone",
+      "create_defaults_file",
+      "reset_key",
+      "InstanceId",
+      "KvsBuilder::new",
+      "print_sub_header",
+      "build",
+      "flush",
+      "print_error",
+      "get_default_value",
+      "dir",
+      "print",
+      "print_success",
+      "print_kvs_value",
+      "print_header",
+      "set_value",
+      "key_exists",
+      "format"
+    ]
+  },
+  {
+    "function": "demonstrate_reset",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 332,
+    "calls": [
+      "clone",
+      "len",
+      "print_success",
+      "print_sub_header",
+      "print_header",
+      "build",
+      "set_value",
+      "Ok",
+      "InstanceId",
+      "reset",
+      "KvsBuilder::new",
+      "format",
+      "kvs_load",
+      "dir",
+      "get_all_keys"
+    ]
+  },
+  {
+    "function": "wait_for_user",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 364,
+    "calls": [
+      "unwrap",
+      "read_line",
+      "io::stdin",
+      "flush",
+      "io::stdout",
+      "String::new",
+      "print"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 371,
+    "calls": [
+      "print_success",
+      "println",
+      "demonstrate_snapshots",
+      "demonstrate_defaults",
+      "demonstrate_basic_operations",
+      "demonstrate_reset",
+      "print_header",
+      "Ok",
+      "wait_for_user",
+      "print_error",
+      "print_info",
+      "format",
+      "demonstrate_arrays_and_objects"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "line": 413,
+    "calls": [
+      "to_string",
+      "clone",
+      "len",
+      "std::env::args",
+      "KvsDemo::new",
+      "std::fs::create_dir_all",
+      "std::process::exit",
+      "eprintln",
+      "collect",
+      "run"
+    ]
+  },
+  {
+    "function": "printHeader",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 52,
+    "calls": [
+      "std::string"
+    ]
+  },
+  {
+    "function": "printSubHeader",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 58,
+    "calls": []
+  },
+  {
+    "function": "printSuccess",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "printInfo",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "printError",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 70,
+    "calls": []
+  },
+  {
+    "function": "printKvsValue",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 74,
+    "calls": [
+      "getValue",
+      "std::get<uint64_t>",
+      "std::get<double>",
+      "std::get<bool>",
+      "size",
+      "std::get<KvsValue::Object>",
+      "std::get<int64_t>",
+      "std::get<uint32_t>",
+      "std::get<std::string>",
+      "std::get<int32_t>",
+      "std::setprecision",
+      "std::get<KvsValue::Array>",
+      "getType"
+    ]
+  },
+  {
+    "function": "KvsDemo",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 117,
+    "calls": []
+  },
+  {
+    "function": "demonstrateBasicOperations",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 119,
+    "calls": [
+      "static_cast<ErrorCode>",
+      "std::string",
+      "get_value",
+      "remove_key",
+      "printInfo",
+      "size",
+      "std::to_string",
+      "std::move",
+      "InstanceId",
+      "KvsValue",
+      "value_or",
+      "build",
+      "printKvsValue",
+      "flush",
+      "printHeader",
+      "error",
+      "dir",
+      "printSuccess",
+      "static_cast<int>",
+      "need_defaults_flag",
+      "static_cast<int32_t>",
+      "need_kvs_flag",
+      "KvsBuilder",
+      "set_value",
+      "key_exists",
+      "value",
+      "printSubHeader",
+      "get_all_keys",
+      "printError"
+    ]
+  },
+  {
+    "function": "demonstrateArraysAndObjects",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 194,
+    "calls": [
+      "static_cast<ErrorCode>",
+      "std::string",
+      "get_value",
+      "std::to_string",
+      "push_back",
+      "std::move",
+      "InstanceId",
+      "KvsValue",
+      "build",
+      "printKvsValue",
+      "flush",
+      "printHeader",
+      "error",
+      "dir",
+      "printSuccess",
+      "static_cast<int>",
+      "need_defaults_flag",
+      "static_cast<int32_t>",
+      "std::make_shared<KvsValue>",
+      "need_kvs_flag",
+      "KvsBuilder",
+      "set_value",
+      "value",
+      "printSubHeader",
+      "get_all_keys",
+      "printError"
+    ]
+  },
+  {
+    "function": "demonstrateSnapshots",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 249,
+    "calls": [
+      "static_cast<ErrorCode>",
+      "std::string",
+      "get_value",
+      "printInfo",
+      "snapshot_count",
+      "SnapshotId",
+      "std::to_string",
+      "std::move",
+      "InstanceId",
+      "KvsValue",
+      "build",
+      "flush",
+      "printKvsValue",
+      "printHeader",
+      "error",
+      "dir",
+      "snapshot_restore",
+      "printSuccess",
+      "static_cast<int>",
+      "need_defaults_flag",
+      "snapshot_max_count",
+      "static_cast<int32_t>",
+      "need_kvs_flag",
+      "KvsBuilder",
+      "set_value",
+      "value",
+      "printSubHeader",
+      "printError"
+    ]
+  },
+  {
+    "function": "demonstrateReset",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 435,
+    "calls": [
+      "static_cast<ErrorCode>",
+      "std::string",
+      "size",
+      "std::to_string",
+      "std::move",
+      "InstanceId",
+      "KvsValue",
+      "value_or",
+      "build",
+      "printHeader",
+      "reset",
+      "error",
+      "dir",
+      "printSuccess",
+      "static_cast<int>",
+      "need_defaults_flag",
+      "static_cast<int32_t>",
+      "need_kvs_flag",
+      "KvsBuilder",
+      "set_value",
+      "value",
+      "printSubHeader",
+      "get_all_keys",
+      "printError"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 474,
+    "calls": [
+      "demonstrateSnapshots",
+      "printInfo",
+      "demonstrateReset",
+      "demonstrateArraysAndObjects",
+      "printHeader",
+      "demonstrateBasicOperations",
+      "get",
+      "printSuccess"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "line": 506,
+    "calls": [
+      "run",
+      "c_str",
+      "what",
+      "system"
+    ]
+  },
+  {
+    "function": "sigchld_handler",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 30,
+    "calls": [
+      "waitpid"
+    ]
+  },
+  {
+    "function": "pidfd_open",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 42,
+    "calls": [
+      "syscall"
+    ]
+  },
+  {
+    "function": "recv_fd",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 47,
+    "calls": [
+      "CMSG_FIRSTHDR",
+      "recvmsg",
+      "CMSG_SPACE",
+      "CMSG_DATA"
+    ]
+  },
+  {
+    "function": "connect_to_agent",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 72,
+    "calls": [
+      "connect",
+      "socket",
+      "getenv",
+      "perror",
+      "strncpy",
+      "memset",
+      "close"
+    ]
+  },
+  {
+    "function": "spawn_local_process",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 102,
+    "calls": [
+      "pidfd_open",
+      "execvp",
+      "_exit",
+      "fprintf",
+      "perror",
+      "printf",
+      "close",
+      "strerror",
+      "fork"
+    ]
+  },
+  {
+    "function": "spawn_agent_process",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 133,
+    "calls": [
+      "recv_fd",
+      "send_message",
+      "recv_message",
+      "perror",
+      "fprintf",
+      "printf",
+      "strncpy",
+      "close",
+      "connect_to_agent"
+    ]
+  },
+  {
+    "function": "print_usage",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 193,
+    "calls": [
+      "printf"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "line": 208,
+    "calls": [
+      "print_usage",
+      "strtok",
+      "sigaction",
+      "spawn_local_process",
+      "sigemptyset",
+      "poll",
+      "time",
+      "printf",
+      "fprintf",
+      "perror",
+      "usleep",
+      "strlen",
+      "strncpy",
+      "spawn_agent_process",
+      "close",
+      "ctime"
+    ]
+  },
+  {
+    "function": "sigchld_handler",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 29,
+    "calls": [
+      "waitpid"
+    ]
+  },
+  {
+    "function": "pidfd_open",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 43,
+    "calls": [
+      "syscall"
+    ]
+  },
+  {
+    "function": "send_fd",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 48,
+    "calls": [
+      "CMSG_LEN",
+      "CMSG_SPACE",
+      "CMSG_FIRSTHDR",
+      "CMSG_DATA",
+      "sendmsg"
+    ]
+  },
+  {
+    "function": "start_process",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 69,
+    "calls": [
+      "pidfd_open",
+      "execvp",
+      "_exit",
+      "fprintf",
+      "send_message",
+      "send_fd",
+      "snprintf",
+      "close",
+      "strerror",
+      "fork"
+    ]
+  },
+  {
+    "function": "handle_message",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 139,
+    "calls": [
+      "send_message",
+      "snprintf",
+      "start_process"
+    ]
+  },
+  {
+    "function": "cleanup_socket",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 172,
+    "calls": [
+      "unlink"
+    ]
+  },
+  {
+    "function": "print_agent_usage",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 178,
+    "calls": [
+      "printf"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/holden/agent.c",
+    "line": 193,
+    "calls": [
+      "accept",
+      "bind",
+      "sigemptyset",
+      "getenv",
+      "printf",
+      "recv_message",
+      "sigaction",
+      "exit",
+      "listen",
+      "print_agent_usage",
+      "handle_message",
+      "socket",
+      "signal",
+      "strncpy",
+      "close",
+      "strcmp",
+      "atexit",
+      "perror",
+      "unlink",
+      "memset"
+    ]
+  },
+  {
+    "function": "send_message",
+    "file": "reference_integration/demos/holden/protocol.c",
+    "line": 18,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "recv_message",
+    "file": "reference_integration/demos/holden/protocol.c",
+    "line": 37,
+    "calls": [
+      "read"
+    ]
+  }
+]

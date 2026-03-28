@@ -1,0 +1,21 @@
+{
+  "function": "connect_client",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect_client",
+      "line": 120
+    },
+    {
+      "id": 1,
+      "label": "exit:connect_client",
+      "line": 160
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "new_from_proto",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:new_from_proto",
+      "line": 496
+    },
+    {
+      "id": 1,
+      "label": "exit:new_from_proto",
+      "line": 524
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

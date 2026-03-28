@@ -1,0 +1,21 @@
+{
+  "function": "FileSystemGuard",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FileSystemGuard",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:FileSystemGuard",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

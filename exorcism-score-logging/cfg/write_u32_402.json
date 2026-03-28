@@ -1,0 +1,21 @@
+{
+  "function": "write_u32",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:write_u32",
+      "line": 402
+    },
+    {
+      "id": 1,
+      "label": "exit:write_u32",
+      "line": 413
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

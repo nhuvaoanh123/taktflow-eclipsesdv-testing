@@ -1,0 +1,80 @@
+{
+  "communication": [
+    {
+      "type": "MQTT_topic",
+      "topic": "true",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "false",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "false",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "true",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "true",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "false",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "false",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "true",
+      "file": "databroker/src/grpc/kuksa_val_v2/val.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "{}",
+      "file": "integration_test/helper.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "VID/Vehicle",
+      "file": "integration_test/viss/tests/test_steps/mqtt_viss_client.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "VID/Vehicle",
+      "file": "integration_test/viss/tests/test_steps/mqtt_viss_client.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "VID/Vehicle",
+      "file": "integration_test/viss/tests/test_steps/mqtt_viss_client.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "VID/Vehicle",
+      "file": "integration_test/viss/tests/test_steps/mqtt_mock_databroker.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "VID/Vehicle",
+      "file": "integration_test/viss/tests/test_steps/mqtt_mock_databroker.py"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "VID/Vehicle",
+      "file": "integration_test/viss/tests/test_steps/mqtt_mock_databroker.py"
+    }
+  ],
+  "count": 15
+}

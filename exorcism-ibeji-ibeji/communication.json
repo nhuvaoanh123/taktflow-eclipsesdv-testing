@@ -1,0 +1,30 @@
+{
+  "communication": [
+    {
+      "type": "DDS_topic",
+      "topic": "request",
+      "file": "core/module/managed_subscribe/src/managed_subscribe_module.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "test",
+      "file": "samples/property/consumer/src/main.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "{topic}",
+      "file": "samples/property/provider/src/main.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "test",
+      "file": "samples/managed_subscribe/consumer/src/main.rs"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "{topic}",
+      "file": "samples/managed_subscribe/provider/src/provider_impl.rs"
+    }
+  ],
+  "count": 5
+}

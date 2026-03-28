@@ -1,0 +1,21 @@
+{
+  "function": "discover",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:discover",
+      "line": 142
+    },
+    {
+      "id": 1,
+      "label": "exit:discover",
+      "line": 177
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

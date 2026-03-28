@@ -1,0 +1,21 @@
+{
+  "function": "time_info_now",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:time_info_now",
+      "line": 153
+    },
+    {
+      "id": 1,
+      "label": "exit:time_info_now",
+      "line": 170
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

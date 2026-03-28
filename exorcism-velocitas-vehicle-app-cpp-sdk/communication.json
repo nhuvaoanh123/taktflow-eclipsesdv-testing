@@ -1,0 +1,25 @@
+{
+  "communication": [
+    {
+      "type": "MQTT_topic",
+      "topic": "{}",
+      "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "{}",
+      "file": "sdk/src/sdk/pubsub/MqttPubSubClient.cpp"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "a/b/c",
+      "file": "sdk/tests/unit/PubSub_tests.cpp"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "a/b/c",
+      "file": "sdk/tests/unit/PubSub_tests.cpp"
+    }
+  ],
+  "count": 4
+}

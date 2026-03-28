@@ -1,0 +1,21 @@
+{
+  "function": "test_pop_into_vec_concurrent",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_pop_into_vec_concurrent",
+      "line": 369
+    },
+    {
+      "id": 1,
+      "label": "exit:test_pop_into_vec_concurrent",
+      "line": 435
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

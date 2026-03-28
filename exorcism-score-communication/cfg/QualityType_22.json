@@ -1,0 +1,21 @@
+{
+  "function": "QualityType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:QualityType",
+      "line": 22
+    },
+    {
+      "id": 1,
+      "label": "exit:QualityType",
+      "line": 37
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "function": "event_output_shall_be_valid_yaml_format",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:event_output_shall_be_valid_yaml_format",
+      "line": 884
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 893
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 897
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 893
+    },
+    {
+      "id": 4,
+      "label": "exit:event_output_shall_be_valid_yaml_format",
+      "line": 899
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

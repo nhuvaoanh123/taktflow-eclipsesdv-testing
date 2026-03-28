@@ -1,0 +1,21 @@
+{
+  "function": "pipe_with_flags",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:pipe_with_flags",
+      "line": 232
+    },
+    {
+      "id": 1,
+      "label": "exit:pipe_with_flags",
+      "line": 258
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

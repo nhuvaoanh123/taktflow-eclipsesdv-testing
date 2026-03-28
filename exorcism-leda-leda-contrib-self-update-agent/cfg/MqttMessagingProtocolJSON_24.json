@@ -1,0 +1,21 @@
+{
+  "function": "MqttMessagingProtocolJSON",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MqttMessagingProtocolJSON",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:MqttMessagingProtocolJSON",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

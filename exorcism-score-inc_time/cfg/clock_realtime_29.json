@@ -1,0 +1,21 @@
+{
+  "function": "clock_realtime",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:clock_realtime",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:clock_realtime",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

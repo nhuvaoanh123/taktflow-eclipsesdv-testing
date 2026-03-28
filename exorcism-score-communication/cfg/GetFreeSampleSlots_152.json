@@ -1,0 +1,64 @@
+{
+  "function": "GetFreeSampleSlots",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetFreeSampleSlots",
+      "line": 152
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 170
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 176
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 170
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 177
+    },
+    {
+      "id": 5,
+      "label": "exit:GetFreeSampleSlots",
+      "line": 178
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

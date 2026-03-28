@@ -1,0 +1,21 @@
+{
+  "function": "listen",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:listen",
+      "line": 316
+    },
+    {
+      "id": 1,
+      "label": "exit:listen",
+      "line": 375
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

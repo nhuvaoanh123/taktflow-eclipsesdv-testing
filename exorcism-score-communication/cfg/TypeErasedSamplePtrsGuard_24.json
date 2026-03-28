@@ -1,0 +1,21 @@
+{
+  "function": "TypeErasedSamplePtrsGuard",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TypeErasedSamplePtrsGuard",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:TypeErasedSamplePtrsGuard",
+      "line": 38
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

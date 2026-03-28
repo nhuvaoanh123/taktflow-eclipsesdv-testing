@@ -1,0 +1,21 @@
+{
+  "function": "TYPED_TEST",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TYPED_TEST",
+      "line": 841
+    },
+    {
+      "id": 1,
+      "label": "exit:TYPED_TEST",
+      "line": 859
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

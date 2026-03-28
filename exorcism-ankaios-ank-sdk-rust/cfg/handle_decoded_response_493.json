@@ -1,0 +1,21 @@
+{
+  "function": "handle_decoded_response",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_decoded_response",
+      "line": 493
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_decoded_response",
+      "line": 549
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

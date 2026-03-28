@@ -1,0 +1,21 @@
+{
+  "function": "SimpleReadFunction",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SimpleReadFunction",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:SimpleReadFunction",
+      "line": 77
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

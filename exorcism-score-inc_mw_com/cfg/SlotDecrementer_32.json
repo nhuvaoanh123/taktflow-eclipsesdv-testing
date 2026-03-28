@@ -1,0 +1,21 @@
+{
+  "function": "SlotDecrementer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SlotDecrementer",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:SlotDecrementer",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

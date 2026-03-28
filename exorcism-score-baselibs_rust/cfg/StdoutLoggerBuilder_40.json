@@ -1,0 +1,21 @@
+{
+  "function": "StdoutLoggerBuilder",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:StdoutLoggerBuilder",
+      "line": 40
+    },
+    {
+      "id": 1,
+      "label": "exit:StdoutLoggerBuilder",
+      "line": 89
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

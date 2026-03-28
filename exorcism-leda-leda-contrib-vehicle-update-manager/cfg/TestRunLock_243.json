@@ -1,0 +1,21 @@
+{
+  "function": "TestRunLock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TestRunLock",
+      "line": 243
+    },
+    {
+      "id": 1,
+      "label": "exit:TestRunLock",
+      "line": 277
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

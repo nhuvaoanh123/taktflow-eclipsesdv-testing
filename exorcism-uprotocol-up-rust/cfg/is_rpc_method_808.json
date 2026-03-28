@@ -1,0 +1,21 @@
+{
+  "function": "is_rpc_method",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:is_rpc_method",
+      "line": 808
+    },
+    {
+      "id": 1,
+      "label": "exit:is_rpc_method",
+      "line": 810
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

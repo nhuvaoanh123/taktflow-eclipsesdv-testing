@@ -1,0 +1,21 @@
+{
+  "function": "update_deny_rules",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:update_deny_rules",
+      "line": 1023
+    },
+    {
+      "id": 1,
+      "label": "exit:update_deny_rules",
+      "line": 1048
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,6144 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 24,
+    "calls": [
+      "std::string_view",
+      "mw::log::CreateLogger",
+      "std::move"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 31,
+    "calls": [
+      "find",
+      "std::cref",
+      "has_value",
+      "end",
+      "value",
+      "get",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 51,
+    "calls": [
+      "GetParameters",
+      "has_value",
+      "value",
+      "get",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 73,
+    "calls": [
+      "find",
+      "std::cref",
+      "has_value",
+      "end",
+      "value",
+      "get",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 117,
+    "calls": [
+      "GetParametersAsString"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 122,
+    "calls": [
+      "find",
+      "has_value",
+      "end",
+      "value",
+      "get",
+      "ConvertJsonToString",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 146,
+    "calls": [
+      "has_value",
+      "ToBuffer",
+      "value",
+      "get",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.cpp",
+    "line": 170,
+    "calls": [
+      "find",
+      "has_value",
+      "static_cast<score::config_management::config_daemon::ParameterSetQualifier>",
+      "score::cpp::to_underlying",
+      "end",
+      "value",
+      "get",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "line": 27,
+    "calls": [
+      "result_outer",
+      "size",
+      "has_value",
+      "GetParameterAsJsonAny",
+      "get",
+      "GetParameterAsTwoDimensionalArray",
+      "LogError",
+      "GetParametersAsString",
+      "get_default_resource",
+      "ParameterSet",
+      "if",
+      "MakeUnexpected",
+      "GetParameters",
+      "ConvertJsonListToAmpVector",
+      "GetQualifier",
+      "error",
+      "GetParameterAs",
+      "result",
+      "GetParameterAsArray",
+      "value",
+      "FormatAsKeyValuePairs"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "line": 29,
+    "calls": [
+      "GetParameters",
+      "ConvertJsonListToAmpVector",
+      "size",
+      "GetParameterAs",
+      "has_value",
+      "get_default_resource",
+      "ParameterSet",
+      "GetParametersAsString",
+      "GetParameterAsJsonAny",
+      "result",
+      "GetQualifier",
+      "if",
+      "value",
+      "error",
+      "get",
+      "FormatAsKeyValuePairs",
+      "LogError"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "line": 31,
+    "calls": [
+      "GetParameters",
+      "ConvertJsonListToAmpVector",
+      "size",
+      "GetParameterAs",
+      "has_value",
+      "get_default_resource",
+      "ParameterSet",
+      "GetParametersAsString",
+      "GetParameterAsJsonAny",
+      "result",
+      "GetQualifier",
+      "if",
+      "value",
+      "error",
+      "get",
+      "FormatAsKeyValuePairs",
+      "LogError"
+    ]
+  },
+  {
+    "function": "ParameterSet",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set.h",
+    "line": 34,
+    "calls": [
+      "GetParameters",
+      "ConvertJsonListToAmpVector",
+      "size",
+      "GetParameterAs",
+      "has_value",
+      "get_default_resource",
+      "ParameterSet",
+      "GetParametersAsString",
+      "GetParameterAsJsonAny",
+      "result",
+      "GetQualifier",
+      "if",
+      "value",
+      "error",
+      "get",
+      "FormatAsKeyValuePairs",
+      "LogError"
+    ]
+  },
+  {
+    "function": "CoverParameterSetAPI",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 41,
+    "calls": [
+      "GetParametersAsString",
+      "GetParameterAsJsonAny",
+      "GetQualifier",
+      "ContainsSameContent",
+      "FormatAsKeyValuePairs"
+    ]
+  },
+  {
+    "function": "GenerateDummyJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 59,
+    "calls": []
+  },
+  {
+    "function": "GenerateDummyParameterSetJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 104,
+    "calls": []
+  },
+  {
+    "function": "GenerateDummySimpleParameterSetJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 116,
+    "calls": []
+  },
+  {
+    "function": "GenerateDummySimpleOfParametersJsonString",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 127,
+    "calls": []
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 135,
+    "calls": [
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "GetQualifier",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 161,
+    "calls": [
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "GetQualifier",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 188,
+    "calls": [
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "GetQualifier",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 215,
+    "calls": [
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "GetQualifier",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 241,
+    "calls": [
+      "has_value",
+      "std::move",
+      "ASSERT_FALSE",
+      "GetQualifier",
+      "RecordProperty",
+      "value",
+      "error",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 268,
+    "calls": [
+      "has_value",
+      "std::move",
+      "ASSERT_FALSE",
+      "GetQualifier",
+      "RecordProperty",
+      "value",
+      "FromBuffer"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 293,
+    "calls": [
+      "has_value",
+      "std::move",
+      "ASSERT_FALSE",
+      "GetQualifier",
+      "RecordProperty",
+      "error",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 312,
+    "calls": [
+      "has_value",
+      "std::move",
+      "ASSERT_FALSE",
+      "GetQualifier",
+      "RecordProperty",
+      "value",
+      "error",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 337,
+    "calls": [
+      "EXPECT_EQ",
+      "std::move",
+      "ContainsSameContent",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 355,
+    "calls": [
+      "GenerateDummyParameterSetJsonString",
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 373,
+    "calls": [
+      "cend",
+      "std::remove_if",
+      "erase",
+      "std::move",
+      "RecordProperty",
+      "end",
+      "value",
+      "begin",
+      "FormatAsKeyValuePairs",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 458,
+    "calls": [
+      "static_cast<ConfigProviderError>",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "FormatAsKeyValuePairs",
+      "error",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 479,
+    "calls": [
+      "static_cast<ConfigProviderError>",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "FormatAsKeyValuePairs",
+      "error",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 515,
+    "calls": [
+      "cend",
+      "std::remove_if",
+      "GenerateDummySimpleParameterSetJsonString",
+      "GetParametersAsString",
+      "GenerateDummySimpleOfParametersJsonString",
+      "std::move",
+      "erase",
+      "RecordProperty",
+      "end",
+      "value",
+      "begin",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 538,
+    "calls": [
+      "GetParametersAsString",
+      "std::move",
+      "RecordProperty",
+      "error",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 556,
+    "calls": [
+      "GetParametersAsString",
+      "std::move",
+      "RecordProperty",
+      "error",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 575,
+    "calls": [
+      "GetParametersAsString",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "error",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 597,
+    "calls": [
+      "EXPECT_EQ",
+      "std::move",
+      "error",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 614,
+    "calls": [
+      "EXPECT_EQ",
+      "std::move",
+      "error",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 636,
+    "calls": [
+      "std::make_unique<ParameterSet>",
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "GenerateDummyJsonString",
+      "value",
+      "FromBuffer"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 647,
+    "calls": []
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 671,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 686,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 701,
+    "calls": [
+      "GetParameterSet",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 729,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 748,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 766,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 786,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 799,
+    "calls": [
+      "GetParameterSet",
+      "at",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "get",
+      "FromBuffer",
+      "ASSERT_EQ",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 832,
+    "calls": [
+      "GetParameterSet",
+      "at",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "get",
+      "FromBuffer",
+      "ASSERT_EQ",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 865,
+    "calls": [
+      "GetParameterSet",
+      "at",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "get",
+      "FromBuffer",
+      "ASSERT_EQ",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 898,
+    "calls": [
+      "GetParameterSet",
+      "at",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "get",
+      "FromBuffer",
+      "ASSERT_EQ",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 940,
+    "calls": [
+      "GetParameterSet",
+      "at",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "get",
+      "FromBuffer",
+      "ASSERT_EQ",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TYPED_TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 982,
+    "calls": [
+      "GetParameterSet",
+      "at",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "get",
+      "FromBuffer",
+      "ASSERT_EQ",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1025,
+    "calls": [
+      "EXPECT_TRUE",
+      "std::move",
+      "RecordProperty",
+      "ContainsSameContent",
+      "value",
+      "FromBuffer",
+      "EXPECT_FALSE"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1154,
+    "calls": [
+      "GetParameterSet",
+      "std::string",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1170,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1186,
+    "calls": [
+      "GetParameterSet",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1206,
+    "calls": [
+      "GetParameterSet",
+      "size",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1226,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "error",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1284,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "error",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/parameter_set/parameter_set_test.cpp",
+    "line": 1311,
+    "calls": [
+      "std::move",
+      "RecordProperty",
+      "value",
+      "error",
+      "FromBuffer",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "line": 24,
+    "calls": [
+      "ReadCachedParameterSets",
+      "Persistency"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "line": 26,
+    "calls": [
+      "ReadCachedParameterSets",
+      "Persistency"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "line": 28,
+    "calls": [
+      "ReadCachedParameterSets",
+      "Persistency"
+    ]
+  },
+  {
+    "function": "Persistency",
+    "file": "score/config_management/config_provider/code/persistency/persistency.h",
+    "line": 39,
+    "calls": [
+      "ReadCachedParameterSets",
+      "Persistency"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "line": 20,
+    "calls": [
+      "PersistencyMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "line": 22,
+    "calls": [
+      "PersistencyMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "line": 24,
+    "calls": [
+      "PersistencyMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "PersistencyMock",
+    "file": "score/config_management/config_provider/code/persistency/persistency_mock.h",
+    "line": 27,
+    "calls": [
+      "PersistencyMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "line": 22,
+    "calls": [
+      "std::string_view",
+      "mw::log::CreateLogger"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "line": 24,
+    "calls": [
+      "LogDebug"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "line": 32,
+    "calls": [
+      "LogDebug"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.cpp",
+    "line": 39,
+    "calls": [
+      "LogDebug"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.h",
+    "line": 20,
+    "calls": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.h",
+    "line": 22,
+    "calls": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl.h",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "line": 28,
+    "calls": [
+      "std::make_unique<PersistencyImpl>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "line": 36,
+    "calls": [
+      "ReadCachedParameterSets",
+      "CreateInstance",
+      "score::cpp::pmr::get_default_resource",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "line": 50,
+    "calls": [
+      "CacheParameterSet",
+      "EXPECT_NO_THROW",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/persistency/details/persistency_impl_test.cpp",
+    "line": 64,
+    "calls": [
+      "SyncToStorage",
+      "EXPECT_NO_THROW",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TestMessage",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error_test.cpp",
+    "line": 32,
+    "calls": [
+      "MakeError",
+      "EXPECT_EQ",
+      "Message"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error_test.cpp",
+    "line": 37,
+    "calls": [
+      "TestMessage",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error_test.cpp",
+    "line": 51,
+    "calls": [
+      "static_cast<PersistencyError>",
+      "Message",
+      "MakeError",
+      "RecordProperty",
+      "score::cpp::to_underlying",
+      "ASSERT_DEATH"
+    ]
+  },
+  {
+    "function": "MessageFor",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.cpp",
+    "line": 32,
+    "calls": [
+      "score::cpp::to_underlying",
+      "static_cast<PersistencyError>",
+      "SCORE_LANGUAGE_FUTURECPP_ASSERT_PRD_MESSAGE"
+    ]
+  },
+  {
+    "function": "MakeError",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.cpp",
+    "line": 67,
+    "calls": [
+      "static_cast<score::result::ErrorCode>"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.h",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "PersistencyError",
+    "file": "score/config_management/config_provider/code/persistency/error/persistency_error.h",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "line": 27,
+    "calls": [
+      "ConfigProvider",
+      "OnChangedInitialQualifierState",
+      "void"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "line": 29,
+    "calls": [
+      "ConfigProvider",
+      "OnChangedInitialQualifierState",
+      "void"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "line": 31,
+    "calls": [
+      "ConfigProvider",
+      "OnChangedInitialQualifierState",
+      "void"
+    ]
+  },
+  {
+    "function": "ConfigProvider",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider.h",
+    "line": 37,
+    "calls": [
+      "OnChangedInitialQualifierState",
+      "ConfigProvider"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.cpp",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/initial_qualifier_state_types.h",
+    "line": 22,
+    "calls": [
+      "void"
+    ]
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_provider/code/config_provider/initial_qualifier_state_types.h",
+    "line": 26,
+    "calls": [
+      "void"
+    ]
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_provider/code/config_provider/initial_qualifier_state_types.h",
+    "line": 38,
+    "calls": [
+      "void"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.h",
+    "line": 24,
+    "calls": [
+      "ConfigProviderMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.h",
+    "line": 26,
+    "calls": [
+      "ConfigProviderMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/config_provider_mock.h",
+    "line": 28,
+    "calls": [
+      "ConfigProviderMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "Get",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 48,
+    "calls": [
+      "Update",
+      "OfferService",
+      "mw::com::runtime::InitializeRuntime",
+      "CreateService"
+    ]
+  },
+  {
+    "function": "CreateService",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 59,
+    "calls": [
+      "MwComSkeleton::Create",
+      "std::move",
+      "std::make_unique<MwComSkeleton>",
+      "value",
+      "score::mw::com::InstanceSpecifier::Create"
+    ]
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 71,
+    "calls": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 79,
+    "calls": [
+      "ASSERT_NE",
+      "score::cpp::pmr::get_default_resource",
+      "std::chrono::milliseconds",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 100,
+    "calls": [
+      "ASSERT_NE",
+      "score::cpp::pmr::get_default_resource",
+      "std::chrono::milliseconds",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 123,
+    "calls": [
+      "ASSERT_NE",
+      "score::cpp::pmr::get_default_resource",
+      "std::move",
+      "RecordProperty",
+      "score::cpp::pmr::make_unique<PersistencyMock>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 145,
+    "calls": [
+      "ASSERT_NE",
+      "score::cpp::pmr::get_default_resource",
+      "std::move",
+      "RecordProperty",
+      "score::cpp::pmr::make_unique<PersistencyMock>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com_test.cpp",
+    "line": 169,
+    "calls": [
+      "ASSERT_NE",
+      "score::cpp::pmr::get_default_resource",
+      "notify_all",
+      "std::move",
+      "RecordProperty",
+      "ASSERT_TRUE",
+      "unlock",
+      "wait_for",
+      "std::chrono::milliseconds"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "line": 29,
+    "calls": [
+      "GetProxyContainer",
+      "ConfigProviderFactory",
+      "get_default_resource",
+      "CreateInternal",
+      "milliseconds",
+      "Create",
+      "LogDebug",
+      "WaitUntilConnected",
+      "move",
+      "InitiateServiceDiscovery"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "line": 31,
+    "calls": [
+      "GetProxyContainer",
+      "ConfigProviderFactory",
+      "get_default_resource",
+      "CreateInternal",
+      "milliseconds",
+      "Create",
+      "LogDebug",
+      "WaitUntilConnected",
+      "move",
+      "InitiateServiceDiscovery"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "line": 33,
+    "calls": [
+      "GetProxyContainer",
+      "ConfigProviderFactory",
+      "get_default_resource",
+      "CreateInternal",
+      "milliseconds",
+      "Create",
+      "LogDebug",
+      "WaitUntilConnected",
+      "move",
+      "InitiateServiceDiscovery"
+    ]
+  },
+  {
+    "function": "ConfigProviderFactory",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.h",
+    "line": 38,
+    "calls": [
+      "GetProxyContainer",
+      "ConfigProviderFactory",
+      "get_default_resource",
+      "CreateInternal",
+      "milliseconds",
+      "Create",
+      "LogDebug",
+      "WaitUntilConnected",
+      "move",
+      "InitiateServiceDiscovery"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/factory/factory_mw_com.cpp",
+    "line": 22,
+    "calls": [
+      "std::string_view",
+      "mw::log::CreateLogger"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 63,
+    "calls": [
+      "FromBuffer",
+      "score::cpp::pmr::get_default_resource",
+      "score::cpp::pmr::make_unique<PersistencyMock>"
+    ]
+  },
+  {
+    "function": "UnblockMakeProxyAvailable",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 83,
+    "calls": [
+      "unlock",
+      "notify_all"
+    ]
+  },
+  {
+    "function": "BlockUntilProxyIsReady",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 90,
+    "calls": [
+      "wait"
+    ]
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 97,
+    "calls": [
+      "request_stop"
+    ]
+  },
+  {
+    "function": "SetUpPersistency",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 102,
+    "calls": [
+      "WillOnce",
+      "ReadCachedParameterSets",
+      "Invoke",
+      "value",
+      "FromBuffer",
+      "emplace",
+      "std::make_shared<const ParameterSet>",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "FailProxySearch",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 124,
+    "calls": [
+      "static_cast<score::result::Error>",
+      "SetError"
+    ]
+  },
+  {
+    "function": "SetUpProxyButProxyCouldNotProvideInitialQualifierStateOnFirstRequest",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 129,
+    "calls": [
+      "Return",
+      "GetInitialQualifierState",
+      "WillOnce",
+      "SetValue",
+      "get",
+      "std::make_unique<InternalConfigProviderMock>",
+      "std::move",
+      "Times",
+      "TrySubscribeToLastUpdatedParameterSetEvent",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "SetUpProxy",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 143,
+    "calls": [
+      "StringViewCompare",
+      "WillOnce",
+      "has_value",
+      "SetValue",
+      "Invoke",
+      "Times",
+      "CloneByValue",
+      "get",
+      "TrySubscribeToLastUpdatedParameterSetEvent",
+      "StopParameterSetUpdatePollingRoutine",
+      "std::move",
+      "MakeUnexpected",
+      "Return",
+      "GetParameterSet",
+      "ByMove",
+      "error",
+      "GetInitialQualifierState",
+      "WillRepeatedly",
+      "std::make_unique<InternalConfigProviderMock>",
+      "value",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "CreateConfigProviderWithAvailableCallback",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 182,
+    "calls": [
+      "GetInterruptibleFuture",
+      "std::make_unique<ConfigProviderImpl>",
+      "score::cpp::pmr::get_default_resource",
+      "std::move",
+      "value",
+      "get_token"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 218,
+    "calls": [
+      "EXPECT_TRUE",
+      "request_stop",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "OnChangedParameterSet",
+      "has_value",
+      "RecordProperty",
+      "error",
+      "CheckParameterSetUpdates",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 249,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "OnChangedParameterSet",
+      "has_value",
+      "RecordProperty",
+      "error",
+      "CheckParameterSetUpdates",
+      "MakeUnexpected",
+      "FailProxySearch",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 281,
+    "calls": [
+      "RecordProperty",
+      "reset",
+      "EXPECT_NE",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_NO_THROW"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 305,
+    "calls": [
+      "WaitUntilConnected",
+      "RecordProperty",
+      "reset",
+      "EXPECT_NE",
+      "EXPECT_FALSE",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_NO_THROW"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 332,
+    "calls": [
+      "request_stop",
+      "std::async",
+      "RecordProperty",
+      "std::this_thread::sleep_for",
+      "EXPECT_EQ",
+      "ASSERT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "wait_for",
+      "IsAwaitingProxyConnection"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 368,
+    "calls": [
+      "request_stop",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "join",
+      "EXPECT_FALSE",
+      "CreateConfigProviderWithAvailableCallback",
+      "get_token"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 390,
+    "calls": [
+      "EXPECT_FALSE",
+      "request_stop",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "join",
+      "FailProxySearch",
+      "CreateConfigProviderWithAvailableCallback",
+      "get_token"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 413,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "SetUpProxy",
+      "OnChangedParameterSet",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "GetQualifier",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "error",
+      "CheckParameterSetUpdates",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "get_token"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 465,
+    "calls": [
+      "GetInitialQualifierState",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "SetUpProxyButProxyCouldNotProvideInitialQualifierStateOnFirstRequest"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 487,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "SetUpProxy",
+      "OnChangedParameterSet",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "GetQualifier",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "error",
+      "CheckParameterSetUpdates",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "get_token"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 530,
+    "calls": [
+      "GetInitialQualifierState",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "SetUpProxyButProxyCouldNotProvideInitialQualifierStateOnFirstRequest"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 554,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "SetUpProxy",
+      "OnChangedParameterSet",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "GetQualifier",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "error",
+      "CheckParameterSetUpdates",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "get_token"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 599,
+    "calls": [
+      "EXPECT_TRUE",
+      "request_stop",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "OnChangedParameterSet",
+      "has_value",
+      "RecordProperty",
+      "SetUpPersistency",
+      "value",
+      "error",
+      "CheckParameterSetUpdates",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 633,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "OnChangedParameterSet",
+      "has_value",
+      "RecordProperty",
+      "SetUpPersistency",
+      "value",
+      "error",
+      "CheckParameterSetUpdates",
+      "MakeUnexpected",
+      "FailProxySearch",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 667,
+    "calls": [
+      "StringViewCompare",
+      "Return",
+      "GetParameterSet",
+      "SetValue",
+      "WillOnce",
+      "BlockUntilProxyIsReady",
+      "TrySubscribeToLastUpdatedParameterSetEvent",
+      "std::make_unique<InternalConfigProviderMock>",
+      "std::move",
+      "RecordProperty",
+      "Times",
+      "SetUpPersistency",
+      "UnblockMakeProxyAvailable",
+      "get",
+      "get_token",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 701,
+    "calls": [
+      "request_stop",
+      "SetValue",
+      "WillOnce",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "Times",
+      "join",
+      "waitWithAbort",
+      "TrySubscribeToLastUpdatedParameterSetEvent",
+      "get",
+      "get_token",
+      "notify",
+      "std::move",
+      "CreateConfigProviderWithAvailableCallback",
+      "Return",
+      "GetParameterSet",
+      "std::chrono::milliseconds",
+      "std::make_unique<InternalConfigProviderMock>",
+      "waitForWithAbort",
+      "SetUpPersistency",
+      "EXPECT_FALSE",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 741,
+    "calls": [
+      "StringViewCompare",
+      "request_stop",
+      "SetValue",
+      "WillOnce",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "Times",
+      "join",
+      "waitWithAbort",
+      "TrySubscribeToLastUpdatedParameterSetEvent",
+      "get",
+      "get_token",
+      "notify",
+      "std::move",
+      "CreateConfigProviderWithAvailableCallback",
+      "Return",
+      "GetParameterSet",
+      "std::chrono::milliseconds",
+      "std::make_unique<InternalConfigProviderMock>",
+      "waitForWithAbort",
+      "SetUpPersistency",
+      "EXPECT_FALSE",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 779,
+    "calls": [
+      "SetUpProxy",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "CheckParameterSetUpdates",
+      "get_token",
+      "OnChangedParameterSet",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "GetQualifier",
+      "error",
+      "GetInitialQualifierState",
+      "SetUpPersistency",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "GetCachedParameterSetsCount"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 841,
+    "calls": [
+      "EXPECT_TRUE",
+      "SetUpProxy",
+      "OnChangedParameterSet",
+      "ASSERT_NE",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 875,
+    "calls": [
+      "EXPECT_TRUE",
+      "SetUpProxy",
+      "GetParameterSet",
+      "OnChangedParameterSet",
+      "ASSERT_NE",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "registered_on_changed_parameter_set_callback_",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 913,
+    "calls": [
+      "StringViewCompare",
+      "SetUpProxy",
+      "WillOnce",
+      "ASSERT_NE",
+      "BlockUntilProxyIsReady",
+      "Times",
+      "RecordProperty",
+      "get_token",
+      "std::move",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "Return",
+      "GetParameterSet",
+      "ByMove",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "FromBuffer",
+      "CacheParameterSet",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 966,
+    "calls": [
+      "StringViewCompare",
+      "SetUpProxy",
+      "WillOnce",
+      "has_value",
+      "ASSERT_NE",
+      "BlockUntilProxyIsReady",
+      "Times",
+      "RecordProperty",
+      "get_token",
+      "OnChangedParameterSet",
+      "std::move",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_TRUE",
+      "Return",
+      "GetParameterSet",
+      "ByMove",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "FromBuffer",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1030,
+    "calls": [
+      "StringViewCompare",
+      "SetUpProxy",
+      "WillOnce",
+      "has_value",
+      "ASSERT_NE",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "get_token",
+      "OnChangedParameterSet",
+      "std::move",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_TRUE",
+      "Return",
+      "GetParameterSet",
+      "ByMove",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "FromBuffer",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1099,
+    "calls": [
+      "EXPECT_TRUE",
+      "EXPECT_FALSE",
+      "SetUpProxy",
+      "OnChangedParameterSet",
+      "ASSERT_NE",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1136,
+    "calls": [
+      "EXPECT_TRUE",
+      "EXPECT_FALSE",
+      "SetUpProxy",
+      "OnChangedParameterSet",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "UnblockMakeProxyAvailable",
+      "error",
+      "MakeUnexpected",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1166,
+    "calls": [
+      "EXPECT_TRUE",
+      "EXPECT_FALSE",
+      "SetUpProxy",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "OnChangedParameterSetCbk",
+      "UnblockMakeProxyAvailable",
+      "error",
+      "MakeUnexpected",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1195,
+    "calls": [
+      "RecordProperty",
+      "OnChangedParameterSetCbk",
+      "error",
+      "UnblockMakeProxyAvailable",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1215,
+    "calls": [
+      "EXPECT_TRUE",
+      "SetUpProxy",
+      "GetParameterSet",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "UnblockMakeProxyAvailable",
+      "error",
+      "MakeUnexpected",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1245,
+    "calls": [
+      "StringViewCompare",
+      "SetUpProxy",
+      "WillOnce",
+      "has_value",
+      "ASSERT_NE",
+      "BlockUntilProxyIsReady",
+      "Times",
+      "RecordProperty",
+      "SetLogMode",
+      "score::mw::log::detail::RecorderFactory",
+      "get",
+      "get_token",
+      "OnChangedParameterSet",
+      "std::move",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_TRUE",
+      "Return",
+      "score::mw::log::detail::Runtime::SetRecorder",
+      "GetParameterSet",
+      "ByMove",
+      "GetQualifier",
+      "SetDefaultConsoleLogLevel",
+      "CreateRecorderFromLogMode",
+      "registered_on_changed_parameter_set_callback_",
+      "SetUpPersistency",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "CacheParameterSet",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1304,
+    "calls": [
+      "EXPECT_TRUE",
+      "SetUpProxy",
+      "BlockUntilProxyIsReady",
+      "WaitUntilConnected",
+      "RecordProperty",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "CreateConfigProviderWithAvailableCallback",
+      "std::chrono::milliseconds"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1324,
+    "calls": [
+      "EXPECT_FALSE",
+      "get_token",
+      "WaitUntilConnected",
+      "RecordProperty",
+      "FailProxySearch",
+      "CreateConfigProviderWithAvailableCallback",
+      "std::chrono::milliseconds"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1342,
+    "calls": [
+      "EXPECT_FALSE",
+      "get_token",
+      "request_stop",
+      "WaitUntilConnected",
+      "RecordProperty",
+      "std::chrono::hours",
+      "join",
+      "FailProxySearch",
+      "CreateConfigProviderWithAvailableCallback",
+      "score::cpp::jthread"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1367,
+    "calls": [
+      "CreateConfigProviderWithAvailableCallback",
+      "OnChangedInitialQualifierState",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1382,
+    "calls": [
+      "SetUpProxy",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "SetUpPersistency",
+      "UnblockMakeProxyAvailable",
+      "MakeUnexpected",
+      "CreateConfigProviderWithAvailableCallback",
+      "get_token"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1403,
+    "calls": [
+      "EXPECT_TRUE",
+      "SetUpProxy",
+      "GetParameterSet",
+      "OnChangedParameterSet",
+      "ASSERT_NE",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "ASSERT_TRUE",
+      "score::cpp::string_view",
+      "RecordProperty",
+      "Times",
+      "registered_on_changed_parameter_set_callback_",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1430,
+    "calls": [
+      "EXPECT_TRUE",
+      "Return",
+      "SetUpProxy",
+      "GetParameterSet",
+      "ByMove",
+      "OnChangedParameterSet",
+      "ASSERT_NE",
+      "has_value",
+      "WillOnce",
+      "BlockUntilProxyIsReady",
+      "score::cpp::string_view",
+      "RecordProperty",
+      "registered_on_changed_parameter_set_callback_",
+      "UnblockMakeProxyAvailable",
+      "MakeUnexpected",
+      "get_token",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1460,
+    "calls": [
+      "size",
+      "has_value",
+      "RecordProperty",
+      "GetParameterSetsByNameList",
+      "error",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "EXPECT_FALSE",
+      "ASSERT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1482,
+    "calls": [
+      "StringViewCompare",
+      "SetUpProxy",
+      "size",
+      "WillOnce",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "score::cpp::pmr::string",
+      "GetParameterSetsByNameList",
+      "get_token",
+      "std::move",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_TRUE",
+      "Return",
+      "GetParameterSet",
+      "ByMove",
+      "EXPECT_CALL",
+      "GetQualifier",
+      "error",
+      "at",
+      "SetUpPersistency",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "FromBuffer",
+      "EXPECT_FALSE",
+      "ASSERT_EQ",
+      "score::cpp::string_view"
+    ]
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1543,
+    "calls": [
+      "SetUpProxy",
+      "has_value",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "CheckParameterSetUpdates",
+      "get",
+      "std::chrono::milliseconds::zero",
+      "get_token",
+      "IsAwaitingProxyConnection",
+      "wait",
+      "get_future",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "EXPECT_TRUE",
+      "std::async",
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "set_value",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "EXPECT_FALSE",
+      "WaitUntilConnected"
+    ]
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1622,
+    "calls": [
+      "SetUpProxy",
+      "get_future",
+      "std::async",
+      "wait",
+      "GetInitialQualifierState",
+      "GetParameterSet",
+      "BlockUntilProxyIsReady",
+      "set_value",
+      "RecordProperty",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "get",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1675,
+    "calls": [
+      "SetUpProxy",
+      "get_future",
+      "std::async",
+      "wait",
+      "OnChangedParameterSet",
+      "GetParameterSet",
+      "BlockUntilProxyIsReady",
+      "set_value",
+      "RecordProperty",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "get",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "GetCachedParameterSetsCount"
+    ]
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1738,
+    "calls": [
+      "SetUpProxy",
+      "get_future",
+      "std::async",
+      "wait",
+      "OnChangedParameterSet",
+      "GetParameterSet",
+      "BlockUntilProxyIsReady",
+      "set_value",
+      "RecordProperty",
+      "registered_on_changed_parameter_set_callback_",
+      "value",
+      "UnblockMakeProxyAvailable",
+      "get",
+      "error",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback"
+    ]
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1810,
+    "calls": [
+      "std::get<1>",
+      "SetUpProxy",
+      "GetInitialQualifierState",
+      "BlockUntilProxyIsReady",
+      "RecordProperty",
+      "std::get<0>",
+      "UnblockMakeProxyAvailable",
+      "get_token",
+      "EXPECT_EQ",
+      "CreateConfigProviderWithAvailableCallback",
+      "GetParam"
+    ]
+  },
+  {
+    "function": "CoverConfigProviderAPI",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl_test.cpp",
+    "line": 1862,
+    "calls": [
+      "GetParameterSet",
+      "GetInitialQualifierState",
+      "OnChangedParameterSet",
+      "OnChangedInitialQualifierState",
+      "std::move",
+      "GetParameterSetsByNameList",
+      "OnChangedParameterSetCbk",
+      "CheckParameterSetUpdates",
+      "WaitUntilConnected",
+      "GetCachedParameterSetsCount"
+    ]
+  },
+  {
+    "function": "GetParameterSetValue",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 34,
+    "calls": [
+      "IsEnabled",
+      "has_value",
+      "GetParametersAsString",
+      "value"
+    ]
+  },
+  {
+    "function": "ConvertInitialQualifierStateToInitialQualifierState",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 79,
+    "calls": [
+      "request_stop",
+      "Message",
+      "ReadCachedParameterSets",
+      "has_value",
+      "CreateInstance",
+      "std::move",
+      "LogDebug",
+      "SetupInternalConfigProvider",
+      "mw::log::CreateLogger",
+      "value",
+      "error",
+      "Get",
+      "emplace",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 128,
+    "calls": [
+      "count",
+      "stop_requested",
+      "wait_for",
+      "LogWarn"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 148,
+    "calls": [
+      "has_value",
+      "get_stop_token",
+      "stop_requested"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 155,
+    "calls": [
+      "reset",
+      "LogDebug",
+      "StopParameterSetUpdatePollingRoutine"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 175,
+    "calls": [
+      "FetchInitialParameterSetValuesFrom",
+      "CacheInitialQualifierState",
+      "GetInitialQualifierState",
+      "RegisterCallbacksForPersistedParameterSetNames",
+      "std::move",
+      "LogDebug",
+      "is_available_notification_callback",
+      "notify_all",
+      "StartParameterSetUpdatePollingRoutine",
+      "unlock",
+      "empty",
+      "TrySubscribeToLastUpdatedParameterSetEvent",
+      "LastUpdatedParameterSetReceiveHandler",
+      "LogError",
+      "WriteInitialParameterSetValuesToPersistentCache"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 205,
+    "calls": [
+      "static_cast<std::underlying_type_t<InitialQualifierState>>",
+      "LogError",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 226,
+    "calls": [
+      "GetParameterSet"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 231,
+    "calls": [
+      "try_emplace",
+      "GetParameterSetFromInternalConfigProvider",
+      "std::find_if",
+      "size",
+      "value_or",
+      "has_value",
+      "data",
+      "LogDebug",
+      "RegisterUpdateHandlerForParameterSetName",
+      "end",
+      "value",
+      "begin",
+      "GetParameterSetValue",
+      "MakeUnexpected",
+      "CacheParameterSet",
+      "LogError",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 277,
+    "calls": [
+      "try_emplace",
+      "GetParameterSetFromInternalConfigProvider",
+      "std::find_if",
+      "size",
+      "value_or",
+      "has_value",
+      "data",
+      "LogDebug",
+      "SyncToStorage",
+      "RegisterUpdateHandlerForParameterSetName",
+      "end",
+      "value",
+      "begin",
+      "error",
+      "GetParameterSetValue",
+      "MakeUnexpected",
+      "CacheParameterSet",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 339,
+    "calls": [
+      "GetParameterSet",
+      "has_value",
+      "std::move",
+      "LogDebug",
+      "value",
+      "score::cpp::pmr::make_shared<const ParameterSet>",
+      "error",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 360,
+    "calls": [
+      "MakeUnexpected"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 366,
+    "calls": [
+      "GetInitialQualifierState",
+      "ConvertInitialQualifierStateToInitialQualifierState"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 371,
+    "calls": [
+      "GetInitialQualifierState",
+      "ConvertInitialQualifierStateToInitialQualifierState"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 376,
+    "calls": [
+      "CacheInitialQualifierState",
+      "GetInitialQualifierState",
+      "value_or",
+      "LogDebug",
+      "static_cast<std::underlying_type_t<InitialQualifierState>>",
+      "LogError",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 404,
+    "calls": [
+      "size"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 410,
+    "calls": [
+      "find",
+      "GetParameterSetFromInternalConfigProvider",
+      "size",
+      "has_value",
+      "second",
+      "data",
+      "LogDebug",
+      "insert_or_assign",
+      "end",
+      "value",
+      "empty",
+      "GetParameterSetValue",
+      "CacheParameterSet",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 456,
+    "calls": [
+      "std::move",
+      "LogDebug",
+      "RegisterUpdateHandlerForParameterSetName",
+      "empty",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 471,
+    "calls": [
+      "std::move",
+      "OnChangedParameterSet"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 477,
+    "calls": [
+      "find",
+      "size",
+      "data",
+      "LogDebug",
+      "std::move",
+      "insert_or_assign",
+      "end",
+      "empty",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 502,
+    "calls": [
+      "MakeUnexpected",
+      "LogError",
+      "LogDebug",
+      "CheckParameterSetUpdates"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 516,
+    "calls": [
+      "try_emplace",
+      "GetParameterSetFromInternalConfigProvider",
+      "push_back",
+      "has_value",
+      "LogDebug",
+      "value",
+      "GetParameterSetValue",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 545,
+    "calls": [
+      "size",
+      "std::move",
+      "LogDebug",
+      "SyncToStorage",
+      "empty",
+      "CacheParameterSet",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/config_provider/details/config_provider_impl.cpp",
+    "line": 565,
+    "calls": [
+      "RegisterUpdateHandlerForParameterSetName"
+    ]
+  },
+  {
+    "function": "MessageFor",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.cpp",
+    "line": 39,
+    "calls": [
+      "score::cpp::to_underlying"
+    ]
+  },
+  {
+    "function": "MakeError",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.cpp",
+    "line": 101,
+    "calls": [
+      "static_cast<score::result::ErrorCode>"
+    ]
+  },
+  {
+    "function": "TestMessage",
+    "file": "score/config_management/config_provider/code/config_provider/error/error_test.cpp",
+    "line": 24,
+    "calls": [
+      "MakeError",
+      "EXPECT_EQ",
+      "Message"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_provider/code/config_provider/error/error_test.cpp",
+    "line": 29,
+    "calls": [
+      "static_cast<ConfigProviderError>",
+      "TestMessage",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.h",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "ConfigProviderError",
+    "file": "score/config_management/config_provider/code/config_provider/error/error.h",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider_mock.h",
+    "line": 20,
+    "calls": [
+      "InternalConfigProviderMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider_mock.h",
+    "line": 22,
+    "calls": [
+      "InternalConfigProviderMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider_mock.h",
+    "line": 24,
+    "calls": [
+      "InternalConfigProviderMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "line": 27,
+    "calls": [
+      "IInternalConfigProvider",
+      "void"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "line": 29,
+    "calls": [
+      "IInternalConfigProvider",
+      "void"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "line": 31,
+    "calls": [
+      "IInternalConfigProvider",
+      "void"
+    ]
+  },
+  {
+    "function": "IInternalConfigProvider",
+    "file": "score/config_management/config_provider/code/proxies/internal_config_provider.h",
+    "line": 35,
+    "calls": [
+      "IInternalConfigProvider",
+      "void"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "line": 50,
+    "calls": [
+      "mw::com::runtime::InitializeRuntime",
+      "std::move",
+      "CreateProxy",
+      "OfferService",
+      "std::make_unique<InternalConfigProvider>",
+      "Update",
+      "CreateService"
+    ]
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "line": 64,
+    "calls": []
+  },
+  {
+    "function": "CreateService",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "line": 70,
+    "calls": [
+      "MwComSkeleton::Create",
+      "std::move",
+      "std::make_unique<MwComSkeleton>",
+      "value",
+      "score::mw::com::InstanceSpecifier::Create"
+    ]
+  },
+  {
+    "function": "CreateProxy",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "line": 82,
+    "calls": [
+      "MWProxy::Create",
+      "std::move",
+      "MWProxy::FindService",
+      "value",
+      "std::make_unique<MWProxy>",
+      "front",
+      "score::mw::com::InstanceSpecifier::Create"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "line": 97,
+    "calls": [
+      "CreateProxy",
+      "EXPECT_NO_THROW",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_P",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl_test.cpp",
+    "line": 116,
+    "calls": [
+      "std::get<1>",
+      "GetInitialQualifierState",
+      "RecordProperty",
+      "std::get<0>",
+      "EXPECT_EQ",
+      "Update",
+      "GetParam"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.h",
+    "line": 32,
+    "calls": [
+      "GetParameterSet",
+      "InternalConfigProvider"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.h",
+    "line": 34,
+    "calls": [
+      "GetParameterSet",
+      "InternalConfigProvider"
+    ]
+  },
+  {
+    "function": "config_provider",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.h",
+    "line": 36,
+    "calls": [
+      "GetParameterSet",
+      "InternalConfigProvider"
+    ]
+  },
+  {
+    "function": "Convert",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 34,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 70,
+    "calls": [
+      "std::move",
+      "LogDebug",
+      "mw::log::CreateLogger",
+      "SCORE_LANGUAGE_FUTURECPP_ASSERT_PRD",
+      "Subscribe"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 85,
+    "calls": [
+      "reset",
+      "Unsubscribe",
+      "LogDebug"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 95,
+    "calls": [
+      "LogDebug"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 104,
+    "calls": [
+      "Subscribe",
+      "LogDebug",
+      "std::move"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 116,
+    "calls": [
+      "GetNumNewSamplesAvailable",
+      "Convert",
+      "has_value",
+      "LogDebug",
+      "GetNewSamples",
+      "value",
+      "static_cast<std::underlying_type_t<InitialQualifierState>>",
+      "unlock",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 150,
+    "calls": [
+      "LogWarn",
+      "has_value",
+      "value_or",
+      "LogDebug",
+      "joinable",
+      "SCORE_LANGUAGE_FUTURECPP_ASSERT_PRD_MESSAGE",
+      "reserve",
+      "on_changed_parameter_set_callback_",
+      "GetLastUpdatedParameterSetNewSamples",
+      "stop_requested",
+      "lock",
+      "wait_for",
+      "empty",
+      "unlock",
+      "swap",
+      "score::cpp::jthread"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 200,
+    "calls": [
+      "has_value",
+      "request_stop",
+      "reset",
+      "LogDebug"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 210,
+    "calls": [
+      "notify_one",
+      "GetLastUpdatedParameterSetNewSamples",
+      "LogDebug"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_provider/code/proxies/details/mw_com/internal_config_provider_impl.cpp",
+    "line": 221,
+    "calls": [
+      "seekp",
+      "Message",
+      "size",
+      "LogWarn",
+      "has_value",
+      "std::move",
+      "LogDebug",
+      "insert",
+      "end",
+      "GetNewSamples",
+      "LogError",
+      "empty",
+      "begin",
+      "std::find",
+      "error",
+      "SCORE_LANGUAGE_FUTURECPP_PRECONDITION",
+      "str",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "TestMainFunction",
+    "file": "score/config_management/config_daemon/code/main_test.cpp",
+    "line": 39,
+    "calls": [
+      "std::make_unique<score::mw::lifecycle::ApplicationContextMock>",
+      "dynamic_cast<score::config_management::config_daemon::IConfigDaemon*>",
+      "std::make_unique<score::mwcoreinitwrapper::MwCoreInitializerMock>",
+      "SetCallbackForRunMethod",
+      "std::make_unique<score::mw::lifecycle::LifeCycleManagerMock>",
+      "std::exit",
+      "std::make_unique<score::mw::lifecycle::MwLifeCycleManagerMock>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/main_test.cpp",
+    "line": 61,
+    "calls": [
+      "ResetCallbackForRunMethod",
+      "std::exit",
+      "reset"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "score/config_management/config_daemon/code/main.cpp",
+    "line": 28,
+    "calls": [
+      "score::mw::lifecycle::run_application<score::config_management::config_daemon::ConfigDaemon>",
+      "std::make_unique<score::config_management::config_daemon::Factory>"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "line": 21,
+    "calls": [
+      "InternalConfigProviderServiceReactor"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "line": 23,
+    "calls": [
+      "InternalConfigProviderServiceReactor"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "line": 25,
+    "calls": [
+      "InternalConfigProviderServiceReactor"
+    ]
+  },
+  {
+    "function": "InternalConfigProviderServiceReactor",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor.h",
+    "line": 28,
+    "calls": [
+      "InternalConfigProviderServiceReactor"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_mock.h",
+    "line": 21,
+    "calls": [
+      "InternalConfigProviderServiceMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_mock.h",
+    "line": 23,
+    "calls": [
+      "InternalConfigProviderServiceMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_mock.h",
+    "line": 25,
+    "calls": [
+      "InternalConfigProviderServiceMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "line": 22,
+    "calls": [
+      "bool",
+      "IInternalConfigProviderService",
+      "void"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "line": 24,
+    "calls": [
+      "bool",
+      "IInternalConfigProviderService",
+      "void"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "line": 26,
+    "calls": [
+      "bool",
+      "IInternalConfigProviderService",
+      "void"
+    ]
+  },
+  {
+    "function": "ProvidedService",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service.h",
+    "line": 32,
+    "calls": [
+      "IInternalConfigProviderService"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "line": 21,
+    "calls": [
+      "InternalConfigProviderServiceReactorMock"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "line": 23,
+    "calls": [
+      "InternalConfigProviderServiceReactorMock"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "line": 25,
+    "calls": [
+      "InternalConfigProviderServiceReactorMock"
+    ]
+  },
+  {
+    "function": "InternalConfigProviderServiceReactorMock",
+    "file": "score/config_management/config_daemon/code/services/internal_config_provider_service_reactor_mock.h",
+    "line": 28,
+    "calls": [
+      "InternalConfigProviderServiceReactorMock"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.h",
+    "line": 20,
+    "calls": [
+      "GetParameterSet"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.h",
+    "line": 22,
+    "calls": [
+      "GetParameterSet"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.h",
+    "line": 24,
+    "calls": [
+      "GetParameterSet"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.cpp",
+    "line": 24,
+    "calls": [
+      "std::move"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_impl.cpp",
+    "line": 31,
+    "calls": [
+      "GetParameterSet",
+      "size",
+      "has_value",
+      "mw::log::LogError",
+      "data",
+      "error",
+      "MakeUnexpected<score::cpp::pmr::string>"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "line": 33,
+    "calls": [
+      "std::make_shared<data_model::ParameterSetCollectionMock>"
+    ]
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "line": 38,
+    "calls": [
+      "reset"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "line": 46,
+    "calls": [
+      "EXPECT_TRUE",
+      "Return",
+      "GetParameterSet",
+      "WillOnce",
+      "score::Result<score::cpp::pmr::string>",
+      "has_value",
+      "RecordProperty",
+      "value",
+      "EXPECT_EQ",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/internal_config_provider_service_reactor_test.cpp",
+    "line": 69,
+    "calls": [
+      "Return",
+      "EXPECT_FALSE",
+      "GetParameterSet",
+      "WillOnce",
+      "has_value",
+      "RecordProperty",
+      "error",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "SetUpTestSuite",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 37,
+    "calls": [
+      "mw::com::runtime::InitializeRuntime"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 43,
+    "calls": [
+      "std::make_shared<InternalConfigProviderServiceReactorMock>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 50,
+    "calls": [
+      "has_value",
+      "ASSERT_TRUE",
+      "StartService",
+      "RecordProperty",
+      "value",
+      "InternalConfigProviderService::Create"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 67,
+    "calls": [
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "StopService",
+      "InternalConfigProviderService::Create"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 83,
+    "calls": [
+      "has_value",
+      "SetInitialQualifierState",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "InternalConfigProviderService::Create"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 105,
+    "calls": [
+      "EXPECT_TRUE",
+      "SendLastUpdatedParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "StartService",
+      "RecordProperty",
+      "value",
+      "InternalConfigProviderService::Create"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 127,
+    "calls": [
+      "SendLastUpdatedParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "InternalConfigProviderService::Create",
+      "EXPECT_FALSE"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl_test.cpp",
+    "line": 146,
+    "calls": [
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "value",
+      "InternalConfigProviderService::Create",
+      "EXPECT_FALSE",
+      "score::mw::com::InstanceSpecifier::Create"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.h",
+    "line": 25,
+    "calls": [
+      "Create"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.h",
+    "line": 27,
+    "calls": [
+      "Create"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.h",
+    "line": 29,
+    "calls": [
+      "Create"
+    ]
+  },
+  {
+    "function": "Convert",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "line": 29,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "line": 82,
+    "calls": [
+      "InternalConfigProviderService::SetInitialQualifierState",
+      "mw::log::CreateLogger",
+      "std::move"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "line": 93,
+    "calls": [
+      "MakeUnexpected<InternalConfigProviderService>",
+      "has_value",
+      "mw::log::LogError",
+      "std::move",
+      "InternalConfigProviderSkeleton::Create",
+      "value",
+      "error"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "line": 109,
+    "calls": [
+      "has_value",
+      "mw::log::LogError",
+      "error",
+      "OfferService"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "line": 118,
+    "calls": [
+      "StopOfferService"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "line": 124,
+    "calls": [
+      "Convert",
+      "has_value",
+      "static_cast<std::underlying_type_t<mw_com_icp_types::InitialQualifierState>>",
+      "Update",
+      "LogError",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/internal_config_provider_service_impl.cpp",
+    "line": 138,
+    "calls": [
+      "Send",
+      "has_value",
+      "std::copy",
+      "mw::log::LogError",
+      "std::move",
+      "LogDebug",
+      "std::fill",
+      "std::begin",
+      "end",
+      "value",
+      "begin",
+      "Allocate",
+      "LogError",
+      "std::end",
+      "mw::log::LogDebug"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "mw_com_icp_types",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_daemon/code/services/details/mw_com/generated_service/internal_config_provider_type.h",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_mock.h",
+    "line": 21,
+    "calls": [
+      "PluginMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_mock.h",
+    "line": 23,
+    "calls": [
+      "PluginMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_mock.h",
+    "line": 25,
+    "calls": [
+      "PluginMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "line": 21,
+    "calls": [
+      "IPluginCreator"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "line": 23,
+    "calls": [
+      "IPluginCreator"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "line": 25,
+    "calls": [
+      "IPluginCreator"
+    ]
+  },
+  {
+    "function": "IPluginCreator",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator.h",
+    "line": 28,
+    "calls": [
+      "IPluginCreator"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator_mock.h",
+    "line": 21,
+    "calls": [
+      "PluginCreatorMock"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator_mock.h",
+    "line": 23,
+    "calls": [
+      "PluginCreatorMock"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_creator_mock.h",
+    "line": 25,
+    "calls": [
+      "PluginCreatorMock"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "line": 23,
+    "calls": [
+      "Initialize",
+      "IPlugin"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "line": 25,
+    "calls": [
+      "Initialize",
+      "IPlugin"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "line": 27,
+    "calls": [
+      "Initialize",
+      "IPlugin"
+    ]
+  },
+  {
+    "function": "IPlugin",
+    "file": "score/config_management/config_daemon/code/plugins/plugin.h",
+    "line": 30,
+    "calls": [
+      "Initialize",
+      "IPlugin"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "line": 21,
+    "calls": [
+      "IPluginCollector"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "line": 23,
+    "calls": [
+      "IPluginCollector"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "line": 25,
+    "calls": [
+      "IPluginCollector"
+    ]
+  },
+  {
+    "function": "IPluginCollector",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector.h",
+    "line": 28,
+    "calls": [
+      "IPluginCollector"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector_mock.h",
+    "line": 21,
+    "calls": [
+      "PluginCollectorMock"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector_mock.h",
+    "line": 23,
+    "calls": [
+      "PluginCollectorMock"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/plugin_collector_mock.h",
+    "line": 25,
+    "calls": [
+      "PluginCollectorMock"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl_test.cpp",
+    "line": 50,
+    "calls": [
+      "std::make_unique<PluginCollector>"
+    ]
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl_test.cpp",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl_test.cpp",
+    "line": 60,
+    "calls": [
+      "ASSERT_EQ",
+      "CreatePlugins",
+      "size",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.h",
+    "line": 25,
+    "calls": [
+      "CreatePlugins",
+      "PluginCollector"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.h",
+    "line": 27,
+    "calls": [
+      "CreatePlugins",
+      "PluginCollector"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.h",
+    "line": 29,
+    "calls": [
+      "CreatePlugins",
+      "PluginCollector"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.cpp",
+    "line": 23,
+    "calls": [
+      "mw::log::CreateLogger"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/plugins/plugin_collector/details/plugin_collector_impl.cpp",
+    "line": 29,
+    "calls": [
+      "clear",
+      "push_back",
+      "std::move",
+      "LogDebug",
+      "empty",
+      "CreatePlugin",
+      "LogError",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "line": 19,
+    "calls": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "ParameterSetQualifier",
+    "file": "score/config_management/config_daemon/code/data_model/parameter_set_qualifier.h",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.cpp",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.cpp",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "line": 21,
+    "calls": [
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "line": 23,
+    "calls": [
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "line": 25,
+    "calls": [
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_mock.h",
+    "line": 27,
+    "calls": [
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "line": 24,
+    "calls": [
+      "IParameterSetCollection"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "line": 26,
+    "calls": [
+      "IParameterSetCollection"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "line": 28,
+    "calls": [
+      "IParameterSetCollection"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "line": 30,
+    "calls": [
+      "IParameterSetCollection"
+    ]
+  },
+  {
+    "function": "IReadOnlyParameterSetCollection",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection.h",
+    "line": 33,
+    "calls": [
+      "IParameterSetCollection"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.cpp",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.cpp",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "line": 23,
+    "calls": [
+      "IReadOnlyParameterSetCollection"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "line": 25,
+    "calls": [
+      "IReadOnlyParameterSetCollection"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "line": 27,
+    "calls": [
+      "IReadOnlyParameterSetCollection"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "line": 29,
+    "calls": [
+      "IReadOnlyParameterSetCollection"
+    ]
+  },
+  {
+    "function": "IReadOnlyParameterSetCollection",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.h",
+    "line": 32,
+    "calls": [
+      "IReadOnlyParameterSetCollection"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.cpp",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection.cpp",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "line": 21,
+    "calls": [
+      "ReadOnlyParameterSetCollectionMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "line": 23,
+    "calls": [
+      "ReadOnlyParameterSetCollectionMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "line": 25,
+    "calls": [
+      "ReadOnlyParameterSetCollectionMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/parameterset_collection_interfaces/read_only_parameterset_collection_mock.h",
+    "line": 27,
+    "calls": [
+      "ReadOnlyParameterSetCollectionMock",
+      "MOCK_METHOD"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "line": 28,
+    "calls": [
+      "ParameterSetCollection"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "line": 30,
+    "calls": [
+      "ParameterSetCollection"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "line": 32,
+    "calls": [
+      "ParameterSetCollection"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.h",
+    "line": 34,
+    "calls": [
+      "ParameterSetCollection"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 42,
+    "calls": [
+      "SetParameterSetQualifier",
+      "has_value",
+      "Insert",
+      "ASSERT_TRUE",
+      "std::move",
+      "SetCalibratable",
+      "value",
+      "FromBuffer",
+      "std::make_shared<ParameterSetCollection>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 117,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "size",
+      "score::json::JsonParser",
+      "push_back",
+      "has_value",
+      "Insert",
+      "std::move",
+      "reserve",
+      "RecordProperty",
+      "join",
+      "value",
+      "get",
+      "FromBuffer",
+      "EXPECT_FALSE",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 189,
+    "calls": [
+      "MakeError",
+      "has_value",
+      "Insert",
+      "ASSERT_TRUE",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "error",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 208,
+    "calls": [
+      "has_value",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "error",
+      "ASSERT_EQ",
+      "UserMessage"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 223,
+    "calls": [
+      "has_value",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "error",
+      "ASSERT_EQ",
+      "UserMessage"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 238,
+    "calls": [
+      "has_value",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "error",
+      "ASSERT_EQ",
+      "UserMessage"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 258,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "value",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 292,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterFromSet",
+      "has_value",
+      "RecordProperty",
+      "value",
+      "get",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 316,
+    "calls": [
+      "GetParameterFromSet",
+      "has_value",
+      "RecordProperty",
+      "error",
+      "EXPECT_FALSE",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 332,
+    "calls": [
+      "GetParameterFromSet",
+      "has_value",
+      "RecordProperty",
+      "error",
+      "EXPECT_FALSE",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 348,
+    "calls": [
+      "EXPECT_TRUE",
+      "GetParameterSet",
+      "has_value",
+      "ASSERT_TRUE",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "SetCalibratable",
+      "value",
+      "error",
+      "EXPECT_EQ",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 387,
+    "calls": [
+      "EXPECT_FALSE",
+      "SetCalibratable",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 399,
+    "calls": [
+      "has_value",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "error",
+      "ASSERT_EQ",
+      "UserMessage"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 419,
+    "calls": [
+      "EXPECT_TRUE",
+      "std::this_thread::yield",
+      "GetParameterSet",
+      "pthread_barrier_init",
+      "pthread_barrier_wait",
+      "has_value",
+      "ASSERT_TRUE",
+      "set_value",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "join",
+      "value",
+      "get",
+      "get_future",
+      "ASSERT_EQ",
+      "pthread_barrier_destroy"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 517,
+    "calls": [
+      "SetParameterSetQualifier",
+      "has_value",
+      "ASSERT_TRUE",
+      "RecordProperty",
+      "GetParameterSetQualifier",
+      "value",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl_test.cpp",
+    "line": 539,
+    "calls": [
+      "SetParameterSetQualifier",
+      "has_value",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "GetParameterSetQualifier",
+      "error",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 32,
+    "calls": [
+      "mw::log::CreateLogger"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 37,
+    "calls": [
+      "find",
+      "AsString",
+      "std::move",
+      "LogDebug",
+      "end",
+      "Add",
+      "emplace",
+      "std::make_unique<json::JsonWriter>",
+      "std::make_shared<ParameterSet>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 62,
+    "calls": [
+      "has_value",
+      "GetParameterSetAsString",
+      "Find",
+      "value",
+      "error",
+      "MakeUnexpected<score::cpp::pmr::string>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 74,
+    "calls": [
+      "GetParameter",
+      "has_value",
+      "Find",
+      "MakeUnexpected<json::Any>",
+      "value",
+      "error"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 87,
+    "calls": [
+      "find",
+      "LogWarn",
+      "AsString",
+      "LogDebug",
+      "end",
+      "MakeUnexpected"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 102,
+    "calls": [
+      "Message",
+      "has_value",
+      "Find",
+      "std::move",
+      "get",
+      "end",
+      "value",
+      "begin",
+      "error",
+      "FromBuffer",
+      "MakeUnexpected",
+      "Update",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 136,
+    "calls": [
+      "has_value",
+      "SetCalibratable",
+      "Find"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 153,
+    "calls": [
+      "has_value",
+      "Find",
+      "GetQualifier",
+      "value",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameterset_collection_impl.cpp",
+    "line": 167,
+    "calls": [
+      "has_value",
+      "SetQualifier",
+      "Find",
+      "value",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "line": 30,
+    "calls": [
+      "GetParameterSetAsString",
+      "ParameterSet",
+      "GetParameter"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "line": 32,
+    "calls": [
+      "GetParameterSetAsString",
+      "ParameterSet",
+      "GetParameter"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "line": 34,
+    "calls": [
+      "GetParameterSetAsString",
+      "ParameterSet",
+      "GetParameter"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "line": 36,
+    "calls": [
+      "GetParameterSetAsString",
+      "ParameterSet",
+      "GetParameter"
+    ]
+  },
+  {
+    "function": "ParameterSet",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.h",
+    "line": 39,
+    "calls": [
+      "GetParameterSetAsString",
+      "ParameterSet",
+      "GetParameter"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "line": 22,
+    "calls": [
+      "move",
+      "GetValue"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "line": 24,
+    "calls": [
+      "move",
+      "GetValue"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "line": 26,
+    "calls": [
+      "move",
+      "GetValue"
+    ]
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "line": 28,
+    "calls": [
+      "move",
+      "GetValue"
+    ]
+  },
+  {
+    "function": "Parameter",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "line": 30,
+    "calls": [
+      "move",
+      "GetValue"
+    ]
+  },
+  {
+    "function": "SetValue",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_impl.h",
+    "line": 37,
+    "calls": [
+      "move"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 44,
+    "calls": [
+      "ON_CALL",
+      "std::make_unique<json::IJsonWriterMock>",
+      "std::make_unique<ParameterSet>",
+      "get",
+      "std::move",
+      "WillByDefault",
+      "SetCalibratable",
+      "ToBuffer",
+      "Add",
+      "Matcher<const json::Object&>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 64,
+    "calls": [
+      "SetQualifier",
+      "GetQualifier",
+      "EXPECT_EQ",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 78,
+    "calls": [
+      "GetParameterSetAsString",
+      "RecordProperty",
+      "value",
+      "c_str",
+      "EXPECT_STREQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 98,
+    "calls": [
+      "has_value",
+      "GetParameterSetAsString",
+      "ASSERT_FALSE",
+      "RecordProperty",
+      "value",
+      "c_str",
+      "Add",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "EXPECT_STREQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 121,
+    "calls": [
+      "Return",
+      "MakeUnexpected<DataModelError>",
+      "WillOnce",
+      "GetParameterSetAsString",
+      "RecordProperty",
+      "error",
+      "ToBuffer",
+      "EXPECT_EQ",
+      "Matcher<const json::Object&>",
+      "MakeUnexpected<score::json::Error>",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 136,
+    "calls": [
+      "EXPECT_TRUE",
+      "has_value",
+      "GetParameterSetAsString",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "c_str",
+      "get",
+      "FromBuffer",
+      "Update",
+      "EXPECT_STREQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 166,
+    "calls": [
+      "GetParameterSetAsString",
+      "std::move",
+      "RecordProperty",
+      "SetCalibratable",
+      "value",
+      "c_str",
+      "error",
+      "get",
+      "FromBuffer",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "EXPECT_STREQ",
+      "Update"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl_test.cpp",
+    "line": 198,
+    "calls": [
+      "GetParameterSetAsString",
+      "std::move",
+      "RecordProperty",
+      "value",
+      "c_str",
+      "error",
+      "get",
+      "FromBuffer",
+      "MakeUnexpected",
+      "EXPECT_EQ",
+      "EXPECT_STREQ",
+      "Update"
+    ]
+  },
+  {
+    "function": "AsString",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.cpp",
+    "line": 25,
+    "calls": [
+      "end",
+      "begin"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 29,
+    "calls": [
+      "std::string_view",
+      "mw::log::CreateLogger",
+      "std::move"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 38,
+    "calls": [
+      "try_emplace",
+      "AsString",
+      "SetValue",
+      "std::move",
+      "LogDebug",
+      "MakeUnexpected",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 57,
+    "calls": [
+      "find",
+      "AsString",
+      "SetValue",
+      "std::move",
+      "GetAsStringView",
+      "end",
+      "MakeUnexpected",
+      "LogError",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 98,
+    "calls": [
+      "Message",
+      "GetParameterSetAsJson",
+      "has_value",
+      "value",
+      "c_str",
+      "error",
+      "ToBuffer",
+      "MakeUnexpected"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 109,
+    "calls": [
+      "find",
+      "AsString",
+      "MakeUnexpected<json::Any>",
+      "end",
+      "CloneByValue",
+      "GetValue",
+      "LogError"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 124,
+    "calls": [
+      "std::move",
+      "score::cpp::to_underlying",
+      "c_str",
+      "GetValue",
+      "CloneByValue"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 139,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 144,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/data_model/details/parameter_set_impl.cpp",
+    "line": 149,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "line": 20,
+    "calls": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "line": 22,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/details/common.h",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "MessageFor",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.cpp",
+    "line": 35,
+    "calls": [
+      "score::cpp::to_underlying",
+      "static_cast<DataModelError>"
+    ]
+  },
+  {
+    "function": "MakeError",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.cpp",
+    "line": 83,
+    "calls": [
+      "static_cast<score::result::ErrorCode>"
+    ]
+  },
+  {
+    "function": "TestMessage",
+    "file": "score/config_management/config_daemon/code/data_model/error/error_test.cpp",
+    "line": 27,
+    "calls": [
+      "MakeError",
+      "EXPECT_EQ",
+      "Message"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "score/config_management/config_daemon/code/data_model/error/error_test.cpp",
+    "line": 32,
+    "calls": [
+      "static_cast<DataModelError>",
+      "TestMessage",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "line": 22,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "data_model",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "DataModelError",
+    "file": "score/config_management/config_daemon/code/data_model/error/error.h",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.h",
+    "line": 21,
+    "calls": [
+      "MOCK_METHOD",
+      "FactoryMock"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.h",
+    "line": 23,
+    "calls": [
+      "MOCK_METHOD",
+      "FactoryMock"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.h",
+    "line": 25,
+    "calls": [
+      "MOCK_METHOD",
+      "FactoryMock"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "line": 26,
+    "calls": [
+      "CreateLastUpdatedParameterSetSender",
+      "CreateInitialQualifierStateSender",
+      "IFactory"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "line": 28,
+    "calls": [
+      "CreateLastUpdatedParameterSetSender",
+      "CreateInitialQualifierStateSender",
+      "IFactory"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "line": 30,
+    "calls": [
+      "CreateLastUpdatedParameterSetSender",
+      "CreateInitialQualifierStateSender",
+      "IFactory"
+    ]
+  },
+  {
+    "function": "IFactory",
+    "file": "score/config_management/config_daemon/code/factory/factory.h",
+    "line": 33,
+    "calls": [
+      "CreateLastUpdatedParameterSetSender",
+      "CreateInitialQualifierStateSender",
+      "IFactory"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 20,
+    "calls": [
+      "GetServices",
+      "StubServiceContainer"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 22,
+    "calls": [
+      "GetServices",
+      "StubServiceContainer"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 24,
+    "calls": [
+      "GetServices",
+      "StubServiceContainer"
+    ]
+  },
+  {
+    "function": "StubServiceContainer",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 30,
+    "calls": [
+      "GetServices",
+      "StubServiceContainer"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "StartServices",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 67,
+    "calls": []
+  },
+  {
+    "function": "StopServices",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 71,
+    "calls": []
+  },
+  {
+    "function": "SetNumServices",
+    "file": "score/config_management/config_daemon/code/factory/stub_service_container.h",
+    "line": 76,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.cpp",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/factory_mock.cpp",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/service_container_selector.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/service_container_selector.h",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/service_container_selector.h",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "line": 29,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "line": 42,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "line": 48,
+    "calls": [
+      "std::make_shared<data_model::ParameterSetCollection>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "line": 53,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_stub_impl.cpp",
+    "line": 59,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_impl.h",
+    "line": 25,
+    "calls": [
+      "CreateFaultEventReporter",
+      "CreateParameterSetCollection",
+      "CreatePluginCollector",
+      "Factory"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_impl.h",
+    "line": 27,
+    "calls": [
+      "CreateFaultEventReporter",
+      "CreateParameterSetCollection",
+      "CreatePluginCollector",
+      "Factory"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_impl.h",
+    "line": 29,
+    "calls": [
+      "CreateFaultEventReporter",
+      "CreateParameterSetCollection",
+      "CreatePluginCollector",
+      "Factory"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "line": 42,
+    "calls": [
+      "std::make_shared<common::JsonHelper>",
+      "std::make_shared<hash::SafeHashCalculatorFactory>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "line": 49,
+    "calls": [
+      "has_value",
+      "mw::log::LogError",
+      "std::move",
+      "std::make_unique<InternalConfigProviderServiceReactorImpl>",
+      "GetServices",
+      "value",
+      "error",
+      "InternalConfigProviderService::Create"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "line": 70,
+    "calls": [
+      "SendLastUpdatedParameterSet"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "line": 85,
+    "calls": [
+      "SetInitialQualifierState"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "line": 99,
+    "calls": [
+      "std::make_shared<data_model::ParameterSetCollection>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "line": 104,
+    "calls": [
+      "std::make_unique<PluginCollector>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl.cpp",
+    "line": 109,
+    "calls": [
+      "std::make_shared<fault_event_reporter::FaultEventReporter>"
+    ]
+  },
+  {
+    "function": "SetUpTestSuite",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 51,
+    "calls": [
+      "mw::com::runtime::InitializeRuntime"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 57,
+    "calls": [
+      "std::make_unique<Factory>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 65,
+    "calls": [
+      "EXPECT_NO_THROW",
+      "RecordProperty",
+      "reset",
+      "std::make_unique<Factory>",
+      "[]"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 85,
+    "calls": [
+      "NumServices",
+      "CreateInternalConfigProviderService",
+      "ASSERT_NE",
+      "RecordProperty",
+      "std::make_shared<data_model::ParameterSetCollection>",
+      "EXPECT_NE",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 107,
+    "calls": [
+      "NumServices",
+      "GetParameterSet",
+      "CreateInternalConfigProviderService",
+      "ASSERT_NE",
+      "has_value",
+      "RecordProperty",
+      "UpdateParameterSet",
+      "std::make_shared<data_model::ParameterSetCollection>",
+      "EXPECT_NE",
+      "EXPECT_FALSE",
+      "ASSERT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 134,
+    "calls": [
+      "Exactly",
+      "dynamic_cast<InternalConfigProviderServiceMock&>",
+      "CreateLastUpdatedParameterSetSender",
+      "ASSERT_FALSE",
+      "Times",
+      "RecordProperty",
+      "std::invoke",
+      "empty",
+      "SendLastUpdatedParameterSet",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 160,
+    "calls": [
+      "CreateLastUpdatedParameterSetSender",
+      "ASSERT_TRUE",
+      "empty",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 177,
+    "calls": [
+      "Exactly",
+      "dynamic_cast<InternalConfigProviderServiceMock&>",
+      "SetInitialQualifierState",
+      "ASSERT_FALSE",
+      "Times",
+      "RecordProperty",
+      "CreateInitialQualifierStateSender",
+      "std::invoke",
+      "empty",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 205,
+    "calls": [
+      "CreateInitialQualifierStateSender",
+      "ASSERT_TRUE",
+      "empty",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 223,
+    "calls": [
+      "ASSERT_NE",
+      "CreateParameterSetCollection",
+      "RecordProperty",
+      "get",
+      "dynamic_cast<data_model::IParameterSetCollection*>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 236,
+    "calls": [
+      "ASSERT_NE",
+      "CreatePluginCollector",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/factory/details/factory_mw_impl_test.cpp",
+    "line": 247,
+    "calls": [
+      "ASSERT_NE",
+      "dynamic_cast<fault_event_reporter::FaultEventReporter*>",
+      "RecordProperty",
+      "get",
+      "CreateFaultEventReporter"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "line": 18,
+    "calls": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "line": 20,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "line": 22,
+    "calls": []
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "FaultEventId",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_score_types.h",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "line": 19,
+    "calls": [
+      "MOCK_METHOD",
+      "FaultEventReporterMock"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "line": 21,
+    "calls": [
+      "MOCK_METHOD",
+      "FaultEventReporterMock"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "line": 23,
+    "calls": [
+      "MOCK_METHOD",
+      "FaultEventReporterMock"
+    ]
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "line": 25,
+    "calls": [
+      "MOCK_METHOD",
+      "FaultEventReporterMock"
+    ]
+  },
+  {
+    "function": "FaultEventReporterMock",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter_mock.h",
+    "line": 27,
+    "calls": [
+      "MOCK_METHOD",
+      "FaultEventReporterMock"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "line": 17,
+    "calls": [
+      "IFaultEventReporter"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "line": 19,
+    "calls": [
+      "IFaultEventReporter"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "line": 21,
+    "calls": [
+      "IFaultEventReporter"
+    ]
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "line": 24,
+    "calls": [
+      "IFaultEventReporter"
+    ]
+  },
+  {
+    "function": "IFaultEventReporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/fault_event_reporter.h",
+    "line": 26,
+    "calls": [
+      "IFaultEventReporter"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "line": 18,
+    "calls": [
+      "FaultEventReporter"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "line": 20,
+    "calls": [
+      "FaultEventReporter"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "line": 22,
+    "calls": [
+      "FaultEventReporter"
+    ]
+  },
+  {
+    "function": "fault_event_reporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "line": 24,
+    "calls": [
+      "FaultEventReporter"
+    ]
+  },
+  {
+    "function": "IFaultEventReporter",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.h",
+    "line": 27,
+    "calls": [
+      "FaultEventReporter"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.cpp",
+    "line": 27,
+    "calls": [
+      "static_cast<std::uint8_t>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl.cpp",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl_test.cpp",
+    "line": 31,
+    "calls": [
+      "std::make_shared<FaultEventReporter>"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl_test.cpp",
+    "line": 37,
+    "calls": [
+      "Initialize",
+      "static_cast<std::uint8_t>",
+      "Report",
+      "RecordProperty",
+      "EXPECT_EQ"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/fault_event_reporter/details/fault_event_reporter_score_impl_test.cpp",
+    "line": 49,
+    "calls": [
+      "EXPECT_EQ",
+      "Report",
+      "RecordProperty"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "common",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper_mock.h",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "line": 24,
+    "calls": [
+      "IJsonHelper"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "line": 26,
+    "calls": [
+      "IJsonHelper"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "line": 28,
+    "calls": [
+      "IJsonHelper"
+    ]
+  },
+  {
+    "function": "common",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "line": 30,
+    "calls": [
+      "IJsonHelper"
+    ]
+  },
+  {
+    "function": "IJsonHelper",
+    "file": "score/config_management/config_daemon/code/json_helper/json_helper.h",
+    "line": 39,
+    "calls": [
+      "IJsonHelper"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "line": 21,
+    "calls": [
+      "GetJsonWriter",
+      "GetFileFactory",
+      "JsonHelper",
+      "GetJsonParser",
+      "GetStandardFilesystem"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "line": 23,
+    "calls": [
+      "GetJsonWriter",
+      "GetFileFactory",
+      "JsonHelper",
+      "GetJsonParser",
+      "GetStandardFilesystem"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "line": 25,
+    "calls": [
+      "GetJsonWriter",
+      "GetFileFactory",
+      "JsonHelper",
+      "GetJsonParser",
+      "GetStandardFilesystem"
+    ]
+  },
+  {
+    "function": "common",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.h",
+    "line": 27,
+    "calls": [
+      "GetJsonWriter",
+      "GetFileFactory",
+      "JsonHelper",
+      "GetJsonParser",
+      "GetStandardFilesystem"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "line": 29,
+    "calls": [
+      "std::make_shared<filesystem::StandardFilesystem>",
+      "std::make_shared<json::JsonWriter>",
+      "std::make_shared<json::JsonParser>",
+      "std::make_shared<filesystem::FileFactory>"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "line": 42,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/json_helper/details/json_helper_impl.cpp",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "line": 18,
+    "calls": [
+      "IConfigDaemon"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "line": 20,
+    "calls": [
+      "IConfigDaemon"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "line": 22,
+    "calls": [
+      "IConfigDaemon"
+    ]
+  },
+  {
+    "function": "Application",
+    "file": "score/config_management/config_daemon/code/app/config_daemon.h",
+    "line": 25,
+    "calls": [
+      "IConfigDaemon"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "line": 36,
+    "calls": [
+      "has_value",
+      "os::Stat::instance",
+      "std::move",
+      "LogDebug",
+      "CreateParameterSetCollection",
+      "os::IntegerToMode",
+      "mw::log::CreateLogger",
+      "error",
+      "umask",
+      "LogError",
+      "ToString",
+      "CreateFaultEventReporter"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "line": 54,
+    "calls": [
+      "NumServices",
+      "CreateInternalConfigProviderService",
+      "LogWarn",
+      "has_value",
+      "PreparePlugins",
+      "error",
+      "Initialize",
+      "LogError",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "line": 94,
+    "calls": [
+      "StopServices",
+      "CreateLastUpdatedParameterSetSender",
+      "Deinitialize",
+      "Run",
+      "std::move",
+      "StartServices",
+      "CreateInitialQualifierStateSender",
+      "empty",
+      "LogError",
+      "score::concurrency::wait_until_stop_requested",
+      "LogInfo"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.cpp",
+    "line": 163,
+    "calls": [
+      "size",
+      "CreatePlugins",
+      "LogDebug",
+      "CreatePluginCollector",
+      "LogError"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.h",
+    "line": 28,
+    "calls": [
+      "ConfigDaemon"
+    ]
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.h",
+    "line": 30,
+    "calls": [
+      "ConfigDaemon"
+    ]
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl.h",
+    "line": 32,
+    "calls": [
+      "ConfigDaemon"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 62,
+    "calls": [
+      "std::make_unique<T>"
+    ]
+  },
+  {
+    "function": "SetUp",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 71,
+    "calls": [
+      "std::make_shared<score::config_management::config_daemon::PluginMock>",
+      "score::os::Stat::set_testing_instance",
+      "std::make_unique<score::config_management::config_daemon::FactoryMock>",
+      "std::move",
+      "SetNumServices",
+      "std::make_unique<PluginCollectorMock>"
+    ]
+  },
+  {
+    "function": "TearDown",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 90,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 105,
+    "calls": [
+      "Return",
+      "ON_CALL",
+      "ByMove",
+      "PluginCollectorSetup",
+      "CreateInternalConfigProviderService",
+      "CreateLastUpdatedParameterSetSender",
+      "std::make_unique<data_model::ParameterSetCollectionMock>",
+      "Invoke",
+      "std::move",
+      "CreateParameterSetCollection",
+      "WillByDefault",
+      "std::make_unique<fault_event_reporter::FaultEventReporterMock>",
+      "CreateInitialQualifierStateSender",
+      "value",
+      "CreateFaultEventReporter"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 130,
+    "calls": [
+      "Return",
+      "ON_CALL",
+      "Initialize",
+      "WillByDefault"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 135,
+    "calls": [
+      "Return",
+      "ON_CALL",
+      "ByMove",
+      "push_back",
+      "CreatePlugins",
+      "WillByDefault",
+      "std::move",
+      "CreatePluginCollector",
+      "Initialize"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 146,
+    "calls": [
+      "Initialize",
+      "std::move",
+      "Times",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "score::os::IntegerToMode",
+      "FactoryDefaultSetup",
+      "ASSERT_EQ",
+      "testing::AtLeast",
+      "umask",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 168,
+    "calls": [
+      "Return",
+      "Initialize",
+      "WillOnce",
+      "std::move",
+      "RecordProperty",
+      "score::cpp::make_unexpected",
+      "score::os::Error::createFromErrno",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "score::os::IntegerToMode",
+      "FactoryDefaultSetup",
+      "ASSERT_EQ",
+      "umask",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 187,
+    "calls": [
+      "Initialize",
+      "CreateInternalConfigProviderService",
+      "WillOnce",
+      "Invoke",
+      "std::move",
+      "Times",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "FactoryDefaultSetup",
+      "ASSERT_EQ",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 209,
+    "calls": [
+      "Return",
+      "request_stop",
+      "get_token",
+      "ASSERT_EQ",
+      "WillOnce",
+      "Deinitialize",
+      "Run",
+      "std::move",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "ComponentsDefaultSetup",
+      "FactoryDefaultSetup",
+      "Initialize",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 238,
+    "calls": [
+      "Return",
+      "request_stop",
+      "ByMove",
+      "get_token",
+      "ASSERT_EQ",
+      "WillOnce",
+      "Deinitialize",
+      "Run",
+      "std::move",
+      "RecordProperty",
+      "CreateInitialQualifierStateSender",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "ComponentsDefaultSetup",
+      "FactoryDefaultSetup",
+      "Initialize",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 265,
+    "calls": [
+      "Return",
+      "ByMove",
+      "Initialize",
+      "WillOnce",
+      "std::move",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "CreatePluginCollector",
+      "FactoryDefaultSetup",
+      "ASSERT_EQ",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 282,
+    "calls": [
+      "Return",
+      "ASSERT_EQ",
+      "WillOnce",
+      "std::move",
+      "RecordProperty",
+      "Times",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "ComponentsDefaultSetup",
+      "FactoryDefaultSetup",
+      "Initialize",
+      "score::MakeUnexpected",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 304,
+    "calls": [
+      "Return",
+      "ASSERT_EQ",
+      "WillOnce",
+      "std::move",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "ComponentsDefaultSetup",
+      "FactoryDefaultSetup",
+      "Initialize",
+      "score::MakeUnexpected",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 325,
+    "calls": [
+      "Return",
+      "request_stop",
+      "Initialize",
+      "get_token",
+      "WillOnce",
+      "Deinitialize",
+      "Run",
+      "std::move",
+      "RecordProperty",
+      "Times",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "FactoryDefaultSetup",
+      "ASSERT_EQ",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 348,
+    "calls": [
+      "Return",
+      "request_stop",
+      "Initialize",
+      "get_token",
+      "WillOnce",
+      "Deinitialize",
+      "Run",
+      "std::move",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "FactoryDefaultSetup",
+      "ASSERT_EQ",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 371,
+    "calls": [
+      "std::make_shared<score::config_management::config_daemon::PluginMock>",
+      "Return",
+      "ASSERT_EQ",
+      "push_back",
+      "WillOnce",
+      "CreatePlugins",
+      "std::move",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "get",
+      "FactoryDefaultSetup",
+      "Initialize",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "TEST_F",
+    "file": "score/config_management/config_daemon/code/app/details/config_daemon_impl_test.cpp",
+    "line": 394,
+    "calls": [
+      "Return",
+      "request_stop",
+      "ByMove",
+      "get_token",
+      "ASSERT_EQ",
+      "WillOnce",
+      "CreateLastUpdatedParameterSetSender",
+      "Deinitialize",
+      "Run",
+      "std::move",
+      "RecordProperty",
+      "std::make_unique<score::config_management::config_daemon::ConfigDaemon>",
+      "ComponentsDefaultSetup",
+      "FactoryDefaultSetup",
+      "Initialize",
+      "EXPECT_CALL"
+    ]
+  },
+  {
+    "function": "score",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "line": 19,
+    "calls": []
+  },
+  {
+    "function": "config_management",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "line": 21,
+    "calls": []
+  },
+  {
+    "function": "config_daemon",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "InitialQualifierState",
+    "file": "score/config_management/config_daemon/code/types/initial_qualifier_state/initial_qualifier_state.h",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "test_hello",
+    "file": "tests/rust/test_main.rs",
+    "line": 2,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "add",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 16,
+    "calls": []
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 21,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 26,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "TEST",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 31,
+    "calls": [
+      "EXPECT_EQ",
+      "add"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "tests/cpp/test_main.cpp",
+    "line": 38,
+    "calls": [
+      "RUN_ALL_TESTS",
+      "::testing::InitGoogleTest"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "function": "IFileTransfer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IFileTransfer",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:IFileTransfer",
+      "line": 41
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

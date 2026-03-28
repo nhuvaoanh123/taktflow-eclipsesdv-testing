@@ -1,0 +1,21 @@
+{
+  "function": "isnan",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:isnan",
+      "line": 504
+    },
+    {
+      "id": 1,
+      "label": "exit:isnan",
+      "line": 513
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

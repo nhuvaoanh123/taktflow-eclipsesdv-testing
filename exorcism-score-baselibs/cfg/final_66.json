@@ -1,0 +1,105 @@
+{
+  "function": "final",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:final",
+      "line": 66
+    },
+    {
+      "id": 1,
+      "label": "if ((queue_shared_state_->queue_.empty()))",
+      "line": 102
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 110
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 102
+    },
+    {
+      "id": 4,
+      "label": "if ((!queue_shared_state_->notification_.waitForWithAbort(timeou)",
+      "line": 105
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 108
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 105
+    },
+    {
+      "id": 7,
+      "label": "return_statement",
+      "line": 107
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 118
+    },
+    {
+      "id": 9,
+      "label": "exit:final",
+      "line": 196
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 7
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 8
+    },
+    {
+      "from": 2,
+      "to": 9
+    }
+  ]
+}

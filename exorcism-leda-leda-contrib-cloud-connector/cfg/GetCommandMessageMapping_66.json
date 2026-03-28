@@ -1,0 +1,21 @@
+{
+  "function": "GetCommandMessageMapping",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetCommandMessageMapping",
+      "line": 66
+    },
+    {
+      "id": 1,
+      "label": "exit:GetCommandMessageMapping",
+      "line": 76
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

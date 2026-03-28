@@ -1,0 +1,21 @@
+{
+  "function": "execute_epoch",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:execute_epoch",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:execute_epoch",
+      "line": 47
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

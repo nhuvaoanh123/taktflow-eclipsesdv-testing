@@ -1,0 +1,59 @@
+{
+  "state_machines": [
+    {
+      "file": "intent_brokering/examples/applications/kv-app/src/intent_provider.rs",
+      "line": 50,
+      "type": "match",
+      "condition": "request\r\n            .into_inner()\r\n            .intent\r\n            .and_then(|i| i.intent)\r\n            .ok_or_else(|| Status::invalid_argument(\"Intent must be specified.\"))?",
+      "states": [
+        "IntentEnum::Read(intent)",
+        "IntentEnum::Write(intent)",
+        "IntentEnum::Subscribe(intent)",
+        "IntentEnum::Discover(_intent)",
+        "_"
+      ]
+    },
+    {
+      "file": "intent_brokering/examples/applications/simple-provider/src/intent_provider.rs",
+      "line": 36,
+      "type": "match",
+      "condition": "request\r\n            .into_inner()\r\n            .intent\r\n            .and_then(|i| i.intent)\r\n            .ok_or_else(|| Status::invalid_argument(\"Intent must be specified.\"))?",
+      "states": [
+        "IntentEnum::Discover(_intent)",
+        "_"
+      ]
+    },
+    {
+      "file": "intent_brokering/examples/applications/lt-provider/src/main.rs",
+      "line": 98,
+      "type": "match",
+      "condition": "request\r\n            .into_inner()\r\n            .intent\r\n            .and_then(|i| i.intent)\r\n            .ok_or_else(|| Status::invalid_argument(\"Intent must be specified\"))?",
+      "states": [
+        "IntentEnum::Invoke(_)",
+        "_"
+      ]
+    },
+    {
+      "file": "intent_brokering/examples/applications/invoke-command/src/intent_provider.rs",
+      "line": 69,
+      "type": "match",
+      "condition": "request\r\n            .into_inner()\r\n            .intent\r\n            .and_then(|i| i.intent)\r\n            .ok_or_else(|| Status::invalid_argument(\"Intent must be specified.\"))?",
+      "states": [
+        "IntentEnum::Discover(_intent)",
+        "IntentEnum::Invoke(intent)",
+        "_"
+      ]
+    },
+    {
+      "file": "intent_brokering/tests/provider.rs",
+      "line": 57,
+      "type": "match",
+      "condition": "request\r\n            .into_inner()\r\n            .intent\r\n            .and_then(|i| i.intent)\r\n            .ok_or_else(|| Status::invalid_argument(\"Intent must be specified\"))?",
+      "states": [
+        "IntentEnum::Invoke(intent)",
+        "_"
+      ]
+    }
+  ],
+  "count": 5
+}

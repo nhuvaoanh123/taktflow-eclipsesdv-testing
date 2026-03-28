@@ -1,0 +1,21 @@
+{
+  "function": "set_agent_tags",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_agent_tags",
+      "line": 872
+    },
+    {
+      "id": 1,
+      "label": "exit:set_agent_tags",
+      "line": 906
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "ArgumentInitializerListType",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ArgumentInitializerListType",
+      "line": 101
+    },
+    {
+      "id": 1,
+      "label": "exit:ArgumentInitializerListType",
+      "line": 130
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

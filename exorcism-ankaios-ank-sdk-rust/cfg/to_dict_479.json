@@ -1,0 +1,21 @@
+{
+  "function": "to_dict",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:to_dict",
+      "line": 479
+    },
+    {
+      "id": 1,
+      "label": "exit:to_dict",
+      "line": 635
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

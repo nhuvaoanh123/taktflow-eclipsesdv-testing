@@ -1,0 +1,21 @@
+{
+  "function": "create_mqtt_properties",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_mqtt_properties",
+      "line": 521
+    },
+    {
+      "id": 1,
+      "label": "exit:create_mqtt_properties",
+      "line": 656
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

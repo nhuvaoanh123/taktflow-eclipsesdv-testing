@@ -1,0 +1,21 @@
+{
+  "function": "add",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:add",
+      "line": 352
+    },
+    {
+      "id": 1,
+      "label": "exit:add",
+      "line": 381
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

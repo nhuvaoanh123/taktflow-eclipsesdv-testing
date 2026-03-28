@@ -1,0 +1,64 @@
+{
+  "function": "send_message",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:send_message",
+      "line": 18
+    },
+    {
+      "id": 1,
+      "label": "loop (while_statement)",
+      "line": 23
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 32
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 23
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 34
+    },
+    {
+      "id": 5,
+      "label": "exit:send_message",
+      "line": 35
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

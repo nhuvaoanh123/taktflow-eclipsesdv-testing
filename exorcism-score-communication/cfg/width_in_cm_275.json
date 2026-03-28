@@ -1,0 +1,21 @@
+{
+  "function": "width_in_cm",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:width_in_cm",
+      "line": 275
+    },
+    {
+      "id": 1,
+      "label": "exit:width_in_cm",
+      "line": 446
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

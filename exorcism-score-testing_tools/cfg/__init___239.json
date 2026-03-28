@@ -1,0 +1,21 @@
+{
+  "function": "__init__",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:__init__",
+      "line": 239
+    },
+    {
+      "id": 1,
+      "label": "exit:__init__",
+      "line": 275
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

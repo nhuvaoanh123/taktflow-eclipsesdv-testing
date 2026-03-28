@@ -1,0 +1,21 @@
+{
+  "function": "header_source",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:header_source",
+      "line": 102
+    },
+    {
+      "id": 1,
+      "label": "exit:header_source",
+      "line": 118
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

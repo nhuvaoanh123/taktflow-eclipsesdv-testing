@@ -1,0 +1,504 @@
+[
+  {
+    "function": "new",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "print_header",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "print_sub_header",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "print_success",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "print_info",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "print_error",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "print_kvs_value",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 65,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 3,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "demonstrate_basic_operations",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 82,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 54,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "demonstrate_arrays_and_objects",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 137,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 46,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "demonstrate_snapshots",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 184,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 48,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "create_defaults_file",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 233,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 39,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "demonstrate_defaults",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 273,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 6,
+    "loc": 58,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "demonstrate_reset",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 332,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 31,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "wait_for_user",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 364,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "run",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 371,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 40,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/persistency/rust_demo.rs",
+    "start_line": 413,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "printHeader",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 52,
+    "cyclomatic_complexity": 22,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "printSubHeader",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 58,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "printSuccess",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 62,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "printInfo",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 66,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "printError",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 70,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "printKvsValue",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 74,
+    "cyclomatic_complexity": 56,
+    "nesting_depth": 1,
+    "loc": 41,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "KvsDemo",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "demonstrateBasicOperations",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 119,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 2,
+    "loc": 74,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "demonstrateArraysAndObjects",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 194,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 2,
+    "loc": 54,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "demonstrateSnapshots",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 249,
+    "cyclomatic_complexity": 21,
+    "nesting_depth": 2,
+    "loc": 63,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "demonstrateReset",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 435,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 2,
+    "loc": 38,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "run",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 474,
+    "cyclomatic_complexity": 30,
+    "nesting_depth": 0,
+    "loc": 30,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/persistency/kvs_demo.cpp",
+    "start_line": 506,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "sigchld_handler",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 30,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "pidfd_open",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "recv_fd",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 47,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "connect_to_agent",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 72,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 1,
+    "loc": 28,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "spawn_local_process",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 102,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 2,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "spawn_agent_process",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 133,
+    "cyclomatic_complexity": 20,
+    "nesting_depth": 1,
+    "loc": 59,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "print_usage",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 193,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/holden/orchestrator.c",
+    "start_line": 208,
+    "cyclomatic_complexity": 41,
+    "nesting_depth": 3,
+    "loc": 133,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_loc"
+    ]
+  },
+  {
+    "function": "sigchld_handler",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 29,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "pidfd_open",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "send_fd",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "start_process",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 69,
+    "cyclomatic_complexity": 21,
+    "nesting_depth": 2,
+    "loc": 69,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "handle_message",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 139,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 3,
+    "loc": 32,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "cleanup_socket",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 172,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "print_agent_usage",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 178,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "reference_integration/demos/holden/agent.c",
+    "start_line": 193,
+    "cyclomatic_complexity": 28,
+    "nesting_depth": 3,
+    "loc": 73,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "send_message",
+    "file": "reference_integration/demos/holden/protocol.c",
+    "start_line": 18,
+    "cyclomatic_complexity": 13,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "recv_message",
+    "file": "reference_integration/demos/holden/protocol.c",
+    "start_line": 37,
+    "cyclomatic_complexity": 27,
+    "nesting_depth": 4,
+    "loc": 32,
+    "param_count": 0,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  }
+]

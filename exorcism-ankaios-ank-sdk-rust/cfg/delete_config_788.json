@@ -1,0 +1,21 @@
+{
+  "function": "delete_config",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:delete_config",
+      "line": 788
+    },
+    {
+      "id": 1,
+      "label": "exit:delete_config",
+      "line": 814
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

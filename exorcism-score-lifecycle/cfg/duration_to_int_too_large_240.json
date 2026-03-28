@@ -1,0 +1,21 @@
+{
+  "function": "duration_to_int_too_large",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:duration_to_int_too_large",
+      "line": 240
+    },
+    {
+      "id": 1,
+      "label": "exit:duration_to_int_too_large",
+      "line": 243
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

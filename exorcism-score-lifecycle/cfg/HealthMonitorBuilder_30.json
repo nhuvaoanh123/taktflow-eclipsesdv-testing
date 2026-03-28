@@ -1,0 +1,21 @@
+{
+  "function": "HealthMonitorBuilder",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:HealthMonitorBuilder",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:HealthMonitorBuilder",
+      "line": 70
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

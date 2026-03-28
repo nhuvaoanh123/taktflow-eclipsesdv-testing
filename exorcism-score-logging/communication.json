@@ -1,0 +1,10 @@
+{
+  "communication": [
+    {
+      "type": "MQTT_topic",
+      "topic": "subName",
+      "file": "score/datarouter/test/ut/ut_logging/test_unix_domain_server.cpp"
+    }
+  ],
+  "count": 1
+}

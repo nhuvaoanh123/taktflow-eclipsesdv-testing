@@ -1,0 +1,21 @@
+{
+  "function": "fabs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fabs",
+      "line": 409
+    },
+    {
+      "id": 1,
+      "label": "exit:fabs",
+      "line": 418
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

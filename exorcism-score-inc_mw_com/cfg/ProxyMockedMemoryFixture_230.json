@@ -1,0 +1,21 @@
+{
+  "function": "ProxyMockedMemoryFixture",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProxyMockedMemoryFixture",
+      "line": 230
+    },
+    {
+      "id": 1,
+      "label": "exit:ProxyMockedMemoryFixture",
+      "line": 260
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

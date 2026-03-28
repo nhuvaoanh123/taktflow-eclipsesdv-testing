@@ -1,0 +1,21 @@
+{
+  "function": "test_get_datapoint_bad_request_pattern_or_not_found",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_get_datapoint_bad_request_pattern_or_not_found",
+      "line": 1382
+    },
+    {
+      "id": 1,
+      "label": "exit:test_get_datapoint_bad_request_pattern_or_not_found",
+      "line": 1464
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

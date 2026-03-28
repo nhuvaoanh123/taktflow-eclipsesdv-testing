@@ -1,0 +1,147 @@
+{
+  "function": "deserialize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deserialize",
+      "line": 39
+    },
+    {
+      "id": 1,
+      "label": "if ((offset == 0))",
+      "line": 46
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 51
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 46
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 50
+    },
+    {
+      "id": 5,
+      "label": "if ((vector_size_location == nullptr))",
+      "line": 53
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 58
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 53
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 57
+    },
+    {
+      "id": 9,
+      "label": "if ((vector_contents_address == nullptr))",
+      "line": 65
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 69
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 65
+    },
+    {
+      "id": 12,
+      "label": "return_statement",
+      "line": 68
+    },
+    {
+      "id": 13,
+      "label": "exit:deserialize",
+      "line": 78
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 13
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "project": "score-baselibs_rust",
+  "files_by_language": {
+    "Rust": {
+      "files": 50,
+      "loc": 10146
+    },
+    "C++": {
+      "files": 2,
+      "loc": 113
+    },
+    "C": {
+      "files": 1,
+      "loc": 91
+    },
+    "Python": {
+      "files": 2,
+      "loc": 146
+    }
+  },
+  "total_files": 55,
+  "total_loc": 10496,
+  "total_functions": 711,
+  "build_system": "Cargo, Bazel",
+  "languages": [
+    "Rust",
+    "C++",
+    "C",
+    "Python"
+  ]
+}

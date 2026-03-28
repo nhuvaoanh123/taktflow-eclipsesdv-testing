@@ -1,0 +1,21 @@
+{
+  "function": "_process_can_message",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_process_can_message",
+      "line": 92
+    },
+    {
+      "id": 1,
+      "label": "exit:_process_can_message",
+      "line": 112
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

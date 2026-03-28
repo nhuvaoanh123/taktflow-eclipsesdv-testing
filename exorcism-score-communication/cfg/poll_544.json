@@ -1,0 +1,21 @@
+{
+  "function": "poll",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:poll",
+      "line": 544
+    },
+    {
+      "id": 1,
+      "label": "exit:poll",
+      "line": 588
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

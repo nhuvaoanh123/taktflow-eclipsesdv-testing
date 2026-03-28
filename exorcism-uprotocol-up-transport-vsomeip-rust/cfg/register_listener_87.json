@@ -1,0 +1,21 @@
+{
+  "function": "register_listener",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:register_listener",
+      "line": 87
+    },
+    {
+      "id": 1,
+      "label": "exit:register_listener",
+      "line": 134
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

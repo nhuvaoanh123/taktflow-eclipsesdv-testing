@@ -1,0 +1,21 @@
+{
+  "function": "connect_remotes",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect_remotes",
+      "line": 132
+    },
+    {
+      "id": 1,
+      "label": "exit:connect_remotes",
+      "line": 168
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

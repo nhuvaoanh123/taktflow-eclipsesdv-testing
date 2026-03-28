@@ -1,0 +1,204 @@
+{
+  "function": "details",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:details",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "if ((this != &other))",
+      "line": 127
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 148
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 127
+    },
+    {
+      "id": 4,
+      "label": "if ((allocator_propagates))",
+      "line": 135
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 142
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 135
+    },
+    {
+      "id": 7,
+      "label": "if ((other.erasure_pointer_ != nullptr))",
+      "line": 144
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 147
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 144
+    },
+    {
+      "id": 10,
+      "label": "return_statement",
+      "line": 150
+    },
+    {
+      "id": 11,
+      "label": "if ((other.get_allocator() != allocator))",
+      "line": 181
+    },
+    {
+      "id": 12,
+      "label": "merge",
+      "line": 191
+    },
+    {
+      "id": 13,
+      "label": "then",
+      "line": 181
+    },
+    {
+      "id": 14,
+      "label": "if ((other.get() != nullptr))",
+      "line": 183
+    },
+    {
+      "id": 15,
+      "label": "merge",
+      "line": 186
+    },
+    {
+      "id": 16,
+      "label": "then",
+      "line": 183
+    },
+    {
+      "id": 17,
+      "label": "else",
+      "line": 181
+    },
+    {
+      "id": 18,
+      "label": "exit:details",
+      "line": 210
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 10
+    },
+    {
+      "from": 2,
+      "to": 11
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "true"
+    },
+    {
+      "from": 13,
+      "to": 14
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "label": "true"
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "label": "false"
+    },
+    {
+      "from": 15,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 17,
+      "label": "false"
+    },
+    {
+      "from": 17,
+      "to": 12
+    },
+    {
+      "from": 12,
+      "to": 18
+    }
+  ]
+}

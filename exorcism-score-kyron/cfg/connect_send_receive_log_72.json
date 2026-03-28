@@ -1,0 +1,21 @@
+{
+  "function": "connect_send_receive_log",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connect_send_receive_log",
+      "line": 72
+    },
+    {
+      "id": 1,
+      "label": "exit:connect_send_receive_log",
+      "line": 105
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "validate_commstatus",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_commstatus",
+      "line": 507
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_commstatus",
+      "line": 521
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

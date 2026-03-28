@@ -1,0 +1,63 @@
+{
+  "function": "int_pow",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:int_pow",
+      "line": 288
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 293
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 304
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 293
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 293
+    },
+    {
+      "id": 5,
+      "label": "exit:int_pow",
+      "line": 305
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

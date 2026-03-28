@@ -1,0 +1,21 @@
+{
+  "function": "test_bool_array",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_bool_array",
+      "line": 4200
+    },
+    {
+      "id": 1,
+      "label": "exit:test_bool_array",
+      "line": 4265
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

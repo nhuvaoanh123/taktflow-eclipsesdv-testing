@@ -1,0 +1,21 @@
+{
+  "function": "itest_apply_workload_err",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:itest_apply_workload_err",
+      "line": 1931
+    },
+    {
+      "id": 1,
+      "label": "exit:itest_apply_workload_err",
+      "line": 1980
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

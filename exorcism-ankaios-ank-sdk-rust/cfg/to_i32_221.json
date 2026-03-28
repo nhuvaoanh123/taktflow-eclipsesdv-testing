@@ -1,0 +1,21 @@
+{
+  "function": "to_i32",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:to_i32",
+      "line": 221
+    },
+    {
+      "id": 1,
+      "label": "exit:to_i32",
+      "line": 244
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

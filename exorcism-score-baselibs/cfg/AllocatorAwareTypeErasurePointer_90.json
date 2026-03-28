@@ -1,0 +1,21 @@
+{
+  "function": "AllocatorAwareTypeErasurePointer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AllocatorAwareTypeErasurePointer",
+      "line": 90
+    },
+    {
+      "id": 1,
+      "label": "exit:AllocatorAwareTypeErasurePointer",
+      "line": 117
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

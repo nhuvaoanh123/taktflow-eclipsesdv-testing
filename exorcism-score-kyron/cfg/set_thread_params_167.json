@@ -1,0 +1,21 @@
+{
+  "function": "set_thread_params",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_thread_params",
+      "line": 167
+    },
+    {
+      "id": 1,
+      "label": "exit:set_thread_params",
+      "line": 183
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

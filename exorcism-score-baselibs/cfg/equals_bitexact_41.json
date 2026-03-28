@@ -1,0 +1,30 @@
+{
+  "function": "equals_bitexact",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:equals_bitexact",
+      "line": 41
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 53
+    },
+    {
+      "id": 2,
+      "label": "exit:equals_bitexact",
+      "line": 57
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

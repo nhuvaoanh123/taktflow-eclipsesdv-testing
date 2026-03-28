@@ -1,0 +1,156 @@
+{
+  "function": "<anonymous>",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:<anonymous>",
+      "line": 160
+    },
+    {
+      "id": 1,
+      "label": "if ((guard_factory.GetNumAvailableGuards() == 0U))",
+      "line": 161
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 166
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 161
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 165
+    },
+    {
+      "id": 5,
+      "label": "if ((!get_new_samples_result.has_value()))",
+      "line": 173
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 183
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 173
+    },
+    {
+      "id": 8,
+      "label": "if ((get_new_samples_result.error() == ComErrc::kNotSubscribed))",
+      "line": 175
+    },
+    {
+      "id": 9,
+      "label": "merge",
+      "line": 182
+    },
+    {
+      "id": 10,
+      "label": "then",
+      "line": 175
+    },
+    {
+      "id": 11,
+      "label": "return_statement",
+      "line": 177
+    },
+    {
+      "id": 12,
+      "label": "else",
+      "line": 175
+    },
+    {
+      "id": 13,
+      "label": "return_statement",
+      "line": 184
+    },
+    {
+      "id": 14,
+      "label": "exit:<anonymous>",
+      "line": 185
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "label": "true"
+    },
+    {
+      "from": 10,
+      "to": 11
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 12,
+      "label": "false"
+    },
+    {
+      "from": 12,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 13
+    },
+    {
+      "from": 6,
+      "to": 14
+    }
+  ]
+}

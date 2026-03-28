@@ -1,0 +1,21 @@
+{
+  "function": "cmp",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:cmp",
+      "line": 149
+    },
+    {
+      "id": 1,
+      "label": "exit:cmp",
+      "line": 156
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

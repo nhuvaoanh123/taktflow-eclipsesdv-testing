@@ -1,0 +1,21 @@
+{
+  "function": "itest_apply_workload_empty_masks_uses_main_mask",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:itest_apply_workload_empty_masks_uses_main_mask",
+      "line": 2035
+    },
+    {
+      "id": 1,
+      "label": "exit:itest_apply_workload_empty_masks_uses_main_mask",
+      "line": 2074
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

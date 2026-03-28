@@ -1,0 +1,21 @@
+{
+  "function": "tracing",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:tracing",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:tracing",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

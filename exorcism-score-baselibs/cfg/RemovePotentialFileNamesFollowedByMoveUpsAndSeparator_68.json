@@ -1,0 +1,55 @@
+{
+  "function": "RemovePotentialFileNamesFollowedByMoveUpsAndSeparator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:RemovePotentialFileNamesFollowedByMoveUpsAndSeparator",
+      "line": 68
+    },
+    {
+      "id": 1,
+      "label": "loop (while_statement)",
+      "line": 72
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 93
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 72
+    },
+    {
+      "id": 4,
+      "label": "exit:RemovePotentialFileNamesFollowedByMoveUpsAndSeparator",
+      "line": 94
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

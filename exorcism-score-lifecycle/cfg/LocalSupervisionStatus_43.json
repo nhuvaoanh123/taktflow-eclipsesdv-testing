@@ -1,0 +1,21 @@
+{
+  "function": "LocalSupervisionStatus",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LocalSupervisionStatus",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:LocalSupervisionStatus",
+      "line": 165
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

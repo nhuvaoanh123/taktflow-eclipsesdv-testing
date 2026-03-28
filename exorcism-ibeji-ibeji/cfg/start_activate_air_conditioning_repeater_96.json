@@ -1,0 +1,21 @@
+{
+  "function": "start_activate_air_conditioning_repeater",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:start_activate_air_conditioning_repeater",
+      "line": 96
+    },
+    {
+      "id": 1,
+      "label": "exit:start_activate_air_conditioning_repeater",
+      "line": 137
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

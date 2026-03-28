@@ -1,0 +1,21 @@
+{
+  "function": "TransactionLog",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TransactionLog",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:TransactionLog",
+      "line": 124
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

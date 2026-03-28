@@ -1,0 +1,30 @@
+{
+  "function": "td",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:td",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 56
+    },
+    {
+      "id": 2,
+      "label": "exit:td",
+      "line": 66
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

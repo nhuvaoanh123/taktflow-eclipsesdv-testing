@@ -1,0 +1,21 @@
+{
+  "project": "leda-leda-contrib-self-update-agent",
+  "files_by_language": {
+    "C": {
+      "files": 44,
+      "loc": 1873
+    },
+    "C++": {
+      "files": 38,
+      "loc": 4977
+    }
+  },
+  "total_files": 82,
+  "total_loc": 6850,
+  "total_functions": 300,
+  "build_system": "CMake",
+  "languages": [
+    "C",
+    "C++"
+  ]
+}

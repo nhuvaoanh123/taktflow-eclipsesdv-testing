@@ -1,0 +1,21 @@
+{
+  "function": "unlock_read",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:unlock_read",
+      "line": 102
+    },
+    {
+      "id": 1,
+      "label": "exit:unlock_read",
+      "line": 123
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

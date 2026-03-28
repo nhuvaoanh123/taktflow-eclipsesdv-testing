@@ -1,0 +1,21 @@
+{
+  "function": "concurrency",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:concurrency",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:concurrency",
+      "line": 186
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

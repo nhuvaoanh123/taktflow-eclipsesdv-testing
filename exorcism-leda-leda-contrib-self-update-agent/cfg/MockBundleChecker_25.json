@@ -1,0 +1,21 @@
+{
+  "function": "MockBundleChecker",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MockBundleChecker",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:MockBundleChecker",
+      "line": 29
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

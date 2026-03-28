@@ -1,0 +1,1133 @@
+[
+  {
+    "function": "main",
+    "file": "components/fms-server/src/main.rs",
+    "line": 32,
+    "calls": [
+      "unwrap",
+      "axum::serve::serve",
+      "into_make_service",
+      "env_logger::init",
+      "tokio::net::TcpListener::bind",
+      "fms_server::app",
+      "FmsServerArgs::parse"
+    ]
+  },
+  {
+    "function": "parse_query_parameters",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 43,
+    "calls": [
+      "is_none",
+      "Err",
+      "unwrap_or",
+      "timestamp",
+      "parse_time",
+      "parse_latest_only",
+      "Ok",
+      "Utc::now",
+      "get",
+      "is_some",
+      "cloned"
+    ]
+  },
+  {
+    "function": "parse_latest_only",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 75,
+    "calls": [
+      "Err",
+      "parse",
+      "Ok",
+      "is_err",
+      "get",
+      "ok"
+    ]
+  },
+  {
+    "function": "parse_time",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 87,
+    "calls": [
+      "Err",
+      "unwrap",
+      "timestamp",
+      "Ok",
+      "debug",
+      "is_err",
+      "get",
+      "Some",
+      "DateTime::<Utc>::from_str"
+    ]
+  },
+  {
+    "function": "no_parameters_returns_400",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 110,
+    "calls": [
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "no_latestonly_or_time_returns_400",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 118,
+    "calls": [
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "latestonly_and_starttime_returns_400",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 128,
+    "calls": [
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "latestonly_and_stoptime_returns_400",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 144,
+    "calls": [
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "latestonly_but_not_bool_returns_400",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 160,
+    "calls": [
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "startime_but_not_timestamp_returns_400",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 171,
+    "calls": [
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "with_latestonly_works",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 182,
+    "calls": [
+      "unwrap",
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "with_starttime_works",
+    "file": "components/fms-server/src/query_parser.rs",
+    "line": 209,
+    "calls": [
+      "unwrap",
+      "assert",
+      "into_iter",
+      "parse_query_parameters",
+      "assert_eq",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "app",
+    "file": "components/fms-server/src/lib.rs",
+    "line": 48,
+    "calls": [
+      "map_or_else",
+      "with_state",
+      "get",
+      "InfluxReader::new",
+      "error",
+      "info",
+      "route",
+      "Router::new",
+      "process::exit"
+    ]
+  },
+  {
+    "function": "root",
+    "file": "components/fms-server/src/lib.rs",
+    "line": 65,
+    "calls": []
+  },
+  {
+    "function": "get_vehicleposition",
+    "file": "components/fms-server/src/lib.rs",
+    "line": 69,
+    "calls": [
+      "json",
+      "Json",
+      "map",
+      "parse_query_parameters",
+      "get_vehicleposition",
+      "map_err",
+      "error"
+    ]
+  },
+  {
+    "function": "get_vehicles",
+    "file": "components/fms-server/src/lib.rs",
+    "line": 96,
+    "calls": [
+      "json",
+      "map_err",
+      "Json",
+      "map",
+      "error",
+      "get_vehicles",
+      "Some"
+    ]
+  },
+  {
+    "function": "get_vehiclesstatuses",
+    "file": "components/fms-server/src/lib.rs",
+    "line": 121,
+    "calls": [
+      "get_vehiclesstatuses",
+      "json",
+      "Json",
+      "map",
+      "parse_query_parameters",
+      "error",
+      "map_err",
+      "Some"
+    ]
+  },
+  {
+    "function": "unpack_value_i32",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 57,
+    "calls": [
+      "and_then",
+      "parse",
+      "ok"
+    ]
+  },
+  {
+    "function": "unpack_value_i64",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 61,
+    "calls": [
+      "and_then",
+      "parse",
+      "ok"
+    ]
+  },
+  {
+    "function": "unpack_value_f64",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 65,
+    "calls": [
+      "and_then",
+      "parse",
+      "ok"
+    ]
+  },
+  {
+    "function": "unpack_value_bool",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 69,
+    "calls": [
+      "and_then",
+      "parse",
+      "ok"
+    ]
+  },
+  {
+    "function": "unpack_time",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 73,
+    "calls": [
+      "unpack_value_i64",
+      "DateTime::from_timestamp_millis"
+    ]
+  },
+  {
+    "function": "unpack_driver_working_state",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 78,
+    "calls": [
+      "Some",
+      "as_str"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 99,
+    "calls": [
+      "map",
+      "InfluxConnection::new"
+    ]
+  },
+  {
+    "function": "get_vehicles",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 103,
+    "calls": [
+      "to_string",
+      "into_iter",
+      "get",
+      "filter_map",
+      "map",
+      "query",
+      "VehicleObject::new",
+      "influxrs::Query::new",
+      "format",
+      "collect"
+    ]
+  },
+  {
+    "function": "get_vehicleposition",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 124,
+    "calls": [
+      "to_string",
+      "TriggerObject::new",
+      "then",
+      "unpack_value_i32",
+      "into_iter",
+      "get",
+      "filter_map",
+      "map",
+      "chrono::Utc::now",
+      "query",
+      "unpack_time",
+      "unpack_value_f64",
+      "influxrs::Query::new",
+      "format",
+      "Some",
+      "collect"
+    ]
+  },
+  {
+    "function": "get_vehiclesstatuses",
+    "file": "components/fms-server/src/influx_reader.rs",
+    "line": 226,
+    "calls": [
+      "format",
+      "unpack_value_i64",
+      "unpack_value_i32",
+      "unpack_value_f64",
+      "get",
+      "to_string",
+      "then",
+      "Utc::now",
+      "unpack_time",
+      "unpack_driver_working_state",
+      "influxrs::Query::new",
+      "TriggerObject::new",
+      "error",
+      "Some",
+      "into_iter",
+      "filter_map",
+      "map",
+      "query",
+      "map_err",
+      "unpack_value_bool",
+      "collect"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "components/fms-server/src/models/mod.rs",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "components/fms-server/src/models/vehicle.rs",
+    "line": 162,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "components/fms-forwarder/src/main.rs",
+    "line": 64,
+    "calls": [
+      "Ok",
+      "HonoMqttTransport::new",
+      "Arc::new",
+      "UPTransportZenoh::new",
+      "get_source_uri",
+      "UPayload::try_from_protobuf",
+      "try_into",
+      "CallOptions::for_publish",
+      "StaticUriProvider::try_from",
+      "u16::try_from",
+      "mpsc::channel::<VehicleStatus>",
+      "vehicle_abstraction::init",
+      "FmsForwarderCommand::parse",
+      "info",
+      "Some",
+      "publish",
+      "SimplePublisher::new",
+      "map",
+      "warn",
+      "recv",
+      "env_logger::init"
+    ]
+  },
+  {
+    "function": "description",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 119,
+    "calls": [
+      "as_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 125,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "new_trigger",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 145,
+    "calls": [
+      "to_string",
+      "Trigger::new"
+    ]
+  },
+  {
+    "function": "as_trigger",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 152,
+    "calls": [
+      "FmsTrigger::new_trigger",
+      "clone",
+      "MessageField::some"
+    ]
+  },
+  {
+    "function": "new_tell_tale_trigger",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 178,
+    "calls": [
+      "to_string",
+      "FmsTrigger::TellTale",
+      "TellTaleInfo::new",
+      "map",
+      "String::try_from"
+    ]
+  },
+  {
+    "function": "new_boolean_trigger",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 190,
+    "calls": [
+      "map",
+      "bool::try_from"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 190,
+    "calls": []
+  },
+  {
+    "function": "new_string_value_trigger",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 197,
+    "calls": [
+      "map",
+      "String::try_from"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 197,
+    "calls": []
+  },
+  {
+    "function": "try_from",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 208,
+    "calls": [
+      "Err",
+      "as_str",
+      "FmsTrigger::new_tell_tale_trigger",
+      "FmsTrigger::new_boolean_trigger",
+      "FmsTrigger::new_string_value_trigger"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 277,
+    "calls": [
+      "to_string",
+      "clone",
+      "Uri::try_from",
+      "map",
+      "Box::new",
+      "KuksaClientV2::new",
+      "error",
+      "map_err",
+      "info"
+    ]
+  },
+  {
+    "function": "get_vehicle_status",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 297,
+    "calls": [
+      "to_string",
+      "Err",
+      "iter",
+      "HashMap::new",
+      "insert",
+      "map",
+      "warn",
+      "and_then",
+      "debug",
+      "to_owned",
+      "for_each",
+      "kuksa::new_vehicle_status",
+      "as_ref",
+      "get_values",
+      "collect",
+      "message"
+    ]
+  },
+  {
+    "function": "register_triggers",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 343,
+    "calls": [
+      "to_string",
+      "Err",
+      "iter",
+      "Ok",
+      "map",
+      "subscribe",
+      "and_then",
+      "debug",
+      "tokio::task::spawn",
+      "warn",
+      "as_ref",
+      "FmsTrigger::try_from",
+      "send",
+      "collect",
+      "message"
+    ]
+  },
+  {
+    "function": "init",
+    "file": "components/fms-forwarder/src/vehicle_abstraction.rs",
+    "line": 386,
+    "calls": [
+      "clone",
+      "get_or_default",
+      "MessageField::some",
+      "tokio::sync::mpsc::channel::<FmsTrigger>",
+      "Ok",
+      "VehicleStatus::new",
+      "warn",
+      "tokio::time::sleep",
+      "recv",
+      "tokio::task::spawn",
+      "as_trigger",
+      "register_triggers",
+      "info",
+      "get_vehicle_status",
+      "KuksaValDatabroker::new",
+      "send",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new_vehicle_status",
+    "file": "components/fms-forwarder/src/vehicle_abstraction/kuksa.rs",
+    "line": 31,
+    "calls": [
+      "Ok",
+      "and_then",
+      "get",
+      "VehicleStatus::new",
+      "Err",
+      "to_string",
+      "f64::try_from",
+      "bool::try_from",
+      "mut_or_insert_default",
+      "unwrap_or_default",
+      "timestamp",
+      "i32::try_from",
+      "u64::try_from",
+      "u32::try_from",
+      "ok",
+      "String::try_from",
+      "unwrap",
+      "timestamp_subsec_nanos",
+      "MessageField::some",
+      "debug",
+      "Timestamp::now",
+      "chrono::DateTime::parse_from_rfc3339"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "components/fms-proto/build.rs",
+    "line": 20,
+    "calls": [
+      "unwrap",
+      "cargo_out_dir",
+      "include",
+      "Ok",
+      "protobuf_codegen::Codegen::new",
+      "protoc_bin_vendored::protoc_bin_path",
+      "protoc",
+      "run_from_script",
+      "protoc_path",
+      "inputs"
+    ]
+  },
+  {
+    "function": "token",
+    "file": "components/influx-client/src/connection.rs",
+    "line": 83,
+    "calls": [
+      "to_string",
+      "Err",
+      "Box::from",
+      "trim",
+      "Ok",
+      "info",
+      "map",
+      "Box::new",
+      "error",
+      "map_err",
+      "as_ref",
+      "std::fs::read_to_string",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "components/influx-client/src/connection.rs",
+    "line": 131,
+    "calls": [
+      "token",
+      "build",
+      "Ok",
+      "InfluxClient::builder",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_command_line_uses_defaults",
+    "file": "components/influx-client/src/connection.rs",
+    "line": 155,
+    "calls": [
+      "Command::new",
+      "InfluxConnectionConfig::from_arg_matches",
+      "InfluxConnectionConfig::augment_args",
+      "assert_eq",
+      "get_matches_from",
+      "expect",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_command_line_requires_uri",
+    "file": "components/influx-client/src/connection.rs",
+    "line": 174,
+    "calls": [
+      "assert",
+      "Command::new",
+      "InfluxConnectionConfig::augment_args",
+      "try_get_matches_from",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_command_line_requires_token_or_token_file",
+    "file": "components/influx-client/src/connection.rs",
+    "line": 185,
+    "calls": [
+      "assert",
+      "Command::new",
+      "InfluxConnectionConfig::from_arg_matches",
+      "println",
+      "InfluxConnectionConfig::augment_args",
+      "assert_eq",
+      "get_matches_from",
+      "expect",
+      "try_get_matches_from",
+      "vec"
+    ]
+  },
+  {
+    "function": "build_header_measurement",
+    "file": "components/influx-client/src/writer.rs",
+    "line": 30,
+    "calls": [
+      "clone",
+      "into_option",
+      "Measurement::builder",
+      "field",
+      "build",
+      "debug",
+      "and_then",
+      "tag",
+      "Some"
+    ]
+  },
+  {
+    "function": "build_snapshot_measurement",
+    "file": "components/influx-client/src/writer.rs",
+    "line": 82,
+    "calls": [
+      "clone",
+      "into_option",
+      "Measurement::builder",
+      "field",
+      "build",
+      "debug",
+      "and_then",
+      "tag",
+      "Some"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "components/influx-client/src/writer.rs",
+    "line": 196,
+    "calls": [
+      "map",
+      "InfluxConnection::new"
+    ]
+  },
+  {
+    "function": "write_vehicle_status",
+    "file": "components/influx-client/src/writer.rs",
+    "line": 250,
+    "calls": [
+      "clone",
+      "unwrap",
+      "into_option",
+      "as_str",
+      "Vec::new",
+      "duration_since",
+      "write",
+      "is_empty",
+      "as_millis",
+      "debug",
+      "warn",
+      "try_into",
+      "build_snapshot_measurement",
+      "<Timestamp as Into<SystemTime>>::into",
+      "push",
+      "build_header_measurement"
+    ]
+  },
+  {
+    "function": "add_property_bag_to_map",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 53,
+    "calls": [
+      "to_string",
+      "split",
+      "trace",
+      "split_once",
+      "insert",
+      "contains_key",
+      "for_each"
+    ]
+  },
+  {
+    "function": "get_headers_as_map",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 67,
+    "calls": [
+      "to_string",
+      "iter",
+      "String::from_utf8",
+      "insert",
+      "rsplit_once",
+      "debug",
+      "and_then",
+      "for_each",
+      "to_vec",
+      "add_property_bag_to_map",
+      "ok",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "extract_umessage_from_cloudevent",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 94,
+    "calls": [
+      "Some",
+      "info",
+      "CloudEvent::parse_from_bytes",
+      "UMessage::try_from"
+    ]
+  },
+  {
+    "function": "extract_umessage_from_kafka_message",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 110,
+    "calls": [
+      "get_headers_as_map",
+      "extract_umessage_from_cloudevent",
+      "headers",
+      "map",
+      "debug",
+      "get",
+      "payload"
+    ]
+  },
+  {
+    "function": "read_lines",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 153,
+    "calls": [
+      "BufReader::new",
+      "Err",
+      "Ok",
+      "lines",
+      "Box::new",
+      "File::open"
+    ]
+  },
+  {
+    "function": "get_kafka_client_config",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 164,
+    "calls": [
+      "split_once",
+      "map",
+      "ClientConfig::new",
+      "debug",
+      "set",
+      "read_lines"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 194,
+    "calls": [
+      "LocalTransport::default",
+      "eq",
+      "name",
+      "tokio::spawn",
+      "Ok",
+      "Arc::new",
+      "unwrap_or_else",
+      "try_for_each",
+      "find",
+      "Err",
+      "clone",
+      "iter",
+      "stream",
+      "client_config\r\n            .set_log_level",
+      "get_kafka_client_config",
+      "subscribe",
+      "info",
+      "send",
+      "as_str",
+      "fetch_metadata",
+      "error",
+      "Some",
+      "partitions",
+      "extract_umessage_from_kafka_message",
+      "Duration::from_secs",
+      "set_log_level",
+      "is_empty",
+      "Box::new",
+      "format",
+      "topics"
+    ]
+  },
+  {
+    "function": "send",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 270,
+    "calls": [
+      "Err",
+      "UStatus::fail_with_code"
+    ]
+  },
+  {
+    "function": "register_listener",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 277,
+    "calls": [
+      "register_listener"
+    ]
+  },
+  {
+    "function": "unregister_listener",
+    "file": "components/up-transport-hono-kafka/src/lib.rs",
+    "line": 288,
+    "calls": [
+      "unregister_listener"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "components/fms-consumer/src/main.rs",
+    "line": 41,
+    "calls": [
+      "write_vehicle_status",
+      "msg.extract_protobuf::<VehicleStatus>",
+      "info"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "components/fms-consumer/src/main.rs",
+    "line": 85,
+    "calls": [
+      "thread::park",
+      "HonoKafkaTransport::new",
+      "map_err",
+      "register_listener",
+      "Ok",
+      "map",
+      "FmsConsumerCommand::parse",
+      "Arc::new",
+      "UPTransportZenoh::new",
+      "InfluxWriter::new",
+      "info",
+      "env_logger::init",
+      "try_into"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "components/up-transport-hono-mqtt/src/lib.rs",
+    "line": 54,
+    "calls": [
+      "connect",
+      "to_string",
+      "map",
+      "format",
+      "url_encode"
+    ]
+  },
+  {
+    "function": "send",
+    "file": "components/up-transport-hono-mqtt/src/lib.rs",
+    "line": 68,
+    "calls": [
+      "to_string",
+      "clone",
+      "Err",
+      "UStatus::fail_with_code",
+      "finalize",
+      "topic",
+      "CloudEvent::try_from",
+      "Ok",
+      "debug",
+      "warn",
+      "MessageBuilder::new",
+      "write_to_bytes",
+      "map_err",
+      "publish",
+      "payload"
+    ]
+  },
+  {
+    "function": "on_connect_success",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 39,
+    "calls": [
+      "info"
+    ]
+  },
+  {
+    "function": "on_connect_failure",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 43,
+    "calls": [
+      "warn",
+      "reconnect_with_callbacks",
+      "thread::sleep",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 59,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "ssl_options",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 117,
+    "calls": [
+      "Err",
+      "Box::from",
+      "verify",
+      "SslOptionsBuilder::new",
+      "ca_path",
+      "finalize",
+      "trust_store",
+      "Ok",
+      "debug",
+      "private_key",
+      "error",
+      "info",
+      "as_ref",
+      "key_store"
+    ]
+  },
+  {
+    "function": "mqtt3_connect_options",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 152,
+    "calls": [
+      "user_name",
+      "finalize",
+      "automatic_reconnect",
+      "password",
+      "max_inflight",
+      "clean_session",
+      "Ok",
+      "connect_timeout",
+      "info",
+      "debug",
+      "keep_alive_interval",
+      "ConnectOptionsBuilder::new_v3",
+      "ssl_options",
+      "as_ref",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "mqtt5_connect_options",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 177,
+    "calls": [
+      "finalize",
+      "automatic_reconnect",
+      "max_inflight",
+      "Duration::from_secs",
+      "Ok",
+      "connect_timeout",
+      "keep_alive_interval",
+      "ConnectOptionsBuilder::new_v5",
+      "clean_start"
+    ]
+  },
+  {
+    "function": "create_async_client",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 190,
+    "calls": [
+      "clone",
+      "unwrap_or_default",
+      "CreateOptionsBuilder::new",
+      "send_while_disconnected",
+      "as_str",
+      "delete_oldest_messages",
+      "client_id",
+      "create_client",
+      "map_err",
+      "server_uri",
+      "max_buffered_messages"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 201,
+    "calls": [
+      "Err",
+      "map_err",
+      "mqtt5_connect_options",
+      "mqtt3_connect_options",
+      "map",
+      "connect_with_callbacks",
+      "error",
+      "create_async_client",
+      "info"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 232,
+    "calls": [
+      "write_fmt",
+      "format_args"
+    ]
+  },
+  {
+    "function": "test_command_line_uses_defaults",
+    "file": "components/up-transport-hono-mqtt/src/mqtt_connection.rs",
+    "line": 247,
+    "calls": [
+      "assert",
+      "MqttClientOptions::augment_args",
+      "assert_eq",
+      "clap::Command::new",
+      "get_matches_from",
+      "expect",
+      "MqttClientOptions::from_arg_matches",
+      "vec"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "components/fms-zenoh/src/lib.rs",
+    "line": 35,
+    "calls": [
+      "Config::default",
+      "Config::from_file",
+      "Ok",
+      "map_err"
+    ]
+  }
+]

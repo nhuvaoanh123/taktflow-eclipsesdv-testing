@@ -1,0 +1,11 @@
+{
+  "function": "getLatestVersion",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getLatestVersion",
+      "line": 20
+    }
+  ],
+  "edges": []
+}

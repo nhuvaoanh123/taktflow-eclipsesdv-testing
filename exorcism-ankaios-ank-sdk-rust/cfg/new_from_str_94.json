@@ -1,0 +1,21 @@
+{
+  "function": "new_from_str",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:new_from_str",
+      "line": 94
+    },
+    {
+      "id": 1,
+      "label": "exit:new_from_str",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

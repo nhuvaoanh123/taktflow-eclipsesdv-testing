@@ -1,0 +1,21 @@
+{
+  "function": "SharedResourceEngineMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SharedResourceEngineMock",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:SharedResourceEngineMock",
+      "line": 52
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

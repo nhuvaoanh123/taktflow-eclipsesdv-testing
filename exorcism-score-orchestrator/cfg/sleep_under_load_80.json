@@ -1,0 +1,21 @@
+{
+  "function": "sleep_under_load",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sleep_under_load",
+      "line": 80
+    },
+    {
+      "id": 1,
+      "label": "exit:sleep_under_load",
+      "line": 141
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

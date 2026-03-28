@@ -1,0 +1,5461 @@
+[
+  {
+    "function": "testUStatusHasRequiredFields",
+    "file": "src/test/java/org/eclipse/uprotocol/v1/UStatusTest.java",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testProtoSerialization",
+    "file": "src/test/java/org/eclipse/uprotocol/v1/UStatusTest.java",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildNullCallOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 29,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildCallOptionsWithTimeout",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildCallOptionsWithPriority",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildCallOptionsWithAllParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildCallOptionsWithBlankToken",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsEqualsWithNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsEqualsWithSameObject",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentParametersPriority",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentParametersToken",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentType",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "start_line": 110,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMapResponse",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseToResultWithEmptyRequest",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseWithException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseWithEmptyPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseWithNullPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseToResultWithNonEmptyPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 112,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseToResultWithNullPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 123,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseToResultWithEmptyPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 137,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 141,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseToResultWithException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 152,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 156,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseToResultWithTimeoutException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 169,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 173,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testMapResponseToResultWithInvalidArgumentsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 189,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 193,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "createMethodUri",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "start_line": 206,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertMessageHasOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 51,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "callOptionsAndPayloadProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testInvokeMethodWithPayloadSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testInvokeMethodFailsForTimeout",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testInvokeMethodFailsForTransportError",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 118,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 20,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testInvokeMethodFailsForErroneousServiceInvocation",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 139,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "unexpectedMessageHandlerProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 164,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testHandleUnexpectedResponse",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 171,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 45,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testCloseUnregistersResponseListenerFromTransport",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "start_line": 217,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPackPassingNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPack",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPacktoany",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPackWithNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnpackingAUpayloadCallingUnpackWithNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnpackPassingANullBytestring",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnpackPassingAGoogleProtobufAnyPackedUpayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnpackPassingAnUnsupportedFormatInUpayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 100,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnpackToUnpackAMessageOfTheWrongType",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "unpackOrDefaultInstanceArgsProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnpackOrDefaultInstanceSucceedsForSimpleProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 169,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 16,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "testEqualsWhenTheyAreEqual",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 186,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testEqualsWhenTheyAreNotEqual",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 196,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testEqualsWhenObjectIsNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 207,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testEqualsWhenObjectIsNotAnInstanceOfUpayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 216,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testEqualsWhenItIsTheSameObject",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 226,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testEqualsWhenTheDataIsTheSameButTheFormatIsNot",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 234,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testHashcode",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testHashcodeWhenTheyAreNotTheSameObjects",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 253,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnpackPassingAValidUmessage",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "start_line": 262,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createPublisher",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertEventAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testSendPublish",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendPublishWithOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendPublishWithStuffedPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendPublishWithPayloadAndOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendingPublishWithInvalidTopic",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setUpTransport",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CommunicationLayerClientTestBase.java",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsSuccessOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 24,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsSuccessOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsFailureOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsFailureOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetOrElseOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetOrElseOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetOrElseOnSuccessWithValue",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetOrElseOnFailureWithValue",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSuccessValueOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSuccessValueOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFailureValueOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFailureValueOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getDefault",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMapOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 105,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMapSuccessWhenFunctionThrowsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 113,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "funThatThrowsAnExceptionForMap",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 122,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testMapOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 126,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFlatMapSuccessWhenFunctionThrowsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 136,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "funThatThrowsAnExceptionForFlatMap",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 145,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testFlatMapOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 150,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFlatMapOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 158,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFilterOnSuccessThatFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 168,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFilterOnSuccessThatSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 178,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFilterOnSuccessWhenFunctionThrowsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 186,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "predicateThatThrowsAnException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 196,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testFilterOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 200,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFlattenOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 210,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFlattenOnSuccessWithFunctionThatFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 219,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFlattenOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 229,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "multiplyBy2",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 240,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testToStringSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testToStringFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "start_line": 250,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testConstructorsRejectInvalidArguments",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 47,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testConstructorForTransportAndUriProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 180,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSubscriberRegistersNotificationListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 194,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSubscriberCreationFailsWhenNotifierFailsToRegisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 204,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testCloseForSuccessfulUnregistration",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 225,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testCloseForFailedUnregistration",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 233,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertCloseIgnoresFailureToUnregisterNotificationListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 242,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testSubscribeFailsWhenUSubscriptionInvocationFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 258,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 48,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRepeatedSubscribeFailsForDifferentSubscriptionChangeHandlers",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 307,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSubscribeSucceedsOnSecondAttempt",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 351,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 54,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnsubscribeFailsForUnknownListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 406,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnsubscribeFailsIfUSubscriptionInvocationFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 436,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 35,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnsubscribeSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 472,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnsubscribeSucceedsOnSecondAttempt",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 504,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 42,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testHandleSubscriptionChangeNotificationHandlesInvalidMessages",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 547,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 39,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testHandleSubscriptionChangeNotificationIgnoresErroneousHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 587,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRegisterSubscriptionChangeHandlerSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 612,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnregisterSubscriptionChangeHandlerSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "start_line": 642,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUStatusExceptionConstructor",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUStatusExceptionConstructorNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUStatusExceptionConstructorUStatus",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetStatus",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUStatusExceptionThrowable",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setUp",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFactoryMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testPublisher",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testNotifier",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "start_line": 86,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "start_line": 110,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRpcServer",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 26,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invalidArgsForRegisterRequestHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRegisterRequestHandlerFailsForNullParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "testUnregisterRequestHandlerFailsForNullParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "testRegisterRequestListenerSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 93,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 27,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRegisteringTwiceTheSameRequestHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnregisterRequestHandlerFailsForUnknownHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 147,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRegisteringRequestListenerFailsIfTransportIsUnavailable",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 164,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "requestHandlerExceptionProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 183,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testHandleRequestHandlesException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 199,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "errorHandlersProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 223,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRequestHandlerReportsSendError",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 243,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 34,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "unexpectedMessageHandlerProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 278,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRequestHandlerIgnoresRequestsWithoutHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 285,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testHandleRequestIgnoresNonRequestMessages",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 308,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 31,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testHandleRequestSucceedsWithPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "start_line": 340,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createNotifier",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertNotificationAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testSendNotification",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendNotificationWithOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendNotificationWithPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendNotificationWithAnyPayloadAndOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 81,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSendNotificationWithInvalidTopic",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 91,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRegisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 101,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnregisterListenerNotRegistered",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 17,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setUp",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetLastMessages",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetLastMessagesEmptyTopics",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetLastMessagesException",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "start_line": 91,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testConstructorsRequireRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testConstructorRejectsInvalidInstanceId",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 75,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSubscribeInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 86,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnsubscribeInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFetchSubscribersInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFetchSubscriptionsInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRegisterForNotificationsInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 130,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnregisterForNotificationsInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "start_line": 141,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetCauses",
+    "file": "src/test/java/org/eclipse/uprotocol/validation/ValidationExceptionTest.java",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/validation/ValidationExceptionTest.java",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getUnsignedInt",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 54,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withUriString",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withAuthority",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withEntityId",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withMajorVersion",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withResourceId",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "serializeToProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "serializeToUri",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 93,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "deserializeFromUri",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 99,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertUriString",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assertOriginalUuriCanBeRecreatedFromProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 113,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertUuriCanBeDeserializedFromBytes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assertOriginalUuriCanBeRecreatedFromUriString",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertUuriMatchesPattern",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assertUuriDoesNotMatchPattern",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 139,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assertFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testValidate",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 36,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 4,
+    "loc": 37,
+    "param_count": 5,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "testValidateFailsForAuthorityExceedingMaxLength",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 74,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "testIsRpcMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 95,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "testIsRpcResponse",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 115,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "testIsTopic",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 134,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "testHasWildcard",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 155,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "verifyFilterCriteriaProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 177,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 62,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testVerifyFilterCriteriaFails",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "start_line": 240,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testConstructorWithNullSourceAndSinkURIs",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testConstructorWithNullSourceURI",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testConstructorWithNullSinkURI",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithNullAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithEmptySourceAndSinkUUriAndEmptyUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithEmptySourceAndSinkUUriAndNonEmptyUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndEmptyUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 76,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndNonMatchingUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndMatchingUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndMatchingSourceAndNonMatchingSinkUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndNonMatchingSourceAndMatchingSinkUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFetchingSourceAndSink",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchingWhenSourceIsUriFactoryAnyAndSinkIsNotUriFactoryAny",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 119,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testMatchingWhenSinkIsUriFactoryAnyAndSourceIsNotUriFactoryAny",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testSerializingANullUuri",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testDeserializingANullUriFails",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "start_line": 32,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testDeserializeRejectsAuthorityNameExceedingMaxLength",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "start_line": 39,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testDeserializingLowerCaseHexEncodingSuccceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testAny",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "start_line": 28,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "createServiceDescriptor",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "start_line": 39,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "fromProtoProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFromProtoWithParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "start_line": 87,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "createUriProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testFactoryMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetAuthorityReturnsAuthorityName",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetSourceReturnsUri",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetResourceReturnsUri",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "start_line": 56,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "setUp",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/UTransportTest.java",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRegisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/UTransportTest.java",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testUnregisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/UTransportTest.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testValidateTypeFailsForUnexpectedTypeCode",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetValidatorReturnsMatchingValidator",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "testIsExpired",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 20,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "publishMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 127,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 80,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testValidateAttributesForPublishMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 207,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 36,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "notificationMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 121,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "testValidateAttributesForNotificationMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 366,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 38,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "requestMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 405,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 164,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "testValidateAttributesForRpcRequestMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 570,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 42,
+    "param_count": 8,
+    "flags": []
+  },
+  {
+    "function": "responseMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 613,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 172,
+    "param_count": 0,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "testValidateAttributesForRpcResponseMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "start_line": 786,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 42,
+    "param_count": 8,
+    "flags": []
+  },
+  {
+    "function": "testWithMessageIdPanicsForInvalidUuid",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testPublishMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testNotificationMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "assertBuilderPanics",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 108,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 23,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "testRequestRejectsInvalidTtl",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testRequestMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 141,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 41,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "testResponseMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 183,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 5,
+    "loc": 45,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "testResponseRejectsNonRequestAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 229,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildSupportsRepeatedInvocation",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 244,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildRetainsAllPublishAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 259,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildRetainsAllNotificationAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 296,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 36,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildRetainsAllRequestAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 333,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 42,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuilderCopiesRequestAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 376,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 33,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testBuildRetainsAllResponseAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "start_line": 410,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 43,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getUnsignedLong",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 47,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withMsbLsb",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "withHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "serializeToProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "serializeToHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "deserializeFromHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 78,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assertOriginalUuidCanBeRecreatedFromProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertDeserializeUuidFromProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 98,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "assertOriginalUuidCanBeRecreatedFromHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "assertFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "start_line": 109,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "invalidUuid",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "provideUuidsForIsUProtocol",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsUProtocol",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "provideCreationTimestamps",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetTime",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 74,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "testGetTimeRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 82,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "provideElapsedTimeTestCases",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetElapsedTime",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 98,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "testGetElapsedTimeUsesNowForReference",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 105,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetElapsedTimeRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "provideRemainingTimeTestCases",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 120,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetRemainingTime",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 131,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "testGetRemainingTimeUsesNowForReference",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 138,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testGetRemainingTimeRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 147,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "provideIsExpiredTestCases",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "testIsExpired",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 173,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "testIsExpiredRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "start_line": 180,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "start_line": 85,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "registerRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcServer.java",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "unregisterRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcServer.java",
+    "start_line": 56,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "SimpleNotifier",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "start_line": 49,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "registerNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unregisterNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "SimplePublisher",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimplePublisher.java",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimplePublisher.java",
+    "start_line": 44,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "handleSubscriptionChange",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SubscriptionChangeHandler.java",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "AbstractCommunicationLayerClient",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/AbstractCommunicationLayerClient.java",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "getTransport",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/AbstractCommunicationLayerClient.java",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getUriProvider",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/AbstractCommunicationLayerClient.java",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "UClient",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "registerNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unregisterNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "registerRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "unregisterRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 84,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "create",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "start_line": 97,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "RpcResult",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isSuccess",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isFailure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 34,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 35,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "map",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "flatMap",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 40,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "filter",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 42,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "failureValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "successValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Success",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isSuccess",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 57,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isFailure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 62,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "map",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 77,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "flatMap",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 86,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "filter",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 95,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "failureValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 106,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "successValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toString",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 116,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "Failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "Failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 130,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "Failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 136,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isSuccess",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 142,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isFailure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 147,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 152,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 157,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "map",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 162,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "flatMap",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 167,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "filter",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 172,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "failureValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 177,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "successValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 182,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "toString",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 187,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "success",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 193,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 197,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 201,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 205,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 209,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "flatten",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "start_line": 213,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "handleRequest",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RequestHandler.java",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "InMemoryRpcClient",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "setUnexpectedMessageHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 35,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "close",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "handleResponse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "start_line": 134,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 3,
+    "loc": 27,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "UPayload",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "isEmpty",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 55,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "packToAny",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 67,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "pack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 79,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "pack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unpack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 104,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unpack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 123,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unpackOrDefaultInstance",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unpack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 163,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 3,
+    "loc": 25,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "unpackOrDefaultInstance",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "start_line": 205,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 36,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcClient.java",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "mapResponse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcMapper.java",
+    "start_line": 45,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 6,
+    "loc": 21,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "mapResponseToResult",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcMapper.java",
+    "start_line": 78,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 6,
+    "loc": 29,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "InMemorySubscriber",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 16,
+    "param_count": 5,
+    "flags": []
+  },
+  {
+    "function": "InMemorySubscriber",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 118,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 17,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "setUnexpectedMessageHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 136,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "close",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 143,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 11,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "addSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 155,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 26,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "hasSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 182,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 186,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 46,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 233,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 33,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "registerSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 267,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 16,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unregisterSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 284,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 2,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "handleSubscriptionChangeNotification",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "start_line": 302,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 24,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "start_line": 33,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "start_line": 53,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "start_line": 63,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "getStatus",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getCode",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "start_line": 80,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getMessage",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "start_line": 88,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "start_line": 43,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "start_line": 79,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "start_line": 96,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "registerNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "start_line": 110,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unregisterNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "start_line": 122,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "InMemoryRpcServer",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "start_line": 74,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "setUnexpectedMessageHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setSendErrorHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "start_line": 92,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "registerRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "start_line": 96,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 29,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "unregisterRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "start_line": 126,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 23,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "handleRequest",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "start_line": 154,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 5,
+    "loc": 50,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "CallOptions",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "CallOptions",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "start_line": 54,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "CallOptions",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "applyToMessage",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "start_line": 70,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "start_line": 49,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "registerSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "start_line": 77,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unregisterSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "start_line": 90,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "RpcClientBasedUTwinClient",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClient.java",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getLastMessages",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClient.java",
+    "start_line": 65,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "getLastMessages",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/UTwinClient.java",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "getLastMessages",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/UTwinClient.java",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getSubscriptionServiceNotificationTopic",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "start_line": 48,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "start_line": 58,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fetchSubscribers",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "start_line": 78,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fetchSubscriptions",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "start_line": 91,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "registerForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "start_line": 107,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "unregisterForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "start_line": 117,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "RpcClientBasedUSubscriptionClient",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 69,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "RpcClientBasedUSubscriptionClient",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 86,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 2,
+    "loc": 14,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "getUSubscriptionServiceUri",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 101,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 111,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 13,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "getSubscriptionServiceNotificationTopic",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 125,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 132,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 142,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fetchSubscribers",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 152,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "fetchSubscriptions",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 163,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "registerForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 174,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "unregisterForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "start_line": 184,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "ValidationUtils",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationUtils.java",
+    "start_line": 23,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "collectErrors",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationUtils.java",
+    "start_line": 35,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 17,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "ValidationException",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "ValidationException",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "start_line": 41,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getMessage",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "start_line": 46,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getCauses",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "start_line": 61,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "UriValidator",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 4,
+    "loc": 20,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "validateVersionMajor",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 81,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateResourceId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 88,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 106,
+    "cyclomatic_complexity": 24,
+    "nesting_depth": 5,
+    "loc": 34,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "isRpcMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 149,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isRpcResponse",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 162,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isNotificationDestination",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 174,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isTopic",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 187,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "matchesAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 193,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "matchesEntityTypeId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 198,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "matchesEntityInstance",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 204,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "matchesEntityVersion",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 210,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "matchesEntity",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 215,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "matchesResource",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 221,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "matches",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 235,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "hasWildcardAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 250,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "hasWildcardEntityTypeId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 261,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "hasWildcardEntityInstanceId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 272,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "hasWildcardEntityVersion",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 283,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "hasWildcardResourceId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 294,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "hasWildcard",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 305,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "verifyFilterCriteria",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "start_line": 326,
+    "cyclomatic_complexity": 14,
+    "nesting_depth": 4,
+    "loc": 43,
+    "param_count": 2,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "matches",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriFilter.java",
+    "start_line": 46,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 4,
+    "loc": 13,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "UriSerializer",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "serialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "serialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "start_line": 74,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "deserialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "deserialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "start_line": 126,
+    "cyclomatic_complexity": 19,
+    "nesting_depth": 3,
+    "loc": 54,
+    "param_count": 1,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "UriFactory",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/factory/UriFactory.java",
+    "start_line": 47,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "fromProto",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/factory/UriFactory.java",
+    "start_line": 64,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "fromProto",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/factory/UriFactory.java",
+    "start_line": 82,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 18,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "StaticUriProvider",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "start_line": 27,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "of",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "of",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "getAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "start_line": 63,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getResource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "start_line": 73,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "send",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "start_line": 44,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "registerListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "registerListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "start_line": 87,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "unregisterListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "start_line": 104,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "unregisterListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "getAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/LocalUriProvider.java",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/LocalUriProvider.java",
+    "start_line": 38,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getResource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/LocalUriProvider.java",
+    "start_line": 46,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "onReceive",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UListener.java",
+    "start_line": 37,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getValidator",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 50,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getValidator",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 60,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 79,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 96,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validatePriority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 110,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateRpcPriority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 124,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateRpcTtl",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 139,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isExpired",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 165,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 176,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 184,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 192,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 203,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 1,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "Validators",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 216,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validator",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 225,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 235,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 248,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 269,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 277,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 297,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 310,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 333,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 348,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 368,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 381,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 406,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 423,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 445,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 457,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 483,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateReqId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 507,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validateCommstatus",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 523,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "start_line": 533,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 66,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "notification",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 86,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "request",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 114,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 16,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "response",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 146,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 14,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "response",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 173,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "UMessageBuilder",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 201,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 5,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "withMessageId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 219,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withTtl",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 236,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withToken",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 255,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withPriority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 276,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withPermissionLevel",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 294,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withTraceparent",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 310,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withCommStatus",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 324,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 8,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withReqId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 333,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "withSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 338,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "build",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 350,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "build",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "start_line": 366,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 23,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "UuidSerializer",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/serializer/UuidSerializer.java",
+    "start_line": 26,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "deserialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/serializer/UuidSerializer.java",
+    "start_line": 37,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 14,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "serialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/serializer/UuidSerializer.java",
+    "start_line": 59,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "UuidUtils",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 31,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "getVersion",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 35,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isRfc9562Variant",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 46,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "isUProtocol",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 63,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 1,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getTimestamp",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 79,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "getElapsedTime",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 99,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "getRemainingTime",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 123,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "isExpired",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "start_line": 148,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "UuidFactory",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidFactory.java",
+    "start_line": 30,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidFactory.java",
+    "start_line": 39,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "create",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidFactory.java",
+    "start_line": 49,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  }
+]

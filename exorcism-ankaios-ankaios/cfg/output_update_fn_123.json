@@ -1,0 +1,21 @@
+{
+  "function": "output_update_fn",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:output_update_fn",
+      "line": 123
+    },
+    {
+      "id": 1,
+      "label": "exit:output_update_fn",
+      "line": 177
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

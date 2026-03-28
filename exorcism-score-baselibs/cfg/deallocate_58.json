@@ -1,0 +1,21 @@
+{
+  "function": "deallocate",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deallocate",
+      "line": 58
+    },
+    {
+      "id": 1,
+      "label": "exit:deallocate",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

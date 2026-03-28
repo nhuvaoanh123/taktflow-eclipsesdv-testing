@@ -1,0 +1,21 @@
+{
+  "function": "affinity",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:affinity",
+      "line": 401
+    },
+    {
+      "id": 1,
+      "label": "exit:affinity",
+      "line": 439
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

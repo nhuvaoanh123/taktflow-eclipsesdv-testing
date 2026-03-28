@@ -1,0 +1,21 @@
+{
+  "function": "pop",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:pop",
+      "line": 69
+    },
+    {
+      "id": 1,
+      "label": "exit:pop",
+      "line": 84
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

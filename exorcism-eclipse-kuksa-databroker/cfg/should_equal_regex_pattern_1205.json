@@ -1,0 +1,21 @@
+{
+  "function": "should_equal_regex_pattern",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:should_equal_regex_pattern",
+      "line": 1205
+    },
+    {
+      "id": 1,
+      "label": "exit:should_equal_regex_pattern",
+      "line": 1217
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

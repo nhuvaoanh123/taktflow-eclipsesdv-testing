@@ -1,0 +1,21 @@
+{
+  "function": "LinuxNetworkInterfaceMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LinuxNetworkInterfaceMock",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:LinuxNetworkInterfaceMock",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

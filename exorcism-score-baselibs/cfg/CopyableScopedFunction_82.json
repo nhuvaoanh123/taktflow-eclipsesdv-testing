@@ -1,0 +1,21 @@
+{
+  "function": "CopyableScopedFunction",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:CopyableScopedFunction",
+      "line": 82
+    },
+    {
+      "id": 1,
+      "label": "exit:CopyableScopedFunction",
+      "line": 86
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

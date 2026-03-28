@@ -1,0 +1,21 @@
+{
+  "function": "read_exact",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:read_exact",
+      "line": 747
+    },
+    {
+      "id": 1,
+      "label": "exit:read_exact",
+      "line": 758
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

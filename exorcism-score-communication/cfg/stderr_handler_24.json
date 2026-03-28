@@ -1,0 +1,21 @@
+{
+  "function": "stderr_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stderr_handler",
+      "line": 24
+    },
+    {
+      "id": 1,
+      "label": "exit:stderr_handler",
+      "line": 28
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

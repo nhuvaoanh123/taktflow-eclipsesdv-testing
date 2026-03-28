@@ -1,0 +1,21 @@
+{
+  "function": "logic_monitor_builder_create",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:logic_monitor_builder_create",
+      "line": 19
+    },
+    {
+      "id": 1,
+      "label": "exit:logic_monitor_builder_create",
+      "line": 38
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

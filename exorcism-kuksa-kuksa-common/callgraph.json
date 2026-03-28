@@ -1,0 +1,128 @@
+[
+  {
+    "function": "error_exit",
+    "file": "jwt/createToken.py",
+    "line": 27,
+    "calls": [
+      "sys.exit",
+      "print"
+    ]
+  },
+  {
+    "function": "createJWTToken",
+    "file": "jwt/createToken.py",
+    "line": 32,
+    "calls": [
+      "print",
+      "open",
+      "\"Writing signed access token to {}\".format",
+      "\"Reading JWT payload from {}\".format",
+      "json.load",
+      "output.write",
+      "input_filename.endswith",
+      "jwt.encode"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "jwt/createToken.py",
+    "line": 48,
+    "calls": [
+      "argparse.ArgumentParser",
+      "len",
+      "open",
+      "createJWTToken",
+      "parser.add_argument",
+      "path.join",
+      "\"Reading private key from {}\".format",
+      "error_exit",
+      "parser.parse_args",
+      "path.abspath",
+      "file.read",
+      "print",
+      "path.dirname"
+    ]
+  },
+  {
+    "function": "check_component_curation",
+    "file": "sbom-tools/src/kuksa_sbom_utils/collectlicensefiles.py",
+    "line": 46,
+    "calls": [
+      "logger.debug",
+      "logger.info"
+    ]
+  },
+  {
+    "function": "check_expression_curation",
+    "file": "sbom-tools/src/kuksa_sbom_utils/collectlicensefiles.py",
+    "line": 57,
+    "calls": [
+      "logger.debug",
+      "logger.info"
+    ]
+  },
+  {
+    "function": "collect_license_id_from_expression",
+    "file": "sbom-tools/src/kuksa_sbom_utils/collectlicensefiles.py",
+    "line": 66,
+    "calls": [
+      "list",
+      "re.split",
+      "filter",
+      "logger.debug",
+      "license_ids.append"
+    ]
+  },
+  {
+    "function": "get_expression_from_component",
+    "file": "sbom-tools/src/kuksa_sbom_utils/collectlicensefiles.py",
+    "line": 75,
+    "calls": [
+      "logger.warning"
+    ]
+  },
+  {
+    "function": "collect",
+    "file": "sbom-tools/src/kuksa_sbom_utils/collectlicensefiles.py",
+    "line": 84,
+    "calls": [
+      "collect_license_id_from_expression",
+      "open",
+      "MAP.supported_licenses.keys",
+      "inf.read",
+      "sys.exit",
+      "logger.info",
+      "check_expression_curation",
+      "logger.error",
+      "gzip.open",
+      "json.load",
+      "logger.debug",
+      "os.path.join",
+      "check_component_curation",
+      "outf.write",
+      "get_expression_from_component",
+      "os.mkdir"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "sbom-tools/src/kuksa_sbom_utils/collectlicensefiles.py",
+    "line": 130,
+    "calls": [
+      "argparse.ArgumentParser",
+      "open",
+      "len",
+      "parser.add_argument",
+      "logger.info",
+      "logging.basicConfig",
+      "logger.error",
+      "cur['components'].keys",
+      "logger.debug",
+      "cur['expressions'].keys",
+      "parser.parse_args",
+      "os.path.exists",
+      "yaml.safe_load",
+      "collect"
+    ]
+  }
+]

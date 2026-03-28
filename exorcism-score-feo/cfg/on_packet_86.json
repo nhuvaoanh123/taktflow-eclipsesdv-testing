@@ -1,0 +1,21 @@
+{
+  "function": "on_packet",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:on_packet",
+      "line": 86
+    },
+    {
+      "id": 1,
+      "label": "exit:on_packet",
+      "line": 227
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

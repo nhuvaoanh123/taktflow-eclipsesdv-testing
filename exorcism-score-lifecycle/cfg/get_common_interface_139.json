@@ -1,0 +1,21 @@
+{
+  "function": "get_common_interface",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_common_interface",
+      "line": 139
+    },
+    {
+      "id": 1,
+      "label": "exit:get_common_interface",
+      "line": 147
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "state_machines": [
+    {
+      "file": "src/communication/default_pubsub.rs",
+      "line": 341,
+      "type": "match",
+      "condition": "response.status.state.enum_value()",
+      "states": [
+        "Ok(state) if state == State::SUBSCRIBED || state == State::SUBSCRIBE_PENDING",
+        "_"
+      ]
+    },
+    {
+      "file": "src/communication/in_memory_rpc_client.rs",
+      "line": 36,
+      "type": "match",
+      "condition": "response.commstatus()",
+      "states": [
+        "Some(UCode::OK) | None",
+        "Some(code)"
+      ]
+    },
+    {
+      "file": "src/uattributes/uattributesvalidator.rs",
+      "line": 509,
+      "type": "match",
+      "condition": "status.enum_value()",
+      "states": [
+        "Ok(_)",
+        "Err(e)"
+      ]
+    }
+  ],
+  "count": 3
+}

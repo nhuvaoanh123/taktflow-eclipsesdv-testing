@@ -1,0 +1,63 @@
+{
+  "function": "GenerateSkeletonTracingStructFromFieldConfig",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GenerateSkeletonTracingStructFromFieldConfig",
+      "line": 183
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 201
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 226
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 201
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 227
+    },
+    {
+      "id": 5,
+      "label": "exit:GenerateSkeletonTracingStructFromFieldConfig",
+      "line": 228
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

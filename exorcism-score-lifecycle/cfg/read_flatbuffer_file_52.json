@@ -1,0 +1,63 @@
+{
+  "function": "read_flatbuffer_file",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:read_flatbuffer_file",
+      "line": 52
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 57
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 59
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 57
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 66
+    },
+    {
+      "id": 5,
+      "label": "exit:read_flatbuffer_file",
+      "line": 67
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "function": "subsize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:subsize",
+      "line": 821
+    },
+    {
+      "id": 1,
+      "label": "if ((n == 0UL))",
+      "line": 824
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 829
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 824
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 828
+    },
+    {
+      "id": 5,
+      "label": "if ((string_address == nullptr))",
+      "line": 833
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 838
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 833
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 837
+    },
+    {
+      "id": 9,
+      "label": "exit:subsize",
+      "line": 840
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    }
+  ]
+}

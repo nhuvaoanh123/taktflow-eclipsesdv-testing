@@ -1,0 +1,23 @@
+[
+  {
+    "function": "<anonymous>",
+    "file": "test/main_pthread.cpp",
+    "line": 17,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "test/main_pthread.cpp",
+    "line": 22,
+    "calls": [
+      "pthread_join",
+      "pthread_create"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "test/main.cpp",
+    "line": 15,
+    "calls": []
+  }
+]

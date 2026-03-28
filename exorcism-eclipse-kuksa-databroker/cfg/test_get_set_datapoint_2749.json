@@ -1,0 +1,21 @@
+{
+  "function": "test_get_set_datapoint",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_get_set_datapoint",
+      "line": 2749
+    },
+    {
+      "id": 1,
+      "label": "exit:test_get_set_datapoint",
+      "line": 2914
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

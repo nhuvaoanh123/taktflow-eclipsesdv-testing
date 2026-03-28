@@ -1,0 +1,21 @@
+{
+  "function": "ucode_to_vsomeip_err_code",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ucode_to_vsomeip_err_code",
+      "line": 264
+    },
+    {
+      "id": 1,
+      "label": "exit:ucode_to_vsomeip_err_code",
+      "line": 278
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

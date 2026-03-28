@@ -1,0 +1,30 @@
+{
+  "function": "<anonymous>",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:<anonymous>",
+      "line": 148
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 151
+    },
+    {
+      "id": 2,
+      "label": "exit:<anonymous>",
+      "line": 153
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

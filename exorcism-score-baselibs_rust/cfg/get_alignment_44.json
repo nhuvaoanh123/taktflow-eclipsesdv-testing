@@ -1,0 +1,21 @@
+{
+  "function": "get_alignment",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_alignment",
+      "line": 44
+    },
+    {
+      "id": 1,
+      "label": "exit:get_alignment",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

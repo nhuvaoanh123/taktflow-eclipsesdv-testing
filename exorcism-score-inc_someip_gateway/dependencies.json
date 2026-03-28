@@ -1,0 +1,33 @@
+{
+  "external": [
+    {
+      "name": "hatchling",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "someip-gateway",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "0",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "Private",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "pytest",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "someip",
+      "source": "pyproject.toml"
+    },
+    {
+      "name": "bazel-bin",
+      "source": "pyproject.toml"
+    }
+  ],
+  "internal": []
+}

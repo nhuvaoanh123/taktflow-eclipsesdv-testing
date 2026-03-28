@@ -1,0 +1,1059 @@
+[
+  {
+    "function": "uattributes_to_attachment",
+    "file": "src/utransport.rs",
+    "line": 26,
+    "calls": [
+      "finish",
+      "to_le_bytes",
+      "Ok",
+      "ZBytes::writer",
+      "append",
+      "ZBytes::from",
+      "write_to_bytes",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "map_zenoh_priority",
+    "file": "src/utransport.rs",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "uri_to_zenoh_key",
+    "file": "src/utransport.rs",
+    "line": 54,
+    "calls": [
+      "to_string",
+      "has_wildcard_entity_type",
+      "has_wildcard_entity_instance",
+      "is_empty",
+      "has_wildcard_version",
+      "format",
+      "authority_name",
+      "has_wildcard_resource_id"
+    ]
+  },
+  {
+    "function": "to_zenoh_key_string",
+    "file": "src/utransport.rs",
+    "line": 91,
+    "calls": [
+      "map_or_else",
+      "uri_to_zenoh_key",
+      "to_string",
+      "format"
+    ]
+  },
+  {
+    "function": "put_message",
+    "file": "src/utransport.rs",
+    "line": 101,
+    "calls": [
+      "attachment",
+      "priority",
+      "map_err",
+      "UStatus::fail_with_code",
+      "trace",
+      "Ok",
+      "map_zenoh_priority",
+      "inspect",
+      "error",
+      "format",
+      "put",
+      "enum_value_or_default",
+      "uattributes_to_attachment"
+    ]
+  },
+  {
+    "function": "receive",
+    "file": "src/utransport.rs",
+    "line": 142,
+    "calls": [
+      "Err",
+      "UStatus::fail_with_code"
+    ]
+  },
+  {
+    "function": "send",
+    "file": "src/utransport.rs",
+    "line": 154,
+    "calls": [
+      "to_string",
+      "validate",
+      "get_or_default",
+      "as_str",
+      "UStatus::fail_with_code",
+      "Bytes::new",
+      "put_message",
+      "ok_or_else",
+      "to_zenoh_key_string",
+      "debug",
+      "map_err",
+      "as_ref",
+      "UAttributesValidators::get_validator_for_attributes"
+    ]
+  },
+  {
+    "function": "register_listener",
+    "file": "src/utransport.rs",
+    "line": 188,
+    "calls": [
+      "up_rust::verify_filter_criteria",
+      "register_subscriber",
+      "as_str",
+      "to_zenoh_key_string"
+    ]
+  },
+  {
+    "function": "unregister_listener",
+    "file": "src/utransport.rs",
+    "line": 204,
+    "calls": [
+      "as_str",
+      "unregister",
+      "ComparableListener::new",
+      "to_zenoh_key_string",
+      "up_rust::verify_filter_criteria"
+    ]
+  },
+  {
+    "function": "test_uattributes_to_attachment",
+    "file": "src/utransport.rs",
+    "line": 232,
+    "calls": [
+      "to_bytes",
+      "assert",
+      "as_ref",
+      "UMessageBuilder::publish",
+      "build",
+      "UUri::try_from_parts",
+      "expect",
+      "uattributes_to_attachment"
+    ]
+  },
+  {
+    "function": "test_map_zenoh_priority",
+    "file": "src/utransport.rs",
+    "line": 259,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_map_zenoh_priority_applies_default_priority",
+    "file": "src/utransport.rs",
+    "line": 265,
+    "calls": [
+      "map_zenoh_priority",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_uri_to_zenoh_key",
+    "file": "src/utransport.rs",
+    "line": 280,
+    "calls": [
+      "expect",
+      "UUri::from_str",
+      "uri_to_zenoh_key",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_to_zenoh_key_string",
+    "file": "src/utransport.rs",
+    "line": 296,
+    "calls": [
+      "unwrap",
+      "UUri::from_str",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_receive_fails_due_to_unimplemented",
+    "file": "src/utransport.rs",
+    "line": 314,
+    "calls": [
+      "with_config",
+      "assert",
+      "Config::default",
+      "build",
+      "UUri::try_from_parts",
+      "expect",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "test_register_listener_fails_for",
+    "file": "src/utransport.rs",
+    "line": 344,
+    "calls": [
+      "with_config",
+      "assert",
+      "Config::default",
+      "UUri::from_str",
+      "build",
+      "map",
+      "expect",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "test_register_listener_fails_if_max_listeners_has_been_reached",
+    "file": "src/utransport.rs",
+    "line": 377,
+    "calls": [
+      "with_config",
+      "unwrap",
+      "assert",
+      "with_max_listeners",
+      "Config::default",
+      "build",
+      "UUri::try_from_parts",
+      "Arc::new",
+      "MockUListener::new",
+      "expect",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "test_register_and_unregister",
+    "file": "src/utransport.rs",
+    "line": 410,
+    "calls": [
+      "with_config",
+      "unwrap",
+      "assert",
+      "Config::default",
+      "UUri::from_str",
+      "build",
+      "map",
+      "Arc::new",
+      "MockUListener::new",
+      "expect",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "test_send_fails_for_invalid_attributes",
+    "file": "src/utransport.rs",
+    "line": 463,
+    "calls": [
+      "with_config",
+      "assert",
+      "Default::default",
+      "Config::default",
+      "into",
+      "build",
+      "UUri::try_from_parts",
+      "Some",
+      "expect",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "builder",
+    "file": "src/lib.rs",
+    "line": 75,
+    "calls": [
+      "Err",
+      "format",
+      "UStatus::fail_with_code",
+      "into",
+      "Ok",
+      "is_empty",
+      "Box::new",
+      "UUri::verify_authority",
+      "map_err"
+    ]
+  },
+  {
+    "function": "init_with_config",
+    "file": "src/lib.rs",
+    "line": 102,
+    "calls": [
+      "UStatus::fail_with_code",
+      "Self::init_with_session",
+      "Ok",
+      "error",
+      "map_err",
+      "zenoh::open"
+    ]
+  },
+  {
+    "function": "init_with_session",
+    "file": "src/lib.rs",
+    "line": 119,
+    "calls": [
+      "ListenerRegistry::new",
+      "Arc::new",
+      "clone"
+    ]
+  },
+  {
+    "function": "try_init_log_from_env",
+    "file": "src/lib.rs",
+    "line": 133,
+    "calls": [
+      "zenoh::init_log_from_env_or"
+    ]
+  },
+  {
+    "function": "with_config",
+    "file": "src/lib.rs",
+    "line": 171,
+    "calls": []
+  },
+  {
+    "function": "with_config_path",
+    "file": "src/lib.rs",
+    "line": 185,
+    "calls": []
+  },
+  {
+    "function": "with_session",
+    "file": "src/lib.rs",
+    "line": 197,
+    "calls": []
+  },
+  {
+    "function": "build",
+    "file": "src/lib.rs",
+    "line": 235,
+    "calls": [
+      "UPTransportZenoh::init_with_config"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "src/lib.rs",
+    "line": 272,
+    "calls": [
+      "to_string",
+      "UPTransportZenoh::init_with_config",
+      "zenoh_config::Config::from_file",
+      "UStatus::fail_with_code",
+      "error",
+      "map_err"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "src/lib.rs",
+    "line": 314,
+    "calls": [
+      "UPTransportZenoh::init_with_session",
+      "Ok"
+    ]
+  },
+  {
+    "function": "with_max_listeners",
+    "file": "src/lib.rs",
+    "line": 327,
+    "calls": []
+  },
+  {
+    "function": "test_getting_a_builder",
+    "file": "src/lib.rs",
+    "line": 343,
+    "calls": [
+      "with_config",
+      "is_ok",
+      "build",
+      "zenoh_config::Config::default",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "attachment_to_uattributes",
+    "file": "src/listener_registry.rs",
+    "line": 24,
+    "calls": [
+      "Err",
+      "validate",
+      "to_bytes",
+      "len",
+      "UStatus::fail_with_code",
+      "into",
+      "Ok",
+      "map",
+      "UAttributes::parse_from_bytes",
+      "format",
+      "info",
+      "UAttributesValidators::get_validator_for_attributes"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/listener_registry.rs",
+    "line": 68,
+    "calls": [
+      "Mutex::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "register_subscriber",
+    "file": "src/listener_registry.rs",
+    "line": 76,
+    "calls": [
+      "UStatus::fail_with_code",
+      "tokio::spawn",
+      "Ok",
+      "contains_key",
+      "lock",
+      "Err",
+      "clone",
+      "Default::default",
+      "get_time",
+      "check_expired",
+      "ComparableListener::new",
+      "insert",
+      "attachment_to_uattributes",
+      "to_bytes",
+      "declare_subscriber",
+      "is_ok",
+      "callback_mut",
+      "Some",
+      "to_vec",
+      "enabled",
+      "len",
+      "attachment",
+      "into",
+      "on_receive",
+      "debug",
+      "warn",
+      "format",
+      "as_ref",
+      "payload"
+    ]
+  },
+  {
+    "function": "unregister",
+    "file": "src/listener_registry.rs",
+    "line": 178,
+    "calls": [
+      "is_none",
+      "clone",
+      "to_string",
+      "Err",
+      "UStatus::fail_with_code",
+      "Ok",
+      "lock",
+      "format",
+      "remove"
+    ]
+  },
+  {
+    "function": "test_register_ignores_duplicate_registration",
+    "file": "src/listener_registry.rs",
+    "line": 212,
+    "calls": [
+      "ListenerRegistry::new",
+      "assert",
+      "Arc::new",
+      "MockUListener::new",
+      "lock",
+      "expect",
+      "zenoh::open",
+      "zenoh::config::Config::default"
+    ]
+  },
+  {
+    "function": "test_attachment_to_uattributes_fails_for_invalid_attributes",
+    "file": "src/listener_registry.rs",
+    "line": 256,
+    "calls": [
+      "expect",
+      "crate::utransport::uattributes_to_attachment",
+      "is_ok",
+      "attachment_to_uattributes"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/l2_rpc_client.rs",
+    "line": 32,
+    "calls": [
+      "get_authority",
+      "println",
+      "UUri::from_str",
+      "Ok",
+      "Arc::new",
+      "expect",
+      "InMemoryRpcClient::new",
+      "to_string",
+      "clone",
+      "String::from_utf8",
+      "StaticUriProvider::new",
+      "CallOptions::for_rpc_request",
+      "build",
+      "invoke_method",
+      "common::get_zenoh_config",
+      "Some",
+      "to_vec",
+      "UPTransportZenoh::builder",
+      "with_config",
+      "UPTransportZenoh::try_init_log_from_env",
+      "UPayload::new",
+      "map",
+      "UUID::build",
+      "payload"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/publisher.rs",
+    "line": 28,
+    "calls": [
+      "with_config",
+      "clone",
+      "core::time::Duration::from_secs",
+      "get_resource_uri",
+      "UPTransportZenoh::try_init_log_from_env",
+      "get_authority",
+      "println",
+      "StaticUriProvider::new",
+      "build",
+      "build_with_payload",
+      "UMessageBuilder::publish",
+      "Ok",
+      "common::get_zenoh_config",
+      "format",
+      "tokio::time::sleep",
+      "expect",
+      "send",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "examples/notification_receiver.rs",
+    "line": 32,
+    "calls": [
+      "unwrap",
+      "String::from_utf8",
+      "spawn",
+      "to_uri",
+      "println",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/notification_receiver.rs",
+    "line": 45,
+    "calls": [
+      "tokio::signal::ctrl_c",
+      "get_authority",
+      "println",
+      "UUri::from_str",
+      "Arc::new",
+      "get_source_uri",
+      "expect",
+      "StaticUriProvider::new",
+      "tokio::runtime::Builder::new_multi_thread",
+      "worker_threads",
+      "register_listener",
+      "build",
+      "common::get_zenoh_config",
+      "Some",
+      "UPTransportZenoh::builder",
+      "with_config",
+      "NotificationListener",
+      "UPTransportZenoh::try_init_log_from_env",
+      "thread_name",
+      "map_err"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "examples/subscriber.rs",
+    "line": 32,
+    "calls": [
+      "unwrap",
+      "String::from_utf8",
+      "spawn",
+      "to_uri",
+      "println",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/subscriber.rs",
+    "line": 45,
+    "calls": [
+      "with_config",
+      "tokio::signal::ctrl_c",
+      "UPTransportZenoh::try_init_log_from_env",
+      "worker_threads",
+      "thread_name",
+      "println",
+      "UUri::from_str",
+      "register_listener",
+      "map_err",
+      "build",
+      "Arc::new",
+      "tokio::runtime::Builder::new_multi_thread",
+      "common::get_zenoh_config",
+      "SubscriberListener",
+      "expect",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "examples/rpc_client.rs",
+    "line": 40,
+    "calls": [
+      "unwrap",
+      "String::from_utf8",
+      "to_uri",
+      "println",
+      "notify_one",
+      "to_vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/rpc_client.rs",
+    "line": 50,
+    "calls": [
+      "Box::from",
+      "get_authority",
+      "println",
+      "UUri::from_str",
+      "tokio::time::timeout",
+      "Arc::new",
+      "get_source_uri",
+      "expect",
+      "clone",
+      "notified",
+      "ResponseListener",
+      "StaticUriProvider::new",
+      "send",
+      "Duration::from_millis",
+      "register_listener",
+      "u64::from",
+      "build",
+      "Notify::new",
+      "common::get_zenoh_config",
+      "Some",
+      "UPTransportZenoh::builder",
+      "with_config",
+      "UPTransportZenoh::try_init_log_from_env",
+      "UMessageBuilder::request",
+      "build_with_payload",
+      "map_err"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "examples/rpc_server.rs",
+    "line": 37,
+    "calls": [
+      "unwrap_or",
+      "to_string",
+      "unwrap",
+      "String::from_utf8",
+      "UMessageBuilder::response_for_request",
+      "println",
+      "build_with_payload",
+      "to_vec",
+      "format",
+      "as_ref",
+      "send"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/rpc_server.rs",
+    "line": 60,
+    "calls": [
+      "StaticUriProvider::try_from",
+      "with_config",
+      "clone",
+      "tokio::signal::ctrl_c",
+      "UPTransportZenoh::try_init_log_from_env",
+      "get_authority",
+      "println",
+      "UUri::from_str",
+      "register_listener",
+      "build",
+      "RpcListener",
+      "map",
+      "Arc::new",
+      "common::get_zenoh_config",
+      "map_err",
+      "Some",
+      "expect",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/notifier.rs",
+    "line": 32,
+    "calls": [
+      "get_authority",
+      "println",
+      "UUri::from_str",
+      "Ok",
+      "expect",
+      "UMessageBuilder::notification",
+      "clone",
+      "StaticUriProvider::new",
+      "send",
+      "build",
+      "common::get_zenoh_config",
+      "tokio::time::sleep",
+      "UPTransportZenoh::builder",
+      "with_config",
+      "core::time::Duration::from_secs",
+      "get_resource_uri",
+      "UPTransportZenoh::try_init_log_from_env",
+      "build_with_payload",
+      "format"
+    ]
+  },
+  {
+    "function": "to_str",
+    "file": "examples/common/mod.rs",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "get_zenoh_config",
+    "file": "examples/common/mod.rs",
+    "line": 54,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "json",
+      "Args::parse",
+      "zenoh_config::Config::from_file",
+      "insert_json5",
+      "is_empty",
+      "zenoh_config::Config::default"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "tests/blocking_callback.rs",
+    "line": 28,
+    "calls": [
+      "id_unchecked",
+      "u64::from",
+      "is_empty",
+      "send",
+      "sleep",
+      "expect",
+      "get_u32",
+      "Duration::from_millis",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_blocking_user_callback",
+    "file": "tests/blocking_callback.rs",
+    "line": 44,
+    "calls": [
+      "DelayListener",
+      "assert",
+      "test_lib::before_test",
+      "UMessageBuilder::publish",
+      "tokio::time::timeout",
+      "Arc::new",
+      "test_lib::create_up_transport_zenoh",
+      "expect",
+      "authority_name",
+      "with_message_id",
+      "clone",
+      "send",
+      "as_str",
+      "put_u32",
+      "register_listener",
+      "tokio::sync::mpsc::channel",
+      "build",
+      "vec",
+      "Duration::from_secs",
+      "build_with_payload",
+      "UUri::try_from_parts",
+      "recv",
+      "UUID::build"
+    ]
+  },
+  {
+    "function": "before_test",
+    "file": "tests/test_lib.rs",
+    "line": 19,
+    "calls": [
+      "call_once"
+    ]
+  },
+  {
+    "function": "create_up_transport_zenoh",
+    "file": "tests/test_lib.rs",
+    "line": 25,
+    "calls": [
+      "with_config",
+      "unwrap_or_default",
+      "map_err",
+      "UStatus::fail_with_code",
+      "build",
+      "format",
+      "UPTransportZenoh::builder"
+    ]
+  },
+  {
+    "function": "create_peer_transport",
+    "file": "tests/authorization.rs",
+    "line": 139,
+    "calls": [
+      "zenoh::config::Config::from_json5",
+      "insert_json5",
+      "test_lib::create_up_transport_zenoh",
+      "Some",
+      "expect"
+    ]
+  },
+  {
+    "function": "test_send_message_to_peer",
+    "file": "tests/authorization.rs",
+    "line": 211,
+    "calls": [
+      "expect_on_receive",
+      "assert",
+      "UUri::any",
+      "test_lib::before_test",
+      "insert_json5",
+      "tokio::time::timeout",
+      "Arc::new",
+      "expect",
+      "clone",
+      "zenoh::config::Config::from_json5",
+      "notified",
+      "create_peer_transport",
+      "Duration::from_millis",
+      "register_listener",
+      "is_ok",
+      "build",
+      "Notify::new",
+      "MockUListener::new",
+      "Some",
+      "UPTransportZenoh::builder",
+      "with_config",
+      "returning",
+      "notify_one"
+    ]
+  },
+  {
+    "function": "test_subscribe_for_messages_from_peer",
+    "file": "tests/authorization.rs",
+    "line": 263,
+    "calls": [
+      "expect_on_receive",
+      "UUri::any",
+      "test_lib::before_test",
+      "insert_json5",
+      "UUri::from_str",
+      "tokio::time::timeout",
+      "Arc::new",
+      "expect",
+      "clone",
+      "zenoh::config::Config::from_json5",
+      "notified",
+      "create_peer_transport",
+      "Duration::from_millis",
+      "send",
+      "register_listener",
+      "is_ok",
+      "build",
+      "Notify::new",
+      "MockUListener::new",
+      "Some",
+      "tokio::time::sleep",
+      "UPTransportZenoh::builder",
+      "with_config",
+      "UMessageBuilder::request",
+      "map",
+      "returning",
+      "notify_one"
+    ]
+  },
+  {
+    "function": "on_receive",
+    "file": "tests/send_receive.rs",
+    "line": 31,
+    "calls": [
+      "notify_one",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "register_listener_and_send",
+    "file": "tests/send_receive.rs",
+    "line": 40,
+    "calls": [
+      "clone",
+      "map_err",
+      "UStatus::fail_with_code",
+      "register_listener",
+      "notified",
+      "tokio::time::timeout",
+      "Ok",
+      "Notify::new",
+      "Arc::new",
+      "test_lib::create_up_transport_zenoh",
+      "info",
+      "send",
+      "MessageHandler",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "test_publish_message_gets_delivered_to_listener",
+    "file": "tests/send_receive.rs",
+    "line": 76,
+    "calls": [
+      "with_traceparent",
+      "clone",
+      "with_priority",
+      "test_lib::before_test",
+      "UUri::from_str",
+      "build_with_payload",
+      "UMessageBuilder::publish",
+      "register_listener_and_send",
+      "with_ttl"
+    ]
+  },
+  {
+    "function": "test_notification_message_gets_delivered_to_listener",
+    "file": "tests/send_receive.rs",
+    "line": 123,
+    "calls": [
+      "with_traceparent",
+      "with_priority",
+      "test_lib::before_test",
+      "UUri::from_str",
+      "build_with_payload",
+      "register_listener_and_send",
+      "with_ttl",
+      "Some",
+      "UMessageBuilder::notification"
+    ]
+  },
+  {
+    "function": "test_rpc_request_message_gets_delivered_to_listener",
+    "file": "tests/send_receive.rs",
+    "line": 168,
+    "calls": [
+      "with_traceparent",
+      "with_priority",
+      "test_lib::before_test",
+      "with_permission_level",
+      "UMessageBuilder::request",
+      "UUri::from_str",
+      "with_token",
+      "build_with_payload",
+      "register_listener_and_send",
+      "Some"
+    ]
+  },
+  {
+    "function": "test_rpc_response_message_gets_delivered_to_listener",
+    "file": "tests/send_receive.rs",
+    "line": 208,
+    "calls": [
+      "with_traceparent",
+      "with_priority",
+      "UMessageBuilder::response",
+      "test_lib::before_test",
+      "UUri::from_str",
+      "build_with_payload",
+      "register_listener_and_send",
+      "with_comm_status",
+      "with_ttl",
+      "Some",
+      "UUID::build"
+    ]
+  },
+  {
+    "function": "test_expired_rpc_request_message_is_not_delivered_to_listener",
+    "file": "tests/send_receive.rs",
+    "line": 233,
+    "calls": [
+      "with_traceparent",
+      "with_priority",
+      "assert",
+      "test_lib::before_test",
+      "Default::default",
+      "with_permission_level",
+      "UUri::from_str",
+      "UMessageBuilder::request",
+      "with_token",
+      "build_with_payload",
+      "expect",
+      "with_message_id"
+    ]
+  },
+  {
+    "function": "test_unregister_listener_stops_processing_of_messages",
+    "file": "tests/send_receive.rs",
+    "line": 272,
+    "calls": [
+      "clone",
+      "expect_on_receive",
+      "assert",
+      "UUri::from_str",
+      "UMessageBuilder::publish",
+      "build",
+      "Notify::new",
+      "Arc::new",
+      "MockUListener::new",
+      "test_lib::create_up_transport_zenoh",
+      "returning",
+      "notify_one",
+      "expect"
+    ]
+  },
+  {
+    "function": "test_same_listener_can_be_registered_for_multiple_filters",
+    "file": "tests/send_receive.rs",
+    "line": 321,
+    "calls": [
+      "clone",
+      "expect_on_receive",
+      "assert",
+      "UUri::try_from_parts",
+      "Notify::new",
+      "Arc::new",
+      "MockUListener::new",
+      "test_lib::create_up_transport_zenoh",
+      "returning",
+      "notify_one",
+      "expect"
+    ]
+  },
+  {
+    "function": "test_multiple_listeners_can_be_registered_for_the_same_filter",
+    "file": "tests/send_receive.rs",
+    "line": 377,
+    "calls": [
+      "clone",
+      "expect_on_receive",
+      "assert",
+      "UUri::try_from_parts",
+      "Notify::new",
+      "Arc::new",
+      "MockUListener::new",
+      "test_lib::create_up_transport_zenoh",
+      "returning",
+      "notify_one",
+      "expect"
+    ]
+  }
+]

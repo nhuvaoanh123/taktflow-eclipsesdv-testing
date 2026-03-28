@@ -1,0 +1,21 @@
+{
+  "function": "check_mq_permissions",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:check_mq_permissions",
+      "line": 52
+    },
+    {
+      "id": 1,
+      "label": "exit:check_mq_permissions",
+      "line": 63
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

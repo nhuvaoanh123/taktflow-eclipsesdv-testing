@@ -1,0 +1,4467 @@
+[
+  {
+    "function": "get_env",
+    "file": "src/incremental.py",
+    "line": 30,
+    "calls": [
+      "logger.debug",
+      "ValueError",
+      "os.environ.get"
+    ]
+  },
+  {
+    "function": "find_correct_path",
+    "file": "src/extensions/score_plantuml.py",
+    "line": 37,
+    "calls": [
+      "Path"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_plantuml.py",
+    "line": 55,
+    "calls": [
+      "find_correct_path",
+      "logger.debug",
+      "config_setdefault",
+      "get_runfiles_dir",
+      "str"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_sphinx_bundle/__init__.py",
+    "line": 38,
+    "calls": [
+      "app.config.myst_enable_extensions.append",
+      "type",
+      "isinstance",
+      "app.config.myst_enable_extensions.add",
+      "app.setup_extension",
+      "app.config.source_suffix.setdefault",
+      "config_setdefault",
+      "print"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_sync_toml/__init__.py",
+    "line": 20,
+    "calls": [
+      "Path",
+      "app.config.needscfg_relative_path_fields.extend",
+      "app.config.needscfg_merge_toml_files.append",
+      "config_setdefault",
+      "str"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_header_service/__init__.py",
+    "line": 18,
+    "calls": [
+      "app.connect"
+    ]
+  },
+  {
+    "function": "register",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 52,
+    "calls": [
+      "hasattr",
+      "data.get_or_create_services",
+      "SphinxNeedsData",
+      "app.add_config_value",
+      "services.register"
+    ]
+  },
+  {
+    "function": "generate_hash",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 66,
+    "calls": [
+      "random.randint",
+      "str",
+      "hashlib.sha256"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 78,
+    "calls": [
+      "super"
+    ]
+  },
+  {
+    "function": "request_from_directive",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 94,
+    "calls": [
+      "_extract_merge_commit_data",
+      "need_data.update",
+      "_extract_github_data",
+      "generate_hash"
+    ]
+  },
+  {
+    "function": "debug",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 119,
+    "calls": [
+      "self.request_from_directive"
+    ]
+  },
+  {
+    "function": "_extract_merge_commit_data",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 132,
+    "calls": [
+      "result.stdout.decode",
+      "out.split",
+      "subprocess.run",
+      "result.stderr.decode",
+      "re.finditer",
+      "m.group",
+      "\", \".join",
+      "defaultdict",
+      "data[m.group",
+      "data.get",
+      "print"
+    ]
+  },
+  {
+    "function": "_extract_github_data",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 178,
+    "calls": [
+      "Github",
+      "_extract_reviewers",
+      "repo.get_pull",
+      "github.close",
+      "Auth.Token",
+      "_extract_repo",
+      "_extract_pull_request",
+      "_extract_approvers",
+      "_extract_github_token",
+      "github.get_organization",
+      "pr.get_reviews",
+      "_extract_org",
+      "_extract_team_info",
+      "int",
+      "print",
+      "github.get_repo"
+    ]
+  },
+  {
+    "function": "_extract_org",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 215,
+    "calls": [
+      "os.environ[\"GITHUB_REPOSITORY\"].split"
+    ]
+  },
+  {
+    "function": "_extract_repo",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 223,
+    "calls": []
+  },
+  {
+    "function": "_extract_github_token",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 231,
+    "calls": []
+  },
+  {
+    "function": "_extract_pull_request",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 239,
+    "calls": [
+      "os.environ[\"GITHUB_REF_NAME\"].split"
+    ]
+  },
+  {
+    "function": "_extract_approvers",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 247,
+    "calls": [
+      "sorted",
+      "_append_approver_teams",
+      "list",
+      "\"; \".join"
+    ]
+  },
+  {
+    "function": "_extract_team_info",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 264,
+    "calls": [
+      "org.get_teams",
+      "org.get_team"
+    ]
+  },
+  {
+    "function": "_append_approver_teams",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 278,
+    "calls": [
+      "team_info.items",
+      "approvers_with_teams.append",
+      "\", \".join"
+    ]
+  },
+  {
+    "function": "_extract_reviewers",
+    "file": "src/extensions/score_header_service/header_service.py",
+    "line": 299,
+    "calls": [
+      "sorted",
+      "\"; \".join"
+    ]
+  },
+  {
+    "function": "add_metadata",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 24,
+    "calls": [
+      "record_testsuite_property"
+    ]
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 36,
+    "calls": [
+      "tmp_path_factory.mktemp"
+    ]
+  },
+  {
+    "function": "sphinx_app_setup",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 41,
+    "calls": [
+      "Path",
+      "src_dir.mkdir",
+      "SphinxTestApp",
+      "str",
+      "template_folder.mkdir",
+      "conf_overrides.update"
+    ]
+  },
+  {
+    "function": "_create_app",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 44,
+    "calls": [
+      "Path",
+      "src_dir.mkdir",
+      "SphinxTestApp",
+      "str",
+      "template_folder.mkdir",
+      "conf_overrides.update"
+    ]
+  },
+  {
+    "function": "basic_conf",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "wrapper",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 80,
+    "calls": []
+  },
+  {
+    "function": "basic_needs",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 112,
+    "calls": []
+  },
+  {
+    "function": "template_needs",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 123,
+    "calls": []
+  },
+  {
+    "function": "test_header_service_integration_github_data",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 162,
+    "calls": [
+      "basic_conf",
+      "app.build",
+      "AssertionError",
+      "sphinx_app_setup",
+      "mock_extract_github_data.assert_called_once"
+    ]
+  },
+  {
+    "function": "test_header_service_integration_commit_data",
+    "file": "src/extensions/score_header_service/test/test_header_service_integration.py",
+    "line": 196,
+    "calls": [
+      "basic_conf",
+      "app.build",
+      "AssertionError",
+      "mock_extract_merge_commit_data.assert_called_once",
+      "sphinx_app_setup"
+    ]
+  },
+  {
+    "function": "add_metadata",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 24,
+    "calls": [
+      "record_testsuite_property"
+    ]
+  },
+  {
+    "function": "test_register",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 35,
+    "calls": [
+      "patch",
+      "hs.register",
+      "MagicMock",
+      "mock_service.register.assert_called_once_with"
+    ]
+  },
+  {
+    "function": "test_generate_hash",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 52,
+    "calls": [
+      "hs.generate_hash"
+    ]
+  },
+  {
+    "function": "test_request_from_directive_github_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 60,
+    "calls": [
+      "header_service.request_from_directive",
+      "MagicMock",
+      "hs.HeaderService"
+    ]
+  },
+  {
+    "function": "test_request_from_directive_commit_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 92,
+    "calls": [
+      "mock_extract_merge_commit_data.assert_called_once_with",
+      "header_service.request_from_directive",
+      "MagicMock",
+      "hs.HeaderService"
+    ]
+  },
+  {
+    "function": "test_debug",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 129,
+    "calls": [
+      "MagicMock",
+      "hs.HeaderService",
+      "header_service.debug"
+    ]
+  },
+  {
+    "function": "test_extract_merge_commit_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 138,
+    "calls": [
+      "run_mock.assert_called_once_with",
+      "MagicMock",
+      "hs._extract_merge_commit_data"
+    ]
+  },
+  {
+    "function": "test_extract_merge_commit_data_error",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 174,
+    "calls": [
+      "MagicMock",
+      "hs._extract_merge_commit_data"
+    ]
+  },
+  {
+    "function": "test_extract_github_data",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 196,
+    "calls": [
+      "MagicMock",
+      "hs._extract_github_data"
+    ]
+  },
+  {
+    "function": "test_extract_github_data_exception",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 237,
+    "calls": [
+      "Exception",
+      "hs._extract_github_data"
+    ]
+  },
+  {
+    "function": "test_extract_org",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 247,
+    "calls": [
+      "patch.dict",
+      "hs._extract_org"
+    ]
+  },
+  {
+    "function": "test_extract_repo",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 252,
+    "calls": [
+      "hs._extract_repo",
+      "patch.dict"
+    ]
+  },
+  {
+    "function": "test_extract_github_token",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 257,
+    "calls": [
+      "patch.dict",
+      "hs._extract_github_token"
+    ]
+  },
+  {
+    "function": "test_extract_pull_request",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 262,
+    "calls": [
+      "hs._extract_pull_request",
+      "patch.dict"
+    ]
+  },
+  {
+    "function": "test_extract_team_info",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 267,
+    "calls": [
+      "MagicMock",
+      "hs._extract_team_info"
+    ]
+  },
+  {
+    "function": "test_extract_approvers",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 291,
+    "calls": [
+      "MagicMock",
+      "iter",
+      "hs._extract_approvers"
+    ]
+  },
+  {
+    "function": "test_append_approver_teams",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 312,
+    "calls": [
+      "hs._append_approver_teams"
+    ]
+  },
+  {
+    "function": "test_extract_reviewers",
+    "file": "src/extensions/score_header_service/test/test_header_service.py",
+    "line": 321,
+    "calls": [
+      "hs._extract_reviewers",
+      "MagicMock",
+      "iter"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "line": 58,
+    "calls": [
+      "super",
+      "isinstance",
+      "asdict",
+      "str"
+    ]
+  },
+  {
+    "function": "SourceCodeLinks_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "line": 68,
+    "calls": [
+      "NeedLink",
+      "DataForTestLink",
+      "NeedSourceLinks",
+      "links.get",
+      "SourceCodeLinks"
+    ]
+  },
+  {
+    "function": "store_source_code_links_combined_json",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "line": 81,
+    "calls": [
+      "file.parent.mkdir",
+      "json.dump",
+      "open"
+    ]
+  },
+  {
+    "function": "load_source_code_links_combined_json",
+    "file": "src/extensions/score_source_code_linker/need_source_links.py",
+    "line": 97,
+    "calls": [
+      "json.loads",
+      "all",
+      "isinstance",
+      "file.read_text"
+    ]
+  },
+  {
+    "function": "DefaultNeedLink",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "line": 33,
+    "calls": [
+      "Path",
+      "NeedLink"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "line": 48,
+    "calls": [
+      "super",
+      "isinstance",
+      "asdict",
+      "str"
+    ]
+  },
+  {
+    "function": "needlink_decoder",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "line": 56,
+    "calls": [
+      "Path",
+      "d.keys",
+      "NeedLink"
+    ]
+  },
+  {
+    "function": "store_source_code_links_json",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "line": 69,
+    "calls": [
+      "file.parent.mkdir",
+      "json.dump",
+      "open"
+    ]
+  },
+  {
+    "function": "load_source_code_links_json",
+    "file": "src/extensions/score_source_code_linker/needlinks.py",
+    "line": 83,
+    "calls": [
+      "Path",
+      "json.loads",
+      "all",
+      "isinstance",
+      "file.read_text",
+      "file.is_absolute",
+      "os.environ.get"
+    ]
+  },
+  {
+    "function": "_extract_references_from_line",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "line": 34,
+    "calls": [
+      "line[tag_index + len",
+      "len",
+      "line.find",
+      "line_after_tag.replace",
+      "req.strip"
+    ]
+  },
+  {
+    "function": "_extract_references_from_file",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "line": 46,
+    "calls": [
+      "enumerate",
+      "open",
+      "findings.append",
+      "NeedLink",
+      "_extract_references_from_line",
+      "root.is_absolute",
+      "file_path.is_absolute",
+      "line.strip"
+    ]
+  },
+  {
+    "function": "iterate_files_recursively",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "line": 79,
+    "calls": [
+      "Path",
+      "_should_skip_file",
+      "d.startswith",
+      "os.walk",
+      "file_path.is_dir",
+      "f.relative_to",
+      "file_path.name.startswith"
+    ]
+  },
+  {
+    "function": "_should_skip_file",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "line": 80,
+    "calls": [
+      "file_path.is_dir",
+      "file_path.name.startswith"
+    ]
+  },
+  {
+    "function": "find_all_need_references",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "line": 104,
+    "calls": [
+      "iterate_files_recursively",
+      "all_need_references.extend",
+      "os.times",
+      "len",
+      "_extract_references_from_file",
+      "print"
+    ]
+  },
+  {
+    "function": "generate_source_code_links_json",
+    "file": "src/extensions/score_source_code_linker/generate_source_code_links_json.py",
+    "line": 132,
+    "calls": [
+      "find_all_need_references",
+      "store_source_code_links_json"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 48,
+    "calls": [
+      "super",
+      "isinstance",
+      "asdict",
+      "str"
+    ]
+  },
+  {
+    "function": "DataForTestLink_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 56,
+    "calls": [
+      "Path",
+      "d.keys",
+      "DataForTestLink"
+    ]
+  },
+  {
+    "function": "from_dict",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 95,
+    "calls": [
+      "data.get",
+      "cls"
+    ]
+  },
+  {
+    "function": "clean_text",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 109,
+    "calls": [
+      "decoded.replace",
+      "html.unescape",
+      "re.compile",
+      "ansi_regex.sub",
+      "str"
+    ]
+  },
+  {
+    "function": "__post_init__",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 121,
+    "calls": [
+      "self.clean_text"
+    ]
+  },
+  {
+    "function": "check_verifies_fields",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 135,
+    "calls": [
+      "LOGGER.info"
+    ]
+  },
+  {
+    "function": "is_valid",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 148,
+    "calls": [
+      "getattr",
+      "self.check_verifies_fields",
+      "LOGGER.info"
+    ]
+  },
+  {
+    "function": "get_test_links",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 178,
+    "calls": [
+      "LOGGER.debug",
+      "Path",
+      "list",
+      "need.strip",
+      "verify_field.split",
+      "DataForTestLink",
+      "parse_attributes",
+      "verify_type.upper",
+      "int",
+      "self.is_valid",
+      "chain"
+    ]
+  },
+  {
+    "function": "parse_attributes",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 183,
+    "calls": [
+      "LOGGER.debug",
+      "Path",
+      "verify_field.split",
+      "DataForTestLink",
+      "verify_type.upper",
+      "int",
+      "need.strip"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 226,
+    "calls": [
+      "super",
+      "isinstance",
+      "asdict"
+    ]
+  },
+  {
+    "function": "DataOfTestCase_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 232,
+    "calls": [
+      "d.keys",
+      "DataOfTestCase"
+    ]
+  },
+  {
+    "function": "store_test_xml_parsed_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 259,
+    "calls": [
+      "file.parent.mkdir",
+      "json.dump",
+      "open"
+    ]
+  },
+  {
+    "function": "load_test_xml_parsed_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 277,
+    "calls": [
+      "json.loads",
+      "all",
+      "isinstance",
+      "file.read_text"
+    ]
+  },
+  {
+    "function": "store_data_of_test_case_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 291,
+    "calls": [
+      "file.parent.mkdir",
+      "json.dump",
+      "open"
+    ]
+  },
+  {
+    "function": "load_data_of_test_case_json",
+    "file": "src/extensions/score_source_code_linker/testlink.py",
+    "line": 305,
+    "calls": [
+      "json.loads",
+      "all",
+      "isinstance",
+      "file.read_text"
+    ]
+  },
+  {
+    "function": "parse_testcase_result",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 48,
+    "calls": [
+      "testcase.get",
+      "skipped.get",
+      "failed.get",
+      "ValueError",
+      "testcase.find"
+    ]
+  },
+  {
+    "function": "parse_properties",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 77,
+    "calls": [
+      "prop.get"
+    ]
+  },
+  {
+    "function": "read_test_xml_file",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 90,
+    "calls": [
+      "\"__\".join",
+      "ET.parse",
+      "missing_prop_tests.append",
+      "parse_testcase_result",
+      "test_case_needs.append",
+      "testsuite.findall",
+      "non_prop_tests.append",
+      "testclassname.split",
+      "parse_properties",
+      "testcase.get",
+      "tree.getroot",
+      "DataOfTestCase.from_dict",
+      "test_case.is_valid",
+      "testcase.find",
+      "root.findall"
+    ]
+  },
+  {
+    "function": "find_xml_files",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 172,
+    "calls": [
+      "os.walk",
+      "os.path.join",
+      "Path",
+      "xml_paths.append"
+    ]
+  },
+  {
+    "function": "find_test_folder",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 189,
+    "calls": [
+      "find_ws_root",
+      "logger.info",
+      "os.path.isdir"
+    ]
+  },
+  {
+    "function": "run_xml_parser",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 200,
+    "calls": [
+      "list",
+      "tcn.get_test_links",
+      "store_data_of_test_case_json",
+      "store_test_xml_parsed_json",
+      "build_test_needs_from_files",
+      "itertools.chain.from_iterable",
+      "find_test_folder",
+      "find_xml_files"
+    ]
+  },
+  {
+    "function": "build_test_needs_from_files",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 224,
+    "calls": [
+      "read_test_xml_file",
+      "tcns.extend",
+      "\", \".join",
+      "logger.info",
+      "construct_and_add_need"
+    ]
+  },
+  {
+    "function": "short_hash",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 247,
+    "calls": [
+      "input_str.encode",
+      "\"\".join",
+      "hashlib.sha256",
+      "filter",
+      "letters_only[:length].lower",
+      "base64.b32encode"
+    ]
+  },
+  {
+    "function": "construct_and_add_need",
+    "file": "src/extensions/score_source_code_linker/xml_parser.py",
+    "line": 258,
+    "calls": [
+      "contextlib.suppress",
+      "get_github_link",
+      "short_hash",
+      "add_external_need"
+    ]
+  },
+  {
+    "function": "group_by_need",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 74,
+    "calls": [
+      "grouped_by_need.items",
+      "defaultdict",
+      "NeedSourceLinks",
+      "grouped_by_need[testlink.need].TestLinks.append",
+      "grouped_by_need[needlink.need].CodeLinks.append",
+      "SourceCodeLinks"
+    ]
+  },
+  {
+    "function": "get_cache_filename",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 121,
+    "calls": []
+  },
+  {
+    "function": "build_and_save_combined_file",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 129,
+    "calls": [
+      "Path",
+      "store_source_code_links_combined_json",
+      "get_cache_filename",
+      "group_by_need",
+      "load_source_code_links_json",
+      "os.environ.get",
+      "load_test_xml_parsed_json"
+    ]
+  },
+  {
+    "function": "setup_source_code_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 161,
+    "calls": [
+      "LOGGER.debug",
+      "get_cache_filename",
+      "app.add_config_value",
+      "scl_cache_json.exists",
+      "app.config.needs_string_links.setdefault",
+      "os.environ.get",
+      "generate_source_code_links_json"
+    ]
+  },
+  {
+    "function": "register_test_code_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 208,
+    "calls": [
+      "app.connect"
+    ]
+  },
+  {
+    "function": "setup_test_code_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 215,
+    "calls": [
+      "LOGGER.debug",
+      "find_ws_root",
+      "bazel_testlogs.exists",
+      "LOGGER.info",
+      "tl_cache_json.exists",
+      "get_cache_filename",
+      "run_xml_parser",
+      "load_data_of_test_case_json",
+      "tcn_cache.exists",
+      "construct_and_add_need"
+    ]
+  },
+  {
+    "function": "register_combined_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 256,
+    "calls": [
+      "app.connect"
+    ]
+  },
+  {
+    "function": "setup_combined_linker",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 263,
+    "calls": [
+      "LOGGER.debug",
+      "grouped_cache.exists",
+      "get_cache_filename",
+      "build_and_save_combined_file"
+    ]
+  },
+  {
+    "function": "setup_once",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 275,
+    "calls": [
+      "LOGGER.debug",
+      "Path",
+      "find_ws_root",
+      "register_test_code_linker",
+      "setup_source_code_linker",
+      "find_git_root",
+      "register_combined_linker",
+      "app.connect"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 303,
+    "calls": [
+      "setup_once"
+    ]
+  },
+  {
+    "function": "find_need",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 315,
+    "calls": [
+      "all_needs.get"
+    ]
+  },
+  {
+    "function": "inject_links_into_needs",
+    "file": "src/extensions/score_source_code_linker/__init__.py",
+    "line": 323,
+    "calls": [
+      "LOGGER.debug",
+      "find_ws_root",
+      "get_cache_filename",
+      "SphinxNeedsData",
+      "Needs_Data.remove_need",
+      "Needs_Data.get_needs_mutable",
+      "LOGGER.warning",
+      "\", \".join",
+      "get_github_link",
+      "needs.items",
+      "need.get",
+      "load_source_code_links_combined_json",
+      "LOGGER.getEffectiveLevel",
+      "Needs_Data.add_need",
+      "deepcopy",
+      "cast",
+      "find_need"
+    ]
+  },
+  {
+    "function": "test_need",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 62,
+    "calls": [
+      "kwargs.setdefault",
+      "kwargs.get",
+      "NeedItemSourceUnknown",
+      "NeedItem",
+      "NeedsInfoType",
+      "NeedsContent"
+    ]
+  },
+  {
+    "function": "encode_comment",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 109,
+    "calls": [
+      "s.replace"
+    ]
+  },
+  {
+    "function": "decode_comment",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 113,
+    "calls": [
+      "s.replace"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 118,
+    "calls": [
+      "super",
+      "isinstance",
+      "encode_comment",
+      "str",
+      "d.get",
+      "asdict"
+    ]
+  },
+  {
+    "function": "needlink_test_decoder",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 129,
+    "calls": [
+      "Path",
+      "d.keys",
+      "NeedLink",
+      "decode_comment"
+    ]
+  },
+  {
+    "function": "temp_dir",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 143,
+    "calls": [
+      "Path",
+      "tempfile.TemporaryDirectory"
+    ]
+  },
+  {
+    "function": "git_repo",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 150,
+    "calls": [
+      "git_dir.mkdir",
+      "subprocess.run",
+      "test_file.write_text"
+    ]
+  },
+  {
+    "function": "sample_needlinks",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 178,
+    "calls": [
+      "Path",
+      "NeedLink"
+    ]
+  },
+  {
+    "function": "cache_file_with_links",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 213,
+    "calls": [
+      "store_source_code_links_json"
+    ]
+  },
+  {
+    "function": "sample_needs",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 221,
+    "calls": []
+  },
+  {
+    "function": "test_get_cache_filename",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 248,
+    "calls": [
+      "Path",
+      "get_cache_filename"
+    ]
+  },
+  {
+    "function": "make_needs",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 256,
+    "calls": [
+      "needs_dict.items",
+      "test_need",
+      "NeedsMutable"
+    ]
+  },
+  {
+    "function": "test_find_need_direct_match",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 267,
+    "calls": [
+      "find_need",
+      "make_needs"
+    ]
+  },
+  {
+    "function": "test_find_need_not_found",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 285,
+    "calls": [
+      "find_need",
+      "make_needs"
+    ]
+  },
+  {
+    "function": "test_group_by_need",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 302,
+    "calls": [
+      "Path",
+      "len",
+      "group_by_need"
+    ]
+  },
+  {
+    "function": "test_group_by_need_empty_list",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 326,
+    "calls": [
+      "len",
+      "group_by_need"
+    ]
+  },
+  {
+    "function": "test_get_github_link_with_real_repo",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 337,
+    "calls": [
+      "Path",
+      "get_current_git_hash",
+      "len",
+      "NeedLink",
+      "os.chdir",
+      "get_github_link",
+      "result.split"
+    ]
+  },
+  {
+    "function": "test_cache_file_operations",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 369,
+    "calls": [
+      "load_source_code_links_json",
+      "len",
+      "store_source_code_links_json",
+      "cache_file.exists"
+    ]
+  },
+  {
+    "function": "test_cache_file_with_encoded_comments",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 400,
+    "calls": [
+      "Path",
+      "len",
+      "open",
+      "NeedLink",
+      "store_source_code_links_json",
+      "f.read",
+      "load_source_code_links_json"
+    ]
+  },
+  {
+    "function": "test_group_by_need_and_find_need_integration",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 437,
+    "calls": [
+      "find_need",
+      "group_by_need",
+      "make_needs"
+    ]
+  },
+  {
+    "function": "test_source_linker_end_to_end_with_real_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 465,
+    "calls": [
+      "Path",
+      "subprocess.run",
+      "len",
+      "group_by_need",
+      "src_dir.mkdir",
+      "NeedLink",
+      "os.chdir",
+      "store_source_code_links_json",
+      "get_github_link",
+      "load_source_code_links_json"
+    ]
+  },
+  {
+    "function": "test_multiple_commits_hash_consistency",
+    "file": "src/extensions/score_source_code_linker/tests/test_codelink.py",
+    "line": 562,
+    "calls": [
+      "get_current_git_hash",
+      "Path",
+      "subprocess.run",
+      "len",
+      "NeedLink",
+      "os.chdir",
+      "new_file.write_text",
+      "get_github_link"
+    ]
+  },
+  {
+    "function": "_write_test_xml",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 34,
+    "calls": [
+      "ET.SubElement",
+      "ET.Element",
+      "props.items",
+      "str",
+      "ET.ElementTree"
+    ]
+  },
+  {
+    "function": "tmp_xml_dirs",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 71,
+    "calls": [
+      "d.mkdir",
+      "_write_test_xml"
+    ]
+  },
+  {
+    "function": "_tmp_xml_dirs",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 74,
+    "calls": [
+      "d.mkdir",
+      "_write_test_xml"
+    ]
+  },
+  {
+    "function": "test_find_xml_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 152,
+    "calls": [
+      "tmp_xml_dirs",
+      "set",
+      "xml_parser.find_xml_files"
+    ]
+  },
+  {
+    "function": "test_find_xml_folder",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 170,
+    "calls": [
+      "tmp_xml_dirs",
+      "xml_parser.find_test_folder"
+    ]
+  },
+  {
+    "function": "test_find_xml_folder_test_reports",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 181,
+    "calls": [
+      "tmp_xml_dirs",
+      "xml_parser.find_test_folder"
+    ]
+  },
+  {
+    "function": "test_find_xml_files_test_reports",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 192,
+    "calls": [
+      "tmp_xml_dirs",
+      "set",
+      "xml_parser.find_xml_files"
+    ]
+  },
+  {
+    "function": "test_early_return",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 211,
+    "calls": [
+      "xml_parser.find_test_folder"
+    ]
+  },
+  {
+    "function": "test_parse_testcase_result",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 227,
+    "calls": [
+      "ET.SubElement",
+      "ET.Element",
+      "xml_parser.parse_testcase_result"
+    ]
+  },
+  {
+    "function": "test_parse_properties",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 249,
+    "calls": [
+      "ET.SubElement",
+      "ET.Element",
+      "xml_parser.parse_properties"
+    ]
+  },
+  {
+    "function": "test_read_test_xml_file",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 265,
+    "calls": [
+      "tmp_xml_dirs",
+      "len",
+      "isinstance",
+      "xml_parser.read_test_xml_file"
+    ]
+  },
+  {
+    "function": "test_short_hash_consistency_and_format",
+    "file": "src/extensions/score_source_code_linker/tests/test_xml_parser.py",
+    "line": 308,
+    "calls": [
+      "xml_parser.short_hash",
+      "len",
+      "h1.isalpha"
+    ]
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 44,
+    "calls": [
+      "tmp_path_factory.mktemp"
+    ]
+  },
+  {
+    "function": "git_repo_setup",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 49,
+    "calls": [
+      "subprocess.run",
+      "str"
+    ]
+  },
+  {
+    "function": "create_demo_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 71,
+    "calls": [
+      "Path",
+      "basic_conf",
+      "subprocess.run",
+      "source_dir.mkdir",
+      "basic_needs",
+      "make_test_xml_1",
+      "make_test_xml_2",
+      "make_codelink_source_1",
+      "shutil.copyfile",
+      "make_codelink_bad_source",
+      "make_codelink_source_2",
+      "testsdir.mkdir",
+      "bazel_testdir1.mkdir",
+      "docs_dir.mkdir",
+      "bazel_testdir2.mkdir"
+    ]
+  },
+  {
+    "function": "make_codelink_source_1",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 121,
+    "calls": []
+  },
+  {
+    "function": "make_codelink_source_2",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 140,
+    "calls": []
+  },
+  {
+    "function": "make_codelink_bad_source",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 156,
+    "calls": []
+  },
+  {
+    "function": "make_test_xml_1",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 168,
+    "calls": []
+  },
+  {
+    "function": "make_test_xml_2",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 191,
+    "calls": []
+  },
+  {
+    "function": "construct_gh_url",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 215,
+    "calls": [
+      "get_github_base_url"
+    ]
+  },
+  {
+    "function": "sphinx_app_setup",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 221,
+    "calls": [
+      "contextlib.suppress",
+      "os.chdir",
+      "SphinxTestApp",
+      "os.getcwd"
+    ]
+  },
+  {
+    "function": "_create_app",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 224,
+    "calls": [
+      "contextlib.suppress",
+      "os.chdir",
+      "SphinxTestApp",
+      "os.getcwd"
+    ]
+  },
+  {
+    "function": "basic_conf",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 256,
+    "calls": []
+  },
+  {
+    "function": "basic_needs",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 286,
+    "calls": []
+  },
+  {
+    "function": "example_source_link_text_all_ok",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 306,
+    "calls": [
+      "Path",
+      "NeedLink"
+    ]
+  },
+  {
+    "function": "example_test_link_text_all_ok",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 338,
+    "calls": [
+      "Path",
+      "DataForTestLink"
+    ]
+  },
+  {
+    "function": "example_source_link_text_non_existent",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 395,
+    "calls": [
+      "Path",
+      "NeedLink"
+    ]
+  },
+  {
+    "function": "make_source_link",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 411,
+    "calls": [
+      "get_github_link",
+      "\", \".join"
+    ]
+  },
+  {
+    "function": "make_test_link",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 415,
+    "calls": [
+      "get_github_link",
+      "\", \".join"
+    ]
+  },
+  {
+    "function": "compare_json_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 419,
+    "calls": [
+      "json.load",
+      "len",
+      "open",
+      "Counter"
+    ]
+  },
+  {
+    "function": "compare_grouped_json_files",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 439,
+    "calls": [
+      "len",
+      "open",
+      "json.load",
+      "zip",
+      "sorted"
+    ]
+  },
+  {
+    "function": "test_source_link_integration_ok",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 475,
+    "calls": [
+      "actual_source_code_link.split",
+      "find_ws_root",
+      "app.build",
+      "make_source_link",
+      "make_test_link",
+      "treq_info.get",
+      "app.cleanup",
+      "SphinxNeedsData",
+      "compare_grouped_json_files",
+      "sphinx_app_setup",
+      "expected_code_link.split",
+      "compare_json_files",
+      "set",
+      "Needs_Data.get_needs_view",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "test_source_link_integration_non_existent_id",
+    "file": "src/extensions/score_source_code_linker/tests/test_source_code_link_integration.py",
+    "line": 539,
+    "calls": [
+      "app.cleanup",
+      "app.build",
+      "sphinx_app_setup",
+      "app.warning.getvalue"
+    ]
+  },
+  {
+    "function": "test_testlink_serialization_roundtrip",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "line": 34,
+    "calls": [
+      "Path",
+      "json.loads",
+      "isinstance",
+      "json.dumps",
+      "DataForTestLink"
+    ]
+  },
+  {
+    "function": "test_testlink_encoder_handles_path",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "line": 52,
+    "calls": [
+      "Path",
+      "json.dumps"
+    ]
+  },
+  {
+    "function": "test_decoder_ignores_irrelevant_dicts",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "line": 63,
+    "calls": [
+      "DataForTestLink_JSON_Decoder"
+    ]
+  },
+  {
+    "function": "test_clean_text_removes_ansi_and_html_unescapes",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "line": 75,
+    "calls": [
+      "DataOfTestCase.clean_text"
+    ]
+  },
+  {
+    "function": "test_testcaseneed_to_dict_multiple_links",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "line": 90,
+    "calls": [
+      "Path",
+      "len",
+      "case.get_test_links",
+      "DataOfTestCase",
+      "set"
+    ]
+  },
+  {
+    "function": "test_store_and_load_testlinks_roundtrip",
+    "file": "src/extensions/score_source_code_linker/tests/test_testlink.py",
+    "line": 124,
+    "calls": [
+      "Path",
+      "isinstance",
+      "DataForTestLink",
+      "file.exists",
+      "load_test_xml_parsed_json",
+      "store_test_xml_parsed_json"
+    ]
+  },
+  {
+    "function": "SourceCodeLinks_TEST_JSON_Decoder",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 36,
+    "calls": [
+      "isinstance",
+      "NeedSourceLinks",
+      "DataForTestLink",
+      "links.get",
+      "SourceCodeLinks",
+      "needlink_test_decoder"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 56,
+    "calls": [
+      "super",
+      "isinstance",
+      "self.default",
+      "str",
+      "NeedLinkTestEncoder",
+      "asdict"
+    ]
+  },
+  {
+    "function": "sample_needlink",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 73,
+    "calls": [
+      "Path",
+      "NeedLink"
+    ]
+  },
+  {
+    "function": "sample_testlink",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 84,
+    "calls": [
+      "Path",
+      "DataForTestLink"
+    ]
+  },
+  {
+    "function": "sample_source_code_links",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 97,
+    "calls": [
+      "NeedSourceLinks",
+      "SourceCodeLinks"
+    ]
+  },
+  {
+    "function": "test_encoder_outputs_serializable_dict",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 106,
+    "calls": [
+      "json.dumps",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "test_decoder_reconstructs_object",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 112,
+    "calls": [
+      "json.loads",
+      "json.dumps",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "test_store_and_load_json",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 121,
+    "calls": [
+      "store_source_code_links_combined_json",
+      "len",
+      "isinstance",
+      "test_file.exists",
+      "load_source_code_links_combined_json"
+    ]
+  },
+  {
+    "function": "test_load_invalid_json_type",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 133,
+    "calls": [
+      "test_file.write_text",
+      "load_source_code_links_combined_json",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_load_invalid_json_items",
+    "file": "src/extensions/score_source_code_linker/tests/test_need_source_links.py",
+    "line": 141,
+    "calls": [
+      "test_file.write_text",
+      "load_source_code_links_combined_json",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "return_html_theme_options",
+    "file": "src/extensions/score_layout/html_options.py",
+    "line": 18,
+    "calls": [
+      "app.config.html_context.get"
+    ]
+  },
+  {
+    "function": "return_html_context",
+    "file": "src/extensions/score_layout/html_options.py",
+    "line": 72,
+    "calls": [
+      "app.config.html_context.get",
+      "hasattr"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_layout/__init__.py",
+    "line": 26,
+    "calls": [
+      "logger.debug",
+      "app.connect"
+    ]
+  },
+  {
+    "function": "update_config",
+    "file": "src/extensions/score_layout/__init__.py",
+    "line": 37,
+    "calls": [
+      "Path",
+      "html_options.return_html_theme_options",
+      "app.config.html_static_path.append",
+      "html_options.return_html_context",
+      "app.add_css_file",
+      "logger.debug",
+      "config_setdefault",
+      "app.config.needs_flow_configs.setdefault",
+      "str"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 62,
+    "calls": [
+      "draw_uml_function_context.items",
+      "app.config.needs_render_context.setdefault"
+    ]
+  },
+  {
+    "function": "scripts_directory_hash",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 73,
+    "calls": [
+      "Path",
+      "open",
+      "time.time",
+      "logger.info",
+      "hashlib.sha256",
+      "f.read",
+      "hash_object.hexdigest",
+      "all.encode",
+      "str"
+    ]
+  },
+  {
+    "function": "_process_interfaces",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 96,
+    "calls": [
+      "gen_link_text",
+      "proc_used_dict.get",
+      "all_needs.get",
+      "logger.info",
+      "proc_used_dict[iface].append",
+      "proc_impl_dict.get",
+      "cast"
+    ]
+  },
+  {
+    "function": "draw_comp_incl_impl_int",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 129,
+    "calls": [
+      "gen_struct_element",
+      "all_needs.get",
+      "logger.info",
+      "get_interface_from_component",
+      "need.get",
+      "draw_comp_incl_impl_int",
+      "_process_interfaces"
+    ]
+  },
+  {
+    "function": "draw_impl_interface",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 202,
+    "calls": [
+      "local_impl_interfaces.update",
+      "all_needs.get",
+      "logger.info",
+      "get_interface_from_component",
+      "need.get",
+      "draw_impl_interface"
+    ]
+  },
+  {
+    "function": "_process_impl_interfaces",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 226,
+    "calls": [
+      "all_needs.get",
+      "logger.info",
+      "proc_impl_interfaces.get",
+      "gen_interface_element",
+      "set",
+      "draw_impl_interface"
+    ]
+  },
+  {
+    "function": "_process_used_interfaces",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 246,
+    "calls": [
+      "get_impl_comp_from_logic_iface",
+      "gen_link_text",
+      "all_needs.get",
+      "proc_used_interfaces.items",
+      "gen_interface_element",
+      "get_hierarchy_text",
+      "print"
+    ]
+  },
+  {
+    "function": "draw_module",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 288,
+    "calls": [
+      "gen_struct_element",
+      "list",
+      "all_needs.get",
+      "logger.info",
+      "_process_used_interfaces",
+      "linkage_text.split",
+      "need.get",
+      "\"\\n\".join",
+      "draw_comp_incl_impl_int",
+      "set",
+      "draw_impl_interface",
+      "_process_impl_interfaces"
+    ]
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 401,
+    "calls": [
+      "scripts_directory_hash"
+    ]
+  },
+  {
+    "function": "_collect_interfaces_and_modules",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 404,
+    "calls": [
+      "get_impl_comp_from_logic_iface",
+      "get_module",
+      "all_needs.get",
+      "logger.info",
+      "impl_comp.get",
+      "proc_modules.append",
+      "draw_module"
+    ]
+  },
+  {
+    "function": "_build_links",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 457,
+    "calls": [
+      "impl_comp.get",
+      "gen_link_text",
+      "logger.info"
+    ]
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 494,
+    "calls": [
+      "dict",
+      "get_interface_from_int",
+      "list",
+      "interfacelist.append",
+      "link_text.split",
+      "need.get",
+      "gen_header",
+      "\"\\n\".join",
+      "self._collect_interfaces_and_modules",
+      "set",
+      "get_alias",
+      "self._build_links"
+    ]
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 555,
+    "calls": [
+      "scripts_directory_hash"
+    ]
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 558,
+    "calls": [
+      "gen_header",
+      "draw_module",
+      "dict"
+    ]
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 572,
+    "calls": [
+      "scripts_directory_hash"
+    ]
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 575,
+    "calls": [
+      "all_needs.get",
+      "logger.info",
+      "draw_impl_interface",
+      "draw_comp_incl_impl_int",
+      "gen_interface_element",
+      "set",
+      "dict",
+      "gen_header"
+    ]
+  },
+  {
+    "function": "__repr__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 599,
+    "calls": [
+      "scripts_directory_hash"
+    ]
+  },
+  {
+    "function": "__call__",
+    "file": "src/extensions/score_draw_uml_funcs/__init__.py",
+    "line": 602,
+    "calls": [
+      "gen_interface_element"
+    ]
+  },
+  {
+    "function": "gen_format",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "gen_struct_element",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 40,
+    "calls": [
+      "gen_format",
+      "get_alias",
+      "get_need_link"
+    ]
+  },
+  {
+    "function": "gen_interface_element",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 48,
+    "calls": [
+      "raw_text.endswith",
+      "gen_struct_element",
+      "all_needs[need_id].get",
+      "get_need_link"
+    ]
+  },
+  {
+    "function": "gen_link_text",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 67,
+    "calls": [
+      "get_alias"
+    ]
+  },
+  {
+    "function": "gen_header",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 87,
+    "calls": [
+      "gen_sytle_header"
+    ]
+  },
+  {
+    "function": "gen_sytle_header",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 99,
+    "calls": []
+  },
+  {
+    "function": "get_alias",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 107,
+    "calls": []
+  },
+  {
+    "function": "get_need_link",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 112,
+    "calls": []
+  },
+  {
+    "function": "get_module",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 126,
+    "calls": [
+      "need.get",
+      "all_needs.get",
+      "len",
+      "logger.warning"
+    ]
+  },
+  {
+    "function": "get_hierarchy_text",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 147,
+    "calls": [
+      "gen_struct_element",
+      "all_needs.get",
+      "logger.info",
+      "need.get",
+      "get_hierarchy_text"
+    ]
+  },
+  {
+    "function": "get_interface_from_component",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 198,
+    "calls": [
+      "get_interface_from_int",
+      "local_interfaces.append",
+      "component.get"
+    ]
+  },
+  {
+    "function": "get_interface_from_int",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 214,
+    "calls": [
+      "all_needs.get",
+      "logger.warning"
+    ]
+  },
+  {
+    "function": "get_real_interface_logical",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 231,
+    "calls": [
+      "real_ifops.extend",
+      "all_needs[real_ifop[0]].get",
+      "real_ifaces.extend",
+      "logger.info",
+      "all_needs[logical_op].get"
+    ]
+  },
+  {
+    "function": "get_logical_interface_real",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 263,
+    "calls": [
+      "list",
+      "all_needs.get",
+      "logger.info",
+      "all_needs[real_ifop].get",
+      "all_needs[real_interface_id].get",
+      "logical_ifaces.extend",
+      "logical_ifop_need.get"
+    ]
+  },
+  {
+    "function": "get_impl_comp_from_logic_iface",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 300,
+    "calls": [
+      "isinstance",
+      "logger.info",
+      "all_needs[real_iface].get"
+    ]
+  },
+  {
+    "function": "get_use_comp_from_real_iface",
+    "file": "src/extensions/score_draw_uml_funcs/helpers.py",
+    "line": 317,
+    "calls": [
+      "logger.info",
+      "all_needs[real_iface].get"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "_location",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 35,
+    "calls": [
+      "need.get",
+      "get"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 36,
+    "calls": [
+      "need.get"
+    ]
+  },
+  {
+    "function": "warning_for_option",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 51,
+    "calls": [
+      "need.get",
+      "self._log_message",
+      "CheckLogger._location"
+    ]
+  },
+  {
+    "function": "warning_for_link",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 58,
+    "calls": [
+      "' or '.join",
+      "self.warning_for_need"
+    ]
+  },
+  {
+    "function": "warning_for_need",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 78,
+    "calls": [
+      "self._log_message",
+      "CheckLogger._location"
+    ]
+  },
+  {
+    "function": "_log_message",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 83,
+    "calls": [
+      "self.warning",
+      "self._new_checks.append"
+    ]
+  },
+  {
+    "function": "info",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 96,
+    "calls": [
+      "self._log.info"
+    ]
+  },
+  {
+    "function": "warning",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 103,
+    "calls": [
+      "self._log.warning"
+    ]
+  },
+  {
+    "function": "warnings",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 111,
+    "calls": []
+  },
+  {
+    "function": "infos",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 115,
+    "calls": []
+  },
+  {
+    "function": "flush_new_checks",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 118,
+    "calls": [
+      "len",
+      "self.info",
+      "logger.info",
+      "text.center",
+      "make_header_line"
+    ]
+  },
+  {
+    "function": "make_header_line",
+    "file": "src/extensions/score_metamodel/log.py",
+    "line": 121,
+    "calls": [
+      "text.center"
+    ]
+  },
+  {
+    "function": "_parse_prohibited_words",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 39,
+    "calls": [
+      "check_config.items",
+      "checks_dict.items",
+      "ProhibitedWordCheck",
+      "check_config.get"
+    ]
+  },
+  {
+    "function": "default_options",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 52,
+    "calls": []
+  },
+  {
+    "function": "_parse_need_type",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 101,
+    "calls": [
+      "yaml_data.get"
+    ]
+  },
+  {
+    "function": "_parse_needs_types",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 132,
+    "calls": [
+      "_parse_need_type",
+      "types_dict.items",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "_parse_links",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 150,
+    "calls": [
+      "links_dict.items"
+    ]
+  },
+  {
+    "function": "_collect_all_options",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 166,
+    "calls": [
+      "t[\"optional_options\"].keys",
+      "all_options.update",
+      "t[\"mandatory_options\"].keys",
+      "needs_types.values",
+      "set"
+    ]
+  },
+  {
+    "function": "_collect_all_custom_options",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 174,
+    "calls": [
+      "sorted",
+      "_collect_all_options",
+      "default_options"
+    ]
+  },
+  {
+    "function": "load_metamodel_data",
+    "file": "src/extensions/score_metamodel/yaml_parser.py",
+    "line": 185,
+    "calls": [
+      "Path",
+      "_collect_all_custom_options",
+      "MetaModelData",
+      "open",
+      "list",
+      "_parse_links",
+      "needs_types.values",
+      "_parse_needs_types",
+      "YAML",
+      "_parse_prohibited_words",
+      "data.get",
+      "cast"
+    ]
+  },
+  {
+    "function": "parse_checks_filter",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 51,
+    "calls": [
+      "filter.split",
+      "\", \".join",
+      "check.strip"
+    ]
+  },
+  {
+    "function": "discover_checks",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 74,
+    "calls": [
+      "importlib.import_module",
+      "logger.debug",
+      "pkgutil.iter_modules"
+    ]
+  },
+  {
+    "function": "local_check",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 87,
+    "calls": [
+      "logger.debug",
+      "local_checks.append"
+    ]
+  },
+  {
+    "function": "graph_check",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 94,
+    "calls": [
+      "graph_checks.append",
+      "logger.debug"
+    ]
+  },
+  {
+    "function": "_run_checks",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 101,
+    "calls": [
+      "Path",
+      "log.flush_new_checks",
+      "check",
+      "len",
+      "CheckLogger",
+      "SphinxNeedsData",
+      "logger.info",
+      "is_check_enabled",
+      "Path.cwd",
+      "needs_local_needs.values",
+      "postprocess_need_links",
+      "logger.debug",
+      "parse_checks_filter",
+      "logger.warning",
+      "os.environ.get",
+      "str"
+    ]
+  },
+  {
+    "function": "is_check_enabled",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 127,
+    "calls": []
+  },
+  {
+    "function": "_remove_prefix",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 168,
+    "calls": [
+      "word.startswith",
+      "isinstance",
+      "word.removeprefix"
+    ]
+  },
+  {
+    "function": "_get_need_type_for_need",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 175,
+    "calls": [
+      "ValueError"
+    ]
+  },
+  {
+    "function": "_resolve_linkable_types",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 182,
+    "calls": [
+      "needs_types_dict.get",
+      "linkable_types.append",
+      "logger.error",
+      "v.strip",
+      "link_value.split",
+      "v.startswith"
+    ]
+  },
+  {
+    "function": "postprocess_need_links",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 206,
+    "calls": [
+      "_resolve_linkable_types",
+      "isinstance",
+      "link_dict.items"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_metamodel/__init__.py",
+    "line": 233,
+    "calls": [
+      "load_metamodel_data",
+      "app.add_config_value",
+      "config_setdefault",
+      "app.connect",
+      "discover_checks"
+    ]
+  },
+  {
+    "function": "_parse_bazel_external_need",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 36,
+    "calls": [
+      "s.startswith",
+      "ValueError",
+      "repo_and_path.split",
+      "s.split",
+      "ExternalNeedsSource",
+      "repo.lstrip"
+    ]
+  },
+  {
+    "function": "parse_external_needs_sources_from_DATA",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 59,
+    "calls": [
+      "_parse_bazel_external_need",
+      "json.loads",
+      "logger.debug"
+    ]
+  },
+  {
+    "function": "parse_external_needs_sources_from_bazel_query",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 72,
+    "calls": [
+      "subprocess.run",
+      "_parse_bazel_external_need",
+      "logger.debug",
+      "logger.warning",
+      "line.strip",
+      "p.stdout.splitlines"
+    ]
+  },
+  {
+    "function": "extend_needs_json_exporter",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 111,
+    "calls": [
+      "config.add",
+      "getattr",
+      "orig_function",
+      "logger.error"
+    ]
+  },
+  {
+    "function": "temp",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 132,
+    "calls": [
+      "getattr",
+      "orig_function"
+    ]
+  },
+  {
+    "function": "get_external_needs_source",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 141,
+    "calls": [
+      "parse_external_needs_sources_from_bazel_query",
+      "parse_external_needs_sources_from_DATA"
+    ]
+  },
+  {
+    "function": "add_external_needs_json",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 152,
+    "calls": [
+      "Path",
+      "json.loads",
+      "isinstance",
+      "logger.error",
+      "logger.debug",
+      "config.needs_external_needs.append",
+      "get_runfiles_dir"
+    ]
+  },
+  {
+    "function": "add_external_docs_sources",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 177,
+    "calls": [
+      "Path",
+      "logger.info",
+      "logger.error",
+      "get_runfiles_dir",
+      "str"
+    ]
+  },
+  {
+    "function": "connect_external_needs",
+    "file": "src/extensions/score_metamodel/external_needs.py",
+    "line": 197,
+    "calls": [
+      "add_external_docs_sources",
+      "ValueError",
+      "extend_needs_json_exporter",
+      "get_external_needs_source",
+      "add_external_needs_json"
+    ]
+  },
+  {
+    "function": "get_standards_needs",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "get_standards_workproducts",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "get_workflows",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 41,
+    "calls": [
+      "need.get"
+    ]
+  },
+  {
+    "function": "get_workproducts",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 49,
+    "calls": [
+      "need.get"
+    ]
+  },
+  {
+    "function": "get_compliance_req_needs",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 57,
+    "calls": [
+      "need.get"
+    ]
+  },
+  {
+    "function": "get_compliance_wp_needs",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 71,
+    "calls": [
+      "need.get"
+    ]
+  },
+  {
+    "function": "my_pie_linked_standard_requirements",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 179,
+    "calls": [
+      "standards_needs.values",
+      "get_standards_needs",
+      "get_compliance_req_needs",
+      "results.append",
+      "all_standards_needs.items",
+      "k.startswith"
+    ]
+  },
+  {
+    "function": "my_pie_linked_standard_requirements_by_tag",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 212,
+    "calls": [
+      "get_compliance_req_needs",
+      "results.append",
+      "len",
+      "str"
+    ]
+  },
+  {
+    "function": "my_pie_linked_standard_workproducts",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 260,
+    "calls": [
+      "k.startswith",
+      "get_standards_workproducts",
+      "get_compliance_wp_needs",
+      "results.append",
+      "all_standard_workproducts.items",
+      "standard_workproducts.values"
+    ]
+  },
+  {
+    "function": "my_pie_workproducts_contained_in_exactly_one_workflow",
+    "file": "src/extensions/score_metamodel/checks/standards.py",
+    "line": 294,
+    "calls": [
+      "get_workproducts",
+      "workflow.get",
+      "all_workproducts.values",
+      "all_workflows.values",
+      "results.append",
+      "workproduct_analysis.values",
+      "get_workflows"
+    ]
+  },
+  {
+    "function": "get_need_type",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 27,
+    "calls": [
+      "ValueError",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "_get_normalized",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 35,
+    "calls": [
+      "need.get",
+      "isinstance",
+      "cast",
+      "_remove_namespace_prefix_"
+    ]
+  },
+  {
+    "function": "_validate_value_pattern",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 57,
+    "calls": [
+      "TypeError",
+      "re.match"
+    ]
+  },
+  {
+    "function": "_remove_namespace_prefix_",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 76,
+    "calls": [
+      "re.sub"
+    ]
+  },
+  {
+    "function": "validate_options",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 81,
+    "calls": [
+      "_validate_value_pattern",
+      "_get_normalized",
+      "_validate",
+      "attributes_to_allowed_values.items",
+      "log.warning_for_need",
+      "log.warning_for_option"
+    ]
+  },
+  {
+    "function": "_validate",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 90,
+    "calls": [
+      "_validate_value_pattern",
+      "_get_normalized",
+      "attributes_to_allowed_values.items",
+      "log.warning_for_need",
+      "log.warning_for_option"
+    ]
+  },
+  {
+    "function": "validate_links",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 108,
+    "calls": [
+      "\"|\".join",
+      "isinstance",
+      "_validate_value_pattern",
+      "_get_normalized",
+      "_validate",
+      "attributes_to_allowed_values.items",
+      "log.warning_for_need",
+      "log.warning_for_link"
+    ]
+  },
+  {
+    "function": "_validate",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 117,
+    "calls": [
+      "\"|\".join",
+      "isinstance",
+      "_validate_value_pattern",
+      "_get_normalized",
+      "attributes_to_allowed_values.items",
+      "log.warning_for_need",
+      "log.warning_for_link"
+    ]
+  },
+  {
+    "function": "check_options",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 162,
+    "calls": [
+      "get_need_type",
+      "validate_options",
+      "validate_links"
+    ]
+  },
+  {
+    "function": "check_extra_options",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 178,
+    "calls": [
+      "option.endswith",
+      "allowed_options.update",
+      "need_options[o].keys",
+      "\", \".join",
+      "log.warning_for_need",
+      "default_options",
+      "get_need_type",
+      "set"
+    ]
+  },
+  {
+    "function": "parse_milestone",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 217,
+    "calls": [
+      "int",
+      "re.match",
+      "ValueError",
+      "match.group"
+    ]
+  },
+  {
+    "function": "check_validity_consistency",
+    "file": "src/extensions/score_metamodel/checks/check_options.py",
+    "line": 230,
+    "calls": [
+      "need.get",
+      "parse_milestone",
+      "log.warning_for_need"
+    ]
+  },
+  {
+    "function": "get_need_type",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "line": 22,
+    "calls": [
+      "ValueError",
+      "isinstance"
+    ]
+  },
+  {
+    "function": "check_id_format",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "line": 32,
+    "calls": [
+      "len",
+      "need_options.get",
+      "need[\"id\"].split",
+      "get_need_type",
+      "log.warning_for_option"
+    ]
+  },
+  {
+    "function": "check_id_length",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "line": 60,
+    "calls": [
+      "need[\"id\"].split",
+      "log.warning_for_option",
+      "len"
+    ]
+  },
+  {
+    "function": "_check_options_for_prohibited_words",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "line": 87,
+    "calls": [
+      "isinstance",
+      "word.strip",
+      "need.get",
+      "log.warning_for_need",
+      "option_text.split",
+      "cast"
+    ]
+  },
+  {
+    "function": "check_for_prohibited_words",
+    "file": "src/extensions/score_metamodel/checks/attributes_format.py",
+    "line": 112,
+    "calls": [
+      "get_need_type",
+      "_check_options_for_prohibited_words",
+      "any",
+      "need_options.get"
+    ]
+  },
+  {
+    "function": "id_contains_feature",
+    "file": "src/extensions/score_metamodel/checks/id_contains_feature.py",
+    "line": 25,
+    "calls": [
+      "need[\"id\"].startswith",
+      "fp[0].lower",
+      "len",
+      "os.path.dirname",
+      "re.split",
+      "bool",
+      "any",
+      "\"\".join",
+      "need.get",
+      "need[\"id\"].split",
+      "docname.lower",
+      "log.warning_for_option",
+      "str",
+      "featurepart.lower"
+    ]
+  },
+  {
+    "function": "eval_need_check",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "line": 28,
+    "calls": [
+      "oper[parts[1]]",
+      "check.split",
+      "len",
+      "log.warning_for_need",
+      "ValueError"
+    ]
+  },
+  {
+    "function": "eval_need_condition",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "line": 60,
+    "calls": [
+      "eval_need_check",
+      "type",
+      "isinstance",
+      "list",
+      "len",
+      "oper[\"not\"]",
+      "condition.values",
+      "eval_need_condition",
+      "ValueError",
+      "oper[cond]",
+      "reduce",
+      "condition.keys"
+    ]
+  },
+  {
+    "function": "filter_needs_by_criteria",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "line": 103,
+    "calls": [
+      "list",
+      "pattern.append",
+      "pat.lstrip",
+      "eval_need_condition",
+      "needs_selection_criteria.values",
+      "any",
+      "ValueError",
+      "selected_needs.append",
+      "log.warning",
+      "needs_selection_criteria.keys"
+    ]
+  },
+  {
+    "function": "check_metamodel_graph",
+    "file": "src/extensions/score_metamodel/checks/graph_checks.py",
+    "line": 146,
+    "calls": [
+      "list",
+      "isinstance",
+      "all_needs.values",
+      "all_needs.filter_is_external",
+      "eval_need_condition",
+      "log.warning_for_need",
+      "graph_checks_global.items",
+      "check_config.get",
+      "filter_needs_by_criteria",
+      "cast",
+      "needs_dict_all.get",
+      "check_to_perform.keys"
+    ]
+  },
+  {
+    "function": "test_unknown_directive",
+    "file": "src/extensions/score_metamodel/tests/test_check_options.py",
+    "line": 70,
+    "calls": [
+      "pytest.raises",
+      "need",
+      "fake_check_logger",
+      "cast",
+      "check_options",
+      "Mock"
+    ]
+  },
+  {
+    "function": "test_unknown_option_present_in_neither_req_opt_neither_opt_opt",
+    "file": "src/extensions/score_metamodel/tests/test_check_options.py",
+    "line": 94,
+    "calls": [
+      "logger.assert_warning",
+      "need",
+      "fake_check_logger",
+      "check_extra_options",
+      "cast",
+      "Mock"
+    ]
+  },
+  {
+    "function": "test_milestone_parsing",
+    "file": "src/extensions/score_metamodel/tests/test_check_options.py",
+    "line": 123,
+    "calls": [
+      "parse_milestone"
+    ]
+  },
+  {
+    "function": "dummy_local_check",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "dummy_graph_check",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "setup_checks",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 37,
+    "calls": [
+      "graph_checks.append",
+      "local_checks.clear",
+      "graph_checks.clear",
+      "local_checks.append"
+    ]
+  },
+  {
+    "function": "test_returns_empty_list_when_filter_is_empty",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 50,
+    "calls": [
+      "parse_checks_filter"
+    ]
+  },
+  {
+    "function": "test_returns_valid_checks",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 60,
+    "calls": [
+      "parse_checks_filter"
+    ]
+  },
+  {
+    "function": "test_strips_whitespace",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 71,
+    "calls": [
+      "parse_checks_filter"
+    ]
+  },
+  {
+    "function": "test_raises_assertion_for_invalid_check",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 82,
+    "calls": [
+      "str",
+      "pytest.raises",
+      "parse_checks_filter"
+    ]
+  },
+  {
+    "function": "test_default_values",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 98,
+    "calls": [
+      "need"
+    ]
+  },
+  {
+    "function": "test_custom_values_override_defaults",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 109,
+    "calls": [
+      "need"
+    ]
+  },
+  {
+    "function": "test_link_fields_extracted",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 124,
+    "calls": [
+      "need",
+      "n.get"
+    ]
+  },
+  {
+    "function": "test_extra_fields_in_extras",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 140,
+    "calls": [
+      "need",
+      "n.get"
+    ]
+  },
+  {
+    "function": "test_empty_links_not_in_kwargs",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 152,
+    "calls": [
+      "need",
+      "n.get"
+    ]
+  },
+  {
+    "function": "test_combined_core_links_and_extras",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel__init__.py",
+    "line": 160,
+    "calls": [
+      "need",
+      "n.get"
+    ]
+  },
+  {
+    "function": "test_my_pie_linked_standard_requirements",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 400,
+    "calls": [
+      "need",
+      "standards.my_pie_linked_standard_requirements"
+    ]
+  },
+  {
+    "function": "test_my_pie_linked_standard_workproducts",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 460,
+    "calls": [
+      "need",
+      "standards.my_pie_linked_standard_workproducts"
+    ]
+  },
+  {
+    "function": "test_my_pie_workproducts_contained_in_exactly_one_workflow",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 513,
+    "calls": [
+      "standards.my_pie_workproducts_contained_in_exactly_one_workflow",
+      "need"
+    ]
+  },
+  {
+    "function": "test_get_standards_needs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 636,
+    "calls": [
+      "need",
+      "standards.get_standards_needs",
+      "result.values"
+    ]
+  },
+  {
+    "function": "test_get_standards_workproducts",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 666,
+    "calls": [
+      "need",
+      "standards.get_standards_workproducts",
+      "result.values"
+    ]
+  },
+  {
+    "function": "test_get_compliance_req_needs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 696,
+    "calls": [
+      "need",
+      "need_1.get",
+      "standards.get_compliance_req_needs",
+      "need_2.get"
+    ]
+  },
+  {
+    "function": "test_get_compliance_wp_needs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 744,
+    "calls": [
+      "need",
+      "need_1.get",
+      "need_2.get",
+      "standards.get_compliance_wp_needs"
+    ]
+  },
+  {
+    "function": "test_get_workflows",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 788,
+    "calls": [
+      "need",
+      "standards.get_workflows",
+      "result.values"
+    ]
+  },
+  {
+    "function": "test_get_workproducts",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 831,
+    "calls": [
+      "need",
+      "standards.get_workproducts",
+      "result.values"
+    ]
+  },
+  {
+    "function": "test_positive_case_mixed_linked_and_unlinked",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 875,
+    "calls": [
+      "need",
+      "standards.my_pie_linked_standard_requirements_by_tag"
+    ]
+  },
+  {
+    "function": "test_negative_case_no_needs_with_tag",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 919,
+    "calls": [
+      "need",
+      "standards.my_pie_linked_standard_requirements_by_tag"
+    ]
+  },
+  {
+    "function": "test_assert_multiple_kwargs",
+    "file": "src/extensions/score_metamodel/tests/test_standards.py",
+    "line": 940,
+    "calls": [
+      "need",
+      "pytest.raises",
+      "standards.my_pie_linked_standard_requirements_by_tag"
+    ]
+  },
+  {
+    "function": "fake_check_logger",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "line": 28,
+    "calls": [
+      "super",
+      "self._mock_logger.info.assert_called_once",
+      "MagicMock",
+      "self._mock_logger.warning.assert_called_once",
+      "\"\\n\".join",
+      "pytest.fail",
+      "FakeCheckLogger"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "line": 32,
+    "calls": [
+      "super",
+      "MagicMock"
+    ]
+  },
+  {
+    "function": "assert_no_warnings",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "line": 39,
+    "calls": [
+      "pytest.fail",
+      "\"\\n\".join"
+    ]
+  },
+  {
+    "function": "assert_no_infos",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "line": 46,
+    "calls": [
+      "pytest.fail",
+      "\"\\n\".join"
+    ]
+  },
+  {
+    "function": "assert_warning",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "line": 53,
+    "calls": [
+      "self._mock_logger.warning.assert_called_once"
+    ]
+  },
+  {
+    "function": "assert_info",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "line": 80,
+    "calls": [
+      "self._mock_logger.info.assert_called_once"
+    ]
+  },
+  {
+    "function": "need",
+    "file": "src/extensions/score_metamodel/tests/__init__.py",
+    "line": 110,
+    "calls": [
+      "kwargs.setdefault",
+      "kwargs.pop",
+      "list",
+      "kwargs.items",
+      "kwargs.get",
+      "NeedItemSourceUnknown",
+      "NeedItem",
+      "NeedsContent",
+      "NeedsInfoType.__annotations__.keys",
+      "set",
+      "cast"
+    ]
+  },
+  {
+    "function": "test_empty_list",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 18,
+    "calls": [
+      "parse_external_needs_sources_from_DATA"
+    ]
+  },
+  {
+    "function": "test_single_entry_with_path",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 22,
+    "calls": [
+      "parse_external_needs_sources_from_DATA"
+    ]
+  },
+  {
+    "function": "test_single_entry_no_path",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 28,
+    "calls": [
+      "parse_external_needs_sources_from_DATA"
+    ]
+  },
+  {
+    "function": "test_single_entry_json_no_path",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 34,
+    "calls": [
+      "ExternalNeedsSource",
+      "parse_external_needs_sources_from_DATA"
+    ]
+  },
+  {
+    "function": "test_multiple_entries",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 41,
+    "calls": [
+      "ExternalNeedsSource",
+      "parse_external_needs_sources_from_DATA"
+    ]
+  },
+  {
+    "function": "test_multiple_entries_2",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 55,
+    "calls": [
+      "ExternalNeedsSource",
+      "parse_external_needs_sources_from_DATA"
+    ]
+  },
+  {
+    "function": "test_invalid_entry",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 67,
+    "calls": [
+      "parse_external_needs_sources_from_DATA",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_parser",
+    "file": "src/extensions/score_metamodel/tests/test_external_needs.py",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 34,
+    "calls": [
+      "shutil.copytree",
+      "tmp_path_factory.mktemp",
+      "shutil.ignore_patterns",
+      "shutil.copy"
+    ]
+  },
+  {
+    "function": "index_file",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 48,
+    "calls": [
+      "rst_file.relative_to"
+    ]
+  },
+  {
+    "function": "_create_rst_file",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 50,
+    "calls": [
+      "rst_file.relative_to"
+    ]
+  },
+  {
+    "function": "sphinx_app_setup",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 63,
+    "calls": [
+      "index_file",
+      "shutil.copy",
+      "SphinxTestApp",
+      "rst_file.parent.relative_to",
+      "rst_folder.mkdir",
+      "str"
+    ]
+  },
+  {
+    "function": "_create_app",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 67,
+    "calls": [
+      "index_file",
+      "shutil.copy",
+      "SphinxTestApp",
+      "rst_file.parent.relative_to",
+      "rst_folder.mkdir",
+      "str"
+    ]
+  },
+  {
+    "function": "parse_line_for_message",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 106,
+    "calls": [
+      "line.split"
+    ]
+  },
+  {
+    "function": "extract_test_data",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 114,
+    "calls": [
+      "target_list.append",
+      "RstData",
+      "enumerate",
+      "open",
+      "parse_line_for_message",
+      "rst_data.warning_infos.append",
+      "AssertionError",
+      "WarningInfo",
+      "line.startswith"
+    ]
+  },
+  {
+    "function": "filter_warnings_by_position",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 148,
+    "calls": [
+      "str"
+    ]
+  },
+  {
+    "function": "warning_matches",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 160,
+    "calls": [
+      "filter_warnings_by_position"
+    ]
+  },
+  {
+    "function": "test_rst_files",
+    "file": "src/extensions/score_metamodel/tests/test_rules_file_based.py",
+    "line": 175,
+    "calls": [
+      "extract_test_data",
+      "app.build",
+      "AssertionError",
+      "warning_matches",
+      "os.chdir",
+      "sphinx_app_setup",
+      "app.warning.getvalue",
+      "\"\\n\".join",
+      "pytest.fail",
+      "filter_warnings_by_position",
+      "print"
+    ]
+  },
+  {
+    "function": "load_model_data",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel_load.py",
+    "line": 21,
+    "calls": [
+      "Path",
+      "f.read",
+      "open",
+      "print"
+    ]
+  },
+  {
+    "function": "test_load_metamodel_data",
+    "file": "src/extensions/score_metamodel/tests/test_metamodel_load.py",
+    "line": 28,
+    "calls": [
+      "mock_open",
+      "load_metamodel_data",
+      "len",
+      "isinstance",
+      "result.needs_types[0].get",
+      "ProhibitedWordCheck",
+      "patch",
+      "load_model_data"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "line": 48,
+    "calls": [
+      "app.add_config_value",
+      "app.connect"
+    ]
+  },
+  {
+    "function": "_symlink_pairs",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "line": 59,
+    "calls": [
+      "Path",
+      "app.config.score_any_folder_mapping.items",
+      "pairs.append",
+      "logger.error"
+    ]
+  },
+  {
+    "function": "_create_symlinks",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "line": 82,
+    "calls": [
+      "link.exists",
+      "link.is_symlink",
+      "logger.info",
+      "link.resolve",
+      "link.unlink",
+      "logger.error",
+      "created_links.add",
+      "logger.debug",
+      "_symlink_pairs",
+      "link.symlink_to",
+      "setattr",
+      "link.parent.mkdir",
+      "set"
+    ]
+  },
+  {
+    "function": "_cleanup_symlinks",
+    "file": "src/extensions/score_any_folder/__init__.py",
+    "line": 110,
+    "calls": [
+      "getattr",
+      "link.is_symlink",
+      "link.unlink",
+      "logger.debug",
+      "set"
+    ]
+  },
+  {
+    "function": "_make_app",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 22,
+    "calls": [
+      "SphinxTestApp",
+      "suppress",
+      "os.chdir",
+      "os.getcwd"
+    ]
+  },
+  {
+    "function": "docs_dir",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 42,
+    "calls": [
+      "d.mkdir"
+    ]
+  },
+  {
+    "function": "make_sphinx_app",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 49,
+    "calls": [
+      "apps.append",
+      "app.cleanup",
+      "_make_app"
+    ]
+  },
+  {
+    "function": "_factory",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 55,
+    "calls": [
+      "apps.append",
+      "_make_app"
+    ]
+  },
+  {
+    "function": "test_symlink_exposes_files_at_target_path",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 71,
+    "calls": [
+      "make_sphinx_app",
+      "src_docs.mkdir"
+    ]
+  },
+  {
+    "function": "test_symlink_is_idempotent",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 87,
+    "calls": [
+      "link.exists",
+      "make_sphinx_app",
+      "src_docs.mkdir"
+    ]
+  },
+  {
+    "function": "test_stale_symlink_is_replaced",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 105,
+    "calls": [
+      "correct_src.mkdir",
+      "correct_src.resolve",
+      "make_sphinx_app",
+      "wrong_target.mkdir"
+    ]
+  },
+  {
+    "function": "test_existing_non_symlink_logs_error_and_skips",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 122,
+    "calls": [
+      "real_dir.is_symlink",
+      "real_dir.mkdir",
+      "make_sphinx_app",
+      "app.warning.getvalue",
+      "real_dir.is_dir"
+    ]
+  },
+  {
+    "function": "test_empty_mapping_is_a_no_op",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 138,
+    "calls": [
+      "p.is_symlink",
+      "docs_dir.iterdir",
+      "make_sphinx_app"
+    ]
+  },
+  {
+    "function": "test_multiple_mappings",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 147,
+    "calls": [
+      "make_sphinx_app",
+      "link.resolve",
+      "link.is_symlink"
+    ]
+  },
+  {
+    "function": "test_target_in_subfolder",
+    "file": "src/extensions/score_any_folder/tests/test_score_any_folder.py",
+    "line": 164,
+    "calls": [
+      "link.is_symlink",
+      "src_docs.resolve",
+      "make_sphinx_app",
+      "link.resolve",
+      "src_docs.mkdir"
+    ]
+  },
+  {
+    "function": "get_github_link",
+    "file": "src/helper_lib/additional_functions.py",
+    "line": 28,
+    "calls": [
+      "Path",
+      "get_current_git_hash",
+      "get_github_base_url",
+      "find_git_root",
+      "DefaultNeedLink"
+    ]
+  },
+  {
+    "function": "__init__",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "test_config_setdefault_sets_when_not_in_raw_config",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 36,
+    "calls": [
+      "_FakeConfig",
+      "config_setdefault"
+    ]
+  },
+  {
+    "function": "test_config_setdefault_does_not_overwrite_user_value",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 42,
+    "calls": [
+      "_FakeConfig",
+      "config_setdefault"
+    ]
+  },
+  {
+    "function": "temp_dir",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 50,
+    "calls": [
+      "Path",
+      "tempfile.TemporaryDirectory"
+    ]
+  },
+  {
+    "function": "git_repo",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 57,
+    "calls": [
+      "git_dir.mkdir",
+      "subprocess.run",
+      "test_file.write_text"
+    ]
+  },
+  {
+    "function": "git_repo_multiple_remotes",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 85,
+    "calls": [
+      "git_dir.mkdir",
+      "subprocess.run",
+      "test_file.write_text"
+    ]
+  },
+  {
+    "function": "git_repo_with_https_remote",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 119,
+    "calls": [
+      "git_dir.mkdir",
+      "subprocess.run",
+      "test_file.write_text"
+    ]
+  },
+  {
+    "function": "test_git_operations_with_no_commits",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 154,
+    "calls": [
+      "git_dir.mkdir",
+      "Path",
+      "subprocess.run",
+      "get_current_git_hash",
+      "pytest.raises",
+      "os.chdir"
+    ]
+  },
+  {
+    "function": "test_git_repo_with_no_remotes",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 172,
+    "calls": [
+      "git_dir.mkdir",
+      "subprocess.run",
+      "get_github_repo_info",
+      "pytest.raises",
+      "os.chdir",
+      "test_file.write_text"
+    ]
+  },
+  {
+    "function": "test_parse_git_output_ssh_format",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 197,
+    "calls": [
+      "parse_remote_git_output"
+    ]
+  },
+  {
+    "function": "test_parse_git_output_https_format",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 204,
+    "calls": [
+      "parse_remote_git_output"
+    ]
+  },
+  {
+    "function": "test_parse_git_output_ssh_format_without_git_suffix",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 211,
+    "calls": [
+      "parse_remote_git_output"
+    ]
+  },
+  {
+    "function": "test_parse_git_output_invalid_format",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 218,
+    "calls": [
+      "parse_remote_git_output"
+    ]
+  },
+  {
+    "function": "test_parse_git_output_empty_string",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 225,
+    "calls": [
+      "parse_remote_git_output"
+    ]
+  },
+  {
+    "function": "test_get_github_repo_info_ssh_remote",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 232,
+    "calls": [
+      "get_github_repo_info"
+    ]
+  },
+  {
+    "function": "test_get_github_repo_info_https_remote",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 238,
+    "calls": [
+      "get_github_repo_info"
+    ]
+  },
+  {
+    "function": "test_get_github_repo_info_multiple_remotes",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 244,
+    "calls": [
+      "get_github_repo_info"
+    ]
+  },
+  {
+    "function": "test_get_current_git_hash",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 250,
+    "calls": [
+      "get_current_git_hash",
+      "all",
+      "len"
+    ]
+  },
+  {
+    "function": "test_get_current_git_hash_invalid_repo",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 259,
+    "calls": [
+      "get_current_git_hash",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_runfiles_dir_found",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 265,
+    "calls": [
+      "Path",
+      "os.chdir",
+      "os.environ.pop",
+      "get_runfiles_dir",
+      "runfiles_dir.mkdir",
+      "str"
+    ]
+  },
+  {
+    "function": "test_runfiles_dir_missing_triggers_exit",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 276,
+    "calls": [
+      "os.environ.pop",
+      "get_runfiles_dir",
+      "str",
+      "pytest.raises"
+    ]
+  },
+  {
+    "function": "test_git_root_search_success",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 286,
+    "calls": [
+      "Path",
+      "monkeypatch.setattr",
+      "os.environ.pop",
+      "get_runfiles_dir",
+      "runfiles_dir.mkdir",
+      "docs_dir.mkdir"
+    ]
+  },
+  {
+    "function": "test_git_root_search_not_found",
+    "file": "src/helper_lib/test_helper_lib.py",
+    "line": 302,
+    "calls": [
+      "monkeypatch.setattr",
+      "pytest.raises",
+      "nowhere.mkdir",
+      "os.environ.pop",
+      "get_runfiles_dir",
+      "str"
+    ]
+  },
+  {
+    "function": "config_setdefault",
+    "file": "src/helper_lib/__init__.py",
+    "line": 27,
+    "calls": [
+      "setattr"
+    ]
+  },
+  {
+    "function": "find_ws_root",
+    "file": "src/helper_lib/__init__.py",
+    "line": 37,
+    "calls": [
+      "Path",
+      "os.environ.get"
+    ]
+  },
+  {
+    "function": "find_git_root",
+    "file": "src/helper_lib/__init__.py",
+    "line": 50,
+    "calls": [
+      "Path.cwd",
+      "find_ws_root",
+      "Path"
+    ]
+  },
+  {
+    "function": "parse_remote_git_output",
+    "file": "src/helper_lib/__init__.py",
+    "line": 70,
+    "calls": [
+      "str_line.split",
+      "len",
+      "url.split",
+      "LOGGER.warning",
+      "\"/\".join",
+      "url.startswith",
+      "path.removesuffix"
+    ]
+  },
+  {
+    "function": "get_github_repo_info",
+    "file": "src/helper_lib/__init__.py",
+    "line": 99,
+    "calls": [
+      "parse_remote_git_output",
+      "subprocess.run",
+      "LOGGER.info",
+      "process.stdout.split"
+    ]
+  },
+  {
+    "function": "get_github_base_url",
+    "file": "src/helper_lib/__init__.py",
+    "line": 135,
+    "calls": [
+      "find_git_root",
+      "Path",
+      "get_github_repo_info"
+    ]
+  },
+  {
+    "function": "get_current_git_hash",
+    "file": "src/helper_lib/__init__.py",
+    "line": 154,
+    "calls": [
+      "all",
+      "subprocess.run",
+      "len",
+      "result.stdout.strip",
+      "LOGGER.warning",
+      "ValueError"
+    ]
+  },
+  {
+    "function": "get_runfiles_dir",
+    "file": "src/helper_lib/__init__.py",
+    "line": 193,
+    "calls": [
+      "Path",
+      "LOGGER.debug",
+      "runfiles_dir.exists",
+      "Runfiles.Create",
+      "sys.exit",
+      "find_git_root",
+      "r.EnvVars"
+    ]
+  },
+  {
+    "function": "pytest_addoption",
+    "file": "src/tests/conftest.py",
+    "line": 16,
+    "calls": [
+      "parser.addoption"
+    ]
+  },
+  {
+    "function": "sphinx_base_dir",
+    "file": "src/tests/test_consumer.py",
+    "line": 121,
+    "calls": [
+      "bool",
+      "pytestconfig.getoption",
+      "tmp_path_factory.mktemp",
+      "CACHE_DIR.mkdir",
+      "print"
+    ]
+  },
+  {
+    "function": "cleanup",
+    "file": "src/tests/test_consumer.py",
+    "line": 136,
+    "calls": [
+      "Path",
+      "p.unlink",
+      "subprocess.run",
+      "cmd.split",
+      "shutil.rmtree"
+    ]
+  },
+  {
+    "function": "get_current_git_commit",
+    "file": "src/tests/test_consumer.py",
+    "line": 147,
+    "calls": [
+      "result.stdout.strip",
+      "subprocess.run"
+    ]
+  },
+  {
+    "function": "filter_repos",
+    "file": "src/tests/test_consumer.py",
+    "line": 161,
+    "calls": [
+      "repo_filter.split",
+      "name.strip",
+      "filtered_repos.append",
+      "requested_repos.remove",
+      "print"
+    ]
+  },
+  {
+    "function": "comment_out_git_override",
+    "file": "src/tests/test_consumer.py",
+    "line": 192,
+    "calls": [
+      "re.sub",
+      "match.group",
+      "out.strip",
+      "\"\\n\".join"
+    ]
+  },
+  {
+    "function": "comment_out_block",
+    "file": "src/tests/test_consumer.py",
+    "line": 203,
+    "calls": [
+      "match.group",
+      "\"\\n\".join"
+    ]
+  },
+  {
+    "function": "replace_bazel_dep_with_local_override",
+    "file": "src/tests/test_consumer.py",
+    "line": 214,
+    "calls": [
+      "re.sub"
+    ]
+  },
+  {
+    "function": "replace_bazel_dep_with_git_override",
+    "file": "src/tests/test_consumer.py",
+    "line": 230,
+    "calls": [
+      "re.sub"
+    ]
+  },
+  {
+    "function": "strip_ansi_codes",
+    "file": "src/tests/test_consumer.py",
+    "line": 245,
+    "calls": [
+      "ansi_escape.sub",
+      "re.compile"
+    ]
+  },
+  {
+    "function": "parse_bazel_output",
+    "file": "src/tests/test_consumer.py",
+    "line": 251,
+    "calls": [
+      "clean_warning.replace",
+      "pytestconfig.get_verbosity",
+      "enumerate",
+      "clean_warning.split",
+      "tmp_split_warning[-1].upper",
+      "clean_warning.endswith",
+      "defaultdict",
+      "strip_ansi_codes",
+      "os.getenv",
+      "BR.stderr.splitlines",
+      "repr",
+      "warning_dict[logger].append",
+      "print"
+    ]
+  },
+  {
+    "function": "print_overview_logs",
+    "file": "src/tests/test_consumer.py",
+    "line": 279,
+    "calls": [
+      "list",
+      "len",
+      "BR.warnings.keys",
+      "int",
+      "print"
+    ]
+  },
+  {
+    "function": "verbose_printout",
+    "file": "src/tests/test_consumer.py",
+    "line": 317,
+    "calls": [
+      "list",
+      "len",
+      "BR.warnings.keys",
+      "\"\\n\".join",
+      "int",
+      "print"
+    ]
+  },
+  {
+    "function": "print_running_cmd",
+    "file": "src/tests/test_consumer.py",
+    "line": 340,
+    "calls": [
+      "int",
+      "len",
+      "print"
+    ]
+  },
+  {
+    "function": "analyze_build_success",
+    "file": "src/tests/test_consumer.py",
+    "line": 364,
+    "calls": [
+      "len",
+      "critical_warnings.extend",
+      "BR.warnings.items"
+    ]
+  },
+  {
+    "function": "print_final_result",
+    "file": "src/tests/test_consumer.py",
+    "line": 394,
+    "calls": [
+      "pytestconfig.get_verbosity",
+      "len",
+      "verbose_printout",
+      "print_overview_logs",
+      "analyze_build_success",
+      "int",
+      "print"
+    ]
+  },
+  {
+    "function": "print_result_table",
+    "file": "src/tests/test_consumer.py",
+    "line": 426,
+    "calls": [
+      "table.add_column",
+      "table.add_row",
+      "Table",
+      "str",
+      "print"
+    ]
+  },
+  {
+    "function": "stream_subprocess_output",
+    "file": "src/tests/test_consumer.py",
+    "line": 447,
+    "calls": [
+      "process.stdout.close",
+      "iter",
+      "output_lines.append",
+      "line.rstrip",
+      "cmd.split",
+      "process.wait",
+      "BuildOutput",
+      "\"\".join",
+      "subprocess.Popen",
+      "print"
+    ]
+  },
+  {
+    "function": "run_cmd",
+    "file": "src/tests/test_consumer.py",
+    "line": 477,
+    "calls": [
+      "subprocess.run",
+      "pytestconfig.get_verbosity",
+      "parse_bazel_output",
+      "cmd.split",
+      "Result",
+      "BuildOutput",
+      "results.append",
+      "cleanup",
+      "stream_subprocess_output",
+      "print_final_result",
+      "str"
+    ]
+  },
+  {
+    "function": "setup_test_environment",
+    "file": "src/tests/test_consumer.py",
+    "line": 523,
+    "calls": [
+      "Path",
+      "debug_print",
+      "pytestconfig.get_verbosity",
+      "dest.exists",
+      "dest.is_dir",
+      "get_current_git_commit",
+      "dest.symlink_to",
+      "get_github_base_url",
+      "shutil.rmtree",
+      "os.chdir",
+      "has_uncommitted_changes",
+      "find_git_root",
+      "dest.is_symlink",
+      "recreate_symlink",
+      "dest.unlink",
+      "print"
+    ]
+  },
+  {
+    "function": "debug_print",
+    "file": "src/tests/test_consumer.py",
+    "line": 535,
+    "calls": [
+      "print"
+    ]
+  },
+  {
+    "function": "recreate_symlink",
+    "file": "src/tests/test_consumer.py",
+    "line": 549,
+    "calls": [
+      "dest.exists",
+      "dest.is_dir",
+      "debug_print",
+      "dest.symlink_to",
+      "shutil.rmtree",
+      "dest.is_symlink",
+      "dest.unlink"
+    ]
+  },
+  {
+    "function": "has_uncommitted_changes",
+    "file": "src/tests/test_consumer.py",
+    "line": 569,
+    "calls": [
+      "result.stdout.strip",
+      "subprocess.run",
+      "bool"
+    ]
+  },
+  {
+    "function": "prepare_repo_overrides",
+    "file": "src/tests/test_consumer.py",
+    "line": 580,
+    "calls": [
+      "Path",
+      "subprocess.run",
+      "open",
+      "repo_path.exists",
+      "replace_bazel_dep_with_local_override",
+      "comment_out_git_override",
+      "shutil.rmtree",
+      "os.chdir",
+      "replace_bazel_dep_with_git_override",
+      "f.read",
+      "print"
+    ]
+  },
+  {
+    "function": "test_and_clone_repos_updated",
+    "file": "src/tests/test_consumer.py",
+    "line": 618,
+    "calls": [
+      "len",
+      "overrides.items",
+      "open",
+      "type.upper",
+      "bool",
+      "os.chdir",
+      "run_cmd",
+      "f.write",
+      "print_result_table",
+      "Path.cwd",
+      "print_running_cmd",
+      "pytestconfig.getoption",
+      "filter_repos",
+      "setup_test_environment",
+      "pytest.fail",
+      "prepare_repo_overrides",
+      "cast",
+      "print"
+    ]
+  },
+  {
+    "function": "get_path",
+    "file": "src/docs_assets_lib/__init__.py",
+    "line": 16,
+    "calls": [
+      "Path"
+    ]
+  },
+  {
+    "function": "parse_broken_links",
+    "file": ".github/actions/link-check/link_parser.py",
+    "line": 17,
+    "calls": [
+      "BrokenLink",
+      "log.strip",
+      "parts[0].replace",
+      "len",
+      "line.split",
+      "status_and_url_part.split",
+      "any",
+      "location_part.split",
+      "broken_links.append",
+      "status_and_url[1].strip"
+    ]
+  },
+  {
+    "function": "generate_markdown_table",
+    "file": ".github/actions/link-check/link_parser.py",
+    "line": 49,
+    "calls": []
+  },
+  {
+    "function": "generate_issue_body",
+    "file": ".github/actions/link-check/link_parser.py",
+    "line": 59,
+    "calls": [
+      "generate_markdown_table",
+      "datetime.now"
+    ]
+  },
+  {
+    "function": "strip_ansi_codes",
+    "file": ".github/actions/link-check/link_parser.py",
+    "line": 80,
+    "calls": [
+      "ansi_escape.sub",
+      "re.compile"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "scripts_bazel/generate_sourcelinks_cli.py",
+    "line": 36,
+    "calls": [
+      "Path",
+      "argparse.ArgumentParser",
+      "all_need_references.extend",
+      "len",
+      "parser.add_argument",
+      "store_source_code_links_json",
+      "logger.info",
+      "parser.parse_args",
+      "file_path.resolve",
+      "_extract_references_from_file",
+      "abs_file_path.exists"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "scripts_bazel/merge_sourcelinks.py",
+    "line": 28,
+    "calls": [
+      "argparse.ArgumentParser",
+      "open",
+      "isinstance",
+      "len",
+      "merged.extend",
+      "parser.add_argument",
+      "logger.info",
+      "json.load",
+      "json.dump",
+      "parser.parse_args",
+      "repr"
+    ]
+  },
+  {
+    "function": "test_merge_sourcelinks_basic",
+    "file": "scripts_bazel/tests/merge_sourcelinks_test.py",
+    "line": 24,
+    "calls": [
+      "subprocess.run",
+      "len",
+      "open",
+      "isinstance",
+      "json.dumps",
+      "any",
+      "json.load",
+      "file2.write_text",
+      "file1.write_text",
+      "output_file.exists",
+      "str"
+    ]
+  },
+  {
+    "function": "test_generate_sourcelinks_cli_basic",
+    "file": "scripts_bazel/tests/generate_sourcelinks_cli_test.py",
+    "line": 24,
+    "calls": [
+      "subprocess.run",
+      "len",
+      "open",
+      "isinstance",
+      "any",
+      "json.load",
+      "test_file.write_text",
+      "str",
+      "output_file.exists"
+    ]
+  }
+]

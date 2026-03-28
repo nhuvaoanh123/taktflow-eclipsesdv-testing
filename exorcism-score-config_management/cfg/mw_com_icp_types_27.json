@@ -1,0 +1,21 @@
+{
+  "function": "mw_com_icp_types",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:mw_com_icp_types",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:mw_com_icp_types",
+      "line": 59
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "GenericProxyEventBinding",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GenericProxyEventBinding",
+      "line": 41
+    },
+    {
+      "id": 1,
+      "label": "exit:GenericProxyEventBinding",
+      "line": 91
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

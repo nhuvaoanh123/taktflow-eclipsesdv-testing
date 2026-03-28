@@ -1,0 +1,21 @@
+{
+  "project": "score-communication-patches",
+  "files_by_language": {
+    "C++": {
+      "files": 3,
+      "loc": 615
+    },
+    "C": {
+      "files": 1,
+      "loc": 3
+    }
+  },
+  "total_files": 4,
+  "total_loc": 618,
+  "total_functions": 17,
+  "build_system": "Unknown",
+  "languages": [
+    "C++",
+    "C"
+  ]
+}

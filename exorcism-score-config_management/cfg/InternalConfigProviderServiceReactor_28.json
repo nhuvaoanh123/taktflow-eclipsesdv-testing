@@ -1,0 +1,21 @@
+{
+  "function": "InternalConfigProviderServiceReactor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:InternalConfigProviderServiceReactor",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:InternalConfigProviderServiceReactor",
+      "line": 39
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

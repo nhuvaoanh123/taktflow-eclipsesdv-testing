@@ -1,0 +1,21 @@
+{
+  "function": "remove_workload_subscriber",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:remove_workload_subscriber",
+      "line": 87
+    },
+    {
+      "id": 1,
+      "label": "exit:remove_workload_subscriber",
+      "line": 102
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

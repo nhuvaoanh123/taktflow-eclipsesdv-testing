@@ -1,0 +1,21 @@
+{
+  "function": "connection",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:connection",
+      "line": 89
+    },
+    {
+      "id": 1,
+      "label": "exit:connection",
+      "line": 113
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

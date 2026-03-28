@@ -1,0 +1,16 @@
+{
+  "project": "score-bazel_registry",
+  "files_by_language": {
+    "Python": {
+      "files": 18,
+      "loc": 1872
+    }
+  },
+  "total_files": 18,
+  "total_loc": 1872,
+  "total_functions": 93,
+  "build_system": "Python/pyproject",
+  "languages": [
+    "Python"
+  ]
+}

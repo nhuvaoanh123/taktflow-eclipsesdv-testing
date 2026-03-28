@@ -1,0 +1,129 @@
+{
+  "function": "_should_skip_file",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_should_skip_file",
+      "line": 80
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 83
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 84
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 83
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 85
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 86
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 85
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 87
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 88
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 87
+    },
+    {
+      "id": 10,
+      "label": "return_statement",
+      "line": 89
+    },
+    {
+      "id": 11,
+      "label": "exit:_should_skip_file",
+      "line": 89
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 10
+    },
+    {
+      "from": 8,
+      "to": 11
+    }
+  ]
+}

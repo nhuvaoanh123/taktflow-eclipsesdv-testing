@@ -1,0 +1,21 @@
+{
+  "function": "propagate_new_filter_to_provider",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:propagate_new_filter_to_provider",
+      "line": 2188
+    },
+    {
+      "id": 1,
+      "label": "exit:propagate_new_filter_to_provider",
+      "line": 2250
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

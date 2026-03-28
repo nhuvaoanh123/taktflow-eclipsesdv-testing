@@ -1,0 +1,21 @@
+{
+  "function": "IClientConnection",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IClientConnection",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:IClientConnection",
+      "line": 167
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

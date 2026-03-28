@@ -1,0 +1,21 @@
+{
+  "function": "park_condition_check_and_transition",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:park_condition_check_and_transition",
+      "line": 365
+    },
+    {
+      "id": 1,
+      "label": "exit:park_condition_check_and_transition",
+      "line": 385
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

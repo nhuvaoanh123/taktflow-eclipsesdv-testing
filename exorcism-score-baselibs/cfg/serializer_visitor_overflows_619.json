@@ -1,0 +1,55 @@
+{
+  "function": "serializer_visitor_overflows",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:serializer_visitor_overflows",
+      "line": 619
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 632
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 635
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 632
+    },
+    {
+      "id": 4,
+      "label": "exit:serializer_visitor_overflows",
+      "line": 636
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

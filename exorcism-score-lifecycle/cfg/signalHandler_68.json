@@ -1,0 +1,63 @@
+{
+  "function": "signalHandler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:signalHandler",
+      "line": 68
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 70
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 78
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 70
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 70
+    },
+    {
+      "id": 5,
+      "label": "exit:signalHandler",
+      "line": 79
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

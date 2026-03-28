@@ -1,0 +1,21 @@
+{
+  "function": "wait_for_answer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:wait_for_answer",
+      "line": 189
+    },
+    {
+      "id": 1,
+      "label": "exit:wait_for_answer",
+      "line": 226
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

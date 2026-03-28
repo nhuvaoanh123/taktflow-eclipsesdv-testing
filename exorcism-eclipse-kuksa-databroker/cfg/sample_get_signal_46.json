@@ -1,0 +1,21 @@
+{
+  "function": "sample_get_signal",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sample_get_signal",
+      "line": 46
+    },
+    {
+      "id": 1,
+      "label": "exit:sample_get_signal",
+      "line": 62
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

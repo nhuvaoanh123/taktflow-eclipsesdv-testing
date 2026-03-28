@@ -1,0 +1,21 @@
+{
+  "function": "utest_control_interface_agent_disconnected",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_control_interface_agent_disconnected",
+      "line": 1066
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_control_interface_agent_disconnected",
+      "line": 1182
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

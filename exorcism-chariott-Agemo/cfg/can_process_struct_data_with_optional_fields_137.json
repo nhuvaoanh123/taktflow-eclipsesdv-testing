@@ -1,0 +1,21 @@
+{
+  "function": "can_process_struct_data_with_optional_fields",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:can_process_struct_data_with_optional_fields",
+      "line": 137
+    },
+    {
+      "id": 1,
+      "label": "exit:can_process_struct_data_with_optional_fields",
+      "line": 198
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

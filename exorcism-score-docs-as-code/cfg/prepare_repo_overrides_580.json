@@ -1,0 +1,72 @@
+{
+  "function": "prepare_repo_overrides",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:prepare_repo_overrides",
+      "line": 580
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 586
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 601
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 586
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 586
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 614
+    },
+    {
+      "id": 6,
+      "label": "exit:prepare_repo_overrides",
+      "line": 614
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 2,
+      "to": 6
+    }
+  ]
+}

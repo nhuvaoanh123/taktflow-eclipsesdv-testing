@@ -1,0 +1,21 @@
+{
+  "function": "handle_publish_command",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_publish_command",
+      "line": 156
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_publish_command",
+      "line": 206
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "operator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:operator",
+      "line": 101
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 104
+    },
+    {
+      "id": 2,
+      "label": "exit:operator",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

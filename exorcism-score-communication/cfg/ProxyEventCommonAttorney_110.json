@@ -1,0 +1,21 @@
+{
+  "function": "ProxyEventCommonAttorney",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProxyEventCommonAttorney",
+      "line": 110
+    },
+    {
+      "id": 1,
+      "label": "exit:ProxyEventCommonAttorney",
+      "line": 119
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

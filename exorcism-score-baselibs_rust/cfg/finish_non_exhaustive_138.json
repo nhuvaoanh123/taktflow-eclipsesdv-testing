@@ -1,0 +1,21 @@
+{
+  "function": "finish_non_exhaustive",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:finish_non_exhaustive",
+      "line": 138
+    },
+    {
+      "id": 1,
+      "label": "exit:finish_non_exhaustive",
+      "line": 148
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

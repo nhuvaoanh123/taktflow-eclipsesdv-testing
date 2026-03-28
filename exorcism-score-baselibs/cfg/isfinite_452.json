@@ -1,0 +1,21 @@
+{
+  "function": "isfinite",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:isfinite",
+      "line": 452
+    },
+    {
+      "id": 1,
+      "label": "exit:isfinite",
+      "line": 461
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

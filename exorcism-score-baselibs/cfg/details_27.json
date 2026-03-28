@@ -1,0 +1,21 @@
+{
+  "function": "details",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:details",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:details",
+      "line": 51
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

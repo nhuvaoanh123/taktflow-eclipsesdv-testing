@@ -1,0 +1,21 @@
+{
+  "function": "NodeIdTmpBufferSize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:NodeIdTmpBufferSize",
+      "line": 167
+    },
+    {
+      "id": 1,
+      "label": "exit:NodeIdTmpBufferSize",
+      "line": 362
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

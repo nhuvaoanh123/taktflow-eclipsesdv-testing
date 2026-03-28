@@ -1,0 +1,21 @@
+{
+  "function": "test_string_array",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_string_array",
+      "line": 4268
+    },
+    {
+      "id": 1,
+      "label": "exit:test_string_array",
+      "line": 4343
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "IMessagePassingServiceInstanceFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IMessagePassingServiceInstanceFactory",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:IMessagePassingServiceInstanceFactory",
+      "line": 46
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

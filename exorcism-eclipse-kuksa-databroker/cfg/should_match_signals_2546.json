@@ -1,0 +1,21 @@
+{
+  "function": "should_match_signals",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:should_match_signals",
+      "line": 2546
+    },
+    {
+      "id": 1,
+      "label": "exit:should_match_signals",
+      "line": 2600
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

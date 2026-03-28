@@ -1,0 +1,32 @@
+[
+  {
+    "function": "main",
+    "file": "tests/main.cpp",
+    "start_line": 15,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 0,
+    "loc": 4,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "tests/main.c",
+    "start_line": 15,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "eprint",
+    "file": "tools/qnx_credential_helper.py",
+    "start_line": 25,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 2,
+    "flags": []
+  }
+]

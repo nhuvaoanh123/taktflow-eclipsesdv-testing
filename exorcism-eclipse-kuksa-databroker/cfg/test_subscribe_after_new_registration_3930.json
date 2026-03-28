@@ -1,0 +1,21 @@
+{
+  "function": "test_subscribe_after_new_registration",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_subscribe_after_new_registration",
+      "line": 3930
+    },
+    {
+      "id": 1,
+      "label": "exit:test_subscribe_after_new_registration",
+      "line": 4075
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "subscribe_to_connection_state",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:subscribe_to_connection_state",
+      "line": 360
+    },
+    {
+      "id": 1,
+      "label": "exit:subscribe_to_connection_state",
+      "line": 369
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

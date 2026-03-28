@@ -1,0 +1,21 @@
+{
+  "function": "validate_source",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_source",
+      "line": 334
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_source",
+      "line": 351
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

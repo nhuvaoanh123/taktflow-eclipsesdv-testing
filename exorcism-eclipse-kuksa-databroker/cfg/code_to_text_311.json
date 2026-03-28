@@ -1,0 +1,21 @@
+{
+  "function": "code_to_text",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:code_to_text",
+      "line": 311
+    },
+    {
+      "id": 1,
+      "label": "exit:code_to_text",
+      "line": 331
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

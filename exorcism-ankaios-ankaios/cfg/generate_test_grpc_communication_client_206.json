@@ -1,0 +1,21 @@
+{
+  "function": "generate_test_grpc_communication_client",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:generate_test_grpc_communication_client",
+      "line": 206
+    },
+    {
+      "id": 1,
+      "label": "exit:generate_test_grpc_communication_client",
+      "line": 239
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

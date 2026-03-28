@@ -1,0 +1,21 @@
+{
+  "function": "score",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:score",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:score",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

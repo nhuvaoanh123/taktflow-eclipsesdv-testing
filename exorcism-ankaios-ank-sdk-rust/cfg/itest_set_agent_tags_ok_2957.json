@@ -1,0 +1,21 @@
+{
+  "function": "itest_set_agent_tags_ok",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:itest_set_agent_tags_ok",
+      "line": 2957
+    },
+    {
+      "id": 1,
+      "label": "exit:itest_set_agent_tags_ok",
+      "line": 3019
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

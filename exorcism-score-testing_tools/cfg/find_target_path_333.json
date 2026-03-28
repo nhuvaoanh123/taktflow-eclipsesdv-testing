@@ -1,0 +1,63 @@
+{
+  "function": "find_target_path",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:find_target_path",
+      "line": 333
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 373
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 374
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 373
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 377
+    },
+    {
+      "id": 5,
+      "label": "exit:find_target_path",
+      "line": 377
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

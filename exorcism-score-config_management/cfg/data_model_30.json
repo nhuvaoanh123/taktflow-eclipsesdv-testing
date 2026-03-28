@@ -1,0 +1,21 @@
+{
+  "function": "data_model",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:data_model",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:data_model",
+      "line": 56
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

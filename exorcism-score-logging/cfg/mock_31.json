@@ -1,0 +1,21 @@
+{
+  "function": "mock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:mock",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:mock",
+      "line": 59
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

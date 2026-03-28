@@ -1,0 +1,21 @@
+{
+  "function": "prepare_environment",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:prepare_environment",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:prepare_environment",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

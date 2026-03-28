@@ -1,0 +1,130 @@
+{
+  "function": "_logs_by_field_field_only",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_logs_by_field_field_only",
+      "line": 83
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 95
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 103
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 95
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 97
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 100
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 97
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 102
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 103
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 102
+    },
+    {
+      "id": 10,
+      "label": "return_statement",
+      "line": 105
+    },
+    {
+      "id": 11,
+      "label": "exit:_logs_by_field_field_only",
+      "line": 105
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "label": "false"
+    },
+    {
+      "from": 8,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 10
+    },
+    {
+      "from": 2,
+      "to": 11
+    }
+  ]
+}

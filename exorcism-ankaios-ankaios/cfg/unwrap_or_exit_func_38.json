@@ -1,0 +1,21 @@
+{
+  "function": "unwrap_or_exit_func",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:unwrap_or_exit_func",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "exit:unwrap_or_exit_func",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "datapoint",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:datapoint",
+      "line": 1253
+    },
+    {
+      "id": 1,
+      "label": "exit:datapoint",
+      "line": 1258
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

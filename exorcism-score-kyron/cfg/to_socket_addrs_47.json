@@ -1,0 +1,21 @@
+{
+  "function": "to_socket_addrs",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:to_socket_addrs",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:to_socket_addrs",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

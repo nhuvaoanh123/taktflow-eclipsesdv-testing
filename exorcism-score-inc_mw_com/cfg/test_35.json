@@ -1,0 +1,54 @@
+{
+  "function": "test",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test",
+      "line": 35
+    },
+    {
+      "id": 1,
+      "label": "if ((handle_.has_value()))",
+      "line": 55
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 58
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 55
+    },
+    {
+      "id": 4,
+      "label": "exit:test",
+      "line": 117
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

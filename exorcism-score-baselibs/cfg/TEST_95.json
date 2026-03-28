@@ -1,0 +1,55 @@
+{
+  "function": "TEST",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:TEST",
+      "line": 95
+    },
+    {
+      "id": 1,
+      "label": "loop (while_statement)",
+      "line": 106
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 109
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 106
+    },
+    {
+      "id": 4,
+      "label": "exit:TEST",
+      "line": 110
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

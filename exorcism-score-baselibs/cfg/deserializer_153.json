@@ -1,0 +1,21 @@
+{
+  "function": "deserializer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deserializer",
+      "line": 153
+    },
+    {
+      "id": 1,
+      "label": "exit:deserializer",
+      "line": 165
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

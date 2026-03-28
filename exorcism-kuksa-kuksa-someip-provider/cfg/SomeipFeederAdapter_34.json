@@ -1,0 +1,21 @@
+{
+  "function": "SomeipFeederAdapter",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SomeipFeederAdapter",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:SomeipFeederAdapter",
+      "line": 91
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "invoke",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:invoke",
+      "line": 419
+    },
+    {
+      "id": 1,
+      "label": "exit:invoke",
+      "line": 493
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

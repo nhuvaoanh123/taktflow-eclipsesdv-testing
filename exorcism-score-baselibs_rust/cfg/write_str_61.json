@@ -1,0 +1,21 @@
+{
+  "function": "write_str",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:write_str",
+      "line": 61
+    },
+    {
+      "id": 1,
+      "label": "exit:write_str",
+      "line": 89
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

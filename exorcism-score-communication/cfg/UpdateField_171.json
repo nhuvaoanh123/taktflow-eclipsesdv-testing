@@ -1,0 +1,54 @@
+{
+  "function": "UpdateField",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:UpdateField",
+      "line": 171
+    },
+    {
+      "id": 1,
+      "label": "if ((field_name_it == skeleton_base_.fields_.cend()))",
+      "line": 174
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 179
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 174
+    },
+    {
+      "id": 4,
+      "label": "exit:UpdateField",
+      "line": 182
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    }
+  ]
+}

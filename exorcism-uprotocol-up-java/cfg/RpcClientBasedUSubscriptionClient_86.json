@@ -1,0 +1,11 @@
+{
+  "function": "RpcClientBasedUSubscriptionClient",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:RpcClientBasedUSubscriptionClient",
+      "line": 86
+    }
+  ],
+  "edges": []
+}

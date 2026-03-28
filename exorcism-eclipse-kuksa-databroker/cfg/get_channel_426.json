@@ -1,0 +1,21 @@
+{
+  "function": "get_channel",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_channel",
+      "line": 426
+    },
+    {
+      "id": 1,
+      "label": "exit:get_channel",
+      "line": 435
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "communication": [
+    {
+      "type": "MQTT_topic",
+      "topic": "Subscribe topic missing",
+      "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "Unsubscribe topic missing",
+      "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "Topic missing",
+      "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "Topic missing",
+      "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java"
+    }
+  ],
+  "count": 4
+}

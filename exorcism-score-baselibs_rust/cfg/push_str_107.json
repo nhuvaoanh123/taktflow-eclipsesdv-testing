@@ -1,0 +1,21 @@
+{
+  "function": "push_str",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:push_str",
+      "line": 107
+    },
+    {
+      "id": 1,
+      "label": "exit:push_str",
+      "line": 112
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

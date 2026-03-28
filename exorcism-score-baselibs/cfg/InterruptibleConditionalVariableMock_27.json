@@ -1,0 +1,21 @@
+{
+  "function": "InterruptibleConditionalVariableMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:InterruptibleConditionalVariableMock",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:InterruptibleConditionalVariableMock",
+      "line": 38
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

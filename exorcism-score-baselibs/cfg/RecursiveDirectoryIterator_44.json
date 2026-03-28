@@ -1,0 +1,21 @@
+{
+  "function": "RecursiveDirectoryIterator",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:RecursiveDirectoryIterator",
+      "line": 44
+    },
+    {
+      "id": 1,
+      "label": "exit:RecursiveDirectoryIterator",
+      "line": 106
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

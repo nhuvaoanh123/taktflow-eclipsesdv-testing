@@ -1,0 +1,21 @@
+{
+  "function": "FLATBUFFERS_FINAL_CLASS",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FLATBUFFERS_FINAL_CLASS",
+      "line": 766
+    },
+    {
+      "id": 1,
+      "label": "exit:FLATBUFFERS_FINAL_CLASS",
+      "line": 823
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

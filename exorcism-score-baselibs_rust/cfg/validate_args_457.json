@@ -1,0 +1,21 @@
+{
+  "function": "validate_args",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:validate_args",
+      "line": 457
+    },
+    {
+      "id": 1,
+      "label": "exit:validate_args",
+      "line": 499
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

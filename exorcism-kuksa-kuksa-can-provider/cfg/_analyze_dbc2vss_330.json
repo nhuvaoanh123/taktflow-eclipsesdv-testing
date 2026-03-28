@@ -1,0 +1,196 @@
+{
+  "function": "_analyze_dbc2vss",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_analyze_dbc2vss",
+      "line": 330
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 336
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 338
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 336
+    },
+    {
+      "id": 4,
+      "label": "if (...)",
+      "line": 341
+    },
+    {
+      "id": 5,
+      "label": "merge",
+      "line": 347
+    },
+    {
+      "id": 6,
+      "label": "then",
+      "line": 341
+    },
+    {
+      "id": 7,
+      "label": "if (...)",
+      "line": 348
+    },
+    {
+      "id": 8,
+      "label": "merge",
+      "line": 365
+    },
+    {
+      "id": 9,
+      "label": "then",
+      "line": 348
+    },
+    {
+      "id": 10,
+      "label": "else",
+      "line": 348
+    },
+    {
+      "id": 11,
+      "label": "if (...)",
+      "line": 367
+    },
+    {
+      "id": 12,
+      "label": "merge",
+      "line": 368
+    },
+    {
+      "id": 13,
+      "label": "then",
+      "line": 367
+    },
+    {
+      "id": 14,
+      "label": "loop (for_statement)",
+      "line": 373
+    },
+    {
+      "id": 15,
+      "label": "loop_exit",
+      "line": 375
+    },
+    {
+      "id": 16,
+      "label": "body",
+      "line": 373
+    },
+    {
+      "id": 17,
+      "label": "exit:_analyze_dbc2vss",
+      "line": 375
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 4,
+      "to": 6,
+      "label": "true"
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "label": "false"
+    },
+    {
+      "from": 5,
+      "to": 7
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "label": "true"
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 8,
+      "to": 11
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "label": "true"
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "label": "false"
+    },
+    {
+      "from": 12,
+      "to": 14
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "label": "done"
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "label": "continue"
+    },
+    {
+      "from": 16,
+      "to": 14,
+      "label": "back"
+    },
+    {
+      "from": 15,
+      "to": 17
+    }
+  ]
+}

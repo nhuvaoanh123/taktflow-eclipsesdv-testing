@@ -1,0 +1,21 @@
+{
+  "function": "SysPoll",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SysPoll",
+      "line": 31
+    },
+    {
+      "id": 1,
+      "label": "exit:SysPoll",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

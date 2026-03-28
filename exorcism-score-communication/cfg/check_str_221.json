@@ -1,0 +1,21 @@
+{
+  "function": "check_str",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:check_str",
+      "line": 221
+    },
+    {
+      "id": 1,
+      "label": "exit:check_str",
+      "line": 242
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "function": "saturating_add",
+    "file": "tests/src/lib.rs",
+    "start_line": 12,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "adds_without_overflowing",
+    "file": "tests/src/lib.rs",
+    "start_line": 21,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  }
+]

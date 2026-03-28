@@ -1,0 +1,16 @@
+{
+  "project": "leda-leda-contrib-vehicle-update-manager",
+  "files_by_language": {
+    "Go": {
+      "files": 87,
+      "loc": 10459
+    }
+  },
+  "total_files": 87,
+  "total_loc": 10459,
+  "total_functions": 676,
+  "build_system": "Go modules",
+  "languages": [
+    "Go"
+  ]
+}

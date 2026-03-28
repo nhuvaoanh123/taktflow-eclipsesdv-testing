@@ -1,0 +1,21 @@
+{
+  "function": "std",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:std",
+      "line": 61
+    },
+    {
+      "id": 1,
+      "label": "exit:std",
+      "line": 95
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

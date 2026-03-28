@@ -1,0 +1,21 @@
+{
+  "function": "GlobalRegistryMapping",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GlobalRegistryMapping",
+      "line": 448
+    },
+    {
+      "id": 1,
+      "label": "exit:GlobalRegistryMapping",
+      "line": 555
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

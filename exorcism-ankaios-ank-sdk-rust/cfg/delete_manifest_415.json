@@ -1,0 +1,21 @@
+{
+  "function": "delete_manifest",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:delete_manifest",
+      "line": 415
+    },
+    {
+      "id": 1,
+      "label": "exit:delete_manifest",
+      "line": 446
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

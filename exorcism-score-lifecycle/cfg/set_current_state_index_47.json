@@ -1,0 +1,21 @@
+{
+  "function": "set_current_state_index",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:set_current_state_index",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:set_current_state_index",
+      "line": 50
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

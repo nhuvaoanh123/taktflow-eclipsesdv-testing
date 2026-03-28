@@ -1,0 +1,21 @@
+{
+  "function": "Tag",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Tag",
+      "line": 66
+    },
+    {
+      "id": 1,
+      "label": "exit:Tag",
+      "line": 117
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

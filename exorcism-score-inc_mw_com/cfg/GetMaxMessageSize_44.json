@@ -1,0 +1,30 @@
+{
+  "function": "GetMaxMessageSize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:GetMaxMessageSize",
+      "line": 44
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 49
+    },
+    {
+      "id": 2,
+      "label": "exit:GetMaxMessageSize",
+      "line": 50
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

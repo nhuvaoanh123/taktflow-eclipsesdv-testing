@@ -1,0 +1,39 @@
+{
+  "function": "resizeable_container",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:resizeable_container",
+      "line": 69
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 79
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 90
+    },
+    {
+      "id": 3,
+      "label": "exit:resizeable_container",
+      "line": 96
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    }
+  ]
+}

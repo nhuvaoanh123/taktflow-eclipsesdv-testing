@@ -1,0 +1,21 @@
+{
+  "function": "all_empty",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:all_empty",
+      "line": 402
+    },
+    {
+      "id": 1,
+      "label": "exit:all_empty",
+      "line": 406
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

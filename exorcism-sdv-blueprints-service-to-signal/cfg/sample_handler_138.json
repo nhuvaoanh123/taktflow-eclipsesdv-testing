@@ -1,0 +1,21 @@
+{
+  "function": "sample_handler",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:sample_handler",
+      "line": 138
+    },
+    {
+      "id": 1,
+      "label": "exit:sample_handler",
+      "line": 191
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

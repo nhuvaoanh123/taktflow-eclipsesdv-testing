@@ -1,0 +1,21 @@
+{
+  "function": "random_walk_float",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:random_walk_float",
+      "line": 497
+    },
+    {
+      "id": 1,
+      "label": "exit:random_walk_float",
+      "line": 509
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

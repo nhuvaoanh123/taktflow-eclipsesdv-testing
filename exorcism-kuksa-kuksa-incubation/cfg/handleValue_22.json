@@ -1,0 +1,35 @@
+{
+  "function": "handleValue",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handleValue",
+      "line": 22
+    },
+    {
+      "id": 1,
+      "label": "match/switch",
+      "line": 23
+    },
+    {
+      "id": 2,
+      "label": "switch_exit",
+      "line": 42
+    },
+    {
+      "id": 3,
+      "label": "exit:handleValue",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 2,
+      "to": 3
+    }
+  ]
+}

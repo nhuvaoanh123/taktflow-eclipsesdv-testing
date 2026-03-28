@@ -1,0 +1,18 @@
+[
+  {
+    "function": "saturating_add",
+    "file": "tests/src/lib.rs",
+    "line": 12,
+    "calls": [
+      "saturating_add"
+    ]
+  },
+  {
+    "function": "adds_without_overflowing",
+    "file": "tests/src/lib.rs",
+    "line": 21,
+    "calls": [
+      "assert_eq"
+    ]
+  }
+]

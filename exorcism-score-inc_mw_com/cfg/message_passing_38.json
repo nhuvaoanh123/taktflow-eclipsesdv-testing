@@ -1,0 +1,21 @@
+{
+  "function": "message_passing",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:message_passing",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "exit:message_passing",
+      "line": 97
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

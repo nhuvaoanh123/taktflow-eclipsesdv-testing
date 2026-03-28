@@ -1,0 +1,21 @@
+{
+  "function": "test_publish_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_publish_value",
+      "line": 1993
+    },
+    {
+      "id": 1,
+      "label": "exit:test_publish_value",
+      "line": 2047
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

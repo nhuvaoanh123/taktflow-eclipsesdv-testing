@@ -1,0 +1,21 @@
+{
+  "function": "get_signal_value_returns_correct_values",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_signal_value_returns_correct_values",
+      "line": 251
+    },
+    {
+      "id": 1,
+      "label": "exit:get_signal_value_returns_correct_values",
+      "line": 357
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "EventDataControlCompositeAttorney",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:EventDataControlCompositeAttorney",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "exit:EventDataControlCompositeAttorney",
+      "line": 57
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

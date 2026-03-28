@@ -1,0 +1,63 @@
+{
+  "function": "_handle_response",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_handle_response",
+      "line": 359
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 371
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 440
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 371
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 371
+    },
+    {
+      "id": 5,
+      "label": "exit:_handle_response",
+      "line": 440
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

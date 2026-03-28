@@ -1,0 +1,21 @@
+{
+  "function": "datarouter",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:datarouter",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:datarouter",
+      "line": 139
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

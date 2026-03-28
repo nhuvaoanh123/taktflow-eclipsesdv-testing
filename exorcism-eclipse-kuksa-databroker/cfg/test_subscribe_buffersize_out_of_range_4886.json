@@ -1,0 +1,21 @@
+{
+  "function": "test_subscribe_buffersize_out_of_range",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_subscribe_buffersize_out_of_range",
+      "line": 4886
+    },
+    {
+      "id": 1,
+      "label": "exit:test_subscribe_buffersize_out_of_range",
+      "line": 4919
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

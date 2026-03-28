@@ -1,0 +1,21 @@
+{
+  "function": "test_join_handler_mt_abort_and_poll",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_join_handler_mt_abort_and_poll",
+      "line": 371
+    },
+    {
+      "id": 1,
+      "label": "exit:test_join_handler_mt_abort_and_poll",
+      "line": 432
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

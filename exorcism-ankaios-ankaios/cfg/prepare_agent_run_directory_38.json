@@ -1,0 +1,21 @@
+{
+  "function": "prepare_agent_run_directory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:prepare_agent_run_directory",
+      "line": 38
+    },
+    {
+      "id": 1,
+      "label": "exit:prepare_agent_run_directory",
+      "line": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "resize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:resize",
+      "line": 82
+    },
+    {
+      "id": 1,
+      "label": "exit:resize",
+      "line": 86
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

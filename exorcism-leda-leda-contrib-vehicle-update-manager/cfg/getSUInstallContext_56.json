@@ -1,0 +1,21 @@
+{
+  "function": "getSUInstallContext",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:getSUInstallContext",
+      "line": 56
+    },
+    {
+      "id": 1,
+      "label": "exit:getSUInstallContext",
+      "line": 72
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "memory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:memory",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:memory",
+      "line": 96
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

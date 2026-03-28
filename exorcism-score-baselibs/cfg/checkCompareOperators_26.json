@@ -1,0 +1,21 @@
+{
+  "function": "checkCompareOperators",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:checkCompareOperators",
+      "line": 26
+    },
+    {
+      "id": 1,
+      "label": "exit:checkCompareOperators",
+      "line": 34
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

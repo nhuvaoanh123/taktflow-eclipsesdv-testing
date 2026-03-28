@@ -1,0 +1,21 @@
+{
+  "function": "HighPrecisionLocalSteadyClock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:HighPrecisionLocalSteadyClock",
+      "line": 27
+    },
+    {
+      "id": 1,
+      "label": "exit:HighPrecisionLocalSteadyClock",
+      "line": 42
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

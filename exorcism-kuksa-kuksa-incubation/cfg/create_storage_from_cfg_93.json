@@ -1,0 +1,21 @@
+{
+  "function": "create_storage_from_cfg",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:create_storage_from_cfg",
+      "line": 93
+    },
+    {
+      "id": 1,
+      "label": "exit:create_storage_from_cfg",
+      "line": 148
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

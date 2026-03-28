@@ -1,0 +1,21 @@
+{
+  "function": "handle_subscription_update",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_subscription_update",
+      "line": 62
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_subscription_update",
+      "line": 110
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "fake_element_fq_id_",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:fake_element_fq_id_",
+      "line": 48
+    },
+    {
+      "id": 1,
+      "label": "exit:fake_element_fq_id_",
+      "line": 83
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

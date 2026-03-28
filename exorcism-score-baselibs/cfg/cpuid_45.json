@@ -1,0 +1,21 @@
+{
+  "function": "cpuid",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:cpuid",
+      "line": 45
+    },
+    {
+      "id": 1,
+      "label": "exit:cpuid",
+      "line": 80
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "communication": [
+    {
+      "type": "MQTT_topic",
+      "topic": "%s",
+      "file": "updatem/orchestration/selfupdate/self_update_mgr.go"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "%s",
+      "file": "updatem/orchestration/selfupdate/self_update_mgr_internal.go"
+    },
+    {
+      "type": "MQTT_topic",
+      "topic": "%s",
+      "file": "updatem/orchestration/updateorchestrator/update_orchestrator_mgr_internal.go"
+    }
+  ],
+  "count": 3
+}

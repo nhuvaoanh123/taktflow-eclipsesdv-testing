@@ -1,0 +1,39 @@
+{
+  "function": "shared",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:shared",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 254
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 260
+    },
+    {
+      "id": 3,
+      "label": "exit:shared",
+      "line": 266
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    }
+  ]
+}

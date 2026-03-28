@@ -1,0 +1,138 @@
+{
+  "function": "handleResponse",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handleResponse",
+      "line": 134
+    },
+    {
+      "id": 1,
+      "label": "if ((responseAttributes.getType() != UMessageType.UMESSAGE_TYPE_)",
+      "line": 137
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 140
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 137
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 139
+    },
+    {
+      "id": 5,
+      "label": "if ((responseFuture == null))",
+      "line": 144
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 147
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 144
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 146
+    },
+    {
+      "id": 9,
+      "label": "if ((responseAttributes.hasCommstatus() && responseAttributes.ge)",
+      "line": 150
+    },
+    {
+      "id": 10,
+      "label": "merge",
+      "line": 159
+    },
+    {
+      "id": 11,
+      "label": "then",
+      "line": 150
+    },
+    {
+      "id": 12,
+      "label": "exit:handleResponse",
+      "line": 160
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "label": "true"
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "label": "false"
+    },
+    {
+      "from": 10,
+      "to": 12
+    }
+  ]
+}

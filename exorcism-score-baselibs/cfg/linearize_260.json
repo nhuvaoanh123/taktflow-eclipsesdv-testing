@@ -1,0 +1,64 @@
+{
+  "function": "linearize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:linearize",
+      "line": 260
+    },
+    {
+      "id": 1,
+      "label": "loop (for_statement)",
+      "line": 265
+    },
+    {
+      "id": 2,
+      "label": "loop_exit",
+      "line": 268
+    },
+    {
+      "id": 3,
+      "label": "body",
+      "line": 265
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 269
+    },
+    {
+      "id": 5,
+      "label": "exit:linearize",
+      "line": 270
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "done"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "continue"
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "label": "back"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

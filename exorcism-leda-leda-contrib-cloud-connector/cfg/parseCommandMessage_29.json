@@ -1,0 +1,21 @@
+{
+  "function": "parseCommandMessage",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parseCommandMessage",
+      "line": 29
+    },
+    {
+      "id": 1,
+      "label": "exit:parseCommandMessage",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

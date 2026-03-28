@@ -1,0 +1,21 @@
+{
+  "function": "test_format_spec_display_hint_upper_hex",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_format_spec_display_hint_upper_hex",
+      "line": 224
+    },
+    {
+      "id": 1,
+      "label": "exit:test_format_spec_display_hint_upper_hex",
+      "line": 234
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

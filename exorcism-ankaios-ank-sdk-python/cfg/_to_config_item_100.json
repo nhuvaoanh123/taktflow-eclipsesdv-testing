@@ -1,0 +1,63 @@
+{
+  "function": "_to_config_item",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:_to_config_item",
+      "line": 100
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 108
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 115
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 108
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 116
+    },
+    {
+      "id": 5,
+      "label": "exit:_to_config_item",
+      "line": 116
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

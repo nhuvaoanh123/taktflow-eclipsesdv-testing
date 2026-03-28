@@ -1,0 +1,21 @@
+{
+  "function": "handle_cancel_logs_command",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_cancel_logs_command",
+      "line": 619
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_cancel_logs_command",
+      "line": 650
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

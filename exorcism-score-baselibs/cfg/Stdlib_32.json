@@ -1,0 +1,21 @@
+{
+  "function": "Stdlib",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:Stdlib",
+      "line": 32
+    },
+    {
+      "id": 1,
+      "label": "exit:Stdlib",
+      "line": 64
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

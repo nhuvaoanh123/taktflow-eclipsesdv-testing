@@ -1,0 +1,21 @@
+{
+  "function": "handle_client",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_client",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_client",
+      "line": 73
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

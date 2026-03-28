@@ -1,0 +1,63 @@
+{
+  "function": "swap",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:swap",
+      "line": 595
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 600
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 629
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 600
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 600
+    },
+    {
+      "id": 5,
+      "label": "exit:swap",
+      "line": 630
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

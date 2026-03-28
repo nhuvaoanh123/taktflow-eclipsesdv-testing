@@ -1,0 +1,63 @@
+{
+  "function": "RemoveMatchingFlagFiles",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:RemoveMatchingFlagFiles",
+      "line": 80
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 86
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 90
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 86
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 104
+    },
+    {
+      "id": 5,
+      "label": "exit:RemoveMatchingFlagFiles",
+      "line": 105
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

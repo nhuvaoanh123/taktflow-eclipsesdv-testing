@@ -1,0 +1,893 @@
+[
+  {
+    "function": "copy_html_files",
+    "file": "bazel/rules/rules_score/src/sphinx_html_merge.py",
+    "start_line": 38,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 8,
+    "loc": 92,
+    "param_count": 4,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "process_file",
+    "file": "bazel/rules/rules_score/src/sphinx_html_merge.py",
+    "start_line": 75,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 6,
+    "loc": 30,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "replace_static",
+    "file": "bazel/rules/rules_score/src/sphinx_html_merge.py",
+    "start_line": 89,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "copy_tree",
+    "file": "bazel/rules/rules_score/src/sphinx_html_merge.py",
+    "start_line": 106,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 7,
+    "loc": 21,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "merge_html_dirs",
+    "file": "bazel/rules/rules_score/src/sphinx_html_merge.py",
+    "start_line": 132,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "bazel/rules/rules_score/src/sphinx_html_merge.py",
+    "start_line": 164,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 36,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "write",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 50,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "flush",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 55,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "write",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 60,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "flush",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 65,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "get_env",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 69,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 19,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "validate_arguments",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 90,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "build_sphinx_arguments",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 113,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 5,
+    "loc": 45,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "run_sphinx_build",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 160,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 33,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "parse_arguments",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 195,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 49,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "bazel/rules/rules_score/src/sphinx_wrapper.py",
+    "start_line": 246,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 5,
+    "loc": 25,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "find_workspace_root",
+    "file": "bazel/rules/rules_score/src/bazel_sphinx_needs.py",
+    "start_line": 29,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 17,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "load_external_needs",
+    "file": "bazel/rules/rules_score/src/bazel_sphinx_needs.py",
+    "start_line": 48,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 5,
+    "loc": 58,
+    "param_count": 0,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "log_config_info",
+    "file": "bazel/rules/rules_score/src/bazel_sphinx_needs.py",
+    "start_line": 108,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "verify_config",
+    "file": "bazel/rules/rules_score/src/bazel_sphinx_needs.py",
+    "start_line": 121,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 17,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "setup_sphinx_extension",
+    "file": "bazel/rules/rules_score/src/bazel_sphinx_needs.py",
+    "start_line": 140,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 25,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "bazel/rules/rules_score/templates/conf.template.py",
+    "start_line": 67,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setup",
+    "file": "bazel/rules/rules_score/test/template/conf.template.py",
+    "start_line": 71,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "bazel/rules/rules_score/test/fixtures/test_component_main.cc",
+    "start_line": 12,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 0,
+    "loc": 6,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "mock_function_2",
+    "file": "bazel/rules/rules_score/test/fixtures/mock_lib2.cc",
+    "start_line": 6,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "bazel/rules/rules_score/test/fixtures/test_unit_test.cc",
+    "start_line": 12,
+    "cyclomatic_complexity": 15,
+    "nesting_depth": 1,
+    "loc": 18,
+    "param_count": 0,
+    "flags": [
+      "high_complexity"
+    ]
+  },
+  {
+    "function": "mock_function_1",
+    "file": "bazel/rules/rules_score/test/fixtures/mock_lib1.cc",
+    "start_line": 6,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 0,
+    "loc": 3,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "bazel",
+    "file": "cli_helper/tool/cli_help.py",
+    "start_line": 16,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 7,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "format",
+    "file": "dash/tool/formatters/dash_format_converter.py",
+    "start_line": 68,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "configure_logging",
+    "file": "dash/tool/formatters/dash_format_converter.py",
+    "start_line": 74,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 36,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "format_line",
+    "file": "dash/tool/formatters/dash_format_converter.py",
+    "start_line": 112,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 30,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "convert_to_dash_format",
+    "file": "dash/tool/formatters/dash_format_converter.py",
+    "start_line": 144,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 7,
+    "loc": 23,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "convert_cargo_to_dash_format",
+    "file": "dash/tool/formatters/dash_format_converter.py",
+    "start_line": 169,
+    "cyclomatic_complexity": 11,
+    "nesting_depth": 9,
+    "loc": 57,
+    "param_count": 4,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "parse_arguments",
+    "file": "dash/tool/formatters/dash_format_converter.py",
+    "start_line": 228,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 75,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "main",
+    "file": "dash/tool/formatters/dash_format_converter.py",
+    "start_line": 305,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 37,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "relativize",
+    "file": "coverage/scripts/normalize_symbol_report.py",
+    "start_line": 35,
+    "cyclomatic_complexity": 10,
+    "nesting_depth": 5,
+    "loc": 18,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "format_lsp_request",
+    "file": "starpls/integration_tests/starpls_test.py",
+    "start_line": 22,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 6,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "setUp",
+    "file": "starpls/integration_tests/starpls_test.py",
+    "start_line": 31,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 12,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_starpls_binary_downloaded_and_executable",
+    "file": "starpls/integration_tests/starpls_test.py",
+    "start_line": 44,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 28,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_starpls_server_initialize_simple",
+    "file": "starpls/integration_tests/starpls_test.py",
+    "start_line": 73,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 9,
+    "loc": 86,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "format",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 72,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "__call__",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 100,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 5,
+    "loc": 8,
+    "param_count": 5,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "get_author_from_config",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 110,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "convert_bre_to_regex",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 127,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 13,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "load_templates",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 142,
+    "cyclomatic_complexity": 6,
+    "nesting_depth": 7,
+    "loc": 47,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "add_template_for_extensions",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 154,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 5,
+    "param_count": 3,
+    "flags": []
+  },
+  {
+    "function": "load_exclusion",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 191,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 7,
+    "loc": 32,
+    "param_count": 1,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "configure_logging",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 225,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 22,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "detect_shebang_offset",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 249,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 11,
+    "loc": 31,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "load_text_from_file",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 282,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 3,
+    "loc": 24,
+    "param_count": 4,
+    "flags": []
+  },
+  {
+    "function": "load_text_from_file_with_mmap",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 308,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 5,
+    "loc": 31,
+    "param_count": 4,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "has_copyright",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 341,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 38,
+    "param_count": 6,
+    "flags": []
+  },
+  {
+    "function": "get_files_from_dir",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 381,
+    "cyclomatic_complexity": 8,
+    "nesting_depth": 7,
+    "loc": 23,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "collect_inputs",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 406,
+    "cyclomatic_complexity": 9,
+    "nesting_depth": 5,
+    "loc": 35,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "create_temp_file",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 443,
+    "cyclomatic_complexity": 2,
+    "nesting_depth": 7,
+    "loc": 16,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "remove_old_header",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 461,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 5,
+    "loc": 20,
+    "param_count": 3,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "fix_copyright",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 483,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 7,
+    "loc": 45,
+    "param_count": 5,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "process_files",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 530,
+    "cyclomatic_complexity": 12,
+    "nesting_depth": 9,
+    "loc": 75,
+    "param_count": 9,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "parse_arguments",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 607,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 102,
+    "param_count": 1,
+    "flags": [
+      "high_loc"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "cr_checker/tool/cr_checker.py",
+    "start_line": 711,
+    "cyclomatic_complexity": 17,
+    "nesting_depth": 5,
+    "loc": 91,
+    "param_count": 1,
+    "flags": [
+      "high_complexity",
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "load_cr_checker_module",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 24,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 9,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "load_template",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 36,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 5,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "write_config",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 45,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 4,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_detect_shebang_offset_counts_trailing_newlines",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 52,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "prepare_test_with_header",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 83,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 11,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "prepare_test_no_header",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 114,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 10,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_detects_header",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 126,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_detects_missing_header",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 143,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 15,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_inserts_missing_header",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 160,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 21,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_skips_exclusion_with_missing_header",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 183,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 16,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_accepts_header_after_shebang",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 202,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 22,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_fix_inserts_header_after_shebang",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 227,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 29,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_accepts_header_without_shebang",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 259,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 19,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_process_files_fix_inserts_header_without_shebang",
+    "file": "cr_checker/tests/test_cr_checker.py",
+    "start_line": 281,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 24,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "add_test_properties",
+    "file": "python_basics/score_pytest/attribute_plugin.py",
+    "start_line": 26,
+    "cyclomatic_complexity": 7,
+    "nesting_depth": 4,
+    "loc": 62,
+    "param_count": 5,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "decorator",
+    "file": "python_basics/score_pytest/attribute_plugin.py",
+    "start_line": 66,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 3,
+    "loc": 20,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "pytest_runtest_makereport",
+    "file": "python_basics/score_pytest/attribute_plugin.py",
+    "start_line": 90,
+    "cyclomatic_complexity": 5,
+    "nesting_depth": 5,
+    "loc": 17,
+    "param_count": 2,
+    "flags": [
+      "high_nesting"
+    ]
+  },
+  {
+    "function": "add_file_and_line_attr",
+    "file": "python_basics/score_pytest/attribute_plugin.py",
+    "start_line": 110,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 12,
+    "param_count": 2,
+    "flags": []
+  },
+  {
+    "function": "fixture42",
+    "file": "python_basics/score_pytest/tests/conftest.py",
+    "start_line": 17,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_local_fixture_has_correct_value",
+    "file": "python_basics/score_pytest/tests/test_rules_are_working_correctly.py",
+    "start_line": 13,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 1,
+    "flags": []
+  },
+  {
+    "function": "test_venv_ok",
+    "file": "python_basics/integration_tests/simple-tests/test_venv_ok.py",
+    "start_line": 18,
+    "cyclomatic_complexity": 4,
+    "nesting_depth": 3,
+    "loc": 38,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_pytest_works",
+    "file": "python_basics/integration_tests/simple-tests/pytest_ok.py",
+    "start_line": 16,
+    "cyclomatic_complexity": 1,
+    "nesting_depth": 1,
+    "loc": 2,
+    "param_count": 0,
+    "flags": []
+  },
+  {
+    "function": "test_venv_ok",
+    "file": "python_basics/integration_tests/venv-with-extra-requirements/test_extra_requirements_ok.py",
+    "start_line": 16,
+    "cyclomatic_complexity": 3,
+    "nesting_depth": 3,
+    "loc": 10,
+    "param_count": 0,
+    "flags": []
+  }
+]

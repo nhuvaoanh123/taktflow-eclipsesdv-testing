@@ -1,0 +1,21 @@
+{
+  "function": "health_monitor_builder_add_heartbeat_monitor",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:health_monitor_builder_add_heartbeat_monitor",
+      "line": 177
+    },
+    {
+      "id": 1,
+      "label": "exit:health_monitor_builder_add_heartbeat_monitor",
+      "line": 208
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

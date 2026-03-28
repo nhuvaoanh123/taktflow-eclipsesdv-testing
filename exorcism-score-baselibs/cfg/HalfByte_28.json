@@ -1,0 +1,21 @@
+{
+  "function": "HalfByte",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:HalfByte",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "exit:HalfByte",
+      "line": 46
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

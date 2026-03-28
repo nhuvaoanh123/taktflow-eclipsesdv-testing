@@ -1,0 +1,16 @@
+{
+  "project": "ibeji-freyja",
+  "files_by_language": {
+    "Rust": {
+      "files": 117,
+      "loc": 10395
+    }
+  },
+  "total_files": 117,
+  "total_loc": 10395,
+  "total_functions": 327,
+  "build_system": "Cargo",
+  "languages": [
+    "Rust"
+  ]
+}

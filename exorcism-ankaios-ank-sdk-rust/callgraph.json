@@ -1,0 +1,6239 @@
+[
+  {
+    "function": "main",
+    "file": "build.rs",
+    "line": 19,
+    "calls": [
+      "type_attribute",
+      "unwrap",
+      "build_server",
+      "setup_proto_annotations",
+      "compile_protos",
+      "tonic_prost_build::configure"
+    ]
+  },
+  {
+    "function": "unwrap_or_unreachable",
+    "file": "src/extensions.rs",
+    "line": 39,
+    "calls": [
+      "std::unreachable"
+    ]
+  },
+  {
+    "function": "unwrap_or_unreachable",
+    "file": "src/extensions.rs",
+    "line": 66,
+    "calls": [
+      "std::unreachable"
+    ]
+  },
+  {
+    "function": "test_unreachable_option_some",
+    "file": "src/extensions.rs",
+    "line": 89,
+    "calls": [
+      "Some",
+      "unwrap_or_unreachable",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_unreachable_option_none",
+    "file": "src/extensions.rs",
+    "line": 96,
+    "calls": [
+      "unwrap_or_unreachable"
+    ]
+  },
+  {
+    "function": "test_unreachable_result_ok",
+    "file": "src/extensions.rs",
+    "line": 101,
+    "calls": [
+      "unwrap_or_unreachable",
+      "Ok::<&str, &str>",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_unreachable_result_err",
+    "file": "src/extensions.rs",
+    "line": 108,
+    "calls": [
+      "unwrap_or_unreachable",
+      "Err::<&str, &str>"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/ankaios.rs",
+    "line": 272,
+    "calls": [
+      "Self::new_with_timeout",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "new_with_timeout",
+    "file": "src/ankaios.rs",
+    "line": 289,
+    "calls": [
+      "connect",
+      "ControlInterface::new",
+      "mpsc::channel::<Response>",
+      "Ok"
+    ]
+  },
+  {
+    "function": "send_request",
+    "file": "src/ankaios.rs",
+    "line": 316,
+    "calls": [
+      "Err",
+      "get_id",
+      "get_request_id",
+      "AnkaiosError::ControlInterfaceError",
+      "AnkaiosError::TimeoutError",
+      "Ok",
+      "to_owned",
+      "write_request",
+      "recv",
+      "tokio_timeout",
+      "AnkaiosError::ConnectionClosedError",
+      "log::error",
+      "log::warn"
+    ]
+  },
+  {
+    "function": "apply_manifest",
+    "file": "src/ankaios.rs",
+    "line": 365,
+    "calls": [
+      "Err",
+      "log::info",
+      "send_request",
+      "Ok",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "AnkaiosError::ResponseError",
+      "CompleteState::new_from_manifest",
+      "calculate_masks",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError"
+    ]
+  },
+  {
+    "function": "delete_manifest",
+    "file": "src/ankaios.rs",
+    "line": 415,
+    "calls": [
+      "Err",
+      "log::info",
+      "send_request",
+      "Ok",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "CompleteState::default",
+      "AnkaiosError::ResponseError",
+      "calculate_masks",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError"
+    ]
+  },
+  {
+    "function": "apply_workload",
+    "file": "src/ankaios.rs",
+    "line": 465,
+    "calls": [
+      "Err",
+      "clone",
+      "log::info",
+      "send_request",
+      "CompleteState::new_from_workloads",
+      "Ok",
+      "is_empty",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_workload",
+    "file": "src/ankaios.rs",
+    "line": 522,
+    "calls": [
+      "get_workloads",
+      "get_state",
+      "Ok",
+      "vec"
+    ]
+  },
+  {
+    "function": "delete_workload",
+    "file": "src/ankaios.rs",
+    "line": 549,
+    "calls": [
+      "Err",
+      "log::info",
+      "send_request",
+      "Ok",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "CompleteState::default",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "update_configs",
+    "file": "src/ankaios.rs",
+    "line": 601,
+    "calls": [
+      "Err",
+      "log::info",
+      "send_request",
+      "CompleteState::new_from_configs",
+      "Ok",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "add_config",
+    "file": "src/ankaios.rs",
+    "line": 655,
+    "calls": [
+      "Err",
+      "clone",
+      "log::info",
+      "send_request",
+      "CompleteState::new_from_configs",
+      "Ok",
+      "HashMap::from",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_configs",
+    "file": "src/ankaios.rs",
+    "line": 706,
+    "calls": [
+      "get_configs",
+      "get_state",
+      "Ok",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_config",
+    "file": "src/ankaios.rs",
+    "line": 730,
+    "calls": [
+      "get_configs",
+      "get_state",
+      "Ok",
+      "vec"
+    ]
+  },
+  {
+    "function": "delete_all_configs",
+    "file": "src/ankaios.rs",
+    "line": 749,
+    "calls": [
+      "Err",
+      "log::info",
+      "send_request",
+      "Ok",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "CompleteState::default",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "delete_config",
+    "file": "src/ankaios.rs",
+    "line": 788,
+    "calls": [
+      "Err",
+      "log::info",
+      "send_request",
+      "Ok",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "CompleteState::default",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_state",
+    "file": "src/ankaios.rs",
+    "line": 833,
+    "calls": [
+      "Err",
+      "send_request",
+      "Ok",
+      "to_owned",
+      "GetStateRequest::new",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError"
+    ]
+  },
+  {
+    "function": "set_agent_tags",
+    "file": "src/ankaios.rs",
+    "line": 872,
+    "calls": [
+      "Err",
+      "CompleteState::new",
+      "log::info",
+      "send_request",
+      "Ok",
+      "UpdateStateRequest::new",
+      "to_owned",
+      "AnkaiosError::ResponseError",
+      "set_agent_tags",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_agents",
+    "file": "src/ankaios.rs",
+    "line": 921,
+    "calls": [
+      "get_agents",
+      "get_state",
+      "Ok",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_agent",
+    "file": "src/ankaios.rs",
+    "line": 939,
+    "calls": [
+      "format",
+      "ok_or_else",
+      "get",
+      "get_agents",
+      "cloned",
+      "get_state",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_workload_states",
+    "file": "src/ankaios.rs",
+    "line": 963,
+    "calls": [
+      "get_state",
+      "get_workload_states",
+      "Ok",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_execution_state_for_instance_name",
+    "file": "src/ankaios.rs",
+    "line": 987,
+    "calls": [
+      "first",
+      "clone",
+      "Err",
+      "get_workload_states",
+      "Ok",
+      "to_owned",
+      "Vec::from",
+      "get_state",
+      "AnkaiosError::AnkaiosResponseError",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_workload_states_on_agent",
+    "file": "src/ankaios.rs",
+    "line": 1020,
+    "calls": [
+      "get_state",
+      "get_workload_states",
+      "Ok",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_workload_states_for_name",
+    "file": "src/ankaios.rs",
+    "line": 1047,
+    "calls": [
+      "clone",
+      "get_workload_states",
+      "Ok",
+      "Vec::from",
+      "WorkloadStateCollection::new",
+      "add_workload_state",
+      "get_state",
+      "vec"
+    ]
+  },
+  {
+    "function": "wait_for_workload_to_reach_state",
+    "file": "src/ankaios.rs",
+    "line": 1077,
+    "calls": [
+      "Err",
+      "AnkaiosError::TimeoutError",
+      "Ok",
+      "get_execution_state_for_instance_name",
+      "log::error",
+      "sleep",
+      "tokio_timeout",
+      "Duration::from_millis"
+    ]
+  },
+  {
+    "function": "request_logs",
+    "file": "src/ankaios.rs",
+    "line": 1123,
+    "calls": [
+      "Err",
+      "get_id",
+      "clone",
+      "send_request",
+      "mpsc::channel",
+      "AnkaiosLogsRequest::from",
+      "log::trace",
+      "Ok",
+      "LogCampaignResponse::new",
+      "AnkaiosError::ResponseError",
+      "format",
+      "add_log_campaign",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError"
+    ]
+  },
+  {
+    "function": "stop_receiving_logs",
+    "file": "src/ankaios.rs",
+    "line": 1173,
+    "calls": [
+      "Err",
+      "get_id",
+      "get_request_id",
+      "send_request",
+      "remove_log_campaign",
+      "LogsCancelRequest::new",
+      "log::trace",
+      "Ok",
+      "to_owned",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError"
+    ]
+  },
+  {
+    "function": "register_event",
+    "file": "src/ankaios.rs",
+    "line": 1213,
+    "calls": [
+      "Err",
+      "get_id",
+      "clone",
+      "log::info",
+      "send_request",
+      "EventsRequest::new",
+      "mpsc::channel",
+      "Default::default",
+      "add_events_campaign",
+      "Ok",
+      "log::error",
+      "unwrap_or_else",
+      "AnkaiosError::ResponseError",
+      "EventsCampaignResponse::new",
+      "format",
+      "send",
+      "AnkaiosError::AnkaiosResponseError"
+    ]
+  },
+  {
+    "function": "unregister_event",
+    "file": "src/ankaios.rs",
+    "line": 1267,
+    "calls": [
+      "Err",
+      "get_id",
+      "get_request_id",
+      "send_request",
+      "EventsCancelRequest::new",
+      "remove_events_campaign",
+      "log::trace",
+      "Ok",
+      "to_owned",
+      "AnkaiosError::ResponseError",
+      "log::error",
+      "AnkaiosError::AnkaiosResponseError"
+    ]
+  },
+  {
+    "function": "drop",
+    "file": "src/ankaios.rs",
+    "line": 1297,
+    "calls": [
+      "log::error",
+      "disconnect",
+      "unwrap_or_else",
+      "log::trace"
+    ]
+  },
+  {
+    "function": "generate_test_ankaios",
+    "file": "src/ankaios.rs",
+    "line": 1314,
+    "calls": [
+      "Duration::from_millis",
+      "mpsc::channel::<Response>"
+    ]
+  },
+  {
+    "function": "itest_create_ankaios",
+    "file": "src/ankaios.rs",
+    "line": 1362,
+    "calls": [
+      "ControlInterface::default",
+      "unwrap",
+      "Ankaios::new_with_timeout",
+      "assert",
+      "mockall::predicate::eq",
+      "tokio::spawn",
+      "Ok",
+      "with",
+      "returning",
+      "lock",
+      "times",
+      "expect_connect",
+      "expect_disconnect",
+      "ControlInterface::new_context",
+      "expect",
+      "return_once",
+      "Duration::from_millis"
+    ]
+  },
+  {
+    "function": "itest_timeout_while_connecting",
+    "file": "src/ankaios.rs",
+    "line": 1387,
+    "calls": [
+      "Ankaios::new",
+      "assert",
+      "ControlInterface::new_context",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "expect_connect",
+      "expect",
+      "Err",
+      "ControlInterface::default",
+      "return_once",
+      "AnkaiosError::ControlInterfaceError",
+      "expect_disconnect",
+      "String::default",
+      "Duration::from_secs",
+      "unwrap",
+      "mockall::predicate::eq",
+      "with",
+      "returning",
+      "times"
+    ]
+  },
+  {
+    "function": "itest_get_state_ok",
+    "file": "src/ankaios.rs",
+    "line": 1415,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "Vec::default",
+      "CompleteState::default",
+      "get_state",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_state_incorrect_id_and_timeout",
+    "file": "src/ankaios.rs",
+    "line": 1456,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "Vec::default",
+      "get_state",
+      "return_once",
+      "to_owned",
+      "send",
+      "expect_disconnect",
+      "Box::default",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_state_err",
+    "file": "src/ankaios.rs",
+    "line": 1496,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "Vec::default",
+      "get_state",
+      "return_once",
+      "to_owned",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_state_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 1536,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "super::ResponseType::UpdateStateSuccess",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "Vec::default",
+      "get_state",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_apply_manifest_ok",
+    "file": "src/ankaios.rs",
+    "line": 1576,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "generate_test_manifest",
+      "apply_manifest",
+      "withf",
+      "calculate_masks",
+      "return_once",
+      "send",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_apply_manifest_err",
+    "file": "src/ankaios.rs",
+    "line": 1625,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "generate_test_manifest",
+      "apply_manifest",
+      "withf",
+      "calculate_masks",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_apply_manifest_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 1677,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "generate_test_manifest",
+      "apply_manifest",
+      "withf",
+      "calculate_masks",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_manifest_ok",
+    "file": "src/ankaios.rs",
+    "line": 1729,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "delete_manifest",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "generate_test_manifest",
+      "withf",
+      "calculate_masks",
+      "return_once",
+      "send",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_manifest_err",
+    "file": "src/ankaios.rs",
+    "line": 1778,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "delete_manifest",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "generate_test_manifest",
+      "withf",
+      "calculate_masks",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_manifest_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 1830,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "delete_manifest",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "generate_test_manifest",
+      "withf",
+      "calculate_masks",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_apply_workload_ok",
+    "file": "src/ankaios.rs",
+    "line": 1882,
+    "calls": [
+      "assert",
+      "generate_test_workload",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "clone",
+      "ControlInterface::default",
+      "apply_workload",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_apply_workload_err",
+    "file": "src/ankaios.rs",
+    "line": 1931,
+    "calls": [
+      "assert",
+      "generate_test_workload",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "clone",
+      "ControlInterface::default",
+      "apply_workload",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_apply_workload_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 1983,
+    "calls": [
+      "assert",
+      "generate_test_workload",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "clone",
+      "ControlInterface::default",
+      "apply_workload",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_apply_workload_empty_masks_uses_main_mask",
+    "file": "src/ankaios.rs",
+    "line": 2035,
+    "calls": [
+      "assert",
+      "clear",
+      "generate_test_workload",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "clone",
+      "ControlInterface::default",
+      "apply_workload",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_workload",
+    "file": "src/ankaios.rs",
+    "line": 2077,
+    "calls": [
+      "generate_test_workload",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "CompleteState::new_from_workloads",
+      "expect_disconnect",
+      "assert_eq",
+      "get_workload",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_workload_ok",
+    "file": "src/ankaios.rs",
+    "line": 2129,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "delete_workload",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_workload_err",
+    "file": "src/ankaios.rs",
+    "line": 2175,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "delete_workload",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_workload_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 2224,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "delete_workload",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_update_configs_ok",
+    "file": "src/ankaios.rs",
+    "line": 2273,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "update_configs",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "itest_update_configs_err",
+    "file": "src/ankaios.rs",
+    "line": 2321,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "update_configs",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "itest_update_configs_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 2372,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "update_configs",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "itest_add_config_ok",
+    "file": "src/ankaios.rs",
+    "line": 2423,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "serde_yaml::Value::default",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "add_config",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_add_config_err",
+    "file": "src/ankaios.rs",
+    "line": 2472,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "withf",
+      "serde_yaml::Value::default",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "add_config",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_add_config_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 2524,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "serde_yaml::Value::default",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "add_config",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_configs",
+    "file": "src/ankaios.rs",
+    "line": 2576,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "CompleteState::new_from_configs",
+      "expect_disconnect",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "get_configs",
+      "Box::new",
+      "returning",
+      "HashMap::from_iter",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_config",
+    "file": "src/ankaios.rs",
+    "line": 2626,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "get_config",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "CompleteState::new_from_configs",
+      "expect_disconnect",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "HashMap::from_iter",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_all_configs_ok",
+    "file": "src/ankaios.rs",
+    "line": 2679,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "delete_all_configs",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_all_configs_err",
+    "file": "src/ankaios.rs",
+    "line": 2722,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "delete_all_configs",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_all_configs_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 2770,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "delete_all_configs",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_config_ok",
+    "file": "src/ankaios.rs",
+    "line": 2818,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "delete_config",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_config_err",
+    "file": "src/ankaios.rs",
+    "line": 2861,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "delete_config",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_delete_config_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 2909,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "delete_config",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_set_agent_tags_ok",
+    "file": "src/ankaios.rs",
+    "line": 2957,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "get",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "HashMap::from",
+      "return_once",
+      "send",
+      "to_owned",
+      "set_agent_tags",
+      "get_id",
+      "generate_test_response_update_state_success",
+      "is_some_and",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "as_ref",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_set_agent_tags_err",
+    "file": "src/ankaios.rs",
+    "line": 3022,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "withf",
+      "HashMap::from",
+      "times",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "vec",
+      "unwrap",
+      "returning",
+      "set_agent_tags",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_set_agent_tags_mismatch_response_type",
+    "file": "src/ankaios.rs",
+    "line": 3077,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "withf",
+      "HashMap::from",
+      "times",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "returning",
+      "set_agent_tags",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_agents",
+    "file": "src/ankaios.rs",
+    "line": 3132,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "get_agents",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "HashMap::from",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_agent_ok",
+    "file": "src/ankaios.rs",
+    "line": 3192,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "HashMap::from",
+      "String::from",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "get_agent",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_agent_not_found",
+    "file": "src/ankaios.rs",
+    "line": 3250,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "String::from",
+      "return_once",
+      "send",
+      "get_id",
+      "get_agent",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_workload_states",
+    "file": "src/ankaios.rs",
+    "line": 3300,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "get_workload_states",
+      "withf",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_execution_state_for_instance_name",
+    "file": "src/ankaios.rs",
+    "line": 3349,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "WorkloadInstanceName::new",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "get_execution_state_for_instance_name",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_workload_states_on_agent",
+    "file": "src/ankaios.rs",
+    "line": 3412,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "assert_eq",
+      "vec",
+      "get_workload_states_on_agent",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_get_workload_states_for_name",
+    "file": "src/ankaios.rs",
+    "line": 3464,
+    "calls": [
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "get_workload_states_for_name",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_wait_for_workload_to_reach_state_timeout",
+    "file": "src/ankaios.rs",
+    "line": 3514,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "withf",
+      "WorkloadInstanceName::new",
+      "wait_for_workload_to_reach_state",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "CompleteState::new_from_proto",
+      "generate_complete_state_proto",
+      "vec",
+      "unwrap",
+      "Box::new",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_request_logs_ok",
+    "file": "src/ankaios.rs",
+    "line": 3575,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "mockall::Sequence::new",
+      "lock",
+      "super::ResponseType::LogEntriesResponse",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "Default::default",
+      "request_logs",
+      "WorkloadInstanceName::new",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "super::ResponseType::LogsRequestAccepted",
+      "expect_disconnect",
+      "assert_eq",
+      "LogResponse::LogEntries",
+      "vec",
+      "unwrap",
+      "expect_add_log_campaign",
+      "try_send",
+      "returning",
+      "in_sequence",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_request_logs_error",
+    "file": "src/ankaios.rs",
+    "line": 3660,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "Default::default",
+      "request_logs",
+      "WorkloadInstanceName::new",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "expect_add_log_campaign",
+      "never",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_request_logs_error_on_unexpected_response_type",
+    "file": "src/ankaios.rs",
+    "line": 3711,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "super::ResponseType::UpdateStateSuccess",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "Default::default",
+      "request_logs",
+      "WorkloadInstanceName::new",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "expect_add_log_campaign",
+      "never",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_stop_receiving_logs_ok",
+    "file": "src/ankaios.rs",
+    "line": 3762,
+    "calls": [
+      "assert",
+      "return_const",
+      "tokio::spawn",
+      "expect_remove_log_campaign",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "mpsc::channel",
+      "WorkloadInstanceName::new",
+      "stop_receiving_logs",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "LogCampaignResponse::new",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_stop_receiving_logs_response_error",
+    "file": "src/ankaios.rs",
+    "line": 3818,
+    "calls": [
+      "assert",
+      "return_const",
+      "tokio::spawn",
+      "expect_remove_log_campaign",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "mpsc::channel",
+      "WorkloadInstanceName::new",
+      "stop_receiving_logs",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "LogCampaignResponse::new",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_stop_receiving_logs_unexpected_response",
+    "file": "src/ankaios.rs",
+    "line": 3878,
+    "calls": [
+      "assert",
+      "return_const",
+      "tokio::spawn",
+      "expect_remove_log_campaign",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "super::ResponseType::UpdateStateSuccess",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "mpsc::channel",
+      "WorkloadInstanceName::new",
+      "stop_receiving_logs",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "LogCampaignResponse::new",
+      "assert_eq",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "returning",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_register_events_ok",
+    "file": "src/ankaios.rs",
+    "line": 3938,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "mockall::Sequence::new",
+      "lock",
+      "super::ResponseType::CompleteState",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "clone",
+      "expect_add_events_campaign",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "EventEntry::default",
+      "try_send",
+      "Box::new",
+      "returning",
+      "in_sequence",
+      "register_event",
+      "times",
+      "super::ResponseType::EventResponse",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_register_events_error",
+    "file": "src/ankaios.rs",
+    "line": 4009,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "expect_add_events_campaign",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "never",
+      "returning",
+      "register_event",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_register_events_error_on_unexpected_response_type",
+    "file": "src/ankaios.rs",
+    "line": 4050,
+    "calls": [
+      "assert",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "super::ResponseType::UpdateStateSuccess",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "expect_add_events_campaign",
+      "return_once",
+      "send",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "Box::default",
+      "vec",
+      "unwrap",
+      "never",
+      "returning",
+      "register_event",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_unregister_events_ok",
+    "file": "src/ankaios.rs",
+    "line": 4091,
+    "calls": [
+      "assert",
+      "return_const",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "mpsc::channel",
+      "unregister_event",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "unwrap",
+      "expect_remove_events_campaign",
+      "returning",
+      "EventsCampaignResponse::new",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_unregister_events_response_error",
+    "file": "src/ankaios.rs",
+    "line": 4137,
+    "calls": [
+      "assert",
+      "return_const",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "tokio::sync::oneshot::channel",
+      "super::ResponseType::Error",
+      "ControlInterface::default",
+      "mpsc::channel",
+      "unregister_event",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "unwrap",
+      "expect_remove_events_campaign",
+      "returning",
+      "EventsCampaignResponse::new",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "itest_unregister_events_unexpected_response",
+    "file": "src/ankaios.rs",
+    "line": 4187,
+    "calls": [
+      "assert",
+      "return_const",
+      "tokio::spawn",
+      "Ok",
+      "lock",
+      "generate_test_ankaios",
+      "super::ResponseType::UpdateStateSuccess",
+      "tokio::sync::oneshot::channel",
+      "ControlInterface::default",
+      "mpsc::channel",
+      "unregister_event",
+      "return_once",
+      "send",
+      "to_owned",
+      "get_id",
+      "expect_disconnect",
+      "assert_eq",
+      "Box::default",
+      "unwrap",
+      "expect_remove_events_campaign",
+      "returning",
+      "EventsCampaignResponse::new",
+      "times",
+      "expect_write_request"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/event_types.rs",
+    "line": 75,
+    "calls": [
+      "expect",
+      "unwrap_or_default",
+      "CompleteState::new_from_proto"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/event_types.rs",
+    "line": 112,
+    "calls": []
+  },
+  {
+    "function": "get_request_id",
+    "file": "src/components/event_types.rs",
+    "line": 126,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "utest_events_entry",
+    "file": "src/components/event_types.rs",
+    "line": 150,
+    "calls": [
+      "EventEntry::from",
+      "generate_complete_state_proto",
+      "assert_eq",
+      "Some",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_events_campaign_response",
+    "file": "src/components/event_types.rs",
+    "line": 170,
+    "calls": [
+      "to_owned",
+      "mpsc::channel",
+      "EventsCampaignResponse::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/components/log_types.rs",
+    "line": 111,
+    "calls": [
+      "vec"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/log_types.rs",
+    "line": 132,
+    "calls": [
+      "into",
+      "unwrap_or_unreachable"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/log_types.rs",
+    "line": 174,
+    "calls": []
+  },
+  {
+    "function": "get_request_id",
+    "file": "src/components/log_types.rs",
+    "line": 193,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "utest_log_entry_proto_to_sdk_object",
+    "file": "src/components/log_types.rs",
+    "line": 217,
+    "calls": [
+      "Some",
+      "LogEntry::from",
+      "to_owned",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_log_campaign_response_get_request_id",
+    "file": "src/components/log_types.rs",
+    "line": 239,
+    "calls": [
+      "mpsc::channel",
+      "Vec::default",
+      "LogCampaignResponse::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/components/response.rs",
+    "line": 114,
+    "calls": [
+      "ResponseType::Error",
+      "String::default"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/response.rs",
+    "line": 130,
+    "calls": [
+      "Self::from"
+    ]
+  },
+  {
+    "function": "get_request_id",
+    "file": "src/components/response.rs",
+    "line": 140,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_content",
+    "file": "src/components/response.rs",
+    "line": 151,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/response.rs",
+    "line": 157,
+    "calls": [
+      "unwrap_or_unreachable",
+      "ResponseType::EventResponse",
+      "ResponseType::LogEntriesResponse",
+      "expect",
+      "ResponseType::UpdateStateSuccess",
+      "unwrap_or",
+      "UpdateStateSuccess::new_from_proto",
+      "ResponseType::LogsRequestAccepted",
+      "ResponseType::ConnectionClosedReason",
+      "String::from",
+      "AnkaiosResponseContent::Error",
+      "ResponseType::LogsStopResponse",
+      "EventEntry::from",
+      "CompleteState::new_from_proto",
+      "ResponseType::Error",
+      "String::default",
+      "into_iter",
+      "map",
+      "Box::new",
+      "ResponseType::CompleteState",
+      "is_some",
+      "collect"
+    ]
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/response.rs",
+    "line": 252,
+    "calls": [
+      "split",
+      "Vec::new",
+      "WorkloadInstanceName::new",
+      "to_owned",
+      "push",
+      "collect"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/response.rs",
+    "line": 291,
+    "calls": [
+      "iter",
+      "insert",
+      "map",
+      "self.added_workloads\r\n                .iter",
+      "self.deleted_workloads\r\n                .iter",
+      "to_owned",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "generate_test_control_interface_accepted_response",
+    "file": "src/components/response.rs",
+    "line": 320,
+    "calls": [
+      "String::default"
+    ]
+  },
+  {
+    "function": "generate_test_proto_update_state_success",
+    "file": "src/components/response.rs",
+    "line": 328,
+    "calls": [
+      "AnkaiosResponseContent::UpdateStateSuccess",
+      "Box::new",
+      "Vec::default",
+      "Some",
+      "FromAnkaiosEnum::Response",
+      "vec"
+    ]
+  },
+  {
+    "function": "generate_test_response_update_state_success",
+    "file": "src/components/response.rs",
+    "line": 345,
+    "calls": [
+      "Response::new",
+      "generate_test_proto_update_state_success"
+    ]
+  },
+  {
+    "function": "get_test_proto_from_ankaios_log_entries_response",
+    "file": "src/components/response.rs",
+    "line": 350,
+    "calls": [
+      "Some",
+      "ankaios_api::control_api::from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "AnkaiosResponseContent::LogEntriesResponse"
+    ]
+  },
+  {
+    "function": "generate_test_proto_log_entries_response",
+    "file": "src/components/response.rs",
+    "line": 369,
+    "calls": [
+      "vec"
+    ]
+  },
+  {
+    "function": "generate_test_logs_stop_response",
+    "file": "src/components/response.rs",
+    "line": 393,
+    "calls": [
+      "ResponseType::LogsStopResponse"
+    ]
+  },
+  {
+    "function": "generate_test_response_event_entry",
+    "file": "src/components/response.rs",
+    "line": 404,
+    "calls": [
+      "ankaios_api::ank_base::WorkloadMap::default",
+      "ankaios_api::control_api::from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "Response::new",
+      "AnkaiosResponseContent::CompleteStateResponse",
+      "Some",
+      "super::complete_state::generate_test_configs_proto",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_response_type",
+    "file": "src/components/response.rs",
+    "line": 455,
+    "calls": [
+      "ResponseType::default",
+      "ResponseType::ConnectionClosedReason",
+      "assert_eq",
+      "ResponseType::CompleteState",
+      "String::default",
+      "Box::default",
+      "ResponseType::UpdateStateSuccess"
+    ]
+  },
+  {
+    "function": "utest_response_error",
+    "file": "src/components/response.rs",
+    "line": 473,
+    "calls": [
+      "ankaios_api::ank_base::Error::default",
+      "from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "assert_eq",
+      "Response::new",
+      "String::from",
+      "Some",
+      "AnkaiosResponseContent::Error"
+    ]
+  },
+  {
+    "function": "utest_response_complete_state",
+    "file": "src/components/response.rs",
+    "line": 492,
+    "calls": [
+      "Default::default",
+      "from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "assert_eq",
+      "Response::new",
+      "AnkaiosResponseContent::CompleteStateResponse",
+      "String::from",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_response_update_state_success",
+    "file": "src/components/response.rs",
+    "line": 520,
+    "calls": [
+      "from_ankaios::FromAnkaiosEnum::Response",
+      "AnkaiosResponseContent::UpdateStateSuccess",
+      "Box::new",
+      "assert_eq",
+      "Response::new",
+      "String::from",
+      "Some",
+      "ankaios_api::ank_base::UpdateStateSuccess::default"
+    ]
+  },
+  {
+    "function": "utest_response_control_interface_accepted",
+    "file": "src/components/response.rs",
+    "line": 539,
+    "calls": [
+      "ankaios_api::control_api::ControlInterfaceAccepted::default",
+      "Response::new",
+      "assert_eq",
+      "Some",
+      "from_ankaios::FromAnkaiosEnum::ControlInterfaceAccepted"
+    ]
+  },
+  {
+    "function": "utest_response_connection_closed",
+    "file": "src/components/response.rs",
+    "line": 553,
+    "calls": [
+      "from_ankaios::FromAnkaiosEnum::ConnectionClosed",
+      "Response::new",
+      "ankaios_api::control_api::ConnectionClosed::default",
+      "assert_eq",
+      "Some"
+    ]
+  },
+  {
+    "function": "utest_response_empty",
+    "file": "src/components/response.rs",
+    "line": 567,
+    "calls": [
+      "Response::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_update_state_success",
+    "file": "src/components/response.rs",
+    "line": 579,
+    "calls": [
+      "assert_eq",
+      "UpdateStateSuccess::new_from_proto",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_response_logs_request_accepted",
+    "file": "src/components/response.rs",
+    "line": 634,
+    "calls": [
+      "clone",
+      "from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "AnkaiosResponseContent::LogsRequestAccepted",
+      "Response::new",
+      "assert_eq",
+      "String::from",
+      "Some",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_response_logs_cancel_accepted",
+    "file": "src/components/response.rs",
+    "line": 674,
+    "calls": [
+      "from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "assert_eq",
+      "Response::new",
+      "String::from",
+      "Some",
+      "AnkaiosResponseContent::LogsCancelAccepted"
+    ]
+  },
+  {
+    "function": "utest_response_log_entries_response",
+    "file": "src/components/response.rs",
+    "line": 690,
+    "calls": [
+      "clone",
+      "Response::new",
+      "assert_eq",
+      "generate_test_proto_log_entries_response",
+      "get_test_proto_from_ankaios_log_entries_response",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_response_logs_stop_response",
+    "file": "src/components/response.rs",
+    "line": 710,
+    "calls": [
+      "clone",
+      "ankaios_api::control_api::from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "AnkaiosResponseContent::LogsStopResponse",
+      "Response::new",
+      "assert_eq",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_response_event_entry",
+    "file": "src/components/response.rs",
+    "line": 742,
+    "calls": [
+      "generate_test_response_event_entry",
+      "to_owned",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_response_events_cancel_accepted",
+    "file": "src/components/response.rs",
+    "line": 772,
+    "calls": [
+      "AnkaiosResponseContent::EventsCancelAccepted",
+      "from_ankaios::FromAnkaiosEnum::Response",
+      "Box::new",
+      "assert_eq",
+      "Response::new",
+      "String::from",
+      "Some"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "line": 122,
+    "calls": [
+      "to_string",
+      "clone",
+      "Uuid::new_v4",
+      "RequestContent::CompleteStateRequest",
+      "log::debug",
+      "Some"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "line": 140,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "line": 144,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "line": 150,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "line": 167,
+    "calls": [
+      "to_string",
+      "clone",
+      "RequestContent::UpdateStateRequest",
+      "Uuid::new_v4",
+      "log::debug",
+      "Box::new",
+      "to_proto",
+      "Some"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "line": 189,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "line": 193,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "line": 199,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/request.rs",
+    "line": 227,
+    "calls": [
+      "to_string",
+      "clone",
+      "Uuid::new_v4",
+      "into_iter",
+      "map",
+      "RequestContent::LogsRequest",
+      "Some",
+      "collect"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "line": 252,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "line": 256,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "line": 262,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "line": 290,
+    "calls": [
+      "Some",
+      "clone",
+      "ankaios_api::ank_base::RequestContent::LogsCancelRequest",
+      "log::debug"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "line": 305,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "line": 309,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "line": 315,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "line": 343,
+    "calls": [
+      "to_string",
+      "clone",
+      "Uuid::new_v4",
+      "RequestContent::CompleteStateRequest",
+      "log::debug",
+      "Some"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "line": 361,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "line": 365,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "line": 371,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/request.rs",
+    "line": 399,
+    "calls": [
+      "Some",
+      "clone",
+      "ankaios_api::ank_base::RequestContent::EventsCancelRequest",
+      "log::debug"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/request.rs",
+    "line": 414,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "get_id",
+    "file": "src/components/request.rs",
+    "line": 418,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/request.rs",
+    "line": 424,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "generate_test_request",
+    "file": "src/components/request.rs",
+    "line": 438,
+    "calls": [
+      "UpdateStateRequest::new",
+      "CompleteState::default",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_request_update_state",
+    "file": "src/components/request.rs",
+    "line": 457,
+    "calls": [
+      "get_id",
+      "UpdateStateRequest::new",
+      "CompleteState::default",
+      "assert_eq",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_request_get_state",
+    "file": "src/components/request.rs",
+    "line": 481,
+    "calls": [
+      "GetStateRequest::new",
+      "assert_eq",
+      "get_id",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_request_logs",
+    "file": "src/components/request.rs",
+    "line": 502,
+    "calls": [
+      "Vec::new",
+      "get_id",
+      "AnkaiosLogsRequest::from",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_request_logs_cancel",
+    "file": "src/components/request.rs",
+    "line": 533,
+    "calls": [
+      "LogsCancelRequest::new",
+      "to_owned",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_request_events",
+    "file": "src/components/request.rs",
+    "line": 550,
+    "calls": [
+      "clone",
+      "get_id",
+      "EventsRequest::new",
+      "assert_eq",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_request_events_cancel",
+    "file": "src/components/request.rs",
+    "line": 572,
+    "calls": [
+      "EventsCancelRequest::new",
+      "to_owned",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "insert",
+    "file": "src/components/control_interface.rs",
+    "line": 87,
+    "calls": [
+      "unreachable",
+      "unwrap_or_else",
+      "lock",
+      "insert"
+    ]
+  },
+  {
+    "function": "remove",
+    "file": "src/components/control_interface.rs",
+    "line": 103,
+    "calls": [
+      "unwrap_or_else",
+      "remove",
+      "lock",
+      "unreachable"
+    ]
+  },
+  {
+    "function": "get_cloned",
+    "file": "src/components/control_interface.rs",
+    "line": 119,
+    "calls": [
+      "unreachable",
+      "unwrap_or_else",
+      "lock",
+      "get",
+      "cloned"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/components/control_interface.rs",
+    "line": 129,
+    "calls": [
+      "Arc::new",
+      "Mutex::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "read_varint_data",
+    "file": "src/components/control_interface.rs",
+    "line": 171,
+    "calls": [
+      "read_u8",
+      "Ok"
+    ]
+  },
+  {
+    "function": "read_protobuf_data",
+    "file": "src/components/control_interface.rs",
+    "line": 193,
+    "calls": [
+      "decode_varint",
+      "read_varint_data",
+      "usize::try_from",
+      "Ok",
+      "Box::new",
+      "read_exact",
+      "map_err",
+      "Error::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/control_interface.rs",
+    "line": 216,
+    "calls": [
+      "Arc::new",
+      "Mutex::new",
+      "SynchronizedSenderMap::default",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "src/components/control_interface.rs",
+    "line": 235,
+    "calls": [
+      "ControlInterface::change_state",
+      "Ok",
+      "unwrap_or_else",
+      "lock",
+      "Err",
+      "clone",
+      "read_from_control_interface",
+      "sleep",
+      "matches",
+      "tokio_timeout",
+      "Duration::from_millis",
+      "to_owned",
+      "AnkaiosError::ControlInterfaceError",
+      "Arc::<Mutex<ControlInterfaceState>>::clone",
+      "prepare_writer",
+      "log::error",
+      "metadata",
+      "unreachable",
+      "log::trace",
+      "ControlInterface::send_initial_hello",
+      "is_err",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "disconnect",
+    "file": "src/components/control_interface.rs",
+    "line": 292,
+    "calls": [
+      "Err",
+      "AnkaiosError::ControlInterfaceError",
+      "unreachable",
+      "take",
+      "Ok",
+      "unwrap_or_else",
+      "lock",
+      "matches",
+      "abort",
+      "clone_from",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "change_state",
+    "file": "src/components/control_interface.rs",
+    "line": 319,
+    "calls": [
+      "log::info",
+      "unreachable",
+      "unwrap_or_else",
+      "lock",
+      "clone_from"
+    ]
+  },
+  {
+    "function": "prepare_writer",
+    "file": "src/components/control_interface.rs",
+    "line": 332,
+    "calls": [
+      "ControlInterface::change_state",
+      "Ok",
+      "encode_length_delimited_to_vec",
+      "join",
+      "unwrap_or_else",
+      "lock",
+      "clone",
+      "kind",
+      "Path::new",
+      "spawn",
+      "sleep",
+      "to_owned",
+      "log::warn",
+      "AnkaiosError::ControlInterfaceError",
+      "mpsc::channel::<ToAnkaios>",
+      "Arc::<Mutex<ControlInterfaceState>>::clone",
+      "flush",
+      "BufWriter::new",
+      "Some",
+      "log::error",
+      "Duration::from_secs",
+      "unreachable",
+      "to_path_buf",
+      "ControlInterface::send_initial_hello",
+      "recv",
+      "write_all",
+      "pipe::OpenOptions::new",
+      "map_err",
+      "open_sender"
+    ]
+  },
+  {
+    "function": "read_from_control_interface",
+    "file": "src/components/control_interface.rs",
+    "line": 389,
+    "calls": [
+      "open_receiver",
+      "Self::change_state",
+      "Ok",
+      "unwrap_or_else",
+      "join",
+      "lock",
+      "BufReader::new",
+      "clone",
+      "log::info",
+      "kind",
+      "Path::new",
+      "spawn",
+      "sleep",
+      "Duration::from_millis",
+      "to_owned",
+      "AnkaiosError::ControlInterfaceError",
+      "Arc::<Mutex<ControlInterfaceState>>::clone",
+      "Self::handle_decoded_response",
+      "Some",
+      "FromAnkaios::decode",
+      "log::error",
+      "unreachable",
+      "to_path_buf",
+      "read_protobuf_data",
+      "Self::send_initial_hello",
+      "Box::new",
+      "Response::new",
+      "pipe::OpenOptions::new",
+      "map_err",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "handle_decoded_response",
+    "file": "src/components/control_interface.rs",
+    "line": 493,
+    "calls": [
+      "ControlInterface::change_state",
+      "Self::forward_event_response",
+      "unreachable",
+      "log::debug",
+      "log::error",
+      "unwrap_or_else",
+      "lock",
+      "Self::forward_log_entries",
+      "Self::forward_logs_stop_response",
+      "send",
+      "log::warn"
+    ]
+  },
+  {
+    "function": "write_request",
+    "file": "src/components/control_interface.rs",
+    "line": 560,
+    "calls": [
+      "Err",
+      "AnkaiosError::ControlInterfaceError",
+      "unreachable",
+      "ToAnkaiosEnum::Request",
+      "Ok",
+      "unwrap_or_else",
+      "lock",
+      "to_proto",
+      "send",
+      "Some",
+      "as_ref",
+      "log::error",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "add_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 590,
+    "calls": [
+      "insert",
+      "log::trace"
+    ]
+  },
+  {
+    "function": "remove_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 603,
+    "calls": [
+      "is_some",
+      "remove",
+      "log::trace"
+    ]
+  },
+  {
+    "function": "add_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 617,
+    "calls": [
+      "insert",
+      "log::trace"
+    ]
+  },
+  {
+    "function": "remove_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 634,
+    "calls": [
+      "is_some",
+      "remove",
+      "log::trace"
+    ]
+  },
+  {
+    "function": "forward_log_entries",
+    "file": "src/components/control_interface.rs",
+    "line": 649,
+    "calls": [
+      "log::trace",
+      "log::debug",
+      "log::error",
+      "unwrap_or_else",
+      "LogResponse::LogEntries",
+      "get_cloned",
+      "send"
+    ]
+  },
+  {
+    "function": "forward_logs_stop_response",
+    "file": "src/components/control_interface.rs",
+    "line": 682,
+    "calls": [
+      "LogResponse::LogsStopResponse",
+      "log::trace",
+      "log::debug",
+      "log::error",
+      "unwrap_or_else",
+      "get_cloned",
+      "send"
+    ]
+  },
+  {
+    "function": "forward_event_response",
+    "file": "src/components/control_interface.rs",
+    "line": 714,
+    "calls": [
+      "log::trace",
+      "log::debug",
+      "unwrap_or_else",
+      "send",
+      "get_cloned",
+      "log::error"
+    ]
+  },
+  {
+    "function": "send_initial_hello",
+    "file": "src/components/control_interface.rs",
+    "line": 738,
+    "calls": [
+      "ToAnkaiosEnum::Hello",
+      "log::trace",
+      "log::error",
+      "unwrap_or_else",
+      "Some",
+      "send",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "get_state",
+    "file": "src/components/control_interface.rs",
+    "line": 804,
+    "calls": [
+      "unwrap",
+      "lock"
+    ]
+  },
+  {
+    "function": "utest_read_protobuf_data",
+    "file": "src/components/control_interface.rs",
+    "line": 813,
+    "calls": [
+      "open_receiver",
+      "Barrier::new",
+      "Arc::new",
+      "join",
+      "Arc::<Barrier>::clone",
+      "tempfile::tempdir",
+      "path",
+      "clone",
+      "wait",
+      "spawn",
+      "mkfifo",
+      "flush",
+      "tokio::io::BufReader::new",
+      "assert_eq",
+      "vec",
+      "unwrap",
+      "read_protobuf_data",
+      "write_all",
+      "pipe::OpenOptions::new",
+      "open_sender"
+    ]
+  },
+  {
+    "function": "utest_control_interface_state",
+    "file": "src/components/control_interface.rs",
+    "line": 841,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_control_interface_connect",
+    "file": "src/components/control_interface.rs",
+    "line": 855,
+    "calls": [
+      "assert",
+      "open_receiver",
+      "ControlInterface::new",
+      "join",
+      "unwrap_or_else",
+      "lock",
+      "ToAnkaios::decode",
+      "tempfile::tempdir",
+      "path",
+      "connect",
+      "spawn",
+      "disconnect",
+      "sleep",
+      "tokio_timeout",
+      "Duration::from_millis",
+      "clone_into",
+      "Arc::<Mutex<ControlInterfaceState>>::clone",
+      "mkfifo",
+      "panic",
+      "tokio::io::BufReader::new",
+      "assert_eq",
+      "Duration::from_secs",
+      "unwrap",
+      "unreachable",
+      "mpsc::channel::<Response>",
+      "to_str",
+      "read_protobuf_data",
+      "Box::new",
+      "pipe::OpenOptions::new",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "utest_control_interface_connect_timeout",
+    "file": "src/components/control_interface.rs",
+    "line": 933,
+    "calls": [
+      "path",
+      "unwrap",
+      "connect",
+      "assert",
+      "mpsc::channel::<Response>",
+      "clone_into",
+      "to_str",
+      "Duration::from_millis",
+      "mkfifo",
+      "ControlInterface::new",
+      "join",
+      "assert_eq",
+      "tempfile::tempdir"
+    ]
+  },
+  {
+    "function": "utest_control_interface_send_request",
+    "file": "src/components/control_interface.rs",
+    "line": 963,
+    "calls": [
+      "assert",
+      "generate_test_proto_update_state_success",
+      "open_receiver",
+      "generate_test_request",
+      "ControlInterface::new",
+      "encode_length_delimited_to_vec",
+      "join",
+      "unwrap_or_else",
+      "lock",
+      "ToAnkaios::decode",
+      "tempfile::tempdir",
+      "path",
+      "connect",
+      "clone",
+      "spawn",
+      "disconnect",
+      "to_proto",
+      "sleep",
+      "tokio_timeout",
+      "Duration::from_millis",
+      "get_id",
+      "clone_into",
+      "Arc::<Mutex<ControlInterfaceState>>::clone",
+      "mkfifo",
+      "flush",
+      "write_request",
+      "panic",
+      "tokio::io::BufReader::new",
+      "assert_eq",
+      "BufWriter::new",
+      "clone_from",
+      "Duration::from_secs",
+      "unwrap",
+      "unreachable",
+      "mpsc::channel::<Response>",
+      "to_str",
+      "read_protobuf_data",
+      "Box::new",
+      "recv",
+      "write_all",
+      "pipe::OpenOptions::new",
+      "open_sender",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "utest_control_interface_agent_disconnected",
+    "file": "src/components/control_interface.rs",
+    "line": 1066,
+    "calls": [
+      "open_receiver",
+      "tokio::spawn",
+      "Barrier::new",
+      "Arc::new",
+      "ControlInterface::new",
+      "join",
+      "Arc::<Barrier>::clone",
+      "unwrap_or_else",
+      "OpenOptions::new",
+      "lock",
+      "expect",
+      "tempfile::tempdir",
+      "path",
+      "clone",
+      "BufReader::new",
+      "connect",
+      "wait",
+      "spawn",
+      "write",
+      "disconnect",
+      "tokio::fs::OpenOptions::new",
+      "sleep",
+      "tokio_timeout",
+      "get_state",
+      "Duration::from_millis",
+      "open",
+      "clone_into",
+      "Arc::<Mutex<ControlInterfaceState>>::clone",
+      "mkfifo",
+      "tokio::io::BufReader::new",
+      "assert_eq",
+      "clone_from",
+      "Duration::from_secs",
+      "unwrap",
+      "unreachable",
+      "mpsc::channel::<Response>",
+      "to_str",
+      "drop",
+      "pipe::OpenOptions::new"
+    ]
+  },
+  {
+    "function": "utest_handle_decoded_response",
+    "file": "src/components/control_interface.rs",
+    "line": 1185,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "mpsc::channel::<Response>",
+      "try_recv",
+      "generate_test_response_update_state_success",
+      "unwrap_err",
+      "ControlInterface::handle_decoded_response",
+      "to_owned",
+      "ControlInterface::new",
+      "lock",
+      "generate_test_control_interface_accepted_response",
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "utest_control_interface_receive_log_entries",
+    "file": "src/components/control_interface.rs",
+    "line": 1249,
+    "calls": [
+      "assert",
+      "tokio::time::timeout",
+      "ControlInterface::new",
+      "encode_length_delimited_to_vec",
+      "join",
+      "unwrap_or_else",
+      "lock",
+      "tempfile::tempdir",
+      "path",
+      "clone",
+      "disconnect",
+      "read_from_control_interface",
+      "insert",
+      "sleep",
+      "Duration::from_millis",
+      "to_owned",
+      "clone_into",
+      "mpsc::channel::<LogResponse>",
+      "remove_log_campaign",
+      "mkfifo",
+      "flush",
+      "prepare_writer",
+      "BufWriter::new",
+      "LogResponse::LogEntries",
+      "assert_eq",
+      "generate_test_proto_log_entries_response",
+      "clone_from",
+      "unwrap",
+      "unreachable",
+      "mpsc::channel::<Response>",
+      "to_str",
+      "into_iter",
+      "map",
+      "recv",
+      "write_all",
+      "pipe::OpenOptions::new",
+      "open_sender",
+      "get_test_proto_from_ankaios_log_entries_response",
+      "collect"
+    ]
+  },
+  {
+    "function": "utest_control_interface_forward_log_entries_response_unable_to_find_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 1317,
+    "calls": [
+      "assert",
+      "mpsc::channel::<Response>",
+      "try_recv",
+      "mpsc::channel::<LogResponse>",
+      "insert",
+      "ControlInterface::new",
+      "Vec::default",
+      "sleep",
+      "ControlInterface::forward_log_entries",
+      "Duration::from_millis",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_control_interface_receive_logs_stop_response",
+    "file": "src/components/control_interface.rs",
+    "line": 1355,
+    "calls": [
+      "try_init",
+      "assert",
+      "tokio::time::timeout",
+      "ControlInterface::handle_decoded_response",
+      "ControlInterface::new",
+      "lock",
+      "clone",
+      "is_test",
+      "WorkloadInstanceName::new",
+      "insert",
+      "generate_test_logs_stop_response",
+      "Duration::from_millis",
+      "to_owned",
+      "mpsc::channel::<LogResponse>",
+      "assert_eq",
+      "unwrap",
+      "mpsc::channel::<Response>",
+      "env_logger::builder",
+      "recv"
+    ]
+  },
+  {
+    "function": "utest_control_interface_forward_logs_stop_response_unable_to_find_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 1425,
+    "calls": [
+      "assert",
+      "mpsc::channel::<Response>",
+      "try_recv",
+      "mpsc::channel::<LogResponse>",
+      "sleep",
+      "ControlInterface::forward_logs_stop_response",
+      "WorkloadInstanceName::new",
+      "insert",
+      "ControlInterface::new",
+      "assert_eq",
+      "Duration::from_millis",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_control_interface_receive_event_entry",
+    "file": "src/components/control_interface.rs",
+    "line": 1472,
+    "calls": [
+      "unwrap",
+      "try_init",
+      "assert",
+      "mpsc::channel::<EventEntry>",
+      "mpsc::channel::<Response>",
+      "is_test",
+      "insert",
+      "ControlInterface::handle_decoded_response",
+      "tokio::time::timeout",
+      "env_logger::builder",
+      "ControlInterface::new",
+      "recv",
+      "lock",
+      "assert_eq",
+      "generate_test_response_event_entry",
+      "Duration::from_millis",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_control_interface_add_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 1541,
+    "calls": [
+      "unwrap",
+      "assert",
+      "mpsc::channel::<Response>",
+      "mpsc::channel::<LogResponse>",
+      "ControlInterface::new",
+      "lock",
+      "assert_eq",
+      "add_log_campaign",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_control_interface_remove_log_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 1565,
+    "calls": [
+      "unwrap",
+      "assert",
+      "mpsc::channel::<Response>",
+      "mpsc::channel::<LogResponse>",
+      "remove_log_campaign",
+      "insert",
+      "ControlInterface::new",
+      "lock",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_control_interface_add_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 1604,
+    "calls": [
+      "unwrap",
+      "assert",
+      "mpsc::channel::<EventEntry>",
+      "mpsc::channel::<Response>",
+      "add_events_campaign",
+      "ControlInterface::new",
+      "lock",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_control_interface_remove_events_campaign",
+    "file": "src/components/control_interface.rs",
+    "line": 1628,
+    "calls": [
+      "unwrap",
+      "assert",
+      "mpsc::channel::<EventEntry>",
+      "mpsc::channel::<Response>",
+      "insert",
+      "remove_events_campaign",
+      "ControlInterface::new",
+      "lock",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "read_file_to_string",
+    "file": "src/components/manifest.rs",
+    "line": 29,
+    "calls": [
+      "fs::read_to_string"
+    ]
+  },
+  {
+    "function": "from_dict",
+    "file": "src/components/manifest.rs",
+    "line": 93,
+    "calls": [
+      "Manifest::try_from"
+    ]
+  },
+  {
+    "function": "from_string",
+    "file": "src/components/manifest.rs",
+    "line": 110,
+    "calls": [
+      "into",
+      "Manifest::try_from"
+    ]
+  },
+  {
+    "function": "from_file",
+    "file": "src/components/manifest.rs",
+    "line": 127,
+    "calls": [
+      "Manifest::try_from"
+    ]
+  },
+  {
+    "function": "calculate_masks",
+    "file": "src/components/manifest.rs",
+    "line": 137,
+    "calls": [
+      "keys",
+      "format",
+      "as_ref",
+      "push",
+      "vec"
+    ]
+  },
+  {
+    "function": "to_desired_state",
+    "file": "src/components/manifest.rs",
+    "line": 158,
+    "calls": []
+  },
+  {
+    "function": "try_from",
+    "file": "src/components/manifest.rs",
+    "line": 166,
+    "calls": [
+      "Err",
+      "clone",
+      "to_string",
+      "as_mapping",
+      "as_str",
+      "serde_yaml::from_value::<ank_base::ConfigMap>",
+      "insert",
+      "Ok",
+      "is_empty",
+      "to_proto",
+      "get",
+      "Some",
+      "Workload::new_from_dict",
+      "AnkaiosError::ManifestParsingError",
+      "to_owned",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/components/manifest.rs",
+    "line": 246,
+    "calls": [
+      "Err",
+      "Self::from_dict",
+      "to_string",
+      "serde_yaml::from_str",
+      "AnkaiosError::ManifestParsingError"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "src/components/manifest.rs",
+    "line": 257,
+    "calls": [
+      "read_file_to_string",
+      "to_string",
+      "Err",
+      "Self::from_string",
+      "AnkaiosError::ManifestParsingError"
+    ]
+  },
+  {
+    "function": "read_to_string_mock",
+    "file": "src/components/manifest.rs",
+    "line": 276,
+    "calls": [
+      "to_owned",
+      "unwrap",
+      "to_str",
+      "Ok"
+    ]
+  },
+  {
+    "function": "generate_test_manifest",
+    "file": "src/components/manifest.rs",
+    "line": 301,
+    "calls": [
+      "unwrap",
+      "Manifest::from_string"
+    ]
+  },
+  {
+    "function": "utest_creation",
+    "file": "src/components/manifest.rs",
+    "line": 312,
+    "calls": [
+      "unwrap",
+      "Manifest::from_file",
+      "assert",
+      "Path::new",
+      "serde_yaml::Value::default",
+      "assert_eq",
+      "calculate_masks",
+      "to_owned",
+      "Manifest::try_from"
+    ]
+  },
+  {
+    "function": "utest_no_workloads",
+    "file": "src/components/manifest.rs",
+    "line": 327,
+    "calls": [
+      "unwrap",
+      "assert",
+      "Manifest::from_string",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/complete_state.rs",
+    "line": 129,
+    "calls": [
+      "ank_base::CompleteState::default",
+      "set_api_version",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new_from_manifest",
+    "file": "src/components/complete_state.rs",
+    "line": 147,
+    "calls": [
+      "Some",
+      "to_desired_state",
+      "Self::new"
+    ]
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/complete_state.rs",
+    "line": 163,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "new_from_configs",
+    "file": "src/components/complete_state.rs",
+    "line": 179,
+    "calls": [
+      "Self::new",
+      "set_configs"
+    ]
+  },
+  {
+    "function": "new_from_workloads",
+    "file": "src/components/complete_state.rs",
+    "line": 195,
+    "calls": [
+      "is_none",
+      "clone",
+      "HashMap::default",
+      "insert",
+      "to_proto",
+      "Self::new",
+      "as_mut",
+      "Some"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/complete_state.rs",
+    "line": 220,
+    "calls": [
+      "clone",
+      "to_dict",
+      "as_mapping",
+      "get_workload_states",
+      "get_configs",
+      "get_agents",
+      "insert",
+      "get_api_version",
+      "serde_yaml::Mapping::new",
+      "Value::String",
+      "get_workloads",
+      "Value::Mapping",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/complete_state.rs",
+    "line": 263,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "set_api_version",
+    "file": "src/components/complete_state.rs",
+    "line": 272,
+    "calls": [
+      "Some",
+      "into",
+      "as_mut"
+    ]
+  },
+  {
+    "function": "get_api_version",
+    "file": "src/components/complete_state.rs",
+    "line": 291,
+    "calls": [
+      "as_ref",
+      "clone",
+      "String::new",
+      "log::error"
+    ]
+  },
+  {
+    "function": "get_workload",
+    "file": "src/components/complete_state.rs",
+    "line": 309,
+    "calls": [
+      "clone",
+      "into",
+      "Some",
+      "as_ref",
+      "Workload::new_from_proto"
+    ]
+  },
+  {
+    "function": "get_workloads",
+    "file": "src/components/complete_state.rs",
+    "line": 329,
+    "calls": [
+      "clone",
+      "Vec::new",
+      "as_ref",
+      "Workload::new_from_proto",
+      "push"
+    ]
+  },
+  {
+    "function": "get_workload_states",
+    "file": "src/components/complete_state.rs",
+    "line": 347,
+    "calls": [
+      "as_ref",
+      "WorkloadStateCollection::new",
+      "WorkloadStateCollection::new_from_proto"
+    ]
+  },
+  {
+    "function": "get_agents",
+    "file": "src/components/complete_state.rs",
+    "line": 360,
+    "calls": [
+      "clone",
+      "into",
+      "insert",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "set_agent_tags",
+    "file": "src/components/complete_state.rs",
+    "line": 376,
+    "calls": [
+      "get_or_insert_default",
+      "entry",
+      "into",
+      "or_insert_with",
+      "Some"
+    ]
+  },
+  {
+    "function": "set_configs",
+    "file": "src/components/complete_state.rs",
+    "line": 400,
+    "calls": [
+      "is_none",
+      "clone",
+      "unwrap_or_unreachable",
+      "iter",
+      "as_str",
+      "ank_base::ConfigItemEnum::Object",
+      "to_config_item",
+      "drop",
+      "HashMap::default",
+      "ank_base::ConfigItemEnum::String",
+      "map",
+      "to_owned",
+      "ank_base::ConfigItemEnum::Array",
+      "as_mut",
+      "Some",
+      "collect"
+    ]
+  },
+  {
+    "function": "to_config_item",
+    "file": "src/components/complete_state.rs",
+    "line": 401,
+    "calls": [
+      "clone",
+      "unwrap_or_unreachable",
+      "iter",
+      "as_str",
+      "ank_base::ConfigItemEnum::Object",
+      "to_config_item",
+      "ank_base::ConfigItemEnum::String",
+      "map",
+      "to_owned",
+      "ank_base::ConfigItemEnum::Array",
+      "Some",
+      "collect"
+    ]
+  },
+  {
+    "function": "get_configs",
+    "file": "src/components/complete_state.rs",
+    "line": 456,
+    "calls": [
+      "clone",
+      "iter",
+      "from_config_item",
+      "as_ref",
+      "map",
+      "Value::String",
+      "Value::Sequence",
+      "Value::Mapping",
+      "collect",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "from_config_item",
+    "file": "src/components/complete_state.rs",
+    "line": 457,
+    "calls": [
+      "clone",
+      "iter",
+      "from_config_item",
+      "map",
+      "Value::String",
+      "Value::Sequence",
+      "Value::Mapping",
+      "collect"
+    ]
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/complete_state.rs",
+    "line": 496,
+    "calls": [
+      "to_string",
+      "insert",
+      "to_owned",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/complete_state.rs",
+    "line": 532,
+    "calls": [
+      "clone",
+      "insert",
+      "serde_yaml::Mapping::new",
+      "Value::String",
+      "Value::Mapping",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "src/components/complete_state.rs",
+    "line": 555,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/complete_state.rs",
+    "line": 561,
+    "calls": [
+      "Self::new_from_manifest"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/complete_state.rs",
+    "line": 567,
+    "calls": [
+      "Self::new_from_proto"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/complete_state.rs",
+    "line": 573,
+    "calls": [
+      "Self::new_from_proto"
+    ]
+  },
+  {
+    "function": "generate_test_configs_proto",
+    "file": "src/components/complete_state.rs",
+    "line": 593,
+    "calls": [
+      "ank_base::ConfigItemEnum::Object",
+      "HashMap::from",
+      "ank_base::ConfigItemEnum::String",
+      "ank_base::ConfigItemEnum::Array",
+      "Some",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "generate_agents_proto",
+    "file": "src/components/complete_state.rs",
+    "line": 655,
+    "calls": [
+      "HashMap::from",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "generate_complete_state_proto",
+    "file": "src/components/complete_state.rs",
+    "line": 673,
+    "calls": [
+      "generate_agents_proto",
+      "generate_test_configs_proto",
+      "generate_test_workload_proto",
+      "generate_test_workload_states_proto",
+      "HashMap::from",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_api_version",
+    "file": "src/components/complete_state.rs",
+    "line": 701,
+    "calls": [
+      "CompleteState::default",
+      "set_api_version",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_proto",
+    "file": "src/components/complete_state.rs",
+    "line": 709,
+    "calls": [
+      "generate_complete_state_proto",
+      "CompleteState::new_from_proto",
+      "to_proto",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_from_manifest",
+    "file": "src/components/complete_state.rs",
+    "line": 716,
+    "calls": [
+      "clone",
+      "assert_eq",
+      "CompleteState::from",
+      "generate_test_manifest"
+    ]
+  },
+  {
+    "function": "utest_from_configs",
+    "file": "src/components/complete_state.rs",
+    "line": 728,
+    "calls": [
+      "clone",
+      "CompleteState::new_from_configs",
+      "HashMap::from",
+      "Value::String",
+      "Value::Sequence",
+      "assert_eq",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_from_workloads",
+    "file": "src/components/complete_state.rs",
+    "line": 744,
+    "calls": [
+      "CompleteState::new_from_workloads",
+      "assert_eq",
+      "clone",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_invalid_value_config",
+    "file": "src/components/complete_state.rs",
+    "line": 754,
+    "calls": [
+      "assert",
+      "insert",
+      "CompleteState::default",
+      "assert_eq",
+      "set_configs",
+      "to_owned",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "utest_to_dict",
+    "file": "src/components/complete_state.rs",
+    "line": 764,
+    "calls": [
+      "to_dict",
+      "unwrap",
+      "as_mapping",
+      "get",
+      "Value::String",
+      "generate_complete_state_proto",
+      "CompleteState::from",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_get_workload",
+    "file": "src/components/complete_state.rs",
+    "line": 850,
+    "calls": [
+      "unwrap",
+      "generate_complete_state_proto",
+      "CompleteState::from",
+      "assert_eq",
+      "get_workload"
+    ]
+  },
+  {
+    "function": "utest_get_workload_states",
+    "file": "src/components/complete_state.rs",
+    "line": 857,
+    "calls": [
+      "assert",
+      "get_workload_states",
+      "WorkloadInstanceName::new",
+      "generate_complete_state_proto",
+      "CompleteState::from",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_get_agents",
+    "file": "src/components/complete_state.rs",
+    "line": 870,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "get",
+      "HashMap::from",
+      "generate_complete_state_proto",
+      "CompleteState::from",
+      "assert_eq",
+      "set_agent_tags",
+      "get_agents",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "line": 43,
+    "calls": [
+      "unwrap_or_default",
+      "WorkloadExecutionState::parse_state"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "line": 66,
+    "calls": [
+      "clone",
+      "insert",
+      "serde_yaml::Mapping::new",
+      "Value::String",
+      "format",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "parse_state",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "line": 94,
+    "calls": [
+      "unwrap_or_else",
+      "unreachable",
+      "WorkloadSubStateEnum::new"
+    ]
+  },
+  {
+    "function": "utest_default_functionality",
+    "file": "src/components/workload_state_mod/workload_execution_state.rs",
+    "line": 135,
+    "calls": [
+      "insert",
+      "WorkloadExecutionState::new",
+      "serde_yaml::Mapping::new",
+      "Value::String",
+      "assert_eq",
+      "Some",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "line": 58,
+    "calls": []
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "line": 76,
+    "calls": [
+      "clone",
+      "insert",
+      "serde_yaml::Mapping::new",
+      "Value::String",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "get_filter_mask",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "line": 99,
+    "calls": [
+      "format"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "line": 108,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "line": 127,
+    "calls": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "line": 146,
+    "calls": []
+  },
+  {
+    "function": "utest_instance_name",
+    "file": "src/components/workload_state_mod/workload_instance_name.rs",
+    "line": 169,
+    "calls": [
+      "clone_into",
+      "WorkloadInstanceName::new",
+      "assert_eq",
+      "assert_ne",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new_from_ank_base",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 61,
+    "calls": [
+      "WorkloadInstanceName::new",
+      "WorkloadExecutionState::new"
+    ]
+  },
+  {
+    "function": "new_from_exec_state",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 90,
+    "calls": [
+      "WorkloadInstanceName::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 114,
+    "calls": [
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 130,
+    "calls": [
+      "add_workload_state",
+      "clone",
+      "WorkloadState::new_from_ank_base",
+      "WorkloadStateCollection::new"
+    ]
+  },
+  {
+    "function": "add_workload_state",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 156,
+    "calls": [
+      "clone",
+      "entry",
+      "insert",
+      "or_default"
+    ]
+  },
+  {
+    "function": "as_dict",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 175,
+    "calls": [
+      "WorkloadStatesMap::from"
+    ]
+  },
+  {
+    "function": "as_mapping",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 185,
+    "calls": [
+      "serde_yaml::Mapping::from"
+    ]
+  },
+  {
+    "function": "as_list",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 195,
+    "calls": [
+      "Vec::from"
+    ]
+  },
+  {
+    "function": "get_for_instance_name",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 210,
+    "calls": [
+      "and_then",
+      "get"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 222,
+    "calls": [
+      "Self::new_from_proto"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 228,
+    "calls": []
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 234,
+    "calls": [
+      "clone",
+      "to_dict",
+      "insert",
+      "serde_yaml::Mapping::new",
+      "Value::String",
+      "Value::Mapping"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 258,
+    "calls": [
+      "Vec::new",
+      "clone",
+      "WorkloadInstanceName::new",
+      "push"
+    ]
+  },
+  {
+    "function": "generate_test_workload_states_proto",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 288,
+    "calls": [
+      "ank_base::ExecutionStateEnum::Succeeded",
+      "ank_base::ExecutionStateEnum::Stopping",
+      "HashMap::from",
+      "Some",
+      "ank_base::ExecutionStateEnum::Pending",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_workload_state",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 366,
+    "calls": [
+      "clone",
+      "WorkloadState::new_from_exec_state",
+      "WorkloadExecutionState::new",
+      "WorkloadState::new_from_ank_base",
+      "assert_eq",
+      "Some",
+      "ank_base::ExecutionStateEnum::Pending",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_workload_state_collection",
+    "file": "src/components/workload_state_mod/workload_state.rs",
+    "line": 419,
+    "calls": [
+      "WorkloadStateCollection::from",
+      "clone",
+      "unwrap",
+      "as_mapping",
+      "get_for_instance_name",
+      "generate_test_workload_states_proto",
+      "as_dict",
+      "WorkloadInstanceName::new",
+      "as_list",
+      "cmp",
+      "assert_eq",
+      "sort_by",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new_from_str",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 94,
+    "calls": [
+      "Err",
+      "as_str",
+      "into",
+      "Ok",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "as_i32",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 114,
+    "calls": []
+  },
+  {
+    "function": "from_str",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 122,
+    "calls": [
+      "Err",
+      "Ok"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 152,
+    "calls": [
+      "ank_base::Running::try_from",
+      "ank_base::Failed::try_from",
+      "ank_base::Pending::try_from",
+      "ank_base::Removed::try_from",
+      "ank_base::NotScheduled::try_from",
+      "map",
+      "ank_base::Stopping::try_from",
+      "ank_base::Succeeded::try_from",
+      "ank_base::AgentDisconnected::try_from",
+      "map_err",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "to_i32",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 221,
+    "calls": []
+  },
+  {
+    "function": "from_str",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 250,
+    "calls": [
+      "Err",
+      "Ok"
+    ]
+  },
+  {
+    "function": "utest_workload_state_enum_helpers",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 291,
+    "calls": [
+      "assert",
+      "WorkloadStateEnum::default",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "utest_workload_state_str_invalid",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 331,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "utest_workload_sub_state_enum_helpers",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 337,
+    "calls": [
+      "assert_eq",
+      "WorkloadSubStateEnum::default"
+    ]
+  },
+  {
+    "function": "utest_workload_substate_enum_err",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 454,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "utest_workload_substate_str_invalid",
+    "file": "src/components/workload_state_mod/workload_state_enums.rs",
+    "line": 466,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "read_file_to_string",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 25,
+    "calls": [
+      "fs::read_to_string"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 90,
+    "calls": [
+      "Self::default"
+    ]
+  },
+  {
+    "function": "workload_name",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 103,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "agent_name",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 117,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "runtime",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 131,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "runtime_config",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 145,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "runtime_config_from_file",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 163,
+    "calls": [
+      "read_file_to_string",
+      "runtime_config",
+      "Ok"
+    ]
+  },
+  {
+    "function": "restart_policy",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 177,
+    "calls": [
+      "Some",
+      "into"
+    ]
+  },
+  {
+    "function": "add_dependency",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 192,
+    "calls": [
+      "into",
+      "insert"
+    ]
+  },
+  {
+    "function": "add_tag",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 208,
+    "calls": [
+      "into",
+      "insert"
+    ]
+  },
+  {
+    "function": "add_allow_rule",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 223,
+    "calls": [
+      "into",
+      "push"
+    ]
+  },
+  {
+    "function": "add_deny_rule",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 242,
+    "calls": [
+      "into",
+      "push"
+    ]
+  },
+  {
+    "function": "add_config",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 261,
+    "calls": [
+      "into",
+      "insert"
+    ]
+  },
+  {
+    "function": "add_file",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 275,
+    "calls": [
+      "push"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 295,
+    "calls": [
+      "Err",
+      "clone",
+      "update_runtime_config",
+      "update_deny_rules",
+      "Workload::new_from_builder",
+      "update_agent_name",
+      "update_restart_policy",
+      "Ok",
+      "is_empty",
+      "update_runtime",
+      "AnkaiosError::WorkloadBuilderError",
+      "update_allow_rules",
+      "update_tags",
+      "update_configs",
+      "update_dependencies",
+      "update_files"
+    ]
+  },
+  {
+    "function": "utest_workload_builder",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 368,
+    "calls": [
+      "assert",
+      "add_dependency",
+      "runtime_config_from_file",
+      "runtime",
+      "Path::new",
+      "restart_policy",
+      "agent_name",
+      "add_file",
+      "add_tag",
+      "as_str",
+      "generate_test_runtime_config",
+      "build",
+      "workload_name",
+      "assert_eq",
+      "Workload::builder",
+      "vec",
+      "add_allow_rule",
+      "unwrap",
+      "add_config",
+      "add_deny_rule",
+      "File::from_data"
+    ]
+  },
+  {
+    "function": "utest_build_return_err",
+    "file": "src/components/workload_mod/workload_builder.rs",
+    "line": 396,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "from_data",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 77,
+    "calls": [
+      "into",
+      "FileContent::Data"
+    ]
+  },
+  {
+    "function": "from_binary_data",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 94,
+    "calls": [
+      "into",
+      "FileContent::BinaryData"
+    ]
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 107,
+    "calls": [
+      "clone",
+      "insert",
+      "Value::String",
+      "Mapping::new",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "from_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 148,
+    "calls": [
+      "Err",
+      "as_str",
+      "AnkaiosError::WorkloadFieldError",
+      "Self::from_binary_data",
+      "Self::from_data",
+      "Ok",
+      "ok_or_else",
+      "Value::String",
+      "and_then",
+      "contains_key",
+      "get",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "into_proto",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 207,
+    "calls": [
+      "Some",
+      "ank_base::FileContent::Data",
+      "ank_base::FileContent::BinaryData"
+    ]
+  },
+  {
+    "function": "from_proto",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 227,
+    "calls": [
+      "FileContent::Data",
+      "String::new",
+      "log::warn",
+      "FileContent::BinaryData"
+    ]
+  },
+  {
+    "function": "test_from_data",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 265,
+    "calls": [
+      "File::from_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_from_binary_data",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 273,
+    "calls": [
+      "File::from_binary_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_from_data_with_empty_content",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 285,
+    "calls": [
+      "File::from_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_from_binary_data_with_empty_content",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 293,
+    "calls": [
+      "File::from_binary_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_data_file_to_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 301,
+    "calls": [
+      "to_dict",
+      "File::from_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_binary_data_file_to_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 320,
+    "calls": [
+      "to_dict",
+      "File::from_binary_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_from_dict_with_data_content",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 337,
+    "calls": [
+      "unwrap",
+      "File::from_dict",
+      "insert",
+      "Value::String",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_dict_with_binary_data_content",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 355,
+    "calls": [
+      "unwrap",
+      "File::from_dict",
+      "insert",
+      "Value::String",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_dict_missing_mount_point",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 377,
+    "calls": [
+      "assert",
+      "File::from_dict",
+      "insert",
+      "unwrap_err",
+      "Value::String",
+      "panic",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_dict_no_content",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 397,
+    "calls": [
+      "assert",
+      "File::from_dict",
+      "insert",
+      "unwrap_err",
+      "Value::String",
+      "panic",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_dict_both_data_and_binary_data_content",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 417,
+    "calls": [
+      "assert",
+      "File::from_dict",
+      "insert",
+      "unwrap_err",
+      "Value::String",
+      "panic",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_dict_invalid_mount_point_type",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 448,
+    "calls": [
+      "assert",
+      "Value::Number",
+      "into",
+      "File::from_dict",
+      "insert",
+      "unwrap_err",
+      "Value::String",
+      "panic",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_dict_invalid_data_content_type",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 472,
+    "calls": [
+      "assert",
+      "Value::Number",
+      "into",
+      "File::from_dict",
+      "insert",
+      "unwrap_err",
+      "Value::String",
+      "panic",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_dict_invalid_binary_data_content_type",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 496,
+    "calls": [
+      "assert",
+      "Value::Number",
+      "into",
+      "File::from_dict",
+      "insert",
+      "unwrap_err",
+      "Value::String",
+      "panic",
+      "Mapping::new",
+      "assert_eq",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_data_file_round_trip_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 520,
+    "calls": [
+      "to_dict",
+      "unwrap",
+      "File::from_dict",
+      "assert_eq",
+      "File::from_data"
+    ]
+  },
+  {
+    "function": "test_binary_data_file_round_trip_dict",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 529,
+    "calls": [
+      "to_dict",
+      "unwrap",
+      "File::from_dict",
+      "File::from_binary_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_to_proto_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 539,
+    "calls": [
+      "into_proto",
+      "panic",
+      "File::from_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_to_proto_binary_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 553,
+    "calls": [
+      "into_proto",
+      "File::from_binary_data",
+      "panic",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_from_proto_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 568,
+    "calls": [
+      "File::from_proto",
+      "assert_eq",
+      "Some",
+      "ank_base::FileContent::Data",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_from_proto_binary_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 581,
+    "calls": [
+      "File::from_proto",
+      "to_owned",
+      "assert_eq",
+      "Some",
+      "ank_base::FileContent::BinaryData"
+    ]
+  },
+  {
+    "function": "test_round_trip_proto_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 598,
+    "calls": [
+      "File::from_proto",
+      "clone",
+      "into_proto",
+      "assert_eq",
+      "File::from_data"
+    ]
+  },
+  {
+    "function": "test_round_trip_proto_binary_data_file",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 607,
+    "calls": [
+      "File::from_proto",
+      "clone",
+      "into_proto",
+      "File::from_binary_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_clone",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 617,
+    "calls": [
+      "clone",
+      "File::from_data",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_file_content_equality",
+    "file": "src/components/workload_mod/file.rs",
+    "line": 627,
+    "calls": [
+      "FileContent::BinaryData",
+      "FileContent::Data",
+      "assert_eq",
+      "assert_ne",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "read_to_string_mock",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "line": 22,
+    "calls": [
+      "to_owned",
+      "unwrap",
+      "to_str",
+      "Ok"
+    ]
+  },
+  {
+    "function": "generate_test_dependencies",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "line": 26,
+    "calls": [
+      "HashMap::from",
+      "String::from"
+    ]
+  },
+  {
+    "function": "generate_test_runtime_config",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "line": 39,
+    "calls": [
+      "String::from"
+    ]
+  },
+  {
+    "function": "generate_test_workload_proto",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "line": 49,
+    "calls": [
+      "iter",
+      "generate_test_runtime_config",
+      "into",
+      "HashMap::from",
+      "to_vec",
+      "to_owned",
+      "String::from",
+      "Some",
+      "generate_test_dependencies",
+      "cloned",
+      "ank_base::FileContent::Data",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "generate_test_workload",
+    "file": "src/components/workload_mod/test_helpers.rs",
+    "line": 99,
+    "calls": [
+      "into",
+      "format",
+      "vec",
+      "generate_test_workload_proto"
+    ]
+  },
+  {
+    "function": "read_file_to_string",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 29,
+    "calls": [
+      "fs::read_to_string"
+    ]
+  },
+  {
+    "function": "new_from_builder",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 188,
+    "calls": [
+      "into",
+      "ank_base::Workload::default",
+      "vec",
+      "format"
+    ]
+  },
+  {
+    "function": "new_from_proto",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 209,
+    "calls": [
+      "into",
+      "vec",
+      "format"
+    ]
+  },
+  {
+    "function": "new_from_dict",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 235,
+    "calls": [
+      "AnkaiosError::WorkloadFieldError",
+      "add_dependency",
+      "Ok",
+      "get",
+      "Err",
+      "runtime",
+      "as_mapping",
+      "iter",
+      "File::from_dict",
+      "restart_policy",
+      "runtime_config",
+      "agent_name",
+      "add_file",
+      "add_tag",
+      "to_owned",
+      "as_str",
+      "build",
+      "workload_name",
+      "Self::builder",
+      "add_allow_rule",
+      "add_config",
+      "as_sequence",
+      "add_deny_rule",
+      "map",
+      "rule_map\r\n                        .get",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "to_proto",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 469,
+    "calls": []
+  },
+  {
+    "function": "to_dict",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 479,
+    "calls": [
+      "to_dict",
+      "Value::Sequence",
+      "clone",
+      "ank_base::AddCondition::try_from",
+      "insert",
+      "to_owned",
+      "ank_base::RestartPolicy::try_from",
+      "File::from_proto",
+      "Self::access_right_rule_to_str",
+      "as_str_name",
+      "into_iter",
+      "is_empty",
+      "serde_yaml::Mapping::new",
+      "Value::String",
+      "map",
+      "Value::Mapping",
+      "serde_yaml::Sequence::new",
+      "push",
+      "collect"
+    ]
+  },
+  {
+    "function": "builder",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 643,
+    "calls": [
+      "WorkloadBuilder::new"
+    ]
+  },
+  {
+    "function": "update_workload_name",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 652,
+    "calls": [
+      "into",
+      "vec",
+      "format"
+    ]
+  },
+  {
+    "function": "update_agent_name",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 663,
+    "calls": [
+      "Some",
+      "into",
+      "format",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "update_runtime",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 673,
+    "calls": [
+      "Some",
+      "into",
+      "format",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "update_runtime_config",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 683,
+    "calls": [
+      "Some",
+      "into",
+      "format",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "update_runtime_config_from_file",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 697,
+    "calls": [
+      "read_file_to_string",
+      "update_runtime_config",
+      "Ok"
+    ]
+  },
+  {
+    "function": "update_restart_policy",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 716,
+    "calls": [
+      "Err",
+      "clone",
+      "AnkaiosError::WorkloadFieldError",
+      "into",
+      "ank_base::RestartPolicy::from_str_name",
+      "Ok",
+      "format",
+      "Some",
+      "to_owned",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "get_dependencies",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 741,
+    "calls": [
+      "clone",
+      "as_str_name",
+      "insert",
+      "ank_base::AddCondition::try_from",
+      "to_owned",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "update_dependencies",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 763,
+    "calls": [
+      "Err",
+      "clone",
+      "format",
+      "AnkaiosError::WorkloadFieldError",
+      "into",
+      "insert",
+      "Ok",
+      "as_mut",
+      "ank_base::Dependencies::default",
+      "Some",
+      "ank_base::AddCondition::from_str_name",
+      "to_owned",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "add_tag",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 794,
+    "calls": [
+      "is_none",
+      "clone",
+      "format",
+      "ank_base::Tags::default",
+      "into",
+      "contains",
+      "insert",
+      "as_mut",
+      "Some",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "get_tags",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 817,
+    "calls": [
+      "map_or_else",
+      "clone",
+      "iter",
+      "map",
+      "as_ref",
+      "collect"
+    ]
+  },
+  {
+    "function": "update_tags",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 835,
+    "calls": [
+      "clone",
+      "ank_base::Tags::default",
+      "retain",
+      "insert",
+      "starts_with",
+      "format",
+      "Some",
+      "to_owned",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "generate_access_right_rule",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 862,
+    "calls": [
+      "Err",
+      "AnkaiosError::WorkloadFieldError",
+      "Ok",
+      "Some",
+      "ank_base::AccessRightsRuleEnum::StateRule",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "access_right_rule_to_str",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 900,
+    "calls": [
+      "Err",
+      "to_string",
+      "clone",
+      "as_str_name",
+      "AnkaiosError::WorkloadFieldError",
+      "Ok",
+      "ank_base::ReadWriteEnum::try_from",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "get_allow_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 937,
+    "calls": [
+      "Ok",
+      "push",
+      "Self::access_right_rule_to_str",
+      "vec"
+    ]
+  },
+  {
+    "function": "update_allow_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 962,
+    "calls": [
+      "is_none",
+      "as_str",
+      "into",
+      "Some",
+      "ank_base::ControlInterfaceAccess::default",
+      "into_iter",
+      "Ok",
+      "map",
+      "format",
+      "Self::generate_access_right_rule",
+      "add_mask",
+      "push",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_deny_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 998,
+    "calls": [
+      "Ok",
+      "push",
+      "Self::access_right_rule_to_str",
+      "vec"
+    ]
+  },
+  {
+    "function": "update_deny_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1023,
+    "calls": [
+      "is_none",
+      "format",
+      "as_str",
+      "into",
+      "into_iter",
+      "ank_base::ControlInterfaceAccess::default",
+      "Ok",
+      "map",
+      "Self::generate_access_right_rule",
+      "as_mut",
+      "Some",
+      "add_mask",
+      "push",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "add_config",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1056,
+    "calls": [
+      "clone",
+      "iter",
+      "into",
+      "insert",
+      "format",
+      "Some",
+      "cloned",
+      "collect",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "get_configs",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1077,
+    "calls": [
+      "clone",
+      "insert",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "update_configs",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1092,
+    "calls": [
+      "into_iter",
+      "format",
+      "Some",
+      "collect",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "add_file",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1104,
+    "calls": [
+      "is_none",
+      "ank_base::Files::default",
+      "as_mut",
+      "into_proto",
+      "format",
+      "Some",
+      "push",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "get_files",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1121,
+    "calls": [
+      "clone",
+      "Vec::new",
+      "into_iter",
+      "map",
+      "collect"
+    ]
+  },
+  {
+    "function": "update_files",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1141,
+    "calls": [
+      "into_iter",
+      "is_empty",
+      "map",
+      "format",
+      "Some",
+      "collect",
+      "add_mask"
+    ]
+  },
+  {
+    "function": "add_mask",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1160,
+    "calls": [
+      "iter",
+      "remove",
+      "contains",
+      "starts_with",
+      "filter",
+      "position",
+      "format",
+      "cloned",
+      "push",
+      "collect"
+    ]
+  },
+  {
+    "function": "utest_workload",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1203,
+    "calls": [
+      "assert_eq",
+      "generate_test_workload",
+      "to_owned",
+      "generate_test_workload_proto"
+    ]
+  },
+  {
+    "function": "utest_workload_proto",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1217,
+    "calls": [
+      "clone",
+      "generate_test_workload_proto",
+      "to_proto",
+      "assert_eq",
+      "Workload::new_from_proto",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_workload_dict",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1226,
+    "calls": [
+      "to_dict",
+      "assert",
+      "generate_test_workload",
+      "assert_eq",
+      "Workload::new_from_dict"
+    ]
+  },
+  {
+    "function": "utest_update_fields",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1235,
+    "calls": [
+      "update_runtime_config",
+      "assert",
+      "update_agent_name",
+      "generate_test_workload",
+      "update_runtime",
+      "update_workload_name",
+      "HashMap::from",
+      "update_tags",
+      "assert_eq",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_dependencies",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1276,
+    "calls": [
+      "assert",
+      "generate_test_workload",
+      "get_dependencies",
+      "assert_eq",
+      "remove"
+    ]
+  },
+  {
+    "function": "utest_tags",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1292,
+    "calls": [
+      "unwrap",
+      "runtime",
+      "get_tags",
+      "remove",
+      "cloned",
+      "insert",
+      "build",
+      "runtime_config",
+      "keys",
+      "assert_eq",
+      "workload_name",
+      "next",
+      "update_tags",
+      "agent_name",
+      "Workload::builder",
+      "add_tag",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_rules",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1317,
+    "calls": [
+      "unwrap",
+      "assert",
+      "generate_test_workload",
+      "get_allow_rules",
+      "get_deny_rules",
+      "assert_eq",
+      "push",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_configs",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1357,
+    "calls": [
+      "unwrap",
+      "runtime",
+      "clone",
+      "get_configs",
+      "add_config",
+      "insert",
+      "build",
+      "runtime_config",
+      "Vec::default",
+      "assert_eq",
+      "workload_name",
+      "update_configs",
+      "agent_name",
+      "Workload::builder",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "utest_files",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1404,
+    "calls": [
+      "unwrap",
+      "runtime",
+      "assert",
+      "build",
+      "runtime_config",
+      "get_files",
+      "File::from_binary_data",
+      "workload_name",
+      "assert_eq",
+      "agent_name",
+      "add_file",
+      "Workload::builder",
+      "File::from_data",
+      "update_files",
+      "vec"
+    ]
+  },
+  {
+    "function": "utest_workload_builder",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1564,
+    "calls": [
+      "assert",
+      "add_dependency",
+      "runtime_config_from_file",
+      "runtime",
+      "Path::new",
+      "restart_policy",
+      "agent_name",
+      "add_file",
+      "add_tag",
+      "as_str",
+      "generate_test_runtime_config",
+      "build",
+      "workload_name",
+      "assert_eq",
+      "Workload::builder",
+      "vec",
+      "add_allow_rule",
+      "unwrap",
+      "add_config",
+      "add_deny_rule",
+      "File::from_data"
+    ]
+  },
+  {
+    "function": "utest_build_return_err",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1591,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "utest_display",
+    "file": "src/components/workload_mod/workload.rs",
+    "line": 1634,
+    "calls": [
+      "unwrap",
+      "runtime",
+      "build",
+      "runtime_config",
+      "assert_eq",
+      "workload_name",
+      "agent_name",
+      "Workload::builder"
+    ]
+  },
+  {
+    "function": "serialize_to_ordered_map",
+    "file": "src/ankaios_api/helpers.rs",
+    "line": 18,
+    "calls": [
+      "serialize",
+      "iter",
+      "collect"
+    ]
+  },
+  {
+    "function": "utest_serialize_to_ordered_map",
+    "file": "src/ankaios_api/helpers.rs",
+    "line": 42,
+    "calls": [
+      "to_string",
+      "assert",
+      "serialize_to_ordered_map",
+      "Vec::new",
+      "insert",
+      "assert_eq",
+      "serde_yaml::Serializer::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_manifest.rs",
+    "line": 19,
+    "calls": [
+      "get_workload_states",
+      "println",
+      "Vec::from",
+      "get_state",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_manifest.rs",
+    "line": 37,
+    "calls": [
+      "clone",
+      "Ankaios::new",
+      "delete_manifest",
+      "init",
+      "apply_manifest",
+      "println",
+      "print_workload_states",
+      "env_logger::builder",
+      "Manifest::from_string",
+      "sleep",
+      "expect",
+      "filter_level",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_workload.rs",
+    "line": 19,
+    "calls": [
+      "get_workload_states",
+      "println",
+      "Vec::from",
+      "get_state",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_workload.rs",
+    "line": 37,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "print_workload_states",
+      "println",
+      "expect",
+      "delete_workload",
+      "filter_level",
+      "clone",
+      "runtime",
+      "apply_workload",
+      "restart_policy",
+      "runtime_config",
+      "wait_for_workload_to_reach_state",
+      "agent_name",
+      "sleep",
+      "update_restart_policy",
+      "build",
+      "get_execution_state_for_instance_name",
+      "workload_name",
+      "get_workload",
+      "Workload::builder",
+      "Duration::from_secs",
+      "env_logger::builder"
+    ]
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/get_state.rs",
+    "line": 19,
+    "calls": [
+      "get_workload_states",
+      "println",
+      "Vec::from",
+      "get_state",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/get_state.rs",
+    "line": 37,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "print_workload_states",
+      "println",
+      "expect",
+      "filter_level",
+      "clone",
+      "runtime",
+      "apply_workload",
+      "restart_policy",
+      "runtime_config",
+      "wait_for_workload_to_reach_state",
+      "sleep",
+      "agent_name",
+      "build",
+      "workload_name",
+      "Workload::builder",
+      "Duration::from_secs",
+      "unwrap",
+      "env_logger::builder"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/simple_test.rs",
+    "line": 19,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "println",
+      "env_logger::builder",
+      "sleep",
+      "expect",
+      "filter_level",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/state_event.rs",
+    "line": 18,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "println",
+      "expect",
+      "filter_level",
+      "runtime",
+      "apply_workload",
+      "restart_policy",
+      "runtime_config",
+      "unregister_event",
+      "agent_name",
+      "build",
+      "workload_name",
+      "Workload::builder",
+      "vec",
+      "is_empty",
+      "env_logger::builder",
+      "recv",
+      "register_event"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/hello_ankaios.rs",
+    "line": 19,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "println",
+      "expect",
+      "delete_workload",
+      "filter_level",
+      "clone",
+      "runtime",
+      "get_workload_states",
+      "apply_workload",
+      "restart_policy",
+      "runtime_config",
+      "wait_for_workload_to_reach_state",
+      "Vec::from",
+      "agent_name",
+      "get_state",
+      "build",
+      "get_execution_state_for_instance_name",
+      "workload_name",
+      "tokio::time::sleep",
+      "Workload::builder",
+      "vec",
+      "Duration::from_secs",
+      "env_logger::builder"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/get_logs.rs",
+    "line": 18,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "println",
+      "contains",
+      "expect",
+      "filter_level",
+      "clone",
+      "runtime",
+      "apply_workload",
+      "Default::default",
+      "request_logs",
+      "restart_policy",
+      "runtime_config",
+      "agent_name",
+      "stop_receiving_logs",
+      "std::process::exit",
+      "build",
+      "workload_name",
+      "Workload::builder",
+      "vec",
+      "env_logger::builder",
+      "recv"
+    ]
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_configs.rs",
+    "line": 19,
+    "calls": [
+      "get_workload_states",
+      "println",
+      "Vec::from",
+      "get_state",
+      "vec"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_configs.rs",
+    "line": 37,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "print_workload_states",
+      "expect",
+      "serde_yaml::Value::Mapping",
+      "delete_workload",
+      "filter_level",
+      "clone",
+      "runtime",
+      "apply_workload",
+      "insert",
+      "restart_policy",
+      "runtime_config",
+      "HashMap::from",
+      "agent_name",
+      "sleep",
+      "to_owned",
+      "build",
+      "workload_name",
+      "update_configs",
+      "Workload::builder",
+      "as_mapping_mut",
+      "Duration::from_secs",
+      "unwrap",
+      "add_config",
+      "env_logger::builder",
+      "serde_yaml::Mapping::new",
+      "serde_yaml::Value::String",
+      "get_mut"
+    ]
+  },
+  {
+    "function": "print_workload_states",
+    "file": "examples/apps/test_files.rs",
+    "line": 18,
+    "calls": [
+      "as_list",
+      "println",
+      "get_workload_states"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "examples/apps/test_files.rs",
+    "line": 32,
+    "calls": [
+      "Ankaios::new",
+      "init",
+      "print_workload_states",
+      "println",
+      "expect",
+      "delete_workload",
+      "filter_level",
+      "clone",
+      "runtime",
+      "apply_workload",
+      "restart_policy",
+      "runtime_config",
+      "File::from_binary_data",
+      "agent_name",
+      "add_file",
+      "get_state",
+      "update_files",
+      "to_owned",
+      "build",
+      "get_files",
+      "workload_name",
+      "tokio::time::sleep",
+      "get_workloads",
+      "Workload::builder",
+      "Duration::from_secs",
+      "vec",
+      "env_logger::builder",
+      "File::from_data"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "function": "init_topic_primary",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:init_topic_primary",
+      "line": 199
+    },
+    {
+      "id": 1,
+      "label": "exit:init_topic_primary",
+      "line": 230
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

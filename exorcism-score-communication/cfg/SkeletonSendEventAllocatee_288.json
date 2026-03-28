@@ -1,0 +1,114 @@
+{
+  "function": "SkeletonSendEventAllocatee",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SkeletonSendEventAllocatee",
+      "line": 288
+    },
+    {
+      "id": 1,
+      "label": "if ((event_ptr == nullptr || allocatee_ptr == nullptr))",
+      "line": 290
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 293
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 290
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 292
+    },
+    {
+      "id": 5,
+      "label": "if ((skeleton_event == nullptr || typed_ptr == nullptr))",
+      "line": 297
+    },
+    {
+      "id": 6,
+      "label": "merge",
+      "line": 300
+    },
+    {
+      "id": 7,
+      "label": "then",
+      "line": 297
+    },
+    {
+      "id": 8,
+      "label": "return_statement",
+      "line": 299
+    },
+    {
+      "id": 9,
+      "label": "return_statement",
+      "line": 301
+    },
+    {
+      "id": 10,
+      "label": "exit:SkeletonSendEventAllocatee",
+      "line": 302
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 7,
+      "label": "true"
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "label": "false"
+    },
+    {
+      "from": 6,
+      "to": 9
+    },
+    {
+      "from": 6,
+      "to": 10
+    }
+  ]
+}

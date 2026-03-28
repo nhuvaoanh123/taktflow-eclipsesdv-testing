@@ -1,0 +1,21 @@
+{
+  "function": "ConstructVerbosePacket",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ConstructVerbosePacket",
+      "line": 147
+    },
+    {
+      "id": 1,
+      "label": "exit:ConstructVerbosePacket",
+      "line": 167
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

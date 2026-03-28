@@ -1,0 +1,21 @@
+{
+  "function": "FcntlMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FcntlMock",
+      "line": 25
+    },
+    {
+      "id": 1,
+      "label": "exit:FcntlMock",
+      "line": 49
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

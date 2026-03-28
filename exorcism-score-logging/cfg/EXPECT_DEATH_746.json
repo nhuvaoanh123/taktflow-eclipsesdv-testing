@@ -1,0 +1,21 @@
+{
+  "function": "EXPECT_DEATH",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:EXPECT_DEATH",
+      "line": 746
+    },
+    {
+      "id": 1,
+      "label": "exit:EXPECT_DEATH",
+      "line": 1044
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

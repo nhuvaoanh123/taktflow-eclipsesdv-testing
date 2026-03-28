@@ -1,0 +1,21 @@
+{
+  "function": "ProcessSynchronizer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProcessSynchronizer",
+      "line": 30
+    },
+    {
+      "id": 1,
+      "label": "exit:ProcessSynchronizer",
+      "line": 45
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "IVehicleDataBrokerClient",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IVehicleDataBrokerClient",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:IVehicleDataBrokerClient",
+      "line": 87
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

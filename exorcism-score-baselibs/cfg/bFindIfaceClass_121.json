@@ -1,0 +1,68 @@
+{
+  "function": "bFindIfaceClass",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:bFindIfaceClass",
+      "line": 121
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 123
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 126
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 123
+    },
+    {
+      "id": 4,
+      "label": "match/switch",
+      "line": 129
+    },
+    {
+      "id": 5,
+      "label": "switch_exit",
+      "line": 151
+    },
+    {
+      "id": 6,
+      "label": "exit:bFindIfaceClass",
+      "line": 153
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 5,
+      "to": 6
+    }
+  ]
+}

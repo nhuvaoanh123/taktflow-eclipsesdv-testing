@@ -1,0 +1,39 @@
+{
+  "function": "score",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:score",
+      "line": 28
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 54
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 90
+    },
+    {
+      "id": 3,
+      "label": "exit:score",
+      "line": 107
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    }
+  ]
+}

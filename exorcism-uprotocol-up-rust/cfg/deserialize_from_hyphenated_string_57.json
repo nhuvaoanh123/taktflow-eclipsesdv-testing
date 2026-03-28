@@ -1,0 +1,21 @@
+{
+  "function": "deserialize_from_hyphenated_string",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:deserialize_from_hyphenated_string",
+      "line": 57
+    },
+    {
+      "id": 1,
+      "label": "exit:deserialize_from_hyphenated_string",
+      "line": 66
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

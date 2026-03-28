@@ -1,0 +1,66 @@
+{
+  "function": "FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+      "line": 132
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 148
+    },
+    {
+      "id": 2,
+      "label": "return_statement",
+      "line": 151
+    },
+    {
+      "id": 3,
+      "label": "return_statement",
+      "line": 154
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 157
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 160
+    },
+    {
+      "id": 6,
+      "label": "exit:FLATBUFFERS_VTABLE_UNDERLYING_TYPE",
+      "line": 175
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    },
+    {
+      "from": 0,
+      "to": 4
+    },
+    {
+      "from": 0,
+      "to": 5
+    },
+    {
+      "from": 0,
+      "to": 6
+    }
+  ]
+}

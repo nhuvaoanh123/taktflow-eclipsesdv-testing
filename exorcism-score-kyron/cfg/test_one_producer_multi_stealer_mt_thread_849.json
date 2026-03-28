@@ -1,0 +1,21 @@
+{
+  "function": "test_one_producer_multi_stealer_mt_thread",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_one_producer_multi_stealer_mt_thread",
+      "line": 849
+    },
+    {
+      "id": 1,
+      "label": "exit:test_one_producer_multi_stealer_mt_thread",
+      "line": 930
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "element_mut",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:element_mut",
+      "line": 244
+    },
+    {
+      "id": 1,
+      "label": "exit:element_mut",
+      "line": 276
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

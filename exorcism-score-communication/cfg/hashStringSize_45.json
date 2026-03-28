@@ -1,0 +1,21 @@
+{
+  "function": "hashStringSize",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:hashStringSize",
+      "line": 45
+    },
+    {
+      "id": 1,
+      "label": "exit:hashStringSize",
+      "line": 65
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

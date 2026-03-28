@@ -1,0 +1,30 @@
+{
+  "function": "ProxyEventCommon",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ProxyEventCommon",
+      "line": 57
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 95
+    },
+    {
+      "id": 2,
+      "label": "exit:ProxyEventCommon",
+      "line": 102
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

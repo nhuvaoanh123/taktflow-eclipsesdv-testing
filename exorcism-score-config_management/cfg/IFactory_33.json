@@ -1,0 +1,21 @@
+{
+  "function": "IFactory",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:IFactory",
+      "line": 33
+    },
+    {
+      "id": 1,
+      "label": "exit:IFactory",
+      "line": 53
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

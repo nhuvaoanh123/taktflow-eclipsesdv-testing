@@ -1,0 +1,21 @@
+{
+  "function": "get_mapping",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_mapping",
+      "line": 50
+    },
+    {
+      "id": 1,
+      "label": "exit:get_mapping",
+      "line": 80
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

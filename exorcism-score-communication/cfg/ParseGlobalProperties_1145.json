@@ -1,0 +1,72 @@
+{
+  "function": "ParseGlobalProperties",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ParseGlobalProperties",
+      "line": 1145
+    },
+    {
+      "id": 1,
+      "label": "if (...)",
+      "line": 1149
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 1224
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 1149
+    },
+    {
+      "id": 4,
+      "label": "else",
+      "line": 1149
+    },
+    {
+      "id": 5,
+      "label": "return_statement",
+      "line": 1225
+    },
+    {
+      "id": 6,
+      "label": "exit:ParseGlobalProperties",
+      "line": 1226
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "false"
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 2,
+      "to": 6
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "swap",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:swap",
+      "line": 441
+    },
+    {
+      "id": 1,
+      "label": "exit:swap",
+      "line": 447
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

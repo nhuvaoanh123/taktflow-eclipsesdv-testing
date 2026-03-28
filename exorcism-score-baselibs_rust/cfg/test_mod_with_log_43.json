@@ -1,0 +1,21 @@
+{
+  "function": "test_mod_with_log",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_mod_with_log",
+      "line": 43
+    },
+    {
+      "id": 1,
+      "label": "exit:test_mod_with_log",
+      "line": 71
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

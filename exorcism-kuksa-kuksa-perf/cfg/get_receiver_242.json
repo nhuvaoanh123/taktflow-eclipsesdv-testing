@@ -1,0 +1,21 @@
+{
+  "function": "get_receiver",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:get_receiver",
+      "line": 242
+    },
+    {
+      "id": 1,
+      "label": "exit:get_receiver",
+      "line": 247
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "clear_read_fd",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:clear_read_fd",
+      "line": 300
+    },
+    {
+      "id": 1,
+      "label": "exit:clear_read_fd",
+      "line": 317
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,5190 @@
+[
+  {
+    "function": "main",
+    "file": "build.rs",
+    "line": 3,
+    "calls": [
+      "build_server",
+      "env::var",
+      "build_client",
+      "println",
+      "file_descriptor_set_path",
+      "Ok",
+      "tonic_build::configure",
+      "join",
+      "PathBuf::from",
+      "compile"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "service_discovery/core/src/main.rs",
+    "line": 30,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "init",
+      "Ok",
+      "Arc::new",
+      "add_service",
+      "with_default_directive",
+      "ServiceRegistryServer::new",
+      "info",
+      "finish",
+      "tracing_subscriber::fmt",
+      "service_registry_impl::ServiceRegistryImpl::new",
+      "into",
+      "with_env_filter",
+      "serve",
+      "debug",
+      "RwLock::new",
+      "EnvFilter::builder",
+      "from_env_lossy",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "register",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 44,
+    "calls": [
+      "Err",
+      "into_inner",
+      "clone",
+      "format",
+      "Status::invalid_argument",
+      "write",
+      "get",
+      "insert",
+      "Ok",
+      "ok_or_else",
+      "warn",
+      "Response::new",
+      "info",
+      "Status::already_exists"
+    ]
+  },
+  {
+    "function": "unregister",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 83,
+    "calls": [
+      "Err",
+      "into_inner",
+      "format",
+      "write",
+      "Ok",
+      "warn",
+      "Status::not_found",
+      "Response::new",
+      "info",
+      "remove"
+    ]
+  },
+  {
+    "function": "discover_by_namespace",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 117,
+    "calls": [
+      "into_inner",
+      "clone",
+      "iter",
+      "then",
+      "read",
+      "filter_map",
+      "Ok",
+      "Response::new",
+      "collect"
+    ]
+  },
+  {
+    "function": "discover",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 142,
+    "calls": [
+      "Err",
+      "into_inner",
+      "clone",
+      "format",
+      "read",
+      "Ok",
+      "warn",
+      "Status::not_found",
+      "Response::new",
+      "get",
+      "Some",
+      "info",
+      "cloned"
+    ]
+  },
+  {
+    "function": "list",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 184,
+    "calls": [
+      "read",
+      "Ok",
+      "Response::new",
+      "values",
+      "cloned",
+      "collect"
+    ]
+  },
+  {
+    "function": "has_service",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 207,
+    "calls": [
+      "read",
+      "contains_key"
+    ]
+  },
+  {
+    "function": "register_test",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 219,
+    "calls": [
+      "clone",
+      "assert",
+      "register",
+      "tonic::Request::new",
+      "Arc::new",
+      "assert_eq",
+      "RwLock::new",
+      "String::from",
+      "Some",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "unregister_test",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 260,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "format",
+      "write",
+      "tonic::Request::new",
+      "unregister",
+      "insert",
+      "err",
+      "Arc::new",
+      "Status::not_found",
+      "assert_eq",
+      "RwLock::new",
+      "String::from",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "discover_test",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 309,
+    "calls": [
+      "clone",
+      "assert",
+      "discover_by_namespace",
+      "write",
+      "tonic::Request::new",
+      "insert",
+      "Arc::new",
+      "assert_eq",
+      "RwLock::new",
+      "discover",
+      "String::from",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "list_test",
+    "file": "service_discovery/core/src/service_registry_impl.rs",
+    "line": 368,
+    "calls": [
+      "clone",
+      "into_inner",
+      "list",
+      "assert",
+      "unwrap",
+      "write",
+      "tonic::Request::new",
+      "insert",
+      "Arc::new",
+      "assert_eq",
+      "RwLock::new",
+      "String::from",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "service_discovery/samples/simple-discovery/consumer/src/main.rs",
+    "line": 31,
+    "calls": [
+      "Err",
+      "Request::new",
+      "into_inner",
+      "init",
+      "finish",
+      "say_hello",
+      "into",
+      "with_env_filter",
+      "Ok",
+      "with_default_directive",
+      "HelloWorldClient::connect",
+      "ServiceRegistryClient::connect",
+      "discover",
+      "String::from",
+      "info",
+      "EnvFilter::builder",
+      "tracing_subscriber::fmt",
+      "from_env_lossy"
+    ]
+  },
+  {
+    "function": "say_hello",
+    "file": "service_discovery/samples/simple-discovery/provider/src/hello_world_impl.rs",
+    "line": 26,
+    "calls": [
+      "into_inner",
+      "clone",
+      "format",
+      "Ok",
+      "Response::new",
+      "info"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "service_discovery/samples/simple-discovery/provider/src/main.rs",
+    "line": 39,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "init",
+      "Ok",
+      "add_service",
+      "Url::parse",
+      "HelloWorldImpl::default",
+      "to_string",
+      "clone",
+      "Request::new",
+      "into_inner",
+      "register",
+      "HelloWorldServer::new",
+      "with_default_directive",
+      "info",
+      "to_owned",
+      "finish",
+      "Some",
+      "tracing_subscriber::fmt",
+      "into",
+      "with_env_filter",
+      "serve",
+      "ServiceRegistryClient::connect",
+      "format",
+      "EnvFilter::builder",
+      "from_env_lossy"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "service_discovery/samples/proto_build/build.rs",
+    "line": 5,
+    "calls": [
+      "tonic_build::compile_protos",
+      "Ok"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "service_discovery/proto_build/build.rs",
+    "line": 5,
+    "calls": [
+      "tonic_build::compile_protos",
+      "Ok"
+    ]
+  },
+  {
+    "function": "map_err_with",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 26,
+    "calls": [
+      "Box::new",
+      "into",
+      "Error::from_error",
+      "map_err"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 35,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "from_error",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 39,
+    "calls": [
+      "Some",
+      "into"
+    ]
+  },
+  {
+    "function": "message",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 52,
+    "calls": [
+      "write"
+    ]
+  },
+  {
+    "function": "source",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 58,
+    "calls": [
+      "map",
+      "as_ref"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 64,
+    "calls": [
+      "to_string",
+      "Box::new",
+      "kind",
+      "Error::from_error"
+    ]
+  },
+  {
+    "function": "can_display_error",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 74,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "can_debug_error",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 79,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "can_debug_error_with_source",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 87,
+    "calls": [
+      "get_io_error",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "can_display_error_with_source",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 103,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "can_get_source",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 120,
+    "calls": [
+      "get_io_error",
+      "Box::new",
+      "Error::from_error",
+      "assert_eq",
+      "std::error::Error::source"
+    ]
+  },
+  {
+    "function": "map_expect",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 132,
+    "calls": [
+      "Err",
+      "get_io_error",
+      "assert_eq",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "get_io_error",
+    "file": "intent_brokering/common/src/error.rs",
+    "line": 148,
+    "calls": [
+      "std::io::Error::new"
+    ]
+  },
+  {
+    "function": "ok",
+    "file": "intent_brokering/common/src/ext.rs",
+    "line": 11,
+    "calls": [
+      "map",
+      "map_or",
+      "Ok"
+    ]
+  },
+  {
+    "function": "ok_with_none_returns_ok_of_some",
+    "file": "intent_brokering/common/src/ext.rs",
+    "line": 26,
+    "calls": [
+      "assert",
+      "ok",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "ok_with_some_ok_returns_ok_of_some",
+    "file": "intent_brokering/common/src/ext.rs",
+    "line": 34,
+    "calls": [
+      "assert",
+      "Ok",
+      "assert_eq",
+      "Some",
+      "ok"
+    ]
+  },
+  {
+    "function": "ok_with_some_err_returns_err_of_some",
+    "file": "intent_brokering/common/src/ext.rs",
+    "line": 42,
+    "calls": [
+      "Err",
+      "assert",
+      "assert_eq",
+      "Some",
+      "ok"
+    ]
+  },
+  {
+    "function": "ctrl_c_cancellation",
+    "file": "intent_brokering/common/src/shutdown.rs",
+    "line": 13,
+    "calls": [
+      "ctrl_c",
+      "spawn",
+      "child_token",
+      "cancel",
+      "error",
+      "CancellationToken::new"
+    ]
+  },
+  {
+    "function": "serve_with_cancellation",
+    "file": "intent_brokering/common/src/shutdown.rs",
+    "line": 41,
+    "calls": [
+      "serve_with_shutdown",
+      "cancelled",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "serve_with_ctrl_c_shutdown",
+    "file": "intent_brokering/common/src/shutdown.rs",
+    "line": 51,
+    "calls": [
+      "serve_with_cancellation",
+      "ctrl_c_cancellation"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 28,
+    "calls": [
+      "Self",
+      "EventSubSystem::new",
+      "Arc::new"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 34,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "serve_subscriptions",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 40,
+    "calls": [
+      "to_string",
+      "clone",
+      "spawn",
+      "event_id",
+      "into",
+      "into_iter",
+      "into_value",
+      "serve",
+      "Ok",
+      "map",
+      "Status::failed_precondition",
+      "map_err",
+      "Some",
+      "register_subscriptions",
+      "SystemTime::now"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 43,
+    "calls": []
+  },
+  {
+    "function": "open",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 76,
+    "calls": [
+      "to_string",
+      "clone",
+      "unwrap",
+      "Uuid::new_v4",
+      "read_events",
+      "into",
+      "insert",
+      "Ok",
+      "Response::new",
+      "metadata_mut",
+      "try_into"
+    ]
+  },
+  {
+    "function": "deref",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 93,
+    "calls": [
+      "as_ref"
+    ]
+  },
+  {
+    "function": "open_should_set_channel_id",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 112,
+    "calls": [
+      "unwrap",
+      "Request::new",
+      "assert",
+      "open",
+      "setup"
+    ]
+  },
+  {
+    "function": "serve_subscriptions_should_serve_subscription_for_event",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 124,
+    "calls": [
+      "timeout",
+      "get",
+      "setup",
+      "Request::new",
+      "into_inner",
+      "serve_subscriptions",
+      "Duration::from_millis",
+      "open",
+      "response\r\n            .into_inner",
+      "is_ok",
+      "assert_eq",
+      "publish",
+      "vec",
+      "unwrap",
+      "take_while",
+      "metadata",
+      "to_str",
+      "ValueEnum::Null",
+      "into",
+      "into_iter",
+      "map",
+      "zip"
+    ]
+  },
+  {
+    "function": "serve_subscriptions_should_error_when_no_client_active",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 166,
+    "calls": [
+      "ValueEnum::Null",
+      "into",
+      "unwrap_err",
+      "assert_eq",
+      "serve_subscriptions",
+      "setup",
+      "vec"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "intent_brokering/common/src/streaming_ess.rs",
+    "line": 182,
+    "calls": [
+      "Default::default"
+    ]
+  },
+  {
+    "function": "handle",
+    "file": "intent_brokering/common/src/tokio_runtime_fork.rs",
+    "line": 14,
+    "calls": []
+  },
+  {
+    "function": "drop",
+    "file": "intent_brokering/common/src/tokio_runtime_fork.rs",
+    "line": 20,
+    "calls": [
+      "unwrap",
+      "join",
+      "cancel",
+      "std::mem::take",
+      "expect"
+    ]
+  },
+  {
+    "function": "fork",
+    "file": "intent_brokering/common/src/tokio_runtime_fork.rs",
+    "line": 34,
+    "calls": [
+      "clone",
+      "build",
+      "Ok",
+      "handle",
+      "block_on",
+      "Some",
+      "CancellationToken::new",
+      "cancelled",
+      "std::thread::spawn"
+    ]
+  },
+  {
+    "function": "regex_pattern_from_query",
+    "file": "intent_brokering/common/src/query.rs",
+    "line": 7,
+    "calls": [
+      "format"
+    ]
+  },
+  {
+    "function": "regex_from_query",
+    "file": "intent_brokering/common/src/query.rs",
+    "line": 11,
+    "calls": [
+      "unwrap",
+      "regex_pattern_from_query",
+      "Regex::new"
+    ]
+  },
+  {
+    "function": "test_regex_query_conversion",
+    "file": "intent_brokering/common/src/query.rs",
+    "line": 20,
+    "calls": [
+      "regex_from_query",
+      "assert_eq",
+      "test"
+    ]
+  },
+  {
+    "function": "test",
+    "file": "intent_brokering/common/src/query.rs",
+    "line": 33,
+    "calls": [
+      "regex_from_query",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "env",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 9,
+    "calls": [
+      "unwrap",
+      "T::from_str",
+      "to_str",
+      "map",
+      "var_os"
+    ]
+  },
+  {
+    "function": "try_env",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 23,
+    "calls": [
+      "unwrap",
+      "T::from_str",
+      "to_str",
+      "map",
+      "var_os"
+    ]
+  },
+  {
+    "function": "var_os",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 46,
+    "calls": [
+      "Some",
+      "into",
+      "format"
+    ]
+  },
+  {
+    "function": "env_variable_is_found",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 55,
+    "calls": [
+      "env",
+      "unwrap",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "env_variable_not_set",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 61,
+    "calls": [
+      "env",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "try_env_variable_is_found",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 67,
+    "calls": [
+      "unwrap",
+      "try_env",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "try_env_variable_not_set",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 73,
+    "calls": [
+      "try_env",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "try_env_variable_is_expected_type",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 79,
+    "calls": [
+      "unwrap",
+      "try_env::<u32>",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "try_env_variable_is_not_expected_type",
+    "file": "intent_brokering/common/src/config.rs",
+    "line": 85,
+    "calls": [
+      "unwrap",
+      "try_env::<u32>",
+      "unwrap_err",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "intent_brokering/src/main.rs",
+    "line": 30,
+    "calls": [
+      "Server::builder",
+      "parse",
+      "init",
+      "tracing::info",
+      "tonic_reflection::server::Builder::configure",
+      "tracing::debug",
+      "Ok",
+      "Arc::new",
+      "add_service",
+      "Composite::new",
+      "try_env::<u64>",
+      "ChannelServiceServer::new",
+      "CancellationToken::new",
+      "IntentBrokeringServiceServer::from_arc",
+      "IntentBroker::new",
+      "clone",
+      "set_entry_ttl_bounded",
+      "ctrl_c_cancellation",
+      "IntentBrokeringServer::new",
+      "with_default_directive",
+      "cancel",
+      "StreamingEss::new",
+      "unwrap_or_default",
+      "finish",
+      "tokio::join",
+      "build",
+      "registry::Config::default",
+      "child_token",
+      "Registry::new",
+      "tracing_subscriber::fmt",
+      "ok",
+      "unwrap",
+      "into",
+      "with_env_filter",
+      "register_encoded_file_descriptor_set",
+      "map",
+      "registry_prune_loop",
+      "serve_with_cancellation",
+      "format",
+      "EnvFilter::builder",
+      "from_env_lossy",
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "registry_prune_loop",
+    "file": "intent_brokering/src/main.rs",
+    "line": 110,
+    "calls": [
+      "Instant::now",
+      "prune",
+      "select",
+      "registry_do",
+      "tracing::debug"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 36,
+    "calls": [
+      "HashMap::from",
+      "Binding::SystemDiscover",
+      "Binding::SystemSubscribe",
+      "IntentConfiguration::new"
+    ]
+  },
+  {
+    "function": "resolve",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 57,
+    "calls": [
+      "clone",
+      "RuntimeBinding::Remote",
+      "RuntimeBinding::SystemDiscover",
+      "RuntimeBinding::SystemInspect",
+      "map",
+      "keys",
+      "Box::new",
+      "RuntimeBinding::Fallback",
+      "get",
+      "RuntimeBinding::SystemSubscribe",
+      "cloned",
+      "collect",
+      "binding_into_runtime_binding"
+    ]
+  },
+  {
+    "function": "binding_into_runtime_binding",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 58,
+    "calls": [
+      "clone",
+      "RuntimeBinding::Remote",
+      "RuntimeBinding::SystemDiscover",
+      "RuntimeBinding::SystemInspect",
+      "keys",
+      "Box::new",
+      "RuntimeBinding::Fallback",
+      "RuntimeBinding::SystemSubscribe",
+      "cloned",
+      "collect",
+      "binding_into_runtime_binding"
+    ]
+  },
+  {
+    "function": "refresh",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 81,
+    "calls": [
+      "clone",
+      "url",
+      "Provider::new",
+      "insert",
+      "locality",
+      "Binding::Fallback",
+      "Box::new",
+      "Some",
+      "remove",
+      "Binding::Remote",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 143,
+    "calls": [
+      "Self",
+      "RwLock::new",
+      "Arc::new",
+      "IntentBinder::new"
+    ]
+  },
+  {
+    "function": "resolve",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 147,
+    "calls": [
+      "read",
+      "unwrap",
+      "resolve"
+    ]
+  },
+  {
+    "function": "on_change",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 153,
+    "calls": [
+      "unwrap",
+      "write",
+      "refresh"
+    ]
+  },
+  {
+    "function": "when_empty_does_not_resolve",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 179,
+    "calls": [
+      "IntentBroker::new",
+      "parse",
+      "assert",
+      "unwrap",
+      "StreamingEss::new"
+    ]
+  },
+  {
+    "function": "when_broker_contains_different_intent_does_not_resolve",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 189,
+    "calls": [
+      "Setup::new",
+      "assert",
+      "build"
+    ]
+  },
+  {
+    "function": "when_modifying_with_empty_services_does_no_longer_resolve_intent",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 198,
+    "calls": [
+      "clone",
+      "assert",
+      "into_iter",
+      "build",
+      "Setup::new",
+      "on_change",
+      "HashSet::new",
+      "Change::Modify"
+    ]
+  },
+  {
+    "function": "when_removing_does_no_longer_resolve_intent",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 211,
+    "calls": [
+      "clone",
+      "assert",
+      "into_iter",
+      "Change::Remove",
+      "build",
+      "Setup::new",
+      "on_change"
+    ]
+  },
+  {
+    "function": "when_resolve_if_services_are_cloud_and_local_returns_fallback",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 224,
+    "calls": [
+      "clone",
+      "unwrap",
+      "service_name",
+      "assert_remote_fallback_binding",
+      "build",
+      "resolve",
+      "assert_eq",
+      "Setup::new",
+      "Setup::combine",
+      "execution_locality"
+    ]
+  },
+  {
+    "function": "when_resolve_binding_if_multi_cloud_and_multi_local_returns_cloud_and_local_fallback",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 246,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "url",
+      "name",
+      "build",
+      "resolve",
+      "map",
+      "ServiceConfigurationBuilder::new",
+      "format",
+      "assert_remote_fallback_binding",
+      "Setup::combine",
+      "execution_locality",
+      "IntentConfigurationBuilder::new"
+    ]
+  },
+  {
+    "function": "when_resolve_with_single_locality_is_remote",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 277,
+    "calls": [
+      "clone",
+      "unwrap",
+      "into_iter",
+      "build",
+      "resolve",
+      "map",
+      "assert_grpc_binding",
+      "test",
+      "Setup::new",
+      "Setup::combine",
+      "execution_locality",
+      "IntentConfigurationBuilder::new"
+    ]
+  },
+  {
+    "function": "test",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 283,
+    "calls": [
+      "clone",
+      "unwrap",
+      "into_iter",
+      "build",
+      "resolve",
+      "map",
+      "assert_grpc_binding",
+      "Setup::new",
+      "Setup::combine",
+      "execution_locality",
+      "IntentConfigurationBuilder::new"
+    ]
+  },
+  {
+    "function": "resolve_system_registry_succeeds",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 303,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "build",
+      "IntentConfiguration::new",
+      "resolve",
+      "panic",
+      "Setup::new",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "resolve_succeeds_for_system_discover",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 322,
+    "calls": [
+      "unwrap",
+      "build",
+      "resolve",
+      "IntentConfiguration::new",
+      "panic",
+      "assert_eq",
+      "Setup::new",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "resolve_succeeds_for_system_subscribe",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 338,
+    "calls": [
+      "unwrap",
+      "build",
+      "resolve",
+      "IntentConfiguration::new",
+      "panic",
+      "Setup::new",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "when_refreshing_does_not_depend_on_previous_state",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 354,
+    "calls": [
+      "clone",
+      "unwrap",
+      "url",
+      "HashSet::from",
+      "into_iter",
+      "build",
+      "resolve",
+      "assert_grpc_binding",
+      "assert_eq",
+      "Setup::new",
+      "on_change",
+      "Change::Modify"
+    ]
+  },
+  {
+    "function": "assert_grpc_binding",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 369,
+    "calls": [
+      "assert",
+      "panic"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 371,
+    "calls": []
+  },
+  {
+    "function": "assert_remote_fallback_binding",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 380,
+    "calls": [
+      "assert_primary",
+      "as_ref",
+      "panic",
+      "assert_secondary"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 382,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 383,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 414,
+    "calls": [
+      "IntentConfigurationBuilder::new",
+      "ServiceConfigurationBuilder::new",
+      "build"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 420,
+    "calls": [
+      "IntentBroker::new",
+      "parse",
+      "unwrap",
+      "Change::Add",
+      "HashSet::from",
+      "into_iter",
+      "build",
+      "on_change",
+      "StreamingEss::new"
+    ]
+  },
+  {
+    "function": "execution_locality",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 431,
+    "calls": [
+      "execution_locality"
+    ]
+  },
+  {
+    "function": "service_name",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 436,
+    "calls": [
+      "name"
+    ]
+  },
+  {
+    "function": "combine",
+    "file": "intent_brokering/src/intent_broker.rs",
+    "line": 441,
+    "calls": [
+      "IntentBroker::new",
+      "parse",
+      "unwrap",
+      "clone",
+      "fold",
+      "Change::Add",
+      "entry",
+      "into_iter",
+      "or_insert_with",
+      "build",
+      "map",
+      "on_change",
+      "StreamingEss::new",
+      "push",
+      "collect",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "group",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 34,
+    "calls": [
+      "entry",
+      "or_insert_with",
+      "push",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "execute",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 60,
+    "calls": [
+      "Ok",
+      "FulfillmentEnum::Inspect",
+      "connect",
+      "clone",
+      "to_string",
+      "HashMap::from",
+      "serve_subscriptions",
+      "FulfillmentEnum::Subscribe",
+      "group",
+      "to_owned",
+      "ValueEnum::List",
+      "filter",
+      "into_namespaced_intent",
+      "panic",
+      "Some",
+      "Status::unknown",
+      "FulfillmentEnum::Discover",
+      "vec",
+      "fulfill",
+      "execute",
+      "map_err",
+      "namespace",
+      "ValueEnum::Null",
+      "into_iter",
+      "map",
+      "ValueEnum::String",
+      "is_match",
+      "format",
+      "regex_from_query",
+      "fulfill_response",
+      "collect"
+    ]
+  },
+  {
+    "function": "fulfill_response",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 61,
+    "calls": [
+      "Some",
+      "Ok"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 178,
+    "calls": []
+  },
+  {
+    "function": "from_result",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 182,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "execute",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 186,
+    "calls": [
+      "clone",
+      "FulfillmentEnum::Invoke",
+      "Status::new",
+      "ValueEnum::Int32",
+      "map",
+      "assert_eq",
+      "map_err",
+      "Some"
+    ]
+  },
+  {
+    "function": "parse_result",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 202,
+    "calls": [
+      "Err",
+      "panic",
+      "code",
+      "Ok"
+    ]
+  },
+  {
+    "function": "execute_with_empty_intent",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 216,
+    "calls": [
+      "map",
+      "TestBinding::parse_result",
+      "unwrap",
+      "execute"
+    ]
+  },
+  {
+    "function": "fallback_binding_when_first_succeeds_should_return_response",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 223,
+    "calls": [
+      "Ok",
+      "TestBinding::from_result",
+      "Box::new",
+      "RuntimeBinding::Fallback",
+      "assert_eq",
+      "RuntimeBinding::Test",
+      "execute_with_empty_intent"
+    ]
+  },
+  {
+    "function": "fallback_binding_when_first_fails_returns_second_response",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 237,
+    "calls": [
+      "Err",
+      "Ok",
+      "TestBinding::from_result",
+      "Box::new",
+      "RuntimeBinding::Fallback",
+      "assert_eq",
+      "RuntimeBinding::Test",
+      "execute_with_empty_intent"
+    ]
+  },
+  {
+    "function": "fallback_binding_when_both_fail_returns_second_error",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 252,
+    "calls": [
+      "Err",
+      "TestBinding::from_result",
+      "Box::new",
+      "RuntimeBinding::Fallback",
+      "assert_eq",
+      "RuntimeBinding::Test",
+      "execute_with_empty_intent"
+    ]
+  },
+  {
+    "function": "system_inspect_binding_fails_with_non_supported_intent",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 267,
+    "calls": [
+      "execute_with_empty_intent",
+      "RuntimeBinding::SystemInspect",
+      "vec"
+    ]
+  },
+  {
+    "function": "system_inspect_binding_succeeds",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 272,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "iter",
+      "assert_group",
+      "into_iter",
+      "contains",
+      "IntentConfiguration::new",
+      "map",
+      "position",
+      "assert_group_is_none",
+      "panic",
+      "execute_system_inspect",
+      "test",
+      "as_ref",
+      "collect",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 282,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "iter",
+      "assert_group",
+      "into_iter",
+      "contains",
+      "IntentConfiguration::new",
+      "to_owned",
+      "position",
+      "map",
+      "panic",
+      "assert_group_is_none",
+      "execute_system_inspect",
+      "as_ref",
+      "collect"
+    ]
+  },
+  {
+    "function": "system_discover_binding_succeeds",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 349,
+    "calls": [
+      "unwrap",
+      "parse",
+      "clone",
+      "execute",
+      "assert_eq",
+      "RuntimeBinding::<GrpcProvider>::SystemDiscover"
+    ]
+  },
+  {
+    "function": "system_subscribe_binding_fails_with_non_supported_intent",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 379,
+    "calls": [
+      "RuntimeBinding::SystemSubscribe",
+      "StreamingEss::new",
+      "execute_with_empty_intent"
+    ]
+  },
+  {
+    "function": "system_subscribe_binding_succeeds",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 384,
+    "calls": [
+      "unwrap",
+      "Request::new",
+      "metadata",
+      "open",
+      "into_inner",
+      "to_str",
+      "execute",
+      "RuntimeBinding::<GrpcProvider>::SystemSubscribe",
+      "clone",
+      "into",
+      "assert_eq",
+      "collect_when_stable",
+      "get",
+      "Some",
+      "publish",
+      "IntentEnum::Subscribe",
+      "StreamingEss::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "execute_system_inspect",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 422,
+    "calls": [
+      "unwrap",
+      "execute",
+      "panic",
+      "RuntimeBinding::<GrpcProvider>::SystemInspect",
+      "Some",
+      "IntentEnum::Inspect",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "collect_when_stable",
+    "file": "intent_brokering/src/execution.rs",
+    "line": 449,
+    "calls": [
+      "take_while",
+      "unwrap",
+      "is_ok",
+      "timeout",
+      "map",
+      "Duration::from_millis",
+      "collect"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 43,
+    "calls": [
+      "Arc::new",
+      "RwLock::new"
+    ]
+  },
+  {
+    "function": "registry_do",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 47,
+    "calls": [
+      "unwrap",
+      "write",
+      "f"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "create_configruation_from_registration",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 52,
+    "calls": [
+      "map",
+      "IntentBrokeringServer::<T>::map_intent_value",
+      "IntentConfiguration::new"
+    ]
+  },
+  {
+    "function": "map_intent_value",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 59,
+    "calls": [
+      "Err",
+      "Status::invalid_argument",
+      "Ok"
+    ]
+  },
+  {
+    "function": "map_intent_variant",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 71,
+    "calls": []
+  },
+  {
+    "function": "announce",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 85,
+    "calls": [
+      "into_inner",
+      "unwrap",
+      "Status::new",
+      "write",
+      "tracing::debug",
+      "Ok",
+      "ok_or_else",
+      "Response::new",
+      "Instant::now",
+      "touch",
+      "resolve_service_configuration"
+    ]
+  },
+  {
+    "function": "register",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 105,
+    "calls": [
+      "into_inner",
+      "unwrap",
+      "Status::invalid_argument",
+      "write",
+      "into_iter",
+      "Ok",
+      "ok_or_else",
+      "map",
+      "upsert",
+      "Response::new",
+      "Instant::now",
+      "map_err",
+      "Status::unknown",
+      "resolve_service_configuration",
+      "collect",
+      "message"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 126,
+    "calls": [
+      "Err",
+      "into_inner",
+      "tonic::Response::new",
+      "IntentBrokeringServer::<T>::map_intent_variant",
+      "execute",
+      "Status::invalid_argument",
+      "Ok",
+      "IntentConfiguration::new",
+      "ok_or_else",
+      "resolve",
+      "Status::not_found"
+    ]
+  },
+  {
+    "function": "resolve_service_configuration",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 158,
+    "calls": [
+      "Status::invalid_argument",
+      "ServiceId::new",
+      "ServiceConfiguration::new",
+      "map",
+      "and_then",
+      "into_boxed_str",
+      "Url::parse",
+      "map_err",
+      "map_locality_value"
+    ]
+  },
+  {
+    "function": "map_locality_value",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 176,
+    "calls": [
+      "Err",
+      "Status::invalid_argument",
+      "Ok"
+    ]
+  },
+  {
+    "function": "test_service_announcement",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 203,
+    "calls": [
+      "unwrap",
+      "Request::new",
+      "into_inner",
+      "create_announce_request",
+      "announce",
+      "assert_eq",
+      "setup"
+    ]
+  },
+  {
+    "function": "test_register_service_with_intents",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 212,
+    "calls": [
+      "unwrap",
+      "Request::new",
+      "into_inner",
+      "register",
+      "create_announce_request",
+      "announce",
+      "assert_eq",
+      "create_register_request",
+      "setup"
+    ]
+  },
+  {
+    "function": "test_register_service_twice_doesnt_throw_error",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 223,
+    "calls": [
+      "unwrap",
+      "Request::new",
+      "clone",
+      "register",
+      "create_register_request",
+      "setup"
+    ]
+  },
+  {
+    "function": "test_register_service_twice_with_different_intents",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 231,
+    "calls": [
+      "unwrap",
+      "Request::new",
+      "clone",
+      "create_register_request_with_different_namespace",
+      "register",
+      "assert_eq",
+      "create_register_request",
+      "setup"
+    ]
+  },
+  {
+    "function": "when_registering_unknown_intent_should_return_invalid_argument_error",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 245,
+    "calls": [
+      "Request::new",
+      "register",
+      "assert_eq",
+      "create_register_request",
+      "setup",
+      "vec"
+    ]
+  },
+  {
+    "function": "intent_match_failure_are_caught",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 261,
+    "calls": [
+      "assert"
+    ]
+  },
+  {
+    "function": "test_intent_mappings",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 266,
+    "calls": [
+      "test",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 281,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_intent_proto_mappings",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 297,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_map_locality_value",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 322,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "fulfill_ensures_binding_is_executed",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 335,
+    "calls": [
+      "fulfill",
+      "Request::new",
+      "create_fulfill",
+      "assert_eq",
+      "Some",
+      "setup",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "fulfill_returns_error_if_intent_not_set",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 355,
+    "calls": [
+      "fulfill",
+      "Request::new",
+      "assert_eq",
+      "setup",
+      "to_owned"
+    ]
+  },
+  {
+    "function": "test_map_intent_variant",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 369,
+    "calls": [
+      "Intent::Invoke",
+      "Intent::Inspect",
+      "Intent::Discover",
+      "Intent::Write",
+      "assert_eq",
+      "Intent::Subscribe",
+      "Intent::Read",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "resolve",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 414,
+    "calls": [
+      "unwrap",
+      "TestBinding::new",
+      "Ok",
+      "create_fulfill",
+      "Some",
+      "RuntimeBinding::Test"
+    ]
+  },
+  {
+    "function": "on_change",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 423,
+    "calls": [
+      "todo"
+    ]
+  },
+  {
+    "function": "create_fulfill",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 428,
+    "calls": [
+      "Some",
+      "common::intent::Intent::Invoke",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 437,
+    "calls": [
+      "IntentBroker::new",
+      "parse",
+      "unwrap",
+      "clone",
+      "Default::default",
+      "IntentBrokeringServer::new",
+      "Registry::new",
+      "StreamingEss::new"
+    ]
+  },
+  {
+    "function": "create_announce_request",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 443,
+    "calls": [
+      "Some",
+      "to_string"
+    ]
+  },
+  {
+    "function": "create_register_request",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 454,
+    "calls": [
+      "Some",
+      "to_string",
+      "vec"
+    ]
+  },
+  {
+    "function": "create_register_request_with_different_namespace",
+    "file": "intent_brokering/src/intent_brokering_grpc.rs",
+    "line": 475,
+    "calls": [
+      "Some",
+      "to_string",
+      "vec"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 57,
+    "calls": [
+      "Self"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 61,
+    "calls": [
+      "to_string",
+      "ProviderServiceClient::connect",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 70,
+    "calls": [
+      "fulfill",
+      "Request::new",
+      "into_inner",
+      "map",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 97,
+    "calls": [
+      "T::new",
+      "Mutex::new",
+      "Arc::new"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 103,
+    "calls": [
+      "connect",
+      "clone",
+      "Ok",
+      "lock",
+      "Some"
+    ]
+  },
+  {
+    "function": "reusable_provider_when_already_connected_reuses_provider",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 137,
+    "calls": [
+      "Err",
+      "unwrap",
+      "fetch_add",
+      "parse",
+      "connect",
+      "fulfill",
+      "fulfill_any",
+      "unwrap_err",
+      "Ok",
+      "ReusableProvider::<MockProvider>::new",
+      "Arc::new",
+      "AtomicUsize::new",
+      "assert_eq",
+      "Error::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 145,
+    "calls": []
+  },
+  {
+    "function": "connect",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 149,
+    "calls": [
+      "Arc::new",
+      "AtomicUsize::new",
+      "Ok"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 161,
+    "calls": [
+      "Err",
+      "fetch_add",
+      "Error::new"
+    ]
+  },
+  {
+    "function": "fulfill_any",
+    "file": "intent_brokering/src/connection_provider.rs",
+    "line": 177,
+    "calls": [
+      "fulfill",
+      "unwrap_err"
+    ]
+  },
+  {
+    "function": "on_change",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 31,
+    "calls": [
+      "as_str",
+      "namespace",
+      "into_iter",
+      "filter_map",
+      "changes\r\n            .into_iter",
+      "format",
+      "Some",
+      "publish"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 52,
+    "calls": []
+  },
+  {
+    "function": "on_change",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 58,
+    "calls": [
+      "clone",
+      "on_change"
+    ]
+  },
+  {
+    "function": "entry_ttl",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "set_entry_ttl_bounded",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 76,
+    "calls": [
+      "std::cmp::max"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 82,
+    "calls": [
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 102,
+    "calls": [
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "has_service",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 115,
+    "calls": [
+      "contains_key"
+    ]
+  },
+  {
+    "function": "touch",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 119,
+    "calls": [
+      "get_mut"
+    ]
+  },
+  {
+    "function": "prune_by",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 128,
+    "calls": [
+      "clone",
+      "len",
+      "retain",
+      "is_empty",
+      "contains_key",
+      "ChangeSeries::new",
+      "predicate",
+      "change"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 130,
+    "calls": []
+  },
+  {
+    "function": "prune",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 162,
+    "calls": [
+      "unwrap_or",
+      "prune_by",
+      "duration_since",
+      "observe",
+      "map",
+      "min",
+      "values"
+    ]
+  },
+  {
+    "function": "upsert",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 176,
+    "calls": [
+      "Err",
+      "eq_ignore_ascii_case",
+      "prune_by",
+      "len",
+      "iter",
+      "clone",
+      "as_str",
+      "entry",
+      "or_insert_with",
+      "observe",
+      "any",
+      "insert",
+      "Ok",
+      "as_bytes",
+      "starts_with_ignore_ascii_case",
+      "contains_key",
+      "Error::new",
+      "change"
+    ]
+  },
+  {
+    "function": "starts_with_ignore_ascii_case",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 182,
+    "calls": [
+      "eq_ignore_ascii_case",
+      "as_bytes",
+      "len"
+    ]
+  },
+  {
+    "function": "count_external_intents",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 232,
+    "calls": [
+      "len"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 251,
+    "calls": [
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "change",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 255,
+    "calls": [
+      "panic",
+      "insert",
+      "get"
+    ]
+  },
+  {
+    "function": "observe",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 273,
+    "calls": [
+      "Change::Add",
+      "iter",
+      "len",
+      "Change::Remove",
+      "map",
+      "on_change",
+      "Change::Modify"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 292,
+    "calls": [
+      "Self",
+      "into"
+    ]
+  },
+  {
+    "function": "name",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 296,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "version",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 300,
+    "calls": [
+      "clone"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 313,
+    "calls": []
+  },
+  {
+    "function": "locality",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 317,
+    "calls": []
+  },
+  {
+    "function": "url",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 321,
+    "calls": []
+  },
+  {
+    "function": "id",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 325,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 343,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "into_namespaced_intent",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 347,
+    "calls": []
+  },
+  {
+    "function": "namespace",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 351,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 367,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "now",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 401,
+    "calls": [
+      "Instant::now"
+    ]
+  },
+  {
+    "function": "default_config",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 406,
+    "calls": [
+      "Default::default",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "config_set_entry_ttl_sets_new_value",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 413,
+    "calls": [
+      "Default::default",
+      "set_entry_ttl_bounded",
+      "entry_ttl",
+      "assert_eq",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "config_set_entry_ttl_sets_min_allowed_if_new_value_is_too_small",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 423,
+    "calls": [
+      "Default::default",
+      "set_entry_ttl_bounded",
+      "Duration::from_nanos",
+      "entry_ttl",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "when_upserting_contains_service",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 433,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "create_registry",
+      "now",
+      "build",
+      "upsert",
+      "ServiceConfigurationBuilder::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_upserting_empty_caches_service",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 447,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "create_registry",
+      "now",
+      "build",
+      "upsert",
+      "ServiceConfigurationBuilder::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_upserting_refreshes_broker_with_updated_service_configurations",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 461,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "ServiceConfigurationBuilder::with_nonce",
+      "now",
+      "build",
+      "upsert",
+      "assert_modified",
+      "Setup::new",
+      "assert_number_of_changes"
+    ]
+  },
+  {
+    "function": "when_upserting_with_different_url_prunes_old_instance_and_refreshes_broker",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 479,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "url",
+      "now",
+      "build",
+      "upsert",
+      "assert_modified",
+      "assert_eq",
+      "Setup::new",
+      "assert_number_of_changes"
+    ]
+  },
+  {
+    "function": "when_upserting_with_different_versions_should_be_treated_as_different_services",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 502,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "now",
+      "build",
+      "upsert",
+      "version",
+      "assert_modified",
+      "Setup::new"
+    ]
+  },
+  {
+    "function": "when_service_reregisters_refreshes_all_affected_registrations_in_broker",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 522,
+    "calls": [
+      "clone",
+      "unwrap",
+      "assert",
+      "url",
+      "clear",
+      "assert_added",
+      "ServiceConfigurationBuilder::with_nonce",
+      "create_registry",
+      "now",
+      "build",
+      "upsert",
+      "IntentConfigurationBuilder::with_nonce",
+      "assert_modified",
+      "assert_eq",
+      "assert_number_of_changes",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_upserting_same_service_with_new_intents_prunes_old_intent",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 563,
+    "calls": [
+      "clone",
+      "unwrap",
+      "now",
+      "build",
+      "IntentConfiguration::new",
+      "upsert",
+      "assert_removed",
+      "Setup::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_upserting_same_intent_twice_is_idempotent",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 578,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "assert_added",
+      "create_registry",
+      "now",
+      "build",
+      "upsert",
+      "ServiceConfigurationBuilder::new",
+      "assert_eq",
+      "IntentConfigurationBuilder::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_upserting_system_binding_returns_error",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 596,
+    "calls": [
+      "assert",
+      "namespace",
+      "create_registry",
+      "now",
+      "build",
+      "upsert",
+      "ServiceConfigurationBuilder::new",
+      "test",
+      "IntentConfigurationBuilder::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "test",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 605,
+    "calls": [
+      "assert",
+      "namespace",
+      "create_registry",
+      "now",
+      "build",
+      "upsert",
+      "ServiceConfigurationBuilder::new",
+      "IntentConfigurationBuilder::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "prune_schedule",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 625,
+    "calls": [
+      "unwrap",
+      "clone",
+      "create_registry",
+      "into_iter",
+      "now",
+      "build",
+      "Duration::from_secs",
+      "map",
+      "upsert",
+      "zip",
+      "prune",
+      "assert_eq",
+      "ServiceConfigurationBuilder::dispense",
+      "IntentConfigurationBuilder::dispense",
+      "vec"
+    ]
+  },
+  {
+    "function": "prune_removes_expired_services",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 657,
+    "calls": [
+      "unwrap",
+      "clone",
+      "clear",
+      "create_registry",
+      "assert_number_of_changes",
+      "into_iter",
+      "now",
+      "build",
+      "upsert",
+      "assert_removed",
+      "next",
+      "vec",
+      "prune",
+      "assert_eq",
+      "ServiceConfigurationBuilder::dispense",
+      "IntentConfigurationBuilder::dispense",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "touch_returns_false_if_service_is_unregistered",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 719,
+    "calls": [
+      "assert",
+      "create_registry",
+      "now",
+      "build",
+      "ServiceConfigurationBuilder::new",
+      "touch"
+    ]
+  },
+  {
+    "function": "touch_updates_timestamp",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 732,
+    "calls": [
+      "unwrap",
+      "clone",
+      "assert",
+      "create_registry",
+      "now",
+      "build",
+      "Duration::from_secs",
+      "upsert",
+      "ServiceConfigurationBuilder::new",
+      "prune",
+      "touch",
+      "IntentConfigurationBuilder::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_create_new_service_configuration",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 755,
+    "calls": [
+      "unwrap",
+      "parse",
+      "ServiceId::new",
+      "ServiceConfiguration::new",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_create_new_intent_configuration",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 768,
+    "calls": [
+      "to_string",
+      "assert_eq",
+      "IntentConfiguration::new"
+    ]
+  },
+  {
+    "function": "service_id_returns_name_and_version",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 775,
+    "calls": [
+      "ServiceId::new",
+      "as_str",
+      "to_owned",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "intent_kind_display_succeeds",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 787,
+    "calls": [
+      "assert_eq",
+      "test"
+    ]
+  },
+  {
+    "function": "test",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 808,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "composite_observes_both_inner_observers",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 814,
+    "calls": [
+      "assert",
+      "Default::default",
+      "into_iter",
+      "Composite::new",
+      "fetch_or",
+      "on_change"
+    ]
+  },
+  {
+    "function": "on_change",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 821,
+    "calls": [
+      "fetch_or"
+    ]
+  },
+  {
+    "function": "on_change_notifies_when_namespace_change_detected",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 840,
+    "calls": [
+      "intent",
+      "Change::Remove",
+      "changes.into_iter",
+      "HashSet::new",
+      "Value::Null",
+      "IntentConfigurationBuilder::with_nonce",
+      "test",
+      "serve_subscriptions",
+      "StreamingEss::new",
+      "Change::Add",
+      "read_events",
+      "build",
+      "namespace_event",
+      "sort",
+      "assert_eq",
+      "on_change",
+      "Change::Modify",
+      "vec",
+      "unwrap",
+      "namespace",
+      "into",
+      "into_iter",
+      "stream\r\n                .collect_when_stable",
+      "map",
+      "collect_when_stable",
+      "format",
+      "expected_events\r\n                .into_iter"
+    ]
+  },
+  {
+    "function": "intent",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 845,
+    "calls": [
+      "IntentConfigurationBuilder::with_nonce",
+      "build"
+    ]
+  },
+  {
+    "function": "test",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 877,
+    "calls": [
+      "changes.into_iter",
+      "Value::Null",
+      "IntentConfigurationBuilder::with_nonce",
+      "serve_subscriptions",
+      "StreamingEss::new",
+      "read_events",
+      "build",
+      "namespace_event",
+      "sort",
+      "assert_eq",
+      "on_change",
+      "vec",
+      "unwrap",
+      "namespace",
+      "into",
+      "into_iter",
+      "stream\r\n                .collect_when_stable",
+      "map",
+      "collect_when_stable",
+      "format",
+      "expected_events\r\n                .into_iter"
+    ]
+  },
+  {
+    "function": "namespace_event",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 881,
+    "calls": [
+      "format"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 942,
+    "calls": [
+      "Vec::new",
+      "Mutex::new"
+    ]
+  },
+  {
+    "function": "clear",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 946,
+    "calls": [
+      "Vec::new",
+      "Mutex::new"
+    ]
+  },
+  {
+    "function": "assert_modified",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 950,
+    "calls": [
+      "clone",
+      "assert",
+      "unwrap_or_else",
+      "filter_map_change",
+      "panic",
+      "Some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 953,
+    "calls": []
+  },
+  {
+    "function": "assert_added",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 967,
+    "calls": [
+      "clone",
+      "assert",
+      "unwrap_or_else",
+      "filter_map_change",
+      "panic",
+      "Some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 970,
+    "calls": []
+  },
+  {
+    "function": "assert_removed",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 982,
+    "calls": [
+      "Some",
+      "unwrap_or_else",
+      "filter_map_change",
+      "panic"
+    ]
+  },
+  {
+    "function": "filter_map_change",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 990,
+    "calls": [
+      "unwrap",
+      "find_map",
+      "iter",
+      "flatten",
+      "filter_map",
+      "lock"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 993,
+    "calls": []
+  },
+  {
+    "function": "is_empty",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1010,
+    "calls": [
+      "unwrap",
+      "lock",
+      "is_empty"
+    ]
+  },
+  {
+    "function": "assert_number_of_changes",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1014,
+    "calls": [
+      "unwrap",
+      "iter",
+      "zip",
+      "lock",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "on_change",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1025,
+    "calls": [
+      "ChangeSnapshot::Add",
+      "clone",
+      "unwrap",
+      "iter",
+      "ChangeSnapshot::Remove",
+      "into_iter",
+      "map",
+      "lock",
+      "ChangeSnapshot::Modify",
+      "cloned",
+      "push",
+      "collect"
+    ]
+  },
+  {
+    "function": "create_registry",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1043,
+    "calls": [
+      "Registry::new",
+      "Default::default",
+      "MockBroker::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1055,
+    "calls": [
+      "ServiceConfigurationBuilder::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1061,
+    "calls": [
+      "unwrap",
+      "clone",
+      "clear",
+      "Default::default",
+      "MockBroker::new",
+      "build",
+      "now",
+      "upsert",
+      "Registry::new"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1075,
+    "calls": [
+      "Self::with_nonce"
+    ]
+  },
+  {
+    "function": "dispense",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1079,
+    "calls": [
+      "map",
+      "into_iter"
+    ]
+  },
+  {
+    "function": "with_nonce",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1085,
+    "calls": [
+      "unwrap",
+      "parse",
+      "ServiceId::new",
+      "ServiceConfiguration::new",
+      "Self",
+      "format"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1093,
+    "calls": []
+  },
+  {
+    "function": "version",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1097,
+    "calls": [
+      "ServiceId::new",
+      "name"
+    ]
+  },
+  {
+    "function": "name",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1102,
+    "calls": [
+      "ServiceId::new",
+      "version"
+    ]
+  },
+  {
+    "function": "url",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1107,
+    "calls": [
+      "unwrap",
+      "parse"
+    ]
+  },
+  {
+    "function": "execution_locality",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1112,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1122,
+    "calls": [
+      "Self::with_nonce"
+    ]
+  },
+  {
+    "function": "dispense",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1126,
+    "calls": [
+      "map",
+      "into_iter"
+    ]
+  },
+  {
+    "function": "with_nonce",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1132,
+    "calls": [
+      "Self",
+      "format",
+      "IntentConfiguration::new"
+    ]
+  },
+  {
+    "function": "namespace",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1136,
+    "calls": [
+      "IntentConfiguration::new"
+    ]
+  },
+  {
+    "function": "build",
+    "file": "intent_brokering/src/registry.rs",
+    "line": 1141,
+    "calls": []
+  },
+  {
+    "function": "main",
+    "file": "intent_brokering/proto.rs/build.rs",
+    "line": 8,
+    "calls": [
+      "compile_with_common",
+      "Ok"
+    ]
+  },
+  {
+    "function": "compile_with_common",
+    "file": "intent_brokering/proto.rs/build.rs",
+    "line": 16,
+    "calls": [
+      "Ok",
+      "configure",
+      "Path::new",
+      "compile"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "set_publish_buffer_size",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 68,
+    "calls": []
+  },
+  {
+    "function": "set_client_buffer_size",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 74,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 104,
+    "calls": [
+      "Default::default"
+    ]
+  },
+  {
+    "function": "new_with_config",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 113,
+    "calls": [
+      "Default::default"
+    ]
+  },
+  {
+    "function": "publish",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 120,
+    "calls": [
+      "read",
+      "unwrap",
+      "send",
+      "get"
+    ]
+  },
+  {
+    "function": "read_events",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 143,
+    "calls": [
+      "unwrap",
+      "write",
+      "mpsc::channel::<ClientEvent>",
+      "insert",
+      "is_some",
+      "ReceiverStream::new",
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "register_subscriptions",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 169,
+    "calls": [
+      "unwrap",
+      "clone",
+      "Arc::clone",
+      "Vec::new",
+      "entry",
+      "write",
+      "or_insert_with",
+      "insert",
+      "Ok",
+      "broadcast::channel",
+      "subscribe",
+      "contains_key",
+      "CancellationToken::new",
+      "get_mut",
+      "push",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "get_subscriptions",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 219,
+    "calls": [
+      "unwrap",
+      "read",
+      "keys",
+      "get",
+      "cloned",
+      "collect",
+      "vec"
+    ]
+  },
+  {
+    "function": "deregister_subscriptions",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 243,
+    "calls": [
+      "unwrap",
+      "receiver_count",
+      "write",
+      "Ok",
+      "map",
+      "cancel",
+      "get",
+      "Some",
+      "get_mut",
+      "remove",
+      "tracing::debug",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "client_id",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 280,
+    "calls": []
+  },
+  {
+    "function": "event_id",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 285,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 295,
+    "calls": [
+      "write_fmt",
+      "format_args"
+    ]
+  },
+  {
+    "function": "event_id",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 311,
+    "calls": [
+      "event_id"
+    ]
+  },
+  {
+    "function": "serve",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 330,
+    "calls": [
+      "Some",
+      "debug",
+      "warn",
+      "serve_with_handlers"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 332,
+    "calls": []
+  },
+  {
+    "function": "serve_with_handlers",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 374,
+    "calls": [
+      "on_done",
+      "tokio::select"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 376,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 377,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 378,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 379,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 380,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 381,
+    "calls": []
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 382,
+    "calls": []
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 453,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 464,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "read_event",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 480,
+    "calls": [
+      "dequeue_event"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 490,
+    "calls": []
+  },
+  {
+    "function": "poll_next",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 498,
+    "calls": [
+      "unimplemented"
+    ]
+  },
+  {
+    "function": "try_send",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 514,
+    "calls": [
+      "unwrap",
+      "lock",
+      "push",
+      "Ok"
+    ]
+  },
+  {
+    "function": "dequeue_event",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 521,
+    "calls": [
+      "Err",
+      "unwrap",
+      "Ok",
+      "is_empty",
+      "lock",
+      "remove"
+    ]
+  },
+  {
+    "function": "clone",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 531,
+    "calls": [
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "channel",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 536,
+    "calls": [
+      "Arc::new",
+      "std::sync::Mutex::new",
+      "vec"
+    ]
+  },
+  {
+    "function": "read_event",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 547,
+    "calls": [
+      "unwrap",
+      "read_event",
+      "write",
+      "and_then",
+      "get",
+      "ok"
+    ]
+  },
+  {
+    "function": "sut",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 553,
+    "calls": [
+      "sut_with_runtime"
+    ]
+  },
+  {
+    "function": "sut_with_runtime",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 557,
+    "calls": [
+      "unwrap",
+      "worker_threads",
+      "Ess::new",
+      "tokio::runtime::Builder::new_multi_thread",
+      "fork"
+    ]
+  },
+  {
+    "function": "read_events_returns_new_stream_on_each_call_for_same_client",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 565,
+    "calls": [
+      "ClientId",
+      "clone",
+      "assert",
+      "read_events",
+      "sut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "read_events_streams_event_on_update",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 579,
+    "calls": [
+      "ClientId",
+      "unwrap",
+      "Duration::from_secs_f64",
+      "assert",
+      "spawn",
+      "SeqNum",
+      "read_events",
+      "Event",
+      "drop",
+      "serve",
+      "std::thread::sleep",
+      "sut_with_runtime",
+      "handle",
+      "TestClient::read_event",
+      "assert_eq",
+      "publish",
+      "register_subscriptions"
+    ]
+  },
+  {
+    "function": "read_events_does_not_stream_events_of_unregistered_subscriptions",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 619,
+    "calls": [
+      "ClientId",
+      "clone",
+      "assert",
+      "SeqNum",
+      "read_events",
+      "Event",
+      "sut",
+      "publish",
+      "TestClient::read_event"
+    ]
+  },
+  {
+    "function": "deregistered_subscriptions_terminates_subscription_server",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 633,
+    "calls": [
+      "ClientId",
+      "clone",
+      "unwrap",
+      "spawn",
+      "SeqNum",
+      "read_events",
+      "Event",
+      "into_iter",
+      "drop",
+      "serve",
+      "next",
+      "sut_with_runtime",
+      "handle",
+      "register_subscriptions",
+      "deregister_subscriptions",
+      "tokio::select"
+    ]
+  },
+  {
+    "function": "register_subscriptions_cannot_be_called_if_events_are_not_being_read",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 659,
+    "calls": [
+      "ClientId",
+      "sut",
+      "panic",
+      "register_subscriptions",
+      "vec"
+    ]
+  },
+  {
+    "function": "deregister_subscriptions_cannot_be_called_if_events_are_not_being_read",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 672,
+    "calls": [
+      "ClientId",
+      "assert",
+      "sut",
+      "assert_eq",
+      "deregister_subscriptions",
+      "vec"
+    ]
+  },
+  {
+    "function": "get_subscriptions_returns_empty_list_when_no_subscriptions_registered",
+    "file": "intent_brokering/ess/src/ess.rs",
+    "line": 683,
+    "calls": [
+      "ClientId",
+      "get_subscriptions",
+      "sut",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/ess/benches/load_bench.rs",
+    "line": 18,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/ess/benches/load_bench.rs",
+    "line": 27,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "event_sub_system_bench",
+    "file": "intent_brokering/ess/benches/load_bench.rs",
+    "line": 38,
+    "calls": [
+      "ClientId",
+      "Arc::new",
+      "ess::Config::default",
+      "Ess::new_with_config",
+      "register_subscriptions",
+      "set_publish_buffer_size",
+      "clone",
+      "to_async",
+      "iter",
+      "spawn",
+      "bench_function",
+      "bench_with_input",
+      "subscribe",
+      "tokio::runtime::Runtime::new",
+      "tokio::runtime::Builder::new_multi_thread",
+      "handle",
+      "broadcast::channel",
+      "send",
+      "fork",
+      "worker_threads",
+      "read_events",
+      "unwrap",
+      "set_client_buffer_size",
+      "BenchmarkId::new",
+      "SeqNum",
+      "Event",
+      "serve",
+      "next",
+      "format",
+      "is_some",
+      "cloned"
+    ]
+  },
+  {
+    "function": "bench_function",
+    "file": "intent_brokering/ess/benches/load_bench.rs",
+    "line": 88,
+    "calls": [
+      "unwrap",
+      "SeqNum",
+      "Event",
+      "recv",
+      "publish"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/ess/benches/load_bench.rs",
+    "line": 104,
+    "calls": [
+      "format",
+      "as_str",
+      "write_str"
+    ]
+  },
+  {
+    "function": "main",
+    "file": "intent_brokering/examples/common/build.rs",
+    "line": 8,
+    "calls": [
+      "Ok",
+      "configure",
+      "Path::new",
+      "compile"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/examples/common/src/url.rs",
+    "line": 21,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "parse_socket_address",
+    "file": "intent_brokering/examples/common/src/url.rs",
+    "line": 38,
+    "calls": [
+      "Err",
+      "SocketAddr::new",
+      "scheme",
+      "set_port",
+      "Ok",
+      "IpAddr::V6",
+      "port",
+      "host",
+      "IpAddr::V4",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "register",
+    "file": "intent_brokering/examples/common/src/intent_brokering/provider.rs",
+    "line": 48,
+    "calls": [
+      "parse",
+      "parse_provider_socket_address",
+      "super::registration::Builder::new",
+      "register",
+      "into",
+      "Ok",
+      "env",
+      "announce_url",
+      "unwrap_or_else",
+      "tokio::task::spawn",
+      "from_env",
+      "to_owned",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "trace_result",
+    "file": "intent_brokering/examples/common/src/intent_brokering/provider.rs",
+    "line": 88,
+    "calls": [
+      "source",
+      "error",
+      "trace_error"
+    ]
+  },
+  {
+    "function": "trace_error",
+    "file": "intent_brokering/examples/common/src/intent_brokering/provider.rs",
+    "line": 93,
+    "calls": [
+      "source",
+      "error",
+      "trace_error"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/common/src/intent_brokering/inspection.rs",
+    "line": 17,
+    "calls": [
+      "into",
+      "into_iter",
+      "map",
+      "Self",
+      "collect"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "intent_brokering/examples/common/src/intent_brokering/inspection.rs",
+    "line": 24,
+    "calls": [
+      "borrow",
+      "get"
+    ]
+  },
+  {
+    "function": "path",
+    "file": "intent_brokering/examples/common/src/intent_brokering/inspection.rs",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/examples/common/src/intent_brokering/inspection.rs",
+    "line": 33,
+    "calls": [
+      "to_string",
+      "clone",
+      "iter",
+      "into",
+      "into_iter",
+      "map",
+      "filter",
+      "is_match",
+      "Fulfillment::Inspect",
+      "regex_from_query",
+      "as_ref",
+      "collect"
+    ]
+  },
+  {
+    "function": "fulfillment",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 48,
+    "calls": [
+      "into_inner",
+      "ok_or_else",
+      "Fulfillment",
+      "and_then",
+      "map_err",
+      "Error::new",
+      "try_into"
+    ]
+  },
+  {
+    "function": "connect",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 90,
+    "calls": [
+      "to_string",
+      "IntentBrokeringServiceClient::connect",
+      "env::var",
+      "Ok",
+      "unwrap_or_else",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 103,
+    "calls": [
+      "fulfill",
+      "Request::new",
+      "into",
+      "Some",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 173,
+    "calls": [
+      "fulfill",
+      "into",
+      "into_iter",
+      "fulfillment",
+      "ok_or_else",
+      "map",
+      "debug",
+      "and_then",
+      "ok",
+      "IntentEnum::Invoke",
+      "Error::new",
+      "try_into",
+      "collect"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 195,
+    "calls": [
+      "fulfill",
+      "into",
+      "into_iter",
+      "fulfillment",
+      "map",
+      "debug",
+      "IntentEnum::Subscribe",
+      "collect"
+    ]
+  },
+  {
+    "function": "discover",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 215,
+    "calls": [
+      "fulfill",
+      "into",
+      "into_iter",
+      "fulfillment",
+      "IntentEnum::Discover",
+      "map",
+      "debug",
+      "collect"
+    ]
+  },
+  {
+    "function": "inspect",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 229,
+    "calls": [
+      "fulfill",
+      "Err",
+      "into",
+      "into_iter",
+      "fulfillment",
+      "Error::new",
+      "Ok",
+      "map",
+      "debug",
+      "and_then",
+      "InspectionEntry::new",
+      "IntentEnum::Inspect",
+      "try_into",
+      "collect"
+    ]
+  },
+  {
+    "function": "write",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 260,
+    "calls": [
+      "fulfill",
+      "into",
+      "fulfillment",
+      "map",
+      "debug",
+      "IntentEnum::Write",
+      "Some"
+    ]
+  },
+  {
+    "function": "read",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 278,
+    "calls": [
+      "fulfill",
+      "map_or",
+      "into",
+      "fulfillment",
+      "Ok",
+      "map",
+      "debug",
+      "and_then",
+      "IntentEnum::Read",
+      "map_err",
+      "Error::new",
+      "Value::try_from"
+    ]
+  },
+  {
+    "function": "listen",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 316,
+    "calls": [
+      "into_string",
+      "Ok",
+      "and_then",
+      "get",
+      "try_into",
+      "find",
+      "clone",
+      "Request::new",
+      "into_inner",
+      "boxed",
+      "ok_or_else",
+      "map_err_with",
+      "subscribe",
+      "into_boxed_str",
+      "Error::new",
+      "open",
+      "discover",
+      "ok",
+      "metadata",
+      "to_str",
+      "into",
+      "into_iter",
+      "map",
+      "debug",
+      "map_err",
+      "as_ref",
+      "ChannelServiceClient::connect"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/api.rs",
+    "line": 391,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 45,
+    "calls": [
+      "to_string",
+      "unwrap",
+      "parse",
+      "clone",
+      "env::var",
+      "into",
+      "intent_brokering_common::config::env",
+      "into_iter",
+      "unwrap_or_else",
+      "collect",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "set_registration_interval",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 74,
+    "calls": [
+      "unwrap_or",
+      "set_registration_interval",
+      "ConfigSource::Value",
+      "map",
+      "config::env::<u64>"
+    ]
+  },
+  {
+    "function": "set_intent_broker_url",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 90,
+    "calls": [
+      "unwrap_or",
+      "config::env::<Url>",
+      "ConfigSource::Value",
+      "set_intent_broker_url"
+    ]
+  },
+  {
+    "function": "from_env",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 103,
+    "calls": [
+      "set_registration_interval",
+      "ConfigSource::Environment",
+      "set_intent_broker_url"
+    ]
+  },
+  {
+    "function": "announce_url",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 108,
+    "calls": []
+  },
+  {
+    "function": "provider_url",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 112,
+    "calls": []
+  },
+  {
+    "function": "parse_provider_socket_address",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 116,
+    "calls": [
+      "provider_url",
+      "parse_socket_address",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "register",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 122,
+    "calls": [
+      "warn",
+      "register_once",
+      "sleep"
+    ]
+  },
+  {
+    "function": "register_once",
+    "file": "intent_brokering/examples/common/src/intent_brokering/registration.rs",
+    "line": 144,
+    "calls": [
+      "is_none",
+      "to_string",
+      "into_inner",
+      "IntentBrokeringServiceClient::connect",
+      "clone",
+      "iter",
+      "register",
+      "Ok",
+      "map",
+      "announce",
+      "format",
+      "Some",
+      "tracing::info",
+      "collect",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 13,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "fmt",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 24,
+    "calls": [
+      "write_str"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "new_any",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 45,
+    "calls": [
+      "Self",
+      "ValueEnum::Any"
+    ]
+  },
+  {
+    "function": "new_blob",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 49,
+    "calls": [
+      "ValueEnum::Blob",
+      "Self"
+    ]
+  },
+  {
+    "function": "to_i32",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 53,
+    "calls": [
+      "Err",
+      "Ok"
+    ]
+  },
+  {
+    "function": "to_i64",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 61,
+    "calls": [
+      "Err",
+      "Ok"
+    ]
+  },
+  {
+    "function": "to_bool",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 69,
+    "calls": [
+      "Err",
+      "Ok"
+    ]
+  },
+  {
+    "function": "as_str",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 77,
+    "calls": [
+      "Err",
+      "as_str",
+      "Ok"
+    ]
+  },
+  {
+    "function": "into_string",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 85,
+    "calls": [
+      "Err",
+      "InvalidValueType",
+      "Ok"
+    ]
+  },
+  {
+    "function": "into_any",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 93,
+    "calls": [
+      "Err",
+      "InvalidValueType",
+      "Ok"
+    ]
+  },
+  {
+    "function": "into_blob",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 101,
+    "calls": [
+      "Err",
+      "InvalidValueType",
+      "Ok"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 113,
+    "calls": [
+      "map",
+      "into",
+      "ok_or"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 119,
+    "calls": [
+      "Value"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 125,
+    "calls": [
+      "Some",
+      "into"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 131,
+    "calls": []
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 137,
+    "calls": [
+      "into",
+      "Value",
+      "ValueEnum::String"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 143,
+    "calls": [
+      "Value",
+      "ValueEnum::Int32"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 149,
+    "calls": [
+      "ValueEnum::Int64",
+      "Value"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 155,
+    "calls": [
+      "ValueEnum::Float32",
+      "Value"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 161,
+    "calls": [
+      "Value",
+      "ValueEnum::Float64"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/intent_brokering/value.rs",
+    "line": 167,
+    "calls": [
+      "ValueEnum::Bool",
+      "Value"
+    ]
+  },
+  {
+    "function": "on_set",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 21,
+    "calls": [
+      "clone",
+      "publish"
+    ]
+  },
+  {
+    "function": "ess",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 42,
+    "calls": [
+      "clone",
+      "Some",
+      "RwLock::new",
+      "InMemoryKeyValueStore::new",
+      "StreamingEss::new",
+      "InternalStreamingEss"
+    ]
+  },
+  {
+    "function": "default",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 50,
+    "calls": [
+      "Self::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 60,
+    "calls": [
+      "read",
+      "unwrap",
+      "cloned",
+      "get"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 65,
+    "calls": [
+      "unwrap",
+      "write",
+      "set"
+    ]
+  },
+  {
+    "function": "subscribe",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 79,
+    "calls": [
+      "ess",
+      "Fulfillment::Subscribe",
+      "into",
+      "Ok",
+      "serve_subscriptions"
+    ]
+  },
+  {
+    "function": "read",
+    "file": "intent_brokering/examples/common/src/intent_brokering/streaming.rs",
+    "line": 84,
+    "calls": [
+      "into",
+      "map",
+      "get",
+      "Some",
+      "Fulfillment::Read"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/examples/detection.rs",
+    "line": 18,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/common/src/examples/detection.rs",
+    "line": 26,
+    "calls": [
+      "Self"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/common/src/examples/detection.rs",
+    "line": 38,
+    "calls": [
+      "into"
+    ]
+  },
+  {
+    "function": "try_from",
+    "file": "intent_brokering/examples/common/src/examples/detection.rs",
+    "line": 46,
+    "calls": [
+      "Err",
+      "clone",
+      "len",
+      "into_any",
+      "DetectRequestMessage::decode",
+      "ok_or_else",
+      "map",
+      "and_then",
+      "DetectRequest",
+      "map_err",
+      "Error::new",
+      "try_into",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "from",
+    "file": "intent_brokering/examples/common/src/examples/detection.rs",
+    "line": 71,
+    "calls": [
+      "to_string",
+      "into",
+      "into_iter",
+      "map",
+      "encode_to_vec",
+      "Some",
+      "collect",
+      "Value::new_any"
+    ]
+  },
+  {
+    "function": "wain",
+    "file": "intent_brokering/examples/applications/kv-app/src/main.rs",
+    "line": 23,
+    "calls": [
+      "ess",
+      "clone",
+      "StreamingStore::new",
+      "Server::builder",
+      "ProviderServiceServer::from_arc",
+      "serve_with_ctrl_c_shutdown",
+      "Arc::new",
+      "add_service",
+      "ChannelServiceServer::new",
+      "intent_brokering::provider::register",
+      "IntentProvider::new",
+      "tracing::info",
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/applications/kv-app/src/intent_provider.rs",
+    "line": 29,
+    "calls": []
+  },
+  {
+    "function": "write",
+    "file": "intent_brokering/examples/applications/kv-app/src/intent_provider.rs",
+    "line": 33,
+    "calls": [
+      "Status::unknown",
+      "into",
+      "Ok",
+      "ok_or_else",
+      "and_then",
+      "set"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/examples/applications/kv-app/src/intent_provider.rs",
+    "line": 46,
+    "calls": [
+      "Err",
+      "into_inner",
+      "Status::invalid_argument",
+      "read",
+      "write",
+      "Ok",
+      "ok_or_else",
+      "map",
+      "subscribe",
+      "and_then",
+      "Response::new",
+      "Some",
+      "Status::unknown",
+      "FulfillmentEnum::Discover",
+      "vec"
+    ]
+  },
+  {
+    "function": "connect_intent_brokering_client",
+    "file": "intent_brokering/examples/applications/simple-provider/src/main.rs",
+    "line": 39,
+    "calls": [
+      "IntentBrokeringServiceClient::connect",
+      "Ok",
+      "Box::new",
+      "Error::from_error",
+      "map_err",
+      "Some"
+    ]
+  },
+  {
+    "function": "register_and_announce_once",
+    "file": "intent_brokering/examples/applications/simple-provider/src/main.rs",
+    "line": 52,
+    "calls": [
+      "is_none",
+      "clone",
+      "into_inner",
+      "iter",
+      "connect_intent_brokering_client",
+      "register",
+      "Ok",
+      "map",
+      "announce",
+      "as_mut",
+      "Box::new",
+      "Error::from_error",
+      "map_err",
+      "Some",
+      "expect",
+      "tracing::info",
+      "collect"
+    ]
+  },
+  {
+    "function": "register_and_announce_provider",
+    "file": "intent_brokering/examples/applications/simple-provider/src/main.rs",
+    "line": 111,
+    "calls": [
+      "clone",
+      "register_and_announce_once",
+      "Ok",
+      "warn",
+      "tokio::task::spawn",
+      "sleep",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "wain",
+    "file": "intent_brokering/examples/applications/simple-provider/src/main.rs",
+    "line": 139,
+    "calls": [
+      "to_string",
+      "clone",
+      "parse",
+      "format",
+      "Server::builder",
+      "ProviderServiceServer::from_arc",
+      "serve_with_ctrl_c_shutdown",
+      "register_and_announce_provider",
+      "Box::new",
+      "Arc::new",
+      "add_service",
+      "Error::from_error",
+      "map_err",
+      "to_vec",
+      "Url::parse",
+      "IntentProvider::new",
+      "tracing::info",
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/applications/simple-provider/src/intent_provider.rs",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/examples/applications/simple-provider/src/intent_provider.rs",
+    "line": 32,
+    "calls": [
+      "Err",
+      "into_inner",
+      "Status::invalid_argument",
+      "Ok",
+      "ok_or_else",
+      "map",
+      "and_then",
+      "Response::new",
+      "Some",
+      "Status::unknown",
+      "FulfillmentEnum::Discover",
+      "vec"
+    ]
+  },
+  {
+    "function": "wain",
+    "file": "intent_brokering/examples/applications/lt-provider/src/main.rs",
+    "line": 39,
+    "calls": [
+      "Server::builder",
+      "IntentProvider::normal",
+      "ProviderServiceServer::new",
+      "serve",
+      "env",
+      "add_service",
+      "info",
+      "intent_brokering::provider::register",
+      "IntentProvider::new",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/applications/lt-provider/src/main.rs",
+    "line": 72,
+    "calls": [
+      "info"
+    ]
+  },
+  {
+    "function": "normal",
+    "file": "intent_brokering/examples/applications/lt-provider/src/main.rs",
+    "line": 77,
+    "calls": [
+      "unwrap",
+      "SmallRng::from_entropy",
+      "Arc::new",
+      "Normal::new",
+      "Some",
+      "info",
+      "sample_iter",
+      "Mutex::new"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/examples/applications/lt-provider/src/main.rs",
+    "line": 94,
+    "calls": [
+      "Err",
+      "into_inner",
+      "unwrap",
+      "FulfillmentEnum::Invoke",
+      "Status::invalid_argument",
+      "into",
+      "Ok",
+      "ok_or_else",
+      "Status::not_found",
+      "and_then",
+      "next",
+      "lock",
+      "Response::new",
+      "sleep",
+      "Some",
+      "Duration::from_millis"
+    ]
+  },
+  {
+    "function": "wain",
+    "file": "intent_brokering/examples/applications/invoke-command/src/main.rs",
+    "line": 22,
+    "calls": [
+      "clone",
+      "Server::builder",
+      "ProviderServiceServer::from_arc",
+      "serve_with_ctrl_c_shutdown",
+      "Arc::new",
+      "add_service",
+      "intent_brokering::provider::register",
+      "IntentProvider::new",
+      "tracing::info",
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/examples/applications/invoke-command/src/intent_provider.rs",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "parse_and_print_json",
+    "file": "intent_brokering/examples/applications/invoke-command/src/intent_provider.rs",
+    "line": 30,
+    "calls": [
+      "to_string",
+      "serde_json::from_str",
+      "println",
+      "Ok",
+      "map_err",
+      "Status::unknown"
+    ]
+  },
+  {
+    "function": "invoke",
+    "file": "intent_brokering/examples/applications/invoke-command/src/intent_provider.rs",
+    "line": 40,
+    "calls": [
+      "Err",
+      "clone",
+      "unwrap",
+      "Self::parse_and_print_json",
+      "as_str",
+      "Ok",
+      "Value::String",
+      "format",
+      "Some",
+      "Status::unknown"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/examples/applications/invoke-command/src/intent_provider.rs",
+    "line": 65,
+    "calls": [
+      "Err",
+      "into_inner",
+      "Status::invalid_argument",
+      "Ok",
+      "ok_or_else",
+      "map",
+      "and_then",
+      "invoke",
+      "Response::new",
+      "Some",
+      "Status::unknown",
+      "FulfillmentEnum::Discover",
+      "vec"
+    ]
+  },
+  {
+    "function": "wain",
+    "file": "intent_brokering/examples/applications/lt-consumer/src/main.rs",
+    "line": 55,
+    "calls": [
+      "fetch_add",
+      "assert",
+      "File::create",
+      "load",
+      "sleep_until",
+      "Ok",
+      "Arc::new",
+      "tokio::task::spawn",
+      "Instant::now",
+      "lock",
+      "unwrap_or",
+      "clone",
+      "env",
+      "as_millis",
+      "as_bytes",
+      "invoke",
+      "Summary::with_defaults",
+      "info",
+      "sleep",
+      "Mutex::new",
+      "Duration::from_millis",
+      "add",
+      "AtomicUsize::new",
+      "GrpcIntentBrokering::connect",
+      "mul",
+      "Some",
+      "elapsed",
+      "vec",
+      "unwrap",
+      "enumerate",
+      "map",
+      "warn",
+      "tokio::time::Instant::now",
+      "evaluate_docker_stats",
+      "debug",
+      "write_all",
+      "serde_json::to_string",
+      "Arc::clone"
+    ]
+  },
+  {
+    "function": "evaluate_docker_stats",
+    "file": "intent_brokering/examples/applications/lt-consumer/src/main.rs",
+    "line": 189,
+    "calls": [
+      "is_none",
+      "unwrap",
+      "execute",
+      "Default::default",
+      "stats",
+      "Docker::connect_with_local_defaults",
+      "Ok",
+      "add",
+      "map",
+      "version",
+      "next",
+      "and_then",
+      "lock",
+      "error",
+      "info",
+      "Some",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "execute",
+    "file": "intent_brokering/examples/applications/lt-consumer/src/main.rs",
+    "line": 197,
+    "calls": [
+      "is_none",
+      "unwrap",
+      "Default::default",
+      "stats",
+      "Docker::connect_with_local_defaults",
+      "Ok",
+      "add",
+      "map",
+      "version",
+      "next",
+      "and_then",
+      "lock",
+      "info",
+      "Some",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/tests/provider.rs",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/tests/provider.rs",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "with_on_invoke",
+    "file": "intent_brokering/tests/provider.rs",
+    "line": 32,
+    "calls": [
+      "Some"
+    ]
+  },
+  {
+    "function": "<anonymous>",
+    "file": "intent_brokering/tests/provider.rs",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "serve",
+    "file": "intent_brokering/tests/provider.rs",
+    "line": 36,
+    "calls": [
+      "unwrap",
+      "Server::builder",
+      "parse",
+      "SocketAddr::new",
+      "spawn",
+      "ProviderServiceServer::new",
+      "bind",
+      "serve_with_incoming",
+      "listen",
+      "TcpListenerStream::new",
+      "add_service",
+      "TcpSocket::new_v4",
+      "format",
+      "IpAddr::V4"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/tests/provider.rs",
+    "line": 53,
+    "calls": [
+      "Err",
+      "into_inner",
+      "FulfillmentEnum::Invoke",
+      "unimplemented",
+      "Status::invalid_argument",
+      "on_invoke",
+      "into",
+      "Ok",
+      "ok_or_else",
+      "map",
+      "Status::not_found",
+      "and_then",
+      "Response::new",
+      "Some"
+    ]
+  },
+  {
+    "function": "when_fulfill_invoke_intent_returns_response",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 40,
+    "calls": [
+      "clone",
+      "Provider::new",
+      "into",
+      "Ok",
+      "with_on_invoke",
+      "invoke",
+      "assert_eq",
+      "Some",
+      "setup",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_two_providers_invoke_intent_prioritizes_cloud_response",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 56,
+    "calls": [
+      "clone",
+      "ProviderSetup::cloud",
+      "Provider::new",
+      "ProviderSetup::local",
+      "into",
+      "Ok",
+      "with_on_invoke",
+      "invoke",
+      "setup_multiple",
+      "assert_eq",
+      "Some",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_two_providers_invoke_intent_falls_back_to_local_response",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 76,
+    "calls": [
+      "clone",
+      "ProviderSetup::cloud",
+      "Provider::new",
+      "ProviderSetup::local",
+      "into",
+      "Ok",
+      "with_on_invoke",
+      "panic",
+      "invoke",
+      "setup_multiple",
+      "assert_eq",
+      "Some",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_invoke_intent_arguments_are_passed_correctly",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 96,
+    "calls": [
+      "clone",
+      "Provider::new",
+      "Ok",
+      "with_on_invoke",
+      "invoke",
+      "assert_eq",
+      "Some",
+      "setup",
+      "vec"
+    ]
+  },
+  {
+    "function": "when_cancelled_shuts_down_provider",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 122,
+    "calls": [
+      "Server::builder",
+      "unwrap",
+      "parse",
+      "assert",
+      "spawn",
+      "child_token",
+      "Ok",
+      "serve_with_cancellation",
+      "add_service",
+      "cancel",
+      "format",
+      "ChannelServiceServer::new",
+      "CancellationToken::new",
+      "StreamingEss::new"
+    ]
+  },
+  {
+    "function": "local",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 156,
+    "calls": [
+      "get_port",
+      "get_uuid"
+    ]
+  },
+  {
+    "function": "cloud",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 160,
+    "calls": [
+      "Self::local"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 165,
+    "calls": [
+      "ProviderSetup::local",
+      "setup_multiple"
+    ]
+  },
+  {
+    "function": "setup_multiple",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 169,
+    "calls": [
+      "IntentBroker::new",
+      "parse",
+      "unwrap",
+      "clone",
+      "Default::default",
+      "ServiceId::new",
+      "serve",
+      "ServiceConfiguration::new",
+      "upsert",
+      "IntentBrokeringServer::new",
+      "Instant::now",
+      "Registry::new",
+      "StreamingEss::new",
+      "to_owned",
+      "vec"
+    ]
+  },
+  {
+    "function": "fulfill",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 191,
+    "calls": [
+      "fulfill",
+      "Request::new",
+      "into",
+      "Some",
+      "map_err_with"
+    ]
+  },
+  {
+    "function": "get_port",
+    "file": "intent_brokering/tests/chariott_integration.rs",
+    "line": 206,
+    "calls": [
+      "AtomicU16::new",
+      "fetch_add"
+    ]
+  },
+  {
+    "function": "expired_registrations_are_pruned_after_ttl",
+    "file": "intent_brokering/tests/registry-e2e.rs",
+    "line": 21,
+    "calls": [
+      "unwrap",
+      "parse",
+      "register_once",
+      "clone",
+      "RegistrationBuilder::new",
+      "sleep",
+      "Ok",
+      "env",
+      "assert_eq",
+      "inspect",
+      "env!",
+      "format",
+      "setup",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "when_provider_registers_notifies_registry_observers",
+    "file": "intent_brokering/tests/registry-e2e.rs",
+    "line": 53,
+    "calls": [
+      "unwrap",
+      "parse",
+      "register_once",
+      "stream.timeout",
+      "take",
+      "RegistrationBuilder::new",
+      "into",
+      "timeout",
+      "listen",
+      "into_iter",
+      "Duration::from_secs",
+      "Ok",
+      "next",
+      "assert_eq",
+      "format",
+      "setup",
+      "vec"
+    ]
+  },
+  {
+    "function": "namespace_event",
+    "file": "intent_brokering/tests/registry-e2e.rs",
+    "line": 54,
+    "calls": [
+      "into",
+      "format"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "intent_brokering/tests/registry-e2e.rs",
+    "line": 86,
+    "calls": [
+      "unwrap",
+      "GrpcIntentBrokering::connect"
+    ]
+  },
+  {
+    "function": "get_uuid",
+    "file": "intent_brokering/tests/common.rs",
+    "line": 5,
+    "calls": [
+      "to_string",
+      "uuid::Uuid::new_v4",
+      "into"
+    ]
+  },
+  {
+    "function": "when_key_does_not_exist_returns_none",
+    "file": "intent_brokering/tests/store-e2e.rs",
+    "line": 21,
+    "calls": [
+      "read",
+      "Ok",
+      "assert_eq",
+      "setup",
+      "get_uuid"
+    ]
+  },
+  {
+    "function": "when_writing_value_returns_value_on_read",
+    "file": "intent_brokering/tests/store-e2e.rs",
+    "line": 35,
+    "calls": [
+      "clone",
+      "read",
+      "write",
+      "into",
+      "Ok",
+      "assert_eq",
+      "setup",
+      "get_uuid"
+    ]
+  },
+  {
+    "function": "when_provider_does_not_exist_returns_error",
+    "file": "intent_brokering/tests/store-e2e.rs",
+    "line": 52,
+    "calls": [
+      "read",
+      "assert",
+      "setup"
+    ]
+  },
+  {
+    "function": "when_writing_while_streaming_publishes_value",
+    "file": "intent_brokering/tests/store-e2e.rs",
+    "line": 64,
+    "calls": [
+      "clone",
+      "unwrap",
+      "take",
+      "into",
+      "write",
+      "listen",
+      "Ok",
+      "response_stream.take",
+      "assert_eq",
+      "as_ref",
+      "setup",
+      "get_uuid"
+    ]
+  },
+  {
+    "function": "when_streaming_increases_sequence_number",
+    "file": "intent_brokering/tests/store-e2e.rs",
+    "line": 85,
+    "calls": [
+      "clone",
+      "assert",
+      "take",
+      "write",
+      "into",
+      "listen",
+      "into_iter",
+      "Ok",
+      "map",
+      "response_stream\r\n        .map",
+      "setup",
+      "get_uuid"
+    ]
+  },
+  {
+    "function": "when_writing_to_a_different_key_does_not_publish_value",
+    "file": "intent_brokering/tests/store-e2e.rs",
+    "line": 115,
+    "calls": [
+      "write",
+      "into",
+      "listen",
+      "Ok",
+      "Instant::now",
+      "tokio::select",
+      "setup",
+      "get_uuid",
+      "Duration::from_secs"
+    ]
+  },
+  {
+    "function": "setup",
+    "file": "intent_brokering/tests/store-e2e.rs",
+    "line": 139,
+    "calls": [
+      "unwrap",
+      "GrpcIntentBrokering::connect"
+    ]
+  },
+  {
+    "function": "new",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 77,
+    "calls": [
+      "HashMap::new"
+    ]
+  },
+  {
+    "function": "get",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 88,
+    "calls": [
+      "get"
+    ]
+  },
+  {
+    "function": "set",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 103,
+    "calls": [
+      "insert",
+      "on_set"
+    ]
+  },
+  {
+    "function": "on_set",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 125,
+    "calls": [
+      "todo"
+    ]
+  },
+  {
+    "function": "setup_none_observer",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 130,
+    "calls": [
+      "InMemoryKeyValueStore::<K, V, NotImplementedValueObserver>::new"
+    ]
+  },
+  {
+    "function": "test_key_value_store",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 138,
+    "calls": [
+      "into",
+      "set",
+      "setup_none_observer::<String, String>",
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_key_value_store_with_custom_struct",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 145,
+    "calls": [
+      "to_string",
+      "clone",
+      "unwrap",
+      "HashMap::new",
+      "insert",
+      "setup_none_observer::<String, Test>",
+      "assert_eq",
+      "get",
+      "set",
+      "vec"
+    ]
+  },
+  {
+    "function": "test_key_value_store_with_observer",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 183,
+    "calls": [
+      "into",
+      "Some",
+      "assert_eq",
+      "InMemoryKeyValueStore::new",
+      "set"
+    ]
+  },
+  {
+    "function": "on_set",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 188,
+    "calls": [
+      "assert_eq"
+    ]
+  },
+  {
+    "function": "test_observer_gets_notified_twice_when_setting_an_unchanged_value",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 200,
+    "calls": [
+      "clone",
+      "fetch_add",
+      "into",
+      "Some",
+      "Arc::new",
+      "AtomicUsize::new",
+      "assert_eq",
+      "InMemoryKeyValueStore::new",
+      "set"
+    ]
+  },
+  {
+    "function": "on_set",
+    "file": "intent_brokering/keyvalue/src/key_value_store.rs",
+    "line": 207,
+    "calls": [
+      "fetch_add",
+      "assert_eq"
+    ]
+  }
+]

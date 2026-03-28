@@ -1,0 +1,21 @@
+{
+  "function": "topic_management_cb",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:topic_management_cb",
+      "line": 245
+    },
+    {
+      "id": 1,
+      "label": "exit:topic_management_cb",
+      "line": 269
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

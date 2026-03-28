@@ -1,0 +1,21 @@
+{
+  "function": "mkfifo",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:mkfifo",
+      "line": 254
+    },
+    {
+      "id": 1,
+      "label": "exit:mkfifo",
+      "line": 266
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

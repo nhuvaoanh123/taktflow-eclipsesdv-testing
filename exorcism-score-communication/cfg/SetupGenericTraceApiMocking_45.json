@@ -1,0 +1,21 @@
+{
+  "function": "SetupGenericTraceApiMocking",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SetupGenericTraceApiMocking",
+      "line": 45
+    },
+    {
+      "id": 1,
+      "label": "exit:SetupGenericTraceApiMocking",
+      "line": 112
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

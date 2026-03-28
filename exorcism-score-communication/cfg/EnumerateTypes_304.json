@@ -1,0 +1,21 @@
+{
+  "function": "EnumerateTypes",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:EnumerateTypes",
+      "line": 304
+    },
+    {
+      "id": 1,
+      "label": "exit:EnumerateTypes",
+      "line": 330
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "dumpLog",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:dumpLog",
+      "line": 158
+    },
+    {
+      "id": 1,
+      "label": "exit:dumpLog",
+      "line": 169
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

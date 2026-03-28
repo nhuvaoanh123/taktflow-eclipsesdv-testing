@@ -1,0 +1,21 @@
+{
+  "function": "n_to_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:n_to_value",
+      "line": 313
+    },
+    {
+      "id": 1,
+      "label": "exit:n_to_value",
+      "line": 914
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

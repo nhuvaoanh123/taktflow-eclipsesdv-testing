@@ -1,0 +1,21 @@
+{
+  "function": "LoadMessageMapperConfig",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:LoadMessageMapperConfig",
+      "line": 122
+    },
+    {
+      "id": 1,
+      "label": "exit:LoadMessageMapperConfig",
+      "line": 133
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

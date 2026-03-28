@@ -1,0 +1,21 @@
+{
+  "function": "stopUpdateManagers",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:stopUpdateManagers",
+      "line": 92
+    },
+    {
+      "id": 1,
+      "label": "exit:stopUpdateManagers",
+      "line": 112
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

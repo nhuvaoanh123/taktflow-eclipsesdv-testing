@@ -1,0 +1,21 @@
+{
+  "function": "prune",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:prune",
+      "line": 162
+    },
+    {
+      "id": 1,
+      "label": "exit:prune",
+      "line": 174
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

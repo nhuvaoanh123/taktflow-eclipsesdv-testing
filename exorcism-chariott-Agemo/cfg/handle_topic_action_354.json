@@ -1,0 +1,21 @@
+{
+  "function": "handle_topic_action",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:handle_topic_action",
+      "line": 354
+    },
+    {
+      "id": 1,
+      "label": "exit:handle_topic_action",
+      "line": 376
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

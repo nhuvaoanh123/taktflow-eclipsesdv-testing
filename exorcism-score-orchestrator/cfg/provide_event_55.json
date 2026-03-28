@@ -1,0 +1,21 @@
+{
+  "function": "provide_event",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:provide_event",
+      "line": 55
+    },
+    {
+      "id": 1,
+      "label": "exit:provide_event",
+      "line": 68
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

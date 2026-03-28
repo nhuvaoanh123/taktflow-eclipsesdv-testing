@@ -1,0 +1,63 @@
+{
+  "function": "withPriority",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:withPriority",
+      "line": 276
+    },
+    {
+      "id": 1,
+      "label": "if ((priority.getNumber() < UPriority.UPRIORITY_CS4_VALUE &&\r\n  )",
+      "line": 279
+    },
+    {
+      "id": 2,
+      "label": "merge",
+      "line": 282
+    },
+    {
+      "id": 3,
+      "label": "then",
+      "line": 279
+    },
+    {
+      "id": 4,
+      "label": "return_statement",
+      "line": 284
+    },
+    {
+      "id": 5,
+      "label": "exit:withPriority",
+      "line": 285
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "label": "true"
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "label": "false"
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    }
+  ]
+}

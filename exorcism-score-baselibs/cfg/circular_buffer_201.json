@@ -1,0 +1,21 @@
+{
+  "function": "circular_buffer",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:circular_buffer",
+      "line": 201
+    },
+    {
+      "id": 1,
+      "label": "exit:circular_buffer",
+      "line": 216
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "forward_from_ankaios_to_proto",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:forward_from_ankaios_to_proto",
+      "line": 135
+    },
+    {
+      "id": 1,
+      "label": "exit:forward_from_ankaios_to_proto",
+      "line": 229
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "assume_init",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:assume_init",
+      "line": 323
+    },
+    {
+      "id": 1,
+      "label": "exit:assume_init",
+      "line": 334
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "function": "AddOffsetToPointerAsInteger",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:AddOffsetToPointerAsInteger",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 42
+    },
+    {
+      "id": 2,
+      "label": "exit:AddOffsetToPointerAsInteger",
+      "line": 43
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

@@ -1,0 +1,3248 @@
+[
+  {
+    "function": "testUStatusHasRequiredFields",
+    "file": "src/test/java/org/eclipse/uprotocol/v1/UStatusTest.java",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "testProtoSerialization",
+    "file": "src/test/java/org/eclipse/uprotocol/v1/UStatusTest.java",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "testBuildNullCallOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 29,
+    "calls": []
+  },
+  {
+    "function": "testBuildCallOptionsWithTimeout",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "testBuildCallOptionsWithPriority",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "testBuildCallOptionsWithAllParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 53,
+    "calls": []
+  },
+  {
+    "function": "testBuildCallOptionsWithBlankToken",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "testIsEqualsWithNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 69,
+    "calls": []
+  },
+  {
+    "function": "testIsEqualsWithSameObject",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 76,
+    "calls": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 83,
+    "calls": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentParametersPriority",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 92,
+    "calls": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentParametersToken",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "testIsEqualsWithDifferentType",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CallOptionsTest.java",
+    "line": 110,
+    "calls": []
+  },
+  {
+    "function": "testMapResponse",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 22,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseToResultWithEmptyRequest",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseWithException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 61,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseWithEmptyPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 73,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 77,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseWithNullPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 88,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 92,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseToResultWithNonEmptyPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 106,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 112,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseToResultWithNullPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 123,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 127,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseToResultWithEmptyPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 137,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 141,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseToResultWithException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 152,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 156,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseToResultWithTimeoutException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 169,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 173,
+    "calls": []
+  },
+  {
+    "function": "testMapResponseToResultWithInvalidArgumentsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 189,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 193,
+    "calls": []
+  },
+  {
+    "function": "createMethodUri",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcMapperTest.java",
+    "line": 206,
+    "calls": []
+  },
+  {
+    "function": "assertMessageHasOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 51,
+    "calls": []
+  },
+  {
+    "function": "callOptionsAndPayloadProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "testInvokeMethodWithPayloadSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 78,
+    "calls": []
+  },
+  {
+    "function": "testInvokeMethodFailsForTimeout",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "testInvokeMethodFailsForTransportError",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 118,
+    "calls": []
+  },
+  {
+    "function": "testInvokeMethodFailsForErroneousServiceInvocation",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 139,
+    "calls": []
+  },
+  {
+    "function": "unexpectedMessageHandlerProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 164,
+    "calls": []
+  },
+  {
+    "function": "testHandleUnexpectedResponse",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 171,
+    "calls": []
+  },
+  {
+    "function": "testCloseUnregistersResponseListenerFromTransport",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcClientTest.java",
+    "line": 217,
+    "calls": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPackPassingNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 42,
+    "calls": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPack",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPacktoany",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 58,
+    "calls": []
+  },
+  {
+    "function": "testBuildingAUpayloadCallingPackWithNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "testUnpackingAUpayloadCallingUnpackWithNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 73,
+    "calls": []
+  },
+  {
+    "function": "testUnpackPassingANullBytestring",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "testUnpackPassingAGoogleProtobufAnyPackedUpayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 89,
+    "calls": []
+  },
+  {
+    "function": "testUnpackPassingAnUnsupportedFormatInUpayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 100,
+    "calls": []
+  },
+  {
+    "function": "testUnpackToUnpackAMessageOfTheWrongType",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 111,
+    "calls": []
+  },
+  {
+    "function": "unpackOrDefaultInstanceArgsProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 121,
+    "calls": []
+  },
+  {
+    "function": "testUnpackOrDefaultInstanceSucceedsForSimpleProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 169,
+    "calls": []
+  },
+  {
+    "function": "testEqualsWhenTheyAreEqual",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 186,
+    "calls": []
+  },
+  {
+    "function": "testEqualsWhenTheyAreNotEqual",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 196,
+    "calls": []
+  },
+  {
+    "function": "testEqualsWhenObjectIsNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 207,
+    "calls": []
+  },
+  {
+    "function": "testEqualsWhenObjectIsNotAnInstanceOfUpayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 216,
+    "calls": []
+  },
+  {
+    "function": "testEqualsWhenItIsTheSameObject",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 226,
+    "calls": []
+  },
+  {
+    "function": "testEqualsWhenTheDataIsTheSameButTheFormatIsNot",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 234,
+    "calls": []
+  },
+  {
+    "function": "testHashcode",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 244,
+    "calls": []
+  },
+  {
+    "function": "testHashcodeWhenTheyAreNotTheSameObjects",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 253,
+    "calls": []
+  },
+  {
+    "function": "testUnpackPassingAValidUmessage",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UPayloadTest.java",
+    "line": 262,
+    "calls": []
+  },
+  {
+    "function": "createPublisher",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "assertEventAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "testSendPublish",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "line": 49,
+    "calls": []
+  },
+  {
+    "function": "testSendPublishWithOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "testSendPublishWithStuffedPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "line": 65,
+    "calls": []
+  },
+  {
+    "function": "testSendPublishWithPayloadAndOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "line": 75,
+    "calls": []
+  },
+  {
+    "function": "testSendingPublishWithInvalidTopic",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimplePublisherTest.java",
+    "line": 85,
+    "calls": []
+  },
+  {
+    "function": "setUpTransport",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/CommunicationLayerClientTestBase.java",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "testIsSuccessOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 24,
+    "calls": []
+  },
+  {
+    "function": "testIsSuccessOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "testIsFailureOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "testIsFailureOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 42,
+    "calls": []
+  },
+  {
+    "function": "testGetOrElseOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 48,
+    "calls": []
+  },
+  {
+    "function": "testGetOrElseOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 54,
+    "calls": []
+  },
+  {
+    "function": "testGetOrElseOnSuccessWithValue",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "testGetOrElseOnFailureWithValue",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "testSuccessValueOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "testSuccessValueOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 78,
+    "calls": []
+  },
+  {
+    "function": "testFailureValueOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 85,
+    "calls": []
+  },
+  {
+    "function": "testFailureValueOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 92,
+    "calls": []
+  },
+  {
+    "function": "getDefault",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "testMapOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 105,
+    "calls": []
+  },
+  {
+    "function": "testMapSuccessWhenFunctionThrowsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 113,
+    "calls": []
+  },
+  {
+    "function": "funThatThrowsAnExceptionForMap",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 122,
+    "calls": []
+  },
+  {
+    "function": "testMapOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 126,
+    "calls": []
+  },
+  {
+    "function": "testFlatMapSuccessWhenFunctionThrowsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 136,
+    "calls": []
+  },
+  {
+    "function": "funThatThrowsAnExceptionForFlatMap",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 145,
+    "calls": []
+  },
+  {
+    "function": "testFlatMapOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 150,
+    "calls": []
+  },
+  {
+    "function": "testFlatMapOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 158,
+    "calls": []
+  },
+  {
+    "function": "testFilterOnSuccessThatFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 168,
+    "calls": []
+  },
+  {
+    "function": "testFilterOnSuccessThatSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 178,
+    "calls": []
+  },
+  {
+    "function": "testFilterOnSuccessWhenFunctionThrowsException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 186,
+    "calls": []
+  },
+  {
+    "function": "predicateThatThrowsAnException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 196,
+    "calls": []
+  },
+  {
+    "function": "testFilterOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 200,
+    "calls": []
+  },
+  {
+    "function": "testFlattenOnSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 210,
+    "calls": []
+  },
+  {
+    "function": "testFlattenOnSuccessWithFunctionThatFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 219,
+    "calls": []
+  },
+  {
+    "function": "testFlattenOnFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 229,
+    "calls": []
+  },
+  {
+    "function": "multiplyBy2",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 240,
+    "calls": []
+  },
+  {
+    "function": "testToStringSuccess",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 244,
+    "calls": []
+  },
+  {
+    "function": "testToStringFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/RpcResultTest.java",
+    "line": 250,
+    "calls": []
+  },
+  {
+    "function": "setup",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 104,
+    "calls": []
+  },
+  {
+    "function": "testConstructorsRejectInvalidArguments",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 132,
+    "calls": []
+  },
+  {
+    "function": "testConstructorForTransportAndUriProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 180,
+    "calls": []
+  },
+  {
+    "function": "testSubscriberRegistersNotificationListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 194,
+    "calls": []
+  },
+  {
+    "function": "testSubscriberCreationFailsWhenNotifierFailsToRegisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 204,
+    "calls": []
+  },
+  {
+    "function": "testCloseForSuccessfulUnregistration",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 225,
+    "calls": []
+  },
+  {
+    "function": "testCloseForFailedUnregistration",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 233,
+    "calls": []
+  },
+  {
+    "function": "assertCloseIgnoresFailureToUnregisterNotificationListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 242,
+    "calls": []
+  },
+  {
+    "function": "testSubscribeFailsWhenUSubscriptionInvocationFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 258,
+    "calls": []
+  },
+  {
+    "function": "testRepeatedSubscribeFailsForDifferentSubscriptionChangeHandlers",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 307,
+    "calls": []
+  },
+  {
+    "function": "testSubscribeSucceedsOnSecondAttempt",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 351,
+    "calls": []
+  },
+  {
+    "function": "testUnsubscribeFailsForUnknownListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 406,
+    "calls": []
+  },
+  {
+    "function": "testUnsubscribeFailsIfUSubscriptionInvocationFails",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 436,
+    "calls": []
+  },
+  {
+    "function": "testUnsubscribeSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 472,
+    "calls": []
+  },
+  {
+    "function": "testUnsubscribeSucceedsOnSecondAttempt",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 504,
+    "calls": []
+  },
+  {
+    "function": "testHandleSubscriptionChangeNotificationHandlesInvalidMessages",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 547,
+    "calls": []
+  },
+  {
+    "function": "testHandleSubscriptionChangeNotificationIgnoresErroneousHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 587,
+    "calls": []
+  },
+  {
+    "function": "testRegisterSubscriptionChangeHandlerSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 612,
+    "calls": []
+  },
+  {
+    "function": "testUnregisterSubscriptionChangeHandlerSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemorySubscriberTest.java",
+    "line": 642,
+    "calls": []
+  },
+  {
+    "function": "testUStatusExceptionConstructor",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "testUStatusExceptionConstructorNull",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "testUStatusExceptionConstructorUStatus",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "testGetStatus",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "testUStatusExceptionThrowable",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UStatusExceptionTest.java",
+    "line": 69,
+    "calls": []
+  },
+  {
+    "function": "setUp",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "line": 58,
+    "calls": []
+  },
+  {
+    "function": "testFactoryMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "testPublisher",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "line": 77,
+    "calls": []
+  },
+  {
+    "function": "testNotifier",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "line": 86,
+    "calls": []
+  },
+  {
+    "function": "testRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "line": 110,
+    "calls": []
+  },
+  {
+    "function": "testRpcServer",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/UClientTest.java",
+    "line": 119,
+    "calls": []
+  },
+  {
+    "function": "invalidArgsForRegisterRequestHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "testRegisterRequestHandlerFailsForNullParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 69,
+    "calls": []
+  },
+  {
+    "function": "testUnregisterRequestHandlerFailsForNullParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 81,
+    "calls": []
+  },
+  {
+    "function": "testRegisterRequestListenerSucceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 93,
+    "calls": []
+  },
+  {
+    "function": "testRegisteringTwiceTheSameRequestHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 121,
+    "calls": []
+  },
+  {
+    "function": "testUnregisterRequestHandlerFailsForUnknownHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 147,
+    "calls": []
+  },
+  {
+    "function": "testRegisteringRequestListenerFailsIfTransportIsUnavailable",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 164,
+    "calls": []
+  },
+  {
+    "function": "requestHandlerExceptionProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 183,
+    "calls": []
+  },
+  {
+    "function": "testHandleRequestHandlesException",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 199,
+    "calls": []
+  },
+  {
+    "function": "errorHandlersProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 223,
+    "calls": []
+  },
+  {
+    "function": "testRequestHandlerReportsSendError",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 243,
+    "calls": []
+  },
+  {
+    "function": "unexpectedMessageHandlerProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 278,
+    "calls": []
+  },
+  {
+    "function": "testRequestHandlerIgnoresRequestsWithoutHandler",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 285,
+    "calls": []
+  },
+  {
+    "function": "testHandleRequestIgnoresNonRequestMessages",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 308,
+    "calls": []
+  },
+  {
+    "function": "testHandleRequestSucceedsWithPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/InMemoryRpcServerTest.java",
+    "line": 340,
+    "calls": []
+  },
+  {
+    "function": "createNotifier",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "assertNotificationAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "testSendNotification",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "testSendNotificationWithOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "testSendNotificationWithPayload",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 71,
+    "calls": []
+  },
+  {
+    "function": "testSendNotificationWithAnyPayloadAndOptions",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 81,
+    "calls": []
+  },
+  {
+    "function": "testSendNotificationWithInvalidTopic",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 91,
+    "calls": []
+  },
+  {
+    "function": "testRegisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "testUnregisterListenerNotRegistered",
+    "file": "src/test/java/org/eclipse/uprotocol/communication/SimpleNotifierTest.java",
+    "line": 117,
+    "calls": []
+  },
+  {
+    "function": "setUp",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "line": 59,
+    "calls": []
+  },
+  {
+    "function": "testGetLastMessages",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "line": 64,
+    "calls": []
+  },
+  {
+    "function": "testGetLastMessagesEmptyTopics",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "testGetLastMessagesException",
+    "file": "src/test/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClientTest.java",
+    "line": 91,
+    "calls": []
+  },
+  {
+    "function": "setup",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "testConstructorsRequireRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 64,
+    "calls": []
+  },
+  {
+    "function": "testConstructorRejectsInvalidInstanceId",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 75,
+    "calls": []
+  },
+  {
+    "function": "testSubscribeInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 86,
+    "calls": []
+  },
+  {
+    "function": "testUnsubscribeInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 97,
+    "calls": []
+  },
+  {
+    "function": "testFetchSubscribersInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 108,
+    "calls": []
+  },
+  {
+    "function": "testFetchSubscriptionsInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 119,
+    "calls": []
+  },
+  {
+    "function": "testRegisterForNotificationsInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 130,
+    "calls": []
+  },
+  {
+    "function": "testUnregisterForNotificationsInvokesRpcClient",
+    "file": "src/test/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClientTest.java",
+    "line": 141,
+    "calls": []
+  },
+  {
+    "function": "testGetCauses",
+    "file": "src/test/java/org/eclipse/uprotocol/validation/ValidationExceptionTest.java",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "testGetMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/validation/ValidationExceptionTest.java",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "getUnsignedInt",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 54,
+    "calls": []
+  },
+  {
+    "function": "withUriString",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "withAuthority",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 67,
+    "calls": []
+  },
+  {
+    "function": "withEntityId",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "withMajorVersion",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 77,
+    "calls": []
+  },
+  {
+    "function": "withResourceId",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "serializeToProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 87,
+    "calls": []
+  },
+  {
+    "function": "serializeToUri",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 93,
+    "calls": []
+  },
+  {
+    "function": "deserializeFromUri",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 99,
+    "calls": []
+  },
+  {
+    "function": "assertUriString",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 108,
+    "calls": []
+  },
+  {
+    "function": "assertOriginalUuriCanBeRecreatedFromProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 113,
+    "calls": []
+  },
+  {
+    "function": "assertUuriCanBeDeserializedFromBytes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 119,
+    "calls": []
+  },
+  {
+    "function": "assertOriginalUuriCanBeRecreatedFromUriString",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 126,
+    "calls": []
+  },
+  {
+    "function": "assertUuriMatchesPattern",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 132,
+    "calls": []
+  },
+  {
+    "function": "assertUuriDoesNotMatchPattern",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 139,
+    "calls": []
+  },
+  {
+    "function": "assertFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/UuriTests.java",
+    "line": 146,
+    "calls": []
+  },
+  {
+    "function": "testValidate",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "testValidateFailsForAuthorityExceedingMaxLength",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 74,
+    "calls": []
+  },
+  {
+    "function": "testIsRpcMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 95,
+    "calls": []
+  },
+  {
+    "function": "testIsRpcResponse",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 115,
+    "calls": []
+  },
+  {
+    "function": "testIsTopic",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 134,
+    "calls": []
+  },
+  {
+    "function": "testHasWildcard",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 155,
+    "calls": []
+  },
+  {
+    "function": "verifyFilterCriteriaProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 177,
+    "calls": []
+  },
+  {
+    "function": "testVerifyFilterCriteriaFails",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriValidatorTest.java",
+    "line": 240,
+    "calls": []
+  },
+  {
+    "function": "testConstructorWithNullSourceAndSinkURIs",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "testConstructorWithNullSourceURI",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "testConstructorWithNullSinkURI",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithNullAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithEmptySourceAndSinkUUriAndEmptyUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithEmptySourceAndSinkUUriAndNonEmptyUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 69,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndEmptyUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 76,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndNonMatchingUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 83,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndMatchingUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 90,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndMatchingSourceAndNonMatchingSinkUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 97,
+    "calls": []
+  },
+  {
+    "function": "testMatchesWithNonEmptySourceAndSinkUUriAndNonMatchingSourceAndMatchingSinkUAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 104,
+    "calls": []
+  },
+  {
+    "function": "testFetchingSourceAndSink",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 111,
+    "calls": []
+  },
+  {
+    "function": "testMatchingWhenSourceIsUriFactoryAnyAndSinkIsNotUriFactoryAny",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 119,
+    "calls": []
+  },
+  {
+    "function": "testMatchingWhenSinkIsUriFactoryAnyAndSourceIsNotUriFactoryAny",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/validator/UriFilterTest.java",
+    "line": 126,
+    "calls": []
+  },
+  {
+    "function": "testSerializingANullUuri",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "testDeserializingANullUriFails",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "line": 32,
+    "calls": []
+  },
+  {
+    "function": "testDeserializeRejectsAuthorityNameExceedingMaxLength",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "testDeserializingLowerCaseHexEncodingSuccceeds",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/serializer/UriSerializerTest.java",
+    "line": 52,
+    "calls": []
+  },
+  {
+    "function": "testAny",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "line": 28,
+    "calls": []
+  },
+  {
+    "function": "createServiceDescriptor",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "fromProtoProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "testFromProtoWithParameters",
+    "file": "src/test/java/org/eclipse/uprotocol/uri/factory/UriFactoryTest.java",
+    "line": 87,
+    "calls": []
+  },
+  {
+    "function": "createUriProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "testFactoryMethod",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "testGetAuthorityReturnsAuthorityName",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "line": 42,
+    "calls": []
+  },
+  {
+    "function": "testGetSourceReturnsUri",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "testGetResourceReturnsUri",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/StaticUriProviderTest.java",
+    "line": 56,
+    "calls": []
+  },
+  {
+    "function": "setUp",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/UTransportTest.java",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "testRegisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/UTransportTest.java",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "testUnregisterListener",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/UTransportTest.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "testValidateTypeFailsForUnexpectedTypeCode",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 65,
+    "calls": []
+  },
+  {
+    "function": "testGetValidatorReturnsMatchingValidator",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 84,
+    "calls": []
+  },
+  {
+    "function": "testIsExpired",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 106,
+    "calls": []
+  },
+  {
+    "function": "publishMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 127,
+    "calls": []
+  },
+  {
+    "function": "testValidateAttributesForPublishMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 207,
+    "calls": []
+  },
+  {
+    "function": "notificationMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 244,
+    "calls": []
+  },
+  {
+    "function": "testValidateAttributesForNotificationMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 366,
+    "calls": []
+  },
+  {
+    "function": "requestMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 405,
+    "calls": []
+  },
+  {
+    "function": "testValidateAttributesForRpcRequestMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 570,
+    "calls": []
+  },
+  {
+    "function": "responseMessageArgProvider",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 613,
+    "calls": []
+  },
+  {
+    "function": "testValidateAttributesForRpcResponseMessage",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/validator/UAttributesValidatorTest.java",
+    "line": 786,
+    "calls": []
+  },
+  {
+    "function": "testWithMessageIdPanicsForInvalidUuid",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "testPublishMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "testNotificationMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 90,
+    "calls": []
+  },
+  {
+    "function": "assertBuilderPanics",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 108,
+    "calls": []
+  },
+  {
+    "function": "testRequestRejectsInvalidTtl",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 132,
+    "calls": []
+  },
+  {
+    "function": "testRequestMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 141,
+    "calls": []
+  },
+  {
+    "function": "testResponseMessageBuilderRejectsInvalidAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 183,
+    "calls": []
+  },
+  {
+    "function": "testResponseRejectsNonRequestAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 229,
+    "calls": []
+  },
+  {
+    "function": "testBuildSupportsRepeatedInvocation",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 244,
+    "calls": []
+  },
+  {
+    "function": "testBuildRetainsAllPublishAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 259,
+    "calls": []
+  },
+  {
+    "function": "testBuildRetainsAllNotificationAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 296,
+    "calls": []
+  },
+  {
+    "function": "testBuildRetainsAllRequestAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 333,
+    "calls": []
+  },
+  {
+    "function": "testBuilderCopiesRequestAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 376,
+    "calls": []
+  },
+  {
+    "function": "testBuildRetainsAllResponseAttributes",
+    "file": "src/test/java/org/eclipse/uprotocol/transport/builder/UMessageBuilderTest.java",
+    "line": 410,
+    "calls": []
+  },
+  {
+    "function": "getUnsignedLong",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "withMsbLsb",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "withHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "serializeToProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 68,
+    "calls": []
+  },
+  {
+    "function": "serializeToHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 73,
+    "calls": []
+  },
+  {
+    "function": "deserializeFromHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 78,
+    "calls": []
+  },
+  {
+    "function": "assertHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 87,
+    "calls": []
+  },
+  {
+    "function": "assertOriginalUuidCanBeRecreatedFromProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 92,
+    "calls": []
+  },
+  {
+    "function": "assertDeserializeUuidFromProtobuf",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 98,
+    "calls": []
+  },
+  {
+    "function": "assertOriginalUuidCanBeRecreatedFromHyphenatedString",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 104,
+    "calls": []
+  },
+  {
+    "function": "assertFailure",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/UuidTests.java",
+    "line": 109,
+    "calls": []
+  },
+  {
+    "function": "invalidUuid",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "provideUuidsForIsUProtocol",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "testIsUProtocol",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "provideCreationTimestamps",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "testGetTime",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 74,
+    "calls": []
+  },
+  {
+    "function": "testGetTimeRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "provideElapsedTimeTestCases",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 88,
+    "calls": []
+  },
+  {
+    "function": "testGetElapsedTime",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 98,
+    "calls": []
+  },
+  {
+    "function": "testGetElapsedTimeUsesNowForReference",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 105,
+    "calls": []
+  },
+  {
+    "function": "testGetElapsedTimeRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 114,
+    "calls": []
+  },
+  {
+    "function": "provideRemainingTimeTestCases",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 120,
+    "calls": []
+  },
+  {
+    "function": "testGetRemainingTime",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 131,
+    "calls": []
+  },
+  {
+    "function": "testGetRemainingTimeUsesNowForReference",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 138,
+    "calls": []
+  },
+  {
+    "function": "testGetRemainingTimeRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 147,
+    "calls": []
+  },
+  {
+    "function": "provideIsExpiredTestCases",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 160,
+    "calls": []
+  },
+  {
+    "function": "testIsExpired",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 173,
+    "calls": []
+  },
+  {
+    "function": "testIsExpiredRejectsInvalidArgs",
+    "file": "src/test/java/org/eclipse/uprotocol/uuid/factory/UuidUtilsTest.java",
+    "line": 180,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "line": 37,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "line": 53,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "line": 69,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Publisher.java",
+    "line": 85,
+    "calls": []
+  },
+  {
+    "function": "registerRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcServer.java",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "unregisterRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcServer.java",
+    "line": 56,
+    "calls": []
+  },
+  {
+    "function": "SimpleNotifier",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "line": 49,
+    "calls": []
+  },
+  {
+    "function": "registerNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "unregisterNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimpleNotifier.java",
+    "line": 71,
+    "calls": []
+  },
+  {
+    "function": "SimplePublisher",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimplePublisher.java",
+    "line": 40,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SimplePublisher.java",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "handleSubscriptionChange",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/SubscriptionChangeHandler.java",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "AbstractCommunicationLayerClient",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/AbstractCommunicationLayerClient.java",
+    "line": 25,
+    "calls": []
+  },
+  {
+    "function": "getTransport",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/AbstractCommunicationLayerClient.java",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "getUriProvider",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/AbstractCommunicationLayerClient.java",
+    "line": 34,
+    "calls": []
+  },
+  {
+    "function": "UClient",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 43,
+    "calls": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "registerNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "unregisterNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "registerRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "unregisterRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 77,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 84,
+    "calls": []
+  },
+  {
+    "function": "create",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UClient.java",
+    "line": 97,
+    "calls": []
+  },
+  {
+    "function": "RpcResult",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "isSuccess",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "isFailure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 34,
+    "calls": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "map",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "flatMap",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 40,
+    "calls": []
+  },
+  {
+    "function": "filter",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 42,
+    "calls": []
+  },
+  {
+    "function": "failureValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "successValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "Success",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 52,
+    "calls": []
+  },
+  {
+    "function": "isSuccess",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 57,
+    "calls": []
+  },
+  {
+    "function": "isFailure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 62,
+    "calls": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 67,
+    "calls": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "map",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 77,
+    "calls": []
+  },
+  {
+    "function": "flatMap",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 86,
+    "calls": []
+  },
+  {
+    "function": "filter",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 95,
+    "calls": []
+  },
+  {
+    "function": "failureValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 106,
+    "calls": []
+  },
+  {
+    "function": "successValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 111,
+    "calls": []
+  },
+  {
+    "function": "toString",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 116,
+    "calls": []
+  },
+  {
+    "function": "Failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 126,
+    "calls": []
+  },
+  {
+    "function": "Failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 130,
+    "calls": []
+  },
+  {
+    "function": "Failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 136,
+    "calls": []
+  },
+  {
+    "function": "isSuccess",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 142,
+    "calls": []
+  },
+  {
+    "function": "isFailure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 147,
+    "calls": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 152,
+    "calls": []
+  },
+  {
+    "function": "getOrElse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 157,
+    "calls": []
+  },
+  {
+    "function": "map",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 162,
+    "calls": []
+  },
+  {
+    "function": "flatMap",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 167,
+    "calls": []
+  },
+  {
+    "function": "filter",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 172,
+    "calls": []
+  },
+  {
+    "function": "failureValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 177,
+    "calls": []
+  },
+  {
+    "function": "successValue",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 182,
+    "calls": []
+  },
+  {
+    "function": "toString",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 187,
+    "calls": []
+  },
+  {
+    "function": "success",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 193,
+    "calls": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 197,
+    "calls": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 201,
+    "calls": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 205,
+    "calls": []
+  },
+  {
+    "function": "failure",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 209,
+    "calls": []
+  },
+  {
+    "function": "flatten",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcResult.java",
+    "line": 213,
+    "calls": []
+  },
+  {
+    "function": "handleRequest",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RequestHandler.java",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "InMemoryRpcClient",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "setUnexpectedMessageHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "line": 83,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "line": 87,
+    "calls": []
+  },
+  {
+    "function": "close",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "line": 126,
+    "calls": []
+  },
+  {
+    "function": "handleResponse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcClient.java",
+    "line": 134,
+    "calls": []
+  },
+  {
+    "function": "UPayload",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "isEmpty",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "packToAny",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 67,
+    "calls": []
+  },
+  {
+    "function": "pack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "pack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 92,
+    "calls": []
+  },
+  {
+    "function": "unpack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 104,
+    "calls": []
+  },
+  {
+    "function": "unpack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 123,
+    "calls": []
+  },
+  {
+    "function": "unpackOrDefaultInstance",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 146,
+    "calls": []
+  },
+  {
+    "function": "unpack",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 163,
+    "calls": []
+  },
+  {
+    "function": "unpackOrDefaultInstance",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UPayload.java",
+    "line": 205,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcClient.java",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "mapResponse",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcMapper.java",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "mapResponseToResult",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/RpcMapper.java",
+    "line": 78,
+    "calls": []
+  },
+  {
+    "function": "InMemorySubscriber",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 90,
+    "calls": []
+  },
+  {
+    "function": "InMemorySubscriber",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 118,
+    "calls": []
+  },
+  {
+    "function": "setUnexpectedMessageHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 136,
+    "calls": []
+  },
+  {
+    "function": "close",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 143,
+    "calls": []
+  },
+  {
+    "function": "addSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 155,
+    "calls": []
+  },
+  {
+    "function": "hasSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 182,
+    "calls": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 186,
+    "calls": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 233,
+    "calls": []
+  },
+  {
+    "function": "registerSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 267,
+    "calls": []
+  },
+  {
+    "function": "unregisterSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 284,
+    "calls": []
+  },
+  {
+    "function": "handleSubscriptionChangeNotification",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemorySubscriber.java",
+    "line": 302,
+    "calls": []
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "line": 33,
+    "calls": []
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "line": 53,
+    "calls": []
+  },
+  {
+    "function": "UStatusException",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "getStatus",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "line": 72,
+    "calls": []
+  },
+  {
+    "function": "getCode",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "line": 80,
+    "calls": []
+  },
+  {
+    "function": "getMessage",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/UStatusException.java",
+    "line": 88,
+    "calls": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "line": 43,
+    "calls": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "line": 61,
+    "calls": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "notify",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "line": 96,
+    "calls": []
+  },
+  {
+    "function": "registerNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "line": 110,
+    "calls": []
+  },
+  {
+    "function": "unregisterNotificationListener",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Notifier.java",
+    "line": 122,
+    "calls": []
+  },
+  {
+    "function": "InMemoryRpcServer",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "line": 74,
+    "calls": []
+  },
+  {
+    "function": "setUnexpectedMessageHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "line": 83,
+    "calls": []
+  },
+  {
+    "function": "setSendErrorHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "line": 92,
+    "calls": []
+  },
+  {
+    "function": "registerRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "line": 96,
+    "calls": []
+  },
+  {
+    "function": "unregisterRequestHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "line": 126,
+    "calls": []
+  },
+  {
+    "function": "handleRequest",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/InMemoryRpcServer.java",
+    "line": 154,
+    "calls": []
+  },
+  {
+    "function": "CallOptions",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "line": 45,
+    "calls": []
+  },
+  {
+    "function": "CallOptions",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "line": 54,
+    "calls": []
+  },
+  {
+    "function": "CallOptions",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "line": 61,
+    "calls": []
+  },
+  {
+    "function": "applyToMessage",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/CallOptions.java",
+    "line": 70,
+    "calls": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "line": 49,
+    "calls": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "registerSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "line": 77,
+    "calls": []
+  },
+  {
+    "function": "unregisterSubscriptionChangeHandler",
+    "file": "src/main/java/org/eclipse/uprotocol/communication/Subscriber.java",
+    "line": 90,
+    "calls": []
+  },
+  {
+    "function": "RpcClientBasedUTwinClient",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClient.java",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "getLastMessages",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/RpcClientBasedUTwinClient.java",
+    "line": 65,
+    "calls": []
+  },
+  {
+    "function": "getLastMessages",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/UTwinClient.java",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "getLastMessages",
+    "file": "src/main/java/org/eclipse/uprotocol/client/utwin/v2/UTwinClient.java",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "getSubscriptionServiceNotificationTopic",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "line": 48,
+    "calls": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "line": 58,
+    "calls": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "line": 68,
+    "calls": []
+  },
+  {
+    "function": "fetchSubscribers",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "line": 78,
+    "calls": []
+  },
+  {
+    "function": "fetchSubscriptions",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "line": 91,
+    "calls": []
+  },
+  {
+    "function": "registerForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "line": 107,
+    "calls": []
+  },
+  {
+    "function": "unregisterForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/USubscriptionClient.java",
+    "line": 117,
+    "calls": []
+  },
+  {
+    "function": "RpcClientBasedUSubscriptionClient",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 69,
+    "calls": []
+  },
+  {
+    "function": "RpcClientBasedUSubscriptionClient",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 86,
+    "calls": []
+  },
+  {
+    "function": "getUSubscriptionServiceUri",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 101,
+    "calls": []
+  },
+  {
+    "function": "invokeMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 111,
+    "calls": []
+  },
+  {
+    "function": "getSubscriptionServiceNotificationTopic",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 125,
+    "calls": []
+  },
+  {
+    "function": "subscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 132,
+    "calls": []
+  },
+  {
+    "function": "unsubscribe",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 142,
+    "calls": []
+  },
+  {
+    "function": "fetchSubscribers",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 152,
+    "calls": []
+  },
+  {
+    "function": "fetchSubscriptions",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 163,
+    "calls": []
+  },
+  {
+    "function": "registerForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 174,
+    "calls": []
+  },
+  {
+    "function": "unregisterForNotifications",
+    "file": "src/main/java/org/eclipse/uprotocol/client/usubscription/v3/RpcClientBasedUSubscriptionClient.java",
+    "line": 184,
+    "calls": []
+  },
+  {
+    "function": "ValidationUtils",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationUtils.java",
+    "line": 23,
+    "calls": []
+  },
+  {
+    "function": "collectErrors",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationUtils.java",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "ValidationException",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "ValidationException",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "line": 41,
+    "calls": []
+  },
+  {
+    "function": "getMessage",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "getCauses",
+    "file": "src/main/java/org/eclipse/uprotocol/validation/ValidationException.java",
+    "line": 61,
+    "calls": []
+  },
+  {
+    "function": "UriValidator",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "validateVersionMajor",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 81,
+    "calls": []
+  },
+  {
+    "function": "validateResourceId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 88,
+    "calls": []
+  },
+  {
+    "function": "validateAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 106,
+    "calls": []
+  },
+  {
+    "function": "isRpcMethod",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 149,
+    "calls": []
+  },
+  {
+    "function": "isRpcResponse",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 162,
+    "calls": []
+  },
+  {
+    "function": "isNotificationDestination",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 174,
+    "calls": []
+  },
+  {
+    "function": "isTopic",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 187,
+    "calls": []
+  },
+  {
+    "function": "matchesAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 193,
+    "calls": []
+  },
+  {
+    "function": "matchesEntityTypeId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 198,
+    "calls": []
+  },
+  {
+    "function": "matchesEntityInstance",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 204,
+    "calls": []
+  },
+  {
+    "function": "matchesEntityVersion",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 210,
+    "calls": []
+  },
+  {
+    "function": "matchesEntity",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 215,
+    "calls": []
+  },
+  {
+    "function": "matchesResource",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 221,
+    "calls": []
+  },
+  {
+    "function": "matches",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 235,
+    "calls": []
+  },
+  {
+    "function": "hasWildcardAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 250,
+    "calls": []
+  },
+  {
+    "function": "hasWildcardEntityTypeId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 261,
+    "calls": []
+  },
+  {
+    "function": "hasWildcardEntityInstanceId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 272,
+    "calls": []
+  },
+  {
+    "function": "hasWildcardEntityVersion",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 283,
+    "calls": []
+  },
+  {
+    "function": "hasWildcardResourceId",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 294,
+    "calls": []
+  },
+  {
+    "function": "hasWildcard",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 305,
+    "calls": []
+  },
+  {
+    "function": "verifyFilterCriteria",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriValidator.java",
+    "line": 326,
+    "calls": []
+  },
+  {
+    "function": "matches",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/validator/UriFilter.java",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "UriSerializer",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "line": 36,
+    "calls": []
+  },
+  {
+    "function": "serialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "line": 55,
+    "calls": []
+  },
+  {
+    "function": "serialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "line": 74,
+    "calls": []
+  },
+  {
+    "function": "deserialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "line": 108,
+    "calls": []
+  },
+  {
+    "function": "deserialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/serializer/UriSerializer.java",
+    "line": 126,
+    "calls": []
+  },
+  {
+    "function": "UriFactory",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/factory/UriFactory.java",
+    "line": 47,
+    "calls": []
+  },
+  {
+    "function": "fromProto",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/factory/UriFactory.java",
+    "line": 64,
+    "calls": []
+  },
+  {
+    "function": "fromProto",
+    "file": "src/main/java/org/eclipse/uprotocol/uri/factory/UriFactory.java",
+    "line": 82,
+    "calls": []
+  },
+  {
+    "function": "StaticUriProvider",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "line": 27,
+    "calls": []
+  },
+  {
+    "function": "of",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "of",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "line": 52,
+    "calls": []
+  },
+  {
+    "function": "getAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "getSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "line": 68,
+    "calls": []
+  },
+  {
+    "function": "getResource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/StaticUriProvider.java",
+    "line": 73,
+    "calls": []
+  },
+  {
+    "function": "send",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "line": 44,
+    "calls": []
+  },
+  {
+    "function": "registerListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "line": 65,
+    "calls": []
+  },
+  {
+    "function": "registerListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "line": 87,
+    "calls": []
+  },
+  {
+    "function": "unregisterListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "line": 104,
+    "calls": []
+  },
+  {
+    "function": "unregisterListener",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UTransport.java",
+    "line": 121,
+    "calls": []
+  },
+  {
+    "function": "getAuthority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/LocalUriProvider.java",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "getSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/LocalUriProvider.java",
+    "line": 38,
+    "calls": []
+  },
+  {
+    "function": "getResource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/LocalUriProvider.java",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "onReceive",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/UListener.java",
+    "line": 37,
+    "calls": []
+  },
+  {
+    "function": "getValidator",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 50,
+    "calls": []
+  },
+  {
+    "function": "getValidator",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 60,
+    "calls": []
+  },
+  {
+    "function": "validateId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "validateType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 96,
+    "calls": []
+  },
+  {
+    "function": "validatePriority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 110,
+    "calls": []
+  },
+  {
+    "function": "validateRpcPriority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 124,
+    "calls": []
+  },
+  {
+    "function": "validateRpcTtl",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 139,
+    "calls": []
+  },
+  {
+    "function": "isExpired",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 165,
+    "calls": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 176,
+    "calls": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 184,
+    "calls": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 192,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 203,
+    "calls": []
+  },
+  {
+    "function": "Validators",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 216,
+    "calls": []
+  },
+  {
+    "function": "validator",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 225,
+    "calls": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 235,
+    "calls": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 248,
+    "calls": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 269,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 277,
+    "calls": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 297,
+    "calls": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 310,
+    "calls": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 333,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 348,
+    "calls": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 368,
+    "calls": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 381,
+    "calls": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 406,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 423,
+    "calls": []
+  },
+  {
+    "function": "messageType",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 445,
+    "calls": []
+  },
+  {
+    "function": "validateSource",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 457,
+    "calls": []
+  },
+  {
+    "function": "validateSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 483,
+    "calls": []
+  },
+  {
+    "function": "validateReqId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 507,
+    "calls": []
+  },
+  {
+    "function": "validateCommstatus",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 523,
+    "calls": []
+  },
+  {
+    "function": "validate",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/validator/UAttributesValidator.java",
+    "line": 533,
+    "calls": []
+  },
+  {
+    "function": "publish",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 66,
+    "calls": []
+  },
+  {
+    "function": "notification",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 86,
+    "calls": []
+  },
+  {
+    "function": "request",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 114,
+    "calls": []
+  },
+  {
+    "function": "response",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 146,
+    "calls": []
+  },
+  {
+    "function": "response",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 173,
+    "calls": []
+  },
+  {
+    "function": "UMessageBuilder",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 201,
+    "calls": []
+  },
+  {
+    "function": "withMessageId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 219,
+    "calls": []
+  },
+  {
+    "function": "withTtl",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 236,
+    "calls": []
+  },
+  {
+    "function": "withToken",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 255,
+    "calls": []
+  },
+  {
+    "function": "withPriority",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 276,
+    "calls": []
+  },
+  {
+    "function": "withPermissionLevel",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 294,
+    "calls": []
+  },
+  {
+    "function": "withTraceparent",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 310,
+    "calls": []
+  },
+  {
+    "function": "withCommStatus",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 324,
+    "calls": []
+  },
+  {
+    "function": "withReqId",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 333,
+    "calls": []
+  },
+  {
+    "function": "withSink",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 338,
+    "calls": []
+  },
+  {
+    "function": "build",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 350,
+    "calls": []
+  },
+  {
+    "function": "build",
+    "file": "src/main/java/org/eclipse/uprotocol/transport/builder/UMessageBuilder.java",
+    "line": 366,
+    "calls": []
+  },
+  {
+    "function": "UuidSerializer",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/serializer/UuidSerializer.java",
+    "line": 26,
+    "calls": []
+  },
+  {
+    "function": "deserialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/serializer/UuidSerializer.java",
+    "line": 37,
+    "calls": []
+  },
+  {
+    "function": "serialize",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/serializer/UuidSerializer.java",
+    "line": 59,
+    "calls": []
+  },
+  {
+    "function": "UuidUtils",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 31,
+    "calls": []
+  },
+  {
+    "function": "getVersion",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 35,
+    "calls": []
+  },
+  {
+    "function": "isRfc9562Variant",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 46,
+    "calls": []
+  },
+  {
+    "function": "isUProtocol",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 63,
+    "calls": []
+  },
+  {
+    "function": "getTimestamp",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 79,
+    "calls": []
+  },
+  {
+    "function": "getElapsedTime",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 99,
+    "calls": []
+  },
+  {
+    "function": "getRemainingTime",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 123,
+    "calls": []
+  },
+  {
+    "function": "isExpired",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidUtils.java",
+    "line": 148,
+    "calls": []
+  },
+  {
+    "function": "UuidFactory",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidFactory.java",
+    "line": 30,
+    "calls": []
+  },
+  {
+    "function": "create",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidFactory.java",
+    "line": 39,
+    "calls": []
+  },
+  {
+    "function": "create",
+    "file": "src/main/java/org/eclipse/uprotocol/uuid/factory/UuidFactory.java",
+    "line": 49,
+    "calls": []
+  }
+]

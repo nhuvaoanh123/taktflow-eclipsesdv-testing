@@ -1,0 +1,21 @@
+{
+  "function": "ReservedData",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ReservedData",
+      "line": 37
+    },
+    {
+      "id": 1,
+      "label": "exit:ReservedData",
+      "line": 55
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

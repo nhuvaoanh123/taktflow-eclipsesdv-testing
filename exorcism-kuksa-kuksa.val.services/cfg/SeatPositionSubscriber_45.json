@@ -1,0 +1,21 @@
+{
+  "function": "SeatPositionSubscriber",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SeatPositionSubscriber",
+      "line": 45
+    },
+    {
+      "id": 1,
+      "label": "exit:SeatPositionSubscriber",
+      "line": 67
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

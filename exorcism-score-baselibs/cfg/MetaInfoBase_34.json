@@ -1,0 +1,30 @@
+{
+  "function": "MetaInfoBase",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:MetaInfoBase",
+      "line": 34
+    },
+    {
+      "id": 1,
+      "label": "return_statement",
+      "line": 70
+    },
+    {
+      "id": 2,
+      "label": "exit:MetaInfoBase",
+      "line": 73
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 0,
+      "to": 2
+    }
+  ]
+}

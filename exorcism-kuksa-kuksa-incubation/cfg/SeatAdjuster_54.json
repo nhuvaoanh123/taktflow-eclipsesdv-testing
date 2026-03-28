@@ -1,0 +1,21 @@
+{
+  "function": "SeatAdjuster",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:SeatAdjuster",
+      "line": 54
+    },
+    {
+      "id": 1,
+      "label": "exit:SeatAdjuster",
+      "line": 67
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "assert_value",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:assert_value",
+      "line": 194
+    },
+    {
+      "id": 1,
+      "label": "exit:assert_value",
+      "line": 228
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

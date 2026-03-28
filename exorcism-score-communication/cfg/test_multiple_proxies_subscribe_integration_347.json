@@ -1,0 +1,21 @@
+{
+  "function": "test_multiple_proxies_subscribe_integration",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:test_multiple_proxies_subscribe_integration",
+      "line": 347
+    },
+    {
+      "id": 1,
+      "label": "exit:test_multiple_proxies_subscribe_integration",
+      "line": 441
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

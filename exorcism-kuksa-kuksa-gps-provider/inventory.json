@@ -1,0 +1,16 @@
+{
+  "project": "kuksa-kuksa-gps-provider",
+  "files_by_language": {
+    "Python": {
+      "files": 1,
+      "loc": 328
+    }
+  },
+  "total_files": 1,
+  "total_loc": 328,
+  "total_functions": 11,
+  "build_system": "Unknown",
+  "languages": [
+    "Python"
+  ]
+}

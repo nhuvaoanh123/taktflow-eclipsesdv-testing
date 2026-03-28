@@ -1,0 +1,21 @@
+{
+  "function": "service_main",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:service_main",
+      "line": 120
+    },
+    {
+      "id": 1,
+      "label": "exit:service_main",
+      "line": 141
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

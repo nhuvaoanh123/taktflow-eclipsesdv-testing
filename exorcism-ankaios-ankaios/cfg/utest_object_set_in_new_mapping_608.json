@@ -1,0 +1,21 @@
+{
+  "function": "utest_object_set_in_new_mapping",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:utest_object_set_in_new_mapping",
+      "line": 608
+    },
+    {
+      "id": 1,
+      "label": "exit:utest_object_set_in_new_mapping",
+      "line": 637
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

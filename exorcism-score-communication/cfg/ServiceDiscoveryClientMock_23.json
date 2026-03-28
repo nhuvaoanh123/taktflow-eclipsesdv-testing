@@ -1,0 +1,21 @@
+{
+  "function": "ServiceDiscoveryClientMock",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:ServiceDiscoveryClientMock",
+      "line": 23
+    },
+    {
+      "id": 1,
+      "label": "exit:ServiceDiscoveryClientMock",
+      "line": 40
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}

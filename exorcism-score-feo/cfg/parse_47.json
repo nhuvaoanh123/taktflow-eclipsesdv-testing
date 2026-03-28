@@ -1,0 +1,21 @@
+{
+  "function": "parse",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "entry:parse",
+      "line": 47
+    },
+    {
+      "id": 1,
+      "label": "exit:parse",
+      "line": 105
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    }
+  ]
+}
