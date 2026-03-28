@@ -22,6 +22,30 @@ Independent verification of the [Eclipse SDV](https://sdv.eclipse.org/) software
 ## Test Station
 
 ```
+                    ┌─────────────────────────────────────────────────┐
+                    │                    CLOUD                        │
+                    │                                                 │
+                    │  ┌───────────┐  ┌──────────┐  ┌─────────────┐  │
+                    │  │ IoT Core  ├──┤ IoT Rules├──┤ Timestream  │  │
+                    │  │ (MQTT+TLS)│  │          │  │ (time-series│  │
+                    │  └─────▲─────┘  └──────────┘  └──────┬──────┘  │
+                    │        │                             │         │
+                    │        │                      ┌──────▼──────┐  │
+                    │        │                      │  Grafana    │  │
+                    │        │                      │ (dashboards)│  │
+                    │        │                      └─────────────┘  │
+                    └────────┼──────────────────────────────────────-┘
+                             │ X.509 mutual TLS
+                    ┌────────┼──────────────────────────────────────-┐
+                    │  VPS   │  SIL Demo Server                      │
+                    │  ┌─────┴─────────────────────────────────────┐ │
+                    │  │ Docker Compose                            │ │
+                    │  │  7 ECU containers + gateway + plant-sim   │ │
+                    │  │  Mosquitto MQTT + fault injection         │ │
+                    │  └───────────────────────────────────────────┘ │
+                    │  Caddy (reverse proxy) + static docs           │
+                    └────────────────────────────────────────────────┘
+
  PC (Windows, x86_64)                    Laptop (Ubuntu, x86_64)
  ┌──────────────────────┐               ┌─────────────────────────┐
  │ Flash + debug (SWD)  │               │ Bazel build (S-CORE)    │
