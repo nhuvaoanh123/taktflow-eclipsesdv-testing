@@ -22,57 +22,58 @@ Independent verification of the [Eclipse SDV](https://sdv.eclipse.org/) software
 ## Test Station
 
 ```
-                    ┌─────────────────────────────────────────────────┐
-                    │                    CLOUD                        │
-                    │                                                 │
-                    │  ┌───────────┐  ┌──────────┐  ┌─────────────┐  │
-                    │  │ IoT Core  ├──┤ IoT Rules├──┤ Timestream  │  │
-                    │  │ (MQTT+TLS)│  │          │  │ (time-series│  │
-                    │  └─────▲─────┘  └──────────┘  └──────┬──────┘  │
-                    │        │                             │         │
-                    │        │                      ┌──────▼──────┐  │
-                    │        │                      │  Grafana    │  │
-                    │        │                      │ (dashboards)│  │
-                    │        │                      └─────────────┘  │
-                    └────────┼──────────────────────────────────────-┘
-                             │ X.509 mutual TLS
-                    ┌────────┼──────────────────────────────────────-┐
-                    │  VPS   │  SIL Demo Server                      │
-                    │  ┌─────┴─────────────────────────────────────┐ │
-                    │  │ Docker Compose                            │ │
-                    │  │  7 ECU containers + gateway + plant-sim   │ │
-                    │  │  Mosquitto MQTT + fault injection         │ │
-                    │  └───────────────────────────────────────────┘ │
-                    │  Caddy (reverse proxy) + static docs           │
-                    └────────────────────────────────────────────────┘
-
- PC (Windows, x86_64)                    Laptop (Ubuntu, x86_64)
- ┌──────────────────────┐               ┌─────────────────────────┐
- │ Flash + debug (SWD)  │               │ Bazel build (S-CORE)    │
- │ CAN monitor          │               │ pytest, sanitizers, cov │
- │ Oscilloscope control │               │ Docker vECU build       │
- └───┬──────┬───────┬───┘               └────┬──────────────┬─────┘
-     │USB   │ETH    │WiFi                    │WiFi          │SSH
-     │CAN   │scope  │                        │              │
-     │      │       │    ┌───────────────┐   │    ┌─────────▼──────┐
-     │      │       └────┤  WiFi Router  ├───┘    │ Pi 4 (QNX 8.0) │
-     │      │            └───────────────┘   ETH  │                │
-     │      │                                ┌────┤ KUKSA broker   │
-     │      ▼                                │    │ Docker vECUs   │
-     │  ┌────────┐                           │    │ BCM / ICU / TCU│
-     │  │ Scope  │                           │    └────────┬───────┘
-     │  │ (4ch)  │                           │             │USB-CAN
-     │  └────────┘                           │             │
-     │                                       │             │
- ════╪═══════════════════════════════════════╪═════════════╪══════
-     │      CAN Bus (500 kbps, 120 ohm, E2E, 34 msgs)    │
- ════╪═══╤═══════════╤═══════════╤═══════════╤════════════╪══════
-     │   │           │           │           │            │
-     │ ┌─▼──┐    ┌───▼───┐  ┌───▼───┐  ┌───▼───┐        │
-     │ │CVC │    │  FZC  │  │  RZC  │  │  SC   │        │
-     │ │TMS │    │G474RE │  │G474RE │  │ TMS  │        │
-     │ │570 │    │       │  │       │  │ 570  │        │
-     └►│    │    │Steer  │  │Motor  │  │WDT   │◄───────┘
+ ┌──────────────────────────────────────────────────────────────────┐
+ │                          CLOUD (AWS)                             │
+ │                                                                  │
+ │  ┌───────────┐    ┌──────────┐    ┌─────────────┐               │
+ │  │ IoT Core  ├────┤ IoT Rules├────┤ Timestream  │               │
+ │  │ (MQTT+TLS)│    │          │    │ (time-series)│               │
+ │  └─────▲─────┘    └──────────┘    └──────┬──────┘               │
+ │        │                                 │                      │
+ │        │                          ┌──────▼──────┐               │
+ │        │                          │  Grafana    │◄──── browser  │
+ │        │                          │ (dashboards)│               │
+ │        │                          └─────────────┘               │
+ └────────┼────────────────────────────────────────────────────────┘
+          │ MQTT over X.509 mutual TLS
+ ┌────────┼────────────────────────────────────────────────────────┐
+ │  VPS   │  SIL Demo Server                                       │
+ │  ┌─────┴───────────────────────────────────────────────┐        │
+ │  │ Docker Compose                                      │        │
+ │  │  7 ECU containers + gateway + plant-sim             │        │
+ │  │  Mosquitto MQTT broker + fault injection runner     │        │
+ │  └─────────────────────────────────────────────────────┘        │
+ │  Caddy (reverse proxy) + ASPICE docs                            │
+ └──────▲────────────────────────────▲─────────────────────────────┘
+        │ HTTPS (deploy + monitor)   │ SSH (deploy)
+        │                            │
+ PC (Windows)───────────────────Laptop (Ubuntu)
+ ┌──────┴───────────────┐       ┌────┴────────────────────┐
+ │ Flash + debug (SWD)  │       │ Bazel build (S-CORE)    │
+ │ CAN monitor          │       │ pytest, sanitizers, cov │
+ │ Oscilloscope control │       │ Docker vECU build       │
+ └───┬──────┬───────┬───┘       └────┬──────────────┬─────┘
+     │USB   │ETH    │WiFi            │WiFi          │SSH
+     │CAN   │scope  │                │              │
+     │      │       │  ┌───────────┐ │    ┌─────────▼──────┐
+     │      │       └──┤WiFi Router├─┘    │ Pi 4 (QNX 8.0) │
+     │      │          └───────────┘ ETH  │                │
+     │      │                        ┌────┤ KUKSA broker   │
+     │      ▼                        │    │ Docker vECUs   │
+     │  ┌────────┐                   │    │ BCM / ICU / TCU│
+     │  │ Scope  │                   │    └────────┬───────┘
+     │  │ (4ch)  │                   │             │USB-CAN
+     │  └────────┘                   │             │
+     │                               │             │
+ ════╪═══════════════════════════════╪═════════════╪══════════════
+     │        CAN Bus (500 kbps, 120 ohm, E2E, 34 msgs)
+ ════╪═══╤═══════════╤═══════════╤═══════════╤════╪══════════════
+     │   │           │           │           │    │
+     │ ┌─▼──┐    ┌───▼───┐  ┌───▼───┐  ┌───▼───┐│
+     │ │CVC │    │  FZC  │  │  RZC  │  │  SC   ││
+     │ │TMS │    │G474RE │  │G474RE │  │ TMS  ││
+     │ │570 │    │       │  │       │  │ 570  ││
+     └►│    │    │Steer  │  │Motor  │  │WDT   │◄┘
   USB  │Arb │    │Brake  │  │ADC    │  │Relay │
   CAN  │Ped │    │LiDAR  │  │Enc   │  │Estop │
        └────┘    └───────┘  └───────┘  └──┬───┘
