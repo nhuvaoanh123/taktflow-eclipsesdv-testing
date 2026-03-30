@@ -43,3 +43,46 @@ score:
       - linux_aarch64
       - qnx_x86_64
       - qnx_aarch64
+
+  baselibs_rust:
+    source_dir: score-baselibs_rust
+    build_system: cargo
+    bazel_version: "8.4.2"
+    build_cmd: "cargo build --workspace"
+    test_cmd: "cargo test --workspace"
+    asil: QM
+    platforms:
+      - linux_x86_64
+      - linux_aarch64
+
+  kyron:
+    source_dir: score-kyron
+    build_system: cargo
+    bazel_version: "8.3.0"
+    build_cmd: "cargo build --workspace"
+    test_cmd: "cargo test --workspace"
+    bazel_test_cmd: "bazel test //src/... --build_tests_only"
+    asil: QM
+    platforms:
+      - linux_x86_64
+      - linux_aarch64
+
+  config_management:
+    source_dir: score-config_management
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build //..."
+    test_cmd: "bazel test //... --build_tests_only"
+    asil: QM
+    platforms:
+      - linux_x86_64
+
+  scrample:
+    source_dir: score-scrample
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build //..."
+    test_cmd: "bazel test //... --build_tests_only"
+    asil: QM
+    platforms:
+      - linux_x86_64

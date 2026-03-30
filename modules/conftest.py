@@ -133,5 +133,9 @@ def pytest_configure(config):
         ("ankaios", "Eclipse Ankaios orchestrator"),
         ("score_logging", "S-CORE DLT logging middleware"),
         ("score_orchestrator", "S-CORE fixed execution orchestrator"),
+        ("score_baselibs_rust", "S-CORE Rust foundation libraries"),
+        ("score_kyron", "S-CORE Rust runtime scheduler"),
+        ("score_config_management", "S-CORE configuration middleware"),
+        ("score_scrample", "S-CORE middleware component"),
     ]:
         config.addinivalue_line("markers", f"{marker}: {desc}")
