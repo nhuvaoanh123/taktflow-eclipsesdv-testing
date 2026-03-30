@@ -71,7 +71,7 @@ class TestInstall:
         if not reqs.exists():
             pytest.skip("No requirements.txt for mock_service")
         rc, out, err = _run(
-            f"python3 -m pip install --quiet -r {reqs} 2>&1",
+            f"python3 -m pip install --user --break-system-packages --quiet -r {reqs} 2>&1",
             timeout=120,
         )
         assert rc == 0, f"Install failed:\n{(out+err)[-2000:]}"
@@ -84,7 +84,7 @@ class TestInstall:
         if not reqs.exists():
             pytest.skip("No requirements.txt for hvac_service")
         rc, out, err = _run(
-            f"python3 -m pip install --quiet -r {reqs} 2>&1",
+            f"python3 -m pip install --user --break-system-packages --quiet -r {reqs} 2>&1",
             timeout=120,
         )
         assert rc == 0, f"Install failed:\n{(out+err)[-2000:]}"

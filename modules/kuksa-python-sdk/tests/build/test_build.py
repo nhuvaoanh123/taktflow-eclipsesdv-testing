@@ -68,13 +68,13 @@ class TestInstall:
     def test_pip_install_client(self, module_dir):
         """Install kuksa-client in editable mode."""
         rc, out, err = _run(
-            "python3 -m pip install -e '.[test]' --quiet 2>&1",
+            "python3 -m pip install --user --break-system-packages -e '.[test]' --quiet 2>&1",
             timeout=120,
         )
         if rc != 0:
             # Try without [test] extras
             rc, out, err = _run(
-                "python3 -m pip install -e . --quiet 2>&1",
+                "python3 -m pip install --user --break-system-packages -e . --quiet 2>&1",
                 timeout=120,
             )
         assert rc == 0, f"pip install failed:\n{(out+err)[-2000:]}"

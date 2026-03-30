@@ -68,7 +68,7 @@ class TestInstall:
         """Install runtime + dev dependencies."""
         reqs = module_dir / "requirements.txt"
         reqs_dev = module_dir / "requirements-dev.txt"
-        cmd = "python3 -m pip install --quiet"
+        cmd = "python3 -m pip install --user --break-system-packages --quiet"
         if reqs.exists():
             cmd += f" -r requirements.txt"
         if reqs_dev.exists():
