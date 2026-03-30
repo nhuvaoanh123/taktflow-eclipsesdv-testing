@@ -44,17 +44,40 @@ require unique fixture names per module — run individually (same as existing 8
 - [ ] Record baseline test counts + coverage in `results/`
 - [ ] Update `config/tested-commits.yaml` with actual tested commits
 
-## Phase 4: Enable CI — TODO
+## Phase 4: Expand to Kuksa Ecosystem — IN PROGRESS (2026-03-30)
 
-- [ ] Un-disable simplest workflow (score-baselibs_rust — Cargo only)
-- [ ] Add GitHub Actions matrix for all 12 modules
-- [ ] Add weekly cron trigger for auto-sync + test
-- [ ] Keep `workflow_dispatch` for manual runs
+All Kuksa repos are Linux-only, no QNX needed. Run on Ubuntu laptop with vcan0.
 
-## Phase 5: Ongoing — TODO
+| Repo | Language | Build | Status |
+|------|----------|-------|--------|
+| kuksa-databroker | Rust (Cargo) | cargo test | Already tested (original 8) |
+| kuksa-python-sdk | Python | pytest | TODO |
+| kuksa-can-provider | Python (Docker) | pytest | TODO |
+| kuksa.val.feeders | Python | pytest | TODO |
+| kuksa.val.services | Python/gRPC | pytest | TODO |
+| kuksa-someip-provider | C++ (CMake) | cmake + ctest | TODO |
+| kuksa-perf | Rust (Cargo) | cargo test | TODO |
 
-- [ ] Weekly sync cadence established
-- [ ] Per-release tag pinning process documented
+## Overall SDV Coverage
+
+| Ecosystem | Repos | Tested | Status |
+|-----------|-------|--------|--------|
+| S-CORE | 39 | 12/12 testable | DONE |
+| Kuksa | 12 | 1/7 testable | IN PROGRESS |
+| Velocitas | 8 | 0 | TODO |
+| Leda | 8 | 0 | TODO |
+| Ankaios | 3 | 0 | TODO |
+| uProtocol | 8 | 0 | TODO |
+| SDV Blueprints | 6 | 0 | TODO |
+| Chariott/Ibeji | 5 | 0 | TODO |
+
+## Maintenance
+
+No CI — we're consumers, not contributors. Manual validation on the bench laptop.
+
+**Routine:**
+- Weekly: `bash scripts/update-submodules.sh` on laptop, re-run changed modules
+- Per S-CORE release: pin submodules to release tag, full regression
 
 ---
 

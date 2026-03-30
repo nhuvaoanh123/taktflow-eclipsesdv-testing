@@ -86,3 +86,34 @@ score:
     asil: QM
     platforms:
       - linux_x86_64
+
+# Eclipse Kuksa modules
+kuksa_extra:
+  python_sdk:
+    source_dir: eclipse-kuksa-python-sdk
+    build_system: python
+    test_cmd: "python3 -m pytest tests/ -v"
+    platforms:
+      - linux_x86_64
+
+  can_provider:
+    source_dir: kuksa-kuksa-can-provider
+    build_system: python
+    test_cmd: "python3 -m pytest test/ -v"
+    platforms:
+      - linux_x86_64
+
+  val_services:
+    source_dir: kuksa-kuksa.val.services
+    build_system: python
+    test_cmd: "python3 -m pytest mock_service/test/ -v"
+    platforms:
+      - linux_x86_64
+
+  perf:
+    source_dir: kuksa-kuksa-perf
+    build_system: cargo
+    build_cmd: "cargo build"
+    test_cmd: "cargo test"
+    platforms:
+      - linux_x86_64
