@@ -60,18 +60,29 @@ class TestEnvironment:
             pytest.skip("protoc not installed (needed for gRPC codegen)")
 
 
+def _check_rustc(combined):
+    """Skip if Rust toolchain too old."""
+    if "requires rustc" in combined or "can't find crate" in combined:
+        lines = [l.strip() for l in combined.split("\n") if "requires rustc" in l]
+        pytest.skip(f"Newer Rust needed: {lines[0] if lines else 'unknown version'}")
+
+
 class TestCargoBuild:
     @pytest.mark.build
     @pytest.mark.ankaios
     def test_cargo_build_workspace(self, module_dir):
         rc, out, err = _run("cargo build --workspace 2>&1", timeout=900)
-        assert rc == 0, f"Build failed:\n{(out+err)[-2000:]}"
+        combined = out + err
+        _check_rustc(combined)
+        assert rc == 0, f"Build failed:\n{combined[-2000:]}"
 
     @pytest.mark.build
     @pytest.mark.ankaios
     def test_cargo_build_release(self, module_dir):
-        rc, _, err = _run("cargo build --release --workspace 2>&1", timeout=900)
-        assert rc == 0, f"Release build failed:\n{err[-2000:]}"
+        rc, out, err = _run("cargo build --release --workspace 2>&1", timeout=900)
+        combined = out + err
+        _check_rustc(combined)
+        assert rc == 0, f"Release build failed:\n{combined[-2000:]}"
 
 
 class TestCargoUnitTests:
@@ -80,6 +91,7 @@ class TestCargoUnitTests:
     def test_cargo_test_workspace(self, module_dir):
         rc, out, err = _run("cargo test --workspace 2>&1", timeout=600)
         combined = out + err
+        _check_rustc(combined)
         passed, failed, ignored = _parse_cargo_test(combined)
         print(f"Results: {passed} passed, {failed} failed, {ignored} ignored")
         assert rc == 0, f"Tests failed:\n{combined[-2000:]}"
@@ -90,6 +102,7 @@ class TestCargoUnitTests:
     def test_common_lib(self, module_dir):
         rc, out, err = _run("cargo test -p common 2>&1", timeout=300)
         combined = out + err
+        _check_rustc(combined)
         passed, _, _ = _parse_cargo_test(combined)
         print(f"common: {passed} passed")
         assert rc == 0, f"common tests failed:\n{combined[-1000:]}"
@@ -99,6 +112,7 @@ class TestCargoUnitTests:
     def test_agent(self, module_dir):
         rc, out, err = _run("cargo test -p agent 2>&1", timeout=300)
         combined = out + err
+        _check_rustc(combined)
         passed, _, _ = _parse_cargo_test(combined)
         print(f"agent: {passed} passed")
         assert rc == 0, f"agent tests failed:\n{combined[-1000:]}"

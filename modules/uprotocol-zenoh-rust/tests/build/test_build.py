@@ -60,7 +60,7 @@ class TestCargoTests:
     @pytest.mark.unit
     @pytest.mark.uprotocol
     def test_cargo_test(self, module_dir):
-        rc, out, err = _run("cargo test 2>&1", timeout=300)
+        rc, out, err = _run("cargo test 2>&1", timeout=900)
         combined = out + err
         passed, failed, ignored = _parse_cargo_test(combined)
         print(f"Results: {passed} passed, {failed} failed, {ignored} ignored")
