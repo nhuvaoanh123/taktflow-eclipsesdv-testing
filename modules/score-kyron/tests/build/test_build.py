@@ -139,8 +139,11 @@ class TestCargoUnitTests:
     @pytest.mark.unit
     @pytest.mark.score_kyron
     def test_kyron_foundation(self, module_dir):
-        """Foundation library unit tests."""
-        rc, out, err = _run("cargo test -p kyron-foundation 2>&1", timeout=300)
+        """Foundation library unit tests (requires tracing feature)."""
+        rc, out, err = _run(
+            "cargo test -p kyron-foundation --features tracing 2>&1",
+            timeout=300,
+        )
         combined = out + err
         passed, _, _ = _parse_cargo_test(combined)
         print(f"kyron-foundation: {passed} passed")

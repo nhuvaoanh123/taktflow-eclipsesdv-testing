@@ -19,7 +19,7 @@ from pathlib import Path
 
 MODULE_DIR = Path(__file__).resolve().parents[4] / "score-scrample"
 LOCKFILE = "--lockfile_mode=update"
-CONFIG = "--config=x86_64-linux"
+CONFIG = "--config=host"
 
 
 def _run(cmd, cwd=None, timeout=600):
