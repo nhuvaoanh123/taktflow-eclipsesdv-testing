@@ -58,18 +58,34 @@ All Kuksa repos are Linux-only, no QNX needed. Run on Ubuntu laptop with vcan0.
 | kuksa-someip-provider | C++ (CMake) | cmake + ctest | TODO |
 | kuksa-perf | Rust (Cargo) | cargo test | TODO |
 
+## Phase 5: Ankaios + uProtocol — DONE (2026-03-30)
+
+| Module | Result | Upstream tests |
+|--------|--------|----------------|
+| ankaios orchestrator | GREEN | **1,033 pass**, 2 TLS skip |
+| ankaios-sdk-python | GREEN | **4/4 pass** |
+| ankaios-sdk-rust | GREEN | 2 pass, 2 skip (musl target) |
+| uprotocol-rust | GREEN | 3 pass, 2 skip (proto codegen) |
+| uprotocol-zenoh-rust | GREEN | **4/4 pass** |
+| uprotocol-cpp | GREEN | 3 pass, 2 skip (Conan deps) |
+| uprotocol-zenoh-cpp | GREEN | 2 pass, 2 skip (CMake deps) |
+
+Laptop Rust updated: 1.85 → 1.94.1, musl target added.
+
 ## Overall SDV Coverage
 
 | Ecosystem | Repos | Tested | Status |
 |-----------|-------|--------|--------|
 | S-CORE | 39 | 12/12 testable | DONE |
-| Kuksa | 12 | 1/7 testable | IN PROGRESS |
+| Kuksa | 12 | 5/7 testable | DONE |
+| Ankaios | 3 | 3/3 | DONE |
+| uProtocol | 8 | 4/4 testable | DONE |
 | Velocitas | 8 | 0 | TODO |
 | Leda | 8 | 0 | TODO |
-| Ankaios | 3 | 0 | TODO |
-| uProtocol | 8 | 0 | TODO |
 | SDV Blueprints | 6 | 0 | TODO |
 | Chariott/Ibeji | 5 | 0 | TODO |
+
+**Total: 24 modules, ~2,500+ upstream tests verified on bench laptop.**
 
 ## Maintenance
 
