@@ -137,5 +137,6 @@ def pytest_configure(config):
         ("score_kyron", "S-CORE Rust runtime scheduler"),
         ("score_config_management", "S-CORE configuration middleware"),
         ("score_scrample", "S-CORE middleware component"),
+        ("uprotocol", "Eclipse uProtocol transport modules"),
     ]:
         config.addinivalue_line("markers", f"{marker}: {desc}")
