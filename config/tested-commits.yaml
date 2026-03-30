@@ -1,0 +1,42 @@
+# Last-tested submodule commits.
+# Updated after each successful full test run.
+# Compare with `git submodule status` to detect drift.
+
+modules:
+  score-communication:
+    commit: "94be494b"
+    tested: "2026-03-30"
+  score-baselibs:
+    commit: "22fe6595"
+    tested: "2026-03-30"
+  score-lifecycle:
+    commit: "5c2a6828"
+    tested: "2026-03-30"
+  score-persistency:
+    commit: "e696adb4"
+    tested: "2026-03-30"
+  score-feo:
+    commit: "bdcb693d"
+    tested: "2026-03-30"
+  score-logging:
+    commit: "14515845"
+    tested: "2026-03-30"
+  score-orchestrator:
+    commit: "a45485db"
+    tested: "2026-03-30"
+  kuksa-databroker:
+    commit: "ab9e5387"
+    tested: "2026-03-30"
+  # New modules — pending first test run
+  score-baselibs_rust:
+    commit: "6fe5f0e2"
+    tested: null
+  score-kyron:
+    commit: "pending"
+    tested: null
+  score-config_management:
+    commit: "73c5a867"
+    tested: null
+  score-scrample:
+    commit: "7208f899"
+    tested: null

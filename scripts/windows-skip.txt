@@ -1,0 +1,5 @@
+# Submodules to skip on Windows (case-insensitive filesystem conflicts).
+# One submodule name per line. Lines starting with # are comments.
+
+# BUILD file + build/ directory collision on NTFS
+score-reference_integration
