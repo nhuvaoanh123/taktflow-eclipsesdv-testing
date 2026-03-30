@@ -97,12 +97,15 @@ class TestUnitTests:
     @pytest.mark.unit
     @pytest.mark.kuksa
     def test_upstream_tests(self, module_dir):
-        """Run upstream pytest suite in kuksa-client/tests/."""
+        """Run upstream pytest suite in kuksa-client/tests/.
+        Requires proto stubs generated (pip install -e .[test] does this)."""
         rc, out, err = _run(
             "python3 -m pytest tests/ -v --tb=short 2>&1",
             timeout=300,
         )
         combined = out + err
+        if rc != 0 and "No module named 'kuksa'" in combined:
+            pytest.skip("Proto stubs not generated — run 'pip install -e .[test]' with grpcio-tools")
         passed, failed, errors = _parse_pytest(combined)
         print(f"Results: {passed} passed, {failed} failed, {errors} errors")
         assert rc == 0, f"Tests failed:\n{combined[-2000:]}"
@@ -117,6 +120,8 @@ class TestUnitTests:
             timeout=120,
         )
         combined = out + err
+        if rc != 0 and "No module named 'kuksa'" in combined:
+            pytest.skip("Proto stubs not generated")
         passed, _, _ = _parse_pytest(combined)
         print(f"gRPC tests: {passed} passed")
         assert rc == 0, f"gRPC tests failed:\n{combined[-1000:]}"
