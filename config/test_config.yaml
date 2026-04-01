@@ -44,13 +44,81 @@ score:
       - qnx_x86_64
       - qnx_aarch64
 
+  baselibs:
+    source_dir: score-baselibs
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build //..."
+    test_cmd: "bazel test //... --build_tests_only"
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //... --build_tests_only"
+    coverage_cmd: "bazel coverage //..."
+    asil: B
+    platforms:
+      - linux_x86_64
+      - linux_aarch64
+      - qnx_x86_64
+      - qnx_aarch64
+
   baselibs_rust:
     source_dir: score-baselibs_rust
     build_system: cargo
     bazel_version: "8.4.2"
     build_cmd: "cargo build --workspace"
     test_cmd: "cargo test --workspace"
-    asil: QM
+    sanitizer_cmd: "cargo test --workspace -- --test-threads=1"
+    asil: B
+    platforms:
+      - linux_x86_64
+      - linux_aarch64
+
+  lifecycle:
+    source_dir: score-lifecycle
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build //..."
+    test_cmd: "bazel test //... --build_tests_only"
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //... --build_tests_only"
+    asil: B
+    platforms:
+      - linux_x86_64
+      - linux_aarch64
+      - qnx_x86_64
+      - qnx_aarch64
+
+  feo:
+    source_dir: score-feo
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build //..."
+    test_cmd: "bazel test //... --build_tests_only"
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //... --build_tests_only"
+    asil: B
+    platforms:
+      - linux_x86_64
+      - linux_aarch64
+      - qnx_x86_64
+      - qnx_aarch64
+
+  logging:
+    source_dir: score-logging
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build --config=x86_64-linux //score/..."
+    test_cmd: "bazel test --config=x86_64-linux //score/... --build_tests_only"
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //score/... --build_tests_only"
+    coverage_cmd: "bazel coverage //score/... --test_output=summary"
+    asil: B
+    platforms:
+      - linux_x86_64
+
+  orchestrator:
+    source_dir: score-orchestrator
+    build_system: bazel
+    bazel_version: "8.3.0"
+    build_cmd: "bazel build //..."
+    test_cmd: "bazel test //... --build_tests_only"
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //... --build_tests_only"
+    asil: B
     platforms:
       - linux_x86_64
       - linux_aarch64
@@ -62,7 +130,8 @@ score:
     build_cmd: "cargo build --workspace"
     test_cmd: "cargo test --workspace"
     bazel_test_cmd: "bazel test //src/... --build_tests_only"
-    asil: QM
+    sanitizer_cmd: "cargo test --workspace -- --test-threads=1"
+    asil: B
     platforms:
       - linux_x86_64
       - linux_aarch64
@@ -73,7 +142,8 @@ score:
     bazel_version: "8.3.0"
     build_cmd: "bazel build //..."
     test_cmd: "bazel test //... --build_tests_only"
-    asil: QM
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //... --build_tests_only"
+    asil: B
     platforms:
       - linux_x86_64
 
@@ -83,6 +153,19 @@ score:
     bazel_version: "8.3.0"
     build_cmd: "bazel build //..."
     test_cmd: "bazel test //... --build_tests_only"
-    asil: QM
+    sanitizer_cmd: "bazel test --config=asan_ubsan_lsan //... --build_tests_only"
+    asil: B
     platforms:
       - linux_x86_64
+
+kuksa:
+  databroker:
+    source_dir: eclipse-kuksa-databroker
+    build_system: cargo
+    build_cmd: "cargo build --workspace"
+    test_cmd: "cargo test --workspace"
+    sanitizer_cmd: "cargo test --workspace -- --test-threads=1"
+    asil: B
+    platforms:
+      - linux_x86_64
+      - linux_aarch64

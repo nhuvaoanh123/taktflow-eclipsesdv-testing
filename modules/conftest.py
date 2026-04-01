@@ -137,5 +137,8 @@ def pytest_configure(config):
         ("score_kyron", "S-CORE Rust runtime scheduler"),
         ("score_config_management", "S-CORE configuration middleware"),
         ("score_scrample", "S-CORE middleware component"),
+        # ASIL markers
+        ("asil_b", "ASIL B safety-critical test — ISO 26262 Part 6"),
+        ("asil_d", "ASIL D safety-critical test — ISO 26262 Part 6"),
     ]:
         config.addinivalue_line("markers", f"{marker}: {desc}")

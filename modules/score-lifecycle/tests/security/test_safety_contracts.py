@@ -20,6 +20,7 @@ LIFECYCLE_DIR = PROJECT_ROOT / "modules" / "score-lifecycle" / "upstream"
 # ---------------------------------------------------------------------------
 # TestHealthMonitorStructure
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestHealthMonitorStructure:
     """Verify health_monitoring_lib has: health_monitor.h, heartbeat/,
     deadline/, logic/ subdirs.  Verify Rust source exists.
@@ -112,6 +113,7 @@ class TestHealthMonitorStructure:
 # ---------------------------------------------------------------------------
 # TestOsAbstractionLayer
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestOsAbstractionLayer:
     """Verify launch_manager_daemon/common has OSAL with linux/ and qnx/
     platform directories.  Verify posix/ shared code."""
@@ -181,6 +183,7 @@ class TestOsAbstractionLayer:
 # ---------------------------------------------------------------------------
 # TestWatchdogIntegration
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestWatchdogIntegration:
     """Verify watchdog-related source files exist in health_monitor_lib
     (search for 'watchdog' in filenames/paths)."""
@@ -252,6 +255,7 @@ class TestWatchdogIntegration:
 # ---------------------------------------------------------------------------
 # TestRecoveryInterface
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestRecoveryInterface:
     """Verify irecovery_client.h exists.
     Verify recovery_client_lib BUILD file."""
@@ -313,6 +317,7 @@ class TestRecoveryInterface:
 # ---------------------------------------------------------------------------
 # TestSupervisionTypes
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestSupervisionTypes:
     """Verify alive, deadline, logical supervision source directories/files
     exist under health_monitoring_lib."""

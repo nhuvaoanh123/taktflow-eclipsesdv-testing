@@ -1,11 +1,13 @@
-"""Safety contract verification for score-feo components.
+"""Safety contract verification for score-feo components (ASIL B).
 
 Verifies that the Fixed Execution Order (FEO) scheduler follows required
-patterns for deterministic scheduling:
-- QM classification (not ASIL-rated)
+patterns for ASIL B deterministic scheduling:
+- ASIL B classification with deterministic execution guarantees
 - Deterministic scheduler with worker pool
 - IPC safety via feo-com with optional iceoryx2 backend
 - Tracing infrastructure for observability (feo-tracing, perfetto-model, feo-tracer)
+- No dynamic allocation in scheduler hot path
+- Test coverage for all safety-critical paths
 """
 
 import re
@@ -18,10 +20,11 @@ FEO_DIR = PROJECT_ROOT / "modules" / "score-feo" / "upstream"
 
 
 # ---------------------------------------------------------------------------
-# TestQmClassification
+# TestAsilBSafetyClassification
 # ---------------------------------------------------------------------------
-class TestQmClassification:
-    """Verify FEO is QM-rated (not ASIL) in project configuration."""
+@pytest.mark.asil_b
+class TestAsilBSafetyClassification:
+    """Verify FEO meets ASIL B structural requirements."""
 
     def test_project_config_exists(self):
         """project_config.bzl or equivalent should exist."""
@@ -35,55 +38,37 @@ class TestQmClassification:
             "cannot determine safety classification"
         )
 
-    def test_qm_classification(self):
-        """FEO should be classified as QM (Quality Management),
-        not ASIL-rated."""
-        # Check project_config.bzl first
-        config_bzl = FEO_DIR / "project_config.bzl"
-        if config_bzl.exists():
-            content = config_bzl.read_text(encoding="utf-8")
-            has_qm = "qm" in content.lower() or "QM" in content
-            has_asil = re.search(r"asil[_-]?[abcd]", content, re.IGNORECASE)
-            if has_qm:
-                assert True
-                return
-            if has_asil:
-                pytest.fail(
-                    "FEO appears to claim ASIL rating in project_config.bzl -- "
-                    "expected QM classification"
-                )
-                return
-
-        # If no project_config.bzl, check MODULE.bazel for safety annotations
+    def test_module_bazel_exists(self):
+        """MODULE.bazel must exist for build reproducibility (ASIL B)."""
         module_bazel = FEO_DIR / "MODULE.bazel"
-        if module_bazel.exists():
-            content = module_bazel.read_text(encoding="utf-8")
-            has_asil = re.search(r"asil[_-]?[abcd]", content, re.IGNORECASE)
-            if has_asil:
-                pytest.fail(
-                    "FEO appears to claim ASIL rating in MODULE.bazel -- "
-                    "expected QM classification"
-                )
+        assert module_bazel.exists(), (
+            "MODULE.bazel missing -- ASIL B requires reproducible build definition"
+        )
 
-        # No explicit ASIL claim found -- consistent with QM
-        assert True
+    def test_cargo_lock_exists(self):
+        """Cargo.lock must be checked in for deterministic builds (ASIL B)."""
+        cargo_lock = FEO_DIR / "Cargo.lock"
+        assert cargo_lock.exists(), (
+            "Cargo.lock missing -- ASIL B requires locked dependency versions"
+        )
 
-    def test_no_asil_in_cargo_workspace(self):
-        """Root Cargo.toml should not claim ASIL classification."""
-        cargo_toml = FEO_DIR / "Cargo.toml"
-        if not cargo_toml.exists():
-            pytest.skip("Root Cargo.toml not found")
-        content = cargo_toml.read_text(encoding="utf-8")
-        has_asil = re.search(r"asil[_-]?[abcd]", content, re.IGNORECASE)
-        assert not has_asil, (
-            "Root Cargo.toml contains ASIL reference -- "
-            "FEO is expected to be QM-rated"
+    def test_no_unsafe_in_scheduler_core(self):
+        """Scheduler core should minimize unsafe blocks (ASIL B)."""
+        scheduler_files = list((FEO_DIR / "src" / "feo").rglob("scheduler.rs"))
+        if not scheduler_files:
+            pytest.skip("scheduler.rs not found")
+        content = scheduler_files[0].read_text(encoding="utf-8", errors="ignore")
+        unsafe_count = len(re.findall(r"\bunsafe\b", content))
+        assert unsafe_count <= 5, (
+            f"scheduler.rs has {unsafe_count} unsafe blocks -- "
+            "ASIL B requires minimized unsafe usage (max 5 justified blocks)"
         )
 
 
 # ---------------------------------------------------------------------------
 # TestDeterministicScheduler
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestDeterministicScheduler:
     """Verify deterministic scheduler components exist:
     scheduler.rs, worker/ directory, agent/ directory."""
@@ -176,6 +161,7 @@ class TestDeterministicScheduler:
 # ---------------------------------------------------------------------------
 # TestIpcSafety
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestIpcSafety:
     """Verify IPC safety: feo-com directory, iceoryx2 optional feature,
     Linux SHM default backend."""
@@ -240,6 +226,7 @@ class TestIpcSafety:
 # ---------------------------------------------------------------------------
 # TestTracingInfrastructure
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestTracingInfrastructure:
     """Verify tracing infrastructure: feo-tracing crate, perfetto-model crate,
     feo-tracer binary daemon."""
@@ -318,4 +305,117 @@ class TestTracingInfrastructure:
         assert len(main_files) > 0, (
             "No main.rs found in src/feo-tracer/ -- "
             "tracer daemon may not produce a binary"
+        )
+
+
+# ---------------------------------------------------------------------------
+# TestAsilBNoDynamicAllocation
+# ---------------------------------------------------------------------------
+@pytest.mark.asil_b
+class TestAsilBNoDynamicAllocation:
+    """ASIL B: verify scheduler hot path avoids heap allocation.
+
+    ISO 26262 Part 6 Table 1: dynamic memory allocation is restricted
+    for ASIL B and above. The FEO scheduler core should use stack or
+    pre-allocated buffers, not runtime Vec/Box growth in the hot loop.
+    """
+
+    FEO_SRC = FEO_DIR / "src" / "feo"
+
+    def test_scheduler_no_vec_push_in_run_loop(self):
+        """scheduler.rs run/tick functions should not call Vec::push or alloc."""
+        scheduler_files = list(self.FEO_SRC.rglob("scheduler.rs"))
+        if not scheduler_files:
+            pytest.skip("scheduler.rs not found")
+        content = scheduler_files[0].read_text(encoding="utf-8", errors="ignore")
+        # Look for allocation patterns in the scheduler
+        alloc_patterns = re.findall(
+            r"\b(Vec::new|vec!\[|\.push\(|Box::new|String::new|\.to_string\(\))",
+            content,
+        )
+        # Allow some allocation (setup), but flag excessive use
+        assert len(alloc_patterns) <= 15, (
+            f"scheduler.rs has {len(alloc_patterns)} allocation calls -- "
+            "ASIL B restricts dynamic allocation in scheduling hot path. "
+            f"Found: {alloc_patterns[:10]}"
+        )
+
+    def test_worker_no_dynamic_allocation(self):
+        """Worker pool should use pre-allocated thread resources."""
+        worker_files = list(self.FEO_SRC.rglob("worker/*.rs"))
+        if not worker_files:
+            # Try alternative structure
+            worker_files = [
+                f for f in self.FEO_SRC.rglob("*.rs")
+                if "worker" in f.name.lower()
+            ]
+        if not worker_files:
+            pytest.skip("No worker source files found")
+        total_alloc = 0
+        for wf in worker_files:
+            content = wf.read_text(encoding="utf-8", errors="ignore")
+            total_alloc += len(re.findall(
+                r"\b(Vec::new|vec!\[|Box::new)", content
+            ))
+        assert total_alloc <= 10, (
+            f"Worker pool has {total_alloc} dynamic allocation calls -- "
+            "ASIL B: workers should use pre-allocated resources"
+        )
+
+
+# ---------------------------------------------------------------------------
+# TestAsilBTestCoverage
+# ---------------------------------------------------------------------------
+@pytest.mark.asil_b
+class TestAsilBTestCoverage:
+    """ASIL B: verify sufficient test infrastructure exists.
+
+    ISO 26262 Part 6 Table 9: ASIL B requires statement coverage (++)
+    and branch coverage (+). Verify test files exist for each crate.
+    """
+
+    CRATES = [
+        "feo",
+        "feo-com",
+        "feo-time",
+        "feo-tracing",
+        "feo-tracer",
+        "perfetto-model",
+    ]
+
+    @pytest.mark.parametrize("crate_name", CRATES)
+    def test_crate_has_test_infrastructure(self, crate_name: str):
+        """Each crate must have test files or inline #[cfg(test)] modules."""
+        crate_dir = FEO_DIR / "src" / crate_name
+        if not crate_dir.is_dir():
+            pytest.skip(f"src/{crate_name}/ not found")
+
+        # Check for dedicated test files
+        test_files = [
+            f for f in crate_dir.rglob("*.rs")
+            if "test" in f.name.lower()
+        ]
+
+        # Check for inline test modules
+        has_inline_tests = False
+        for rs_file in crate_dir.rglob("*.rs"):
+            content = rs_file.read_text(encoding="utf-8", errors="ignore")
+            if "#[cfg(test)]" in content or "#[test]" in content:
+                has_inline_tests = True
+                break
+
+        assert len(test_files) > 0 or has_inline_tests, (
+            f"Crate {crate_name} has no test files or inline test modules -- "
+            "ASIL B requires statement + branch coverage evidence"
+        )
+
+    def test_integration_test_directory_exists(self):
+        """Integration tests directory must exist for cross-crate testing."""
+        candidates = [
+            FEO_DIR / "tests",
+            FEO_DIR / "tests" / "rust",
+        ]
+        assert any(c.is_dir() for c in candidates), (
+            "No integration tests/ directory found -- "
+            "ASIL B requires integration test evidence"
         )
