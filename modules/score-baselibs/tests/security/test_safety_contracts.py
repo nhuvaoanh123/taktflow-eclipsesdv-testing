@@ -20,6 +20,7 @@ SCORE_DIR = BASELIBS_DIR / "score"
 # ---------------------------------------------------------------------------
 # TestAsilBComponentStructure
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestAsilBComponentStructure:
     """For each ASIL-B component, verify: mock directory exists,
     test directory exists, BUILD file exists."""
@@ -89,6 +90,7 @@ class TestAsilBComponentStructure:
 # ---------------------------------------------------------------------------
 # TestAbortOnException
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestAbortOnException:
     """Verify aborts_upon_exception directory exists with the handler."""
 
@@ -152,6 +154,7 @@ class TestAbortOnException:
 # ---------------------------------------------------------------------------
 # TestSafeMathPresence
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestSafeMathPresence:
     """Verify safe_math headers exist and contain overflow-safe
     arithmetic patterns."""
@@ -218,6 +221,7 @@ class TestSafeMathPresence:
 # ---------------------------------------------------------------------------
 # TestNoExceptionsPattern
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestNoExceptionsPattern:
     """Verify that score/result/ implements no-exception error handling
     using Result and Error types."""
@@ -285,6 +289,7 @@ class TestNoExceptionsPattern:
 # ---------------------------------------------------------------------------
 # TestMockCoverage
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestMockCoverage:
     """For each OS header, verify a corresponding mock exists.
 

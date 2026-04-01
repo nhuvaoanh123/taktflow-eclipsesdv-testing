@@ -1,13 +1,15 @@
-"""Safety and security contract verification for score-logging.
+"""Safety and security contract verification for score-logging (ASIL B).
 
-score-logging is QM-rated but is used by ASIL-B components. The logging
-path must not compromise the safety of callers:
+score-logging is now ASIL B-rated. The logging path must not compromise
+the safety of callers:
 
 - No dynamic memory allocation in the hot logging path.
 - Circular buffer writes must be atomic (no torn writes visible to readers).
 - The DLT session handle interface must use mock-friendly abstractions
   (Object Seam pattern) so ASIL-B consumers can test without the daemon.
 - Rust bindings must declare no_std compatibility or explicit std usage.
+- All unsafe blocks must have SAFETY justification comments.
+- Test infrastructure must provide statement + branch coverage evidence.
 
 Verification method: file inspection (§14 boundary analysis + §4 fault injection).
 Platform: any (no build required).
@@ -28,6 +30,7 @@ DATAROUTER = SCORE_DIR / "datarouter"
 # ---------------------------------------------------------------------------
 # TestObjectSeamPattern
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestObjectSeamPattern:
     """Verify that the datarouter uses the Object Seam pattern so that
     ASIL-B consumers can mock out the logging daemon in unit tests."""
@@ -87,6 +90,7 @@ class TestObjectSeamPattern:
 # ---------------------------------------------------------------------------
 # TestRustBindingsSafety
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestRustBindingsSafety:
     """Verify Rust logging bindings follow safety conventions."""
 
@@ -135,6 +139,7 @@ class TestRustBindingsSafety:
 # ---------------------------------------------------------------------------
 # TestConsoleLoggingEnvironment
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestConsoleLoggingEnvironment:
     """Verify console logging environment for diagnostics and debugging."""
 
@@ -158,6 +163,7 @@ class TestConsoleLoggingEnvironment:
 # ---------------------------------------------------------------------------
 # TestLoggingFrontendDesign
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestLoggingFrontendDesign:
     """Verify design documentation for the logging frontend."""
 
@@ -178,6 +184,7 @@ class TestLoggingFrontendDesign:
 # ---------------------------------------------------------------------------
 # TestLegacyApiBackwardCompat
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestLegacyApiBackwardCompat:
     """Verify that the legacy non-verbose API is maintained for
     backward compatibility with older consumers."""
@@ -196,3 +203,99 @@ class TestLegacyApiBackwardCompat:
         sources = list(self.LEGACY_DIR.rglob("*.h")) + list(self.LEGACY_DIR.rglob("*.cc"))
         assert len(sources) >= 1, \
             "legacy_non_verbose_api/ contains no source files"
+
+
+# ---------------------------------------------------------------------------
+# TestAsilBNoDynamicAllocation
+# ---------------------------------------------------------------------------
+@pytest.mark.asil_b
+class TestAsilBNoDynamicAllocation:
+    """ASIL B: verify logging hot path avoids heap allocation.
+
+    ISO 26262 Part 6 Table 1: dynamic memory allocation is restricted
+    for ASIL B. The mw/log recording path should use pre-allocated
+    circular buffers, not runtime allocation.
+    """
+
+    def test_no_malloc_in_recorder_sources(self):
+        """Recorder implementation should not call malloc/new directly."""
+        detail_dir = MW_LOG / "detail"
+        if not detail_dir.is_dir():
+            pytest.skip("mw/log/detail/ not found")
+        violations = []
+        for f in detail_dir.rglob("*.cc"):
+            content = f.read_text(encoding="utf-8", errors="ignore")
+            if re.search(r"\b(malloc|calloc|realloc)\b", content):
+                violations.append(f.name)
+        assert not violations, (
+            f"Direct malloc/calloc/realloc calls in recorder: {violations} -- "
+            "ASIL B: use pre-allocated buffers in logging hot path"
+        )
+
+    def test_no_exceptions_in_log_path(self):
+        """Logging headers should use noexcept — exceptions in log path
+        could cascade to safety-critical callers."""
+        h_files = list(MW_LOG.glob("*.h"))
+        if not h_files:
+            pytest.skip("No headers in mw/log/")
+        throw_count = 0
+        noexcept_count = 0
+        for h in h_files:
+            content = h.read_text(encoding="utf-8", errors="ignore")
+            throw_count += len(re.findall(r"\bthrow\b", content))
+            noexcept_count += len(re.findall(r"\bnoexcept\b", content))
+        if noexcept_count == 0 and throw_count == 0:
+            pytest.skip("No throw/noexcept keywords — may use C-style API")
+        assert noexcept_count >= throw_count, (
+            f"Log headers: {throw_count} throw vs {noexcept_count} noexcept -- "
+            "ASIL B: logging API should be noexcept-dominant"
+        )
+
+
+# ---------------------------------------------------------------------------
+# TestAsilBTestInfrastructure
+# ---------------------------------------------------------------------------
+@pytest.mark.asil_b
+class TestAsilBTestInfrastructure:
+    """ASIL B: verify sufficient test infrastructure for coverage evidence.
+
+    ISO 26262 Part 6 Table 9: ASIL B requires statement coverage (++)
+    and branch coverage (+).
+    """
+
+    def test_unit_test_directory_exists(self):
+        """mw/log must have a test/ directory with unit tests."""
+        test_dir = MW_LOG / "test"
+        assert test_dir.is_dir(), (
+            "mw/log/test/ missing -- ASIL B requires test infrastructure"
+        )
+
+    def test_datarouter_unit_tests_exist(self):
+        """datarouter must have unit test files."""
+        dr_test = DATAROUTER / "test"
+        if not dr_test.is_dir():
+            # Check alternative: test/ut/
+            dr_test = DATAROUTER / "test" / "ut"
+        test_files = list(DATAROUTER.rglob("*test*"))
+        assert len(test_files) >= 1, (
+            "No test files found in datarouter/ -- "
+            "ASIL B requires unit test coverage evidence"
+        )
+
+    def test_bazelrc_has_coverage_config(self):
+        """ASIL B: .bazelrc must define coverage instrumentation filter."""
+        bazelrc = LOGGING_DIR / ".bazelrc"
+        if not bazelrc.exists():
+            pytest.skip(".bazelrc not found")
+        content = bazelrc.read_text(encoding="utf-8")
+        assert "instrumentation_filter" in content or "coverage" in content, (
+            ".bazelrc does not configure coverage instrumentation -- "
+            "ASIL B requires coverage measurement capability"
+        )
+
+    def test_module_bazel_lock_exists(self):
+        """ASIL B: dependency lockfile must exist for build reproducibility."""
+        lock = LOGGING_DIR / "MODULE.bazel.lock"
+        assert lock.exists(), (
+            "MODULE.bazel.lock missing -- ASIL B requires reproducible builds"
+        )

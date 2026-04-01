@@ -1,7 +1,7 @@
 """Safety and security contract verification for score-orchestrator.
 
 score-orchestrator manages workload lifecycle across ECU partitions. It
-is QM-rated, but as a deployment and lifecycle manager it occupies a
+is ASIL B-rated, and as a deployment and lifecycle manager it occupies a
 privileged position: a compromised orchestrator can start/stop any program.
 
 Security concerns:
@@ -26,6 +26,7 @@ ORCH_DIR = PROJECT_ROOT / "score-orchestrator"
 # ---------------------------------------------------------------------------
 # TestKyronPinned
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestKyronPinned:
     """Verify kyron IPC dependency is pinned to a specific commit hash.
 
@@ -76,6 +77,7 @@ class TestKyronPinned:
 # ---------------------------------------------------------------------------
 # TestProcMacroSafety
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestProcMacroSafety:
     """Verify orchestration_macros procedural macro crate safety properties.
 
@@ -122,6 +124,7 @@ class TestProcMacroSafety:
 # ---------------------------------------------------------------------------
 # TestIceoryx2FeatureGating
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestIceoryx2FeatureGating:
     """Verify iceoryx2 IPC backend is feature-gated.
 
@@ -147,6 +150,7 @@ class TestIceoryx2FeatureGating:
 # ---------------------------------------------------------------------------
 # TestOrchestrationProgramDatabase
 # ---------------------------------------------------------------------------
+@pytest.mark.asil_b
 class TestOrchestrationProgramDatabase:
     """Verify program_database.rs exists and provides configuration validation.
 
@@ -171,4 +175,65 @@ class TestOrchestrationProgramDatabase:
             test_dir = self.ORCH_SRC / "testing"
         assert test_dir.is_dir(), (
             "src/orchestration/testing/ missing — lifecycle test harness removed"
+        )
+
+
+# ---------------------------------------------------------------------------
+# TestAsilBBuildReproducibility
+# ---------------------------------------------------------------------------
+@pytest.mark.asil_b
+class TestAsilBBuildReproducibility:
+    """ASIL B: verify build reproducibility and test infrastructure."""
+
+    def test_module_bazel_exists(self):
+        assert (ORCH_DIR / "MODULE.bazel").exists(), (
+            "MODULE.bazel missing -- ASIL B requires reproducible build"
+        )
+
+    def test_cargo_lock_exists(self):
+        assert (ORCH_DIR / "Cargo.lock").exists(), (
+            "Cargo.lock missing -- ASIL B requires locked deps"
+        )
+
+    def test_build_files_exist(self):
+        build_files = (
+            list(ORCH_DIR.rglob("BUILD"))
+            + list(ORCH_DIR.rglob("BUILD.bazel"))
+        )
+        assert len(build_files) >= 1, (
+            "No BUILD files -- ASIL B requires buildable targets"
+        )
+
+    def test_rust_test_files_exist(self):
+        """Rust test files or #[test] annotations must exist."""
+        rs_files = list(ORCH_DIR.rglob("*.rs"))
+        if not rs_files:
+            pytest.skip("No Rust source files found")
+        has_tests = False
+        for f in rs_files:
+            content = f.read_text(encoding="utf-8", errors="ignore")
+            if "#[cfg(test)]" in content or "#[test]" in content:
+                has_tests = True
+                break
+        test_files = [f for f in rs_files if "test" in f.name.lower()]
+        assert has_tests or len(test_files) > 0, (
+            "No test infrastructure -- ASIL B requires coverage evidence"
+        )
+
+    def test_no_excessive_unsafe(self):
+        """ASIL B: unsafe blocks should be minimized."""
+        rs_files = list(ORCH_DIR.rglob("*.rs"))
+        if not rs_files:
+            pytest.skip("No Rust source files")
+        unjustified = []
+        for f in rs_files:
+            lines = f.read_text(encoding="utf-8", errors="ignore").splitlines()
+            for i, line in enumerate(lines):
+                if re.search(r"\bunsafe\b", line) and "{" in line:
+                    context = "\n".join(lines[max(0, i - 3):i])
+                    if "SAFETY" not in context and "Safety" not in context:
+                        unjustified.append(f"{f.name}:{i + 1}")
+        assert len(unjustified) <= 10, (
+            f"Found {len(unjustified)} unjustified unsafe blocks -- "
+            f"ASIL B requires SAFETY comments: {unjustified[:5]}"
         )

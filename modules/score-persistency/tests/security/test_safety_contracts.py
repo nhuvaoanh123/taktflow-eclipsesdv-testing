@@ -19,7 +19,7 @@ import pytest
 
 PERSISTENCY_DIR = Path(__file__).parent.parent.parent.parent / "score-persistency"
 
-pytestmark = pytest.mark.score_persistency
+pytestmark = [pytest.mark.score_persistency, pytest.mark.asil_d]
 
 
 # ---------------------------------------------------------------------------
