@@ -1,285 +1,380 @@
 [submodule "eclipse-kuksa-databroker"]
 	path = eclipse-kuksa-databroker
 	url = https://github.com/eclipse-kuksa/kuksa-databroker.git
+	ignore = all
 [submodule "eclipse-velocitas-sdk"]
 	path = eclipse-velocitas-sdk
 	url = https://github.com/eclipse-velocitas/vehicle-app-python-sdk.git
+	ignore = all
 [submodule "eclipse-leda-distro"]
 	path = eclipse-leda-distro
 	url = https://github.com/eclipse-leda/leda-distro.git
+	ignore = all
 [submodule "eclipse-kuksa-python-sdk"]
 	path = eclipse-kuksa-python-sdk
 	url = https://github.com/eclipse-kuksa/kuksa-python-sdk.git
+	ignore = all
 [submodule "kuksa-kuksa-can-provider"]
 	path = kuksa-kuksa-can-provider
 	url = https://github.com/eclipse-kuksa/kuksa-can-provider.git
+	ignore = all
 [submodule "kuksa-kuksa-someip-provider"]
 	path = kuksa-kuksa-someip-provider
 	url = https://github.com/eclipse-kuksa/kuksa-someip-provider.git
+	ignore = all
 [submodule "kuksa-kuksa.val.services"]
 	path = kuksa-kuksa.val.services
 	url = https://github.com/eclipse-kuksa/kuksa.val.services.git
+	ignore = all
 [submodule "kuksa-kuksa-perf"]
 	path = kuksa-kuksa-perf
 	url = https://github.com/eclipse-kuksa/kuksa-perf.git
+	ignore = all
 [submodule "kuksa-kuksa-gps-provider"]
 	path = kuksa-kuksa-gps-provider
 	url = https://github.com/eclipse-kuksa/kuksa-gps-provider.git
+	ignore = all
 [submodule "kuksa-kuksa-dds-provider"]
 	path = kuksa-kuksa-dds-provider
 	url = https://github.com/eclipse-kuksa/kuksa-dds-provider.git
+	ignore = all
 [submodule "kuksa-kuksa-android-sdk"]
 	path = kuksa-kuksa-android-sdk
 	url = https://github.com/eclipse-kuksa/kuksa-android-sdk.git
+	ignore = all
 [submodule "kuksa-kuksa-incubation"]
 	path = kuksa-kuksa-incubation
 	url = https://github.com/eclipse-kuksa/kuksa-incubation.git
+	ignore = all
 [submodule "kuksa-kuksa-common"]
 	path = kuksa-kuksa-common
 	url = https://github.com/eclipse-kuksa/kuksa-common.git
+	ignore = all
 [submodule "kuksa-kuksa.val.feeders"]
 	path = kuksa-kuksa.val.feeders
 	url = https://github.com/eclipse-kuksa/kuksa.val.feeders.git
+	ignore = all
 [submodule "kuksa-kuksa-hardware"]
 	path = kuksa-kuksa-hardware
 	url = https://github.com/eclipse-kuksa/kuksa-hardware.git
+	ignore = all
 [submodule "velocitas-vehicle-app-cpp-sdk"]
 	path = velocitas-vehicle-app-cpp-sdk
 	url = https://github.com/eclipse-velocitas/vehicle-app-cpp-sdk.git
+	ignore = all
 [submodule "velocitas-vehicle-app-python-template"]
 	path = velocitas-vehicle-app-python-template
 	url = https://github.com/eclipse-velocitas/vehicle-app-python-template.git
+	ignore = all
 [submodule "velocitas-vehicle-app-cpp-template"]
 	path = velocitas-vehicle-app-cpp-template
 	url = https://github.com/eclipse-velocitas/vehicle-app-cpp-template.git
+	ignore = all
 [submodule "velocitas-vehicle-model-python"]
 	path = velocitas-vehicle-model-python
 	url = https://github.com/eclipse-velocitas/vehicle-model-python.git
+	ignore = all
 [submodule "velocitas-vehicle-model-cpp"]
 	path = velocitas-vehicle-model-cpp
 	url = https://github.com/eclipse-velocitas/vehicle-model-cpp.git
+	ignore = all
 [submodule "velocitas-vehicle-model-generator"]
 	path = velocitas-vehicle-model-generator
 	url = https://github.com/eclipse-velocitas/vehicle-model-generator.git
+	ignore = all
 [submodule "velocitas-vehicle-app-rust-sdk"]
 	path = velocitas-vehicle-app-rust-sdk
 	url = https://github.com/eclipse-velocitas/vehicle-app-rust-sdk.git
+	ignore = all
 [submodule "velocitas-vehicle-app-kotlin-template"]
 	path = velocitas-vehicle-app-kotlin-template
 	url = https://github.com/eclipse-velocitas/vehicle-app-kotlin-template.git
+	ignore = all
 [submodule "velocitas-cli"]
 	path = velocitas-cli
 	url = https://github.com/eclipse-velocitas/cli.git
+	ignore = all
 [submodule "leda-leda"]
 	path = leda-leda
 	url = https://github.com/eclipse-leda/leda.git
+	ignore = all
 [submodule "leda-meta-leda"]
 	path = leda-meta-leda
 	url = https://github.com/eclipse-leda/meta-leda.git
+	ignore = all
 [submodule "leda-leda-example-applications"]
 	path = leda-leda-example-applications
 	url = https://github.com/eclipse-leda/leda-example-applications.git
+	ignore = all
 [submodule "leda-leda-utils"]
 	path = leda-leda-utils
 	url = https://github.com/eclipse-leda/leda-utils.git
+	ignore = all
 [submodule "leda-leda-contrib-self-update-agent"]
 	path = leda-leda-contrib-self-update-agent
 	url = https://github.com/eclipse-leda/leda-contrib-self-update-agent.git
+	ignore = all
 [submodule "leda-leda-contrib-container-update-agent"]
 	path = leda-leda-contrib-container-update-agent
 	url = https://github.com/eclipse-leda/leda-contrib-container-update-agent.git
+	ignore = all
 [submodule "leda-leda-contrib-otel"]
 	path = leda-leda-contrib-otel
 	url = https://github.com/eclipse-leda/leda-contrib-otel.git
+	ignore = all
 [submodule "leda-leda-contrib-cloud-connector"]
 	path = leda-leda-contrib-cloud-connector
 	url = https://github.com/eclipse-leda/leda-contrib-cloud-connector.git
+	ignore = all
 [submodule "leda-leda-contrib-vehicle-update-manager"]
 	path = leda-leda-contrib-vehicle-update-manager
 	url = https://github.com/eclipse-leda/leda-contrib-vehicle-update-manager.git
+	ignore = all
 [submodule "chariott-chariott"]
 	path = chariott-chariott
 	url = https://github.com/eclipse-chariott/chariott.git
+	ignore = all
 [submodule "chariott-Agemo"]
 	path = chariott-Agemo
 	url = https://github.com/eclipse-chariott/Agemo.git
+	ignore = all
 [submodule "ibeji-ibeji"]
 	path = ibeji-ibeji
 	url = https://github.com/eclipse-ibeji/ibeji.git
+	ignore = all
 [submodule "ibeji-freyja"]
 	path = ibeji-freyja
 	url = https://github.com/eclipse-ibeji/freyja.git
+	ignore = all
 [submodule "ibeji-ibeji-example-applications"]
 	path = ibeji-ibeji-example-applications
 	url = https://github.com/eclipse-ibeji/ibeji-example-applications.git
+	ignore = all
 [submodule "ankaios-ankaios"]
 	path = ankaios-ankaios
 	url = https://github.com/eclipse-ankaios/ankaios.git
+	ignore = all
 [submodule "ankaios-ank-sdk-python"]
 	path = ankaios-ank-sdk-python
 	url = https://github.com/eclipse-ankaios/ank-sdk-python.git
+	ignore = all
 [submodule "ankaios-ank-sdk-rust"]
 	path = ankaios-ank-sdk-rust
 	url = https://github.com/eclipse-ankaios/ank-sdk-rust.git
+	ignore = all
 [submodule "uprotocol-up-spec"]
 	path = uprotocol-up-spec
 	url = https://github.com/eclipse-uprotocol/up-spec.git
+	ignore = all
 [submodule "uprotocol-up-cpp"]
 	path = uprotocol-up-cpp
 	url = https://github.com/eclipse-uprotocol/up-cpp.git
+	ignore = all
 [submodule "uprotocol-up-rust"]
 	path = uprotocol-up-rust
 	url = https://github.com/eclipse-uprotocol/up-rust.git
+	ignore = all
 [submodule "uprotocol-up-java"]
 	path = uprotocol-up-java
 	url = https://github.com/eclipse-uprotocol/up-java.git
+	ignore = all
 [submodule "uprotocol-up-core-api"]
 	path = uprotocol-up-core-api
 	url = https://github.com/eclipse-uprotocol/up-core-api.git
+	ignore = all
 [submodule "uprotocol-up-transport-zenoh-rust"]
 	path = uprotocol-up-transport-zenoh-rust
 	url = https://github.com/eclipse-uprotocol/up-transport-zenoh-rust.git
+	ignore = all
 [submodule "uprotocol-up-transport-zenoh-cpp"]
 	path = uprotocol-up-transport-zenoh-cpp
 	url = https://github.com/eclipse-uprotocol/up-transport-zenoh-cpp.git
+	ignore = all
 [submodule "uprotocol-up-transport-mqtt5-rust"]
 	path = uprotocol-up-transport-mqtt5-rust
 	url = https://github.com/eclipse-uprotocol/up-transport-mqtt5-rust.git
+	ignore = all
 [submodule "uprotocol-up-transport-vsomeip-rust"]
 	path = uprotocol-up-transport-vsomeip-rust
 	url = https://github.com/eclipse-uprotocol/up-transport-vsomeip-rust.git
+	ignore = all
 [submodule "sdv-blueprints-fleet-management"]
 	path = sdv-blueprints-fleet-management
 	url = https://github.com/eclipse-sdv-blueprints/fleet-management.git
+	ignore = all
 [submodule "sdv-blueprints-companion-application"]
 	path = sdv-blueprints-companion-application
 	url = https://github.com/eclipse-sdv-blueprints/companion-application.git
+	ignore = all
 [submodule "sdv-blueprints-service-to-signal"]
 	path = sdv-blueprints-service-to-signal
 	url = https://github.com/eclipse-sdv-blueprints/service-to-signal.git
+	ignore = all
 [submodule "sdv-blueprints-software-orchestration"]
 	path = sdv-blueprints-software-orchestration
 	url = https://github.com/eclipse-sdv-blueprints/software-orchestration.git
+	ignore = all
 [submodule "sdv-blueprints-ros-racer"]
 	path = sdv-blueprints-ros-racer
 	url = https://github.com/eclipse-sdv-blueprints/ros-racer.git
+	ignore = all
 [submodule "sdv-blueprints-insurance"]
 	path = sdv-blueprints-insurance
 	url = https://github.com/eclipse-sdv-blueprints/insurance.git
+	ignore = all
 [submodule "score-baselibs"]
 	path = modules/score-baselibs/upstream
 	url = https://github.com/eclipse-score/baselibs.git
+	ignore = all
 [submodule "score-baselibs_rust"]
 	path = score-baselibs_rust
 	url = https://github.com/eclipse-score/baselibs_rust.git
+	ignore = all
 [submodule "score-feo"]
 	path = modules/score-feo/upstream
 	url = https://github.com/eclipse-score/feo.git
+	ignore = all
 [submodule "score-inc_feo"]
 	path = score-inc_feo
 	url = https://github.com/eclipse-score/inc_feo.git
+	ignore = all
 [submodule "score-orchestrator"]
 	path = score-orchestrator
 	url = https://github.com/eclipse-score/orchestrator.git
+	ignore = all
 [submodule "score-lifecycle"]
 	path = modules/score-lifecycle/upstream
 	url = https://github.com/eclipse-score/lifecycle.git
+	ignore = all
 [submodule "score-logging"]
 	path = score-logging
 	url = https://github.com/eclipse-score/logging.git
+	ignore = all
 [submodule "score-persistency"]
 	path = modules/score-persistency/upstream
 	url = https://github.com/eclipse-score/persistency.git
+	ignore = all
 [submodule "score-kyron"]
 	path = score-kyron
 	url = https://github.com/eclipse-score/kyron.git
+	ignore = all
 [submodule "score-inc_mw_com"]
 	path = score-inc_mw_com
 	url = https://github.com/eclipse-score/inc_mw_com.git
+	ignore = all
 [submodule "score-inc_someip_gateway"]
 	path = score-inc_someip_gateway
 	url = https://github.com/eclipse-score/inc_someip_gateway.git
+	ignore = all
 [submodule "score-inc_security_crypto"]
 	path = score-inc_security_crypto
 	url = https://github.com/eclipse-score/inc_security_crypto.git
+	ignore = all
 [submodule "score-inc_daal"]
 	path = score-inc_daal
 	url = https://github.com/eclipse-score/inc_daal.git
+	ignore = all
 [submodule "score-inc_time"]
 	path = score-inc_time
 	url = https://github.com/eclipse-score/inc_time.git
+	ignore = all
 [submodule "score-inc_config_management"]
 	path = score-inc_config_management
 	url = https://github.com/eclipse-score/inc_config_management.git
+	ignore = all
 [submodule "score-inc_os_autosd"]
 	path = score-inc_os_autosd
 	url = https://github.com/eclipse-score/inc_os_autosd.git
+	ignore = all
 [submodule "score-config_management"]
 	path = score-config_management
 	url = https://github.com/eclipse-score/config_management.git
+	ignore = all
 [submodule "score-operating_system"]
 	path = score-operating_system
 	url = https://github.com/eclipse-score/operating_system.git
+	ignore = all
 [submodule "score-toolchains_qnx"]
 	path = score-toolchains_qnx
 	url = https://github.com/eclipse-score/toolchains_qnx.git
+	ignore = all
 [submodule "score-toolchains_gcc"]
 	path = score-toolchains_gcc
 	url = https://github.com/eclipse-score/toolchains_gcc.git
+	ignore = all
 [submodule "score-toolchains_rust"]
 	path = score-toolchains_rust
 	url = https://github.com/eclipse-score/toolchains_rust.git
+	ignore = all
 [submodule "score-bazel_registry"]
 	path = score-bazel_registry
 	url = https://github.com/eclipse-score/bazel_registry.git
+	ignore = all
 [submodule "score-bazel_platforms"]
 	path = score-bazel_platforms
 	url = https://github.com/eclipse-score/bazel_platforms.git
+	ignore = all
 [submodule "score-bazel_cpp_toolchains"]
 	path = score-bazel_cpp_toolchains
 	url = https://github.com/eclipse-score/bazel_cpp_toolchains.git
+	ignore = all
 [submodule "score-rules_imagefs"]
 	path = score-rules_imagefs
 	url = https://github.com/eclipse-score/rules_imagefs.git
+	ignore = all
 [submodule "score-score-crates"]
 	path = score-score-crates
 	url = https://github.com/eclipse-score/score-crates.git
+	ignore = all
 [submodule "score-score_rust_policies"]
 	path = score-score_rust_policies
 	url = https://github.com/eclipse-score/score_rust_policies.git
+	ignore = all
 [submodule "score-reference_integration"]
 	path = score-reference_integration
 	url = https://github.com/eclipse-score/reference_integration.git
+	ignore = all
 [submodule "score-scrample"]
 	path = score-scrample
 	url = https://github.com/eclipse-score/scrample.git
+	ignore = all
 [submodule "score-examples"]
 	path = score-examples
 	url = https://github.com/eclipse-score/examples.git
+	ignore = all
 [submodule "score-module_template"]
 	path = score-module_template
 	url = https://github.com/eclipse-score/module_template.git
+	ignore = all
 [submodule "score-testing_tools"]
 	path = score-testing_tools
 	url = https://github.com/eclipse-score/testing_tools.git
+	ignore = all
 [submodule "score-docs-as-code"]
 	path = score-docs-as-code
 	url = https://github.com/eclipse-score/docs-as-code.git
+	ignore = all
 [submodule "score-tooling"]
 	path = score-tooling
 	url = https://github.com/eclipse-score/tooling.git
+	ignore = all
 [submodule "score-devcontainer"]
 	path = score-devcontainer
 	url = https://github.com/eclipse-score/devcontainer.git
+	ignore = all
 [submodule "score-process_description"]
 	path = score-process_description
 	url = https://github.com/eclipse-score/process_description.git
+	ignore = all
 [submodule "score-dev_playground"]
 	path = score-dev_playground
 	url = https://github.com/eclipse-score/dev_playground.git
+	ignore = all
 [submodule "score-score"]
 	path = score-score
 	url = https://github.com/eclipse-score/score.git
+	ignore = all
 [submodule "score-communication"]
 	path = modules/score-communication/upstream
 	url = https://github.com/eclipse-score/communication.git
+	ignore = all
