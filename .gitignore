@@ -17,3 +17,6 @@ test-results/
 htmlcov/
 .tox/
 .mypy_cache/
+
+# Generated analysis artifacts (exorcism static analysis output)
+exorcism-*/

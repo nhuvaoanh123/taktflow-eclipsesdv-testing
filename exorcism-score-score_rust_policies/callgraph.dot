@@ -1,8 +1,0 @@
-digraph callgraph {
-  rankdir=LR;
-  node [shape=box, fontname="Courier"];
-  "saturating_add";
-  "saturating_add" -> "saturating_add";
-  "adds_without_overflowing";
-  "adds_without_overflowing" -> "assert_eq";
-}

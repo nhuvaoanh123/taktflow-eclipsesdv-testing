@@ -1,4 +1,0 @@
-digraph callgraph {
-  rankdir=LR;
-  node [shape=box, fontname="Courier"];
-}

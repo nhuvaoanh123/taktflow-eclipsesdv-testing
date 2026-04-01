@@ -1,8 +1,0 @@
-digraph callgraph {
-  rankdir=LR;
-  node [shape=box, fontname="Courier"];
-  "<anonymous>";
-  "main";
-  "main" -> "pthread_join";
-  "main" -> "pthread_create";
-}
