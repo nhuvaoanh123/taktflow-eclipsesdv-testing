@@ -3,1059 +3,1544 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eclipse SDV — Exorcism Master Index</title>
+  <title>Eclipse SDV — Codebase Intelligence Report</title>
   <style>
 :root {
-  --bg: #f8f9fa;
-  --sidebar: #1e2433;
-  --sidebar-hover: #2d3550;
+  --bg: #f5f6f8;
+  --sidebar: #0f1419;
+  --sidebar-hover: #1a2332;
   --accent: #4f8ef7;
-  --text: #333;
-  --border: #dde1e7;
-  --code-bg: #282c34;
-  --code-text: #abb2bf;
-  --green: #28a745;
-  --yellow: #ffc107;
-  --red: #dc3545;
+  --accent-light: #e8f0fe;
+  --text: #2d3748;
+  --text-secondary: #718096;
+  --border: #e2e8f0;
   --card: #fff;
+  --green: #38a169;
+  --yellow: #d69e2e;
+  --red: #e53e3e;
+  --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-lg: 0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.06);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-       background: var(--bg); color: var(--text); display: flex; min-height: 100vh; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+       background: var(--bg); color: var(--text); display: flex; min-height: 100vh;
+       font-size: 14px; line-height: 1.6; }
+
 /* Sidebar */
 #sidebar {
-  width: 260px; min-width: 260px; background: var(--sidebar); color: #ccd;
+  width: 280px; min-width: 280px; background: var(--sidebar); color: #8899aa;
   position: sticky; top: 0; height: 100vh; overflow-y: auto;
-  display: flex; flex-direction: column; padding-bottom: 24px;
+  display: flex; flex-direction: column; z-index: 10;
 }
-#sidebar h1 { font-size: 13px; font-weight: 700; text-transform: uppercase;
-              letter-spacing: .08em; color: #fff; padding: 20px 18px 6px; }
-#sidebar .project-title { font-size: 15px; font-weight: 600; color: var(--accent);
-                           padding: 0 18px 18px; border-bottom: 1px solid #3a4060; }
-#sidebar nav { padding: 12px 0; }
-#sidebar a { display: block; padding: 7px 18px; color: #aab; text-decoration: none;
-              font-size: 13px; border-left: 3px solid transparent; transition: all .15s; }
+#sidebar .brand {
+  padding: 24px 20px; border-bottom: 1px solid #1e2d3d;
+}
+#sidebar .brand h1 {
+  font-size: 11px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .12em; color: #556677; margin-bottom: 4px;
+}
+#sidebar .brand .title {
+  font-size: 16px; font-weight: 700; color: #fff; line-height: 1.3;
+}
+#sidebar .brand .subtitle {
+  font-size: 11px; color: #556677; margin-top: 4px;
+}
+#sidebar nav { padding: 16px 0; flex: 1; }
+#sidebar .nav-group { padding: 0 0 8px; }
+#sidebar .nav-label {
+  font-size: 10px; text-transform: uppercase; letter-spacing: .12em;
+  color: #445566; padding: 12px 20px 4px; font-weight: 600;
+}
+#sidebar a {
+  display: block; padding: 6px 20px; color: #8899aa; text-decoration: none;
+  font-size: 13px; border-left: 3px solid transparent; transition: all .15s;
+}
 #sidebar a:hover, #sidebar a.active {
-  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent); }
-#sidebar .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: .1em;
-                           color: #667; padding: 14px 18px 4px; }
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--accent);
+}
+#sidebar .nav-badge {
+  float: right; background: #1e2d3d; color: #667; padding: 1px 7px;
+  border-radius: 10px; font-size: 11px;
+}
+
 /* Content */
-#content { flex: 1; max-width: 1000px; padding: 32px 40px; overflow-x: hidden; }
-section { margin-bottom: 48px; scroll-margin-top: 24px; }
-section h2 { font-size: 22px; font-weight: 700; color: #1e2433;
-              border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 20px; }
-section h3 { font-size: 16px; font-weight: 600; margin: 20px 0 10px; color: #2d3550; }
-section h4 { font-size: 14px; font-weight: 600; margin: 16px 0 8px; color: #3a4566; }
-p { line-height: 1.7; margin-bottom: 10px; }
-ul { padding-left: 22px; margin-bottom: 10px; }
-ul li { line-height: 1.7; margin-bottom: 4px; }
-/* Cards */
-.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-         padding: 20px; margin-bottom: 16px; }
-.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-              gap: 12px; margin-bottom: 20px; }
-.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-              padding: 14px 16px; text-align: center; }
-.stat-card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
-.stat-card .lbl { font-size: 12px; color: #666; margin-top: 2px; }
+#content { flex: 1; max-width: 1200px; padding: 32px 48px; overflow-x: hidden; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0f1419 0%, #1a2332 50%, #2d3748 100%);
+  color: #fff; padding: 48px; border-radius: 16px; margin-bottom: 32px;
+  position: relative; overflow: hidden;
+}
+.hero::after {
+  content: ''; position: absolute; top: -50%; right: -20%; width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(79,142,247,.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; position: relative; }
+.hero .tagline { color: #8899aa; font-size: 15px; position: relative; }
+.hero .meta { margin-top: 16px; display: flex; gap: 24px; flex-wrap: wrap; position: relative; }
+.hero .meta-item { font-size: 12px; color: #667788; }
+.hero .meta-item strong { color: #aabbcc; }
+
+/* Stats Grid */
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px; margin-bottom: 32px;
+}
+.stat-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s;
+}
+.stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.stat-card .num { font-size: 32px; font-weight: 800; color: var(--accent); line-height: 1; }
+.stat-card .lbl { font-size: 12px; color: var(--text-secondary); margin-top: 6px; font-weight: 500; }
+.stat-card .trend { font-size: 11px; margin-top: 4px; }
+.stat-card .trend.good { color: var(--green); }
+.stat-card .trend.warn { color: var(--yellow); }
+.stat-card .trend.bad { color: var(--red); }
+
+/* Section headers */
+section { margin-bottom: 40px; scroll-margin-top: 24px; }
+section h2 {
+  font-size: 22px; font-weight: 700; color: var(--text);
+  padding-bottom: 12px; margin-bottom: 20px;
+  border-bottom: 2px solid var(--accent);
+  display: flex; align-items: center; gap: 12px;
+}
+.cat-count {
+  font-size: 13px; font-weight: 600; background: var(--accent-light);
+  color: var(--accent); padding: 2px 10px; border-radius: 12px;
+}
+.cat-desc {
+  color: var(--text-secondary); margin-bottom: 16px; font-size: 14px; max-width: 800px;
+}
+.cat-stats {
+  display: flex; gap: 24px; margin-bottom: 16px;
+}
+.mini-stat { display: flex; align-items: baseline; gap: 6px; }
+.mini-num { font-size: 18px; font-weight: 700; color: var(--accent); }
+.mini-lbl { font-size: 12px; color: var(--text-secondary); }
+
 /* Tables */
-.data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
-.data-table th { background: #f0f2f5; text-align: left; padding: 8px 12px; border: 1px solid var(--border); }
-.data-table td { padding: 7px 12px; border: 1px solid var(--border); vertical-align: top; }
-.data-table tr:nth-child(even) td { background: #fafbfc; }
-/* Code */
-pre { background: var(--code-bg); color: var(--code-text); border-radius: 6px;
-       padding: 16px; overflow-x: auto; font-size: 13px; line-height: 1.6;
-       margin-bottom: 16px; }
-code { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 12.5px; }
-:not(pre) > code { background: #eef0f4; color: #c0392b; padding: 2px 5px;
-                    border-radius: 3px; font-size: 12px; }
+.data-table {
+  width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px;
+  background: var(--card); border-radius: 8px; overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.data-table th {
+  background: #f7f8fa; text-align: left; padding: 10px 14px;
+  border-bottom: 2px solid var(--border); font-weight: 600; color: var(--text-secondary);
+  font-size: 11px; text-transform: uppercase; letter-spacing: .05em;
+  cursor: pointer; user-select: none; white-space: nowrap;
+}
+.data-table th:hover { background: #eef0f4; }
+.data-table th::after { content: ' \2195'; opacity: .3; }
+.data-table td { padding: 9px 14px; border-bottom: 1px solid #f0f2f5; }
+.data-table tr:hover td { background: #f8fafc; }
+.data-table .num-cell { text-align: right; font-variant-numeric: tabular-nums; }
+.data-table a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.data-table a:hover { text-decoration: underline; }
+
 /* Badges */
 .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
-.badge-green { background: #d4edda; color: var(--green); }
-.badge-yellow { background: #fff3cd; color: #856404; }
-.badge-red { background: #f8d7da; color: var(--red); }
-.badge-blue { background: #d1ecf1; color: #0c5460; }
-.badge-gray { background: #e2e3e5; color: #383d41; }
-/* Details/summary */
-details { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 12px; }
-details summary { padding: 10px 14px; cursor: pointer; font-weight: 600; font-size: 14px;
-                   user-select: none; background: #f7f8fa; border-radius: 6px; }
-details[open] summary { border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--border); }
-details .inner { padding: 14px; }
-/* Mermaid */
-.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-            padding: 16px; margin-bottom: 16px; text-align: center; overflow-x: auto; }
-/* State machine */
-.sm-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-.sm-table th { background: #2d3550; color: #fff; padding: 8px 12px; text-align: left; }
-.sm-table td { padding: 7px 12px; border: 1px solid var(--border); }
-/* Tags */
-.tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px;
-        padding: 2px 7px; font-size: 11px; margin: 2px; }
+.badge-green { background: #f0fff4; color: var(--green); }
+.badge-yellow { background: #fffff0; color: var(--yellow); }
+.badge-red { background: #fff5f5; color: var(--red); }
+.badge-blue { background: var(--accent-light); color: var(--accent); }
+.tag { display: inline-block; background: var(--accent-light); color: #3b82f6;
+       border-radius: 4px; padding: 1px 7px; font-size: 11px; font-weight: 500; margin: 1px; }
+
+/* Search */
+.search-bar {
+  position: sticky; top: 0; z-index: 5; background: var(--bg);
+  padding: 16px 0; margin-bottom: 16px;
+}
+.search-bar input {
+  width: 100%; padding: 12px 16px; border: 1px solid var(--border);
+  border-radius: 10px; font-size: 14px; background: var(--card);
+  box-shadow: var(--shadow); transition: border-color .15s, box-shadow .15s;
+}
+.search-bar input:focus {
+  outline: none; border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79,142,247,.15);
+}
+.search-bar .search-meta {
+  font-size: 12px; color: var(--text-secondary); margin-top: 8px;
+}
+
+/* Charts area */
+.charts-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px;
+}
+.chart-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 24px; box-shadow: var(--shadow);
+}
+.chart-card h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 16px; }
+.bar-chart { display: flex; flex-direction: column; gap: 8px; }
+.bar-row { display: flex; align-items: center; gap: 10px; }
+.bar-label { width: 100px; font-size: 12px; color: var(--text-secondary); text-align: right;
+              flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-track { flex: 1; height: 24px; background: #f0f2f5; border-radius: 6px; overflow: hidden; position: relative; }
+.bar-fill { height: 100%; border-radius: 6px; transition: width .6s ease; min-width: 2px; }
+.bar-value { position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+              font-size: 11px; font-weight: 600; color: var(--text); }
+
+/* Ecosystem diagram */
+.mermaid { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+           padding: 24px; text-align: center; overflow-x: auto; box-shadow: var(--shadow); }
+
 /* Responsive */
+@media (max-width: 1024px) {
+  .charts-grid { grid-template-columns: 1fr; }
+}
 @media (max-width: 768px) {
   body { flex-direction: column; }
   #sidebar { width: 100%; height: auto; position: static; }
   #content { padding: 20px; }
+  .hero { padding: 24px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
-/* Smooth scroll */
 html { scroll-behavior: smooth; }
 
-  .hero { background: linear-gradient(135deg, #1e2433, #2d3550); color: #fff; padding: 40px; margin-bottom: 32px; border-radius: 12px; }
-  .hero h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
-  .hero p { color: #aab; font-size: 15px; }
-  </style>
+/* Print */
+@media print {
+  #sidebar { display: none; }
+  #content { max-width: 100%; padding: 0; }
+  .hero { background: #1a2332 !important; -webkit-print-color-adjust: exact; }
+  .search-bar { display: none; }
+}
+
+/* Footer */
+.footer {
+  text-align: center; padding: 32px; color: var(--text-secondary); font-size: 12px;
+  border-top: 1px solid var(--border); margin-top: 32px;
+}
+</style>
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </head>
 <body>
   <div id="sidebar">
-    <h1>Eclipse SDV</h1>
-    <div class="project-title">Master Index</div>
+    <div class="brand">
+      <h1>Eclipse SDV</h1>
+      <div class="title">Codebase Intelligence Report</div>
+      <div class="subtitle">81 projects &middot; 1,144,330 LOC</div>
+    </div>
     <nav>
-      <div class="section-label">Dashboard</div>
-      <a href="#dashboard">Dashboard</a>
-      <a href="#ecosystem">Ecosystem Diagram</a>
-      <div class="section-label">Categories</div>
-      <a href="#cat-ankaios">ANKAIOS (3)</a><a href="#cat-chariott">CHARIOTT (2)</a><a href="#cat-eclipse">ECLIPSE (4)</a><a href="#cat-ibeji">IBEJI (3)</a><a href="#cat-kuksa">KUKSA (11)</a><a href="#cat-leda">LEDA (9)</a><a href="#cat-score">SCORE (40)</a><a href="#cat-sdv-blueprints">SDV-BLUEPRINTS (6)</a><a href="#cat-uprotocol">UPROTOCOL (9)</a><a href="#cat-velocitas">VELOCITAS (9)</a>
+      <div class="nav-group">
+        <div class="nav-label">Overview</div>
+        <a href="#dashboard">Executive Summary</a>
+        <a href="#charts">Analysis Charts</a>
+        <a href="#ecosystem">Ecosystem Map</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Categories (10)</div>
+        <a href="#cat-ankaios">ANKAIOS (3)</a><a href="#cat-chariott">CHARIOTT (2)</a><a href="#cat-eclipse">ECLIPSE (4)</a><a href="#cat-ibeji">IBEJI (3)</a><a href="#cat-kuksa">KUKSA (10)</a><a href="#cat-leda">LEDA (6)</a><a href="#cat-score">SCORE (33)</a><a href="#cat-sdv">SDV (5)</a><a href="#cat-uprotocol">UPROTOCOL (8)</a><a href="#cat-velocitas">VELOCITAS (7)</a>
+      </div>
     </nav>
   </div>
+
   <div id="content">
     <div class="hero">
-      <h1>Eclipse SDV — Documentation Index</h1>
-      <p>Auto-generated interactive documentation for all 96 Exorcism projects</p>
+      <h1>Eclipse SDV Codebase Intelligence</h1>
+      <p class="tagline">Automated static analysis across 81 Eclipse Software Defined Vehicle repositories</p>
+      <div class="meta">
+        <div class="meta-item">Analysis scope: <strong>10 ecosystems</strong></div>
+        <div class="meta-item">Languages: <strong>8 detected</strong></div>
+        <div class="meta-item">Generated: <strong>April 2026</strong></div>
+      </div>
     </div>
 
     <section id="dashboard">
-      <h2>Dashboard</h2>
-      <div class="stat-grid">
-        <div class="stat-card"><div class="num">96</div><div class="lbl">Projects</div></div>
-        <div class="stat-card"><div class="num">7,513</div><div class="lbl">Total Files</div></div>
-        <div class="stat-card"><div class="num">1,144,330</div><div class="lbl">Total LOC</div></div>
-        <div class="stat-card"><div class="num">50,365</div><div class="lbl">Total Functions</div></div>
-        <div class="stat-card"><div class="num">3.5</div><div class="lbl">Avg Complexity</div></div>
+      <h2>Executive Summary</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="num">81</div>
+          <div class="lbl">Repositories Analyzed</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">7,513</div>
+          <div class="lbl">Source Files</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">1,144,330</div>
+          <div class="lbl">Lines of Code</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">50,365</div>
+          <div class="lbl">Functions Analyzed</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">3.5</div>
+          <div class="lbl">Weighted Avg Complexity</div>
+          <div class="trend good">Below industry threshold (&lt;10)</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">3,186</div>
+          <div class="lbl">High-Risk Functions (CC&gt;10)</div>
+          <div class="trend warn">6.3% of total</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">0</div>
+          <div class="lbl">Communication Patterns</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">0</div>
+          <div class="lbl">State Machines</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="charts">
+      <h2>Analysis Breakdown</h2>
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>LOC by Ecosystem</h3>
+          <div class="bar-chart" id="loc-chart"></div>
+        </div>
+        <div class="chart-card">
+          <h3>Language Distribution (by project count)</h3>
+          <div class="bar-chart" id="lang-chart"></div>
+        </div>
       </div>
     </section>
 
     <section id="ecosystem">
-      <h2>SDV Ecosystem Diagram</h2>
+      <h2>SDV Ecosystem Architecture</h2>
       <div class="mermaid">flowchart TB
-    subgraph Vehicle[&quot;In-Vehicle Software&quot;]
-        KUKSA[&quot;KUKSA Databroker\n(Vehicle Data Layer)&quot;]
-        Ankaios[&quot;Ankaios\n(Workload Orchestrator)&quot;]
-        Ibeji[&quot;Ibeji\n(Digital Twin)&quot;]
-        Chariott[&quot;Chariott\n(Service Discovery)&quot;]
-        VehicleApps[&quot;Vehicle Apps\n(Velocitas SDK)&quot;]
-        SCORE[&quot;SCORE\n(Safety Middleware)&quot;]
+    subgraph Vehicle["In-Vehicle Software Stack"]
+        direction TB
+        KUKSA["KUKSA Databroker\n(Vehicle Data Layer)\n53K LOC"]
+        Ankaios["Ankaios\n(Workload Orchestrator)\n97K LOC"]
+        Ibeji["Ibeji\n(Digital Twin)\n20K LOC"]
+        Chariott["Chariott\n(Service Discovery)\n13K LOC"]
+        VehicleApps["Velocitas Apps\n(Vehicle App SDK)\n38K LOC"]
+        SCORE["SCORE\n(Safety Middleware)\n781K LOC"]
     end
-    subgraph Protocols[&quot;Protocols&quot;]
-        CAN[&quot;CAN Bus&quot;]
-        SOMEIP[&quot;SOME/IP&quot;]
-        uP[&quot;uProtocol&quot;]
-        Zenoh[&quot;Zenoh&quot;]
-        MQTT[&quot;MQTT&quot;]
-        gRPC[&quot;gRPC&quot;]
+    subgraph Protocols["Communication Protocols"]
+        CAN["CAN Bus"]
+        SOMEIP["SOME/IP"]
+        uP["uProtocol\n58K LOC"]
+        Zenoh["Zenoh"]
+        MQTT["MQTT"]
+        gRPC["gRPC"]
     end
-    subgraph Cloud[&quot;Cloud Services&quot;]
-        Freyja[&quot;Freyja\n(Cloud Digital Twin)&quot;]
-        Fleet[&quot;Fleet Management&quot;]
+    subgraph Cloud["Cloud / Fleet"]
+        Freyja["Freyja\n(Cloud Sync)"]
+        Fleet["Fleet Mgmt\nBlueprints 12K LOC"]
     end
-    subgraph Edge[&quot;Edge / Gateway&quot;]
-        Leda[&quot;Leda\n(SDV Distribution)&quot;]
+    subgraph Edge["Edge / Distribution"]
+        Leda["Leda\n(SDV Distro)\n24K LOC"]
     end
 
-    CAN --&gt; KUKSA
-    SOMEIP --&gt; KUKSA
-    KUKSA --&gt; VehicleApps
-    KUKSA --&gt; Ibeji
-    Ibeji --&gt; Freyja
-    Freyja --&gt; Fleet
-    Ankaios --&gt; VehicleApps
-    Chariott --&gt; VehicleApps
-    uP --&gt; Chariott
-    MQTT --&gt; Chariott
-    Zenoh --&gt; uP
-    gRPC --&gt; KUKSA
-    Leda --&gt; KUKSA
-    Leda --&gt; Ankaios
-    SCORE --&gt; Ankaios</div>
+    CAN --> KUKSA
+    SOMEIP --> KUKSA
+    KUKSA --> VehicleApps
+    KUKSA --> Ibeji
+    Ibeji --> Freyja
+    Freyja --> Fleet
+    Ankaios --> VehicleApps
+    Chariott --> VehicleApps
+    uP --> Chariott
+    MQTT --> Chariott
+    Zenoh --> uP
+    gRPC --> KUKSA
+    Leda --> KUKSA
+    Leda --> Ankaios
+    SCORE --> Ankaios</div>
     </section>
 
+    <div class="search-bar">
+      <input type="text" id="project-search" placeholder="Search projects by name, language, or category..." />
+      <div class="search-meta" id="search-meta">Showing all 81 projects across 10 categories</div>
+    </div>
+
     
-<section id="cat-ankaios">
-  <h2>ANKAIOS Projects (3)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-ankaios-ank-sdk-python/index.html">Ankaios Ank Sdk Python</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>55</td>
-              <td>11,210</td>
-              <td>333</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-ankaios-ank-sdk-rust/index.html">Ankaios Ank Sdk Rust</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>36</td>
-              <td>14,801</td>
-              <td>401</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-ankaios-ankaios/index.html">Ankaios Ankaios</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">Python</span>, <span class="tag">JavaScript</span>, <span class="tag">C++</span></td>
-              <td>187</td>
-              <td>70,631</td>
-              <td>2363</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-chariott">
-  <h2>CHARIOTT Projects (2)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-chariott-Agemo/index.html">Chariott Agemo</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>37</td>
-              <td>4,900</td>
-              <td>131</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>24</td>
-            </tr><tr>
-              <td><a href="exorcism-chariott-chariott/index.html">Chariott Chariott</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>59</td>
-              <td>7,988</td>
-              <td>419</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-eclipse">
-  <h2>ECLIPSE Projects (4)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-eclipse-kuksa-databroker/index.html">Eclipse Kuksa Databroker</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">Python</span></td>
-              <td>83</td>
-              <td>37,065</td>
-              <td>1058</td>
-              <td><span class="badge badge-green">5 (Low)</span></td>
-              <td>15</td>
-            </tr><tr>
-              <td><a href="exorcism-eclipse-kuksa-python-sdk/index.html">Eclipse Kuksa Python Sdk</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>18</td>
-              <td>6,841</td>
-              <td>297</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-eclipse-leda-distro/index.html">Eclipse Leda Distro</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>4</td>
-              <td>573</td>
-              <td>26</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>2</td>
-            </tr><tr>
-              <td><a href="exorcism-eclipse-velocitas-sdk/index.html">Eclipse Velocitas Sdk</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>103</td>
-              <td>8,564</td>
-              <td>572</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>14</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-ibeji">
-  <h2>IBEJI Projects (3)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-ibeji-freyja/index.html">Ibeji Freyja</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>117</td>
-              <td>10,395</td>
-              <td>327</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>1</td>
-            </tr><tr>
-              <td><a href="exorcism-ibeji-ibeji/index.html">Ibeji Ibeji</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>68</td>
-              <td>9,598</td>
-              <td>216</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>5</td>
-            </tr><tr>
-              <td><a href="exorcism-ibeji-ibeji-example-applications/index.html">Ibeji Ibeji Example Applications</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>11</td>
-              <td>447</td>
-              <td>7</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-kuksa">
-  <h2>KUKSA Projects (11)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-kuksa-kuksa-android-sdk/index.html">Kuksa Kuksa Android Sdk</a></td>
-              <td><span class="tag">Java</span></td>
-              <td>2</td>
-              <td>492</td>
-              <td>42</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-can-provider/index.html">Kuksa Kuksa Can Provider</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>27</td>
-              <td>3,458</td>
-              <td>161</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-common/index.html">Kuksa Kuksa Common</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>6</td>
-              <td>301</td>
-              <td>9</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-dds-provider/index.html">Kuksa Kuksa Dds Provider</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>14</td>
-              <td>1,171</td>
-              <td>59</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-gps-provider/index.html">Kuksa Kuksa Gps Provider</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>1</td>
-              <td>328</td>
-              <td>11</td>
-              <td><span class="badge badge-green">4 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-hardware/index.html">Kuksa Kuksa Hardware</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-incubation/index.html">Kuksa Kuksa Incubation</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">Python</span>, <span class="tag">JavaScript</span>, <span class="tag">Go</span>, <span class="tag">C</span>, <span class="tag">C++</span></td>
-              <td>147</td>
-              <td>20,386</td>
-              <td>677</td>
-              <td><span class="badge badge-yellow">6 (Medium)</span></td>
-              <td>11</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-perf/index.html">Kuksa Kuksa Perf</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>24</td>
-              <td>4,526</td>
-              <td>54</td>
-              <td><span class="badge badge-red">22 (High)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa-someip-provider/index.html">Kuksa Kuksa Someip Provider</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span></td>
-              <td>21</td>
-              <td>4,496</td>
-              <td>142</td>
-              <td><span class="badge badge-red">13 (High)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa.val.feeders/index.html">Kuksa Kuksa.Val.Feeders</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>1</td>
-              <td>101</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-kuksa-kuksa.val.services/index.html">Kuksa Kuksa.Val.Services</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>107</td>
-              <td>14,040</td>
-              <td>484</td>
-              <td><span class="badge badge-yellow">6 (Medium)</span></td>
-              <td>9</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-leda">
-  <h2>LEDA Projects (9)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-leda-leda/index.html">Leda Leda</a></td>
-              <td><span class="tag">JavaScript</span>, <span class="tag">Python</span></td>
-              <td>3</td>
-              <td>155</td>
-              <td>2</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-leda-contrib-cloud-connector/index.html">Leda Leda Contrib Cloud Connector</a></td>
-              <td><span class="tag">Go</span></td>
-              <td>14</td>
-              <td>3,175</td>
-              <td>133</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>2</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-leda-contrib-container-update-agent/index.html">Leda Leda Contrib Container Update Agent</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-leda-contrib-otel/index.html">Leda Leda Contrib Otel</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-leda-contrib-self-update-agent/index.html">Leda Leda Contrib Self Update Agent</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span></td>
-              <td>82</td>
-              <td>6,850</td>
-              <td>300</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>8</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-leda-contrib-vehicle-update-manager/index.html">Leda Leda Contrib Vehicle Update Manager</a></td>
-              <td><span class="tag">Go</span></td>
-              <td>87</td>
-              <td>10,459</td>
-              <td>676</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>3</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-leda-example-applications/index.html">Leda Leda Example Applications</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">JavaScript</span></td>
-              <td>10</td>
-              <td>650</td>
-              <td>47</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-leda-utils/index.html">Leda Leda Utils</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">Rust</span></td>
-              <td>16</td>
-              <td>2,264</td>
-              <td>94</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-leda-meta-leda/index.html">Leda Meta Leda</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-score">
-  <h2>SCORE Projects (40)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-score-baselibs/index.html">Score Baselibs</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>1668</td>
-              <td>240,133</td>
-              <td>12783</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-baselibs_rust/index.html">Score Baselibs_Rust</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Python</span></td>
-              <td>55</td>
-              <td>10,496</td>
-              <td>711</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-bazel_cpp_toolchains/index.html">Score Bazel_Cpp_Toolchains</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Python</span></td>
-              <td>11</td>
-              <td>352</td>
-              <td>16</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-bazel_platforms/index.html">Score Bazel_Platforms</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-bazel_registry/index.html">Score Bazel_Registry</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>18</td>
-              <td>1,872</td>
-              <td>93</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-communication/index.html">Score Communication</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Python</span>, <span class="tag">Rust</span></td>
-              <td>1126</td>
-              <td>168,550</td>
-              <td>6414</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>3</td>
-            </tr><tr>
-              <td><a href="exorcism-score-communication-patches/index.html">Score Communication Patches</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span></td>
-              <td>4</td>
-              <td>618</td>
-              <td>17</td>
-              <td><span class="badge badge-red">26 (High)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-config_management/index.html">Score Config_Management</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Rust</span>, <span class="tag">Python</span></td>
-              <td>113</td>
-              <td>12,195</td>
-              <td>529</td>
-              <td><span class="badge badge-yellow">6 (Medium)</span></td>
-              <td>1</td>
-            </tr><tr>
-              <td><a href="exorcism-score-dev_playground/index.html">Score Dev_Playground</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-devcontainer/index.html">Score Devcontainer</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-docs-as-code/index.html">Score Docs As Code</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>61</td>
-              <td>11,314</td>
-              <td>419</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-examples/index.html">Score Examples</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span></td>
-              <td>6</td>
-              <td>200</td>
-              <td>13</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-feo/index.html">Score Feo</a></td>
-              <td><span class="tag">C</span>, <span class="tag">Rust</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>112</td>
-              <td>16,085</td>
-              <td>723</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_config_management/index.html">Score Inc_Config_Management</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>3</td>
-              <td>101</td>
-              <td>6</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_daal/index.html">Score Inc_Daal</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Python</span></td>
-              <td>145</td>
-              <td>11,255</td>
-              <td>649</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_feo/index.html">Score Inc_Feo</a></td>
-              <td><span class="tag">C</span>, <span class="tag">Rust</span>, <span class="tag">C++</span></td>
-              <td>121</td>
-              <td>14,329</td>
-              <td>664</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_mw_com/index.html">Score Inc_Mw_Com</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Python</span></td>
-              <td>770</td>
-              <td>106,815</td>
-              <td>4467</td>
-              <td><span class="badge badge-green">4 (Low)</span></td>
-              <td>3</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_os_autosd/index.html">Score Inc_Os_Autosd</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Python</span></td>
-              <td>7</td>
-              <td>1,797</td>
-              <td>47</td>
-              <td><span class="badge badge-yellow">9 (Medium)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_security_crypto/index.html">Score Inc_Security_Crypto</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>3</td>
-              <td>101</td>
-              <td>6</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_someip_gateway/index.html">Score Inc_Someip_Gateway</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Python</span>, <span class="tag">Rust</span></td>
-              <td>24</td>
-              <td>2,947</td>
-              <td>84</td>
-              <td><span class="badge badge-yellow">9 (Medium)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-inc_time/index.html">Score Inc_Time</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>148</td>
-              <td>12,250</td>
-              <td>558</td>
-              <td><span class="badge badge-green">5 (Low)</span></td>
-              <td>17</td>
-            </tr><tr>
-              <td><a href="exorcism-score-kyron/index.html">Score Kyron</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">Python</span></td>
-              <td>166</td>
-              <td>34,279</td>
-              <td>2058</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-lifecycle/index.html">Score Lifecycle</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Rust</span>, <span class="tag">Python</span></td>
-              <td>227</td>
-              <td>41,007</td>
-              <td>1999</td>
-              <td><span class="badge badge-green">5 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-logging/index.html">Score Logging</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Rust</span></td>
-              <td>289</td>
-              <td>42,142</td>
-              <td>2184</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>1</td>
-            </tr><tr>
-              <td><a href="exorcism-score-module_template/index.html">Score Module_Template</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>3</td>
-              <td>101</td>
-              <td>6</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-operating_system/index.html">Score Operating_System</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-orchestrator/index.html">Score Orchestrator</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>102</td>
-              <td>19,003</td>
-              <td>1122</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-persistency/index.html">Score Persistency</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>77</td>
-              <td>15,745</td>
-              <td>806</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-process_description/index.html">Score Process_Description</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>1</td>
-              <td>36</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-reference_integration/index.html">Score Reference_Integration</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">Rust</span>, <span class="tag">C++</span></td>
-              <td>51</td>
-              <td>5,082</td>
-              <td>191</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-rules_imagefs/index.html">Score Rules_Imagefs</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-score/index.html">Score Score</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>2</td>
-              <td>105</td>
-              <td>1</td>
-              <td><span class="badge badge-red">14 (High)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-score-crates/index.html">Score Score Crates</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-score_rust_policies/index.html">Score Score_Rust_Policies</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>1</td>
-              <td>24</td>
-              <td>2</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-scrample/index.html">Score Scrample</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Go</span>, <span class="tag">Python</span>, <span class="tag">Rust</span></td>
-              <td>43</td>
-              <td>3,294</td>
-              <td>119</td>
-              <td><span class="badge badge-green">5 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-testing_tools/index.html">Score Testing_Tools</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">Rust</span>, <span class="tag">C++</span></td>
-              <td>36</td>
-              <td>5,732</td>
-              <td>345</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-toolchains_gcc/index.html">Score Toolchains_Gcc</a></td>
-              <td><span class="tag">C++</span></td>
-              <td>2</td>
-              <td>55</td>
-              <td>3</td>
-              <td><span class="badge badge-green">5 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-toolchains_qnx/index.html">Score Toolchains_Qnx</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">C</span>, <span class="tag">Python</span></td>
-              <td>3</td>
-              <td>116</td>
-              <td>3</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-toolchains_rust/index.html">Score Toolchains_Rust</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-score-tooling/index.html">Score Tooling</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">C++</span></td>
-              <td>23</td>
-              <td>2,913</td>
-              <td>83</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>0</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-sdv-blueprints">
-  <h2>SDV-BLUEPRINTS Projects (6)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-sdv-blueprints-companion-application/index.html">Sdv Blueprints Companion Application</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-sdv-blueprints-fleet-management/index.html">Sdv Blueprints Fleet Management</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>22</td>
-              <td>4,405</td>
-              <td>80</td>
-              <td><span class="badge badge-green">4 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-sdv-blueprints-insurance/index.html">Sdv Blueprints Insurance</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>13</td>
-              <td>1,821</td>
-              <td>61</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-sdv-blueprints-ros-racer/index.html">Sdv Blueprints Ros Racer</a></td>
-              <td><span class="tag">C++</span>, <span class="tag">Python</span></td>
-              <td>23</td>
-              <td>2,952</td>
-              <td>71</td>
-              <td><span class="badge badge-green">4 (Low)</span></td>
-              <td>3</td>
-            </tr><tr>
-              <td><a href="exorcism-sdv-blueprints-service-to-signal/index.html">Sdv Blueprints Service To Signal</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C</span></td>
-              <td>18</td>
-              <td>1,347</td>
-              <td>45</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-sdv-blueprints-software-orchestration/index.html">Sdv Blueprints Software Orchestration</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>14</td>
-              <td>1,119</td>
-              <td>20</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>2</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-uprotocol">
-  <h2>UPROTOCOL Projects (9)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-uprotocol-up-core-api/index.html">Uprotocol Up Core Api</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-cpp/index.html">Uprotocol Up Cpp</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">C</span>, <span class="tag">C++</span></td>
-              <td>76</td>
-              <td>17,716</td>
-              <td>824</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-java/index.html">Uprotocol Up Java</a></td>
-              <td><span class="tag">Java</span></td>
-              <td>68</td>
-              <td>10,401</td>
-              <td>541</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>4</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-rust/index.html">Uprotocol Up Rust</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>37</td>
-              <td>13,566</td>
-              <td>515</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>3</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-spec/index.html">Uprotocol Up Spec</a></td>
-              <td><span class="tag">TypeScript</span></td>
-              <td>1</td>
-              <td>10</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-transport-mqtt5-rust/index.html">Uprotocol Up Transport Mqtt5 Rust</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>10</td>
-              <td>4,228</td>
-              <td>102</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>5</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-transport-vsomeip-rust/index.html">Uprotocol Up Transport Vsomeip Rust</a></td>
-              <td><span class="tag">Rust</span>, <span class="tag">C</span>, <span class="tag">C++</span></td>
-              <td>38</td>
-              <td>8,302</td>
-              <td>236</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-transport-zenoh-cpp/index.html">Uprotocol Up Transport Zenoh Cpp</a></td>
-              <td><span class="tag">C</span>, <span class="tag">C++</span></td>
-              <td>7</td>
-              <td>1,200</td>
-              <td>67</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-uprotocol-up-transport-zenoh-rust/index.html">Uprotocol Up Transport Zenoh Rust</a></td>
-              <td><span class="tag">Rust</span></td>
-              <td>15</td>
-              <td>2,601</td>
-              <td>67</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr></tbody>
-  </table>
-</section>
-<section id="cat-velocitas">
-  <h2>VELOCITAS Projects (9)</h2>
-  <table class="data-table">
-    <thead>
-      <tr><th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th><th>Avg CC</th><th>Comm Patterns</th></tr>
-    </thead>
-    <tbody><tr>
-              <td><a href="exorcism-velocitas-cli/index.html">Velocitas Cli</a></td>
-              <td><span class="tag">TypeScript</span>, <span class="tag">Python</span></td>
-              <td>70</td>
-              <td>7,541</td>
-              <td>627</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-app-cpp-sdk/index.html">Velocitas Vehicle App Cpp Sdk</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">C</span>, <span class="tag">C++</span></td>
-              <td>98</td>
-              <td>10,061</td>
-              <td>580</td>
-              <td><span class="badge badge-green">2 (Low)</span></td>
-              <td>4</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-app-cpp-template/index.html">Velocitas Vehicle App Cpp Template</a></td>
-              <td><span class="tag">Python</span>, <span class="tag">C</span>, <span class="tag">C++</span></td>
-              <td>5</td>
-              <td>281</td>
-              <td>11</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>3</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-app-kotlin-template/index.html">Velocitas Vehicle App Kotlin Template</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-app-python-template/index.html">Velocitas Vehicle App Python Template</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>5</td>
-              <td>333</td>
-              <td>10</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>5</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-app-rust-sdk/index.html">Velocitas Vehicle App Rust Sdk</a></td>
-              <td></td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td><span class="badge badge-gray">N/A</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-model-cpp/index.html">Velocitas Vehicle Model Cpp</a></td>
-              <td><span class="tag">C++</span></td>
-              <td>107</td>
-              <td>9,683</td>
-              <td>138</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-model-generator/index.html">Velocitas Vehicle Model Generator</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>17</td>
-              <td>1,737</td>
-              <td>65</td>
-              <td><span class="badge badge-green">3 (Low)</span></td>
-              <td>0</td>
-            </tr><tr>
-              <td><a href="exorcism-velocitas-vehicle-model-python/index.html">Velocitas Vehicle Model Python</a></td>
-              <td><span class="tag">Python</span></td>
-              <td>108</td>
-              <td>8,117</td>
-              <td>143</td>
-              <td><span class="badge badge-green">1 (Low)</span></td>
-              <td>0</td>
-            </tr></tbody>
-  </table>
-</section>
+<section id="cat-ankaios" class="cat-section">
+  <h2>ANKAIOS <span class="cat-count">3 projects</span></h2>
+  <p class="cat-desc">Lightweight workload orchestrator for automotive ECUs — manages container and process lifecycles in resource-constrained environments.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">278</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">96,642</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">3,097</span><span class="mini-lbl">Functions</span></div>
   </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-ankaios-ankaios/index.html">ankaios-ankaios</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">Python</span> <span class="tag">JavaScript</span> <span class="tag">C++</span></td>
+  <td class="num-cell">187</td>
+  <td class="num-cell">70,631</td>
+  <td class="num-cell">2,363</td>
+  <td><span class="badge badge-green">2.1</span></td>
+  <td class="num-cell">47</td>
+  <td class="num-cell">53</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-ankaios-ank-sdk-rust/index.html">ankaios-ank-sdk-rust</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">36</td>
+  <td class="num-cell">14,801</td>
+  <td class="num-cell">401</td>
+  <td><span class="badge badge-green">2.8</span></td>
+  <td class="num-cell">34</td>
+  <td class="num-cell">15</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-ankaios-ank-sdk-python/index.html">ankaios-ank-sdk-python</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">55</td>
+  <td class="num-cell">11,210</td>
+  <td class="num-cell">333</td>
+  <td><span class="badge badge-green">2.0</span></td>
+  <td class="num-cell">18</td>
+  <td class="num-cell">6</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-chariott" class="cat-section">
+  <h2>CHARIOTT <span class="cat-count">2 projects</span></h2>
+  <p class="cat-desc">Service discovery and intent-based programming model for in-vehicle software components.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">96</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">12,888</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">550</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-chariott-chariott/index.html">chariott-chariott</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">59</td>
+  <td class="num-cell">7,988</td>
+  <td class="num-cell">419</td>
+  <td><span class="badge badge-green">2.0</span></td>
+  <td class="num-cell">19</td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-chariott-Agemo/index.html">chariott-Agemo</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">37</td>
+  <td class="num-cell">4,900</td>
+  <td class="num-cell">131</td>
+  <td><span class="badge badge-green">2.3</span></td>
+  <td class="num-cell">20</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-eclipse" class="cat-section">
+  <h2>ECLIPSE <span class="cat-count">4 projects</span></h2>
+  <p class="cat-desc">Core Eclipse SDV platform components including KUKSA databroker and Python SDK.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">208</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">53,043</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">1,953</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-eclipse-kuksa-databroker/index.html">eclipse-kuksa-databroker</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">Python</span></td>
+  <td class="num-cell">83</td>
+  <td class="num-cell">37,065</td>
+  <td class="num-cell">1,058</td>
+  <td><span class="badge badge-yellow">5.5</span></td>
+  <td class="num-cell">160</td>
+  <td class="num-cell">140</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-eclipse-velocitas-sdk/index.html">eclipse-velocitas-sdk</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">103</td>
+  <td class="num-cell">8,564</td>
+  <td class="num-cell">572</td>
+  <td><span class="badge badge-green">1.6</span></td>
+  <td class="num-cell">18</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-eclipse-kuksa-python-sdk/index.html">eclipse-kuksa-python-sdk</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">18</td>
+  <td class="num-cell">6,841</td>
+  <td class="num-cell">297</td>
+  <td><span class="badge badge-green">2.7</span></td>
+  <td class="num-cell">19</td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-eclipse-leda-distro/index.html">eclipse-leda-distro</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">573</td>
+  <td class="num-cell">26</td>
+  <td><span class="badge badge-green">2.9</span></td>
+  <td class="num-cell">9</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-ibeji" class="cat-section">
+  <h2>IBEJI <span class="cat-count">3 projects</span></h2>
+  <p class="cat-desc">In-vehicle digital twin framework — maintains live models of vehicle state and synchronizes with cloud.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">196</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">20,440</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">550</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-ibeji-freyja/index.html">ibeji-freyja</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">117</td>
+  <td class="num-cell">10,395</td>
+  <td class="num-cell">327</td>
+  <td><span class="badge badge-green">2.3</span></td>
+  <td class="num-cell">21</td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-ibeji-ibeji/index.html">ibeji-ibeji</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">68</td>
+  <td class="num-cell">9,598</td>
+  <td class="num-cell">216</td>
+  <td><span class="badge badge-green">2.6</span></td>
+  <td class="num-cell">23</td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-ibeji-ibeji-example-applications/index.html">ibeji-ibeji-example-applications</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">447</td>
+  <td class="num-cell">7</td>
+  <td><span class="badge badge-green">1.9</span></td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-kuksa" class="cat-section">
+  <h2>KUKSA <span class="cat-count">10 projects</span></h2>
+  <p class="cat-desc">Vehicle data layer — feeders, providers, and SDK implementations for the central VSS databroker.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">350</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">49,299</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">1,639</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-kuksa-kuksa-incubation/index.html">kuksa-kuksa-incubation</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">Python</span> <span class="tag">JavaScript</span> <span class="tag">Go</span> <span class="tag">C</span> <span class="tag">C++</span></td>
+  <td class="num-cell">147</td>
+  <td class="num-cell">20,386</td>
+  <td class="num-cell">677</td>
+  <td><span class="badge badge-red">6.1</span></td>
+  <td class="num-cell">98</td>
+  <td class="num-cell">115</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa.val.services/index.html">kuksa-kuksa.val.services</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">107</td>
+  <td class="num-cell">14,040</td>
+  <td class="num-cell">484</td>
+  <td><span class="badge badge-red">6.2</span></td>
+  <td class="num-cell">85</td>
+  <td class="num-cell">80</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa-perf/index.html">kuksa-kuksa-perf</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">24</td>
+  <td class="num-cell">4,526</td>
+  <td class="num-cell">54</td>
+  <td><span class="badge badge-red">22.5</span></td>
+  <td class="num-cell">428</td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa-someip-provider/index.html">kuksa-kuksa-someip-provider</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span></td>
+  <td class="num-cell">21</td>
+  <td class="num-cell">4,496</td>
+  <td class="num-cell">142</td>
+  <td><span class="badge badge-red">13.7</span></td>
+  <td class="num-cell">92</td>
+  <td class="num-cell">51</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa-can-provider/index.html">kuksa-kuksa-can-provider</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">27</td>
+  <td class="num-cell">3,458</td>
+  <td class="num-cell">161</td>
+  <td><span class="badge badge-yellow">3.2</span></td>
+  <td class="num-cell">40</td>
+  <td class="num-cell">9</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa-dds-provider/index.html">kuksa-kuksa-dds-provider</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">1,171</td>
+  <td class="num-cell">59</td>
+  <td><span class="badge badge-green">1.9</span></td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa-android-sdk/index.html">kuksa-kuksa-android-sdk</a></td>
+  <td><span class="tag">Java</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">492</td>
+  <td class="num-cell">42</td>
+  <td><span class="badge badge-green">2.3</span></td>
+  <td class="num-cell">5</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa-gps-provider/index.html">kuksa-kuksa-gps-provider</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">328</td>
+  <td class="num-cell">11</td>
+  <td><span class="badge badge-yellow">4.2</span></td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa-common/index.html">kuksa-kuksa-common</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">6</td>
+  <td class="num-cell">301</td>
+  <td class="num-cell">9</td>
+  <td><span class="badge badge-yellow">3.6</span></td>
+  <td class="num-cell">8</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-kuksa-kuksa.val.feeders/index.html">kuksa-kuksa.val.feeders</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">101</td>
+  <td class="num-cell">0</td>
+  <td><span class="badge badge-green">0</span></td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-leda" class="cat-section">
+  <h2>LEDA <span class="cat-count">6 projects</span></h2>
+  <p class="cat-desc">Complete SDV Linux distribution bundling orchestration, data broker, and container runtime.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">212</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">23,553</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">1,252</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-leda-leda-contrib-vehicle-update-manager/index.html">leda-leda-contrib-vehicle-update-manager</a></td>
+  <td><span class="tag">Go</span></td>
+  <td class="num-cell">87</td>
+  <td class="num-cell">10,459</td>
+  <td class="num-cell">676</td>
+  <td><span class="badge badge-green">2.2</span></td>
+  <td class="num-cell">26</td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-leda-leda-contrib-self-update-agent/index.html">leda-leda-contrib-self-update-agent</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span></td>
+  <td class="num-cell">82</td>
+  <td class="num-cell">6,850</td>
+  <td class="num-cell">300</td>
+  <td><span class="badge badge-yellow">3.2</span></td>
+  <td class="num-cell">133</td>
+  <td class="num-cell">15</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-leda-leda-contrib-cloud-connector/index.html">leda-leda-contrib-cloud-connector</a></td>
+  <td><span class="tag">Go</span></td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">3,175</td>
+  <td class="num-cell">133</td>
+  <td><span class="badge badge-green">2.7</span></td>
+  <td class="num-cell">26</td>
+  <td class="num-cell">8</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-leda-leda-utils/index.html">leda-leda-utils</a></td>
+  <td><span class="tag">Python</span> <span class="tag">Rust</span></td>
+  <td class="num-cell">16</td>
+  <td class="num-cell">2,264</td>
+  <td class="num-cell">94</td>
+  <td><span class="badge badge-green">2.6</span></td>
+  <td class="num-cell">16</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-leda-leda-example-applications/index.html">leda-leda-example-applications</a></td>
+  <td><span class="tag">Python</span> <span class="tag">JavaScript</span></td>
+  <td class="num-cell">10</td>
+  <td class="num-cell">650</td>
+  <td class="num-cell">47</td>
+  <td><span class="badge badge-green">1.4</span></td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-leda-leda/index.html">leda-leda</a></td>
+  <td><span class="tag">JavaScript</span> <span class="tag">Python</span></td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">155</td>
+  <td class="num-cell">2</td>
+  <td><span class="badge badge-green">2.5</span></td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-score" class="cat-section">
+  <h2>SCORE <span class="cat-count">33 projects</span></h2>
+  <p class="cat-desc">Safety-certified middleware — ASIL-rated communication, lifecycle, logging, and OS abstraction layers.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">5,421</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">781,044</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">37,121</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-score-baselibs/index.html">score-baselibs</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">1,668</td>
+  <td class="num-cell">240,133</td>
+  <td class="num-cell">12,783</td>
+  <td><span class="badge badge-yellow">3.5</span></td>
+  <td class="num-cell">499</td>
+  <td class="num-cell">673</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-communication/index.html">score-communication</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Python</span> <span class="tag">Rust</span></td>
+  <td class="num-cell">1,126</td>
+  <td class="num-cell">168,550</td>
+  <td class="num-cell">6,414</td>
+  <td><span class="badge badge-yellow">3.6</span></td>
+  <td class="num-cell">138</td>
+  <td class="num-cell">465</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_mw_com/index.html">score-inc_mw_com</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Python</span></td>
+  <td class="num-cell">770</td>
+  <td class="num-cell">106,815</td>
+  <td class="num-cell">4,467</td>
+  <td><span class="badge badge-yellow">5.0</span></td>
+  <td class="num-cell">114</td>
+  <td class="num-cell">545</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-logging/index.html">score-logging</a></td>
+  <td><span class="tag">Python</span> <span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Rust</span></td>
+  <td class="num-cell">289</td>
+  <td class="num-cell">42,142</td>
+  <td class="num-cell">2,184</td>
+  <td><span class="badge badge-yellow">3.8</span></td>
+  <td class="num-cell">113</td>
+  <td class="num-cell">172</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-lifecycle/index.html">score-lifecycle</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Rust</span> <span class="tag">Python</span></td>
+  <td class="num-cell">227</td>
+  <td class="num-cell">41,007</td>
+  <td class="num-cell">1,999</td>
+  <td><span class="badge badge-yellow">5.4</span></td>
+  <td class="num-cell">121</td>
+  <td class="num-cell">251</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-kyron/index.html">score-kyron</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">Python</span></td>
+  <td class="num-cell">166</td>
+  <td class="num-cell">34,279</td>
+  <td class="num-cell">2,058</td>
+  <td><span class="badge badge-green">1.8</span></td>
+  <td class="num-cell">38</td>
+  <td class="num-cell">27</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-orchestrator/index.html">score-orchestrator</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">102</td>
+  <td class="num-cell">19,003</td>
+  <td class="num-cell">1,122</td>
+  <td><span class="badge badge-green">1.6</span></td>
+  <td class="num-cell">27</td>
+  <td class="num-cell">9</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-feo/index.html">score-feo</a></td>
+  <td><span class="tag">C</span> <span class="tag">Rust</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">112</td>
+  <td class="num-cell">16,085</td>
+  <td class="num-cell">723</td>
+  <td><span class="badge badge-green">2.3</span></td>
+  <td class="num-cell">42</td>
+  <td class="num-cell">22</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-persistency/index.html">score-persistency</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">77</td>
+  <td class="num-cell">15,745</td>
+  <td class="num-cell">806</td>
+  <td><span class="badge badge-green">2.4</span></td>
+  <td class="num-cell">65</td>
+  <td class="num-cell">33</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_feo/index.html">score-inc_feo</a></td>
+  <td><span class="tag">C</span> <span class="tag">Rust</span> <span class="tag">C++</span></td>
+  <td class="num-cell">121</td>
+  <td class="num-cell">14,329</td>
+  <td class="num-cell">664</td>
+  <td><span class="badge badge-green">2.2</span></td>
+  <td class="num-cell">29</td>
+  <td class="num-cell">16</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_time/index.html">score-inc_time</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">148</td>
+  <td class="num-cell">12,250</td>
+  <td class="num-cell">558</td>
+  <td><span class="badge badge-yellow">5.5</span></td>
+  <td class="num-cell">122</td>
+  <td class="num-cell">56</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-config_management/index.html">score-config_management</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Rust</span> <span class="tag">Python</span></td>
+  <td class="num-cell">113</td>
+  <td class="num-cell">12,195</td>
+  <td class="num-cell">529</td>
+  <td><span class="badge badge-red">6.4</span></td>
+  <td class="num-cell">153</td>
+  <td class="num-cell">90</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-docs-as-code/index.html">score-docs-as-code</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">61</td>
+  <td class="num-cell">11,314</td>
+  <td class="num-cell">419</td>
+  <td><span class="badge badge-green">2.4</span></td>
+  <td class="num-cell">13</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_daal/index.html">score-inc_daal</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Python</span></td>
+  <td class="num-cell">145</td>
+  <td class="num-cell">11,255</td>
+  <td class="num-cell">649</td>
+  <td><span class="badge badge-green">2.0</span></td>
+  <td class="num-cell">66</td>
+  <td class="num-cell">12</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-baselibs_rust/index.html">score-baselibs_rust</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Python</span></td>
+  <td class="num-cell">55</td>
+  <td class="num-cell">10,496</td>
+  <td class="num-cell">711</td>
+  <td><span class="badge badge-green">2.1</span></td>
+  <td class="num-cell">43</td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-testing_tools/index.html">score-testing_tools</a></td>
+  <td><span class="tag">Python</span> <span class="tag">Rust</span> <span class="tag">C++</span></td>
+  <td class="num-cell">36</td>
+  <td class="num-cell">5,732</td>
+  <td class="num-cell">345</td>
+  <td><span class="badge badge-green">1.9</span></td>
+  <td class="num-cell">33</td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-reference_integration/index.html">score-reference_integration</a></td>
+  <td><span class="tag">Python</span> <span class="tag">Rust</span> <span class="tag">C++</span></td>
+  <td class="num-cell">51</td>
+  <td class="num-cell">5,082</td>
+  <td class="num-cell">191</td>
+  <td><span class="badge badge-green">2.9</span></td>
+  <td class="num-cell">29</td>
+  <td class="num-cell">6</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-scrample/index.html">score-scrample</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Go</span> <span class="tag">Python</span> <span class="tag">Rust</span></td>
+  <td class="num-cell">43</td>
+  <td class="num-cell">3,294</td>
+  <td class="num-cell">119</td>
+  <td><span class="badge badge-yellow">5.1</span></td>
+  <td class="num-cell">53</td>
+  <td class="num-cell">17</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_someip_gateway/index.html">score-inc_someip_gateway</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span> <span class="tag">Python</span> <span class="tag">Rust</span></td>
+  <td class="num-cell">24</td>
+  <td class="num-cell">2,947</td>
+  <td class="num-cell">84</td>
+  <td><span class="badge badge-red">9.5</span></td>
+  <td class="num-cell">91</td>
+  <td class="num-cell">28</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-tooling/index.html">score-tooling</a></td>
+  <td><span class="tag">Python</span> <span class="tag">C++</span></td>
+  <td class="num-cell">23</td>
+  <td class="num-cell">2,913</td>
+  <td class="num-cell">83</td>
+  <td><span class="badge badge-yellow">3.6</span></td>
+  <td class="num-cell">17</td>
+  <td class="num-cell">6</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-bazel_registry/index.html">score-bazel_registry</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">18</td>
+  <td class="num-cell">1,872</td>
+  <td class="num-cell">93</td>
+  <td><span class="badge badge-green">2.4</span></td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_os_autosd/index.html">score-inc_os_autosd</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Python</span></td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">1,797</td>
+  <td class="num-cell">47</td>
+  <td><span class="badge badge-red">9.3</span></td>
+  <td class="num-cell">56</td>
+  <td class="num-cell">13</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-communication-patches/index.html">score-communication-patches</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span></td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">618</td>
+  <td class="num-cell">17</td>
+  <td><span class="badge badge-red">26.9</span></td>
+  <td class="num-cell">55</td>
+  <td class="num-cell">15</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-bazel_cpp_toolchains/index.html">score-bazel_cpp_toolchains</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Python</span></td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">352</td>
+  <td class="num-cell">16</td>
+  <td><span class="badge badge-green">2.8</span></td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-examples/index.html">score-examples</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span></td>
+  <td class="num-cell">6</td>
+  <td class="num-cell">200</td>
+  <td class="num-cell">13</td>
+  <td><span class="badge badge-green">2.2</span></td>
+  <td class="num-cell">8</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-toolchains_qnx/index.html">score-toolchains_qnx</a></td>
+  <td><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Python</span></td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">116</td>
+  <td class="num-cell">3</td>
+  <td><span class="badge badge-green">1.3</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-score/index.html">score-score</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">105</td>
+  <td class="num-cell">1</td>
+  <td><span class="badge badge-red">14.0</span></td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_config_management/index.html">score-inc_config_management</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">101</td>
+  <td class="num-cell">6</td>
+  <td><span class="badge badge-green">1.2</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-inc_security_crypto/index.html">score-inc_security_crypto</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">101</td>
+  <td class="num-cell">6</td>
+  <td><span class="badge badge-green">1.2</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-module_template/index.html">score-module_template</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">101</td>
+  <td class="num-cell">6</td>
+  <td><span class="badge badge-green">1.2</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-toolchains_gcc/index.html">score-toolchains_gcc</a></td>
+  <td><span class="tag">C++</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">55</td>
+  <td class="num-cell">3</td>
+  <td><span class="badge badge-yellow">5.3</span></td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-process_description/index.html">score-process_description</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">36</td>
+  <td class="num-cell">0</td>
+  <td><span class="badge badge-green">0</span></td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-score-score_rust_policies/index.html">score-score_rust_policies</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">24</td>
+  <td class="num-cell">2</td>
+  <td><span class="badge badge-green">1.0</span></td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-sdv" class="cat-section">
+  <h2>SDV <span class="cat-count">5 projects</span></h2>
+  <p class="cat-desc">SDV Blueprints — reference application patterns for fleet management, insurance, and ROS integration.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">90</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">11,644</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">277</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-sdv-blueprints-fleet-management/index.html">sdv-blueprints-fleet-management</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">22</td>
+  <td class="num-cell">4,405</td>
+  <td class="num-cell">80</td>
+  <td><span class="badge badge-yellow">4.4</span></td>
+  <td class="num-cell">28</td>
+  <td class="num-cell">9</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-sdv-blueprints-ros-racer/index.html">sdv-blueprints-ros-racer</a></td>
+  <td><span class="tag">C++</span> <span class="tag">Python</span></td>
+  <td class="num-cell">23</td>
+  <td class="num-cell">2,952</td>
+  <td class="num-cell">71</td>
+  <td><span class="badge badge-yellow">4.3</span></td>
+  <td class="num-cell">41</td>
+  <td class="num-cell">6</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-sdv-blueprints-insurance/index.html">sdv-blueprints-insurance</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">13</td>
+  <td class="num-cell">1,821</td>
+  <td class="num-cell">61</td>
+  <td><span class="badge badge-green">2.0</span></td>
+  <td class="num-cell">19</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-sdv-blueprints-service-to-signal/index.html">sdv-blueprints-service-to-signal</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C</span></td>
+  <td class="num-cell">18</td>
+  <td class="num-cell">1,347</td>
+  <td class="num-cell">45</td>
+  <td><span class="badge badge-yellow">3.3</span></td>
+  <td class="num-cell">20</td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-sdv-blueprints-software-orchestration/index.html">sdv-blueprints-software-orchestration</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">1,119</td>
+  <td class="num-cell">20</td>
+  <td><span class="badge badge-yellow">3.4</span></td>
+  <td class="num-cell">11</td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-uprotocol" class="cat-section">
+  <h2>UPROTOCOL <span class="cat-count">8 projects</span></h2>
+  <p class="cat-desc">Transport-agnostic messaging protocol bridging MQTT, SOME/IP, Zenoh, and gRPC across vehicle domains.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">252</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">58,024</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">2,352</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-uprotocol-up-cpp/index.html">uprotocol-up-cpp</a></td>
+  <td><span class="tag">Python</span> <span class="tag">C</span> <span class="tag">C++</span></td>
+  <td class="num-cell">76</td>
+  <td class="num-cell">17,716</td>
+  <td class="num-cell">824</td>
+  <td><span class="badge badge-green">2.8</span></td>
+  <td class="num-cell">46</td>
+  <td class="num-cell">39</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-uprotocol-up-rust/index.html">uprotocol-up-rust</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">37</td>
+  <td class="num-cell">13,566</td>
+  <td class="num-cell">515</td>
+  <td><span class="badge badge-green">2.3</span></td>
+  <td class="num-cell">24</td>
+  <td class="num-cell">14</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-uprotocol-up-java/index.html">uprotocol-up-java</a></td>
+  <td><span class="tag">Java</span></td>
+  <td class="num-cell">68</td>
+  <td class="num-cell">10,401</td>
+  <td class="num-cell">541</td>
+  <td><span class="badge badge-green">1.7</span></td>
+  <td class="num-cell">24</td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-uprotocol-up-transport-vsomeip-rust/index.html">uprotocol-up-transport-vsomeip-rust</a></td>
+  <td><span class="tag">Rust</span> <span class="tag">C</span> <span class="tag">C++</span></td>
+  <td class="num-cell">38</td>
+  <td class="num-cell">8,302</td>
+  <td class="num-cell">236</td>
+  <td><span class="badge badge-green">2.6</span></td>
+  <td class="num-cell">31</td>
+  <td class="num-cell">10</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-uprotocol-up-transport-mqtt5-rust/index.html">uprotocol-up-transport-mqtt5-rust</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">10</td>
+  <td class="num-cell">4,228</td>
+  <td class="num-cell">102</td>
+  <td><span class="badge badge-green">2.7</span></td>
+  <td class="num-cell">18</td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-uprotocol-up-transport-zenoh-rust/index.html">uprotocol-up-transport-zenoh-rust</a></td>
+  <td><span class="tag">Rust</span></td>
+  <td class="num-cell">15</td>
+  <td class="num-cell">2,601</td>
+  <td class="num-cell">67</td>
+  <td><span class="badge badge-green">2.0</span></td>
+  <td class="num-cell">15</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-uprotocol-up-transport-zenoh-cpp/index.html">uprotocol-up-transport-zenoh-cpp</a></td>
+  <td><span class="tag">C</span> <span class="tag">C++</span></td>
+  <td class="num-cell">7</td>
+  <td class="num-cell">1,200</td>
+  <td class="num-cell">67</td>
+  <td><span class="badge badge-green">3.0</span></td>
+  <td class="num-cell">41</td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-uprotocol-up-spec/index.html">uprotocol-up-spec</a></td>
+  <td><span class="tag">TypeScript</span></td>
+  <td class="num-cell">1</td>
+  <td class="num-cell">10</td>
+  <td class="num-cell">0</td>
+  <td><span class="badge badge-green">0</span></td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+<section id="cat-velocitas" class="cat-section">
+  <h2>VELOCITAS <span class="cat-count">7 projects</span></h2>
+  <p class="cat-desc">Vehicle App development SDK and toolchain — templates, model generators, and CLI for rapid prototyping.</p>
+  <div class="cat-stats">
+    <div class="mini-stat"><span class="mini-num">410</span><span class="mini-lbl">Files</span></div>
+    <div class="mini-stat"><span class="mini-num">37,753</span><span class="mini-lbl">LOC</span></div>
+    <div class="mini-stat"><span class="mini-num">1,574</span><span class="mini-lbl">Functions</span></div>
+  </div>
+  <table class="data-table sortable">
+    <thead>
+      <tr>
+        <th>Project</th><th>Languages</th><th>Files</th><th>LOC</th><th>Functions</th>
+        <th>Avg CC</th><th>Max CC</th><th>High CC</th><th>Comm</th><th>SM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+  <td><a href="exorcism-velocitas-vehicle-app-cpp-sdk/index.html">velocitas-vehicle-app-cpp-sdk</a></td>
+  <td><span class="tag">Python</span> <span class="tag">C</span> <span class="tag">C++</span></td>
+  <td class="num-cell">98</td>
+  <td class="num-cell">10,061</td>
+  <td class="num-cell">580</td>
+  <td><span class="badge badge-green">2.8</span></td>
+  <td class="num-cell">36</td>
+  <td class="num-cell">27</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-velocitas-vehicle-model-cpp/index.html">velocitas-vehicle-model-cpp</a></td>
+  <td><span class="tag">C++</span></td>
+  <td class="num-cell">107</td>
+  <td class="num-cell">9,683</td>
+  <td class="num-cell">138</td>
+  <td><span class="badge badge-green">1.6</span></td>
+  <td class="num-cell">17</td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-velocitas-vehicle-model-python/index.html">velocitas-vehicle-model-python</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">108</td>
+  <td class="num-cell">8,117</td>
+  <td class="num-cell">143</td>
+  <td><span class="badge badge-green">1.2</span></td>
+  <td class="num-cell">3</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-velocitas-cli/index.html">velocitas-cli</a></td>
+  <td><span class="tag">TypeScript</span> <span class="tag">Python</span></td>
+  <td class="num-cell">70</td>
+  <td class="num-cell">7,541</td>
+  <td class="num-cell">627</td>
+  <td><span class="badge badge-green">2.0</span></td>
+  <td class="num-cell">27</td>
+  <td class="num-cell">13</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-velocitas-vehicle-model-generator/index.html">velocitas-vehicle-model-generator</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">17</td>
+  <td class="num-cell">1,737</td>
+  <td class="num-cell">65</td>
+  <td><span class="badge badge-yellow">3.2</span></td>
+  <td class="num-cell">16</td>
+  <td class="num-cell">4</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-velocitas-vehicle-app-python-template/index.html">velocitas-vehicle-app-python-template</a></td>
+  <td><span class="tag">Python</span></td>
+  <td class="num-cell">5</td>
+  <td class="num-cell">333</td>
+  <td class="num-cell">10</td>
+  <td><span class="badge badge-green">1.2</span></td>
+  <td class="num-cell">2</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr><tr>
+  <td><a href="exorcism-velocitas-vehicle-app-cpp-template/index.html">velocitas-vehicle-app-cpp-template</a></td>
+  <td><span class="tag">Python</span> <span class="tag">C</span> <span class="tag">C++</span></td>
+  <td class="num-cell">5</td>
+  <td class="num-cell">281</td>
+  <td class="num-cell">11</td>
+  <td><span class="badge badge-green">1.7</span></td>
+  <td class="num-cell">5</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+  <td class="num-cell">0</td>
+</tr>
+    </tbody>
+  </table>
+</section>
+
+    <div class="footer">
+      Eclipse SDV Codebase Intelligence Report &middot; Generated by Taktflow Systems automated static analysis pipeline<br/>
+      1,144,330 lines of code across 81 repositories &middot; 50,365 functions &middot; 8 languages
+    </div>
+  </div>
+
   <script>
-// Highlight active nav link on scroll
+mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
+
+// ── Bar Charts ──
+const catData = [{"cat": "ANKAIOS", "loc": 96642}, {"cat": "CHARIOTT", "loc": 12888}, {"cat": "ECLIPSE", "loc": 53043}, {"cat": "IBEJI", "loc": 20440}, {"cat": "KUKSA", "loc": 49299}, {"cat": "LEDA", "loc": 23553}, {"cat": "SCORE", "loc": 781044}, {"cat": "SDV", "loc": 11644}, {"cat": "UPROTOCOL", "loc": 58024}, {"cat": "VELOCITAS", "loc": 37753}];
+const langData = [{"lang": "Python", "count": 53}, {"lang": "C++", "count": 39}, {"lang": "Rust", "count": 37}, {"lang": "C", "count": 29}, {"lang": "JavaScript", "count": 4}, {"lang": "Go", "count": 4}, {"lang": "Java", "count": 2}, {"lang": "TypeScript", "count": 2}];
+const colors = ['#4f8ef7','#38a169','#d69e2e','#e53e3e','#805ad5','#dd6b20','#319795','#d53f8c','#3182ce','#718096'];
+
+function renderBarChart(containerId, data, labelKey, valueKey, maxVal) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  const max = maxVal || Math.max(...data.map(d => d[valueKey]));
+  el.innerHTML = data.map((d, i) => {
+    const pct = Math.round(d[valueKey] / max * 100);
+    const color = colors[i % colors.length];
+    return '<div class="bar-row">' +
+      '<span class="bar-label">' + d[labelKey] + '</span>' +
+      '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + color + '"></div>' +
+      '<span class="bar-value">' + d[valueKey].toLocaleString() + '</span></div></div>';
+  }).join('');
+}
+
+renderBarChart('loc-chart', catData, 'cat', 'loc');
+renderBarChart('lang-chart', langData, 'lang', 'count');
+
+// ── Search / Filter ──
+const searchInput = document.getElementById('project-search');
+const searchMeta = document.getElementById('search-meta');
+const catSections = document.querySelectorAll('.cat-section');
+
+searchInput.addEventListener('input', function() {
+  const q = this.value.toLowerCase().trim();
+  let shown = 0;
+  let shownCats = 0;
+  catSections.forEach(section => {
+    const rows = section.querySelectorAll('tbody tr');
+    let catVisible = 0;
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      const match = !q || text.includes(q);
+      row.style.display = match ? '' : 'none';
+      if (match) catVisible++;
+    });
+    section.style.display = catVisible > 0 ? '' : 'none';
+    if (catVisible > 0) shownCats++;
+    shown += catVisible;
+  });
+  searchMeta.textContent = q
+    ? 'Showing ' + shown + ' projects matching "' + this.value + '"'
+    : 'Showing all 81 projects across 10 categories';
+});
+
+// ── Sortable Tables ──
+document.querySelectorAll('.data-table.sortable').forEach(table => {
+  const headers = table.querySelectorAll('th');
+  headers.forEach((th, i) => {
+    th.addEventListener('click', () => {
+      const tbody = table.querySelector('tbody');
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      const asc = th.dataset.sort !== 'asc';
+      headers.forEach(h => delete h.dataset.sort);
+      th.dataset.sort = asc ? 'asc' : 'desc';
+      rows.sort((a, b) => {
+        let av = a.children[i].textContent.trim().replace(/,/g, '');
+        let bv = b.children[i].textContent.trim().replace(/,/g, '');
+        const an = parseFloat(av), bn = parseFloat(bv);
+        if (!isNaN(an) && !isNaN(bn)) return asc ? an - bn : bn - an;
+        return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+      });
+      rows.forEach(r => tbody.appendChild(r));
+    });
+  });
+});
+
+// ── Active nav highlight ──
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('#sidebar a[href^="#"]');
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      navLinks.forEach(l => l.classList.toggle('active',
+        l.getAttribute('href') === '#' + e.target.id));
     }
   });
-}, { threshold: 0.3 });
+}, { threshold: 0.2 });
 sections.forEach(s => observer.observe(s));
-
-// Mermaid
-mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
 </script>
 </body>
 </html>

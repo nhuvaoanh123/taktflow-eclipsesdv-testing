@@ -59,7 +59,7 @@ The positive finding from Test 3: **QM proxy cannot access ASIL-B services** —
 
 | ID | Severity | Description | Owner |
 |---|---|---|---|
-| FINDING-001 | High | Concurrent proxy creation crashes (1 in 3 with 3+ proxies) | Upstream LoLa |
+| FINDING-001 | ~~High~~ **Closed** | ~~Concurrent proxy creation crashes~~ Config issue: shared applicationID across proxies. Each proxy needs its own config with unique `applicationID` + `global` section. Verified 3/3 pass with BigData reference app (2026-03-31). | ~~Upstream~~ Our config |
 | FINDING-002 | Medium | `score-toolchains_qnx` checksum stale, cross-compile broken | Upstream toolchains |
 | FINDING-003 | Info | ASIL-B mode is QNX-specific, correctly rejects on Linux | By design |
 
@@ -76,7 +76,7 @@ The positive finding from Test 3: **QM proxy cannot access ASIL-B services** —
 | GAP-007 ASIL-B config | **BLOCKED** | Requires QNX + user setup (FINDING-003). FFI partially verified. |
 | GAP-008 Real CAN | **CLOSED** | 15 samples from physical ECUs, signals correct |
 | GAP-009 Coverage | **CLOSED** | 93.7% line (638 files) |
-| GAP-010 Multi-subscriber | **CLOSED** | Tested, found FINDING-001 |
+| GAP-010 Multi-subscriber | **CLOSED** | Tested, FINDING-001 resolved (config issue, not LoLa bug) |
 | GAP-011 Python label | **CLOSED** | Report corrected |
 | GAP-012 Code quality | **DEFERRED** | Tech debt, decoder proven correct |
 
@@ -94,7 +94,7 @@ The positive finding from Test 3: **QM proxy cannot access ASIL-B services** —
 - QNX qualification (toolchain broken)
 - Full ASIL-B qualification (requires QNX + OS isolation)
 - All error paths tested (3/8 untested)
-- Multi-subscriber reliability (FINDING-001 crash bug)
+- ~~Multi-subscriber reliability (FINDING-001 crash bug)~~ **Closed** — was config issue, not LoLa bug
 
 **Both blocked gaps are blocked by the same root cause: no QNX cross-compilation capability.** Once `score-toolchains_qnx` checksum is fixed or QNX SDP is available, both can be closed on the Pi.
 

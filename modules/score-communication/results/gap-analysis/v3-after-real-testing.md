@@ -73,6 +73,8 @@ previous: GAP-LOLA-002
 
 **Note:** This is NOT our bridge code bug — it's LoLa's proxy creation path under concurrent access.
 
+**UPDATE (2026-03-31):** **CLOSED — config issue, not LoLa bug.** Root cause: all proxy processes shared the same `mw_com_config.json` with no `global` section and no unique `applicationID`. Each proxy needs its own config with a distinct `applicationID` and `"global": {"asil-level": "QM", "applicationID": <unique>}`. Verified with BigData reference app: 3 simultaneous receivers, 1000 samples sent, 100 received per proxy, 0 crashes.
+
 ## GAP-012: CAN Bridge Code Quality — Deferred
 
 Not closed in this session. The bridge code works correctly (proven by ground truth) but lacks:
