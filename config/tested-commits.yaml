@@ -1,5 +1,7 @@
-# Last-tested submodule commits.
-# Updated after each successful full test run.
+# Last-tested submodule commits for the normalized core register.
+# The original 8-module core set is populated here.
+# Some expansion-era manual validations are currently recorded only in
+# docs/progress-sdv-expansion.md and still need commit-level backfill here.
 # Compare with `git submodule status` to detect drift.
 
 modules:
@@ -27,7 +29,8 @@ modules:
   kuksa-databroker:
     commit: "ab9e5387"
     tested: "2026-03-30"
-  # New modules — pending first test run
+  # Expansion-era modules — validation was logged manually, but this register
+  # has not yet been fully backfilled to commit-accurate tested states.
   score-baselibs_rust:
     commit: "6fe5f0e2"
     tested: null

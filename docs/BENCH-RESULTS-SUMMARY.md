@@ -1,13 +1,17 @@
 ---
 document_id: BENCH-SUMMARY-001
 title: "S-CORE + Eclipse SDV Bench Assessment Summary"
-version: "3.0"
-status: in_progress
+version: "4.0"
+status: snapshot
 date: 2026-03-25
 bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 ---
 
 # S-CORE + Eclipse SDV Bench Assessment Summary
+
+This document is the authoritative snapshot for the core 8-module bench
+evidence set as of 2026-03-25. Broader cross-ecosystem expansion after that
+date is tracked separately in `docs/progress-sdv-expansion.md`.
 
 ## Environment
 
@@ -89,7 +93,7 @@ bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 | Build | **PASS** | 175 targets, `bazel build --config=x86_64-linux //score/...` |
 | Unit Tests | **36/37 PASS** | 1 skipped (size constraint); 36 executed |
 | Coverage (C++) | **87.8%** | 4,381 / 4,989 lines (lcov combined) |
-| Sanitizers | **N/A** | No asan/tsan config in .bazelrc (upstream gap) |
+| Sanitizers | **CONFIGURED** | asan + tsan configs added in .bazelrc; execution not included in v4 snapshot |
 
 ### 7. score-orchestrator (Rust workload orchestrator) — QM
 
@@ -156,14 +160,14 @@ bench: "ASUS TUF Gaming A17, Ubuntu 24.04, 16 cores, 14GB RAM"
 
 ## Sanitizer Summary
 
-| Module | ASan | UBSan | LSan | TSan |
-|---|---|---|---|---|
+| Module | ASan | UBSan | LSan | TSan | Notes |
+|---|---|---|---|---|---|
 | LoLa | **Clean** | **Clean** | **Clean** | **Clean** |
 | score-baselibs | **Clean** | **Clean** | **Clean** | — |
 | score-lifecycle | **Clean** | — | — | — |
 | score-persistency | — | — | — | — |
 | score-feo | — | — | — | — |
-| score-logging | **N/A** | **N/A** | **N/A** | **N/A** | No .bazelrc sanitizer config (upstream gap) |
+| score-logging | **Configured** | **N/A** | **N/A** | **Configured** | .bazelrc asan + tsan configs added; runs not included in v4 snapshot |
 | score-orchestrator | **N/A (Rust)** | **N/A** | **N/A** | **N/A** | Rust — use Miri/cargo-sanitize |
 | kuksa-databroker | **N/A (Rust)** | **N/A** | **N/A** | **N/A** | Rust — use Miri/cargo-sanitize |
 

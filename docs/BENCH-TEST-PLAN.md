@@ -1,5 +1,11 @@
 # Eclipse SDV 56-Module Bench Test Plan
 
+Archived note: this plan captures the earlier QNX-on-Pi bench concept and the
+original `tests/`-rooted harness design. The current active workspace uses the
+`modules/`-rooted harness from `pytest.ini`, and the current status/target
+platform should be taken from the root `README.md`,
+`docs/BENCH-RESULTS-SUMMARY.md`, and `docs/progress-sdv-expansion.md`.
+
 **Project:** taktflow-eclipsesdv-testing
 **Date:** 2026-03-20
 **Target:** Linux Laptop (SDV host) + Raspberry Pi 4 (QNX 8.0 RTOS) + 4-ECU CAN Bus HIL Bench

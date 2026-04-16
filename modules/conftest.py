@@ -1,8 +1,8 @@
-"""Root conftest.py — shared fixtures for all Eclipse SDV + S-CORE tests.
+"""Root conftest.py for the active `modules/` test harness.
 
-Hierarchy:
-    tests/
-    ├── {module}/             Per-module test directories
+Active hierarchy:
+    modules/
+    ├── {module}/             Per-module wrapper directories
     │   ├── build/            Build verification
     │   ├── unit/             Upstream test wrappers
     │   ├── integration/      Cross-module tests
@@ -15,27 +15,31 @@ Hierarchy:
     │   └── utils/            Helper functions
     └── bench/                Physical bench tests
         ├── can/              CAN bus tests
-        ├── qnx/              QNX target tests
+        ├── qnx/              Historical target tests
         └── hil/              Hardware-in-the-loop
 
+Legacy note:
+    A separate `tests/` tree still exists in the workspace for older or
+    auxiliary scenarios, but the root `pytest.ini` currently points at
+    `modules/`.
+
 Usage:
-    pytest tests/score-communication/ -v           # All LoLa tests
-    pytest tests/ -m build                         # All build tests
-    pytest tests/ -m "can and not slow"            # CAN tests, skip slow
-    pytest tests/ --module score-communication     # Filter by module
+    pytest modules/score-communication -v
+    pytest modules -m build
+    pytest modules -m "can and not slow"
+    pytest modules --module score-communication
 """
 
-import pytest
-import subprocess
-import yaml
 from pathlib import Path
+import subprocess
+
+import pytest
+import yaml
 
 
 PROJECT_ROOT = Path(__file__).parent.parent
 CONFIG_PATH = PROJECT_ROOT / "config" / "test_config.yaml"
 
-
-# ── Session-scoped fixtures ──────────────────────────────────────────
 
 @pytest.fixture(scope="session")
 def project_root():
@@ -78,13 +82,15 @@ def pi_host():
     return "<pi-ip>"
 
 
-# ── Helpers ──────────────────────────────────────────────────────────
-
 def run_cmd(cmd, cwd=None, timeout=120):
     """Run a shell command and return (exit_code, stdout, stderr)."""
     result = subprocess.run(
-        cmd, shell=True, cwd=cwd or PROJECT_ROOT,
-        capture_output=True, text=True, timeout=timeout,
+        cmd,
+        shell=True,
+        cwd=cwd or PROJECT_ROOT,
+        capture_output=True,
+        text=True,
+        timeout=timeout,
     )
     return result.returncode, result.stdout, result.stderr
 
@@ -94,18 +100,26 @@ def module_dir(module_name):
     return PROJECT_ROOT / module_name
 
 
-# ── CLI options ──────────────────────────────────────────────────────
-
 def pytest_addoption(parser):
-    parser.addoption("--target", action="store", default="local",
-                     help="Target platform: local, qnx, or bench")
-    parser.addoption("--can", action="store", default="vcan0",
-                     help="CAN interface: vcan0 or can0")
-    parser.addoption("--module", action="store", default=None,
-                     help="Filter to specific module")
+    parser.addoption(
+        "--target",
+        action="store",
+        default="local",
+        help="Target platform: local, qnx, or bench",
+    )
+    parser.addoption(
+        "--can",
+        action="store",
+        default="vcan0",
+        help="CAN interface: vcan0 or can0",
+    )
+    parser.addoption(
+        "--module",
+        action="store",
+        default=None,
+        help="Filter to specific module",
+    )
 
-
-# ── Markers ──────────────────────────────────────────────────────────
 
 def pytest_configure(config):
     # Test level markers
@@ -139,7 +153,7 @@ def pytest_configure(config):
         ("score_scrample", "S-CORE middleware component"),
         ("uprotocol", "Eclipse uProtocol transport modules"),
         # ASIL markers
-        ("asil_b", "ASIL B safety-critical test — ISO 26262 Part 6"),
-        ("asil_d", "ASIL D safety-critical test — ISO 26262 Part 6"),
+        ("asil_b", "ASIL B safety-critical test - ISO 26262 Part 6"),
+        ("asil_d", "ASIL D safety-critical test - ISO 26262 Part 6"),
     ]:
         config.addinivalue_line("markers", f"{marker}: {desc}")

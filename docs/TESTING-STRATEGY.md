@@ -10,6 +10,11 @@ aligned_with: "Eclipse S-CORE upstream testing practices (researched 2026-03-21)
 
 # Testing Strategy
 
+Current-state note: this strategy document preserves the original cross-ecosystem
+test model and lessons learned. The active local pytest entry point today is
+`modules/` (per `pytest.ini`), and some QNX references below are historical or
+upstream-context notes rather than the current default Pi target.
+
 ## 1. Purpose
 
 This document defines how we test Eclipse SDV and S-CORE modules on the

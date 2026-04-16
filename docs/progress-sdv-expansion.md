@@ -1,6 +1,7 @@
 # SDV Testing Project — Expansion Progress
 
-**Goal:** Keep S-CORE submodules updated and expand test matrix from 8 to 12 modules.
+**Goal:** Keep S-CORE submodules updated and expand validation beyond the
+original 8-module core set.
 **Started:** 2026-03-30
 
 ---
@@ -13,7 +14,7 @@
 - [x] All 39 submodules updated to latest upstream (2026-03-30)
   - `score-reference_integration` stuck on Windows due to case-sensitivity — must sync on Ubuntu laptop
 
-## Phase 2: Add 4 New Modules — DONE (code written, not yet validated)
+## Phase 2: Add 4 New Modules — DONE (validated on laptop 2026-03-30; commit register still partial)
 
 - [x] `modules/score-baselibs_rust/` — Cargo-primary, Rust foundation libs
 - [x] `modules/score-kyron/` — Cargo-primary, Rust runtime scheduler
@@ -42,11 +43,13 @@ require unique fixture names per module — run individually (same as existing 8
 - [x] All 4 modules validated on laptop
 - [x] Build failures diagnosed and handled gracefully
 - [ ] Record baseline test counts + coverage in `results/`
-- [ ] Update `config/tested-commits.yaml` with actual tested commits
+- [ ] Backfill `config/tested-commits.yaml` so the commit register matches the manual validation log
 
-## Phase 4: Expand to Kuksa Ecosystem — IN PROGRESS (2026-03-30)
+## Phase 4: Expand to Kuksa Ecosystem — PARTIAL (rolled-up coverage exists, detailed notes still need backfill)
 
-All Kuksa repos are Linux-only, no QNX needed. Run on Ubuntu laptop with vcan0.
+All Kuksa repos are Linux-only, no QNX needed. Run on Ubuntu laptop with
+`vcan0`. The detailed per-repo notes below lag the rolled-up ecosystem totals
+later in this file; treat this section as partial notes, not the full Kuksa log.
 
 | Repo | Language | Build | Status |
 |------|----------|-------|--------|
@@ -77,7 +80,7 @@ Laptop Rust updated: 1.85 → 1.94.1, musl target added.
 | Ecosystem | Repos | Tested | Status |
 |-----------|-------|--------|--------|
 | S-CORE | 39 | 12/12 testable | DONE |
-| Kuksa | 12 | 5/7 testable | DONE |
+| Kuksa | 12 | 5/7 testable | PARTIAL (detailed phase notes lag the roll-up) |
 | Ankaios | 3 | 3/3 | DONE |
 | uProtocol | 8 | 4/4 testable | DONE |
 | Velocitas | 8 | 0 | TODO |
@@ -85,7 +88,7 @@ Laptop Rust updated: 1.85 → 1.94.1, musl target added.
 | SDV Blueprints | 6 | 0 | TODO |
 | Chariott/Ibeji | 5 | 0 | TODO |
 
-**Total: 24 modules, ~2,500+ upstream tests verified on bench laptop.**
+**Total: 24 modules, ~2,500+ upstream tests verified on the Ubuntu bench laptop.**
 
 ## Maintenance
 

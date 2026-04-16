@@ -1,534 +1,275 @@
-# Eclipse SDV Testing — Taktflow Systems
+# Eclipse SDV Testing - Taktflow Systems
 
-Independent verification of the [Eclipse SDV](https://sdv.eclipse.org/) software stack on a real HIL bench with physical ECUs and CAN bus.
+Independent verification workspace for selected Eclipse SDV and Eclipse S-CORE
+projects on the Taktflow bench.
+
+## At a Glance
+
+| Item | Current state |
+|------|---------------|
+| Purpose | Consumer-side validation, comparison, and evidence collection for upstream Eclipse SDV projects |
+| Deep evidence set | 8 core modules with detailed build/test/coverage evidence |
+| Broader validated set | 24 repos validated across S-CORE, Kuksa, Ankaios, and uProtocol |
+| Main local harness | `pytest` rooted at `modules/` |
+| Bench intent | Ubuntu bench laptop plus Taktflow bench/HIL integration |
+| Important caveat | The workspace contains many more checked-out repos than the currently validated subset |
+
+## What This Repo Is
+
+This repo is not a single product source tree. It is a testing and evidence
+workspace that combines:
+
+- upstream project checkouts and submodules,
+- Taktflow-owned test harnesses under `modules/`,
+- bench configuration and dependency manifests,
+- ASPICE-style evidence and analysis artifacts,
+- generated "exorcism" analysis exports for offline review.
+
+The workspace contains upstream or mirrored projects from multiple
+Eclipse SDV ecosystems, including:
+
+- Eclipse S-CORE
+- Eclipse Kuksa
+- Eclipse Velocitas
+- Eclipse Leda
+- Eclipse Ankaios
+- Eclipse uProtocol
+- Eclipse Chariott
+- Eclipse Ibeji
+- Eclipse SDV Blueprints
+
+Not every checked-out upstream project is fully bench-validated yet. The
+purpose of this workspace is to stage, test, compare, and document that work.
 
 ## Module Status
 
-| Module | ASIL | Build | Tests | Coverage | Sanitizers | Status |
-|--------|------|-------|-------|----------|------------|--------|
-| **score-communication** (LoLa IPC) | B | PASS | 100% (252) | 94% | ASan+TSan clean | Done |
-| **score-baselibs** | QM-B | PASS | 100% (278/279) | 98% | ASan clean | Done |
-| **score-lifecycle** | QM | PASS | 100% (6) | 82% | ASan clean | Done |
-| **score-persistency** | D | PASS | 100% | 95% | Pending | Done |
-| **score-feo** | QM | PASS | 100% (8) | — | Pending | Done |
-| **score-logging** | QM | Verified | Pending | — | Pending | Structural |
-| **score-orchestrator** | QM | Verified | Pending | — | Pending | Structural |
-| **eclipse-kuksa-databroker** | QM | Verified | Pending | — | Pending | Structural |
+This is the single front-page status section for the repo. It combines:
 
-**Overall**: 8 modules assessed, 5 bench-verified, 95% aggregate C++ coverage, 100% upstream test pass rate, zero sanitizer errors.
+- the 8-module deep-evidence bench set,
+- the additional repos validated in the broader expansion sweep,
+- the current backlog where validation is still incomplete.
 
----
+### Status Summary
 
-## Test Station
+| Item | Current state | Source of truth |
+|------|---------------|-----------------|
+| Deep-evidence bench set | 8 core modules | [docs/BENCH-RESULTS-SUMMARY.md](docs/BENCH-RESULTS-SUMMARY.md) |
+| Broader validated set | 24 repos across S-CORE, Kuksa, Ankaios, and uProtocol | [docs/progress-sdv-expansion.md](docs/progress-sdv-expansion.md) |
+| Main local harness | `pytest` rooted at `modules/` | [modules/conftest.py](modules/conftest.py) |
+| Important caveat | The workspace contains many more checked-out repos than the currently validated subset | Top-level repo inventory |
 
-```
- ┌──────────────────────────────────────────────────────────────────┐
- │                          CLOUD (AWS)                             │
- │                                                                  │
- │  ┌───────────┐    ┌──────────┐    ┌─────────────┐               │
- │  │ IoT Core  ├────┤ IoT Rules├────┤ Timestream  │               │
- │  │ (MQTT+TLS)│    │          │    │ (time-series)│               │
- │  └─────▲─────┘    └──────────┘    └──────┬──────┘               │
- │        │                                 │                      │
- │        │                          ┌──────▼──────┐               │
- │        │                          │  Grafana    │◄──── browser  │
- │        │                          │ (dashboards)│               │
- │        │                          └─────────────┘               │
- └────────┼────────────────────────────────────────────────────────┘
-          │ MQTT over X.509 mutual TLS
- ┌────────┼────────────────────────────────────────────────────────┐
- │  VPS   │  SIL Demo Server                                       │
- │  ┌─────┴───────────────────────────────────────────────┐        │
- │  │ Docker Compose                                      │        │
- │  │  7 ECU containers + gateway + plant-sim             │        │
- │  │  Mosquitto MQTT broker + fault injection runner     │        │
- │  └─────────────────────────────────────────────────────┘        │
- │  Caddy (reverse proxy) + ASPICE docs                            │
- └──────▲────────────────────────────▲─────────────────────────────┘
-        │ HTTPS (deploy + monitor)   │ SSH (deploy)
-        │                            │
- PC (Windows)───────────────────Laptop (Ubuntu)
- ┌──────┴───────────────┐       ┌────┴────────────────────┐
- │ Flash + debug (SWD)  │       │ Bazel build (S-CORE)    │
- │ CAN monitor          │       │ pytest, sanitizers, cov │
- │ Oscilloscope control │       │ Docker vECU build       │
- └───┬──────┬───────┬───┘       └────┬──────────────┬─────┘
-     │USB   │ETH    │WiFi            │WiFi          │SSH
-     │CAN   │scope  │                │              │
-     │      │       │  ┌───────────┐ │    ┌─────────▼──────┐
-     │      │       └──┤WiFi Router├─┘    │ Pi 4 (QNX 8.0) │
-     │      │          └───────────┘ ETH  │                │
-     │      │                        ┌────┤ KUKSA broker   │
-     │      ▼                        │    │ Docker vECUs   │
-     │  ┌────────┐                   │    │ BCM / ICU / TCU│
-     │  │ Scope  │                   │    └────────┬───────┘
-     │  │ (4ch)  │                   │             │USB-CAN
-     │  └────────┘                   │             │
-     │                               │             │
- ════╪═══════════════════════════════╪═════════════╪══════════════
-     │        CAN Bus (500 kbps, 120 ohm, E2E, 34 msgs)
- ════╪═══╤═══════════╤═══════════╤═══════════╤════╪══════════════
-     │   │           │           │           │    │
-     │ ┌─▼──┐    ┌───▼───┐  ┌───▼───┐  ┌───▼───┐│
-     │ │CVC │    │  FZC  │  │  RZC  │  │  SC   ││
-     │ │TMS │    │G474RE │  │G474RE │  │ TMS  ││
-     │ │570 │    │       │  │       │  │ 570  ││
-     └►│    │    │Steer  │  │Motor  │  │WDT   │◄┘
-  USB  │Arb │    │Brake  │  │ADC    │  │Relay │
-  CAN  │Ped │    │LiDAR  │  │Enc   │  │Estop │
-       └────┘    └───────┘  └───────┘  └──┬───┘
-         ▲           ▲           ▲        │
-         │SWD        │SWD        │SWD     │
-         └───────────┴───────────┘    Kill Relay
-              PC flashes via              │
-              ST-Link / XDS110      12V actuators
-```
+### Front-Page Status Board
 
-### Interfaces
+This table is the single front-page status board for the repo.
 
-| Link | From | To | Protocol | Purpose |
-|------|------|----|----------|---------|
-| CAN | All ECUs + Pi + PC | Shared bus | 500 kbps, 120 ohm | Vehicle communication, UDS diagnostics |
-| WiFi | PC, Laptop | Router | 802.11n | Build dispatch, file transfer, SSH |
-| Ethernet | Laptop | Pi | TCP/IP | SSH deploy, KUKSA gRPC, Docker control |
-| Ethernet | PC | Oscilloscope | SCPI/TCP | Waveform capture, CAN timing |
-| USB-CAN | PC | CAN bus | SocketCAN | CAN monitor, frame injection |
-| USB-CAN | Pi | CAN bus | SocketCAN | vECU ↔ physical ECU bridge |
-| SWD/JTAG | PC | CVC, FZC, RZC, SC | ST-Link, XDS110 | Flash firmware, debug |
-| UART | PC | Each ECU | 115200 8N1 | Serial console, log capture |
+| Group | Module / repo | ASIL / class | Build | Tests | Coverage | Sanitizers | Status |
+|-------|----------------|--------------|-------|-------|----------|------------|--------|
+| Core bench | `score-communication` | B | PASS | `252/252` PASS | `93.7%` | ASan/UBSan/LSan/TSan clean | Bench-verified |
+| Core bench | `score-baselibs` | QM-B | PASS | `278/279` PASS | `97.9%` | ASan/UBSan/LSan clean | Bench-verified |
+| Core bench | `score-lifecycle` | QM | PASS | `6/6` PASS | `82.1%` | ASan clean | Bench-verified |
+| Core bench | `score-persistency` | D | PASS | C++ and Rust unit + CIT PASS | `95.3%` C++ | Not summarized in v4 snapshot | Bench-verified |
+| Core bench | `score-feo` | QM | PASS | `8/8` PASS + `4/4` format | Rust side not summarized | Not summarized in v4 snapshot | Bench-verified |
+| Core bench | `score-logging` | QM | PASS | `36/37` PASS | `87.8%` C++ | Configured, not run in v4 snapshot | Bench-verified |
+| Core bench | `score-orchestrator` | QM | Cargo PASS; Bazel blocked | `108/108` PASS | Rust / no lcov | Rust / N/A | Bench-verified on cargo path |
+| Core bench | `eclipse-kuksa-databroker` | QM | PASS | `208/209` unit + `5/5` v2 + `3/3` BDD | Rust / no lcov | Rust / N/A | Bench-verified |
+| Expansion | `score-baselibs_rust` | B | PASS | `12` pass / `1` skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `score-kyron` | B | PASS | `14` pass / `0` skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `score-config_management` | B | PASS | `9` pass / `1` skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `score-scrample` | B | PASS | `11` pass / `1` skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `ankaios-ankaios` | N/A | GREEN | `1,033` pass / `2` TLS skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `ankaios-ank-sdk-python` | N/A | GREEN | `4/4` PASS | N/A | Not summarized | Expansion-validated |
+| Expansion | `ankaios-ank-sdk-rust` | N/A | GREEN | `2` pass / `2` skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `uprotocol-up-rust` | N/A | GREEN | `3` pass / `2` skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `uprotocol-up-transport-zenoh-rust` | N/A | GREEN | `4/4` PASS | N/A | Not summarized | Expansion-validated |
+| Expansion | `uprotocol-up-cpp` | N/A | GREEN | `3` pass / `2` skip | N/A | Not summarized | Expansion-validated |
+| Expansion | `uprotocol-up-transport-zenoh-cpp` | N/A | GREEN | `2` pass / `2` skip | N/A | Not summarized | Expansion-validated |
+| Roll-up | S-CORE ecosystem | Mixed | Mixed | `12/12` testable repos validated | Mixed | Mixed | DONE |
+| Roll-up | Kuksa ecosystem | Mixed | Mixed | `5/7` testable repos validated | Mixed | Mixed | PARTIAL |
+| Roll-up | Ankaios ecosystem | N/A | GREEN | `3/3` repos validated | N/A | N/A | DONE |
+| Roll-up | uProtocol ecosystem | N/A | GREEN | `4/4` testable repos validated | N/A | N/A | DONE |
+| Backlog | `eclipse-kuksa-python-sdk` | N/A | TODO | TODO | N/A | N/A | Planned |
+| Backlog | `kuksa-kuksa-can-provider` | N/A | TODO | TODO | N/A | N/A | Bench-critical backlog |
+| Backlog | `kuksa-kuksa.val.feeders` | N/A | TODO | TODO | N/A | N/A | Planned |
+| Backlog | `kuksa-kuksa.val.services` | N/A | TODO | TODO | N/A | N/A | Planned |
+| Backlog | `kuksa-kuksa-someip-provider` | N/A | TODO | TODO | N/A | N/A | Planned |
+| Backlog | `kuksa-kuksa-perf` | N/A | TODO | TODO | N/A | N/A | Planned |
+| Backlog | Velocitas ecosystem | N/A | TODO | `0/8` repos validated | N/A | N/A | Not started |
+| Backlog | Leda ecosystem | N/A | TODO | `0/8` repos validated | N/A | N/A | Not started |
+| Backlog | SDV Blueprints ecosystem | N/A | TODO | `0/6` repos validated | N/A | N/A | Not started |
+| Backlog | Chariott/Ibeji ecosystem | N/A | TODO | `0/5` repos validated | N/A | N/A | Not started |
 
-### Nodes
+Overall:
 
-| Node | OS | Role | Interfaces |
-|------|----|----|------------|
-| **PC** | Windows | Flash, debug, CAN monitor, scope | USB-CAN, SWD, ETH (scope), WiFi |
-| **Laptop** | Ubuntu 24.04 | Build, test, deploy | WiFi, SSH to Pi |
-| **Pi 4** | QNX 8.0 | Edge gateway, KUKSA broker, 3 Docker vECUs | ETH, USB-CAN |
-| **CVC** | Bare-metal (RTOS) | Central arbiter, pedals, OLED | CAN, SWD, UART |
-| **FZC** | Bare-metal (RTOS) | Steering, braking, LiDAR | CAN, SWD, UART |
-| **RZC** | Bare-metal (RTOS) | Motor, current/temp, encoder | CAN, SWD, UART |
-| **SC** | Bare-metal | Watchdog, kill relay, E-stop | CAN, SWD, UART |
+- `8` core modules are bench-verified with the deepest evidence.
+- `24` repos are validated in the broader expansion sweep.
+- `S-CORE`, `Ankaios`, and `uProtocol` are the most complete validated areas today.
+- `Kuksa` is partially validated, but its detailed per-repo backfill lags the roll-up totals in `docs/progress-sdv-expansion.md`.
 
-**7 ECUs**: 4 physical + 3 Docker. 34 CAN messages, 19 E2E protected.
-Safety chain: watchdog per ECU → SC → kill relay → 12V actuator power.
-HIL: **65/69 hops pass** (94%). Hardware: ~$580.
+## How To Read This Repo
 
----
+If you are visiting this repo for the first time:
 
-## Hardware Setup
+1. Start with `Module Status` above for the current front-page picture.
+2. Read [docs/BENCH-RESULTS-SUMMARY.md](docs/BENCH-RESULTS-SUMMARY.md) for the strongest evidence set.
+3. Read [docs/progress-sdv-expansion.md](docs/progress-sdv-expansion.md) for the broader repo sweep and remaining backfill work.
+4. Treat top-level directories as workspace inventory, not as proof that every repo is already validated.
+5. Treat [docs/BENCH-RESULTS-SUMMARY.md](docs/BENCH-RESULTS-SUMMARY.md) and [docs/progress-sdv-expansion.md](docs/progress-sdv-expansion.md) as the live status sources.
 
-### Build Machine (Laptop, x86_64)
+## Repository Layout
 
-| Spec | Value |
-|------|-------|
-| CPU | 16-core x86_64 |
-| RAM | 14 GB |
-| OS | Ubuntu 24.04 LTS, x86_64 |
-| Bazel | 9.0.1 via Bazelisk (per-module `.bazelversion`) |
-| GCC | 12.2.0 (hermetic, downloaded by Bazel — not system GCC) |
+The top level intentionally mixes several kinds of content:
 
-### Test Target (Raspberry Pi 4, aarch64)
+- `modules/`
+  Taktflow-owned test harnesses and wrappers around selected upstream modules.
+  This is the main pytest entry point today.
 
-| Spec | Value |
-|------|-------|
-| Board | Raspberry Pi 4 Model B (4GB) |
-| CPU | 4x Cortex-A72 @ 1500 MHz |
-| OS | QNX 8.0 aarch64 (RTOS) |
-| CAN | USB-CAN adapter on `can0`, 500 kbps |
+- top-level upstream project directories
+  Examples: `eclipse-kuksa-databroker/`, `score-orchestrator/`,
+  `uprotocol-up-rust/`, `velocitas-*`, `leda-*`, `ankaios-*`.
+  These are the actual upstream codebases we build and inspect.
 
-### HIL Bench (Physical ECUs)
+- `exorcism-*`
+  Generated static analysis and review exports for individual upstream projects.
+  These are not the primary source trees; they are derived artifacts used for
+  offline comparison and dashboarding.
 
-The SDV components integrate with our zonal vehicle platform — 4 physical ECUs + 3 Docker-simulated ECUs on a shared CAN bus:
+- `aspice/`
+  Process, traceability, and quality artifacts organized in an ASPICE-style
+  structure.
 
-| ECU | Board | MCU | Role | CAN |
-|-----|-------|-----|------|-----|
-| **CVC** (Central Vehicle Computer) | TMS570LC43x LaunchPad | Dual Cortex-R5F lockstep (ASIL-D) | Safety arbiter, pedal processing | DCAN1 via SN65HVD230 |
-| **FZC** (Front Zone Controller) | Nucleo-G474RE | STM32G474RE Cortex-M4 | Steering, braking, LiDAR | FDCAN1 via TJA1051T/3 |
-| **RZC** (Rear Zone Controller) | Nucleo-G474RE | STM32G474RE Cortex-M4 | Motor control, current/temp sensing | FDCAN1 via TJA1051T/3 |
-| **SC** (Safety Controller) | TMS570LC43x LaunchPad | Dual Cortex-R5F lockstep | Watchdog monitor, kill relay | DCAN1 via SN65HVD230 |
-| **BCM** (Body Controller) | Docker on Pi | — | Headlights, indicators | Virtual CAN |
-| **ICU** (Instrument Cluster) | Docker on Pi | — | Dashboard display | Virtual CAN |
-| **TCU** (Telematics) | Docker on Pi | — | Cloud connectivity | Virtual CAN |
+- `docs/`
+  Project-level plans, testing strategy, bench results, requirements, security
+  analysis, and deployment notes.
 
-**CAN bus**: 500 kbps, 120Ω termination at each end, 22 AWG twisted pair, 34 message types, 19 with E2E protection (CRC-8 + alive counter).
+- `config/`
+  Shared test configuration, target settings, and tested-commit tracking.
 
-**Safety hardware**: 4x external watchdogs (one per physical ECU), kill relay via N-MOSFET, E-stop button. If any ECU watchdog expires → relay de-energizes → actuator power cuts.
+- `results/`
+  Test reports and machine-readable outputs.
 
-**HIL status**: 65/69 test hops pass (94.2%). UDS diagnostics working on CVC, FZC, RZC. 482 safety requirements traced.
+- `scripts/`
+  Workspace maintenance and reporting helpers such as submodule update scripts
+  and dashboard generation.
 
-**Total hardware cost**: ~$580 (boards + CAN transceivers + sensors + actuators + safety + power distribution).
+## Canonical Docs
 
-### Test Equipment
+Start here before assuming the repo status from directory names alone:
 
-| Item | Spec | Role |
-|------|------|------|
-| Oscilloscope | 4-channel, 80 MHz, SCPI-over-Ethernet | CAN bus timing, signal integrity |
-| USB-CAN adapter x2 | SocketCAN-compatible, 500 kbps | PC debug + Pi bridge |
+- [docs/BENCH-RESULTS-SUMMARY.md](docs/BENCH-RESULTS-SUMMARY.md)
+  Latest bench-oriented results summary.
 
----
+- [docs/TESTING-STRATEGY.md](docs/TESTING-STRATEGY.md)
+  Test philosophy, levels, and lessons learned.
 
-## Module Details
+- [docs/TESTING-STRATEGY-upstream-comparison.md](docs/TESTING-STRATEGY-upstream-comparison.md)
+  Comparison between our practice and upstream testing maturity.
 
-### 1. score-communication (LoLa) — ASIL-B IPC Middleware
+- [docs/REQUIREMENTS.md](docs/REQUIREMENTS.md)
+  Dependency and tool requirements across the ecosystems in this workspace.
 
-Lock-free shared-memory inter-process communication. The largest and most safety-critical S-CORE module.
+- [docs/DEPLOYMENT-GUIDE.md](docs/DEPLOYMENT-GUIDE.md)
+  Bench and deployment setup notes.
 
-| Metric | Value |
-|--------|-------|
-| Build targets | 1,203 targets, 6,465 actions |
-| Unit tests | **252/252 PASS** (1 QNX-only skipped) |
-| Line coverage | **93.7%** (16,023 / 17,101 lines) |
-| ASan + UBSan + LSan | **Clean** (252 tests) |
-| TSan | **Clean** — 224/224 tests, **0 data races** |
-| Clang-Tidy | **0 warnings** across 841 source files |
-| IPC latency | **8–29 µs** (debug), **9–25 µs** (release) |
+- [docs/progress-sdv-expansion.md](docs/progress-sdv-expansion.md)
+  Ongoing expansion and upstream-sync progress.
 
-**What LoLa does**: Provides skeleton/proxy pattern for zero-copy IPC between vehicle applications over shared memory. Used by all S-CORE components for data exchange.
+## Test Harness
 
-**Build + test commands**:
-```bash
-cd score-communication
+The root pytest configuration currently points at `modules/`:
 
-# Build (x86_64)
-bazel build //...
-
-# All unit tests
-bazel test //... --build_tests_only
-
-# Sanitizers
-bazel test --config=asan_ubsan_lsan //... --build_tests_only    # ASan+UBSan+LSan
-bazel test --config=tsan //... --build_tests_only                # ThreadSanitizer
-
-# Coverage
-bazel coverage //...
-
-# Integration tests (Docker-based)
-bazel test //quality/integration_testing/...
-
-# Performance microbenchmarks
-bazel build //score/mw/com/performance_benchmarks/api_microbenchmarks:all
+```ini
+[pytest]
+addopts = --import-mode=importlib --ignore-glob=**/upstream/**
+testpaths = modules
 ```
 
-**Latency measurement detail**: We initially reported 622 ns — but that measured `InstanceSpecifier::Create()` (string parsing), not actual IPC. After correction, the real decode → allocate → send → receive → callback path measures 8–29 µs. This was lesson learned #1: measurement must match requirement text.
+That means the repo's canonical local test harness is the wrapper layer under
+`modules/`, not the raw upstream repos.
 
-**Known upstream issue**: Issue #220 — concurrent proxy crash with 3+ proxies. Documented, not fixed upstream.
-
----
-
-### 2. score-baselibs — Foundation Libraries (QM to ASIL-B)
-
-Core containers, serialization, type-safe wrappers, and utility abstractions used by all S-CORE modules.
-
-| Metric | Value |
-|--------|-------|
-| Build targets | 755 targets, 3,055 actions, 200s build time |
-| Unit tests | **278/279 PASS** (1 upstream-excluded toolchain test) |
-| Line coverage | **97.9%** (14,791 / 15,112 lines, 697 files) |
-| ASan + UBSan + LSan | **Clean** (278 tests, 0 memory errors, 0 UB, 0 leaks) |
-| TSan | Pending (30 min effort) |
-
-**Build + test commands**:
-```bash
-cd score-baselibs
-
-# Build (platform-specific config required)
-bazel build --config=bl-x86_64-linux //score/...
-bazel build --config=bl-aarch64-linux //score/...     # Cross-compile for Pi
-
-# Unit tests
-bazel test --config=bl-x86_64-linux //score/...
-
-# Sanitizers
-bazel test --config=bl-x86_64-linux --config=asan_ubsan_lsan //score/...
-
-# Coverage
-bazel coverage --config=bl-x86_64-linux //score/...
-```
-
----
-
-### 3. score-lifecycle — Process Management (QM)
-
-Process startup/shutdown orchestration. C++ engine with Rust concurrency components verified by loom model checking.
-
-| Metric | Value |
-|--------|-------|
-| Build targets | 59 targets, 1,087 actions (C++ + Rust), 232s |
-| Unit tests | **6/6 PASS** (including loom Rust concurrency) |
-| Line coverage | **82.1%** (316 / 385 lines, target ≥76%) |
-| ASan | **Clean** (5/5 unit tests) |
-| Smoke test | **PASS** (fixed with fakechroot workaround) |
-
-**Fix applied**: Smoke test failed because the test harness couldn't find system paths in a sandboxed environment. Fixed by installing `fakechroot` on the build machine: `sudo apt install fakechroot`.
-
-**Build + test commands**:
-```bash
-cd score-lifecycle
-
-bazel build --config=x86_64-linux //src/... //examples/...
-bazel test --config=x86_64-linux //src/... //tests/...
-
-# ASan
-bazel test --config=x86_64-linux --define sanitize=address //src/...
-
-# Smoke test (requires fakechroot)
-bazel test --config=x86_64-linux //src/smoke_tests/...
-```
-
----
-
-### 4. score-persistency — Key-Value Storage (ASIL-D)
-
-Safety-qualified persistent storage with C++ and Rust implementations. Highest ASIL level in the assessed modules.
-
-| Metric | Value |
-|--------|-------|
-| Build targets | 9 targets, 755 actions (C++ + Rust), 67s |
-| C++ unit tests | **PASS** (`test_kvs_cpp`) |
-| Rust unit tests | **PASS** (`rust_kvs:tests`) |
-| C++ integration (Python) | **PASS** |
-| Rust integration (Python) | **PASS** |
-| Line coverage | **95.3%** (716 / 751 lines) |
-| Benchmarks | `bm_kvs_cpp` executed successfully |
-
-**Build + test commands**:
-```bash
-cd score-persistency
-
-bazel build --config=per-x86_64-linux //src/...
-
-# C++ unit tests
-bazel test --config=per-x86_64-linux //:unit_tests
-
-# C++ integration tests (Python CIT)
-bazel test --config=per-x86_64-linux //:cit_tests
-
-# Rust tests
-bazel test --config=per-x86_64-linux //rust/...
-
-# Benchmarks
-bazel build --config=per-x86_64-linux //:benchmark_kvs_cpp
-./bazel-bin/benchmark_kvs_cpp
-```
-
----
-
-### 5. score-feo — Functional Execution Orchestration (QM)
-
-Multi-agent execution framework in Rust + C++. Manages worker scheduling across CPU cores.
-
-| Metric | Value |
-|--------|-------|
-| Build targets | 85 targets, 2,729 actions (Rust + C++), 305s |
-| Unit tests | **8/8 PASS** (multi-agent integration test: 8.3s) |
-| Format checks | **4/4 PASS** (Python, Rust, Starlark, YAML) |
-| Coverage | N/A (Rust modules need ferrocene toolchain) |
-
-**Build + test commands**:
-```bash
-cd score-feo
-
-bazel build --config=x86_64-linux //...
-bazel test --config=x86_64-linux //...
-
-# Format checks
-bazel run //:format.check
-bazel run //:format.fix    # auto-fix
-```
-
----
-
-### 6. score-logging — DLT Logging (QM) — Structural Verification
-
-DLT (Diagnostic Log and Trace) middleware with Rust bindings.
-
-| Metric | Value |
-|--------|-------|
-| Structure | **Verified**: `score/mw/log/` + `score/datarouter/` intact |
-| Object seam | **Verified**: `fake_recorder`, `session_handle_mock.h` present |
-| Rust bindings | **Verified**: `score/mw/log/rust/` directory present |
-| Build | **Pending** — not yet executed on laptop |
-| Tests | **Pending** |
-| Sanitizers | **Pending** |
-
-**Planned commands**:
-```bash
-cd score-logging
-bazel build --config=x86_64-linux //score/...
-bazel test --config=x86_64-linux //score/...
-bazel test --config=x86_64-linux --config=asan_ubsan_lsan //score/...
-```
-
----
-
-### 7. score-orchestrator — Workload Orchestrator (QM) — Structural Verification
-
-Rust-based workload orchestration with kyron dependency and iceoryx2 IPC feature gate.
-
-| Metric | Value |
-|--------|-------|
-| Workspace | **Verified**: 5 members (orchestration, macros, xtask, test_scenarios, example) |
-| kyron dependency | **Verified**: pinned by rev hash |
-| iceoryx2 feature gate | **Verified**: optional feature |
-| Proc-macro safety | **Verified**: no `unsafe`, no filesystem access in macros |
-| Build | **Pending** |
-| Tests | **Pending** |
-
-**Planned commands**:
-```bash
-cd score-orchestrator
-cargo build --release
-cargo test --workspace
-```
-
----
-
-### 8. eclipse-kuksa-databroker — Vehicle Signal Broker (QM) — Structural Verification
-
-gRPC-based vehicle data broker implementing the COVESA Vehicle Signal Specification (VSS 4.0).
-
-| Metric | Value |
-|--------|-------|
-| API definitions | **Verified**: KUKSA.val v1 + v2 protobuf files |
-| VSS data | **Verified**: `vss_release_4.0.json` (Vehicle.*) |
-| Authorization | **Verified**: JWT authentication + TLS certificates |
-| OpenTelemetry | **Verified**: `src/open_telemetry.rs` instrumentation |
-| Python integration tests | **Verified**: `integration_test/test_databroker.py` |
-| Build | **Pending** — requires protoc (protobuf compiler) |
-| Live integration | **Pending** — requires running broker on port 55555 |
-
-**Planned commands**:
-```bash
-cd eclipse-kuksa-databroker
-cargo build --release
-cargo test --workspace
-
-# Integration test (requires running broker)
-./target/release/databroker &
-python3 -m pytest integration_test/test_databroker.py
-```
-
----
-
-## Testing Methodology
-
-Every module is audited from **10 quality perspectives**: build reproducibility, upstream test pass rate, coverage, memory safety (sanitizers), static analysis, API contracts, cross-compilation, integration, performance, and security. 351 gaps documented, 83% closed.
-
-### Lessons Learned (from LoLa pilot)
-
-1. **Measurement must match requirement** — We reported "622 ns PASS" but measured the wrong function. The actual IPC latency was 8-29 us.
-2. **Define expected values before testing** — We said "values received — PASS" without verifying decoded values. They were garbage.
-3. **"It runs" is not "it works"** — Running without crash is a build test, not a functional test.
-4. **Don't guess the data format** — We assumed CAN 0x220 was motor RPM. It was lidar distance. Always read the DBC.
-
-### Running Tests
+Useful examples:
 
 ```bash
-python -m pytest tests/ -v                         # All tests
-python -m pytest tests/score-communication/ -v      # One module
-python -m pytest tests/ -m build                    # Build verification only
-python -m pytest tests/ --can can0 --target bench   # Physical CAN
+# Run the full local harness
+pytest
+
+# Run one module's tests
+pytest modules/score-communication -v
+
+# Run only build-tagged checks
+pytest -m build
+
+# Filter by target and CAN interface when a test supports it
+pytest --target local --can vcan0
 ```
 
----
+The shared pytest fixtures and markers live in
+[`modules/conftest.py`](modules/conftest.py).
 
-## Progress
+## Environment and Dependencies
 
-### Completed (Day 1-4, Mar 21-25)
+The lightweight root Python requirements for the local harness are in
+[`requirements.txt`](requirements.txt).
 
-| Day | What | Result |
-|-----|------|--------|
-| 1 | LoLa pilot — full assess+build+test+audit cycle | 252 tests, 93.7% cov, TSan clean, 66 gaps found |
-| 2-3 | Scale to 5 modules (baselibs, lifecycle, persistency, feo) | 548 tests, 95.5% cov, 351 gaps audited |
-| 4 | Extend to 8 modules (logging, orchestrator, kuksa) | Structural verification, test suites created |
+Core shared runtime/test configuration is in:
 
-**Artifacts created**: 29 test files, 42 result files, 7 regression scripts, 7 ASPICE verification reports, 23 gap analyses — **115 total**.
+- [`config/test_config.yaml`](config/test_config.yaml)
+- [`config/tested-commits.yaml`](config/tested-commits.yaml)
 
-**Gaps**: 351 audited, ~290 closed (83%), ~25 remaining (closable), ~45 skipped (not our deliverable).
+The wider cross-ecosystem dependency matrix is documented in
+[docs/REQUIREMENTS.md](docs/REQUIREMENTS.md).
 
-### Next Steps
+## Upstream Sync Model
 
-| Priority | Task | Effort | Status |
-|---|---|---|---|
-| 1 | Build + test score-logging, score-orchestrator, kuksa-databroker | 4h | Pending (laptop) |
-| 2 | aarch64 cross-compile + deploy to Pi (QNX) for all 8 modules | 2h | Pending |
-| 3 | KUKSA live integration: CAN frame → broker → vehicle app | 3h | Pending |
-| 4 | Sanitizers for persistency + feo, TSan for baselibs | 2h | Pending |
-| 5 | Assess ankaios (workload orchestrator) + velocitas-sdk (app framework) | 1 day each | Not started |
-| 6 | Assess kuksa-can-provider (CAN→VSS bridge for taktflow ECUs) | 1 day | Not started |
-| 7 | ASPICE process artifacts (~50 gaps) | 2-3 weeks | Not started |
-| 8 | Security fuzzing (libFuzzer for JSON/KVS parsers) | 1-2 weeks | Not started |
+This workspace uses git submodules and checked-out upstream repos to keep a
+local validation surface for many SDV projects at once.
 
-### Architecture Decision: QNX Status
+Useful maintenance commands:
 
-QNX 8.0 is the target RTOS on Pi, but the QNX cross-compile toolchain is blocked upstream (stale checksum in `score-toolchains_qnx`). All S-CORE modules have Linux OSAL and are fully tested on Ubuntu. QNX-specific testing resumes when the upstream toolchain is fixed. ASIL-B QNX features (resource manager, safety isolation) are only needed for final certification.
+```bash
+# Initialize or refresh submodules
+git submodule update --init --recursive
 
----
-
-## Deployment Architecture
-
-### VPS — SIL Demo & Documentation
-
-Cloud-hosted SIL environment running the 7-ECU vehicle simulation with live fault injection and ASPICE documentation.
-
-```
-Caddy (reverse proxy) ──┬── Docker Compose (SIL)
-  |                      |     7 ECU containers
-  |                      |     CAN gateway + plant simulator
-  +── Static docs        |     Mosquitto MQTT broker
-  +── API proxy          |     Fault injection runner
+# Update tracked submodules and emit drift information
+bash scripts/update-submodules.sh
 ```
 
-### AWS — IoT Telemetry Pipeline
+Not every project updates cleanly on every host. For example, the expansion log
+documents Windows-specific issues such as case-sensitive path conflicts in
+`score-reference_integration`.
 
-Cloud telemetry pipeline for vehicle monitoring and analytics.
+## Bench Scope
 
-```
-Physical CAN Bus (4 ECUs)
-    |
-CAN Gateway (Docker)
-    |
-Local MQTT (Mosquitto)
-    |
-Cloud Connector (Docker, paho-mqtt)
-    | X.509 mutual TLS
-AWS IoT Core
-    |
-AWS IoT Rules Engine
-    |
-AWS Timestream (time-series DB)
-    |
-Grafana (dashboards + alerts)
-```
+This workspace is intended to support both:
 
-| AWS Service | Purpose |
-|-------------|---------|
-| IoT Core | MQTT broker with X.509 mutual TLS device authentication |
-| IoT Rules | Topic-based message routing to time-series storage |
-| Timestream | Time-series telemetry storage |
-| Grafana | Dashboards and alerting |
+- laptop-based validation on Ubuntu,
+- Taktflow bench and HIL validation against the zonal ECU setup.
 
-Cloud connector: Python container bridging local MQTT to AWS IoT Core with offline buffering and exponential backoff. X.509 certificate auth only — no cloud access keys in code.
+Bench details, evidence depth, and exact module status should be taken from the
+current docs, not inferred from this README alone. The old README embedded a
+point-in-time bench architecture snapshot that aged badly; that detail now
+belongs in the project docs instead of the root landing page.
 
-### Vercel — Web Application
+## What This README Does Not Claim
 
-Next.js web app deployed via Vercel.
+This README does not claim:
 
-### Edge Gateway (Raspberry Pi 4)
+- that every checked-out upstream repo is fully tested,
+- that all ecosystems here have equal evidence depth,
+- that laptop validation is the same as bench validation,
+- that all generated analysis exports are authoritative over source repos.
 
-QNX 8.0 aarch64 RTOS running KUKSA databroker, Docker vECUs, and CAN-to-IP bridge.
+It is a current map of the workspace, not a blanket completion claim.
 
----
+## Recommended Reading Order
 
-## Related Projects
+1. [docs/BENCH-RESULTS-SUMMARY.md](docs/BENCH-RESULTS-SUMMARY.md)
+2. [docs/TESTING-STRATEGY.md](docs/TESTING-STRATEGY.md)
+3. [docs/progress-sdv-expansion.md](docs/progress-sdv-expansion.md)
+4. [config/test_config.yaml](config/test_config.yaml)
+5. [modules/conftest.py](modules/conftest.py)
 
-| Project | What |
-|---------|------|
-| [scorehsm](../scorehsm/) | S-CORE Hardware Security Module — Rust HSM crypto and key management |
-| [openbsw-rust](../openbsw-rust/) | Rust port of Eclipse OpenBSW (Basic Software) for STM32 targets |
-| [taktflow-embedded-production](../taktflow-embedded-production/) | AUTOSAR-like zonal vehicle platform (ECU firmware on the bench) |
-| [foxbms-posix](../foxbms-posix/) | foxBMS POSIX vECU for battery management HIL testing |
+## License and Upstream Ownership
 
-## License
-
-MIT
+Each upstream project in this workspace keeps its own license, contribution,
+and project-governance files. This repo does not replace those upstream rules;
+it layers testing, comparison, and evidence collection on top of them.
